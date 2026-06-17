@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _In_reads_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _In_reads_ is a macro then please configure it." file0="/workspace/stl/src/StlCompareStringA.cpp">
+            <location file="/workspace/stl/src/awint.hpp" line="23" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Inout_bytecount_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Inout_bytecount_ is a macro then please configure it." file0="/workspace/stl/src/atomic_wait.cpp">
+            <location file="/workspace/stl/src/atomic_wait.cpp" line="238" column="73"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called." verbose="The obsolete function &apos;alloca&apos; is called. In C++11 and later it is recommended to use std::array&lt;&gt; or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/stl/src/excptptr.cpp">
+            <location file="/workspace/stl/src/excptptr.cpp" line="510" column="35"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: &amp;&amp; return" verbose="syntax error: &amp;&amp; return" file0="/workspace/stl/src/filesys.cpp">
+            <location file="/workspace/stl/src/filesys.cpp" line="36" column="36"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: &amp;&amp; return" verbose="syntax error: &amp;&amp; return" file0="/workspace/stl/src/filesystem.cpp">
+            <location file="/workspace/stl/src/filesystem.cpp" line="794" column="29"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _BEGIN_LOCINFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _BEGIN_LOCINFO is a macro then please configure it." file0="/workspace/stl/src/locale.cpp">
+            <location file="/workspace/stl/src/locale.cpp" line="82" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _BEGIN_LOCK is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _BEGIN_LOCK is a macro then please configure it." file0="/workspace/stl/src/locale0.cpp">
+            <location file="/workspace/stl/src/locale0.cpp" line="91" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." file0="/workspace/stl/src/regex.cpp">
+            <location file="/workspace/stl/src/regex.cpp" line="24" column="34"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/stl/src/vector_algorithms.cpp">
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="7452" column="17"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;_Val&gt;=256&apos; is redundant or the array &apos;_Bitmap_scalar_tail[32]&apos; is accessed at index 32, which is out of bounds." verbose="Either the condition &apos;_Val&gt;=256&apos; is redundant or the array &apos;_Bitmap_scalar_tail[32]&apos; is accessed at index 32, which is out of bounds." cwe="788" file0="/workspace/stl/src/vector_algorithms.cpp">
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6441" column="67" info="Array index out of bounds"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6439" column="66" info="Assignment &apos;_Hi=static_cast&lt;uint8_t&gt;(_Val_u8&gt;&gt;3)&apos;, assigned value is 32"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6438" column="66" info="Assignment &apos;_Val_u8=static_cast&lt;uint8_t&gt;(_Val)&apos;, assigned value is symbolic=_Hay_ptr[_Ix]"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6426" column="40" info="_Val is assigned &apos;_Hay_ptr[_Ix]&apos; here."/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6426" column="50" info="Assignment to &apos;_Val=_Hay_ptr[_Ix]&apos;"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="6429" column="38" info="Assuming that condition &apos;_Val&gt;=256&apos; is not redundant"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;_Traits_f_neon&apos; defines member variable with name &apos;_Has_unsigned_cmp&apos; also defined in its parent struct &apos;_Traits_neon_base&apos;." verbose="The struct &apos;_Traits_f_neon&apos; defines member variable with name &apos;_Has_unsigned_cmp&apos; also defined in its parent struct &apos;_Traits_neon_base&apos;." cwe="398" file0="/workspace/stl/src/vector_algorithms.cpp">
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="2339" column="35" info="Derived variable &apos;_Traits_f_neon::_Has_unsigned_cmp&apos;"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="997" column="35" info="Parent variable &apos;_Traits_neon_base::_Has_unsigned_cmp&apos;"/>
+            <symbol>_Traits_f_neon</symbol>
+            <symbol>_Has_unsigned_cmp</symbol>
+            <symbol>_Traits_neon_base</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;_Traits_d_neon&apos; defines member variable with name &apos;_Has_unsigned_cmp&apos; also defined in its parent struct &apos;_Traits_neon_base&apos;." verbose="The struct &apos;_Traits_d_neon&apos; defines member variable with name &apos;_Has_unsigned_cmp&apos; also defined in its parent struct &apos;_Traits_neon_base&apos;." cwe="398" file0="/workspace/stl/src/vector_algorithms.cpp">
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="2608" column="35" info="Derived variable &apos;_Traits_d_neon::_Has_unsigned_cmp&apos;"/>
+            <location file="/workspace/stl/src/vector_algorithms.cpp" line="997" column="35" info="Parent variable &apos;_Traits_neon_base::_Has_unsigned_cmp&apos;"/>
+            <symbol>_Traits_d_neon</symbol>
+            <symbol>_Has_unsigned_cmp</symbol>
+            <symbol>_Traits_neon_base</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _In_NLS_string_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _In_NLS_string_ is a macro then please configure it." file0="/workspace/stl/src/winapinls.cpp">
+            <location file="/workspace/stl/src/winapinls.cpp" line="16" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Success_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Success_ is a macro then please configure it." file0="/workspace/stl/src/winapisupp.cpp">
+            <location file="/workspace/stl/src/winapisupp.cpp" line="135" column="21"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;return&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;return&apos; is not allowed in global scope" file0="/workspace/stl/src/xmbtowc.cpp">
+            <location file="/workspace/stl/src/xmbtowc.cpp" line="68" column="20"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: _Perr" verbose="Possible null pointer dereference: _Perr" cwe="476" file0="/workspace/stl/src/xstod.cpp">
+            <location file="/workspace/stl/src/xstod.cpp" line="16" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/stl/src/xstod.cpp" line="38" column="36" info="Calling function &apos;_Stodx&apos;, 4th argument &apos;nullptr&apos; value is 0"/>
+            <symbol>_Perr</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: _Perr" verbose="Possible null pointer dereference: _Perr" cwe="476" file0="/workspace/stl/src/xstof.cpp">
+            <location file="/workspace/stl/src/xstof.cpp" line="16" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/stl/src/xstof.cpp" line="28" column="36" info="Calling function &apos;_Stofx&apos;, 4th argument &apos;nullptr&apos; value is 0"/>
+            <symbol>_Perr</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." file0="/workspace/stl/src/xstrxfrm.cpp">
+            <location file="/workspace/stl/src/xstrxfrm.cpp" line="55" column="34"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Post_readable_size_ is a macro then please configure it." file0="/workspace/stl/src/xwcsxfrm.cpp">
+            <location file="/workspace/stl/src/xwcsxfrm.cpp" line="48" column="34"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;return&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;return&apos; is not allowed in global scope" file0="/workspace/stl/src/xwctomb.cpp">
+            <location file="/workspace/stl/src/xwctomb.cpp" line="58" column="25"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: _Perr" verbose="Possible null pointer dereference: _Perr" cwe="476" file0="/workspace/stl/src/xwstod.cpp">
+            <location file="/workspace/stl/src/xwstod.cpp" line="17" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/stl/src/xwstod.cpp" line="40" column="37" info="Calling function &apos;_WStodx&apos;, 4th argument &apos;nullptr&apos; value is 0"/>
+            <symbol>_Perr</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: _Perr" verbose="Possible null pointer dereference: _Perr" cwe="476" file0="/workspace/stl/src/xwstof.cpp">
+            <location file="/workspace/stl/src/xwstof.cpp" line="17" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/stl/src/xwstof.cpp" line="29" column="37" info="Calling function &apos;_WStofx&apos;, 4th argument &apos;nullptr&apos; value is 0"/>
+            <symbol>_Perr</symbol>
+        </error>
+        <error id="assignBoolToPointer" severity="error" msg="Boolean value assigned to pointer." verbose="Boolean value assigned to pointer." cwe="587" file0="/workspace/tools/scripts/charconv_tables_generate.cpp">
+            <location file="/workspace/tools/scripts/charconv_tables_generate.cpp" line="69" column="36"/>
+        </error>
+        <error id="assignBoolToPointer" severity="error" msg="Boolean value assigned to pointer." verbose="Boolean value assigned to pointer." cwe="587" file0="/workspace/tools/scripts/charconv_tables_generate.cpp">
+            <location file="/workspace/tools/scripts/charconv_tables_generate.cpp" line="108" column="40"/>
+        </error>
+        <error id="assignBoolToPointer" severity="error" msg="Boolean value assigned to pointer." verbose="Boolean value assigned to pointer." cwe="587" file0="/workspace/tools/scripts/charconv_tables_generate.cpp">
+            <location file="/workspace/tools/scripts/charconv_tables_generate.cpp" line="153" column="38"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: _Perr" verbose="Null pointer dereference: _Perr" cwe="476">
+            <location file="/workspace/stl/src/xstod.cpp" line="16" column="6" info="Dereferencing argument _Perr that is null"/>
+            <location file="/workspace/stl/src/xstod.cpp" line="28" column="18" info="Calling function _Stodx, 4th argument is null"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: _Perr" verbose="Null pointer dereference: _Perr" cwe="476">
+            <location file="/workspace/stl/src/xstof.cpp" line="16" column="6" info="Dereferencing argument _Perr that is null"/>
+            <location file="/workspace/stl/src/xstof.cpp" line="28" column="18" info="Calling function _Stofx, 4th argument is null"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: _Perr" verbose="Null pointer dereference: _Perr" cwe="476">
+            <location file="/workspace/stl/src/xwstod.cpp" line="17" column="6" info="Dereferencing argument _Perr that is null"/>
+            <location file="/workspace/stl/src/xwstod.cpp" line="29" column="19" info="Calling function _WStodx, 4th argument is null"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: _Perr" verbose="Null pointer dereference: _Perr" cwe="476">
+            <location file="/workspace/stl/src/xwstof.cpp" line="17" column="6" info="Dereferencing argument _Perr that is null"/>
+            <location file="/workspace/stl/src/xwstof.cpp" line="29" column="19" info="Calling function _WStofx, 4th argument is null"/>
+        </error>
+    </errors>
+</results>

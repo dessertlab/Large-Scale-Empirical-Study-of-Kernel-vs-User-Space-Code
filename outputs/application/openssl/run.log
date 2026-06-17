@@ -1,0 +1,18 @@
+[application/openssl] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/openssl
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/openssl
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 4378 findings, exit 0, 5.84s
+[2/4] semgrep completed: 57 findings, exit 0, 24.58s
+[3/4] codeql completed: 97 findings, exit 0, 135.22s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[4/4] cppcheck completed: 218 findings, exit 0, 348.37s
+
+Summary: 4 completed, 0 failed, 4750 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/openssl/report.json

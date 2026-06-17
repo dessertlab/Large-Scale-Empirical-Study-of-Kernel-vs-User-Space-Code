@@ -1,0 +1,1833 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1053",
+              "name": "buffer/getenv",
+              "shortDescription": {
+                "text": "Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/807.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-807",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/wcslen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1030",
+              "name": "race/access",
+              "shortDescription": {
+                "text": "This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-367",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1026",
+              "name": "buffer/realpath",
+              "shortDescription": {
+                "text": "This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-785",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1067",
+              "name": "free/memalign",
+              "shortDescription": {
+                "text": "On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/676.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-676",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/open",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1058",
+              "name": "misc/LoadLibrary",
+              "shortDescription": {
+                "text": "Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-829",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1048",
+              "name": "random/random",
+              "shortDescription": {
+                "text": "This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-327",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 3,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "  char buf[32]; buf[0] = 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c10d88a3f04b4945802e8e0e71653fa011da79461d059561b471b335813ce1fb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    char unitdesc[8];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b6174ad56b15554b3ff43e7630211e9daacd978ad5bb8035b13eb70dc3f97a50"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 3,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "  char buf[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "465eabb0806860179ab2df61dda647bce326eb7218231f8bbb69a8f322b93fff"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 308,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "86753089edd8e96675f0102bc52bd39c8f2c94e4f63e4a6e6052dfa82d40f6a3"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 540,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 547,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 554,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 562,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stats.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 569,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/options.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 339,
+                  "startColumn": 8,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "static char out_buf[MI_MAX_DELAY_OUTPUT+1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34e6d170dfd3b9d3fc3f302a2a187775b4ff815a248b5f99802b6b39e8cc1900"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/options.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 474,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[512];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "657ff8329591453022e3359353e72b30b702c62cf6567d962d837e05e108b31a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/options.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    char tprefix[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f4607d98f36932640aed180d1e6d526932b67cbad1459a0b71e43cbd6e225ab8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/options.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 610,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  char s[64 + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e3d9ba0d265a93628b2a77a1e84f489c43dc45f02ff02c7444c597889b7642b8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/options.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 611,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  char buf[64+1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "505429d99db7206a308354341728aaabfeea078b9a8cf4cdfe2efa181f57e38b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc-posix.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 13,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  char* p = getenv(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "946b21fb6b826c457073ec881954e2273b24a234c894da71ccbabc822b8433df"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc-posix.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 33,
+                  "endColumn": 105,
+                  "snippet": {
+                    "text": "    if (size != NULL) { *size = wcslen(p) + 1; }  // cannot overflow as wcsdup is limited to PTRDIFF_MAX"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "62f1fdf7eeb3b9f2ef017160093c581949c11af43232ce4010af9b6c01e28c45"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/arena.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 940,
+                  "startColumn": 5,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    char buf[MI_BITMAP_FIELD_BITS + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "878b7b5efb4e60ae52ee86f7fa2d14e57aa942da8e434aa8776f4d105f1cbc30"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/free.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 28,
+                  "endColumn": 160,
+                  "snippet": {
+                    "text": "#define mi_track_page(page,access)  { size_t psize; void* pstart = _mi_page_start(_mi_page_segment(page),page,&psize); mi_track_mem_##access( pstart, psize); }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "61f29f686e9a642ab84f74bdd781072d5a1e8e34be12abf8762cd50fc465017c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/free.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 135,
+                  "endColumn": 160,
+                  "snippet": {
+                    "text": "#define mi_track_page(page,access)  { size_t psize; void* pstart = _mi_page_start(_mi_page_segment(page),page,&psize); mi_track_mem_##access( pstart, psize); }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "61f29f686e9a642ab84f74bdd781072d5a1e8e34be12abf8762cd50fc465017c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc-override.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 21,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    MI_INTERPOSE_MI(realpath),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2881da88e351cbd4f83de6c22552ef5491ddd4f7ec54335f3b986136d021b29f"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1067",
+          "level": "note",
+          "message": {
+            "text": "free/memalign:On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc-override.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 359,
+                  "startColumn": 7,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "void* memalign(size_t alignment, size_t size)           { return mi_memalign(alignment, size); }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80496cf72b76e47fc8bc5c9dea01f4ffffb35e36ad24f343a52611be95761b97"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 10,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "  return open(fpath,open_flags);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f1082061506525e4974a6ee274a3cc591db79aee66cdf49626f25832ed873d5e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 10,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "  return read(fd,buf,bufsize);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "46063ac8b787b77c026a9955b97520710fbedc0e5bce9715650c488a9da805ad"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 10,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  return access(fpath,mode);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b03885b2e6f4d276055796bb344a73ab433d6a86a81e9f46296425ca073250b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 7,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "      char buf[32];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "917f6ed0ae72790ae84d5546f1fd6d51df65d8cc348e82b8bf2389e3a4b61c78"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 601,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 821,
+                  "startColumn": 19,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "  const char* s = getenv(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "244ffa2f12128391f3034a1024c733508b13949eb2297a397a3bf5e3a11f24fa"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 824,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    char buf[64+1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "505429d99db7206a308354341728aaabfeea078b9a8cf4cdfe2efa181f57e38b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/unix/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 830,
+                  "startColumn": 9,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    s = getenv(buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e6f460a15f72081ea587d18aa8800b8415302e7c9c1150a10775331afd025245"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/etw.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 693,
+                  "startColumn": 47,
+                  "endColumn": 94,
+                  "snippet": {
+                    "text": "EXTERN_C __declspec(selectany) const unsigned char microsoft_windows_mimallocLevels[1] = {4};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ecc9a8752c02edf8ce24233df3dfdb76ecb66e901ab88ae2eabed34b7c55ec52"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 10,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  hDll = LoadLibrary(TEXT(\"kernelbase.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f016d241d18e7431e4e8e2313e645286f62e1bcfe8112d5f5e73e744de82ad89"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 10,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "  hDll = LoadLibrary(TEXT(\"ntdll.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8369e41dc7766dc349da9a03e03af12e4122ef4248e1002e198e564c130efca6"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 10,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "  hDll = LoadLibrary(TEXT(\"kernel32.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5eac93fe923fe2732cba03c84dc85a0450caf2d8661e91ff3609547f10f765ce"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 547,
+                  "startColumn": 22,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    HINSTANCE hDll = LoadLibrary(TEXT(\"psapi.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fe42d42fd2354e3587a20b3c82df229564f559fdd273fdc92799874c984c4fbe"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 652,
+                  "startColumn": 22,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    HINSTANCE hDll = LoadLibrary(TEXT(\"bcrypt.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7bc6d11e134345612cbcf5e8dad2704b2c9e192c9b62f1441cf816714c62fcf3"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/windows/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1022,
+                  "startColumn": 41,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "      #pragma section(\".CRT$XIU\", long, read)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "57463c21ec8deb44491e8fb44f4cdcd5e64f2d5f6749aa1e4244f1e93a0cecc9"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/wasi/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 19,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "  const char* s = getenv(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "244ffa2f12128391f3034a1024c733508b13949eb2297a397a3bf5e3a11f24fa"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/wasi/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    char buf[64+1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "505429d99db7206a308354341728aaabfeea078b9a8cf4cdfe2efa181f57e38b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/prim/wasi/prim.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 9,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    s = getenv(buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e6f460a15f72081ea587d18aa8800b8415302e7c9c1150a10775331afd025245"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 3,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  char buf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bccc52b0116e68b26a8fb862f2f766a6c4f06ed3e5c48f125f9f60e5c9a2feea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 469,
+                  "startColumn": 12,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    return realpath(fname,resolved_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cf5471fb1f66ed8e9b192b719aa2f922cde06d48cfa308453ff194cd22a0868d"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/alloc.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 486,
+                  "startColumn": 20,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    char* rname  = realpath(fname,buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "adb2e4d552a2c853ccf0538aae653e86a809d35dbca7b259255e46e1f899bc30"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/atomic.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 17,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    *expected = read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "857c9c8f1d722e1d1793b3387fbd8b57fdee5372456bda01d37aa7b7de2fe422"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/atomic.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 350,
+                  "startColumn": 12,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "    *exp = read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "694e2876e763c358e6591ad6f8dcca4b77d77930027e2b6605adb287a3e5aacc"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/atomic.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 537,
+                  "startColumn": 3,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "  memcpy(&lock->mutex,&mutex,sizeof(mutex));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "083cf30558535e5f747a827c79afe2d978a9a1b192fd46391a98177618e2e71a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/types.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 562,
+                  "startColumn": 25,
+                  "endColumn": 113,
+                  "snippet": {
+                    "text": "  mi_random_ctx_t       random;                              // random number context used for secure allocation"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ace2dd30f4346117776b6727e140d3a744deb0c48776a66b49cd39c9fc5387c6"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/internal.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1112,
+                  "startColumn": 5,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "    memcpy(dst, src, n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "537556d54ed0d6016bf00ed0723a837d26c46f548f23ee636518762e2beffb23"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc/internal.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1125,
+                  "startColumn": 3,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "  memcpy(dst, src, n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "537556d54ed0d6016bf00ed0723a837d26c46f548f23ee636518762e2beffb23"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc-override.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "#define realpath(f,n)           mi_realpath(f,n)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1ca81e3b56ed45a6996d7393b369996e6926327fc9a45d805a1c644bc85274e3"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1067",
+          "level": "note",
+          "message": {
+            "text": "free/memalign:On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/mimalloc-override.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 9,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "#define memalign(a,n)           mi_memalign(a,n)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e8c81c7f40e9ee26aa3541dba9540fd2c7fc4535a1b493339986113cc1a7cc2b"
+          },
+          "rank": 0.2
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

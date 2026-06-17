@@ -1,0 +1,2218 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/samples/WinGetUWPCaller/WinGetUWPCaller/MainPage.cpp",
+      "line": 159,
+      "message": "Either the condition 'sizeIndex<s_sizeStrings.size()' is redundant or 'sizeIndex' can have the value greater or equal to 4. Expression 's_sizeStrings[sizeIndex]' cause access out of bounds.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCLICore/ChannelStreams.cpp",
+      "line": 39,
+      "message": "Member variable 'BaseStream::m_VTUpdated' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/AppInstallerCLICore/Command.cpp",
+      "line": 31,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLICore/Commands/DebugCommand.cpp",
+      "line": 32,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/AppInstallerCLICore/Commands/DscPackageResource.cpp",
+      "line": 332,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLICore/Commands/ErrorCommand.cpp",
+      "line": 66,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLICore/Commands/ErrorCommand.cpp",
+      "line": 114,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/AppInstallerCLICore/Commands/RootCommand.cpp",
+      "line": 251,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCLICore/ConfigurationSetProcessorFactoryRemoting.cpp",
+      "line": 393,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLICore/VTSupport.cpp",
+      "line": 68,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp",
+      "line": 2289,
+      "message": "Unused variable value 'unitsShown'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp",
+      "line": 2335,
+      "message": "Unused variable value 'unitsShown'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp",
+      "line": 2348,
+      "message": "Unused variable value 'unitsShown'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/DownloadFlow.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 60s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/DownloadFlow.cpp",
+      "line": 545,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/InstallFlow.cpp",
+      "line": 870,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLICore/Workflows/MSStoreInstallerHandler.cpp",
+      "line": 105,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLITests/Downloader.cpp",
+      "line": 26,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerCLITests/Downloader.cpp",
+      "line": 109,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCLITests/InstallDependenciesFlow.cpp",
+      "line": 99,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/src/AppInstallerCLITests/LanguageUtilities.cpp",
+      "line": 20,
+      "message": "Access of moved variable 'beginToken'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/AppInstallerCLITests/ManifestComparator.cpp",
+      "line": 934,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/NameNormalization.cpp",
+      "line": 24,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/NameNormalization.cpp",
+      "line": 25,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/NameNormalization.cpp",
+      "line": 71,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/NameNormalization.cpp",
+      "line": 72,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/NameNormalization.cpp",
+      "line": 73,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/Registry.cpp",
+      "line": 166,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 500,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 504,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 513,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 549,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 553,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 572,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 575,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 591,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 595,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 613,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 617,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 813,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 817,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1234,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1238,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1247,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1263,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1267,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 1278,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 3047,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 3884,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp",
+      "line": 3888,
+      "message": "Using reference to dangling temporary.",
+      "rule": "danglingTempReference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/Strings.cpp",
+      "line": 149,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLITests/Strings.cpp",
+      "line": 244,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/AppInstallerCLITests/TestCommon.cpp",
+      "line": 19,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCLITests/TestCommon.cpp",
+      "line": 105,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG_RETURN is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/TestCommon.cpp",
+      "line": 220,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 151,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 151,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 152,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 152,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 191,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 191,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 192,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerCLITests/TestSource.h",
+      "line": 192,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCLITests/YamlManifest.cpp",
+      "line": 810,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 85,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 89,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 93,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 99,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 108,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 116,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 120,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 124,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 128,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCLITests/main.cpp",
+      "line": 144,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCommonCore/AppInstallerTelemetry.cpp",
+      "line": 225,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCommonCore/DODownloader.cpp",
+      "line": 296,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If IFACEMETHOD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCommonCore/Downloader.cpp",
+      "line": 37,
+      "message": "Out of bounds access in expression 'result[0]' because 'result' is empty.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-628",
+      "filename": "/workspace/src/AppInstallerCommonCore/Downloader.cpp",
+      "line": 254,
+      "message": "Either the condition 'bytesRead!=0' is redundant or dest.write() argument nr 2 can have invalid value. The value is 0 but the valid values are '1:'.",
+      "rule": "invalidFunctionArg",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCommonCore/FileCache.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 10s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/AppInstallerCommonCore/HttpStream/HttpClientWrapper.cpp",
+      "line": 88,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerCommonCore/MSStoreDownload.cpp",
+      "line": 293,
+      "message": "Redundant code: Found a statement that begins with bool constant.",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerCommonCore/MsixInfo.cpp",
+      "line": 609,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerCommonCore/NetworkSettings.cpp",
+      "line": 54,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCommonCore/Runtime.cpp",
+      "line": 63,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerCommonCore/Runtime.cpp",
+      "line": 135,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerCommonCore/UserSettings.cpp",
+      "line": 109,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerCommonCore/UserSettings.cpp",
+      "line": 113,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/IconExtraction.cpp",
+      "line": 112,
+      "message": "misc/LoadLibraryEx:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1059",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/InstallerMetadataCollectionContext.cpp",
+      "line": 453,
+      "message": "Possible null pointer dereference: toJsonFunction",
+      "rule": "nullPointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/ARPHelper.cpp",
+      "line": 170,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/ARPHelper.cpp",
+      "line": 175,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/ARPHelper.cpp",
+      "line": 198,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/ARPHelper.cpp",
+      "line": 204,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/ARPHelper.cpp",
+      "line": 213,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerRepositoryCore/Microsoft/Schema/1_3/Interface_1_3.cpp",
+      "line": 65,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerRepositoryCore/RepositorySource.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerRepositoryCore/SourceUpdateChecks.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 0min",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/AppInstallerLogging.cpp",
+      "line": 231,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerSharedLib/AppInstallerStrings.cpp",
+      "line": 250,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerSharedLib/AppInstallerStrings.cpp",
+      "line": 257,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerSharedLib/AppInstallerStrings.cpp",
+      "line": 270,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerSharedLib/AppInstallerStrings.cpp",
+      "line": 280,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/Certificates.cpp",
+      "line": 675,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerSharedLib/Certificates.cpp",
+      "line": 703,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/DateTime.cpp",
+      "line": 54,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Filesystem.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 0h",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/Filesystem.cpp",
+      "line": 322,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/ICU/SQLiteICU.c",
+      "line": 58,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 52,
+      "message": "Virtual function 'Assign' is called from constructor 'Version(const std::string&version,std::string_view splitChars=DefaultSplitChars)' at line 45. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 52,
+      "message": "Virtual function 'Assign' is called from constructor 'Version(std::string&&version,std::string_view splitChars=DefaultSplitChars)' at line 20. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 147,
+      "message": "Virtual function 'Assign' is called from constructor 'UInt64Version(const std::string&version,std::string_view splitChars=DefaultSplitChars)' at line 145. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 147,
+      "message": "Virtual function 'Assign' is called from constructor 'UInt64Version(std::string&&version,std::string_view splitChars=DefaultSplitChars)' at line 443. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 166,
+      "message": "Virtual function 'Assign' is called from constructor 'SemanticVersion(const std::string&version)' at line 164. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 166,
+      "message": "Virtual function 'Assign' is called from constructor 'SemanticVersion(std::string&&version)' at line 465. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 297,
+      "message": "Virtual function 'Assign' is called from constructor 'OpenTypeFontVersion(const std::string&version)' at line 295. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h",
+      "line": 297,
+      "message": "Virtual function 'Assign' is called from constructor 'OpenTypeFontVersion(std::string&&version)' at line 661. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/winget/Registry.h",
+      "line": 231,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/winget/Registry.h",
+      "line": 259,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/winget/Registry.h",
+      "line": 305,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/winget/Registry.h",
+      "line": 308,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppInstallerSharedLib/Public/winget/SQLiteDynamicStorage.h",
+      "line": 33,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Acquires_lock_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 65,
+      "message": "Out of bounds access in expression 'valueName[0]' because 'valueName' is empty.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 234,
+      "message": "Invalid iterator 'result' used.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 235,
+      "message": "Invalid iterator 'result' used.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 236,
+      "message": "Invalid iterator 'result' used.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 237,
+      "message": "Invalid iterator 'result' used.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 296,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 298,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 301,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 303,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 316,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 317,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 397,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 398,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 497,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 499,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 502,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 505,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 509,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 511,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 514,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 517,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 566,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 568,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 570,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 585,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 587,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/AppInstallerSharedLib/Registry.cpp",
+      "line": 588,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppInstallerSharedLib/SHA256.cpp",
+      "line": 200,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/SQLiteTempTable.cpp",
+      "line": 17,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-250",
+      "filename": "/workspace/src/AppInstallerSharedLib/Security.cpp",
+      "line": 54,
+      "message": "access/RpcImpersonateClient:If this call fails, the program could fail to drop heightened privileges (CWE-250).",
+      "rule": "FF1056",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/YamlWrapper.cpp",
+      "line": 346,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/YamlWrapper.cpp",
+      "line": 347,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AppInstallerSharedLib/YamlWrapper.cpp",
+      "line": 348,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppInstallerSharedLib/YamlWrapper.cpp",
+      "line": 399,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 210,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 215,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 220,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 224,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 227,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 229,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 234,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 239,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 244,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 249,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 254,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 258,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 261,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/src/ComInprocTestbed/Tests.cpp",
+      "line": 263,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Microsoft.Management.Configuration.OutOfProc/dllmain.cpp",
+      "line": 25,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Microsoft.Management.Configuration/ConfigurationProcessor.cpp",
+      "line": 104,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp",
+      "line": 142,
+      "message": "Iterator 'itr' used after element has been erased.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp",
+      "line": 164,
+      "message": "Iterator 'itr' used after element has been erased.",
+      "rule": "eraseDereference",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Microsoft.Management.Configuration/Telemetry/Telemetry.cpp",
+      "line": 14,
+      "message": "failed to expand 'AICLI_TraceLoggingWriteActivity', Invalid ## usage when expanding 'AICLI_TraceLoggingProcessingSummaryForIntent': Combining '\"Assert\"' and '\"Count\"' yields an invalid token.",
+      "rule": "preprocessorErrorDirective",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Microsoft.Management.Deployment.OutOfProc/dllmain.cpp",
+      "line": 25,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Microsoft.Management.Deployment/Public/CoCreatableMicrosoftManagementDeploymentClass.h",
+      "line": 27,
+      "message": "failed to expand 'CoCreatableMicrosoftManagementDeploymentClass', Invalid ## usage when expanding 'CoCreatableMicrosoftManagementDeploymentClass': Unexpected token '::'",
+      "rule": "preprocessorErrorDirective",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 135,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 136,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 141,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 146,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 152,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 158,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 160,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 161,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 166,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 170,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 171,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 176,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 182,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 186,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 187,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 192,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 198,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 204,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 210,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 212,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 213,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 219,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 221,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 222,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 227,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 232,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 238,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 242,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 243,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 244,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 245,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 246,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 247,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 248,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 252,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 253,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 254,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 255,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 256,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 257,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 258,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 259,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 260,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 261,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 262,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 263,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 267,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 271,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 272,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 273,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 274,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 275,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 276,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 277,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 278,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 279,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 280,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 282,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 283,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/PureLib/pure/pure.h",
+      "line": 284,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/WinGetServer/WinGetServerManualActivation_Client.cpp",
+      "line": 96,
+      "message": "Out of bounds access in expression 'commandLineInput[0]' because 'commandLineInput' is empty.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WinGetUtil/Exports.cpp",
+      "line": 74,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CATCH_RETURN is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/catalog.cpp",
+      "line": 157,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/catalog.cpp",
+      "line": 352,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 31,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 82,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 131,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 132,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 226,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 265,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 266,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 308,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 328,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp",
+      "line": 430,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.h",
+      "line": 65,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-248",
+      "filename": "/workspace/src/Xlang/UndockedRegFreeWinRT/src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.h",
+      "line": 98,
+      "message": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400).",
+      "rule": "FF1057",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 114,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 121,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 164,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 168,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 172,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 176,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 181,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 185,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-595",
+      "filename": "/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp",
+      "line": 189,
+      "message": "String literal compared with variable 'argv[i]'. Did you intend to use strcmp() instead?",
+      "rule": "literalWithCharPtrCompare",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/tools/IndexComparisonTool/main.cpp",
+      "line": 84,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/tools/IndexComparisonTool/main.cpp",
+      "line": 86,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/tools/IndexComparisonTool/main.cpp",
+      "line": 635,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/tools/IndexComparisonTool/main.cpp",
+      "line": 636,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/tools/SampleWinGetUWPCaller/AppInstallerCaller/MainPage.cpp",
+      "line": 99,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/AppInstallerCLITests/TestCommon.cpp",
+      "line": 26,
+      "message": "This arithmetic expression depends on an [uncontrolled value](1), potentially causing an overflow.",
+      "rule": "cpp/uncontrolled-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "tools/IndexComparisonTool/main.cpp",
+      "line": 162,
+      "message": "[a command-line argument](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-022",
+      "filename": "tools/IndexComparisonTool/main.cpp",
+      "line": 698,
+      "message": "This argument to a file access function is derived from [user input (a command-line argument)](1) and then passed to (unnamed namespace)::MeasureCompressed(file), which calls std::basic_ifstream<char, char_traits<char>>::basic_ifstream(__s).",
+      "rule": "cpp/path-injection",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-022",
+      "filename": "tools/IndexComparisonTool/main.cpp",
+      "line": 714,
+      "message": "This argument to a file access function is derived from [user input (a command-line argument)](1) and then passed to (unnamed namespace)::WriteJson(outFile), which calls std::basic_ofstream<char, char_traits<char>>::basic_ofstream(__s).",
+      "rule": "cpp/path-injection",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-022",
+      "filename": "tools/IndexComparisonTool/main.cpp",
+      "line": 725,
+      "message": "This argument to a file access function is derived from [user input (a command-line argument)](1) and then passed to (unnamed namespace)::CompareWithBaseline(baselineFile), which calls std::basic_ifstream<char, char_traits<char>>::basic_ifstream(__s).",
+      "rule": "cpp/path-injection",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 271,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 5,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 96,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 170,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/winget-cli/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

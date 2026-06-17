@@ -1,0 +1,39 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "cocos/editor-support/cocostudio/TriggerBase.cpp",
+        "line": 35,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "cocos/editor-support/cocostudio/TriggerBase.cpp",
+        "line": 35,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "cocos/editor-support/cocostudio/TriggerBase.cpp",
+        "line": 35,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

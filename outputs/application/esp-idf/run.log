@@ -1,0 +1,21 @@
+[application/esp-idf] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/esp-idf
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/esp-idf
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 13318 findings, exit 0, 35.89s
+[2/4] semgrep completed: 224 findings, exit 0, 80.84s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[3/4] codeql completed: 460 findings, exit 0, 389.81s
+[cppcheck] still running | elapsed 00:10:00 | timeout none
+[cppcheck] still running | elapsed 00:15:00 | timeout none
+[4/4] cppcheck completed: 846 findings, exit 0, 1067.40s
+
+Summary: 4 completed, 0 failed, 14848 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/esp-idf/report.json

@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;request&apos;." verbose="Access of moved variable &apos;request&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_authorizations.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_authorizations.cpp" line="163" column="14" info="Access of moved variable &apos;request&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_authorizations.cpp" line="163" column="4" info="Calling std::move(request)"/>
+            <symbol>request</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="175" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="181" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="471" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;inputs&apos;." verbose="Access of moved variable &apos;inputs&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="245" column="39" info="Access of moved variable &apos;inputs&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="245" column="29" info="Calling std::move(inputs)"/>
+            <symbol>inputs</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;inputs&apos;." verbose="Access of moved variable &apos;inputs&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="250" column="39" info="Access of moved variable &apos;inputs&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_chat_filters.cpp" line="250" column="29" info="Calling std::move(inputs)"/>
+            <symbol>inputs</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;users&apos;." verbose="Access of moved variable &apos;users&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_premium.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_premium.cpp" line="484" column="47" info="Access of moved variable &apos;users&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_premium.cpp" line="484" column="37" info="Calling std::move(users)"/>
+            <symbol>users</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;metrics&apos;." verbose="Access of moved variable &apos;metrics&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_read_metrics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_read_metrics.cpp" line="61" column="52" info="Access of moved variable &apos;metrics&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_read_metrics.cpp" line="61" column="42" info="Calling std::move(metrics)"/>
+            <symbol>metrics</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/api/api_updates.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_updates.cpp" line="759" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;tlUsernames&apos;." verbose="Access of moved variable &apos;tlUsernames&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_user_names.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="214" column="37" info="Access of moved variable &apos;tlUsernames&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="214" column="27" info="Calling std::move(tlUsernames)"/>
+            <symbol>tlUsernames</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;tlUsernames&apos;." verbose="Access of moved variable &apos;tlUsernames&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_user_names.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="220" column="37" info="Access of moved variable &apos;tlUsernames&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="220" column="27" info="Calling std::move(tlUsernames)"/>
+            <symbol>tlUsernames</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;tlUsernames&apos;." verbose="Access of moved variable &apos;tlUsernames&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_user_names.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="226" column="37" info="Access of moved variable &apos;tlUsernames&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_user_names.cpp" line="226" column="27" info="Calling std::move(tlUsernames)"/>
+            <symbol>tlUsernames</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;request&apos;." verbose="Access of moved variable &apos;request&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/api/api_websites.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_websites.cpp" line="80" column="14" info="Access of moved variable &apos;request&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/api/api_websites.cpp" line="80" column="4" info="Calling std::move(request)"/>
+            <symbol>request</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/api/api_who_reacted.cpp">
+            <location file="/workspace/Telegram/SourceFiles/api/api_who_reacted.cpp" line="646" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;!archived&apos; and inner condition is &apos;archived&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/apiwrap.cpp">
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="1705" column="10" info="opposite inner condition: archived"/>
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="1681" column="8" info="outer condition: !archived"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;done&apos;." verbose="Access of moved variable &apos;done&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/apiwrap.cpp">
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="366" column="20" info="Access of moved variable &apos;done&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="366" column="10" info="Calling std::move(done)"/>
+            <symbol>done</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;done&apos;." verbose="Access of moved variable &apos;done&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/apiwrap.cpp">
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="376" column="19" info="Access of moved variable &apos;done&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="376" column="9" info="Calling std::move(done)"/>
+            <symbol>done</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;requestData&apos;." verbose="Access of moved variable &apos;requestData&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/apiwrap.cpp">
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="3130" column="21" info="Access of moved variable &apos;requestData&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/apiwrap.cpp" line="3130" column="11" info="Calling std::move(requestData)"/>
+            <symbol>requestData</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;label&apos;." verbose="Access of moved variable &apos;label&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/auto_download_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/auto_download_box.cpp" line="215" column="14" info="Access of moved variable &apos;label&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/auto_download_box.cpp" line="215" column="4" info="Calling std::move(label)"/>
+            <symbol>label</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!weak&apos;, second condition is always false" verbose="Identical condition &apos;!weak&apos;, second condition is always false" cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp" line="1798" column="11" info="Testing identical condition &apos;!weak&apos;"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp" line="1779" column="9" info="If condition &apos;!weak&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!weak&apos;, second condition is always false" verbose="Identical condition &apos;!weak&apos;, second condition is always false" cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp" line="1815" column="11" info="Testing identical condition &apos;!weak&apos;"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/connection_box.cpp" line="1779" column="9" info="If condition &apos;!weak&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/dictionaries_manager.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/dictionaries_manager.cpp" line="144" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="334" column="15" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="334" column="5" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;descriptor&apos;." verbose="Access of moved variable &apos;descriptor&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="336" column="15" info="Access of moved variable &apos;descriptor&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="336" column="5" info="Calling std::move(descriptor)"/>
+            <symbol>descriptor</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;shown&apos;." verbose="Access of moved variable &apos;shown&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="337" column="24" info="Access of moved variable &apos;shown&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_box.cpp" line="337" column="14" info="Calling std::move(shown)"/>
+            <symbol>shown</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;mtpPeers&apos;." verbose="Access of moved variable &apos;mtpPeers&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp" line="1023" column="38" info="Access of moved variable &apos;mtpPeers&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp" line="1023" column="28" info="Calling std::move(mtpPeers)"/>
+            <symbol>mtpPeers</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;mtpPeers&apos;." verbose="Access of moved variable &apos;mtpPeers&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp" line="1058" column="38" info="Access of moved variable &apos;mtpPeers&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp" line="1058" column="28" info="Calling std::move(mtpPeers)"/>
+            <symbol>mtpPeers</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;amount&apos;." verbose="Access of moved variable &apos;amount&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/gift_premium_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/gift_premium_box.cpp" line="1708" column="17" info="Access of moved variable &apos;amount&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/gift_premium_box.cpp" line="1700" column="6" info="Calling std::move(amount)"/>
+            <symbol>amount</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/language_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/language_box.cpp" line="1485" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function MessagesCountValue() is not used." verbose="Return value of function MessagesCountValue() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp" line="786" column="4"/>
+            <symbol>MessagesCountValue</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function MessagesCountValue() is not used." verbose="Return value of function MessagesCountValue() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp" line="946" column="5"/>
+            <symbol>MessagesCountValue</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/moderate_messages_box.cpp" line="1383" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;weak&apos; and inner condition is &apos;weak&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="454" column="7" info="identical inner condition: weak"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="452" column="6" info="outer condition: weak"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;weak&apos; and inner condition is &apos;weak&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="457" column="8" info="identical inner condition: weak"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="452" column="6" info="outer condition: weak"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;weak&apos; and inner condition is &apos;weak&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="478" column="7" info="identical inner condition: weak"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/passcode_box.cpp" line="471" column="6" info="outer condition: weak"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/add_bot_to_chat_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/add_bot_to_chat_box.cpp" line="66" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;userpicPeers&apos;." verbose="Access of moved variable &apos;userpicPeers&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/add_participants_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/add_participants_box.cpp" line="181" column="26" info="Access of moved variable &apos;userpicPeers&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/add_participants_box.cpp" line="181" column="16" info="Calling std::move(userpicPeers)"/>
+            <symbol>userpicPeers</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_contact_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_contact_box.cpp" line="195" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;preparedLast&apos;." verbose="Access of moved variable &apos;preparedLast&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_contact_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_contact_box.cpp" line="335" column="28" info="Access of moved variable &apos;preparedLast&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_contact_box.cpp" line="333" column="4" info="Calling std::move(preparedLast)"/>
+            <symbol>preparedLast</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp" line="76" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp" line="165" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp" line="178" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_forum_topic_box.cpp" line="516" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_participants_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_participants_box.cpp" line="1371" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="316" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="322" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="326" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="757" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="766" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="904" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="1578" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;request&apos;." verbose="Access of moved variable &apos;request&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="567" column="14" info="Access of moved variable &apos;request&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_color_box.cpp" line="567" column="4" info="Calling std::move(request)"/>
+            <symbol>request</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="1784" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;checked&apos;." verbose="Access of moved variable &apos;checked&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="1355" column="34" info="Access of moved variable &apos;checked&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="1354" column="33" info="Calling std::move(checked)"/>
+            <symbol>checked</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;onDone&apos;." verbose="Access of moved variable &apos;onDone&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="2472" column="21" info="Access of moved variable &apos;onDone&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="2472" column="11" info="Calling std::move(onDone)"/>
+            <symbol>onDone</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;onDone&apos;." verbose="Access of moved variable &apos;onDone&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="2479" column="21" info="Access of moved variable &apos;onDone&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_info_box.cpp" line="2479" column="11" info="Calling std::move(onDone)"/>
+            <symbol>onDone</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function dataValue() is not used." verbose="Return value of function dataValue() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp" line="569" column="2"/>
+            <symbol>dataValue</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function dataValue() is not used." verbose="Return value of function dataValue() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp" line="867" column="2"/>
+            <symbol>dataValue</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_invite_link.cpp" line="1170" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_reactions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_reactions.cpp" line="439" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_reactions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_reactions.cpp" line="459" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_type_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/edit_peer_type_box.cpp" line="635" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/peer_short_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/peer_short_info_box.cpp" line="116" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;covered&lt;=0&apos;, second condition is always false" verbose="Identical condition &apos;covered&lt;=0&apos;, second condition is always false" cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/peers/peer_short_info_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/peer_short_info_box.cpp" line="241" column="14" info="Testing identical condition &apos;covered&lt;=0&apos;"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/peer_short_info_box.cpp" line="221" column="14" info="If condition &apos;covered&lt;=0&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/peers/replace_boost_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/replace_boost_box.cpp" line="766" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;from&apos;." verbose="Access of moved variable &apos;from&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/peers/replace_boost_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/replace_boost_box.cpp" line="614" column="15" info="Access of moved variable &apos;from&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/peers/replace_boost_box.cpp" line="610" column="5" info="Calling std::move(from)"/>
+            <symbol>from</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;return&apos; condition is always true." verbose="Identical inner &apos;return&apos; condition is always true (outer condition is &apos;!state-&gt;lottie||!state-&gt;effect&apos; and inner condition is &apos;!state-&gt;lottie||!state-&gt;effect&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="343" column="26" info="identical inner condition: !state-&gt;lottie||!state-&gt;effect"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="339" column="21" info="outer condition: !state-&gt;lottie||!state-&gt;effect"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;!state-&gt;stickersPreload&apos; and inner condition is &apos;state-&gt;stickersPreload&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="1040" column="14" info="opposite inner condition: state-&gt;stickersPreload"/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="1038" column="42" info="outer condition: !state-&gt;stickersPreload"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="1152" column="14" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/premium_preview_box.cpp" line="1152" column="4" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp" line="183" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp" line="252" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp" line="279" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/reactions_settings_box.cpp" line="384" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/self_destruction_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/self_destruction_box.cpp" line="116" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/send_files_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/send_files_box.cpp" line="1144" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/share_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/share_box.cpp" line="561" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_auction_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_auction_box.cpp" line="253" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp" line="685" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function GiftsPremium() is not used." verbose="Return value of function GiftsPremium() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp" line="2440" column="3"/>
+            <symbol>GiftsPremium</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp" line="3086" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_box.cpp" line="4769" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_cover_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_cover_box.cpp" line="454" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_cover_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_cover_box.cpp" line="516" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="160" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="452" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="1033" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="1303" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="1408" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_craft_box.cpp" line="1416" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Delegate::_nowPatternEmoji&apos; is not initialized in the constructor." verbose="Member variable &apos;Delegate::_nowPatternEmoji&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_preview_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_preview_box.cpp" line="711" column="11"/>
+            <symbol>Delegate::_nowPatternEmoji</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Delegate::_nextPatternEmoji&apos; is not initialized in the constructor." verbose="Member variable &apos;Delegate::_nextPatternEmoji&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Telegram/SourceFiles/boxes/star_gift_preview_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/star_gift_preview_box.cpp" line="711" column="11"/>
+            <symbol>Delegate::_nextPatternEmoji</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/stickers_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/stickers_box.cpp" line="356" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;price&apos;." verbose="Access of moved variable &apos;price&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/boxes/transfer_gift_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/transfer_gift_box.cpp" line="1090" column="16" info="Access of moved variable &apos;price&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/boxes/transfer_gift_box.cpp" line="1084" column="6" info="Calling std::move(price)"/>
+            <symbol>price</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/translate_box_content.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/translate_box_content.cpp" line="209" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/boxes/url_auth_box_content.cpp">
+            <location file="/workspace/Telegram/SourceFiles/boxes/url_auth_box_content.cpp" line="540" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;owned&apos;." verbose="Access of moved variable &apos;owned&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/calls/calls_call.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_call.cpp" line="819" column="26" info="Access of moved variable &apos;owned&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_call.cpp" line="818" column="20" info="Calling std::move(owned)"/>
+            <symbol>owned</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_emoji_fingerprint.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_emoji_fingerprint.cpp" line="523" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_emoji_fingerprint.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_emoji_fingerprint.cpp" line="773" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp" line="338" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp" line="507" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp" line="531" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_top_bar.cpp" line="597" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/calls_userpic.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/calls_userpic.cpp" line="65" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;inputs&apos;." verbose="Access of moved variable &apos;inputs&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp" line="838" column="33" info="Access of moved variable &apos;inputs&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp" line="838" column="23" info="Calling std::move(inputs)"/>
+            <symbol>inputs</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;sources&apos;." verbose="Access of moved variable &apos;sources&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp" line="3756" column="32" info="Access of moved variable &apos;sources&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_call.cpp" line="3756" column="22" info="Calling std::move(sources)"/>
+            <symbol>sources</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_common.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_common.cpp" line="243" column="15" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_common.cpp" line="243" column="5" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_invite_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_invite_controller.cpp" line="647" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_invite_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_invite_controller.cpp" line="790" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_members.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_members.cpp" line="1681" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_members.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_members.cpp" line="2019" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_menu.cpp" line="254" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_menu.cpp" line="347" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_messages_ui.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_messages_ui.cpp" line="501" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_panel.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_panel.cpp" line="645" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_group_viewport_tile.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_group_viewport_tile.cpp" line="259" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/calls_volume_item.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/calls_volume_item.cpp" line="168" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/ui/calls_group_recording_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/ui/calls_group_recording_box.cpp" line="243" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/ui/calls_group_scheduled_labels.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/ui/calls_group_scheduled_labels.cpp" line="100" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function _sources.back()-&gt;activations() is not used." verbose="Return value of function _sources.back()-&gt;activations() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/group/ui/desktop_capture_choose_source.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/group/ui/desktop_capture_choose_source.cpp" line="484" column="20"/>
+            <symbol>_sources.back()-&gt;activations</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/ui/calls_device_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/ui/calls_device_menu.cpp" line="117" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/calls/ui/calls_device_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/calls/ui/calls_device_menu.cpp" line="139" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: frame" verbose="Uninitialized variable: frame" cwe="457" file0="/workspace/Telegram/SourceFiles/chat_helpers/stickers_list_footer.cpp">
+            <location file="/workspace/Telegram/SourceFiles/chat_helpers/stickers_list_footer.cpp" line="1396" column="8"/>
+            <symbol>frame</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: frame" verbose="Uninitialized variable: frame" cwe="457" file0="/workspace/Telegram/SourceFiles/chat_helpers/stickers_list_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/chat_helpers/stickers_list_widget.cpp" line="2216" column="7"/>
+            <symbol>frame</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/chat_helpers/ttl_media_layer_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/chat_helpers/ttl_media_layer_widget.cpp" line="156" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;shortcut&apos;." verbose="Access of moved variable &apos;shortcut&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/core/shortcuts.cpp">
+            <location file="/workspace/Telegram/SourceFiles/core/shortcuts.cpp" line="701" column="7" info="Access of moved variable &apos;shortcut&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/core/shortcuts.cpp" line="694" column="32" info="Calling std::move(shortcut)"/>
+            <symbol>shortcut</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;initialGroups&apos;." verbose="Access of moved variable &apos;initialGroups&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp">
+            <location file="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp" line="390" column="21" info="Access of moved variable &apos;initialGroups&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp" line="388" column="35" info="Calling std::move(initialGroups)"/>
+            <symbol>initialGroups</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;initialGroups&apos;." verbose="Access of moved variable &apos;initialGroups&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp">
+            <location file="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp" line="394" column="18" info="Access of moved variable &apos;initialGroups&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp" line="393" column="48" info="Assuming container is not empty"/>
+            <location file="/workspace/Telegram/SourceFiles/countries/countries_instance.cpp" line="388" column="35" info="Calling std::move(initialGroups)"/>
+            <symbol>initialGroups</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;ids&apos;." verbose="Access of moved variable &apos;ids&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/components/factchecks.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/components/factchecks.cpp" line="95" column="32" info="Access of moved variable &apos;ids&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/components/factchecks.cpp" line="95" column="22" info="Calling std::move(ids)"/>
+            <symbol>ids</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;inputs&apos;." verbose="Access of moved variable &apos;inputs&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/components/recent_shared_media_gifts.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/components/recent_shared_media_gifts.cpp" line="133" column="47" info="Access of moved variable &apos;inputs&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/components/recent_shared_media_gifts.cpp" line="133" column="37" info="Calling std::move(inputs)"/>
+            <symbol>inputs</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: location" verbose="Uninitialized variable: location" cwe="457" file0="/workspace/Telegram/SourceFiles/data/data_document.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_document.cpp" line="1490" column="4"/>
+            <symbol>location</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;topic&apos;." verbose="Access of moved variable &apos;topic&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/data_forum.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_forum.cpp" line="578" column="14" info="Access of moved variable &apos;topic&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_forum.cpp" line="578" column="4" info="Calling std::move(topic)"/>
+            <symbol>topic</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;peers&apos;." verbose="Access of moved variable &apos;peers&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/data_histories.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="368" column="24" info="Access of moved variable &apos;peers&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="368" column="14" info="Calling std::move(peers)"/>
+            <symbol>peers</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;peers&apos;." verbose="Access of moved variable &apos;peers&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/data_histories.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="448" column="24" info="Access of moved variable &apos;peers&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="448" column="14" info="Calling std::move(peers)"/>
+            <symbol>peers</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;list&apos;." verbose="Access of moved variable &apos;list&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/data/data_histories.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="666" column="25" info="Access of moved variable &apos;list&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_histories.cpp" line="666" column="15" info="Calling std::move(list)"/>
+            <symbol>list</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: text" verbose="Uninitialized variable: text" cwe="457" file0="/workspace/Telegram/SourceFiles/data/data_media_types.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_media_types.cpp" line="1697" column="39"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;slice.skippedBefore!=0&apos; and inner condition is &apos;slice.skippedBefore&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/data/data_replies_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_replies_list.cpp" line="250" column="14" info="identical inner condition: slice.skippedBefore"/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_replies_list.cpp" line="249" column="28" info="outer condition: slice.skippedBefore!=0"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;slice.skippedBefore!=0&apos; and inner condition is &apos;slice.skippedBefore&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/data/data_saved_sublist.cpp">
+            <location file="/workspace/Telegram/SourceFiles/data/data_saved_sublist.cpp" line="868" column="14" info="identical inner condition: slice.skippedBefore"/>
+            <location file="/workspace/Telegram/SourceFiles/data/data_saved_sublist.cpp" line="867" column="28" info="outer condition: slice.skippedBefore!=0"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/dialogs_inner_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/dialogs_inner_widget.cpp" line="3786" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/dialogs_main_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/dialogs_main_list.cpp" line="28" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;image&apos;." verbose="Access of moved variable &apos;image&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/dialogs/dialogs_row.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/dialogs_row.cpp" line="156" column="13" info="Access of moved variable &apos;image&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/dialogs/dialogs_row.cpp" line="156" column="3" info="Calling std::move(image)"/>
+            <symbol>image</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/dialogs_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/dialogs_widget.cpp" line="1594" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: factory" verbose="Uninitialized variable: factory" cwe="457" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_message_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_message_view.cpp" line="260" column="7"/>
+            <symbol>factory</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_stories_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_stories_list.cpp" line="83" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp" line="137" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp" line="587" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;list&apos;." verbose="Access of moved variable &apos;list&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp" line="235" column="14" info="Access of moved variable &apos;list&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_top_bar_suggestion_content.cpp" line="235" column="4" info="Calling std::move(list)"/>
+            <symbol>list</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;topicTitle&apos;." verbose="Access of moved variable &apos;topicTitle&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp" line="94" column="17" info="Access of moved variable &apos;topicTitle&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp" line="92" column="7" info="Calling std::move(topicTitle)"/>
+            <symbol>topicTitle</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;topicTitle&apos;." verbose="Access of moved variable &apos;topicTitle&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp" line="167" column="17" info="Access of moved variable &apos;topicTitle&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/dialogs_topics_view.cpp" line="165" column="7" info="Calling std::move(topicTitle)"/>
+            <symbol>topicTitle</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/dialogs/ui/top_peers_strip.cpp">
+            <location file="/workspace/Telegram/SourceFiles/dialogs/ui/top_peers_strip.cpp" line="63" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/editor/controllers/stickers_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/editor/controllers/stickers_panel_controller.cpp" line="61" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/editor/controllers/stickers_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/editor/controllers/stickers_panel_controller.cpp" line="80" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/editor/controllers/undo_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/editor/controllers/undo_controller.cpp" line="20" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/editor/controllers/undo_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/editor/controllers/undo_controller.cpp" line="26" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;pressedEdge&apos; and inner condition is &apos;pressedEdge&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/editor/editor_crop.cpp">
+            <location file="/workspace/Telegram/SourceFiles/editor/editor_crop.cpp" line="496" column="14" info="identical inner condition: pressedEdge"/>
+            <location file="/workspace/Telegram/SourceFiles/editor/editor_crop.cpp" line="493" column="6" info="outer condition: pressedEdge"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/export/view/export_view_progress.cpp">
+            <location file="/workspace/Telegram/SourceFiles/export/view/export_view_progress.cpp" line="271" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: text" verbose="Uninitialized variable: text" cwe="457" file0="/workspace/Telegram/SourceFiles/history/admin_log/history_admin_log_item.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/admin_log/history_admin_log_item.cpp" line="1388" column="8"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/history_item.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/history_item.cpp" line="5095" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="567" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="1093" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="1098" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="1440" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="1511" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp" line="3131" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function list.controller-&gt;resetScrollRequests() is not used." verbose="Return value of function list.controller-&gt;resetScrollRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="254" column="19"/>
+            <symbol>list.controller-&gt;resetScrollRequests</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="281" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="839" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="847" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function _list.controller-&gt;showItemRequests() is not used." verbose="Return value of function _list.controller-&gt;showItemRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="1025" column="20"/>
+            <symbol>_list.controller-&gt;showItemRequests</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function _list.controller-&gt;searchMoreRequests() is not used." verbose="Return value of function _list.controller-&gt;searchMoreRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_compose_search.cpp" line="1034" column="20"/>
+            <symbol>_list.controller-&gt;searchMoreRequests</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_suggest_options.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_suggest_options.cpp" line="722" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/controls/history_view_voice_record_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/controls/history_view_voice_record_bar.cpp" line="100" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;name&apos;." verbose="Access of moved variable &apos;name&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1103" column="14" info="Access of moved variable &apos;name&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1095" column="4" info="Calling std::move(name)"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;cost&apos;." verbose="Access of moved variable &apos;cost&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1105" column="14" info="Access of moved variable &apos;cost&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1097" column="4" info="Calling std::move(cost)"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;name&apos;." verbose="Access of moved variable &apos;name&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1110" column="14" info="Access of moved variable &apos;name&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_about_view.cpp" line="1103" column="4" info="Calling std::move(name)"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/history_view_chat_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_chat_preview.cpp" line="365" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;button&apos;." verbose="Access of moved variable &apos;button&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/history/view/history_view_chat_section.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_chat_section.cpp" line="1685" column="5" info="Access of moved variable &apos;button&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_chat_section.cpp" line="1682" column="16" info="Calling std::move(button)"/>
+            <symbol>button</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/history_view_element.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_element.cpp" line="2068" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/history_view_element_overlay.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_element_overlay.cpp" line="48" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/history_view_paid_reaction_toast.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_paid_reaction_toast.cpp" line="125" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/history_view_schedule_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/history_view_schedule_box.cpp" line="158" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_button.cpp" line="847" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_list.cpp" line="246" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;repaint&apos;." verbose="Access of moved variable &apos;repaint&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_selector.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_selector.cpp" line="188" column="36" info="Access of moved variable &apos;repaint&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_selector.cpp" line="186" column="25" info="Calling std::move(repaint)"/>
+            <symbol>repaint</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_tabs.cpp">
+            <location file="/workspace/Telegram/SourceFiles/history/view/reactions/history_view_reactions_tabs.cpp" line="49" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function controller-&gt;addForBotRequests() is not used." verbose="Return value of function controller-&gt;addForBotRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/bot/starref/info_bot_starref_join_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/bot/starref/info_bot_starref_join_widget.cpp" line="1131" column="14"/>
+            <symbol>controller-&gt;addForBotRequests</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp" line="126" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp" line="230" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/create_giveaway_box.cpp" line="1545" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp" line="136" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp" line="147" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/boost_badge.cpp" line="164" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/giveaway_type_row.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/giveaway_type_row.cpp" line="73" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/giveaway_type_row.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/boosts/giveaway/giveaway_type_row.cpp" line="81" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/channel_statistics/earn/info_channel_earn_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/channel_statistics/earn/info_channel_earn_list.cpp" line="1501" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/downloads/info_downloads_inner_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/downloads/info_downloads_inner_widget.cpp" line="44" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/info_content_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/info_content_widget.cpp" line="414" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/info_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/info_top_bar.cpp" line="339" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function controller-&gt;scrollToRequests() is not used." verbose="Return value of function controller-&gt;scrollToRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/polls/info_polls_results_inner_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/polls/info_polls_results_inner_widget.cpp" line="786" column="15"/>
+            <symbol>controller-&gt;scrollToRequests</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_actions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_actions.cpp" line="815" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_badge.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_badge.cpp" line="51" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_text.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_text.cpp" line="51" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp" line="428" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp" line="488" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp" line="1440" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/saved/info_saved_music_provider.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/saved/info_saved_music_provider.cpp" line="172" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;cachedPreview&apos;." verbose="Access of moved variable &apos;cachedPreview&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/info/statistics/info_statistics_inner_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/statistics/info_statistics_inner_widget.cpp" line="830" column="15" info="Access of moved variable &apos;cachedPreview&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/info/statistics/info_statistics_inner_widget.cpp" line="826" column="5" info="Calling std::move(cachedPreview)"/>
+            <symbol>cachedPreview</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/stories/info_stories_provider.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/stories/info_stories_provider.cpp" line="187" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp" line="224" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp" line="564" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/info/userpic/info_userpic_emoji_builder_widget.cpp" line="569" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_confirm_prepared.cpp">
+            <location file="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_confirm_prepared.cpp" line="213" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;radial&apos; and inner condition is &apos;radial&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_layout_internal.cpp">
+            <location file="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_layout_internal.cpp" line="1782" column="7" info="identical inner condition: radial"/>
+            <location file="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_layout_internal.cpp" line="1779" column="6" info="outer condition: radial"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: frame" verbose="Uninitialized variable: frame" cwe="457" file0="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_layout_internal.cpp">
+            <location file="/workspace/Telegram/SourceFiles/inline_bots/inline_bot_layout_internal.cpp" line="540" column="5"/>
+            <symbol>frame</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/intro/intro_qr.cpp">
+            <location file="/workspace/Telegram/SourceFiles/intro/intro_qr.cpp" line="119" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/iv/iv_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/iv/iv_controller.cpp" line="407" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/iv/iv_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/iv/iv_controller.cpp" line="1057" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;keys&apos;." verbose="Access of moved variable &apos;keys&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/lang/lang_cloud_manager.cpp">
+            <location file="/workspace/Telegram/SourceFiles/lang/lang_cloud_manager.cpp" line="492" column="36" info="Access of moved variable &apos;keys&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/lang/lang_cloud_manager.cpp" line="492" column="26" info="Calling std::move(keys)"/>
+            <symbol>keys</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="The code contains unhandled character(s) (character code=209). Neither unicode nor extended ascii is supported." verbose="The code contains unhandled character(s) (character code=209). Neither unicode nor extended ascii is supported.">
+            <location file="/workspace/Telegram/SourceFiles/mainwidget.cpp" line="1580" column="18"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function Window::Theme::Background()-&gt;updates() is not used." verbose="Return value of function Window::Theme::Background()-&gt;updates() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/mainwindow.cpp">
+            <location file="/workspace/Telegram/SourceFiles/mainwindow.cpp" line="92" column="31"/>
+            <symbol>Window::Theme::Background()-&gt;updates</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/menu/menu_mute.cpp">
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_mute.cpp" line="380" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;link&apos;." verbose="Access of moved variable &apos;link&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp">
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp" line="180" column="16" info="Access of moved variable &apos;link&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp" line="199" column="6" info="Calling std::move(link)"/>
+            <symbol>link</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;link&apos;." verbose="Access of moved variable &apos;link&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp">
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp" line="199" column="16" info="Access of moved variable &apos;link&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_sponsored.cpp" line="199" column="6" info="Calling std::move(link)"/>
+            <symbol>link</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/menu/menu_timecode_action.cpp">
+            <location file="/workspace/Telegram/SourceFiles/menu/menu_timecode_action.cpp" line="52" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="742" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="748" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;preferredLanguage&apos;." verbose="Access of moved variable &apos;preferredLanguage&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1207" column="17" info="Access of moved variable &apos;preferredLanguage&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1192" column="7" info="Calling std::move(preferredLanguage)"/>
+            <symbol>preferredLanguage</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;scans&apos;." verbose="Access of moved variable &apos;scans&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1210" column="16" info="Access of moved variable &apos;scans&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1197" column="6" info="Calling std::move(scans)"/>
+            <symbol>scans</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;translations&apos;." verbose="Access of moved variable &apos;translations&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1211" column="16" info="Access of moved variable &apos;translations&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_controller.cpp" line="1198" column="6" info="Calling std::move(translations)"/>
+            <symbol>translations</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_contact.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_contact.cpp" line="169" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_contact.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_contact.cpp" line="176" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_document.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_document.cpp" line="445" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_document.cpp">
+            <location file="/workspace/Telegram/SourceFiles/passport/passport_panel_edit_document.cpp" line="486" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/payments/ui/payments_field.cpp">
+            <location file="/workspace/Telegram/SourceFiles/payments/ui/payments_field.cpp" line="376" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/payments/ui/payments_reaction_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/payments/ui/payments_reaction_box.cpp" line="846" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/payments/ui/payments_reaction_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/payments/ui/payments_reaction_box.cpp" line="981" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/platform/linux/tray_linux.cpp">
+            <location file="/workspace/Telegram/SourceFiles/platform/linux/tray_linux.cpp" line="370" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;currentImageBack&apos;." verbose="Access of moved variable &apos;currentImageBack&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/platform/linux/tray_linux.cpp">
+            <location file="/workspace/Telegram/SourceFiles/platform/linux/tray_linux.cpp" line="212" column="19" info="Access of moved variable &apos;currentImageBack&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/platform/linux/tray_linux.cpp" line="207" column="31" info="Calling std::move(currentImageBack)"/>
+            <symbol>currentImageBack</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/platform/win/tray_win.cpp">
+            <location file="/workspace/Telegram/SourceFiles/platform/win/tray_win.cpp" line="279" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;startLabel&apos;." verbose="Access of moved variable &apos;startLabel&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp" line="151" column="13" info="Access of moved variable &apos;startLabel&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp" line="151" column="3" info="Calling std::move(startLabel)"/>
+            <symbol>startLabel</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;endLabel&apos;." verbose="Access of moved variable &apos;endLabel&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp" line="174" column="13" info="Access of moved variable &apos;endLabel&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_away_message.cpp" line="174" column="3" info="Calling std::move(endLabel)"/>
+            <symbol>endLabel</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/business/settings_chat_intro.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_chat_intro.cpp" line="238" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/business/settings_chat_intro.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_chat_intro.cpp" line="377" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/business/settings_chatbots.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_chatbots.cpp" line="517" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/business/settings_chatbots.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_chatbots.cpp" line="828" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;timezoneLabel&apos;." verbose="Access of moved variable &apos;timezoneLabel&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/business/settings_working_hours.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_working_hours.cpp" line="684" column="13" info="Access of moved variable &apos;timezoneLabel&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/business/settings_working_hours.cpp" line="684" column="3" info="Calling std::move(timezoneLabel)"/>
+            <symbol>timezoneLabel</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/cloud_password/settings_cloud_password_common.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/cloud_password/settings_cloud_password_common.cpp" line="121" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/cloud_password/settings_cloud_password_common.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/cloud_password/settings_cloud_password_common.cpp" line="193" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp" line="26" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp" line="36" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/detailed_settings_button.cpp" line="50" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_active_sessions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_active_sessions.cpp" line="380" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_active_sessions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_active_sessions.cpp" line="1295" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_blocked_peers.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_blocked_peers.cpp" line="163" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_blocked_peers.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_blocked_peers.cpp" line="288" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_calls.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_calls.cpp" line="563" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="338" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="350" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="1696" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;widget-&gt;chatBackgroundLoading()&apos; and inner condition is &apos;widget-&gt;chatBackgroundLoading()&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="568" column="36" info="identical inner condition: widget-&gt;chatBackgroundLoading()"/>
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="566" column="35" info="outer condition: widget-&gt;chatBackgroundLoading()"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;label&apos;." verbose="Access of moved variable &apos;label&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="1973" column="14" info="Access of moved variable &apos;label&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_chat.cpp" line="1973" column="4" info="Calling std::move(label)"/>
+            <symbol>label</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_folders.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_folders.cpp" line="1232" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_global_ttl.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_global_ttl.cpp" line="530" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_information.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_information.cpp" line="1415" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_information.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_information.cpp" line="1522" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_local_passcode.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_local_passcode.cpp" line="659" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_local_passcode.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_local_passcode.cpp" line="150" column="49" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_local_passcode.cpp" line="150" column="39" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_main.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_main.cpp" line="725" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_reactions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_reactions.cpp" line="112" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_reactions.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_reactions.cpp" line="275" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_type.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_notifications_type.cpp" line="789" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_privacy_security.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_privacy_security.cpp" line="278" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_shortcuts.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_shortcuts.cpp" line="589" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/sections/settings_websites.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/sections/settings_websites.cpp" line="830" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_common.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_common.cpp" line="516" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="707" column="9"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="765" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="775" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="3265" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="3519" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;link&apos;." verbose="Access of moved variable &apos;link&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="1953" column="17" info="Access of moved variable &apos;link&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_credits_graphics.cpp" line="1949" column="7" info="Calling std::move(link)"/>
+            <symbol>link</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp" line="122" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp" line="127" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_experimental.cpp" line="172" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/settings/settings_scale_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/settings/settings_scale_preview.cpp" line="141" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/statistics/chart_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/statistics/chart_widget.cpp" line="1493" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function Core::App().settings().workModeValue() is not used." verbose="Return value of function Core::App().settings().workModeValue() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/tray.cpp">
+            <location file="/workspace/Telegram/SourceFiles/tray.cpp" line="31" column="25"/>
+            <symbol>Core::App().settings().workModeValue</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function Core::App().settings().trayIconMonochromeChanges() is not used." verbose="Return value of function Core::App().settings().trayIconMonochromeChanges() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/tray.cpp">
+            <location file="/workspace/Telegram/SourceFiles/tray.cpp" line="45" column="25"/>
+            <symbol>Core::App().settings().trayIconMonochromeChanges</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function Core::App().domain().accountsChanges() is not used." verbose="Return value of function Core::App().domain().accountsChanges() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/tray_accounts_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/tray_accounts_menu.cpp" line="35" column="23"/>
+            <symbol>Core::App().domain().accountsChanges</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/boxes/choose_font_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/boxes/choose_font_box.cpp" line="180" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/boxes/choose_font_box.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/boxes/choose_font_box.cpp" line="184" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;index&gt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;index&gt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786" file0="/workspace/Telegram/SourceFiles/ui/cached_round_corners.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/cached_round_corners.cpp" line="278" column="6" info="Negative array index"/>
+            <location file="/workspace/Telegram/SourceFiles/ui/cached_round_corners.cpp" line="275" column="19" info="index is assigned &apos;static_cast&lt;int&gt;(radius)&apos; here."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/cached_round_corners.cpp" line="275" column="37" info="Assignment to &apos;index=static_cast&lt;int&gt;(radius)&apos;"/>
+            <location file="/workspace/Telegram/SourceFiles/ui/cached_round_corners.cpp" line="276" column="15" info="Assuming that condition &apos;index&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_downloads.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_downloads.cpp" line="231" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp" line="1301" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp" line="2525" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!weak&apos;, second condition is always false" verbose="Identical condition &apos;!weak&apos;, second condition is always false" cwe="398" file0="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp" line="2891" column="8" info="Testing identical condition &apos;!weak&apos;"/>
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_bot_webview.cpp" line="2867" column="7" info="If condition &apos;!weak&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: frame" verbose="Uninitialized variable: frame" cwe="457" file0="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_single_media_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/attach/attach_single_media_preview.cpp" line="94" column="5"/>
+            <symbol>frame</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/choose_send_as.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/choose_send_as.cpp" line="292" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/choose_send_as.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/choose_send_as.cpp" line="334" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/choose_theme_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/choose_theme_controller.cpp" line="270" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/group_call_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/group_call_bar.cpp" line="144" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/message_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/message_bar.cpp" line="90" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/more_chats_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/more_chats_bar.cpp" line="63" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/pinned_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/pinned_bar.cpp" line="47" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/pinned_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/pinned_bar.cpp" line="87" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/chat/requests_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/chat/requests_bar.cpp" line="83" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/call_mute_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/call_mute_button.cpp" line="233" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/call_mute_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/call_mute_button.cpp" line="371" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/filter_link_header.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/filter_link_header.cpp" line="609" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/invite_link_buttons.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/invite_link_buttons.cpp" line="106" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/location_picker.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/location_picker.cpp" line="765" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/send_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/send_button.cpp" line="572" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp" line="257" column="15" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp" line="257" column="5" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;text&apos;." verbose="Access of moved variable &apos;text&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp" line="315" column="14" info="Access of moved variable &apos;text&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/stars_rating.cpp" line="315" column="4" info="Calling std::move(text)"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/swipe_handler.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/swipe_handler.cpp" line="102" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp" line="115" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function widget-&gt;chosen() is not used." verbose="Return value of function widget-&gt;chosen() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp" line="365" column="10"/>
+            <symbol>widget-&gt;chosen</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function widget-&gt;moveRequests() is not used." verbose="Return value of function widget-&gt;moveRequests() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/tabbed_search.cpp" line="376" column="10"/>
+            <symbol>widget-&gt;moveRequests</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;small&apos;." verbose="Access of moved variable &apos;small&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/ui/controls/userpic_button.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/userpic_button.cpp" line="1115" column="31" info="Access of moved variable &apos;small&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/userpic_button.cpp" line="1112" column="5" info="Calling std::move(small)"/>
+            <symbol>small</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/who_reacted_context_action.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/who_reacted_context_action.cpp" line="313" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/controls/who_reacted_context_action.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/controls/who_reacted_context_action.cpp" line="626" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;emoji&apos;." verbose="Access of moved variable &apos;emoji&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/ui/dynamic_thumbnails.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/dynamic_thumbnails.cpp" line="761" column="15" info="Access of moved variable &apos;emoji&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/dynamic_thumbnails.cpp" line="759" column="4" info="Calling std::move(emoji)"/>
+            <symbol>emoji</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/effects/premium_bubble.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/effects/premium_bubble.cpp" line="342" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/effects/premium_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/effects/premium_graphics.cpp" line="236" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/effects/premium_graphics.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/effects/premium_graphics.cpp" line="246" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/effects/premium_top_bar.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/effects/premium_top_bar.cpp" line="121" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/ui/peer/color_sample.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/peer/color_sample.cpp" line="329" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;name&apos;." verbose="Access of moved variable &apos;name&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/ui/widgets/expandable_peer_list.cpp">
+            <location file="/workspace/Telegram/SourceFiles/ui/widgets/expandable_peer_list.cpp" line="142" column="17" info="Access of moved variable &apos;name&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/ui/widgets/expandable_peer_list.cpp" line="132" column="6" info="Calling std::move(name)"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/section_widget.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/section_widget.cpp" line="226" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." verbose="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." cwe="562" file0="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="426" column="3"/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="424" column="11" info="Variable created here."/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="426" column="8" info="Address of variable taken here."/>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." verbose="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." cwe="562" file0="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="428" column="3"/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="424" column="11" info="Variable created here."/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="426" column="8" info="Address of variable taken here."/>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." verbose="Non-local variable &apos;_p&apos; will use pointer to local variable &apos;p&apos;." cwe="562" file0="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="429" column="3"/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="424" column="11" info="Variable created here."/>
+            <location file="/workspace/Telegram/SourceFiles/window/themes/window_theme_preview.cpp" line="426" column="8" info="Address of variable taken here."/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/window_chat_preview.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_chat_preview.cpp" line="60" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/window_chat_switch_process.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_chat_switch_process.cpp" line="365" column="8"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;prepared&apos;." verbose="Access of moved variable &apos;prepared&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/window/window_filters_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_filters_menu.cpp" line="299" column="30" info="Access of moved variable &apos;prepared&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/window/window_filters_menu.cpp" line="298" column="26" info="Calling std::move(prepared)"/>
+            <symbol>prepared</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/window_main_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_main_menu.cpp" line="605" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;!media-&gt;loaded()&apos; and inner condition is &apos;media-&gt;loaded()&apos;)." cwe="398" file0="/workspace/Telegram/SourceFiles/window/window_main_menu_helpers.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_main_menu_helpers.cpp" line="303" column="24" info="opposite inner condition: media-&gt;loaded()"/>
+            <location file="/workspace/Telegram/SourceFiles/window/window_main_menu_helpers.cpp" line="298" column="45" info="outer condition: !media-&gt;loaded()"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/window_peer_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_peer_menu.cpp" line="217" column="7"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::move() is not used." verbose="Return value of function std::move() is not used." cwe="252" file0="/workspace/Telegram/SourceFiles/window/window_peer_menu.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_peer_menu.cpp" line="3264" column="10"/>
+            <symbol>std::move</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;mtp&apos;." verbose="Access of moved variable &apos;mtp&apos;." cwe="672" file0="/workspace/Telegram/SourceFiles/window/window_session_controller.cpp">
+            <location file="/workspace/Telegram/SourceFiles/window/window_session_controller.cpp" line="1171" column="13" info="Access of moved variable &apos;mtp&apos;."/>
+            <location file="/workspace/Telegram/SourceFiles/window/window_session_controller.cpp" line="1171" column="3" info="Calling std::move(mtp)"/>
+            <symbol>mtp</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,3770 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/api/content_registry/settings.hpp",
+      "line": 320,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/api/content_registry/settings.hpp",
+      "line": 372,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/crypto.hpp",
+      "line": 18,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/default_paths.hpp",
+      "line": 24,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/http_requests_emscripten.hpp",
+      "line": 52,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/utils.hpp",
+      "line": 187,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/utils.hpp",
+      "line": 194,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/helpers/utils.hpp",
+      "line": 328,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/providers/cached_provider.hpp",
+      "line": 24,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/providers/memory_provider.hpp",
+      "line": 30,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/providers/provider.hpp",
+      "line": 171,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/include/hex/providers/provider.hpp",
+      "line": 234,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/ui/banner.hpp",
+      "line": 49,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/ui/popup.hpp",
+      "line": 77,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/include/hex/ui/toast.hpp",
+      "line": 54,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/api/imhex_api.cpp",
+      "line": 806,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/lib/libimhex/source/api/shortcut_manager.cpp",
+      "line": 235,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/lib/libimhex/source/api/tutorial_manager.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 15_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/source/api/tutorial_manager.cpp",
+      "line": 354,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/source/api/tutorial_manager.cpp",
+      "line": 381,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/data_processor/node.cpp",
+      "line": 123,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/data_processor/node.cpp",
+      "line": 141,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/lib/libimhex/source/helpers/crypto.cpp",
+      "line": 36,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/lib/libimhex/source/helpers/default_paths.cpp",
+      "line": 101,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/lib/libimhex/source/helpers/default_paths.cpp",
+      "line": 115,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/default_paths.cpp",
+      "line": 132,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/fs.cpp",
+      "line": 54,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/fs.cpp",
+      "line": 74,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/fs.cpp",
+      "line": 94,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/fs.cpp",
+      "line": 100,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/lib/libimhex/source/helpers/fs.cpp",
+      "line": 163,
+      "message": "Syntax Error: AST broken, binary operator '=' doesn't have two operands.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/http_requests.cpp",
+      "line": 14,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/lib/libimhex/source/helpers/http_requests.cpp",
+      "line": 48,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/lib/libimhex/source/helpers/http_requests_native.cpp",
+      "line": 134,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/source/helpers/patches.cpp",
+      "line": 27,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/patches.cpp",
+      "line": 101,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/lib/libimhex/source/helpers/tar.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 1_MiB",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/lib/libimhex/source/helpers/udp_server.cpp",
+      "line": 62,
+      "message": "input/recvfrom:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 48,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 61,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 119,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 299,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 301,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 312,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 322,
+      "message": "shell/popen:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 679,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 949,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 950,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 984,
+      "message": "buffer/wcsncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1009",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 985,
+      "message": "buffer/wcsncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1009",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 986,
+      "message": "buffer/wcsncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1009",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 1000,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 1001,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/lib/libimhex/source/helpers/utils.cpp",
+      "line": 1009,
+      "message": "Syntax Error: AST broken, 'if' doesn't have two operands.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/lib/libimhex/source/helpers/utils_linux.cpp",
+      "line": 20,
+      "message": "shell/execvp:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/source/providers/cached_provider.cpp",
+      "line": 14,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/lib/libimhex/source/providers/memory_provider.cpp",
+      "line": 7,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/memory_provider.cpp",
+      "line": 20,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/memory_provider.cpp",
+      "line": 27,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/provider.cpp",
+      "line": 30,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/provider.cpp",
+      "line": 31,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/provider.cpp",
+      "line": 32,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/provider.cpp",
+      "line": 63,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/lib/libimhex/source/providers/provider.cpp",
+      "line": 193,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/ui/imgui_imhex_extensions.cpp",
+      "line": 972,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/lib/libimhex/source/ui/imgui_imhex_extensions.cpp",
+      "line": 1062,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/ui/imgui_imhex_extensions.cpp",
+      "line": 1121,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/lib/libimhex/source/ui/imgui_imhex_extensions.cpp",
+      "line": 1139,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/main/gui/source/init/splash_window.cpp",
+      "line": 165,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/main/gui/source/init/splash_window.cpp",
+      "line": 195,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/main/gui/source/init/splash_window.cpp",
+      "line": 205,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/main/gui/source/init/splash_window.cpp",
+      "line": 206,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/main/gui/source/init/splash_window.cpp",
+      "line": 207,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/messaging/linux.cpp",
+      "line": 30,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/messaging/linux.cpp",
+      "line": 42,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/main/gui/source/messaging/linux.cpp",
+      "line": 48,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/messaging/linux.cpp",
+      "line": 71,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/messaging/linux.cpp",
+      "line": 73,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/main/gui/source/window/platform/linux.cpp",
+      "line": 152,
+      "message": "shell/popen:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 63,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-252",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 334,
+      "message": "Return value of function freopen() is not used.",
+      "rule": "ignoredReturnValue",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-771",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 334,
+      "message": "Return value of allocation function 'freopen' is not stored.",
+      "rule": "leakReturnValNotUsed",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-252",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 336,
+      "message": "Return value of function freopen() is not used.",
+      "rule": "ignoredReturnValue",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-771",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 336,
+      "message": "Return value of allocation function 'freopen' is not stored.",
+      "rule": "leakReturnValNotUsed",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 423,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/main/gui/source/window/platform/windows.cpp",
+      "line": 430,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 50_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 113,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 169,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 173,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 560,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 605,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/main/gui/source/window/window.cpp",
+      "line": 866,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/plugins/builtin/include/content/helpers/diagrams.hpp",
+      "line": 43,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/helpers/diagrams.hpp",
+      "line": 56,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/helpers/diagrams.hpp",
+      "line": 60,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/helpers/diagrams.hpp",
+      "line": 93,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/helpers/diagrams.hpp",
+      "line": 97,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/command_provider.hpp",
+      "line": 32,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/disk_provider.hpp",
+      "line": 33,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/file_provider.hpp",
+      "line": 47,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/file_provider.hpp",
+      "line": 69,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/gdb_provider.hpp",
+      "line": 38,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/intel_hex_provider.hpp",
+      "line": 42,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/memory_file_provider.hpp",
+      "line": 21,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/motorola_srec_provider.hpp",
+      "line": 12,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/null_provider.hpp",
+      "line": 32,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/process_memory_provider.hpp",
+      "line": 62,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/udp_provider.hpp",
+      "line": 33,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/providers/undo_operations/operation_write.hpp",
+      "line": 34,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/include/content/providers/undo_operations/operation_write.hpp",
+      "line": 34,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/include/content/providers/view_provider.hpp",
+      "line": 23,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/include/content/providers/view_provider.hpp",
+      "line": 29,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/plugins/builtin/include/content/views/view_store.hpp",
+      "line": 38,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/achievements.cpp",
+      "line": 283,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/achievements.cpp",
+      "line": 287,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/achievements.cpp",
+      "line": 308,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 229,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 231,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 233,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 235,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 237,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 239,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 246,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 263,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 266,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 289,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/command_line_interface.cpp",
+      "line": 292,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/command_palette_commands.cpp",
+      "line": 341,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/command_palette_commands.cpp",
+      "line": 344,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_formatters.cpp",
+      "line": 113,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/data_information_sections.cpp",
+      "line": 199,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 43,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 59,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 74,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 96,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 104,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 246,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 259,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 272,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 285,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 298,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 311,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 364,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 373,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 383,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 390,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 436,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 450,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 464,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 478,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 492,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 506,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 520,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 521,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 524,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 527,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 610,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 656,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 702,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 741,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 839,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 851,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_inspector.cpp",
+      "line": 863,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/decode_nodes.cpp",
+      "line": 30,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/decode_nodes.cpp",
+      "line": 31,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/decode_nodes.cpp",
+      "line": 46,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/decode_nodes.cpp",
+      "line": 57,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/decode_nodes.cpp",
+      "line": 101,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/other_nodes.cpp",
+      "line": 116,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/other_nodes.cpp",
+      "line": 133,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/other_nodes.cpp",
+      "line": 147,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/other_nodes.cpp",
+      "line": 164,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/data_processor_nodes/other_nodes.cpp",
+      "line": 438,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 46,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 70,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 84,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 97,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 107,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 118,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 134,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 186,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 206,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 213,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 269,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 407,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 416,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 424,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/events.cpp",
+      "line": 426,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/file_handlers.cpp",
+      "line": 28,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/global_actions.cpp",
+      "line": 17,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/global_actions.cpp",
+      "line": 28,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/global_actions.cpp",
+      "line": 47,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 29,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 45,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 50,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 100,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 118,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 121,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 126,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 127,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 128,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 129,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/init_tasks.cpp",
+      "line": 130,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 5_MiB",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 66,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 69,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 72,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 75,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 78,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 144,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 182,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 193,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 205,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 243,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 274,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 307,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 346,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 598,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 642,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 676,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/main_menu_items.cpp",
+      "line": 680,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/mcp_tools.cpp",
+      "line": 90,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/out_of_box_experience.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 35_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/out_of_box_experience.cpp",
+      "line": 462,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/pl_builtin_types.cpp",
+      "line": 137,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/pl_builtin_types.cpp",
+      "line": 148,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/pl_builtin_types.cpp",
+      "line": 159,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/pl_builtin_types.cpp",
+      "line": 169,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/pl_builtin_types.cpp",
+      "line": 180,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/popups/hex_editor/popup_hex_editor_fill.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 1_MiB",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/popups/hex_editor/popup_hex_editor_fill.cpp",
+      "line": 57,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/popups/hex_editor/popup_hex_editor_find.cpp",
+      "line": 285,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/project.cpp",
+      "line": 26,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/project.cpp",
+      "line": 36,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/project.cpp",
+      "line": 45,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/project.cpp",
+      "line": 56,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers.cpp",
+      "line": 77,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers.cpp",
+      "line": 114,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers.cpp",
+      "line": 122,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/providers/base64_provider.cpp",
+      "line": 15,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/base64_provider.cpp",
+      "line": 20,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/providers/base64_provider.cpp",
+      "line": 30,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/base64_provider.cpp",
+      "line": 35,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/providers/base64_provider.cpp",
+      "line": 37,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 165,
+      "message": "shell/execl:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 181,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 208,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 211,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 245,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/command_provider.cpp",
+      "line": 246,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 160,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 209,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 212,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 269,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 286,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 290,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 316,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/disk_provider.cpp",
+      "line": 344,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 64,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 74,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 236,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 237,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 250,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 255,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 264,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 281,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/file_provider.cpp",
+      "line": 423,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 46,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 174,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 175,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 220,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 257,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 258,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/gdb_provider.cpp",
+      "line": 261,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/intel_hex_provider.cpp",
+      "line": 248,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/memory_file_provider.cpp",
+      "line": 19,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/memory_file_provider.cpp",
+      "line": 32,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/memory_file_provider.cpp",
+      "line": 39,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/memory_file_provider.cpp",
+      "line": 113,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/motorola_srec_provider.cpp",
+      "line": 172,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 95,
+      "message": "Either the condition 'result.empty()' is redundant or expression 'result[0]' cause access out of bounds.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 106,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 158,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 232,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 241,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 456,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 465,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 493,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/process_memory_provider.cpp",
+      "line": 530,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/udp_provider.cpp",
+      "line": 10,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/udp_provider.cpp",
+      "line": 64,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/view_provider.cpp",
+      "line": 51,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/providers/view_provider.cpp",
+      "line": 87,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/providers/view_provider.cpp",
+      "line": 197,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/recent.cpp",
+      "line": 59,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/recent.cpp",
+      "line": 120,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/recent.cpp",
+      "line": 150,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/recent.cpp",
+      "line": 277,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/recent.cpp",
+      "line": 383,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 300_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 931,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 1047,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 1052,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 1061,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/settings_entries.cpp",
+      "line": 1066,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/tools/euclidean_alg.cpp",
+      "line": 17,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_combiner.cpp",
+      "line": 117,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_combiner.cpp",
+      "line": 128,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_combiner.cpp",
+      "line": 144,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_shredder.cpp",
+      "line": 58,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_shredder.cpp",
+      "line": 132,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_splitter.cpp",
+      "line": 105,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_splitter.cpp",
+      "line": 110,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_splitter.cpp",
+      "line": 126,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/tools/file_tool_splitter.cpp",
+      "line": 139,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/tools/ieee_decoder.cpp",
+      "line": 102,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/tools/wiki_explainer.cpp",
+      "line": 19,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 400_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 61,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 113,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 318,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 597,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/ui_items.cpp",
+      "line": 611,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views.cpp",
+      "line": 55,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/fullscreen/view_fullscreen_file_info.cpp",
+      "line": 19,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/views/fullscreen/view_fullscreen_save_editor.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 200_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/fullscreen/view_fullscreen_save_editor.cpp",
+      "line": 71,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/fullscreen/view_fullscreen_save_editor.cpp",
+      "line": 77,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/fullscreen/view_fullscreen_save_editor.cpp",
+      "line": 112,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/views/view_about.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 450_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_about.cpp",
+      "line": 133,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_about.cpp",
+      "line": 474,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_bookmarks.cpp",
+      "line": 309,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/views/view_data_processor.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 200_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_data_processor.cpp",
+      "line": 863,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_data_processor.cpp",
+      "line": 873,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_data_processor.cpp",
+      "line": 1293,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_find.cpp",
+      "line": 130,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_find.cpp",
+      "line": 198,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_find.cpp",
+      "line": 366,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_find.cpp",
+      "line": 376,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_find.cpp",
+      "line": 602,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 7_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 218,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 257,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 295,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 359,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 773,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 848,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_hex_editor.cpp",
+      "line": 888,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_information.cpp",
+      "line": 87,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_data.cpp",
+      "line": 171,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_data.cpp",
+      "line": 248,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_editor.cpp",
+      "line": 1461,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_editor.cpp",
+      "line": 1539,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_editor.cpp",
+      "line": 2788,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_pattern_editor.cpp",
+      "line": 2820,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_provider_settings.cpp",
+      "line": 58,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_provider_settings.cpp",
+      "line": 60,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_settings.cpp",
+      "line": 165,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_store.cpp",
+      "line": 62,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_store.cpp",
+      "line": 82,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_store.cpp",
+      "line": 85,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_store.cpp",
+      "line": 302,
+      "message": "buffer/mismatch:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/views/view_store.cpp",
+      "line": 316,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 72,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 132,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 683,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 749,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 773,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 791,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 818,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 820,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 821,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 824,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 826,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 837,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 843,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 862,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/welcome_screen.cpp",
+      "line": 863,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/builtin/source/content/window_decoration.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 20_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/window_decoration.cpp",
+      "line": 155,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/content/window_decoration.cpp",
+      "line": 161,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/content/workspaces.cpp",
+      "line": 12,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/builtin/source/plugin_builtin.cpp",
+      "line": 54,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/builtin/source/plugin_builtin.cpp",
+      "line": 58,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/decompress/source/content/pl_functions.cpp",
+      "line": 260,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/diffing/source/content/views/view_diff.cpp",
+      "line": 501,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/diffing/source/content/views/view_diff.cpp",
+      "line": 539,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/disassembler/source/content/views/view_disassembler.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 1_MiB",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/disassembler/source/content/views/view_disassembler.cpp",
+      "line": 127,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/fonts/source/font_loader.cpp",
+      "line": 52,
+      "message": "buffer/strncat:Easily used incorrectly (e.g., incorrectly computing the correct maximum size to add) [MS-banned] (CWE-120).",
+      "rule": "FF1010",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/fonts/source/font_loader.cpp",
+      "line": 54,
+      "message": "buffer/strncat:Easily used incorrectly (e.g., incorrectly computing the correct maximum size to add) [MS-banned] (CWE-120).",
+      "rule": "FF1010",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/fonts/source/font_loader.cpp",
+      "line": 56,
+      "message": "buffer/strncat:Easily used incorrectly (e.g., incorrectly computing the correct maximum size to add) [MS-banned] (CWE-120).",
+      "rule": "FF1010",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 49,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 65,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 81,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 97,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 113,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 129,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 499,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/hashes/source/content/hashes.cpp",
+      "line": 508,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/views/view_hashes.cpp",
+      "line": 44,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/views/view_hashes.cpp",
+      "line": 112,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/hashes/source/content/views/view_hashes.cpp",
+      "line": 249,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/hashes/source/content/views/view_hashes.cpp",
+      "line": 266,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/include/content/helpers/sftp_client.hpp",
+      "line": 80,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/include/content/helpers/sftp_client.hpp",
+      "line": 138,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/include/content/helpers/sftp_client.hpp",
+      "line": 163,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/remote/include/content/providers/ssh_provider.hpp",
+      "line": 18,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/source/content/helpers/sftp_client.cpp",
+      "line": 260,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/source/content/helpers/sftp_client.cpp",
+      "line": 331,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/remote/source/content/helpers/sftp_client.cpp",
+      "line": 340,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/remote/source/content/providers/ssh_provider.cpp",
+      "line": 14,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/remote/source/content/providers/ssh_provider.cpp",
+      "line": 15,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/remote/source/content/providers/ssh_provider.cpp",
+      "line": 121,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/source/loaders/dotnet/dotnet_loader.cpp",
+      "line": 276,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/source/loaders/dotnet/dotnet_loader.cpp",
+      "line": 284,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/mem.cpp",
+      "line": 63,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 122,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 126,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 133,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 138,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 151,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 154,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/script_loader/support/c/source/script_api/v1/ui.cpp",
+      "line": 157,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/include/ui/text_editor.hpp",
+      "line": 283,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/ui/source/ui/hex_editor.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/ui/source/ui/hex_editor.cpp",
+      "line": 380,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/ui/source/ui/hex_editor.cpp",
+      "line": 386,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/markdown.cpp",
+      "line": 48,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/markdown.cpp",
+      "line": 49,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/markdown.cpp",
+      "line": 60,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/plugins/ui/source/ui/markdown.cpp",
+      "line": 228,
+      "message": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327).",
+      "rule": "FF1049",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 402,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 697,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 814,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 893,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 938,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 1043,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/pattern_drawer.cpp",
+      "line": 1405,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/text_editor/editor.cpp",
+      "line": 851,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/plugins/ui/source/ui/text_editor/navigate.cpp",
+      "line": 820,
+      "message": "Either the condition 'line.empty()' is redundant or expression 'line[charIndex]' cause access out of bounds.",
+      "rule": "containerOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/text_editor/support.cpp",
+      "line": 1198,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/ui/source/ui/text_editor/support.cpp",
+      "line": 1215,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/ui/source/ui/widgets.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 150_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/visualizers/include/content/visualizer_helpers.hpp",
+      "line": 15,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/visualizers/source/content/pl_visualizers/digital_signal.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 600_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/visualizers/source/content/pl_visualizers/image.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 200_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/plugins/visualizers/source/content/pl_visualizers/sound.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 300_scaled",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 35,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 38,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 39,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 50,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 54,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/content/ui_items.cpp",
+      "line": 55,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/plugin_windows.cpp",
+      "line": 29,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/plugins/windows/source/plugin_windows.cpp",
+      "line": 46,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/windows/source/views/view_tty_console.cpp",
+      "line": 120,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/windows/source/views/view_tty_console.cpp",
+      "line": 333,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/yara_rules/source/content/views/view_yara.cpp",
+      "line": 27,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/yara_rules/source/content/views/view_yara.cpp",
+      "line": 193,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/plugins/yara_rules/source/content/views/view_yara.cpp",
+      "line": 228,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "plugins/builtin/source/content/recent.cpp",
+      "line": 77,
+      "message": "Call to 'localtime' is potentially dangerous.",
+      "rule": "cpp/potentially-dangerous-function",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 465,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 1,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 29,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 435,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ImHex/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

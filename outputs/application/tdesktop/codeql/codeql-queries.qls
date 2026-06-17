@@ -1,0 +1,11 @@
+- queries: "Security/CWE"
+  from: "codeql/cpp-queries"
+- include:
+    kind:
+    - problem
+    - path-problem
+- exclude:
+    id: "cpp/sign-conversion-pointer-arithmetic"
+- exclude:
+    id: "cpp/data-decompression-bomb"
+

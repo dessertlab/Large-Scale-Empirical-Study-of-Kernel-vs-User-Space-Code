@@ -1,0 +1,5074 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1071",
+              "name": "buffer/equal",
+              "shortDescription": {
+                "text": "Function does not check the second iterator for over-read conditions (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/fopen",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1017",
+              "name": "format/fprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1007",
+              "name": "buffer/StrCat",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1057",
+              "name": "misc/InitializeCriticalSection",
+              "shortDescription": {
+                "text": "Exceptions can be thrown in low-memory situations (CWE-248, CWE-400)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/248.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-248",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-400",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 15,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "  return std::equal(suffix.rbegin(), suffix.rend(), s.rbegin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a6e71e3156ffc33c9b94f298e7cdb8fd772839bb26b4521b717cf424986425d9"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 17,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  FILE* input = fopen(path.c_str(), \"r\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8b00ca76efc1aef34dc5b5be08ab8be1c0bd2ee6b76225784d30684a0d61d0a8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 249,
+                  "startColumn": 3,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  fprintf(output, \"%s\", literal.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "466103e1cacd3f4676e7e762f093fd83587af5704290bf5415b27e0dfe3b653c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 272,
+                  "startColumn": 3,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  fprintf(output, \"%s\", kLicense);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "55389f464f0a25cee3a49a5e66213537c9848e2a1a74a8820002a53104ba8fc2"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 3,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "  fprintf(output, \"namespace %s {\\n\", kI18NNS);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8ba8f0d33c74f3174346d471ba6be3cede4b5788226277301e0a5702691cc18a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 3,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "  fprintf(output, \"namespace %s {\\n\", kPhoneNumbersNS);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f5c8911cbf9965069bc1dd4e7efd20765e83c23dbcdefa65bbbda64402d81463"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 3,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "  fprintf(output, \"}  // namespace %s\\n\", kPhoneNumbersNS);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e48b8a23e3699ecf7fcdc45a105419a2bed41ec2746c8d652bc4cbc35695955c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 285,
+                  "startColumn": 3,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "  fprintf(output, \"}  // namespace %s\\n\", kI18NNS);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7cb4497badcef536b2a04739f88abd8e74a766cbe1806792c6ae5b5eae469ca7"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 3,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "  fprintf(output, \"#include \\\"phonenumbers/geocoding/%s.h\\\"\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0a3a8e24429f2dd65d3b3cce8669254a65494c64bee848610abb6bcfa4a892c0"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  fprintf(output, \"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd2594aebe568970d7fce535b55856116af62aa72e6250c409314b6af669653f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "  fprintf(output, \"#include <cstdint>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2e31ea6c9dd37a9f75613d26ef9602d319b92c486d6363195eda66fd12ac5b52"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  fprintf(output, \"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd2594aebe568970d7fce535b55856116af62aa72e6250c409314b6af669653f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 3,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "  fprintf(output, \"  %s,\\n\", name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2568c1143f0f7bcb517756a16d0b6d8c8c8ab5ad5973e637440a00b920de777f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 3,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "  fprintf(output, \"  sizeof(%s)/sizeof(*%s),\\n\", name.c_str(), name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a50855465e9f9efc90f4c79918e76a89c5163a98069c18b0e7645e4adc0fe7b3"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 316,
+                  "startColumn": 3,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "  fprintf(output, \"const PrefixDescriptions %s = {\\n\", name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e842bdc0c169747a04fef2c44387afc4190eb5805939dfd6f63dbb0f5e972efa"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 3,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "  fprintf(output, \"  %s,\\n\", desc_name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "249130cd5d7f14a3d2e9c68e029906e6fbd519bb346b9a300d11287646c8999d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 320,
+                  "startColumn": 3,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  fprintf(output, \"};\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1884979fd28339f670854f4a114437e721f6da21935a3b2a36536b6b0bf712c0"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 350,
+                  "startColumn": 3,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "  fprintf(output, \"const int32_t %s[] = {\\n\", prefixes_name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "768dd304aa54946368e5c1863f8ea681eaae7e64482570cc3c0c623dd31c3a94"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 353,
+                  "startColumn": 5,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  %d,\\n\", it->first);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5ab4b0c7fdcd44e9dddf5ef43386bf6c39bf7f33d3909af77f750ae9fc62e7c9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 356,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 361,
+                  "startColumn": 3,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "  fprintf(output, \"const char* %s[] = {\\n\", desc_name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ab4a2b5540beeb97d9df20fd80d6327d04a6ce0ad6a37dcd84df49a0860e8cfa"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 5,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  \");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "875d0106fdb04fc658baac72e0a726a1f1537917d63342b51afe73afb82d11cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 366,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    fprintf(output, \",\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c2dddf6f139481eb0daeb315559f40f7b154059a6bc07e4cd00602518924026d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 368,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 373,
+                  "startColumn": 3,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "  fprintf(output, \"const int32_t %s[] = {\\n \", possible_lengths_name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "509951081e381f0b19d2b6dd9b35ce56df7a10a9adfb9f386d118e1e912a0221"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 376,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    fprintf(output, \" %d,\", *it);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4b1156b11388d39813f7e7a4cec464d2b7e19682a6805cac3de374a37dbc1e70"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 378,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 385,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  fprintf(output, \"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd2594aebe568970d7fce535b55856116af62aa72e6250c409314b6af669653f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 404,
+                  "startColumn": 3,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  fprintf(output, \"const char* prefix_language_code_pairs[] = {\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7ee1cc9fef035fc47aa197a8728a2d79c9f80bc147ea35a2dfde540ec1a2b0cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 407,
+                  "startColumn": 5,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  \\\"%s\\\",\\n\", it->first.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "50d4033efa5f89a5f98e1fa6cfbf75866872b9dc8e4b4ed64d8b45dc6687be45"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 409,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 415,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  &%s,\\n\", it->second.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "492499cd52ec1c0dd86d6bfe263cc5007ac14c03b0e735b6283b0a314b57db1d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 460,
+                  "startColumn": 5,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "    fprintf(output, \"const char* %s[] = {\\n\", country_var.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c3c8467edb10fbb18dd8e02078bf9652c7a67cd31dda2fd24b1db0b7ee569a2d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 463,
+                  "startColumn": 7,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "      fprintf(output, \"  \\\"%s\\\",\\n\", it_lang->c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "daafd2f5a72295e1088f4fd706c60e8bde604a05116b1f40dbca51031c94bd5f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 465,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 470,
+                  "startColumn": 5,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    fprintf(output, \"const CountryLanguages %s = {\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "850054ac6c52e997668eb482e0a76e88037a9b8f1ce19e84a2f1d7ade3231633"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 473,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 480,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 486,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  &%s,\\n\", it_languages_var->c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d88950a622e4b1a47fb7bfa481cb5b7866a9c33d926956f6f59d0fbfb7fe6c95"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 488,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 494,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    fprintf(output, \"  %s,\\n\", it_country->c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a97886f8320374137d92a1dbcb30a503b77a4145ab04125a33a3fdd689d695bb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 496,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 555,
+                  "startColumn": 3,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  fprintf(output, \"%s\", defs.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "624bb24cd99627180523d3fb12069c2a85b579b3b39cd38c1122e50debeda972"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 566,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  fprintf(output,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24384a5eec0a7ffe373c923a03998f3afddf0024acae12c345a2103be17238cb"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 575,
+                  "startColumn": 5,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"failed to read directory entries\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0b49a144f89217dac4b8bf2505f9deac2dfa4184db20782afe24e5da8cb56dc"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 587,
+                  "startColumn": 7,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "      fprintf(stderr, \"failed to read file entries\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3b2d1c0ea7b2aab1c80957fbeeae60fc6c59f71377b7777da4921f04e507d902"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 618,
+                  "startColumn": 3,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "  fprintf(output, \"}  // namespace\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ca22cf2ed02c81b689d00f3cbdeb91522d8917ee555e0b3f46e54ed750e8d69c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 619,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  fprintf(output, \"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd2594aebe568970d7fce535b55856116af62aa72e6250c409314b6af669653f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 626,
+                  "startColumn": 3,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "  fprintf(stderr, \"error: %s\\n\", message.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "48bab75f4664a0c171e677ef8368de8819feb3efd5621bfd89498e269336cc87"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 627,
+                  "startColumn": 3,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "  fprintf(stderr, \"generate_geocoding_data DATADIR CCPATH\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f98364ab08674723c1c8d5b3acd3bc6840e63b94a6c3c3c0bb2b48013fe35b0"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 651,
+                  "startColumn": 21,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "  FILE* source_fp = fopen(source_path.c_str(), \"w\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "75b3aafe61803684353d9308127f1ddf9ae8fec43491640fbf663a28407301b8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 653,
+                  "startColumn": 5,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"failed to open %s\\n\", source_path.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "826f68694efecbf118e8c6ad47ed0bd849bf790e29a13558bc0ba57350bcccee"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 35,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "      formatted_number->insert(0, StrCat(kPlusSign, country_calling_code));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "046cd180445a33b38d07bff682eecce16736a8b3c7dddf17c2cb17d2f99387f8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 35,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "      formatted_number->insert(0, StrCat(kPlusSign, country_calling_code, \" \"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da8c16d3d9a5470192381b4c824de6611c3bbfe12cbd241e8e9df0463068aeeb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 35,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "      formatted_number->insert(0, StrCat(kRfc3966Prefix, kPlusSign,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "33dc97b169b3fd6aebbad8d4f25adf438173c0a7e29e5fcc764f2971b2bb6333"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 10,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "  return StrCat(\"([\", kDigits, \"]{1,\", max_length, \"})\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24af1edc909f7a916fa99cbde1e10e2e2ee240aedae4ae564de591f1f7cf17d4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 250,
+                  "startColumn": 21,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  string rfc_extn = StrCat(kRfc3966ExtnPrefix,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6e5808bcbf342d6d61835dc432bb51e430a06a404dffa75038d3df0aa5a38911"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 26,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "  string explicit_extn = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0a561171b643cb2e2ea286c83e46196521ecf17df06f3c0a9532807a2b524e73"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 27,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "  string ambiguous_extn = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2916c5eaf7c8ea167c17d906f04f8eb9c73291bf6ebdc8762af6aa91f1631698"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 44,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "  string american_style_extn_with_suffix = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "411f7e00d36df33b387f3d71291e61bcc90f432753075b7bb5a9e609fc4d123d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 30,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "  string extension_pattern = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "42034a4199b3d4962e587c3de6e92c536a1513d75062129b2e71b086225b52c0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 33,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    string auto_dialling_extn = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9661ef4cdd7b7152784462e58cbed6f271de2b95cb6ed3b22378b29d816f2638"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 296,
+                  "startColumn": 31,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    string only_commas_extn = StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c59c156b53253ee2a23708a57de368092252fcac2555991eed557a2be2d78fd9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 306,
+                  "startColumn": 12,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    return StrCat(extension_pattern, \"|\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8fa41bda98873783520432f82eaad8f7349fdf54f1f6b5730f59ae7830cd909"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 336,
+                  "startColumn": 3,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "  char unicode_char[5];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d40cc7ecb1c51d17e33f525e59da141b23ef8b6cc7d82abecfb5cea85dbb64b7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 783,
+                  "startColumn": 13,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "            StrCat(kDigits, \"{\", PhoneNumberUtil::kMinLengthForNsn, \"}|[\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e8eafe4a4b395fde34edf6ad7a132669b6c13ea56adde48dc7acae308660eb6a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 790,
+                  "startColumn": 13,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "            StrCat(\"(\", kDigits, \"|\", kRfc3966VisualSeparator, \")\")),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "32b297199c9a3c34a0343410da2b4c0c38514464fa325bfd549b740aefbdf783"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 791,
+                  "startColumn": 19,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "        alphanum_(StrCat(kValidAlphaInclUppercase, kDigits)),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d99175b3bad16a9c21368a0bddda94ebac3e1297fb1e52758f886033727c6f60"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 793,
+                  "startColumn": 13,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            StrCat(\"[\", alphanum_, \"]+((\\\\-)*[\", alphanum_, \"])*\")),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "740139a3bed8672e71bd741506d04770f2ccc118a10cc8cfe8b2d51bfff8c150"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 794,
+                  "startColumn": 27,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "        rfc3966_toplabel_(StrCat(\"[\", kValidAlphaInclUppercase,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4f290c688aa2c2eed007a57bdcebae15db732f454c35b62b2897b247c8a21e64"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 810,
+                  "startColumn": 43,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "            regexp_factory_->CreateRegExp(StrCat(\"[\", kDigits, \"]*\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40f99477b1fee391c4f523a25217bee1cbe8ddc132326746865268f198588754"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 812,
+                  "startColumn": 43,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            regexp_factory_->CreateRegExp(StrCat(\"([\", kDigits, \"])\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8510c942ba65be547b1abe8faba5d5762e8d757b995c30facccb9728a158e764"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 816,
+                  "startColumn": 13,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "            StrCat(\"[\", PhoneNumberUtil::kPlusChars, kDigits, \"]\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "47e55347b379eb70f0d8080060c9e98c3e265aa47b471804d2f9109060ae448b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 823,
+                  "startColumn": 13,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            StrCat(\"[\", PhoneNumberUtil::kValidPunctuation, \"]+\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "792990fefe82a058510aa1c577d9ce93870b1545d7d7f9811b7f09bf15d01663"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 827,
+                  "startColumn": 13,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "            StrCat(\"(?i)(?:\", extn_patterns_for_parsing_, \")$\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7b264840f0a8972285c9613ae00c67ac1c76b9d738b9f8ec4c76786d6d4ed968"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 829,
+                  "startColumn": 13,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "            StrCat(\"(?i)\", valid_phone_number_,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "22dcb09b3d4642a624447ac776535d7551219300df0ad8a1d94b7a257d22a737"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 832,
+                  "startColumn": 13,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "            StrCat(\"(?i)(?:.*?[\", kValidAlpha, \"]){3}\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "52f8994d9afb7357a4261c987e70e3c84bbf322fbdb1baf6685922efb07883fa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 842,
+                  "startColumn": 13,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "            StrCat(\"[\", PhoneNumberUtil::kPlusChars, \"]+\"))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d28aad79674dabafb79941dd3a2c83f17d3f632b7e38b1564c579b5356bd6760"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 844,
+                  "startColumn": 13,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            StrCat(\"^\\\\\", kPlusSign, rfc3966_phone_digit_, \"*\", kDigits,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7a345b8e5e40f78558180e631cd964fc8942846a9259d1c48e9c0d1cf6fff24c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 846,
+                  "startColumn": 67,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        rfc3966_domainname_pattern_(regexp_factory_->CreateRegExp(StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fbabcadf2ddd1c636f15bb439088cf2f403c3500d4af09c25d4a3db07f21653f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1018,
+                  "startColumn": 3,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "  char current_char[5];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "56033388d732933ebfadcd7d49fee1a6c01b8131b1142176df340421810a0018"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1044,
+                  "startColumn": 7,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "      StrCat(\"[\", kValidPunctuation, \"]*\", \"\\\\$1\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ba31d29b86b2e2677f868ad2b89da40f774482d9e3bee70f117ac33d17103ff7"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1404,
+                  "startColumn": 35,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "      formatted_number->insert(0, StrCat(country_code, \" \"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "26daba2197a7bdcd77456e3d78f591885475a206ce1f1f08d083d351b92a3583"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1453,
+                  "startColumn": 12,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "        0, StrCat(international_prefix_for_formatting, \" \", country_code, \" \"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a44484cdb5f2b274b0fda1e9592075fae526d588dfb156863f7cd255b6f9a7ee"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2084,
+                  "startColumn": 33,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "      ErrorType success = Parse(StrCat(kPlusSign,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "04f44cd3eb378390a0516b94c418bf71ef69699ae4421c563124837f28e1b5ca"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2118,
+                  "startColumn": 35,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "        ErrorType success = Parse(StrCat(kPlusSign,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "04f44cd3eb378390a0516b94c418bf71ef69699ae4421c563124837f28e1b5ca"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2183,
+                  "startColumn": 32,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "      index_of_phone_context + strlen(kRfc3966PhoneContext);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5e2c73c245557f206e1c0b01cb737aed08caadbc28275459afe915138caa3a9f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2250,
+                  "startColumn": 48,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "        static_cast<int>(index_of_rfc_prefix + strlen(kRfc3966Prefix)) : 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "174c32a4280bb7e94a9a4072256237499277258fec42433847615b5d43bf5c18"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2421,
+                  "startColumn": 3,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "  char current_char[5];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "56033388d732933ebfadcd7d49fee1a6c01b8131b1142176df340421810a0018"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumberutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2785,
+                  "startColumn": 7,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "      StrCat(\"[^\", kDigits, \"]\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "97a521d0d8b76873f8255db73680afcb2dcbe9f3bc5764c0d7c87862458c13f6"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatch.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 10,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "  return StrCat(\"PhoneNumberMatch [\", start(), \",\", end(), \") \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7264bfc77e7ef1d3544f2bb3a4f0cfb2dfe7a77141daefa27685a1fd645dd8a8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/unicodestring.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 10,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "  return equal(text_.begin(), text_.end(), rhs.text_.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9ba5830988d82c688c5248d54d7982e13984dfefa1dc22dca5538e080406b090"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/normalize_utf8.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 9,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "        char utf8[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8969bccb686fc8856004d93d9f5386865f8801ccc581257dfcc5d3cd575c21b7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 8,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5dd712f7bb2deaf43310acfe117808cf7858f9f58264c5b9fb3d0f8254d3bf3a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/asyoutypeformatter.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 17,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  new_pattern = StrCat(\"(\", new_pattern, \")\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "09bfd854a988de00fed77758e0558a5a7be959d05630ee6b90c4bfdc066f4a91"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/asyoutypeformatter.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 544,
+                  "startColumn": 9,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "        StrCat(prefix_before_national_number_, national_number));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "036222cb7ec6850b82dcabaad15617c78a43cc653e54a8eb3ea31d762c32c37c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/asyoutypeformatter.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 649,
+                  "startColumn": 7,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "      StrCat(\"\\\\\", string(&kPlusSign, 1), \"|\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4a7fd7178e57d54bad8d93c53a9966712e5b49bd227cc2be8ce842f1eaa6544e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 10,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  return StrCat(\"{\", lower, \",\", upper, \"}\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b482cf76f3ab5886b76b6548e0246e87e1cecd0a969cfe20057ef8b493462b19"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 21,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        non_parens_(StrCat(\"[^\", opening_parens_, closing_parens_, \"]\")),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fcaf983fb1e8d06c0fa41ef9f4698a97ac3abe6f06e54f052ffc69f78f5777fd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 40,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "        leading_maybe_matched_bracket_(StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fe45d607d745bbe5f04f95d268d4d3e2386ad540623b5c8a88b62541ca89ee44"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 278,
+                  "startColumn": 24,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "        bracket_pairs_(StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a4c7c01e1fd420b09c36b29c6528e39324abce3c661265e05ef83f34c7161588"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 22,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        punctuation_(StrCat(\"[\", PhoneNumberUtil::kValidPunctuation, \"]\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ea485b8c0fbdd1ebd8016612c2a08d60ec7e4a84bf9bcd3a4e3f709e34317484"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 288,
+                  "startColumn": 25,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        digit_sequence_(StrCat(\"\\\\p{Nd}\", Limit(1, digit_block_limit_))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "124fcd7a97fa6b9576472be4274bb8c6c17296d3b7dfcda728b23aa112e082e3"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 27,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "        lead_class_chars_(StrCat(opening_parens_, PhoneNumberUtil::kPlusChars)),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0e11f2aea90be581799a7b62e88f171a33d4bafa4f8ec4b1f07b8e1a36d041ed"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 290,
+                  "startColumn": 21,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        lead_class_(StrCat(\"[\", lead_class_chars_, \"]\")),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2c8cb707b9887f5360cb72c1c20ab79d95661a1166225136ea3628cce8e4bc61"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 312,
+                  "startColumn": 13,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            StrCat(leading_maybe_matched_bracket_, non_parens_, \"+\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "95c646c62f1c5956832cd9611f824eebef1a42e137a9b2f11cb7b9cc8e28142b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/phonenumbermatcher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 60,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "        pattern_(regexp_factory_for_pattern_->CreateRegExp(StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "97873f756dd8e90bc78de3cfec4b39ad1e759d0476f99364acb85484ab120286"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unilib.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 23,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "static const unsigned char kUTF8LenTbl[256] = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1542223ed87cd33b150f4374dd2e66d64c087fffce32ad921a3e0e86d7ee9ac6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/rune.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 316,
+                  "startColumn": 2,
+                  "endColumn": 15,
+                  "snippet": {
+                    "text": "\tchar str[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a1a6239df87f39fafef21ef3b41ea1966d66e3b39b3383a32558c07efe1cccd1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 5,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    memcpy(new_data, data_, size_);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6b1d8341083064eaca17fa70f85022e80f32bd9da42804484814a529d855a3cd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 3,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  memcpy(data_, data, size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e54259df44528a6b45050495601f7e8a9e1017f28133e3efc469753db5455d64"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 3,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "  memcpy(data_ + size_, bytes, byte_length);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7042d17ce3afcfcc5a61341279fcedb0148661acb5b22be8278a1b764a72af5c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 368,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    char buf[UTFmax];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "455aa795c150f39b13a64111548c7ccf0aa785146faab1a0c8bc43dc12d64225"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 374,
+                  "startColumn": 7,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "      fprintf(stderr, \"Unicode value 0x%x is not valid for interchange\\n\", c);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "764e151ff0c8769c393ff6d0ba59ccaad4929eb6e208ea2e6beb8577d210965a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/utf/unicodetext.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 378,
+                  "startColumn": 5,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"Illegal Unicode value: 0x%x\\n\", c);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "31d2002540ba13b9b554469f197662ecdc8faa9fae67c6984ceb376c02072580"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 16,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  return absl::StrCat(n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8a5dcb6a5f88d594c866c7b936ec6149ee6eb1962bd1922802d8434f99dccbb5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 16,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  return absl::StrCat(n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8a5dcb6a5f88d594c866c7b936ec6149ee6eb1962bd1922802d8434f99dccbb5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 16,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  return absl::StrCat(n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8a5dcb6a5f88d594c866c7b936ec6149ee6eb1962bd1922802d8434f99dccbb5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 8,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d1b7c49320356f64986c3072e94f2e13d04aa4b098c476fdd3271537980880c7"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 16,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4554b473739e85119e29883b417186e3ff064361c78a4a1d2114bb82ff9662e4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 16,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "95dba4499179dd0eefd397af699feecf0e45ef8e1b8e9941caffedae6bc76e21"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 16,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "23677a5c313c8082cd5ee63a9be260749143dcae0765bfd5d0ee7227520a9aeb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 16,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "902368c6c7e1905ad5e0bf240629e1ce2ee58a78c260868692e1d8bbc459a14d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 16,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9c0d742d788710ea033a77ff937da3769c3a8d92f51242e7837707ddc4b5cb81"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 16,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b2800911f272dc0238bd501670e98a3c5ffc8812bdbd26cb17baee34651087e1"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 16,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0347a87365c79ed325778fd488eb03dc1fa4f04936a2a31ab45585e16d6912ff"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 202,
+                  "startColumn": 16,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "254cffc5298a62d2b6a66e993f21610c32def7ea38b6562d0537b95cd1ded617"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 16,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "561ec7bf08efb4399f6b316ac06185635040a90d4951efa4549ffaa27a44345d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 16,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be38ffa567e820c1dac112ebc14de18f235afa66542ed57a6a1ae1c76a4fa550"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 223,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 16,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eff84fc480553ca5f1e04e44e535dd2188362bd8c71b56ea3d102d5e39c75afa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 16,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eff84fc480553ca5f1e04e44e535dd2188362bd8c71b56ea3d102d5e39c75afa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 16,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eff84fc480553ca5f1e04e44e535dd2188362bd8c71b56ea3d102d5e39c75afa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 8,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "string StrCat(const StringHolder& s1, const StringHolder& s2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89c83434dd2fc7e841d1a9fb51cff2438a5aff6c48776254457d2c32cccfa18b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/stringutil.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 16,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  return absl::StrCat(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eff84fc480553ca5f1e04e44e535dd2188362bd8c71b56ea3d102d5e39c75afa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/unicodestring.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 61,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "      : text_(UTF8ToUnicodeText(utf8, static_cast<int>(std::strlen(utf8)))),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4e76c13d5a7f9f3422c18bad8176630d1fcdf3013ad74b74ca1c837ee4c4172d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1057",
+          "level": "warning",
+          "message": {
+            "text": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/base/memory/singleton_win32.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 3,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "  InitializeCriticalSection(&cs);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2a162e4c006d3289070227b63630bbd9c4929817551976a7aeec1fc571c3fb42"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/base/strings/string_piece.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 3,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "  memcpy(buf, ptr_ + pos, ret);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5dddfb1835154f94a411e171e9da0fd03cd62703ae6a9e59f883eb5bf8e9cb6c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/base/strings/string_piece.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 46,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    : ptr_(str), length_((str == NULL) ? 0 : strlen(str)) { }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7501d48621f9846cfc0b95939cd998ec18feea5f26ce11b63370ce109348d9e5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/base/strings/string_piece.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 21,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    length_ = str ? strlen(str) : 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f1860f770e1e25df12da564abdcca4c4030727121da199d692355ac305d60c8e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1057",
+          "level": "warning",
+          "message": {
+            "text": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cpp/src/phonenumbers/base/synchronization/lock_win32.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 5,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    InitializeCriticalSection(&cs_);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2e3c98d0038d94e5ecde6dbe52270fff45afba1dbd6d07d2e4663bc15ce04612"
+          },
+          "rank": 0.6000000000000001
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

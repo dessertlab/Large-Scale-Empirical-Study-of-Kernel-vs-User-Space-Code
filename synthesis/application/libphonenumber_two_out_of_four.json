@@ -1,0 +1,39 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-022",
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+        "line": 651,
+        "cwe": "CWE-022",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+        "line": 651,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/cpp/src/cpp-build/generate_geocoding_data.cc",
+        "line": 651,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

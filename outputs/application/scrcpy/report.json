@@ -1,0 +1,1426 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 78,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 83,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 94,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 251,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 252,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 254,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 257,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 275,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 276,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 292,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 293,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 294,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 297,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 315,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 316,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 358,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 359,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 385,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 408,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 491,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 681,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/adb/adb.c",
+      "line": 716,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/adb/adb_parser.c",
+      "line": 71,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/audio_player.c",
+      "line": 84,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/audio_player.c",
+      "line": 85,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/audio_regulator.c",
+      "line": 96,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/audio_regulator.c",
+      "line": 97,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/audio_regulator.c",
+      "line": 107,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 128,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1404,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1409,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1425,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1429,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1440,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1444,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1454,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1458,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1464,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1468,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1478,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1481,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1485,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1497,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1501,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1504,
+      "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1504,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1528,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1535,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1542,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1547,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 1908,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 2334,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 2354,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 2414,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 2476,
+      "message": "buffer/getopt_long:Some older implementations do not protect against internal buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1027",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/app/src/cli.c",
+      "line": 3456,
+      "message": "Identical inner 'if' condition is always true.",
+      "rule": "identicalInnerCondition",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/app/src/clock.c",
+      "line": 18,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/app/src/clock.h",
+      "line": 9,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/app/src/clock.h",
+      "line": 38,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 16,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 19,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 39,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 48,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 82,
+      "message": "random/nrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/app/src/compat.c",
+      "line": 89,
+      "message": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/app/src/compat.h",
+      "line": 77,
+      "message": "random/nrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/app/src/compat.h",
+      "line": 81,
+      "message": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/control_msg.c",
+      "line": 82,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/control_msg.c",
+      "line": 168,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/control_msg.c",
+      "line": 176,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/device_msg.c",
+      "line": 34,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/device_msg.c",
+      "line": 65,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/main.c",
+      "line": 35,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/main.c",
+      "line": 107,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/main.c",
+      "line": 108,
+      "message": "buffer/getchar:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/opengl.c",
+      "line": 43,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/packet_merger.c",
+      "line": 32,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/packet_merger.c",
+      "line": 44,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/recorder.c",
+      "line": 94,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/screen.h",
+      "line": 35,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/server.c",
+      "line": 212,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/server.c",
+      "line": 476,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/app/src/server.c",
+      "line": 999,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/server.h",
+      "line": 18,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 18,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 26,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 30,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 37,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 39,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 59,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 60,
+      "message": "race/readlink:This accepts filename arguments; if an attacker can move those files or change the link content, a race condition results. Also, it does not terminate with ASCII NUL. (CWE-362, CWE-20).",
+      "rule": "FF1035",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 68,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 74,
+      "message": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!).",
+      "rule": "FF1026",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/app/src/sys/unix/file.c",
+      "line": 77,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 98,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 113,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 128,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 146,
+      "message": "shell/execvp:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 169,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/sys/unix/process.c",
+      "line": 228,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/trait/frame_sink.h",
+      "line": 22,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/trait/packet_sink.h",
+      "line": 30,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/uhid/gamepad_uhid.c",
+      "line": 29,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/uhid/keyboard_uhid.c",
+      "line": 26,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/uhid/mouse_uhid.c",
+      "line": 22,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/app/src/usb/aoa_hid.h",
+      "line": 27,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/usb/usb.c",
+      "line": 12,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/usb/usb.c",
+      "line": 31,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/audiobuf.c",
+      "line": 61,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/audiobuf.c",
+      "line": 67,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/audiobuf.c",
+      "line": 103,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/audiobuf.c",
+      "line": 109,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/app/src/util/env.c",
+      "line": 24,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/file.c",
+      "line": 10,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/file.c",
+      "line": 11,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/file.c",
+      "line": 20,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/file.c",
+      "line": 23,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/log.c",
+      "line": 119,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/log.c",
+      "line": 125,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/log.c",
+      "line": 126,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/app/src/util/log.c",
+      "line": 131,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/util/log.c",
+      "line": 149,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/app/src/util/net.c",
+      "line": 209,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/app/src/util/net.c",
+      "line": 215,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/app/src/util/rand.c",
+      "line": 17,
+      "message": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 57,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 58,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 66,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 67,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 161,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 175,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 193,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 204,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 236,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/util/str.c",
+      "line": 353,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/strbuf.c",
+      "line": 42,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/strbuf.c",
+      "line": 47,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/strbuf.h",
+      "line": 53,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/app/src/util/thread.c",
+      "line": 19,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/vecdeque.h",
+      "line": 194,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/vecdeque.h",
+      "line": 198,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/vector.h",
+      "line": 255,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/util/vector.h",
+      "line": 333,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/v4l2_sink.c",
+      "line": 45,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/app/src/v4l2_sink.c",
+      "line": 203,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/app/src/v4l2_sink.c",
+      "line": 203,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 17,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 20,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 29,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 38,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 47,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 57,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/app/src/version.c",
+      "line": 69,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/demuxer.c",
+      "line": 143,
+      "message": "Call to av_new_packet with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 28,
+      "message": "Call to malloc with untrusted data from [call to recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 28,
+      "message": "Call to malloc with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 59,
+      "message": "Call to malloc with untrusted data from [call to recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 59,
+      "message": "Call to malloc with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 75,
+      "message": "Call to SDL_LogWarn with untrusted data from [call to recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/device_msg.c",
+      "line": 75,
+      "message": "Call to SDL_LogWarn with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "app/src/sys/unix/process.c",
+      "line": 98,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "app/src/sys/unix/process.c",
+      "line": 113,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "app/src/sys/unix/process.c",
+      "line": 128,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "app/src/util/binary.h",
+      "line": 51,
+      "message": "[buffer read by recv](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "app/src/util/binary.h",
+      "line": 56,
+      "message": "[buffer read by recv](1) flows an expression which might overflow.\n[buffer read by recv](2) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "app/src/util/binary.h",
+      "line": 56,
+      "message": "[buffer read by recv](1) flows an expression which might overflow.\n[buffer read by recv](2) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "app/src/util/binary.h",
+      "line": 56,
+      "message": "[buffer read by recv](1) flows an expression which might overflow.\n[buffer read by recv](2) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/util/net.c",
+      "line": 209,
+      "message": "Call to recv with untrusted data from [call to recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/util/net.c",
+      "line": 209,
+      "message": "Call to recv with untrusted data from [call to recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/util/net.c",
+      "line": 209,
+      "message": "Call to recv with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/util/net.c",
+      "line": 209,
+      "message": "Call to recv with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "app/src/util/net.c",
+      "line": 215,
+      "message": "Call to recv with untrusted data from [buffer read by recv](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 172,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 19,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 2,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 150,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 1,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/scrcpy/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

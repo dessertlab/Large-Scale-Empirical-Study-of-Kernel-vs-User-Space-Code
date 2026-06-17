@@ -1,0 +1,2002 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/autocompact_test.cc",
+      "line": 32,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/autocompact_test.cc",
+      "line": 33,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/autocompact_test.cc",
+      "line": 82,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/autocompact_test.cc",
+      "line": 92,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/autocompact_test.cc",
+      "line": 106,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/c.cc",
+      "line": 164,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/c.cc",
+      "line": 554,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 15,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 21,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 27,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/c_test.c",
+      "line": 34,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 39,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/c_test.c",
+      "line": 62,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/c_test.c",
+      "line": 135,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/c_test.c",
+      "line": 273,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/c_test.c",
+      "line": 274,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 282,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 283,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/c_test.c",
+      "line": 284,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/c_test.c",
+      "line": 284,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/c_test.c",
+      "line": 382,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 105,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 163,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 172,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 173,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 174,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/corruption_test.cc",
+      "line": 193,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 357,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 358,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-665",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1068,
+      "message": "Member variable 'version' is initialized by itself.",
+      "rule": "selfInitialization",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-665",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1068,
+      "message": "Member variable 'mem' is initialized by itself.",
+      "rule": "selfInitialization",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-665",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1068,
+      "message": "Member variable 'imm' is initialized by itself.",
+      "rule": "selfInitialization",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1423,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1424,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1430,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1431,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1439,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1459,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_impl.cc",
+      "line": 1460,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_iter.cc",
+      "line": 24,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_iter.cc",
+      "line": 26,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 457,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 458,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 503,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 504,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 510,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/db_test.cc",
+      "line": 571,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1077,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1078,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1172,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1193,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1194,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1219,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1605,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1631,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1632,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1808,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1961,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 1971,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2031,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2034,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2039,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2040,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2045,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2057,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2067,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2224,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2232,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2248,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2261,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2266,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2274,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2286,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/db_test.cc",
+      "line": 2302,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/dbformat.cc",
+      "line": 129,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/dbformat.h",
+      "line": 215,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/dbformat_test.cc",
+      "line": 45,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/fault_injection_test.cc",
+      "line": 430,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/fault_injection_test.cc",
+      "line": 441,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/fault_injection_test.cc",
+      "line": 442,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/db/fault_injection_test.cc",
+      "line": 443,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/fault_injection_test.cc",
+      "line": 540,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/filename.cc",
+      "line": 22,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/filename.cc",
+      "line": 23,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/filename.cc",
+      "line": 45,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/filename.cc",
+      "line": 46,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/filename_test.cc",
+      "line": 73,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/leveldbutil.cc",
+      "line": 31,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/leveldbutil.cc",
+      "line": 42,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/log_reader.cc",
+      "line": 162,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/log_reader.cc",
+      "line": 163,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/log_test.cc",
+      "line": 29,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/log_test.cc",
+      "line": 30,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/log_test.cc",
+      "line": 261,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/log_writer.cc",
+      "line": 88,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/memtable.cc",
+      "line": 92,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/db/memtable.cc",
+      "line": 97,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 161,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 163,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 180,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 221,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 254,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 255,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 273,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/recovery_test.cc",
+      "line": 274,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/db/repair.cc",
+      "line": 57,
+      "message": "Class 'Repairer' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noCopyConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/db/repair.cc",
+      "line": 57,
+      "message": "Class 'Repairer' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noOperatorEq",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/skiplist_test.cc",
+      "line": 35,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/skiplist_test.cc",
+      "line": 349,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/table_cache.cc",
+      "line": 44,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/table_cache.cc",
+      "line": 115,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/version_edit_test.cc",
+      "line": 21,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/db/version_set.cc",
+      "line": 165,
+      "message": "Member variable 'LevelFileNumIterator::value_buf_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/version_set.cc",
+      "line": 207,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/version_set.cc",
+      "line": 706,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/db/version_set.cc",
+      "line": 1108,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/db/version_set.h",
+      "line": 268,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/version_set_test.cc",
+      "line": 54,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/db/write_batch_test.cc",
+      "line": 54,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/helpers/memenv/memenv.cc",
+      "line": 96,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/helpers/memenv/memenv.cc",
+      "line": 129,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/helpers/memenv/memenv_test.cc",
+      "line": 26,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/helpers/memenv/memenv_test.cc",
+      "line": 99,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/helpers/memenv/memenv_test.cc",
+      "line": 183,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/helpers/memenv/memenv_test.cc",
+      "line": 184,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/helpers/memenv/memenv_test.cc",
+      "line": 209,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/include/leveldb/slice.h",
+      "line": 39,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/issues/issue178_test.cc",
+      "line": 20,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/issues/issue178_test.cc",
+      "line": 21,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/issues/issue178_test.cc",
+      "line": 27,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/issues/issue320_test.cc",
+      "line": 26,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/issues/issue320_test.cc",
+      "line": 41,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/issues/issue320_test.cc",
+      "line": 42,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/table/filter_block_test.cc",
+      "line": 44,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/table/table.cc",
+      "line": 45,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/table/table.cc",
+      "line": 169,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/table/table_builder.cc",
+      "line": 199,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 127,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 489,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 495,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 504,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 515,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 523,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 536,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/table/table_test.cc",
+      "line": 613,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 625,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 688,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 717,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 718,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 720,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 740,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/table/table_test.cc",
+      "line": 752,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/arena_test.cc",
+      "line": 14,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 48,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 52,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 55,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 66,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 82,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 110,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 135,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/bloom_test.cc",
+      "line": 146,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/cache.cc",
+      "line": 54,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/cache.cc",
+      "line": 282,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/cache_test.cc",
+      "line": 67,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/coding.cc",
+      "line": 10,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/coding.cc",
+      "line": 16,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/coding.cc",
+      "line": 50,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/coding.cc",
+      "line": 67,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/coding_test.cc",
+      "line": 27,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/crc32c_test.cc",
+      "line": 14,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/crc32c_test.cc",
+      "line": 41,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 145,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 203,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 279,
+      "message": "Member variable 'PosixWritableFile::buf_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 299,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 315,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 381,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 458,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 530,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 543,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 575,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 588,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 600,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 659,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 701,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 705,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 706,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 718,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_posix.cc",
+      "line": 899,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 60,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 64,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 69,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 132,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 133,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 150,
+      "message": "shell/execv:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 151,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 184,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 190,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/util/env_posix_test.cc",
+      "line": 344,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/env_test.cc",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 59,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 60,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 62,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 64,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 65,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_test.cc",
+      "line": 65,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 268,
+      "message": "Member variable 'WindowsWritableFile::buf_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 279,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 295,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 346,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 508,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 509,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 625,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 631,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 645,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/env_windows.cc",
+      "line": 794,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/env_windows_test.cc",
+      "line": 26,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/util/env_windows_test.cc",
+      "line": 32,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/histogram.cc",
+      "line": 243,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/histogram.cc",
+      "line": 244,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/histogram.cc",
+      "line": 247,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/histogram.cc",
+      "line": 256,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/logging.cc",
+      "line": 18,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/logging.cc",
+      "line": 19,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/logging.cc",
+      "line": 29,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/logging.cc",
+      "line": 30,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/logging_test.cc",
+      "line": 53,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/no_destructor.h",
+      "line": 45,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/util/no_destructor_test.cc",
+      "line": 32,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/posix_logger.h",
+      "line": 53,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/posix_logger.h",
+      "line": 65,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/posix_logger.h",
+      "line": 84,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/status.cc",
+      "line": 17,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/status.cc",
+      "line": 27,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/status.cc",
+      "line": 29,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/util/status.cc",
+      "line": 33,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/status.cc",
+      "line": 42,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/status.cc",
+      "line": 64,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/util/windows_logger.h",
+      "line": 47,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/windows_logger.h",
+      "line": 59,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/util/windows_logger.h",
+      "line": 78,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "util/env_posix_test.cc",
+      "line": 190,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "util/env_windows.cc",
+      "line": 645,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "util/env_windows_test.cc",
+      "line": 32,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 244,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 3,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 35,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 206,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/leveldb/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

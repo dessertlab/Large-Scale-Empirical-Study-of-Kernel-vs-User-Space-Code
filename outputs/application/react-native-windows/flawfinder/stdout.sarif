@@ -1,0 +1,2406 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1017",
+              "name": "format/vfprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/vprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1023",
+              "name": "buffer/MultiByteToWideChar",
+              "shortDescription": {
+                "text": "Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1047",
+              "name": "integer/_wtoi",
+              "shortDescription": {
+                "text": "Unless checked, the resulting number can exceed the expected range (CWE-190)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-190",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/vsnprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1058",
+              "name": "misc/LoadLibrary",
+              "shortDescription": {
+                "text": "Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-829",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/fread",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1017",
+          "level": "error",
+          "message": {
+            "text": "format/vfprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 14,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "      return vfprintf(stderr, format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "325afd611c6291ee606cfab814575af8fb8584bdb187092e2fdd52cc222edb3f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 14,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "      return vprintf(format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dc3719799c07e99aa613cd7b5d0ff958ce529cc9633580e96f3951653d6db36b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 355,
+                  "startColumn": 3,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  memcpy(dest, src, sizeof(YGConfig));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2b67921860385b51226a5ef176dbecf93332906d0d605c36186ac86bbebcdc33"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3604,
+                  "startColumn": 28,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "  const size_t spacerLen = strlen(spacer);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f681501fe8989362087037dd045c8e4c6ddafa2647bc5973b7d27db9095e6872"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3616,
+                  "startColumn": 9,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "  const char *kMeasureModeNames[N] = {\"UNDEFINED\", \"EXACTLY\", \"AT_MOST\"};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "668904ad6df23d33352760447207a6a880efd97ffdca4e579bb429fe786c319a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3617,
+                  "startColumn": 9,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  const char *kLayoutModeNames[N] = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2d10165e5c4edbc2aab6e2c317c74140f7eafcf5b86395626b44994885565bf2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 3,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  wchar_t dumpDir[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2144b2e7029dcd23ce52b636ce34d67355b1f7ba89380d1d58529365abce3d32"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 3,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  wchar_t dumpPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34e805845727e376dd430a5954640963b35c3dd74f2fce9284b5767d2c1634e5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 3,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  wchar_t flagPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0cfaa3b4812460bf911d79d3b86b276e240420149f3167d8843ec8ae7bb40df4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 29,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "  const int utf16Length = ::MultiByteToWideChar("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8c5d8cb1fa3a2389aa6baddb98cb422fa4c4709fb02f2963e2df588baba58d28"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 18,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  int result = ::MultiByteToWideChar("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7742ef8cd81969c7038fe1ef31286a5ad79a594cabf348ae6a77c7c48c41d28b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 28,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  return Utf8ToUtf16(utf8, strlen(utf8));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2bbcff376f1e2aec479fad203182cf88278316c47986efdcf18c1d8702938036"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 3,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  char screenshotFile[maxPathLength];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f5f7851eabfa6261f06fd288c02a8358c9f871159ea94bb87e5bc31b3d879165"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/OInstance.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 322,
+                  "startColumn": 5,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "    memcpy(m_data.get(), static_cast<char *>(m_fileData.get()) + offset, m_size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c5b30b273866f459938f62ef696ec5d93f02db8c6329b73b634a7192347e578c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/DevSupportManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 3,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "  wchar_t fullName[PACKAGE_FULL_NAME_MAX_LENGTH]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b9228bcc753b2fc32ad58bc38c195df9eceefbc774650d387e177d88a7900bdc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/SafeLoadLibrary.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 3,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "  wchar_t nameBuffer[nameBufferSize] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "258746dabc5e4a470de2dda698e1721bae114ffa4286f22be5a8effa79144411"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/BaseScriptStoreImpl.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 3,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  char magic[length__(PERSIST_MAGIC)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a05af65a8e008ec01432d055b1e7b24f9ac5faf9231f3bce2edaf83338250b33"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/BaseScriptStoreImpl.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 3,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  char eof[length__(PERSIST_EOF)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "303bbeef9655d2c073b2b1e2c64fd49e384784da0c4feb061b20e70d16873642"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/Networking/OriginPolicyHttpFilter.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 352,
+                  "startColumn": 23,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "      result.MaxAge = _wtoi(header.Value().c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c3970fa5e3eddd5d266db95f876c750cb14ccf91be3d20bdcc7ad55e800c3f59"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/Utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 14,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "  int size = vsnprintf(nullptr, 0, format, args_copy);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7a06790cd2f3f55a6b201de5140003aef68f851fb27493e97c7b379b711508c0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Shared/Utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 3,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "  vsnprintf(result.data(), size + 1, format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a34a4893116dcf392ff9f8de14248b263f1c5c462427734b8ed89562884dc97d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso.UnitTests/guid/guidTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 77,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "    TEST_CLASS (GuidTest){static std::string GuidToString(const GUID &guid){char str[37];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66bc826891c8c7591ba77d080a74787eb87c56701fd114ab2602fb50bf9a5574"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative.Cxx/StructInfo.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 10,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    std::memcpy(&result, &fieldPtr, sizeof(fieldPtr));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bdbd28eee61cc70c90c522833486b8ddd0905e2c3b236b853cfe9045f889588d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.IntegrationTests/WebSocketIntegrationTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 5,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "    char chars[LEN + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "edddc26ed604f4b1d6891cf25416546b48f458d8bd60e6a09c2aedd479dab894"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/react/runtime/ReactInstance.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 8,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "  std::snprintf(buffer.data(), buffer.size(), \"seg-%u.js\", bundleId);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "70f30531e58aa382e72a8e72414dd3047adf18b42f58fc895e10316796f9d653"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/cxxreact/JSExecutor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 8,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "  std::snprintf(buffer.data(), buffer.size(), \"seg-%u.js\", bundleId);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "70f30531e58aa382e72a8e72414dd3047adf18b42f58fc895e10316796f9d653"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/jsinspector-modern/NetworkIOAgent.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 8,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "  void read(long maxBytesToRead, const IOReadCallback& callback) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "258625efe5625c9dede4b36945a05f465eb7ce5d890e12e045d637725e7230d6"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/CompositionDynamicAutomationProvider.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 706,
+                  "startColumn": 13,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "  int len = MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, nullptr, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "846a21275da4b1a4966a5fe4cca4f2149047de4ddbbbc20ff8b1bfe0d7b5fe80"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/CompositionDynamicAutomationProvider.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 715,
+                  "startColumn": 3,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "  MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, bstr, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81dee8fcd75ccaada32334bcd65aa673ac77031b6c1162858b96b32bab81c461"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 23,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    g_hInstRichEdit = LoadLibrary(L\"Msftedit.dll\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "76c53cca5f6155d83a8ce8776d0ae4db8b6de42b2122c24a780fd67fe96fed2c"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 541,
+                  "startColumn": 37,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "  *pcchReplaced = static_cast<LONG>(wcslen(pszAfter));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be62ec46c40b262e5047722b1198d5365f894f13e173ddca30fde9417a37c7d9"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1043,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  wchar_t key[2] = L\" \";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6d7b542bb125adf4b82cafe8bc9775be34e7b153fc9220359d6f887c48f8fc15"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/ReactHost/ReactInstanceWin.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 416,
+                  "startColumn": 3,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  wchar_t tempPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ac499cb457dc0c41e59adf3fce9fa651547deb793059d72a881043048439a289"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/ReactHost/ReactHost.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 307,
+                  "startColumn": 5,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    wchar_t computerName[MAX_COMPUTERNAME_LENGTH + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e7993c7fd2b389a3fe5a2932cc22793751159bf0c83638a18e99180b48bb71aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/ReactHost/CrashManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "  wchar_t currentDirectory[MAX_PATH]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "70ddf6c99da1b2282d5116ed9e10bd96b72c6a414d57378fa79bce3054ef2775"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/ReactHost/CrashManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 23,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "  const auto readsz = fread(&out[0], 1, sz, f);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a5e464a22eed7ab615503a26c1e1e4a196e1e0b52b3fba929cef5ec4e572e0be"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative/Modules/AppThemeModuleUwp.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 3,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  char colorChars[8];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bed05a164c6e21820c81c35ec3bde8a975ba6e15eb3af86ecd7ab229694245c9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Common/unicode.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 29,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "  const int utf16Length = ::MultiByteToWideChar("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8c5d8cb1fa3a2389aa6baddb98cb422fa4c4709fb02f2963e2df588baba58d28"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Common/unicode.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 18,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  int result = ::MultiByteToWideChar("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7742ef8cd81969c7038fe1ef31286a5ad79a594cabf348ae6a77c7c48c41d28b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Common/unicode.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 28,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  return Utf8ToUtf16(utf8, strlen(utf8));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2bbcff376f1e2aec479fad203182cf88278316c47986efdcf18c1d8702938036"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Common/unicode.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 29,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "  return Utf16ToUtf8(utf16, wcslen(utf16));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "478f0b89d09f5a226d19291af2488f1f01cb6d9c735eb4c997a8e00f6f0a7602"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/guid/msoGuidDetails.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "typedef char GuidString[37];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9606a81a876d911680afa9b4dfa9c1521a83db837ad48b67d5a586cff48b45e0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/guid/msoGuidDetails.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 26,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "constexpr const unsigned char H2U[256] = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "caad59acb58e64e5fd1444f5cd37e104b26076ab8944a33914ef67cdbaaeede5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 20,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "  auto size = std::vsnprintf(nullptr, 0, format, vlist);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0f4327df67aa3f213153c6813da91222d24cb293894b472b79ebfa7e2d4bf8c6"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 8,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "  std::vsnprintf(&result[0], size + 1, format, vlist);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f83e7b89329cf6146e53f6dda47c97e0170db0f0ecaa9b61746f44c7a717c39e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 436,
+                  "startColumn": 3,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  fwprintf(stderr, L\"[ INFO     ] \");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "75c3c4e8cd527b886fb204bb51cad742a39b0a3e476a7476ff2fdd75e679315c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/vfwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 437,
+                  "startColumn": 3,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  vfwprintf(stderr, format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a55077b9f0d4823affa407c6a054675aa970c6619f45627bb39d9d8e782774c6"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 438,
+                  "startColumn": 3,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  fwprintf(stderr, L\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c62d35fa5a7d8c9d2b22b1f8406d224cae9f1b174dfd592efb5f888d6650919f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 444,
+                  "startColumn": 3,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "  fwprintf(stderr, L\"[ INFO     ] \");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "75c3c4e8cd527b886fb204bb51cad742a39b0a3e476a7476ff2fdd75e679315c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/vfwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 445,
+                  "startColumn": 3,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  vfwprintf(stderr, format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a55077b9f0d4823affa407c6a054675aa970c6619f45627bb39d9d8e782774c6"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 447,
+                  "startColumn": 3,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  fwprintf(stderr, L\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c62d35fa5a7d8c9d2b22b1f8406d224cae9f1b174dfd592efb5f888d6650919f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/src/debugAssertApi/debugAssertApi.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 3,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "  char assertMessage[4096];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b3919496f8f2b2b5c01e384fe2c9e9bdc3939e1b2f8d4f736e019939ea3764a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Mso/src/debugAssertApi/debugAssertApi.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 9,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "  (void)vsnprintf(assertMessage, sizeof(assertMessage), szFormat, argList);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a26219e55437ced4f664399c6edcf039297d57f24560b58e41c9d69ca08e3932"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/TestReactNativeHostHolder.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 5,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    wchar_t testBinaryPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3cf9924247dbaab8df9066d3c13379961aa0fa011596dd4616e85d1fc2d878e4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/include/Shared/cdebug.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "  char buf[32]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b9c72dd91604260394d9e038e001c84a4e0cbc927b9715a96f877c29ae8b354e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 20,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(strlen(SimpleTestStringNoBomUtf8) == 3);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "46574b514b4abd482568035160a47642d0c40f44c54bfa17da43160d959b7026"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 20,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(wcslen(SimpleTestStringNoBomUtf16) == 3);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "395b681a4427ae2f811c74afc1f65e98f32a51b62f3a98893f6cd584cca9b33f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 20,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(strlen(SimpleTestStringBomUtf8) == 6);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb51d62b7a6ac4ee55b96a0c4d1fd40ff7281fb1943989577988d046cfee1af3"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 20,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(wcslen(SimpleTestStringBomUtf16) == 4);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2fbc4a56e4b4b1c02814a9cf87e189512da6c5f902562ca862159c3bdd13f48c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 48,
+                  "endColumn": 114,
+                  "snippet": {
+                    "text": "        Utf8ToUtf16(SimpleTestStringNoBomUtf8, strlen(SimpleTestStringNoBomUtf8)) == SimpleTestStringNoBomUtf16);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b8dc4d762f13f5417e8e7001f5ca87a79805c47a68197a8451b9efd7fb63bdb"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 57,
+                  "endColumn": 119,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(Utf8ToUtf16(SimpleTestStringBomUtf8, strlen(SimpleTestStringBomUtf8)) == SimpleTestStringBomUtf16);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "467843398d2570a0d72bf36e7d8b6dc4ce8fc6431325f7676dd638e68484d127"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 49,
+                  "endColumn": 115,
+                  "snippet": {
+                    "text": "        Utf16ToUtf8(SimpleTestStringNoBomUtf16, wcslen(SimpleTestStringNoBomUtf16)) == SimpleTestStringNoBomUtf8);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "52927adbb80643dc5fe2312885a4934a44a326f7725064a85c927e2c944889da"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 58,
+                  "endColumn": 120,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(Utf16ToUtf8(SimpleTestStringBomUtf16, wcslen(SimpleTestStringBomUtf16)) == SimpleTestStringBomUtf8);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "520bca76ecf37f05b1d458caa86cf471f4fdc4875775468667ff0e50f12d7f87"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 20,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    Assert::IsTrue(strlen(utf8Bom) == 3);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "93b08a3357ffc358996eddda1dab3349358b22e27acf120e53609df30d258ed5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 30,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "      for (size_t i = 0; i < strlen(utf8Bom); ++i) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80c194e5137590e750567b024bef38bd4080fe801db080d3abaf1235e8c05a82"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 3,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  wchar_t tempPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ac499cb457dc0c41e59adf3fce9fa651547deb793059d72a881043048439a289"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 3,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "  wchar_t testFileName[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "190a8324173f711e31da2ab04cee694260d23fd8ce456505a106ce6483511f9c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 25,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "    const size_t size = strlen(content);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bece7311ce6a338df8373776028f708ac2395556fc5a7f2f4d456582e799d3c9"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 29,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    const size_t fileSize = strlen(fileContent);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9c16cc086daf906de93af788d4735985847c5354a445a8e3d74592bda88d50e2"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/Desktop.UnitTests/ScriptStoreTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 5,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    char tempPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5a2571759b3941af149e9c7890b4e806730d3ac6c5218be425d23b94137efe08"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/vnext/stubs/double-conversion/double-conversion.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 5,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    memcpy(m_buffer, str.c_str(), str.length());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "41cb28e9e4aa69cb78532404f6619fdc74e95941879be967561e5515c14222c8"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

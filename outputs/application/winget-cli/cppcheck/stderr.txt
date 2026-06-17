@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;sizeIndex&lt;s_sizeStrings.size()&apos; is redundant or &apos;sizeIndex&apos; can have the value greater or equal to 4. Expression &apos;s_sizeStrings[sizeIndex]&apos; cause access out of bounds." verbose="Either the condition &apos;sizeIndex&lt;s_sizeStrings.size()&apos; is redundant or &apos;sizeIndex&apos; can have the value greater or equal to 4. Expression &apos;s_sizeStrings[sizeIndex]&apos; cause access out of bounds." cwe="398" file0="/workspace/samples/WinGetUWPCaller/WinGetUWPCaller/MainPage.cpp">
+            <location file="/workspace/samples/WinGetUWPCaller/WinGetUWPCaller/MainPage.cpp" line="159" column="76" info="Access out of bounds"/>
+            <location file="/workspace/samples/WinGetUWPCaller/WinGetUWPCaller/MainPage.cpp" line="153" column="30" info="Assuming that condition &apos;sizeIndex&lt;s_sizeStrings.size()&apos; is not redundant"/>
+            <symbol>s_sizeStrings</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BaseStream::m_VTUpdated&apos; is not initialized in the constructor." verbose="Member variable &apos;BaseStream::m_VTUpdated&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/AppInstallerCLICore/ChannelStreams.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/ChannelStreams.cpp" line="39" column="17"/>
+            <symbol>BaseStream::m_VTUpdated</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/src/AppInstallerCLICore/Commands/DscPackageResource.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Commands/DscPackageResource.cpp" line="332" column="122"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;try&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;try&apos; is not allowed in global scope" file0="/workspace/src/AppInstallerCLICore/ConfigurationSetProcessorFactoryRemoting.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/ConfigurationSetProcessorFactoryRemoting.cpp" line="393" column="191"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;unitsShown&apos;" verbose="Unused variable value &apos;unitsShown&apos;" cwe="398" file0="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp" line="2289" column="26"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;unitsShown&apos;" verbose="Unused variable value &apos;unitsShown&apos;" cwe="398" file0="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp" line="2335" column="22"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;unitsShown&apos;" verbose="Unused variable value &apos;unitsShown&apos;" cwe="398" file0="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Workflows/ConfigurationFlow.cpp" line="2348" column="18"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 60s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 60s" file0="/workspace/src/AppInstallerCLICore/Workflows/DownloadFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Workflows/DownloadFlow.cpp" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it." file0="/workspace/src/AppInstallerCLICore/Workflows/InstallFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLICore/Workflows/InstallFlow.cpp" line="870" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/AppInstallerCLITests/InstallDependenciesFlow.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/InstallDependenciesFlow.cpp" line="99" column="97"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;beginToken&apos;." verbose="Access of moved variable &apos;beginToken&apos;." cwe="672" file0="/workspace/src/AppInstallerCLITests/LanguageUtilities.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/LanguageUtilities.cpp" line="20" column="14" info="Access of moved variable &apos;beginToken&apos;."/>
+            <location file="/workspace/src/AppInstallerCLITests/LanguageUtilities.cpp" line="18" column="16" info="Calling std::move(beginToken)"/>
+            <symbol>beginToken</symbol>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="500" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="499" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="504" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="503" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="513" column="42"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="512" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="549" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="548" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="553" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="552" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="572" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="571" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="575" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="574" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="591" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="590" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="595" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="594" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="613" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="612" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="617" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="616" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="813" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="812" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="817" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="816" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1234" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1233" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1238" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1237" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1247" column="40"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1246" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1263" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1262" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1267" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1266" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1278" column="40"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="1277" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="3884" column="45"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="3883" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="danglingTempReference" severity="error" msg="Using reference to dangling temporary." verbose="Using reference to dangling temporary." cwe="562" file0="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="3888" column="34"/>
+            <location file="/workspace/src/AppInstallerCLITests/SQLiteIndex.cpp" line="3887" column="22" info="Assigned to reference."/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG_RETURN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG_RETURN is a macro then please configure it." file0="/workspace/src/AppInstallerCLITests/TestCommon.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/TestCommon.cpp" line="105" column="5"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="85" column="21"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="89" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="93" column="26"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="99" column="28"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="108" column="26"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="116" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="120" column="29"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="124" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/AppInstallerCLITests/main.cpp">
+            <location file="/workspace/src/AppInstallerCLITests/main.cpp" line="128" column="29"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHOD is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHOD is a macro then please configure it." file0="/workspace/src/AppInstallerCommonCore/DODownloader.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/DODownloader.cpp" line="296" column="13"/>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &apos;bytesRead!=0&apos; is redundant or dest.write() argument nr 2 can have invalid value. The value is 0 but the valid values are &apos;1:&apos;." verbose="Either the condition &apos;bytesRead!=0&apos; is redundant or dest.write() argument nr 2 can have invalid value. The value is 0 but the valid values are &apos;1:&apos;." cwe="628" file0="/workspace/src/AppInstallerCommonCore/Downloader.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/Downloader.cpp" line="254" column="45" info="Invalid argument"/>
+            <location file="/workspace/src/AppInstallerCommonCore/Downloader.cpp" line="258" column="27" info="Assuming that condition &apos;bytesRead!=0&apos; is not redundant"/>
+            <symbol>dest.write</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="error" msg="Out of bounds access in expression &apos;result[0]&apos; because &apos;result&apos; is empty." verbose="Out of bounds access in expression &apos;result[0]&apos; because &apos;result&apos; is empty." cwe="398" file0="/workspace/src/AppInstallerCommonCore/Downloader.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/Downloader.cpp" line="37" column="24" info="Access out of bounds"/>
+            <symbol>result</symbol>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 10s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 10s" file0="/workspace/src/AppInstallerCommonCore/FileCache.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/FileCache.cpp" line="0" column="0"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/src/AppInstallerCommonCore/HttpStream/HttpClientWrapper.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/HttpStream/HttpClientWrapper.cpp" line="88" column="9"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with bool constant." verbose="Redundant code: Found a statement that begins with bool constant." cwe="398" file0="/workspace/src/AppInstallerCommonCore/MSStoreDownload.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/MSStoreDownload.cpp" line="293" column="29"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CATCH_LOG is a macro then please configure it." file0="/workspace/src/AppInstallerCommonCore/NetworkSettings.cpp">
+            <location file="/workspace/src/AppInstallerCommonCore/NetworkSettings.cpp" line="54" column="9"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: toJsonFunction" verbose="Possible null pointer dereference: toJsonFunction" cwe="476" file0="/workspace/src/AppInstallerRepositoryCore/InstallerMetadataCollectionContext.cpp">
+            <location file="/workspace/src/AppInstallerRepositoryCore/InstallerMetadataCollectionContext.cpp" line="453" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/src/AppInstallerRepositoryCore/InstallerMetadataCollectionContext.cpp" line="442" column="45" info="Assuming condition is false"/>
+            <location file="/workspace/src/AppInstallerRepositoryCore/InstallerMetadataCollectionContext.cpp" line="440" column="48" info="Assignment &apos;toJsonFunction=nullptr&apos;, assigned value is 0"/>
+            <symbol>toJsonFunction</symbol>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" file0="/workspace/src/AppInstallerRepositoryCore/RepositorySource.cpp">
+            <location file="/workspace/src/AppInstallerRepositoryCore/RepositorySource.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0min" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0min" file0="/workspace/src/AppInstallerRepositoryCore/SourceUpdateChecks.cpp">
+            <location file="/workspace/src/AppInstallerRepositoryCore/SourceUpdateChecks.cpp" line="0" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/AppInstallerSharedLib/DateTime.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/DateTime.cpp" line="54" column="9"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0h" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0h" file0="/workspace/src/AppInstallerSharedLib/Filesystem.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Filesystem.cpp" line="0" column="0"/>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Invalid iterator &apos;result&apos; used." verbose="The iterator &apos;result&apos; is invalid before being assigned. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/AppInstallerSharedLib/Registry.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="234" column="9"/>
+            <symbol>result</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Invalid iterator &apos;result&apos; used." verbose="The iterator &apos;result&apos; is invalid before being assigned. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/AppInstallerSharedLib/Registry.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="235" column="9"/>
+            <symbol>result</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Invalid iterator &apos;result&apos; used." verbose="The iterator &apos;result&apos; is invalid before being assigned. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/AppInstallerSharedLib/Registry.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="236" column="9"/>
+            <symbol>result</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Invalid iterator &apos;result&apos; used." verbose="The iterator &apos;result&apos; is invalid before being assigned. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/AppInstallerSharedLib/Registry.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="237" column="28"/>
+            <symbol>result</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="error" msg="Out of bounds access in expression &apos;valueName[0]&apos; because &apos;valueName&apos; is empty." verbose="Out of bounds access in expression &apos;valueName[0]&apos; because &apos;valueName&apos; is empty." cwe="398" file0="/workspace/src/AppInstallerSharedLib/Registry.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="65" column="68" info="Access out of bounds"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Registry.cpp" line="255" column="63" info="Calling function &apos;TryGetRegistryValueNameFromIndex&apos;, 3rd argument &apos;valueName&apos; value is size=0"/>
+            <symbol>valueName</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Acquires_lock_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Acquires_lock_ is a macro then please configure it." file0="/workspace/src/AppInstallerSharedLib/SQLiteDynamicStorage.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/winget/SQLiteDynamicStorage.h" line="33" column="13"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;Version(const std::string&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 45. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;Version(const std::string&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 45. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="52" column="22" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="20" column="9" info="Calling Assign"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="45" column="13" info="Calling Version"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;UInt64Version(const std::string&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 145. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;UInt64Version(const std::string&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 145. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="147" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="443" column="9" info="Calling Assign"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="145" column="13" info="Calling UInt64Version"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;SemanticVersion(const std::string&amp;version)&apos; at line 164. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;SemanticVersion(const std::string&amp;version)&apos; at line 164. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="166" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="465" column="9" info="Calling Assign"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="164" column="13" info="Calling SemanticVersion"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;OpenTypeFontVersion(const std::string&amp;version)&apos; at line 295. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;OpenTypeFontVersion(const std::string&amp;version)&apos; at line 295. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="297" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="661" column="9" info="Calling Assign"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="295" column="13" info="Calling OpenTypeFontVersion"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;Version(std::string&amp;&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 20. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;Version(std::string&amp;&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 20. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="52" column="22" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="20" column="9" info="Calling Assign"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;UInt64Version(std::string&amp;&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 443. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;UInt64Version(std::string&amp;&amp;version,std::string_view splitChars=DefaultSplitChars)&apos; at line 443. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="147" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="443" column="9" info="Calling Assign"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;SemanticVersion(std::string&amp;&amp;version)&apos; at line 465. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;SemanticVersion(std::string&amp;&amp;version)&apos; at line 465. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="166" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="465" column="9" info="Calling Assign"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Assign&apos; is called from constructor &apos;OpenTypeFontVersion(std::string&amp;&amp;version)&apos; at line 661. Dynamic binding is not used." verbose="Virtual function &apos;Assign&apos; is called from constructor &apos;OpenTypeFontVersion(std::string&amp;&amp;version)&apos; at line 661. Dynamic binding is not used." file0="/workspace/src/AppInstallerSharedLib/Versions.cpp">
+            <location file="/workspace/src/AppInstallerSharedLib/Public/AppInstallerVersions.h" line="297" column="14" info="Assign is a virtual function"/>
+            <location file="/workspace/src/AppInstallerSharedLib/Versions.cpp" line="661" column="9" info="Calling Assign"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="210" column="23"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="215" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="220" column="32"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="224" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="229" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="234" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="239" column="27"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="244" column="30"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="249" column="34"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="254" column="38"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="258" column="39"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/ComInprocTestbed/Tests.cpp">
+            <location file="/workspace/src/ComInprocTestbed/Tests.cpp" line="263" column="31"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;try&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;try&apos; is not allowed in global scope" file0="/workspace/src/Microsoft.Management.Configuration.OutOfProc/dllmain.cpp">
+            <location file="/workspace/src/Microsoft.Management.Configuration.OutOfProc/dllmain.cpp" line="25" column="92"/>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;itr&apos; used after element has been erased." verbose="The iterator &apos;itr&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp">
+            <location file="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp" line="142" column="29"/>
+            <location file="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp" line="134" column="9"/>
+            <symbol>itr</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;itr&apos; used after element has been erased." verbose="The iterator &apos;itr&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp">
+            <location file="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp" line="164" column="37"/>
+            <location file="/workspace/src/Microsoft.Management.Configuration/ShutdownSynchronization.cpp" line="160" column="17"/>
+            <symbol>itr</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to expand &apos;AICLI_TraceLoggingWriteActivity&apos;, Invalid ## usage when expanding &apos;AICLI_TraceLoggingProcessingSummaryForIntent&apos;: Combining &apos;&quot;Assert&quot;&apos; and &apos;&quot;Count&quot;&apos; yields an invalid token." verbose="failed to expand &apos;AICLI_TraceLoggingWriteActivity&apos;, Invalid ## usage when expanding &apos;AICLI_TraceLoggingProcessingSummaryForIntent&apos;: Combining &apos;&quot;Assert&quot;&apos; and &apos;&quot;Count&quot;&apos; yields an invalid token.">
+            <location file="/workspace/src/Microsoft.Management.Configuration/Telemetry/Telemetry.cpp" line="14" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;try&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;try&apos; is not allowed in global scope" file0="/workspace/src/Microsoft.Management.Deployment.OutOfProc/dllmain.cpp">
+            <location file="/workspace/src/Microsoft.Management.Deployment.OutOfProc/dllmain.cpp" line="25" column="92"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to expand &apos;CoCreatableMicrosoftManagementDeploymentClass&apos;, Invalid ## usage when expanding &apos;CoCreatableMicrosoftManagementDeploymentClass&apos;: Unexpected token &apos;::&apos;" verbose="failed to expand &apos;CoCreatableMicrosoftManagementDeploymentClass&apos;, Invalid ## usage when expanding &apos;CoCreatableMicrosoftManagementDeploymentClass&apos;: Unexpected token &apos;::&apos;">
+            <location file="/workspace/src/Microsoft.Management.Deployment/Public/CoCreatableMicrosoftManagementDeploymentClass.h" line="27" column="0"/>
+        </error>
+        <error id="containerOutOfBounds" severity="error" msg="Out of bounds access in expression &apos;commandLineInput[0]&apos; because &apos;commandLineInput&apos; is empty." verbose="Out of bounds access in expression &apos;commandLineInput[0]&apos; because &apos;commandLineInput&apos; is empty." cwe="398" file0="/workspace/src/WinGetServer/WinGetServerManualActivation_Client.cpp">
+            <location file="/workspace/src/WinGetServer/WinGetServerManualActivation_Client.cpp" line="96" column="69" info="Access out of bounds"/>
+            <symbol>commandLineInput</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CATCH_RETURN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CATCH_RETURN is a macro then please configure it." file0="/workspace/src/WinGetUtil/Exports.cpp">
+            <location file="/workspace/src/WinGetUtil/Exports.cpp" line="74" column="5"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="164" column="25"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="168" column="31"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="172" column="31"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="176" column="32"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="181" column="33"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="185" column="31"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;argv[i]&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp">
+            <location file="/workspace/tools/CorrelationTestbed/InstallAndCheckCorrelation/InstallAndCheckCorrelation/InstallAndCheckCorrelation.cpp" line="189" column="31"/>
+            <symbol>argv[i]</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/tools/SampleWinGetUWPCaller/AppInstallerCaller/MainPage.cpp">
+            <location file="/workspace/tools/SampleWinGetUWPCaller/AppInstallerCaller/MainPage.cpp" line="99" column="9"/>
+        </error>
+    </errors>
+</results>

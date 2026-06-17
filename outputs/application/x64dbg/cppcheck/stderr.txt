@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/src/cross/hex_viewer/CodeEditor.cpp">
+            <location file="/workspace/src/cross/hex_viewer/CodeEditor.h" line="71" column="5"/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;info&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;info&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/cross/hex_viewer/PatternLanguage.cpp">
+            <location file="/workspace/src/cross/hex_viewer/PatternLanguage.cpp" line="201" column="29"/>
+            <location file="/workspace/src/cross/hex_viewer/PatternLanguage.cpp" line="188" column="19" info="Variable created here."/>
+            <location file="/workspace/src/cross/hex_viewer/PatternLanguage.cpp" line="201" column="59" info="Passed to initializer list."/>
+            <location file="/workspace/src/cross/hex_viewer/PatternLanguage.cpp" line="201" column="59" info="Address of variable taken here."/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If _Out_writes_to_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If _Out_writes_to_ is a macro then please configure it." file0="/workspace/src/dbg/TraceRecord.cpp">
+            <location file="/workspace/src/dbg/ntdll/ntdll.h" line="10217" column="5"/>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;Analysis&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Analysis&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/dbg/analysis/analysis.cpp">
+            <location file="/workspace/src/dbg/analysis/analysis.cpp" line="9" column="5"/>
+            <symbol>Analysis</symbol>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;mLastChar==&apos;\\&apos;&apos; and inner condition is &apos;mLastChar==&apos;\r&apos;||mLastChar==&apos;\n&apos;&apos;)." cwe="398" file0="/workspace/src/dbg/stringutils.cpp">
+            <location file="/workspace/src/dbg/stringutils.cpp" line="232" column="34" info="opposite inner condition: mLastChar==&apos;\r&apos;||mLastChar==&apos;\n&apos;"/>
+            <location file="/workspace/src/dbg/stringutils.cpp" line="227" column="22" info="outer condition: mLastChar==&apos;\\&apos;"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;mLastChar&apos; to itself." verbose="Redundant assignment of &apos;mLastChar&apos; to itself." cwe="398" file0="/workspace/src/dbg/stringutils.cpp">
+            <location file="/workspace/src/dbg/stringutils.cpp" line="235" column="27"/>
+            <symbol>mLastChar</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;reloadData&apos; is called from constructor &apos;AbstractStdTable(QWidget*parent=nullptr)&apos; at line 9. Dynamic binding is not used." verbose="Virtual function &apos;reloadData&apos; is called from constructor &apos;AbstractStdTable(QWidget*parent=nullptr)&apos; at line 9. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.h" line="12" column="10" info="reloadData is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp" line="9" column="73" info="Calling reloadData"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;reloadData&apos; is called from constructor &apos;AbstractStdTable(QWidget*parent=nullptr)&apos; at line 11. Dynamic binding is not used." verbose="Virtual function &apos;reloadData&apos; is called from constructor &apos;AbstractStdTable(QWidget*parent=nullptr)&apos; at line 11. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.h" line="12" column="10" info="reloadData is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp" line="1116" column="5" info="Calling reloadData"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp" line="11" column="66" info="Calling headerButtonPressedSlot"/>
+        </error>
+        <error id="pureVirtualCall" severity="warning" msg="Call of pure virtual function &apos;getCellContent&apos; in constructor." verbose="Call of pure virtual function &apos;getCellContent&apos; in constructor. The call will fail during runtime." file0="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.h" line="44" column="21" info="getCellContent is a pure virtual function without body"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp" line="929" column="28" info="Calling getCellContent"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractStdTable.cpp" line="18" column="93" info="Calling copyTableResizeSlot"/>
+            <symbol>getCellContent</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;sliderMovedHook&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 45. Dynamic binding is not used." verbose="Virtual function &apos;sliderMovedHook&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 45. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.h" line="59" column="19" info="sliderMovedHook is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp" line="807" column="20" info="Calling sliderMovedHook"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp" line="45" column="75" info="Calling vertSliderActionSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;updateFonts&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 47. Dynamic binding is not used." verbose="Virtual function &apos;updateFonts&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 47. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.h" line="40" column="18" info="updateFonts is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp" line="117" column="5" info="Calling updateFonts"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp" line="47" column="58" info="Calling updateFontsSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Initialize&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 52. Dynamic binding is not used." verbose="Virtual function &apos;Initialize&apos; is called from constructor &apos;AbstractTableView(QWidget*parent=nullptr)&apos; at line 52. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.h" line="38" column="18" info="Initialize is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/AbstractTableView.cpp" line="52" column="5" info="Calling Initialize"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;updateFonts&apos; is called from constructor &apos;Disassembly(Architecture*architecture,bool isMain,QWidget*parent=nullptr)&apos; at line 41. Dynamic binding is not used." verbose="Virtual function &apos;updateFonts&apos; is called from constructor &apos;Disassembly(Architecture*architecture,bool isMain,QWidget*parent=nullptr)&apos; at line 41. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/Disassembly.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/Disassembly.h" line="22" column="10" info="updateFonts is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/Disassembly.cpp" line="41" column="5" info="Calling updateFonts"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;reloadData&apos; is called from constructor &apos;Disassembly(Architecture*architecture,bool isMain,QWidget*parent=nullptr)&apos; at line 59. Dynamic binding is not used." verbose="Virtual function &apos;reloadData&apos; is called from constructor &apos;Disassembly(Architecture*architecture,bool isMain,QWidget*parent=nullptr)&apos; at line 59. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/Disassembly.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/Disassembly.h" line="61" column="10" info="reloadData is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/Disassembly.cpp" line="59" column="74" info="Calling reloadData"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;HexDump(Architecture*architecture,QWidget*parent=nullptr,MemoryPage*memPage=nullptr)&apos; at line 59. Dynamic binding is not used." verbose="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;HexDump(Architecture*architecture,QWidget*parent=nullptr,MemoryPage*memPage=nullptr)&apos; at line 59. Dynamic binding is not used." file0="/workspace/src/gui/Src/BasicView/HexDump.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/HexDump.h" line="109" column="18" info="getColumnRichText is a virtual function"/>
+            <location file="/workspace/src/gui/Src/BasicView/HexDump.cpp" line="366" column="13" info="Calling getColumnRichText"/>
+            <location file="/workspace/src/gui/Src/BasicView/HexDump.cpp" line="162" column="29" info="Calling makeCopyText"/>
+            <location file="/workspace/src/gui/Src/BasicView/HexDump.cpp" line="385" column="65" info="Calling copySelectionSlot"/>
+            <location file="/workspace/src/gui/Src/BasicView/HexDump.cpp" line="59" column="5" info="Calling setupCopyMenu"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If foreach is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If foreach is a macro then please configure it." file0="/workspace/src/gui/Src/BasicView/ReferenceView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/ReferenceView.cpp" line="340" column="5"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;StdIconSearchListView::mSearchListData&apos; is not initialized in the constructor." verbose="Member variable &apos;StdIconSearchListView::mSearchListData&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/gui/Src/BasicView/StdIconSearchListView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/StdIconSearchListView.cpp" line="3" column="24"/>
+            <symbol>StdIconSearchListView::mSearchListData</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;StdIconSearchListView::mSearchListData&apos; is not initialized in the constructor." verbose="Member variable &apos;StdIconSearchListView::mSearchListData&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/gui/Src/BasicView/StdIconSearchListView.cpp">
+            <location file="/workspace/src/gui/Src/BasicView/StdIconSearchListView.cpp" line="8" column="24"/>
+            <symbol>StdIconSearchListView::mSearchListData</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;QZydis&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;QZydis&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/gui/Src/Disassembler/QZydis.cpp">
+            <location file="/workspace/src/gui/Src/Disassembler/QZydis.cpp" line="40" column="5"/>
+            <symbol>QZydis</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;displayCustomContextMenuSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 18. Dynamic binding is not used." verbose="Virtual function &apos;displayCustomContextMenuSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 18. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/CPURegistersView.cpp">
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.h" line="32" column="18" info="displayCustomContextMenuSlot is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.cpp" line="18" column="74" info="Calling displayCustomContextMenuSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 21. Dynamic binding is not used." verbose="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 21. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/CPURegistersView.cpp">
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.h" line="31" column="18" info="refreshShortcutsSlot is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.cpp" line="21" column="62" info="Calling refreshShortcutsSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 38. Dynamic binding is not used." verbose="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;CPURegistersView(CPUWidget*parent=nullptr)&apos; at line 38. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/CPURegistersView.cpp">
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.h" line="31" column="18" info="refreshShortcutsSlot is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/CPURegistersView.cpp" line="38" column="5" info="Calling refreshShortcutsSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;CPUStack(CPUMultiDump*multiDump,QWidget*parent=nullptr)&apos; at line 44. Dynamic binding is not used." verbose="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;CPUStack(CPUMultiDump*multiDump,QWidget*parent=nullptr)&apos; at line 44. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/CPUStack.cpp">
+            <location file="/workspace/src/gui/Src/Gui/CPUStack.h" line="20" column="10" info="getColumnRichText is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/CPUStack.cpp" line="984" column="9" info="Calling getColumnRichText"/>
+            <location file="/workspace/src/gui/Src/Gui/CPUStack.cpp" line="135" column="58" info="Calling copyCommentsColumnSlot"/>
+            <location file="/workspace/src/gui/Src/Gui/CPUStack.cpp" line="44" column="5" info="Calling setupContextMenu"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/src/gui/Src/Gui/DebugStatusLabel.cpp">
+            <location file="/workspace/src/gui/Src/Gui/DebugStatusLabel.h" line="12" column="5"/>
+        </error>
+        <error id="publicAllocationError" severity="warning" msg="Possible leak in public function. The pointer &apos;mMenuBuilder&apos; is not deallocated before it is allocated." verbose="Possible leak in public function. The pointer &apos;mMenuBuilder&apos; is not deallocated before it is allocated." cwe="398" file0="/workspace/src/gui/Src/Gui/DisassemblerGraphView.cpp">
+            <location file="/workspace/src/gui/Src/Gui/DisassemblerGraphView.cpp" line="2216" column="5"/>
+            <symbol>mMenuBuilder</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: clickedReg" verbose="Uninitialized variable: clickedReg" cwe="457" file0="/workspace/src/gui/Src/Gui/RegistersView.cpp">
+            <location file="/workspace/src/gui/Src/Gui/RegistersView.cpp" line="1616" column="8"/>
+            <location file="/workspace/src/gui/Src/Gui/RegistersView.cpp" line="1858" column="35" info="Calling function &apos;identifyRegister&apos;, 3rd argument &apos;&amp;r&apos; value is &lt;Uninit&gt;"/>
+            <symbol>clickedReg</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;DeleteTab&apos; is called from constructor &apos;MHTabWidget(QWidget*parent=nullptr,bool allowDetach=true,bool allowDelete=false)&apos; at line 17. Dynamic binding is not used." verbose="Virtual function &apos;DeleteTab&apos; is called from constructor &apos;MHTabWidget(QWidget*parent=nullptr,bool allowDetach=true,bool allowDelete=false)&apos; at line 17. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/TabWidget.cpp">
+            <location file="/workspace/src/gui/Src/Gui/TabWidget.h" line="39" column="18" info="DeleteTab is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/TabWidget.cpp" line="17" column="59" info="Calling DeleteTab"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;DeleteTab&apos; is called from destructor &apos;~MHTabWidget()&apos; at line 34. Dynamic binding is not used." verbose="Virtual function &apos;DeleteTab&apos; is called from destructor &apos;~MHTabWidget()&apos; at line 34. Dynamic binding is not used." file0="/workspace/src/gui/Src/Gui/TabWidget.cpp">
+            <location file="/workspace/src/gui/Src/Gui/TabWidget.h" line="39" column="18" info="DeleteTab is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Gui/TabWidget.cpp" line="34" column="62" info="Calling DeleteTab"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;mark&apos; used instead of size of its data." verbose="Size of pointer &apos;mark&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*mark)&apos;." cwe="467" file0="/workspace/src/gui/Src/ThirdPartyLibs/md4c/md4c.c">
+            <location file="/workspace/src/gui/Src/ThirdPartyLibs/md4c/md4c.c" line="2667" column="12"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;mark&apos; used instead of size of its data." verbose="Size of pointer &apos;mark&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*mark)&apos;." cwe="467" file0="/workspace/src/gui/Src/ThirdPartyLibs/md4c/md4c.c">
+            <location file="/workspace/src/gui/Src/ThirdPartyLibs/md4c/md4c.c" line="2676" column="18"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;DeleteTab&apos; is called from constructor &apos;TraceManager(QWidget*parent=nullptr)&apos; at line 23. Dynamic binding is not used." verbose="Virtual function &apos;DeleteTab&apos; is called from constructor &apos;TraceManager(QWidget*parent=nullptr)&apos; at line 23. Dynamic binding is not used." file0="/workspace/src/gui/Src/Tracer/TraceManager.cpp">
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.h" line="25" column="10" info="DeleteTab is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.cpp" line="90" column="9" info="Calling DeleteTab"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.cpp" line="23" column="58" info="Calling closeAllTabs"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;DeleteTab&apos; is called from destructor &apos;~TraceManager()&apos; at line 31. Dynamic binding is not used." verbose="Virtual function &apos;DeleteTab&apos; is called from destructor &apos;~TraceManager()&apos; at line 31. Dynamic binding is not used." file0="/workspace/src/gui/Src/Tracer/TraceManager.cpp">
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.h" line="25" column="10" info="DeleteTab is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.cpp" line="90" column="9" info="Calling DeleteTab"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceManager.cpp" line="31" column="5" info="Calling closeAllTabs"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;TraceRegisters(TraceWidget*parent=nullptr)&apos; at line 41. Dynamic binding is not used." verbose="Virtual function &apos;refreshShortcutsSlot&apos; is called from constructor &apos;TraceRegisters(TraceWidget*parent=nullptr)&apos; at line 41. Dynamic binding is not used." file0="/workspace/src/gui/Src/Tracer/TraceRegisters.cpp">
+            <location file="/workspace/src/gui/Src/Tracer/TraceRegisters.h" line="18" column="18" info="refreshShortcutsSlot is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceRegisters.cpp" line="41" column="5" info="Calling refreshShortcutsSlot"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;TraceStack(Architecture*architecture,TraceWidget*parent,TraceFileDumpMemoryPage*memoryPage)&apos; at line 49. Dynamic binding is not used." verbose="Virtual function &apos;getColumnRichText&apos; is called from constructor &apos;TraceStack(Architecture*architecture,TraceWidget*parent,TraceFileDumpMemoryPage*memoryPage)&apos; at line 49. Dynamic binding is not used." file0="/workspace/src/gui/Src/Tracer/TraceStack.cpp">
+            <location file="/workspace/src/gui/Src/Tracer/TraceStack.h" line="23" column="10" info="getColumnRichText is a virtual function"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceStack.cpp" line="653" column="9" info="Calling getColumnRichText"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceStack.cpp" line="109" column="58" info="Calling copyCommentsColumnSlot"/>
+            <location file="/workspace/src/gui/Src/Tracer/TraceStack.cpp" line="49" column="5" info="Calling setupContextMenu"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2059" column="46"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2089" column="46"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2323" column="45"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2346" column="45"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2421" column="42"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2735" column="46"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2756" column="46"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with NULL constant." verbose="Redundant code: Found a statement that begins with NULL constant." cwe="398" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2953" column="45"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;el&apos;." verbose="Access of moved variable &apos;el&apos;." cwe="672" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2188" column="49" info="Access of moved variable &apos;el&apos;."/>
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2172" column="29" info="Calling std::move(el)"/>
+            <symbol>el</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;el&apos;." verbose="Access of moved variable &apos;el&apos;." cwe="672" file0="/workspace/src/headless/headless.cpp">
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2818" column="49" info="Access of moved variable &apos;el&apos;."/>
+            <location file="/workspace/src/dbg/concurrentqueue/concurrentqueue.h" line="2793" column="29" info="Calling std::move(el)"/>
+            <symbol>el</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ZYAN_PRINTF_ATTR is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ZYAN_PRINTF_ATTR is a macro then please configure it." file0="/workspace/src/zydis_wrapper/Zydis/Zydis.c">
+            <location file="/workspace/src/zydis_wrapper/Zydis/Zydis.c" line="7532" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Zydis::mInstrText&apos; is not initialized in the constructor." verbose="Member variable &apos;Zydis::mInstrText&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/zydis_wrapper/zydis_wrapper.cpp">
+            <location file="/workspace/src/zydis_wrapper/zydis_wrapper.cpp" line="57" column="8"/>
+            <symbol>Zydis::mInstrText</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GotoDialog&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GotoDialog&apos;" cwe="758">
+            <location file="/workspace/src/cross/hex_viewer/GotoDialog.h" line="6" column="1"/>
+            <location file="/workspace/src/cross/minidump/GotoDialog.h" line="6" column="1"/>
+            <symbol>GotoDialog</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;MiniHexDump&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;MiniHexDump&apos;" cwe="758">
+            <location file="/workspace/src/cross/hex_viewer/MiniHexDump.h" line="8" column="1"/>
+            <location file="/workspace/src/cross/minidump/MiniHexDump.h" line="8" column="1"/>
+            <symbol>MiniHexDump</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;MainWindow&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;MainWindow&apos;" cwe="758">
+            <location file="/workspace/src/cross/minidump/MainWindow.h" line="18" column="1"/>
+            <location file="/workspace/src/cross/remote_table/MainWindow.h" line="14" column="1"/>
+            <symbol>MainWindow</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;XREF_RECORD&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;XREF_RECORD&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="1070" column="9"/>
+            <location file="/workspace/src/cross/widgets/Types.h" line="77" column="9"/>
+            <symbol>XREF_RECORD</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;XREF_INFO&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;XREF_INFO&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="1076" column="9"/>
+            <location file="/workspace/src/cross/widgets/Types.h" line="83" column="9"/>
+            <symbol>XREF_INFO</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;X87FPU&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;X87FPU&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="831" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="23" column="1"/>
+            <symbol>X87FPU</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;X87FPUREGISTER&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;X87FPUREGISTER&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="824" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="35" column="1"/>
+            <symbol>X87FPUREGISTER</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;FLAGS&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;FLAGS&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="737" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="42" column="1"/>
+            <symbol>FLAGS</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;MXCSRFIELDS&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;MXCSRFIELDS&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="750" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="55" column="1"/>
+            <symbol>MXCSRFIELDS</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;X87STATUSWORDFIELDS&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;X87STATUSWORDFIELDS&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="770" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="74" column="1"/>
+            <symbol>X87STATUSWORDFIELDS</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;X87CONTROLWORDFIELDS&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;X87CONTROLWORDFIELDS&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="790" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="92" column="1"/>
+            <symbol>X87CONTROLWORDFIELDS</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;LASTERROR&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;LASTERROR&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="935" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="106" column="1"/>
+            <symbol>LASTERROR</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;LASTSTATUS&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;LASTSTATUS&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="941" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="112" column="1"/>
+            <symbol>LASTSTATUS</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;REGISTERCONTEXT&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;REGISTERCONTEXT&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="843" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="118" column="1"/>
+            <symbol>REGISTERCONTEXT</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;REGISTERCONTEXT_AVX512&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;REGISTERCONTEXT_AVX512&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="889" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="157" column="1"/>
+            <symbol>REGISTERCONTEXT_AVX512</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;REGDUMP&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;REGDUMP&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="947" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="196" column="1"/>
+            <symbol>REGDUMP</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;REGDUMP_AVX512&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;REGDUMP_AVX512&apos;" cwe="758">
+            <location file="/workspace/src/bridge/bridgemain.h" line="960" column="9"/>
+            <location file="/workspace/src/cross/widgets/RegisterContext.h" line="209" column="1"/>
+            <symbol>REGDUMP_AVX512</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;DBGRELOCATIONINFO&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;DBGRELOCATIONINFO&apos;" cwe="758">
+            <location file="/workspace/src/dbg/_dbgfunctions.h" line="52" column="9"/>
+            <location file="/workspace/src/cross/widgets/Bridge.h" line="81" column="9"/>
+            <symbol>DBGRELOCATIONINFO</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;DBGPATCHINFO&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;DBGPATCHINFO&apos;" cwe="758">
+            <location file="/workspace/src/dbg/_dbgfunctions.h" line="10" column="9"/>
+            <location file="/workspace/src/cross/widgets/Bridge.h" line="88" column="9"/>
+            <symbol>DBGPATCHINFO</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;CPUStack&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;CPUStack&apos;" cwe="758">
+            <location file="/workspace/src/cross/debugger/gui/CPUStack.h" line="15" column="1"/>
+            <location file="/workspace/src/gui/Src/Gui/CPUStack.h" line="10" column="1"/>
+            <symbol>CPUStack</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GotoDialog&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GotoDialog&apos;" cwe="758">
+            <location file="/workspace/src/cross/hex_viewer/GotoDialog.h" line="6" column="1"/>
+            <location file="/workspace/src/gui/Src/Gui/GotoDialog.h" line="14" column="1"/>
+            <symbol>GotoDialog</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

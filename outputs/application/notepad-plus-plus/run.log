@@ -1,0 +1,18 @@
+[application/notepad-plus-plus] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/notepad-plus-plus
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/notepad-plus-plus
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1260 findings, exit 0, 3.29s
+[2/4] semgrep completed: 1 findings, exit 0, 9.99s
+[3/4] codeql completed: 79 findings, exit 0, 165.46s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[4/4] cppcheck completed: 62 findings, exit 0, 383.60s
+
+Summary: 4 completed, 0 failed, 1402 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/notepad-plus-plus/report.json

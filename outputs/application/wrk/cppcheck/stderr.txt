@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/wrk.c">
+            <location file="/workspace/src/wrk.c" line="182" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/wrk.c">
+            <location file="/workspace/src/wrk.c" line="182" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/wrk.c">
+            <location file="/workspace/src/wrk.c" line="182" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 4) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 4) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/wrk.c">
+            <location file="/workspace/src/wrk.c" line="182" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/wrk.c">
+            <location file="/workspace/src/wrk.c" line="187" column="9"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument parser that points at uninitialized variable parser" verbose="Using argument parser that points at uninitialized variable parser" cwe="457">
+            <location file="/workspace/src/http_parser.c" line="2085" column="16" info="Using argument parser"/>
+            <location file="/workspace/src/script.c" line="277" column="21" info="Calling function http_parser_init, 1st argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

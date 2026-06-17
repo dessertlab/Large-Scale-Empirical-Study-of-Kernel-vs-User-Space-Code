@@ -1,0 +1,39 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "libavformat/avio.c",
+        "line": 146,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "libavformat/avio.c",
+        "line": 146,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "libavformat/avio.c",
+        "line": 146,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  }
+]

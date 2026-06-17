@@ -1,0 +1,330 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-834",
+      "filename": "/workspace/libevmasm/Inliner.cpp",
+      "line": 246,
+      "message": "Missing bounds check for extra iterator increment in loop.",
+      "rule": "StlMissingComparison",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/liblangutil/Token.cpp",
+      "line": 118,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/libsolidity/analysis/ContractLevelChecker.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 1686_error",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/libsolidity/analysis/DocStringAnalyser.cpp",
+      "line": 110,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/libsolidity/analysis/PostTypeContractLevelChecker.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 3495_error",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/analysis/TypeChecker.cpp",
+      "line": 809,
+      "message": "Either the condition 'var' is redundant or there is possible null pointer dereference: var.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/analysis/TypeChecker.cpp",
+      "line": 1282,
+      "message": "Either the condition '!valueComponentType' is redundant or there is possible null pointer dereference: valueComponentType.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/libsolidity/codegen/CompilerContext.cpp",
+      "line": 444,
+      "message": "Access of moved variable 'locationOverride'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/codegen/CompilerUtils.cpp",
+      "line": 471,
+      "message": "Either the condition '!targetType' is redundant or there is possible null pointer dereference: targetType.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/codegen/CompilerUtils.cpp",
+      "line": 534,
+      "message": "Either the condition '!targetType' is redundant or there is possible null pointer dereference: targetType.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/codegen/ContractCompiler.cpp",
+      "line": 870,
+      "message": "Either the condition '!variable' is redundant or there is possible null pointer dereference: variable.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/codegen/ContractCompiler.cpp",
+      "line": 872,
+      "message": "Either the condition '!variable' is redundant or there is possible null pointer dereference: variable.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/codegen/ir/IRGenerator.cpp",
+      "line": 644,
+      "message": "Either the condition 'arrayType' is redundant or there is possible null pointer dereference: arrayType.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libsolidity/experimental/analysis/TypeInference.cpp",
+      "line": 293,
+      "message": "Either the condition '!declaration' is redundant or there is possible null pointer dereference: declaration.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/libsolidity/formal/CHC.cpp",
+      "line": 804,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/libsolidity/formal/CHC.cpp",
+      "line": 806,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/libsolidity/interface/ImportRemapper.cpp",
+      "line": 39,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/libsolidity/lsp/Transport.cpp",
+      "line": 199,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/libsolutil/CommonIO.cpp",
+      "line": 111,
+      "message": "The one definition rule is violated, different classes/structs have the same name 'DisableConsoleBuffering'",
+      "rule": "ctuOneDefinitionRuleViolation",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/libsolutil/FixedHash.h",
+      "line": 79,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/libsolutil/FixedHash.h",
+      "line": 99,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/libsolutil/Profiler.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 0us",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/libyul/AsmAnalysis.cpp",
+      "line": 124,
+      "message": "Access of moved variable '_objectStructure'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/libyul/backends/evm/OptimizedEVMCodeTransform.cpp",
+      "line": 148,
+      "message": "Syntax Error: AST broken, '_call' doesn't have a parent.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/libyul/optimiser/StackLimitEvader.cpp",
+      "line": 138,
+      "message": "Either the condition 'evmDialect' is redundant or there is possible null pointer dereference: evmDialect.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-665",
+      "filename": "/workspace/libyul/optimiser/Suite.cpp",
+      "line": 356,
+      "message": "Unusual pointer arithmetic. A value of type 'char' is added to a string literal.",
+      "rule": "strPlusChar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-665",
+      "filename": "/workspace/libyul/optimiser/Suite.cpp",
+      "line": 362,
+      "message": "Unusual pointer arithmetic. A value of type 'char' is added to a string literal.",
+      "rule": "strPlusChar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/libyul/optimiser/UnusedStoreEliminator.cpp",
+      "line": 285,
+      "message": "Iterator 'it' from different container 'active' are used together.",
+      "rule": "mismatchingContainerIterator",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/libyul/optimiser/UnusedStoreEliminator.cpp",
+      "line": 289,
+      "message": "Iterator 'it' from different container 'active' are used together.",
+      "rule": "mismatchingContainerIterator",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+      "line": 34,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+      "line": 38,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+      "line": 45,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+      "line": 55,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.h",
+      "line": 49,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/tools/yulPhaser/SimulationRNG.h",
+      "line": 56,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 35,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 21,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 14,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/solidity/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

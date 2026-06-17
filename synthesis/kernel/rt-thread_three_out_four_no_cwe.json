@@ -1,0 +1,115 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-664",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "bsp/simulator/drivers/nanddrv_file.c",
+        "line": 364,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "bsp/simulator/drivers/nanddrv_file.c",
+        "line": 364,
+        "cwe": "CWE-664",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "bsp/simulator/drivers/nanddrv_file.c",
+        "line": 364,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-664",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "bsp/simulator/drivers/sd_sim.c",
+        "line": 155,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "bsp/simulator/drivers/sd_sim.c",
+        "line": 155,
+        "cwe": "CWE-664",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "bsp/simulator/drivers/sd_sim.c",
+        "line": 155,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "components/lwp/lwp_args.c",
+        "line": 103,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "components/lwp/lwp_args.c",
+        "line": 103,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "components/lwp/lwp_args.c",
+        "line": 103,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  }
+]

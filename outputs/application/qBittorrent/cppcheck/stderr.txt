@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM_NS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM_NS is a macro then please configure it." file0="/workspace/src/base/bittorrent/addtorrentparams.cpp">
+            <location file="/workspace/src/base/bittorrent/sharelimits.h" line="61" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." file0="/workspace/src/base/bittorrent/infohash.cpp">
+            <location file="/workspace/src/base/bittorrent/infohash.h" line="99" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;try&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;try&apos; is not allowed in global scope" file0="/workspace/src/base/bittorrent/torrentdescriptor.cpp">
+            <location file="/workspace/src/base/bittorrent/torrentdescriptor.cpp" line="93" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DISABLE_COPY_MOVE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DISABLE_COPY_MOVE is a macro then please configure it." file0="/workspace/src/base/net/geoipdatabase.cpp">
+            <location file="/workspace/src/base/net/geoipdatabase.h" line="47" column="5"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" file0="/workspace/src/base/rss/rss_feed.cpp">
+            <location file="/workspace/src/base/rss/rss_feed.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" file0="/workspace/src/base/rss/rss_session.cpp">
+            <location file="/workspace/src/base/rss/rss_session.cpp" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." file0="/workspace/src/base/tag.cpp">
+            <location file="/workspace/src/base/tag.h" line="55" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." file0="/workspace/src/base/torrentfileguard.cpp">
+            <location file="/workspace/src/base/torrentfileguard.h" line="79" column="5"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;RandomLayer&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;RandomLayer&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/base/utils/random.cpp">
+            <location file="/workspace/src/base/utils/randomlayer_linux.cpp" line="54" column="21"/>
+            <symbol>RandomLayer</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;RandomLayer&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;RandomLayer&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/base/utils/random.cpp">
+            <location file="/workspace/src/base/utils/randomlayer_linux.cpp" line="54" column="21"/>
+            <symbol>RandomLayer</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;filesCount&apos; is called from constructor &apos;TorrentContentAdaptor(const BitTorrent::TorrentInfo&amp;torrentInfo,PathList&amp;filePaths,QList&lt;BitTorrent::DownloadPriority&gt;&amp;filePriorities,std::function&lt;void()&apos; at line 911. Dynamic binding is not used." verbose="Virtual function &apos;filesCount&apos; is called from constructor &apos;TorrentContentAdaptor(const BitTorrent::TorrentInfo&amp;torrentInfo,PathList&amp;filePaths,QList&lt;BitTorrent::DownloadPriority&gt;&amp;filePriorities,std::function&lt;void()&apos; at line 911. Dynamic binding is not used." file0="/workspace/src/gui/addnewtorrentdialog.cpp">
+            <location file="/workspace/src/gui/addnewtorrentdialog.cpp" line="154" column="9" info="filesCount is a virtual function"/>
+            <location file="/workspace/src/gui/addnewtorrentdialog.cpp" line="911" column="31" info="Calling filesCount"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." file0="/workspace/src/gui/addtorrentparamswidget.cpp">
+            <location file="/workspace/src/gui/fspathedit.h" line="69" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_ENUM is a macro then please configure it." file0="/workspace/src/gui/search/searchjobwidget.cpp">
+            <location file="/workspace/src/gui/search/searchjobwidget.h" line="68" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_TR_FUNCTIONS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_TR_FUNCTIONS is a macro then please configure it." file0="/workspace/src/gui/torrentcontentfiltermodel.cpp">
+            <location file="/workspace/src/gui/torrentcontentmodelitem.h" line="43" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." file0="/workspace/src/gui/transferlistdelegate.cpp">
+            <location file="/workspace/src/gui/transferlistmodel.h" line="154" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DISABLE_COPY_MOVE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DISABLE_COPY_MOVE is a macro then please configure it." file0="/workspace/src/gui/uithemedialog.cpp">
+            <location file="/workspace/src/gui/uithemedialog.cpp" line="66" column="5"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0s" file0="/workspace/src/webui/webapplication.cpp">
+            <location file="/workspace/src/webui/webapplication.cpp" line="0" column="0"/>
+        </error>
+    </errors>
+</results>

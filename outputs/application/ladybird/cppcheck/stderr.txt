@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tm" verbose="Uninitialized variable: &amp;tm" cwe="457" file0="/workspace/AK/Time.cpp">
+            <location file="/workspace/AK/Time.cpp" line="534" column="15"/>
+            <symbol>&amp;tm</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: header" verbose="Uninitialized variable: header" cwe="457" file0="/workspace/Libraries/LibCore/Socket.cpp">
+            <location file="/workspace/Libraries/LibCore/Socket.cpp" line="441" column="11"/>
+            <symbol>header</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If POP_SCOPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If POP_SCOPE is a macro then please configure it." file0="/workspace/Libraries/LibCrypto/PK/MLDSA.cpp">
+            <location file="/workspace/Libraries/LibCrypto/PK/MLDSA.cpp" line="124" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If POP_SCOPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If POP_SCOPE is a macro then please configure it." file0="/workspace/Libraries/LibCrypto/PK/MLKEM.cpp">
+            <location file="/workspace/Libraries/LibCrypto/PK/MLKEM.cpp" line="121" column="9"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1uz" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1uz" file0="/workspace/Libraries/LibDevTools/Actors/NodeActor.cpp">
+            <location file="/workspace/Libraries/LibDevTools/Actors/NodeActor.cpp" line="0" column="0"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;!s_font_manager&apos; and inner condition is &apos;!s_font_manager&apos;)." cwe="398" file0="/workspace/Libraries/LibGfx/Font/TypefaceSkia.cpp">
+            <location file="/workspace/Libraries/LibGfx/Font/TypefaceSkia.cpp" line="88" column="13" info="identical inner condition: !s_font_manager"/>
+            <location file="/workspace/Libraries/LibGfx/Font/TypefaceSkia.cpp" line="77" column="9" info="outer condition: !s_font_manager"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibGfx/ImageFormats/TIFFLoader.cpp">
+            <location file="/workspace/Libraries/LibGfx/ImageFormats/TIFFLoader.cpp" line="635" column="53"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;0xff&lt;&lt;(i*8)&apos;." verbose="Signed integer overflow for expression &apos;0xff&lt;&lt;(i*8)&apos;." cwe="190" file0="/workspace/Libraries/LibGfx/ImageFormats/WebPWriterLossless.cpp">
+            <location file="/workspace/Libraries/LibGfx/ImageFormats/WebPWriterLossless.cpp" line="365" column="34" info="Integer overflow"/>
+            <location file="/workspace/Libraries/LibGfx/ImageFormats/WebPWriterLossless.cpp" line="364" column="27" info="Assuming that condition &apos;i&lt;4&apos; is not redundant"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_COLOR_ROLES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_COLOR_ROLES is a macro then please configure it." file0="/workspace/Libraries/LibGfx/SystemTheme.cpp">
+            <location file="/workspace/Libraries/LibGfx/SystemTheme.cpp" line="155" column="5"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buf" verbose="Uninitialized variable: buf" cwe="457" file0="/workspace/Libraries/LibIPC/TransportMachPort.cpp">
+            <location file="/workspace/Libraries/LibIPC/TransportMachPort.cpp" line="339" column="68"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buf" verbose="Uninitialized variable: buf" cwe="457" file0="/workspace/Libraries/LibIPC/TransportSocket.cpp">
+            <location file="/workspace/Libraries/LibIPC/TransportSocket.cpp" line="147" column="77"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buf" verbose="Uninitialized variable: buf" cwe="457" file0="/workspace/Libraries/LibIPC/TransportSocket.cpp">
+            <location file="/workspace/Libraries/LibIPC/TransportSocket.cpp" line="220" column="68"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_BUILTINS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_BUILTINS is a macro then please configure it." file0="/workspace/Libraries/LibJS/Bytecode/AsmInterpreter/AsmInterpreter.cpp">
+            <location file="/workspace/Libraries/LibJS/Bytecode/AsmInterpreter/AsmInterpreter.cpp" line="245" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_COMMON_BINARY_OPS_WITHOUT_FAST_PATH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_COMMON_BINARY_OPS_WITHOUT_FAST_PATH is a macro then please configure it." file0="/workspace/Libraries/LibJS/Bytecode/Interpreter.cpp">
+            <location file="/workspace/Libraries/LibJS/Bytecode/Interpreter.cpp" line="1818" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Contrib/Test262/262Object.cpp">
+            <location file="/workspace/Libraries/LibJS/Contrib/Test262/262Object.cpp" line="57" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Contrib/Test262/AgentObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Contrib/Test262/AgentObject.cpp" line="34" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Contrib/Test262/GlobalObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Contrib/Test262/GlobalObject.cpp" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ArrayBufferConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ArrayBufferConstructor.cpp" line="78" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ArrayBufferPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ArrayBufferPrototype.cpp" line="43" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ArrayConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ArrayConstructor.cpp" line="141" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ArrayIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ArrayIteratorPrototype.cpp" line="36" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ArrayPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ArrayPrototype.cpp" line="185" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/AsyncDisposableStackPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/AsyncDisposableStackPrototype.cpp" line="45" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/AsyncFromSyncIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/AsyncFromSyncIteratorPrototype.cpp" line="112" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/AsyncGeneratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/AsyncGeneratorPrototype.cpp" line="55" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/AsyncIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/AsyncIteratorPrototype.cpp" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/AtomicsObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/AtomicsObject.cpp" line="255" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/BigIntConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/BigIntConstructor.cpp" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/BigIntPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/BigIntPrototype.cpp" line="59" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/BooleanPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/BooleanPrototype.cpp" line="52" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ConsoleObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ConsoleObject.cpp" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/DataViewPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/DataViewPrototype.cpp" line="169" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/DateConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/DateConstructor.cpp" line="163" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/DatePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/DatePrototype.cpp" line="119" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/DisposableStackPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/DisposableStackPrototype.cpp" line="44" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ErrorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ErrorPrototype.cpp" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_ERROR_TYPES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_ERROR_TYPES is a macro then please configure it." file0="/workspace/Libraries/LibJS/Runtime/ErrorTypes.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ErrorTypes.cpp" line="13" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/FinalizationRegistryPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/FinalizationRegistryPrototype.cpp" line="34" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/FunctionPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/FunctionPrototype.cpp" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/GeneratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/GeneratorPrototype.cpp" line="43" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/GlobalObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/GlobalObject.cpp" line="191" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/CollatorConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/CollatorConstructor.cpp" line="148" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/CollatorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/CollatorPrototype.cpp" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DateTimeFormatConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DateTimeFormatConstructor.cpp" line="70" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DateTimeFormatPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DateTimeFormatPrototype.cpp" line="44" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DisplayNamesConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DisplayNamesConstructor.cpp" line="116" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DisplayNamesPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DisplayNamesPrototype.cpp" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DurationFormatConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DurationFormatConstructor.cpp" line="126" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/DurationFormatPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/DurationFormatPrototype.cpp" line="41" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/Intl.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/Intl.cpp" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/ListFormatConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/ListFormatConstructor.cpp" line="91" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/ListFormatPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/ListFormatPrototype.cpp" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/LocalePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/LocalePrototype.cpp" line="60" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/NumberFormatConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/NumberFormatConstructor.cpp" line="449" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/NumberFormatPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/NumberFormatPrototype.cpp" line="43" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/PluralRulesConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/PluralRulesConstructor.cpp" line="104" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/PluralRulesPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/PluralRulesPrototype.cpp" line="40" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/RelativeTimeFormatConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/RelativeTimeFormatConstructor.cpp" line="100" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/RelativeTimeFormatPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/RelativeTimeFormatPrototype.cpp" line="38" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/SegmentIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/SegmentIteratorPrototype.cpp" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/SegmenterConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/SegmenterConstructor.cpp" line="80" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/SegmenterPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/SegmenterPrototype.cpp" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Intl/SegmentsPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Intl/SegmentsPrototype.cpp" line="34" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/IteratorConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/IteratorConstructor.cpp" line="171" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/IteratorHelperPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/IteratorHelperPrototype.cpp" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/IteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/IteratorPrototype.cpp" line="56" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/JSONObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/JSONObject.cpp" line="123" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/MapConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/MapConstructor.cpp" line="76" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/MapIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/MapIteratorPrototype.cpp" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/MapPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/MapPrototype.cpp" line="47" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/MathObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/MathObject.cpp" line="118" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/NumberConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/NumberConstructor.cpp" line="110" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/NumberPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/NumberPrototype.cpp" line="263" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ObjectConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ObjectConstructor.cpp" line="122" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ObjectPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ObjectPrototype.cpp" line="62" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/PromiseConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/PromiseConstructor.cpp" line="295" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/PromisePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/PromisePrototype.cpp" line="40" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ProxyConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ProxyConstructor.cpp" line="79" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/ReflectObject.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/ReflectObject.cpp" line="49" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/RegExpConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/RegExpConstructor.cpp" line="244" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_REGEXP_FLAGS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If JS_ENUMERATE_REGEXP_FLAGS is a macro then please configure it." file0="/workspace/Libraries/LibJS/Runtime/RegExpPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/RegExpPrototype.cpp" line="522" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/RegExpStringIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/RegExpStringIteratorPrototype.cpp" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SetConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SetConstructor.cpp" line="83" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SetIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SetIteratorPrototype.cpp" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SetPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SetPrototype.cpp" line="58" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SharedArrayBufferConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SharedArrayBufferConstructor.cpp" line="75" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SharedArrayBufferPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SharedArrayBufferPrototype.cpp" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/StringConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/StringConstructor.cpp" line="96" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/StringIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/StringIteratorPrototype.cpp" line="33" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/StringPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/StringPrototype.cpp" line="237" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SymbolConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SymbolConstructor.cpp" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/SymbolPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/SymbolPrototype.cpp" line="62" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/DurationConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/DurationConstructor.cpp" line="95" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/DurationPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/DurationPrototype.cpp" line="95" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/InstantConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/InstantConstructor.cpp" line="68" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/InstantPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/InstantPrototype.cpp" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/Now.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/Now.cpp" line="46" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateConstructor.cpp" line="89" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDatePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDatePrototype.cpp" line="77" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateTimeConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateTimeConstructor.cpp" line="128" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateTimePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainDateTimePrototype.cpp" line="82" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainMonthDayConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainMonthDayConstructor.cpp" line="96" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainMonthDayPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainMonthDayPrototype.cpp" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainTimeConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainTimeConstructor.cpp" line="88" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainTimePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainTimePrototype.cpp" line="78" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainYearMonthConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainYearMonthConstructor.cpp" line="96" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/PlainYearMonthPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/PlainYearMonthPrototype.cpp" line="61" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/ZonedDateTimeConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/ZonedDateTimeConstructor.cpp" line="110" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Temporal/ZonedDateTimePrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Temporal/ZonedDateTimePrototype.cpp" line="94" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/TypedArrayConstructor.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/TypedArrayConstructor.cpp" line="58" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/TypedArrayPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/TypedArrayPrototype.cpp" line="131" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/Uint8Array.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/Uint8Array.cpp" line="81" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/WeakMapPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/WeakMapPrototype.cpp" line="38" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/WeakRefPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/WeakRefPrototype.cpp" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/WeakSetPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/WeakSetPrototype.cpp" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibJS/Runtime/WrapForValidIteratorPrototype.cpp">
+            <location file="/workspace/Libraries/LibJS/Runtime/WrapForValidIteratorPrototype.cpp" line="32" column="1"/>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;m_notifier-&gt;on_activation&apos; will use lambda that captures local variable &apos;loop&apos;." verbose="Non-local variable &apos;m_notifier-&gt;on_activation&apos; will use lambda that captures local variable &apos;loop&apos;." cwe="562" file0="/workspace/Libraries/LibLine/Editor.cpp">
+            <location file="/workspace/Libraries/LibLine/Editor.cpp" line="809" column="15"/>
+            <location file="/workspace/Libraries/LibLine/Editor.cpp" line="802" column="21" info="Variable created here."/>
+            <location file="/workspace/Libraries/LibLine/Editor.cpp" line="811" column="13" info="Lambda captures variable by reference here."/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;output_thread_data-&gt;m_audio_processor_should_exit&apos;, second condition is always false" verbose="Identical condition &apos;output_thread_data-&gt;m_audio_processor_should_exit&apos;, second condition is always false" cwe="398" file0="/workspace/Libraries/LibMedia/Sinks/AudioPlaybackSink.cpp">
+            <location file="/workspace/Libraries/LibMedia/Sinks/AudioPlaybackSink.cpp" line="113" column="43" info="Testing identical condition &apos;output_thread_data-&gt;m_audio_processor_should_exit&apos;"/>
+            <location file="/workspace/Libraries/LibMedia/Sinks/AudioPlaybackSink.cpp" line="95" column="43" info="If condition &apos;output_thread_data-&gt;m_audio_processor_should_exit&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;span.range&apos; and &apos;last_span.range&apos; are used together." verbose="Iterators to containers from different expressions &apos;span.range&apos; and &apos;last_span.range&apos; are used together." cwe="664" file0="/workspace/Libraries/LibSyntax/Document.cpp">
+            <location file="/workspace/Libraries/LibSyntax/Document.cpp" line="268" column="17"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;span.range&apos; and &apos;last_span.range&apos; are used together." verbose="Iterators to containers from different expressions &apos;span.range&apos; and &apos;last_span.range&apos; are used together." cwe="664" file0="/workspace/Libraries/LibSyntax/Document.cpp">
+            <location file="/workspace/Libraries/LibSyntax/Document.cpp" line="271" column="17"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0uz" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0uz" file0="/workspace/Libraries/LibUnicode/String.cpp">
+            <location file="/workspace/Libraries/LibUnicode/String.cpp" line="0" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibWasm/AbstractMachine/BytecodeInterpreter.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/BytecodeInterpreter.cpp" line="2290" column="5"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2904" column="20"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1702." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1702." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1705" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1702" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1720." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1720." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1723" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1720" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1737." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1737." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1740" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1737" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1754." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1754." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1757" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1754" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1771." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1771." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1774" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1771" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1788." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1788." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1791" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1788" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1805." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1805." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1808" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1805" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1822." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1822." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1825" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1822" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1839." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1839." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1842" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1839" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1856." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1856." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1859" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1856" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1873." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1873." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1876" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1873" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1890." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1890." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1893" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1890" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1907." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1907." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1910" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1907" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1924." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1924." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1927" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1924" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1941." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1941." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1944" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1941" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1959." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1959." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1962" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1959" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1977." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1977." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1980" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1977" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1995." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 1995." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1998" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="1995" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2013." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2013." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2016" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2013" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2031." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2031." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2034" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2031" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2049." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2049." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2052" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2049" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2067." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2067." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2070" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2067" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2085." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2085." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2088" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2085" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2665." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2665." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2668" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2665" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2686." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2686." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2689" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2686" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2704." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2704." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2707" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2704" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2722." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2722." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2725" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2722" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2740." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2740." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2743" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2740" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2758." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2758." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2761" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2758" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2776." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2776." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2779" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2776" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2793." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2793." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2796" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2793" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2810." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2810." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2813" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2810" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2827." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2827." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2830" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2827" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2844." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 2844." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2847" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2844" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2859." verbose="Shifting 64-bit value by 64 bits is undefined behaviour. See condition at line 2859." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2862" column="15" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="2859" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3384." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3384." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3387" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3384" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3408." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3408." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3411" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3408" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3432." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3432." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3435" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3432" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3456." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3456." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3459" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3456" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3480." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3480." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3483" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3480" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3503." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3503." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3506" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3503" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3526." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3526." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3529" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3526" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3549." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3549." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3552" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3549" column="26" info="Assuming that condition &apos;arg.memory.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3568." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3568." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3571" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3568" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3587." verbose="Shifting 32-bit value by 64 bits is undefined behaviour. See condition at line 3587." cwe="758" file0="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp">
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3590" column="12" info="Shift"/>
+            <location file="/workspace/Libraries/LibWasm/AbstractMachine/Validator.cpp" line="3587" column="19" info="Assuming that condition &apos;arg.align&gt;64&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;shm_name[26]&apos; accessed at index 26, which is out of bounds." verbose="Array &apos;shm_name[26]&apos; accessed at index 26, which is out of bounds." cwe="788" file0="/workspace/Libraries/LibWasm/CraneliftBridge.cpp">
+            <location file="/workspace/Libraries/LibWasm/CraneliftBridge.cpp" line="1111" column="17" info="Array index out of bounds"/>
+            <location file="/workspace/Libraries/LibWasm/CraneliftBridge.cpp" line="1110" column="24" info="Assuming that condition &apos;i&lt;27&apos; is not redundant"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibWasm/WASI/Wasi.cpp">
+            <location file="/workspace/Libraries/LibWasm/WASI/Wasi.cpp" line="1020" column="56"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_ARIA_ROLES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_ARIA_ROLES is a macro then please configure it." file0="/workspace/Libraries/LibWeb/ARIA/Roles.cpp">
+            <location file="/workspace/Libraries/LibWeb/ARIA/Roles.cpp" line="30" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_KEYWORD_SOURCES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_KEYWORD_SOURCES is a macro then please configure it." file0="/workspace/Libraries/LibWeb/ContentSecurityPolicy/Directives/SourceExpression.cpp">
+            <location file="/workspace/Libraries/LibWeb/ContentSecurityPolicy/Directives/SourceExpression.cpp" line="275" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibWeb/Crypto/CryptoKey.cpp">
+            <location file="/workspace/Libraries/LibWeb/Crypto/CryptoKey.cpp" line="496" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Libraries/LibWeb/Crypto/KeyAlgorithms.cpp">
+            <location file="/workspace/Libraries/LibWeb/Crypto/KeyAlgorithms.cpp" line="58" column="1"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0uz" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0uz" file0="/workspace/Libraries/LibWeb/GraphemeEdgeTracker.cpp">
+            <location file="/workspace/Libraries/LibWeb/GraphemeEdgeTracker.cpp" line="0" column="0"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;false&apos; found multiple times in chain of &apos;&amp;&amp;&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/Libraries/LibWeb/Layout/FlexFormattingContext.cpp">
+            <location file="/workspace/Libraries/LibWeb/Layout/FlexFormattingContext.cpp" line="753" column="22"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;command&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;command&apos; doesn&apos;t have a parent." file0="/workspace/Libraries/LibWeb/Painting/DisplayListResourceStorage.cpp">
+            <location file="/workspace/Libraries/LibWeb/Painting/DisplayListResourceStorage.cpp" line="129" column="24"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_GLOBAL_EVENT_HANDLERS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_GLOBAL_EVENT_HANDLERS is a macro then please configure it." file0="/workspace/Libraries/LibWeb/TrustedTypes/TrustedTypePolicyFactory.cpp">
+            <location file="/workspace/Libraries/LibWeb/TrustedTypes/TrustedTypePolicyFactory.cpp" line="316" column="9"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;immersive&apos; and inner condition is &apos;immersive&apos;)." cwe="398" file0="/workspace/Libraries/LibWeb/WebXR/XRSystem.cpp">
+            <location file="/workspace/Libraries/LibWeb/WebXR/XRSystem.cpp" line="141" column="21" info="identical inner condition: immersive"/>
+            <location file="/workspace/Libraries/LibWeb/WebXR/XRSystem.cpp" line="136" column="17" info="outer condition: immersive"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: file_buffer" verbose="Memory leak: file_buffer" cwe="401" file0="/workspace/Meta/Lagom/Fuzzers/EntryShim.cpp">
+            <location file="/workspace/Meta/Lagom/Fuzzers/EntryShim.cpp" line="39" column="9"/>
+            <symbol>file_buffer</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;file_buffer&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;file_buffer&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/Meta/Lagom/Fuzzers/EntryShim.cpp">
+            <location file="/workspace/Meta/Lagom/Fuzzers/EntryShim.cpp" line="60" column="9"/>
+            <symbol>file_buffer</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Services/WebContent/ConsoleGlobalEnvironmentExtensions.cpp">
+            <location file="/workspace/Services/WebContent/ConsoleGlobalEnvironmentExtensions.cpp" line="50" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." file0="/workspace/UI/Gtk/Widgets/LadybirdBrowserWindow.cpp">
+            <location file="/workspace/UI/Gtk/Widgets/LadybirdBrowserWindow.cpp" line="36" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." file0="/workspace/UI/Gtk/Widgets/LadybirdLocationEntry.cpp">
+            <location file="/workspace/UI/Gtk/Widgets/LadybirdLocationEntry.cpp" line="49" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_FINAL_TYPE is a macro then please configure it." file0="/workspace/UI/Gtk/Widgets/LadybirdWebView.cpp">
+            <location file="/workspace/UI/Gtk/Widgets/LadybirdWebView.cpp" line="27" column="1"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

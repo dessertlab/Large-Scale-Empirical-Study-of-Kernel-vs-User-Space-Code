@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/modules/vector-sets/hnsw.c">
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1749" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/modules/vector-sets/hnsw.c">
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1784" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/modules/vector-sets/hnsw.c">
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1810" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/modules/vector-sets/hnsw.c">
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1844" column="21"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!used&apos; is redundant or there is possible null pointer dereference: used." verbose="Either the condition &apos;!used&apos; is redundant or there is possible null pointer dereference: used." cwe="476" file0="/workspace/modules/vector-sets/hnsw.c">
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1704" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/modules/vector-sets/hnsw.c" line="1705" column="9" info="Assuming that condition &apos;!used&apos; is not redundant"/>
+            <symbol>used</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: word" verbose="Possible null pointer dereference: word" cwe="476" file0="/workspace/modules/vector-sets/w2v.c">
+            <location file="/workspace/modules/vector-sets/w2v.c" line="265" column="46" info="Null pointer dereference"/>
+            <location file="/workspace/modules/vector-sets/w2v.c" line="241" column="14" info="Assuming condition is false"/>
+            <location file="/workspace/modules/vector-sets/w2v.c" line="238" column="18" info="Assignment &apos;word=NULL&apos;, assigned value is 0"/>
+            <symbol>word</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: earliest" verbose="Possible null pointer dereference: earliest" cwe="476" file0="/workspace/src/ae.c">
+            <location file="/workspace/src/ae.c" line="275" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/ae.c" line="268" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/src/ae.c" line="267" column="29" info="Assignment &apos;earliest=NULL&apos;, assigned value is 0"/>
+            <symbol>earliest</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/src/dict.c">
+            <location file="/workspace/src/dict.c" line="1884" column="18"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/src/dict.c">
+            <location file="/workspace/src/dict.c" line="1884" column="18"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/kvstore.c">
+            <location file="/workspace/src/kvstore.c" line="494" column="9"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;p&apos; is redundant or there is possible null pointer dereference: p." verbose="Either the condition &apos;p&apos; is redundant or there is possible null pointer dereference: p." cwe="476" file0="/workspace/src/listpack.c">
+            <location file="/workspace/src/listpack.c" line="880" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/src/listpack.c" line="851" column="12" info="Assuming that condition &apos;p&apos; is not redundant"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/mstr.c">
+            <location file="/workspace/src/mstr.c" line="250" column="17"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;dst&apos; used instead of size of its data." verbose="Size of pointer &apos;dst&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*dst)&apos;." cwe="467" file0="/workspace/src/rax.c">
+            <location file="/workspace/src/rax.c" line="334" column="17"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;src&apos; used instead of size of its data." verbose="Size of pointer &apos;src&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*src)&apos;." cwe="467" file0="/workspace/src/rax.c">
+            <location file="/workspace/src/rax.c" line="363" column="13"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;src&apos; used instead of size of its data." verbose="Size of pointer &apos;src&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*src)&apos;." cwe="467" file0="/workspace/src/rax.c">
+            <location file="/workspace/src/rax.c" line="376" column="17"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/src/redis-cli.c">
+            <location file="/workspace/src/redis-cli.c" line="8649" column="5"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" cwe="476" file0="/workspace/src/redis-cli.c">
+            <location file="/workspace/src/redis-cli.c" line="5694" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/src/redis-cli.c" line="7334" column="45" info="Calling function &apos;clusterManagerLoadInfoFromNode&apos;, 1st argument &apos;first_node&apos; value is 0"/>
+            <location file="/workspace/src/redis-cli.c" line="7328" column="37" info="Assuming condition is false"/>
+            <location file="/workspace/src/redis-cli.c" line="7327" column="42" info="Assignment &apos;first_node=NULL&apos;, assigned value is 0"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!table&apos; is redundant or there is possible null pointer dereference: table." verbose="Either the condition &apos;!table&apos; is redundant or there is possible null pointer dereference: table." cwe="476" file0="/workspace/src/redis-cli.c">
+            <location file="/workspace/src/redis-cli.c" line="7940" column="35" info="Null pointer dereference"/>
+            <location file="/workspace/src/redis-cli.c" line="7941" column="17" info="Assuming that condition &apos;!table&apos; is not redundant"/>
+            <symbol>table</symbol>
+        </error>
+        <error id="objectIndex" severity="error" msg="The address of local variable &apos;base&apos; is accessed at non-zero index." verbose="The address of local variable &apos;base&apos; is accessed at non-zero index." cwe="758" file0="/workspace/src/setproctitle.c">
+            <location file="/workspace/src/setproctitle.c" line="308" column="35"/>
+            <location file="/workspace/src/setproctitle.c" line="304" column="8" info="Address of variable taken here."/>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &apos;ziplistGet&apos; argument order different: declaration &apos;p, sval, slen, lval&apos; definition &apos;p, sstr, slen, sval&apos;" verbose="Function &apos;ziplistGet&apos; argument order different: declaration &apos;p, sval, slen, lval&apos; definition &apos;p, sstr, slen, sval&apos;" cwe="683" file0="/workspace/src/ziplist.c">
+            <location file="/workspace/src/ziplist.c" line="1239" column="40"/>
+            <location file="/workspace/src/ziplist.h" line="52" column="40"/>
+            <symbol>ziplistGet</symbol>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: node" verbose="Null pointer dereference: node" cwe="476">
+            <location file="/workspace/src/redis-cli.c" line="5694" column="9" info="Dereferencing argument node that is null"/>
+            <location file="/workspace/src/redis-cli.c" line="7334" column="44" info="Calling function clusterManagerLoadInfoFromNode, 1st argument is null"/>
+            <location file="/workspace/src/redis-cli.c" line="7328" column="37" info="Assuming condition is false"/>
+            <location file="/workspace/src/redis-cli.c" line="7327" column="42" info="Assignment &apos;first_node=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

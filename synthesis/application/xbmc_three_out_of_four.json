@@ -1,0 +1,40 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-398",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

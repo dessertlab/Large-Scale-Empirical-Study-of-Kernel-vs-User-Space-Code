@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dst!=NULL&apos; is redundant or there is possible null pointer dereference: dst." verbose="Either the condition &apos;dst!=NULL&apos; is redundant or there is possible null pointer dereference: dst." cwe="476" file0="/workspace/src/badblocks.c">
+            <location file="/workspace/src/rufus.h" line="174" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/src/rufus.h" line="175" column="10" info="Assuming that condition &apos;dst!=NULL&apos; is not redundant"/>
+            <symbol>dst</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: pp" verbose="Memory leak: pp" cwe="401" file0="/workspace/src/badblocks.c">
+            <location file="/workspace/src/ext2fs/ext2fs.h" line="1838" column="2"/>
+            <symbol>pp</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: pp" verbose="Memory leak: pp" cwe="401" file0="/workspace/src/badblocks.c">
+            <location file="/workspace/src/ext2fs/ext2fs.h" line="1850" column="2"/>
+            <symbol>pp</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: pp" verbose="Memory leak: pp" cwe="401" file0="/workspace/src/badblocks.c">
+            <location file="/workspace/src/ext2fs/ext2fs.h" line="1872" column="2"/>
+            <symbol>pp</symbol>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &apos;ext2fs_resize_array&apos; argument order different: declaration &apos;old_count, count, size, ptr&apos; definition &apos;size, old_count, count, ptr&apos;" verbose="Function &apos;ext2fs_resize_array&apos; argument order different: declaration &apos;old_count, count, size, ptr&apos; definition &apos;size, old_count, count, ptr&apos;" cwe="683" file0="/workspace/src/badblocks.c">
+            <location file="/workspace/src/ext2fs/ext2fs.h" line="1913" column="54"/>
+            <location file="/workspace/src/ext2fs/ext2fs.h" line="1768" column="52"/>
+            <symbol>ext2fs_resize_array</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IF_DESKTOP is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IF_DESKTOP is a macro then please configure it." file0="/workspace/src/bled/bled.c">
+            <location file="/workspace/src/bled/bb_archive.h" line="229" column="2"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3068" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3067" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3069" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3067" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3070" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3067" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3071" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3067" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3072" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3067" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3515" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3514" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3516" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3514" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3517" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3514" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3518" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3514" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." verbose="Either the condition &apos;statePtr!=NULL&apos; is redundant or there is possible null pointer dereference: statePtr." cwe="476" file0="/workspace/src/bled/xxhash.c">
+            <location file="/workspace/src/bled/xxhash.h" line="3519" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/src/bled/xxhash.h" line="3514" column="5" info="Assuming that condition &apos;statePtr!=NULL&apos; is not redundant"/>
+            <symbol>statePtr</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/src/darkmode.c">
+            <location file="/workspace/src/registry.h" line="172" column="9"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/src/darkmode.c">
+            <location file="/workspace/src/registry.h" line="176" column="2"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/src/darkmode.c">
+            <location file="/workspace/src/registry.h" line="189" column="10"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/src/darkmode.c">
+            <location file="/workspace/src/registry.h" line="193" column="2"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/dev.c">
+            <location file="/workspace/src/dev.c" line="970" column="25"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;crc&apos; to itself." verbose="Redundant assignment of &apos;crc&apos; to itself." cwe="398" file0="/workspace/src/ext2fs/crc32c.c">
+            <location file="/workspace/src/ext2fs/crc32c.c" line="181" column="6"/>
+            <symbol>crc</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;crc&apos; to itself." verbose="Redundant assignment of &apos;crc&apos; to itself." cwe="398" file0="/workspace/src/ext2fs/crc32c.c">
+            <location file="/workspace/src/ext2fs/crc32c.c" line="183" column="6"/>
+            <symbol>crc</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;retval&apos;, return value is always 0" verbose="Identical condition and return expression &apos;retval&apos;, return value is always 0" cwe="398" file0="/workspace/src/ext2fs/csum.c">
+            <location file="/workspace/src/ext2fs/csum.c" line="432" column="9" info="Returning identical expression &apos;retval&apos;"/>
+            <location file="/workspace/src/ext2fs/csum.c" line="429" column="6" info="If condition &apos;retval&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;retval&apos;, return value is always 0" verbose="Identical condition and return expression &apos;retval&apos;, return value is always 0" cwe="398" file0="/workspace/src/ext2fs/csum.c">
+            <location file="/workspace/src/ext2fs/csum.c" line="539" column="9" info="Returning identical expression &apos;retval&apos;"/>
+            <location file="/workspace/src/ext2fs/csum.c" line="536" column="6" info="If condition &apos;retval&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!value&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!value&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/src/ext2fs/ext_attr.c">
+            <location file="/workspace/src/ext2fs/ext_attr.c" line="531" column="41" info="Null pointer addition"/>
+            <location file="/workspace/src/ext2fs/ext_attr.c" line="528" column="39" info="header is assigned &apos;(const struct posix_acl_xattr_header*)value&apos; here."/>
+            <location file="/workspace/src/ext2fs/ext_attr.c" line="538" column="6" info="Assuming that condition &apos;!value&apos; is not redundant"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/ext2fs/fileio.c">
+            <location file="/workspace/src/ext2fs/fileio.c" line="276" column="2"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;retval&apos;, return value is always 0" verbose="Identical condition and return expression &apos;retval&apos;, return value is always 0" cwe="398" file0="/workspace/src/ext2fs/fileio.c">
+            <location file="/workspace/src/ext2fs/fileio.c" line="176" column="9" info="Returning identical expression &apos;retval&apos;"/>
+            <location file="/workspace/src/ext2fs/fileio.c" line="171" column="6" info="If condition &apos;retval&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function rand() is not used." verbose="Return value of function rand() is not used." cwe="252" file0="/workspace/src/ext2fs/mmp.c">
+            <location file="/workspace/src/ext2fs/mmp.c" line="184" column="3"/>
+            <symbol>rand</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;channel==NULL&apos;, second condition is always false" verbose="Identical condition &apos;channel==NULL&apos;, second condition is always false" cwe="398" file0="/workspace/src/ext2fs/nt_io.c">
+            <location file="/workspace/src/ext2fs/nt_io.c" line="549" column="2" info="Testing identical condition &apos;channel==NULL&apos;"/>
+            <location file="/workspace/src/ext2fs/nt_io.c" line="546" column="14" info="If condition &apos;channel==NULL&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/ext2fs/nt_io.c">
+            <location file="/workspace/src/ext2fs/nt_io.c" line="280" column="7"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/format_fat32.c">
+            <location file="/workspace/src/format_fat32.c" line="191" column="6"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/src/hash.c">
+            <location file="/workspace/src/hash.c" line="2524" column="4"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: dst" verbose="Possible null pointer dereference: dst" cwe="476" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="310" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/iso.c" line="309" column="19" info="Assignment &apos;dst=(((char*)(psz_fullpath))==NULL)?NULL:_strdup(psz_fullpath)&apos;, assigned value is 0"/>
+            <symbol>dst</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: dst" verbose="Possible null pointer dereference: dst" cwe="476" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="311" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/iso.c" line="309" column="19" info="Assignment &apos;dst=(((char*)(psz_fullpath))==NULL)?NULL:_strdup(psz_fullpath)&apos;, assigned value is 0"/>
+            <symbol>dst</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: dst" verbose="Possible null pointer dereference: dst" cwe="476" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="312" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/iso.c" line="309" column="19" info="Assignment &apos;dst=(((char*)(psz_fullpath))==NULL)?NULL:_strdup(psz_fullpath)&apos;, assigned value is 0"/>
+            <symbol>dst</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="270" column="6"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="284" column="21"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="389" column="5"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="390" column="5"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="401" column="7"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="424" column="9"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="449" column="8"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="450" column="5"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="953" column="11"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="955" column="8"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/iso.c">
+            <location file="/workspace/src/iso.c" line="1160" column="24"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/libcdio/udf/udf_fs.c">
+            <location file="/workspace/src/libcdio/udf/udf_fs.c" line="661" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/libcdio/udf/udf_fs.c">
+            <location file="/workspace/src/libcdio/udf/udf_fs.c" line="774" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;name==NULL&apos; is redundant or there is possible null pointer dereference: src." verbose="Either the condition &apos;name==NULL&apos; is redundant or there is possible null pointer dereference: src." cwe="476" file0="/workspace/src/parser.c">
+            <location file="/workspace/src/rufus.h" line="174" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/src/parser.c" line="1766" column="2" info="Calling function &apos;safe_strcp&apos;, 3rd argument &apos;name&apos; value is 0"/>
+            <location file="/workspace/src/parser.c" line="1768" column="26" info="Assuming that condition &apos;name==NULL&apos; is not redundant"/>
+            <symbol>src</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;0xFFFF&lt;&lt;16&apos;." verbose="Signed integer overflow for expression &apos;0xFFFF&lt;&lt;16&apos;." cwe="190" file0="/workspace/src/rufus.c">
+            <location file="/workspace/src/rufus.c" line="2202" column="55" info="Integer overflow"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/rufus.c">
+            <location file="/workspace/src/rufus.c" line="3659" column="9"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/stdio.c">
+            <location file="/workspace/src/stdio.c" line="894" column="8"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;selection_data[s].options-&gt;edition_index&gt;0&apos; found multiple times in chain of &apos;&amp;&amp;&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/src/stdlg.c">
+            <location file="/workspace/src/stdlg.c" line="1045" column="102"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/src/stdlg.c">
+            <location file="/workspace/src/stdlg.c" line="1730" column="6"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;0xFFFF&lt;&lt;16&apos;." verbose="Signed integer overflow for expression &apos;0xFFFF&lt;&lt;16&apos;." cwe="190" file0="/workspace/src/stdlg.c">
+            <location file="/workspace/src/stdlg.c" line="1931" column="77" info="Integer overflow"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ALIGN_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ALIGN_START is a macro then please configure it." file0="/workspace/src/syslinux/libfat/cache.c">
+            <location file="/workspace/src/syslinux/libfat/libfatint.h" line="37" column="2"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;di-&gt;name[256]&apos; accessed at index 3159, which is out of bounds." verbose="Array &apos;di-&gt;name[256]&apos; accessed at index 3159, which is out of bounds." cwe="788" file0="/workspace/src/syslinux/libfat/dumpdir.c">
+            <location file="/workspace/src/syslinux/libfat/dumpdir.c" line="103" column="22" info="Array index out of bounds"/>
+            <location file="/workspace/src/syslinux/libfat/dumpdir.c" line="102" column="30" info="Assignment &apos;i=(sizeof(di-&gt;name)/sizeof(*di-&gt;name))-13&apos;, assigned value is 243"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/syslinux/libinstaller/syslxmod.c">
+            <location file="/workspace/src/syslinux/libinstaller/syslxmod.c" line="80" column="2"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: sz" verbose="Uninitialized variable: sz" cwe="457" file0="/workspace/src/ui.c">
+            <location file="/workspace/src/ui.c" line="616" column="79"/>
+            <symbol>sz</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: sz" verbose="Uninitialized variable: sz" cwe="457" file0="/workspace/src/ui.c">
+            <location file="/workspace/src/ui.c" line="661" column="79"/>
+            <symbol>sz</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: sz" verbose="Uninitialized variable: sz" cwe="457" file0="/workspace/src/ui.c">
+            <location file="/workspace/src/ui.c" line="1102" column="79"/>
+            <symbol>sz</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/vhd.c">
+            <location file="/workspace/src/vhd.c" line="208" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If hlist_for_each_entry_safe is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If hlist_for_each_entry_safe is a macro then please configure it." file0="/workspace/src/wimlib/blob_table.c">
+            <location file="/workspace/src/wimlib/blob_table.c" line="328" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/blob_table.c">
+            <location file="/workspace/src/wimlib/blob_table.c" line="82" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/compress_parallel.c">
+            <location file="/workspace/src/wimlib/compress_parallel.c" line="419" column="3"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/dentry.c">
+            <location file="/workspace/src/wimlib/dentry.c" line="494" column="22"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/dentry.c">
+            <location file="/workspace/src/wimlib/dentry.c" line="855" column="15"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variables: stack.a, stack.b, stack.c, stack.d" verbose="Uninitialized variables: stack.a, stack.b, stack.c, stack.d" cwe="457" file0="/workspace/src/wimlib/divsufsort.c">
+            <location file="/workspace/src/wimlib/divsufsort.c" line="374" column="7"/>
+            <location file="/workspace/src/wimlib/divsufsort.c" line="374" column="7" info="Assuming condition is false"/>
+            <symbol>stack</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variables: stack.a, stack.b, stack.c, stack.d" verbose="Uninitialized variables: stack.a, stack.b, stack.c, stack.d" cwe="457" file0="/workspace/src/wimlib/divsufsort.c">
+            <location file="/workspace/src/wimlib/divsufsort.c" line="727" column="7"/>
+            <location file="/workspace/src/wimlib/divsufsort.c" line="727" column="7" info="Assuming condition is false"/>
+            <symbol>stack</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/export_image.c">
+            <location file="/workspace/src/wimlib/export_image.c" line="144" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." file0="/workspace/src/wimlib/extract.c">
+            <location file="/workspace/src/wimlib/extract.c" line="1205" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/extract.c">
+            <location file="/workspace/src/wimlib/extract.c" line="241" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/file_io.c">
+            <location file="/workspace/src/wimlib/file_io.c" line="210" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/wimlib/file_io.c">
+            <location file="/workspace/src/wimlib/file_io.c" line="96" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/wimlib/file_io.c">
+            <location file="/workspace/src/wimlib/file_io.c" line="158" column="3"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/header.c">
+            <location file="/workspace/src/wimlib/header.c" line="74" column="14"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/header.c">
+            <location file="/workspace/src/wimlib/header.c" line="100" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/inode.c">
+            <location file="/workspace/src/wimlib/inode.c" line="269" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If hlist_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If hlist_for_each_entry is a macro then please configure it." file0="/workspace/src/wimlib/inode_fixup.c">
+            <location file="/workspace/src/wimlib/inode_fixup.c" line="144" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/inode_fixup.c">
+            <location file="/workspace/src/wimlib/inode_fixup.c" line="91" column="5"/>
+        </error>
+        <error id="unknownEvaluationOrder" severity="error" msg="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" verbose="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" cwe="768" file0="/workspace/src/wimlib/inode_table.c">
+            <location file="/workspace/src/wimlib/inode_table.c" line="72" column="3"/>
+        </error>
+        <error id="unknownEvaluationOrder" severity="error" msg="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" verbose="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" cwe="768" file0="/workspace/src/wimlib/inode_table.c">
+            <location file="/workspace/src/wimlib/inode_table.c" line="183" column="3"/>
+        </error>
+        <error id="unknownEvaluationOrder" severity="error" msg="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" verbose="Expression &apos;(tmp=inode-&gt;i_hlist_node.next)-tmp&apos; depends on order of evaluation of side effects" cwe="768" file0="/workspace/src/wimlib/inode_table.c">
+            <location file="/workspace/src/wimlib/inode_table.c" line="188" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/inode_table.c">
+            <location file="/workspace/src/wimlib/inode_table.c" line="135" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/integrity.c">
+            <location file="/workspace/src/wimlib/integrity.c" line="75" column="20"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/wimlib/iterate_dir.c">
+            <location file="/workspace/src/wimlib/iterate_dir.c" line="278" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." file0="/workspace/src/wimlib/lzms_decompress.c">
+            <location file="/workspace/src/wimlib/lzms_decompress.c" line="326" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CONCAT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CONCAT is a macro then please configure it." file0="/workspace/src/wimlib/lzx_compress.c">
+            <location file="/workspace/src/wimlib/wimlib/bt_matchfinder.h" line="118" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." file0="/workspace/src/wimlib/lzx_decompress.c">
+            <location file="/workspace/src/wimlib/lzx_decompress.c" line="76" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/metadata_resource.c">
+            <location file="/workspace/src/wimlib/metadata_resource.c" line="50" column="3"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/reparse.c">
+            <location file="/workspace/src/wimlib/reparse.c" line="401" column="26"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="307" column="20"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="377" column="10"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="390" column="10"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="1157" column="12"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="1264" column="16"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="1269" column="14"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/resource.c">
+            <location file="/workspace/src/wimlib/resource.c" line="96" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/scan.c">
+            <location file="/workspace/src/wimlib/scan.c" line="130" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/security.c">
+            <location file="/workspace/src/wimlib/security.c" line="160" column="3"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -14, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -14, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -15, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -15, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -13, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -13, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -7, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -7, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -2, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -2, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -11, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -11, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -5, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -5, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -10, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -10, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;w[16]&apos; accessed at index -9, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index -9, which is out of bounds." cwe="786" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Negative array index"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 16, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 16, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 17, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 17, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 18, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 18, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 19, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 19, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="131" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 20, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 20, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 21, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 21, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 22, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 22, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 23, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 23, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 24, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 24, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 25, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 25, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 26, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 26, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 27, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 27, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 28, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 28, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 29, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 29, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 30, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 30, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 31, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 31, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 32, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 32, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 33, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 33, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 34, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 34, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 35, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 35, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 36, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 36, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 37, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 37, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 38, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 38, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 39, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 39, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="132" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 40, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 40, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 41, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 41, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 42, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 42, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 43, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 43, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 44, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 44, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 45, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 45, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 46, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 46, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 47, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 47, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 48, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 48, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 49, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 49, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 50, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 50, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 51, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 51, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 52, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 52, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 53, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 53, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 54, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 54, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 55, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 55, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 56, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 56, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 57, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 57, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 58, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 58, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 59, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 59, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="133" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 60, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 60, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 61, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 61, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 62, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 62, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 63, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 63, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 64, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 64, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 65, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 65, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 66, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 66, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 67, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 67, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 68, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 68, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 69, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 69, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 70, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 70, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 71, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 71, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 72, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 72, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 73, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 73, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 74, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 74, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 75, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 75, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 76, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 76, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 77, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 77, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 78, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 78, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;w[16]&apos; accessed at index 79, which is out of bounds." verbose="Array &apos;w[16]&apos; accessed at index 79, which is out of bounds." cwe="788" file0="/workspace/src/wimlib/sha1.c">
+            <location file="/workspace/src/wimlib/sha1.c" line="134" column="3" info="Array index out of bounds"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." file0="/workspace/src/wimlib/solid.c">
+            <location file="/workspace/src/wimlib/solid.c" line="238" column="2"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/split.c">
+            <location file="/workspace/src/wimlib/split.c" line="76" column="17"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/split.c">
+            <location file="/workspace/src/wimlib/split.c" line="81" column="16"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/split.c">
+            <location file="/workspace/src/wimlib/split.c" line="85" column="16"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/split.c">
+            <location file="/workspace/src/wimlib/split.c" line="221" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/textfile.c">
+            <location file="/workspace/src/wimlib/textfile.c" line="52" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/threads.c">
+            <location file="/workspace/src/wimlib/threads.c" line="158" column="19"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/update_image.c">
+            <location file="/workspace/src/wimlib/update_image.c" line="1110" column="17"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/update_image.c">
+            <location file="/workspace/src/wimlib/update_image.c" line="1111" column="12"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/update_image.c">
+            <location file="/workspace/src/wimlib/update_image.c" line="493" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/util.c">
+            <location file="/workspace/src/wimlib/util.c" line="216" column="19"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry_safe is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry_safe is a macro then please configure it." file0="/workspace/src/wimlib/wim.c">
+            <location file="/workspace/src/wimlib/wim.c" line="225" column="2"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/win32_apply.c">
+            <location file="/workspace/src/wimlib/win32_apply.c" line="2990" column="10"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If avl_tree_for_each_in_postorder is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If avl_tree_for_each_in_postorder is a macro then please configure it." file0="/workspace/src/wimlib/win32_capture.c">
+            <location file="/workspace/src/wimlib/win32_capture.c" line="2204" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it." file0="/workspace/src/wimlib/write.c">
+            <location file="/workspace/src/wimlib/write.c" line="1296" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/write.c">
+            <location file="/workspace/src/wimlib/write.c" line="291" column="19"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: child.type, child.name, child.value, child.parent, child.children, child.sibling_link" verbose="Uninitialized variables: child.type, child.name, child.value, child.parent, child.children, child.sibling_link" cwe="457" file0="/workspace/src/wimlib/xml.c">
+            <location file="/workspace/src/wimlib/xml.c" line="98" column="27"/>
+            <symbol>child</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: lang_node.type, lang_node.name, lang_node.value, lang_node.parent, lang_node.children, lang_node.sibling_link" verbose="Uninitialized variables: lang_node.type, lang_node.name, lang_node.value, lang_node.parent, lang_node.children, lang_node.sibling_link" cwe="457" file0="/workspace/src/wimlib/xml.c">
+            <location file="/workspace/src/wimlib/xml.c" line="735" column="29"/>
+            <symbol>lang_node</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: child.type, child.name, child.value, child.parent, child.children, child.sibling_link" verbose="Uninitialized variables: child.type, child.name, child.value, child.parent, child.children, child.sibling_link" cwe="457" file0="/workspace/src/wimlib/xml.c">
+            <location file="/workspace/src/wimlib/xml.c" line="852" column="28"/>
+            <symbol>child</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/xml.c">
+            <location file="/workspace/src/wimlib/xml.c" line="247" column="2"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/src/wimlib/xml_windows.c">
+            <location file="/workspace/src/wimlib/xml_windows.c" line="541" column="18"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If T is a macro then please configure it." file0="/workspace/src/wimlib/xml_windows.c">
+            <location file="/workspace/src/wimlib/xml_windows.c" line="68" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry_safe is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry_safe is a macro then please configure it." file0="/workspace/src/wimlib/xmlproc.c">
+            <location file="/workspace/src/wimlib/xmlproc.c" line="134" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/wimlib/xpress_compress.c">
+            <location file="/workspace/src/wimlib/wimlib/hc_matchfinder.h" line="133" column="8"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_BEGIN_ALIGN is a macro then please configure it." file0="/workspace/src/wimlib/xpress_decompress.c">
+            <location file="/workspace/src/wimlib/xpress_decompress.c" line="82" column="3"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: org_username" verbose="Possible null pointer dereference: org_username" cwe="476" file0="/workspace/src/wue.c">
+            <location file="/workspace/src/wue.c" line="354" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/src/wue.c" line="349" column="27" info="Assignment &apos;org_username=(((char*)(unattend_username))==NULL)?NULL:_strdup(unattend_username)&apos;, assigned value is 0"/>
+            <symbol>org_username</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p_ent" verbose="Memory leak: p_ent" cwe="401" file0="/workspace/src/xml.c">
+            <location file="/workspace/src/xml.c" line="906" column="5"/>
+            <symbol>p_ent</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: src" verbose="Null pointer dereference: src" cwe="476">
+            <location file="/workspace/src/rufus.h" line="174" column="15" info="Dereferencing argument src that is null"/>
+            <location file="/workspace/src/parser.c" line="1766" column="2" info="Calling function safe_strcp, 3rd argument is null"/>
+            <location file="/workspace/src/parser.c" line="1768" column="26" info="Assuming that condition &apos;name==NULL&apos; is not redundant"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

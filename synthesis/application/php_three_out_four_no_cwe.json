@@ -1,0 +1,39 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ext/gd/libgd/gd_xbm.c",
+        "line": 53,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "ext/gd/libgd/gd_xbm.c",
+        "line": 53,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ext/gd/libgd/gd_xbm.c",
+        "line": 53,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

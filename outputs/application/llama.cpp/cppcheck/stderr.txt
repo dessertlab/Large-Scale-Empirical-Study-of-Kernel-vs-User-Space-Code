@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;hasher::buffer&apos; is not initialized in the constructor." verbose="Member variable &apos;hasher::buffer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/utils.h" line="65" column="5"/>
+            <symbol>hasher::buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;value_t::val_int&apos; is not initialized in the constructor." verbose="Member variable &apos;value_t::val_int&apos; is not initialized in the constructor." cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/value.h" line="125" column="5"/>
+            <symbol>value_t::val_int</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;value_t::val_flt&apos; is not initialized in the constructor." verbose="Member variable &apos;value_t::val_flt&apos; is not initialized in the constructor." cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/value.h" line="125" column="5"/>
+            <symbol>value_t::val_flt</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="149" column="5"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="150" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="263" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="312" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="321" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="330" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="339" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="348" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="363" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" verbose="Member variable &apos;statement::pos&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class statement?" cwe="398" file0="/workspace/common/arg.cpp">
+            <location file="/workspace/common/jinja/runtime.h" line="378" column="14"/>
+            <symbol>statement::pos</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;end_of_prefix_space&apos; and &apos;start_of_suffix_space&apos;." verbose="Finding variables &apos;end_of_prefix_space&apos; and &apos;start_of_suffix_space&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/common/chat-peg-parser.cpp">
+            <location file="/workspace/common/chat-peg-parser.cpp" line="793" column="12"/>
+            <location file="/workspace/common/chat-peg-parser.cpp" line="794" column="12"/>
+        </error>
+        <error id="IOWithoutPositioning" severity="error" msg="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." verbose="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." cwe="664" file0="/workspace/common/console.cpp">
+            <location file="/workspace/common/console.cpp" line="334" column="19"/>
+        </error>
+        <error id="IOWithoutPositioning" severity="error" msg="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." verbose="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." cwe="664" file0="/workspace/common/console.cpp">
+            <location file="/workspace/common/console.cpp" line="336" column="9"/>
+        </error>
+        <error id="IOWithoutPositioning" severity="error" msg="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." verbose="Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour." cwe="664" file0="/workspace/common/console.cpp">
+            <location file="/workspace/common/console.cpp" line="339" column="20"/>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;pos&gt;src.size()&apos; is redundant or &apos;pos++&apos; can have the value greater or equal to src.size(). Expression &apos;src[pos++]&apos; cause access out of bounds." verbose="Either the condition &apos;pos&gt;src.size()&apos; is redundant or &apos;pos++&apos; can have the value greater or equal to src.size(). Expression &apos;src[pos++]&apos; cause access out of bounds." cwe="398" file0="/workspace/common/jinja/lexer.cpp">
+            <location file="/workspace/common/jinja/lexer.cpp" line="86" column="23" info="Access out of bounds"/>
+            <location file="/workspace/common/jinja/lexer.cpp" line="86" column="24" info="pos is incremented&apos;, new value is symbolic=src.size()"/>
+            <location file="/workspace/common/jinja/lexer.cpp" line="87" column="21" info="Assuming that condition &apos;pos&gt;src.size()&apos; is not redundant"/>
+            <symbol>src</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;std::is_same_v&apos;, second condition is always false" verbose="Identical condition &apos;std::is_same_v&apos;, second condition is always false" cwe="398" file0="/workspace/common/peg-parser.cpp">
+            <location file="/workspace/common/peg-parser.cpp" line="1067" column="33" info="Testing identical condition &apos;std::is_same_v&apos;"/>
+            <location file="/workspace/common/peg-parser.cpp" line="1042" column="33" info="If condition &apos;std::is_same_v&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;common_preset_context::default_params&apos; is not initialized in the constructor." verbose="Member variable &apos;common_preset_context::default_params&apos; is not initialized in the constructor." cwe="398" file0="/workspace/common/preset.cpp">
+            <location file="/workspace/common/preset.cpp" line="303" column="24"/>
+            <symbol>common_preset_context::default_params</symbol>
+        </error>
+        <error id="resourceLeak" severity="error" msg="Resource leak: file" verbose="Resource leak: file" cwe="775" file0="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp">
+            <location file="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp" line="900" column="13"/>
+            <symbol>file</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: params.fn_llama2c_model" verbose="Uninitialized variable: params.fn_llama2c_model" cwe="457" file0="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp">
+            <location file="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp" line="801" column="12"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: params.fn_llama2c_model" verbose="Uninitialized struct member: params.fn_llama2c_model" cwe="457" file0="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp">
+            <location file="/workspace/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp" line="801" column="12"/>
+            <symbol>params.fn_llama2c_model</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;n_past_tgt&apos; and &apos;n_past_dft&apos;." verbose="Finding variables &apos;n_past_tgt&apos; and &apos;n_past_dft&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/examples/speculative/speculative.cpp">
+            <location file="/workspace/examples/speculative/speculative.cpp" line="201" column="9"/>
+            <location file="/workspace/examples/speculative/speculative.cpp" line="202" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GGML_ATTRIBUTE_FORMAT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GGML_ATTRIBUTE_FORMAT is a macro then please configure it." file0="/workspace/ggml/src/ggml-alloc.c">
+            <location file="/workspace/ggml/src/ggml-impl.h" line="114" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: aux8" verbose="Uninitialized variable: aux8" cwe="457" file0="/workspace/ggml/src/ggml-cpu/arch/powerpc/quants.c">
+            <location file="/workspace/ggml/src/ggml-cpu/arch/powerpc/quants.c" line="1469" column="83"/>
+            <location file="/workspace/ggml/src/ggml-cpu/arch/powerpc/quants.c" line="1464" column="36" info="Assignment &apos;aux8=(const uint8_t*)aux32&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>aux8</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ctx" verbose="Memory leak: ctx" cwe="401" file0="/workspace/ggml/src/ggml-cpu/ggml-cpu.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/ggml-cpu.cpp" line="246" column="5"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tinyBLAS_Q0_PPC &lt; block_q8_0 &gt;::kc&apos; is not initialized in the constructor." verbose="Member variable &apos;tinyBLAS_Q0_PPC &lt; block_q8_0 &gt;::kc&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="2315" column="5"/>
+            <symbol>tinyBLAS_Q0_PPC &lt; block_q8_0 &gt;::kc</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tinyBLAS_Q0_PPC &lt; block_q4_0 &gt;::kc&apos; is not initialized in the constructor." verbose="Member variable &apos;tinyBLAS_Q0_PPC &lt; block_q4_0 &gt;::kc&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="2315" column="5"/>
+            <symbol>tinyBLAS_Q0_PPC &lt; block_q4_0 &gt;::kc</symbol>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: 4 == 4 &amp;&amp; 4 == 8." verbose="Logical conjunction always evaluates to false: 4 == 4 &amp;&amp; 4 == 8. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="3619" column="30"/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: 8 == 4 &amp;&amp; 8 == 8." verbose="Logical conjunction always evaluates to false: 8 == 4 &amp;&amp; 8 == 8. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="3625" column="37"/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: 4 == 8 &amp;&amp; 4 == 4." verbose="Logical conjunction always evaluates to false: 4 == 8 &amp;&amp; 4 == 4. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="3619" column="30"/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: 8 == 8 &amp;&amp; 8 == 4." verbose="Logical conjunction always evaluates to false: 8 == 8 &amp;&amp; 8 == 4. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/llamafile/sgemm.cpp" line="3625" column="37"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GGML_TENSOR_LOCALS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GGML_TENSOR_LOCALS is a macro then please configure it." file0="/workspace/ggml/src/ggml-cpu/ops.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/ops.cpp" line="1190" column="5"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: scales" verbose="Uninitialized variable: scales" cwe="457" file0="/workspace/ggml/src/ggml-cpu/quants.c">
+            <location file="/workspace/ggml/src/ggml-cpu/quants.c" line="632" column="54"/>
+            <location file="/workspace/ggml/src/ggml-cpu/quants.c" line="597" column="29" info="Assignment &apos;scales=(const int8_t*)auxs&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>scales</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: aux8" verbose="Uninitialized variable: aux8" cwe="457" file0="/workspace/ggml/src/ggml-cpu/quants.c">
+            <location file="/workspace/ggml/src/ggml-cpu/quants.c" line="883" column="72"/>
+            <location file="/workspace/ggml/src/ggml-cpu/quants.c" line="869" column="28" info="Assignment &apos;aux8=(const uint8_t*)aux32&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>aux8</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Struct &apos;spine_env_info&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;spine_env_info&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp" line="301" column="9"/>
+            <symbol>spine_env_info</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;spine_env_info&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;spine_env_info&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp" line="301" column="9"/>
+            <symbol>spine_env_info</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;spine_perfer_core_arch_str&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;spine_perfer_core_arch_str&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp" line="179" column="77"/>
+            <symbol>spine_perfer_core_arch_str</symbol>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;spine_perfer_core_id_str&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;spine_perfer_core_id_str&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/spacemit/ime_env.cpp" line="185" column="73"/>
+            <symbol>spine_perfer_core_id_str</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid logf() argument nr 1. The value is 0 but the valid values are &apos;1.4013e-45:&apos;." verbose="Invalid logf() argument nr 1. The value is 0 but the valid values are &apos;1.4013e-45:&apos;." cwe="628" file0="/workspace/ggml/src/ggml-cpu/vec.cpp">
+            <location file="/workspace/ggml/src/ggml-cpu/vec.cpp" line="612" column="35" info="Invalid argument"/>
+            <location file="/workspace/ggml/src/ggml-cpu/vec.cpp" line="607" column="14" info="Assuming condition is false"/>
+            <location file="/workspace/ggml/src/ggml-cpu/vec.cpp" line="606" column="22" info="Assignment &apos;sum=0&apos;, assigned value is 0"/>
+            <symbol>logf</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;htp_opformat::strides&apos; is not initialized in the constructor." verbose="Member variable &apos;htp_opformat::strides&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp-opnode.h" line="238" column="5"/>
+            <symbol>htp_opformat::strides</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;htp_opformat::dims&apos; is not initialized in the constructor." verbose="Member variable &apos;htp_opformat::dims&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp-opnode.h" line="238" column="5"/>
+            <symbol>htp_opformat::dims</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;htp_opformat::types&apos; is not initialized in the constructor." verbose="Member variable &apos;htp_opformat::types&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp-opnode.h" line="238" column="5"/>
+            <symbol>htp_opformat::types</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;htp_opformat::buffs&apos; is not initialized in the constructor." verbose="Member variable &apos;htp_opformat::buffs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp-opnode.h" line="238" column="5"/>
+            <symbol>htp_opformat::buffs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;htp_opformat::names&apos; is not initialized in the constructor." verbose="Member variable &apos;htp_opformat::names&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp-opnode.h" line="238" column="5"/>
+            <symbol>htp_opformat::names</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Struct &apos;ggml_hexagon_opqueue&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;ggml_hexagon_opqueue&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp" line="2002" column="9"/>
+            <symbol>ggml_hexagon_opqueue</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;ggml_hexagon_opqueue&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;ggml_hexagon_opqueue&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp" line="2002" column="9"/>
+            <symbol>ggml_hexagon_opqueue</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp">
+            <location file="/workspace/ggml/src/ggml-hexagon/ggml-hexagon.cpp" line="2273" column="9"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="457" file0="/workspace/ggml/src/ggml-hexagon/htp/hmx-matmul-ops.c">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/hmx-matmul-ops.c" line="360" column="12"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &apos;ne02&gt;0&apos; is redundant or log2() argument nr 1 can have invalid value. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Either the condition &apos;ne02&gt;0&apos; is redundant or log2() argument nr 1 can have invalid value. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="104" column="59" info="Invalid argument"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="103" column="10" info="Assignment from &apos;smctx-&gt;n_head=src0-&gt;ne[2]&apos;"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="116" column="35" info="Assignment to &apos;ne02=src0-&gt;ne[2]&apos;"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="119" column="14" info="Assuming that condition &apos;ne02&gt;0&apos; is not redundant"/>
+            <symbol>log2</symbol>
+        </error>
+        <error id="floatConversionOverflow" severity="warning" msg="Undefined behaviour: float (-inf) to integer conversion overflow." verbose="Undefined behaviour: float (-inf) to integer conversion overflow." cwe="190" file0="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="104" column="32" info="float to integer conversion"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="103" column="10" info="Assignment from &apos;smctx-&gt;n_head=src0-&gt;ne[2]&apos;"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="116" column="35" info="Assignment to &apos;ne02=src0-&gt;ne[2]&apos;"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/softmax-ops.c" line="119" column="14" info="Assuming that condition &apos;ne02&gt;0&apos; is not redundant"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GGML_BACKEND_DL_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GGML_BACKEND_DL_IMPL is a macro then please configure it." file0="/workspace/ggml/src/ggml-opencl/ggml-opencl.cpp">
+            <location file="/workspace/ggml/src/ggml-opencl/ggml-opencl.cpp" line="8033" column="1"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: input" verbose="Possible null pointer dereference: input" cwe="476" file0="/workspace/ggml/src/ggml-openvino/ggml-decoder.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-decoder.cpp" line="350" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-decoder.cpp" line="347" column="9" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-decoder.cpp" line="459" column="108" info="Calling function &apos;get_graph_input_shape&apos;, 2nd argument &apos;nullptr&apos; value is 0"/>
+            <symbol>input</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ggml_backend_openvino_buffer_context::device&apos; is not initialized in the constructor." verbose="Member variable &apos;ggml_backend_openvino_buffer_context::device&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="74" column="5"/>
+            <symbol>ggml_backend_openvino_buffer_context::device</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ggml_backend_openvino_buffer_context::size&apos; is not initialized in the constructor." verbose="Member variable &apos;ggml_backend_openvino_buffer_context::size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="74" column="5"/>
+            <symbol>ggml_backend_openvino_buffer_context::size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ggml_backend_openvino_buffer_context::is_remote&apos; is not initialized in the constructor." verbose="Member variable &apos;ggml_backend_openvino_buffer_context::is_remote&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="74" column="5"/>
+            <symbol>ggml_backend_openvino_buffer_context::is_remote</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ggml_backend_openvino_buffer_context::data_prev&apos; is not initialized in the constructor." verbose="Member variable &apos;ggml_backend_openvino_buffer_context::data_prev&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="74" column="5"/>
+            <symbol>ggml_backend_openvino_buffer_context::data_prev</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;device&apos; is initialized by itself." verbose="Member variable &apos;device&apos; is initialized by itself." cwe="665" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="74" column="91"/>
+            <symbol>device</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;size&apos; is initialized by itself." verbose="Member variable &apos;size&apos; is initialized by itself." cwe="665" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="81" column="22"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;is_remote&apos; is initialized by itself." verbose="Member variable &apos;is_remote&apos; is initialized by itself." cwe="665" file0="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/ggml-openvino.cpp" line="82" column="19"/>
+            <symbol>is_remote</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." file0="/workspace/ggml/src/ggml-openvino/openvino/pass/fuse_to_sdpa.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/openvino/pass/fuse_to_sdpa.h" line="10" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." file0="/workspace/ggml/src/ggml-openvino/openvino/pass/squeeze_matmul.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/openvino/pass/squeeze_matmul.h" line="10" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OPENVINO_MATCHER_PASS_RTTI is a macro then please configure it." file0="/workspace/ggml/src/ggml-openvino/openvino/translate_session.cpp">
+            <location file="/workspace/ggml/src/ggml-openvino/openvino/pass/mark_decompression_convert_constant_folding.h" line="27" column="5"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buft_ctx" verbose="Memory leak: buft_ctx" cwe="401" file0="/workspace/ggml/src/ggml-rpc/ggml-rpc.cpp">
+            <location file="/workspace/ggml/src/ggml-rpc/ggml-rpc.cpp" line="773" column="5"/>
+            <symbol>buft_ctx</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ctx" verbose="Memory leak: ctx" cwe="401" file0="/workspace/ggml/src/ggml-rpc/ggml-rpc.cpp">
+            <location file="/workspace/ggml/src/ggml-rpc/ggml-rpc.cpp" line="790" column="5"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning object that points to local variable &apos;r&apos; that will be invalid when returning." verbose="Returning object that points to local variable &apos;r&apos; that will be invalid when returning." cwe="562" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1650" column="55"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1650" column="43" info="Variable created here."/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1650" column="55" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning object that points to local variable &apos;r&apos; that will be invalid when returning." verbose="Returning object that points to local variable &apos;r&apos; that will be invalid when returning." cwe="562" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1651" column="67"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1651" column="55" info="Variable created here."/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1651" column="67" info="Address of variable taken here."/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="1119" column="13"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_size&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2902" column="13"/>
+            <symbol>device_memory::_size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_reference&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_reference&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2902" column="13"/>
+            <symbol>device_memory::_reference</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_host_ptr&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_host_ptr&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2902" column="13"/>
+            <symbol>device_memory::_host_ptr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_device_ptr&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_device_ptr&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2902" column="13"/>
+            <symbol>device_memory::_device_ptr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_size&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2905" column="13"/>
+            <symbol>device_memory::_size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_reference&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_reference&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2905" column="13"/>
+            <symbol>device_memory::_reference</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_host_ptr&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_host_ptr&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2905" column="13"/>
+            <symbol>device_memory::_host_ptr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;device_memory::_device_ptr&apos; is not initialized in the constructor." verbose="Member variable &apos;device_memory::_device_ptr&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="2905" column="13"/>
+            <symbol>device_memory::_device_ptr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;__nv_fp8_e4m3::raw&apos; is not initialized in the constructor." verbose="Member variable &apos;__nv_fp8_e4m3::raw&apos; is not initialized in the constructor." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/type.hpp" line="97" column="5"/>
+            <symbol>__nv_fp8_e4m3::raw</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: ptr" verbose="Null pointer dereference: ptr" cwe="476" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/common.hpp" line="133" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/ggml/src/ggml-sycl/common.hpp" line="132" column="14" info="Assignment &apos;ptr=NULL&apos;, assigned value is 0"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;i&lt;ver.size()&apos; is redundant or &apos;i&apos; can have the value greater or equal to ver.size(). Expression &apos;ver[i]&apos; cause access out of bounds." verbose="Either the condition &apos;i&lt;ver.size()&apos; is redundant or &apos;i&apos; can have the value greater or equal to ver.size(). Expression &apos;ver[i]&apos; cause access out of bounds." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="222" column="36" info="Access out of bounds"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="217" column="22" info="Assuming that condition &apos;i&lt;ver.size()&apos; is not redundant"/>
+            <symbol>ver</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;i&lt;ver.size()&apos; is redundant or &apos;i&apos; can have the value ver.size(). Expression &apos;ver[i]&apos; cause access out of bounds." verbose="Either the condition &apos;i&lt;ver.size()&apos; is redundant or &apos;i&apos; can have the value ver.size(). Expression &apos;ver[i]&apos; cause access out of bounds." cwe="398" file0="/workspace/ggml/src/ggml-sycl/add-id.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="231" column="38" info="Access out of bounds"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="230" column="15" info="i is incremented&apos;, new value is symbolic=ver.size()"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dpct/helper.hpp" line="228" column="19" info="Assuming that condition &apos;i&lt;ver.size()&apos; is not redundant"/>
+            <symbol>ver</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: d" verbose="Uninitialized variable: d" cwe="457" file0="/workspace/ggml/src/ggml-sycl/dmmv.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="362" column="31"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="344" column="25" info="Assignment &apos;d=(const uint8_t*)uaux&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="457" file0="/workspace/ggml/src/ggml-sycl/dmmv.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="732" column="35"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="718" column="25" info="Assignment &apos;s=(const uint8_t*)aux16&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="457" file0="/workspace/ggml/src/ggml-sycl/dmmv.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="888" column="35"/>
+            <location file="/workspace/ggml/src/ggml-sycl/dmmv.cpp" line="871" column="25" info="Assignment &apos;s=(const uint8_t*)aux16&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;256&lt;&lt;23&apos;." verbose="Signed integer overflow for expression &apos;256&lt;&lt;23&apos;." cwe="190" file0="/workspace/ggml/src/ggml-sycl/fattn-tile.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/fattn-tile.hpp" line="129" column="5" info="Integer overflow"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: q8" verbose="Uninitialized variable: q8" cwe="457" file0="/workspace/ggml/src/ggml-sycl/fattn-tile.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/vecdotq.hpp" line="120" column="26"/>
+            <location file="/workspace/ggml/src/ggml-sycl/vecdotq.hpp" line="118" column="42" info="Assignment &apos;q8=(const uint8_t*)&amp;aux32&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>q8</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;mask&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;mask&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/ggml/src/ggml-sycl/fattn.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/fattn-vec.hpp" line="129" column="59" info="Null pointer addition"/>
+            <location file="/workspace/ggml/src/ggml-sycl/fattn-vec.hpp" line="324" column="21" info="Assuming that condition &apos;mask&apos; is not redundant"/>
+        </error>
+        <error id="leakReturnValNotUsed" severity="error" msg="Return value of allocation function &apos;new&apos; is not stored." verbose="Return value of allocation function &apos;new&apos; is not stored." cwe="771" file0="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="1294" column="26"/>
+            <symbol>new</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786" file0="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4223" column="13" info="Negative array index"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4221" column="36" info="row_id_i is assigned &apos;*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos; here."/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4221" column="38" info="Assignment to &apos;row_id_i=*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos;"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4222" column="34" info="Assuming that condition &apos;row_id_i&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786" file0="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4241" column="40" info="Negative array index"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4237" column="36" info="row_id_i is assigned &apos;*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos; here."/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4237" column="38" info="Assignment to &apos;row_id_i=*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos;"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4238" column="34" info="Assuming that condition &apos;row_id_i&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;row_id_i&gt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786" file0="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp">
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4242" column="39" info="Negative array index"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4237" column="36" info="row_id_i is assigned &apos;*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos; here."/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4237" column="38" info="Assignment to &apos;row_id_i=*(const int32_t*)(ids_host+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos;"/>
+            <location file="/workspace/ggml/src/ggml-sycl/ggml-sycl.cpp" line="4238" column="34" info="Assuming that condition &apos;row_id_i&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;!initialized&apos; and inner condition is &apos;!initialized&apos;)." cwe="398" file0="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp">
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp" line="85" column="13" info="identical inner condition: !initialized"/>
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp" line="81" column="9" info="outer condition: !initialized"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;!initialized&apos; and inner condition is &apos;!initialized&apos;)." cwe="398" file0="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp">
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp" line="108" column="13" info="identical inner condition: !initialized"/>
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-device.cpp" line="104" column="9" info="outer condition: !initialized"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;initialized&apos;, second condition is always false" verbose="Identical condition &apos;initialized&apos;, second condition is always false" cwe="398" file0="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp">
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="22" column="13" info="Testing identical condition &apos;initialized&apos;"/>
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="13" column="9" info="If condition &apos;initialized&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;rmt_device_name&apos; is freed twice." verbose="Memory pointed to by &apos;rmt_device_name&apos; is freed twice." cwe="415" file0="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp">
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="55" column="13"/>
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="51" column="17"/>
+            <symbol>rmt_device_name</symbol>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;rmt_name&apos; is freed twice." verbose="Memory pointed to by &apos;rmt_name&apos; is freed twice." cwe="415" file0="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp">
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="76" column="13"/>
+            <location file="/workspace/ggml/src/ggml-virtgpu/ggml-backend-reg.cpp" line="72" column="17"/>
+            <symbol>rmt_name</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GGML_TENSOR_LOCALS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GGML_TENSOR_LOCALS is a macro then please configure it." file0="/workspace/ggml/src/ggml-vulkan/ggml-vulkan.cpp">
+            <location file="/workspace/ggml/src/ggml-vulkan/ggml-vulkan.cpp" line="9669" column="5"/>
+        </error>
+        <error id="invalidLifetime" severity="error" msg="Using object that points to local variable &apos;zdnn_bias_buffer&apos; that is out of scope." verbose="Using object that points to local variable &apos;zdnn_bias_buffer&apos; that is out of scope." cwe="562" file0="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp">
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="267" column="37"/>
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="245" column="59" info="Variable created here."/>
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="267" column="38" info="Passed to &apos;move&apos;."/>
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="258" column="58" info="Raw pointer to smart pointer created here."/>
+        </error>
+        <error id="invalidLifetime" severity="error" msg="Using object that points to local variable &apos;zdnn_bias_buffer&apos; that is out of scope." verbose="Using object that points to local variable &apos;zdnn_bias_buffer&apos; that is out of scope." cwe="562" file0="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp">
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="267" column="38"/>
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="245" column="59" info="Variable created here."/>
+            <location file="/workspace/ggml/src/ggml-zdnn/ggml-zdnn.cpp" line="258" column="58" info="Raw pointer to smart pointer created here."/>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;i02&gt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;i02&gt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786" file0="/workspace/ggml/src/ggml-zendnn/ggml-zendnn.cpp">
+            <location file="/workspace/ggml/src/ggml-zendnn/ggml-zendnn.cpp" line="273" column="13" info="Negative array index"/>
+            <location file="/workspace/ggml/src/ggml-zendnn/ggml-zendnn.cpp" line="269" column="31" info="i02 is assigned &apos;*(const int32_t*)((const char*)ids-&gt;data+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos; here."/>
+            <location file="/workspace/ggml/src/ggml-zendnn/ggml-zendnn.cpp" line="269" column="33" info="Assignment to &apos;i02=*(const int32_t*)((const char*)ids-&gt;data+iid1*ids-&gt;nb[1]+id*ids-&gt;nb[0])&apos;"/>
+            <location file="/workspace/ggml/src/ggml-zendnn/ggml-zendnn.cpp" line="271" column="29" info="Assuming that condition &apos;i02&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: q1" verbose="Uninitialized variable: q1" cwe="457" file0="/workspace/pocs/vdot/vdot.cpp">
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="76" column="31"/>
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="66" column="15" info="Assignment &apos;q1=(const uint8_t*)&amp;u1&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>q1</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: q2" verbose="Uninitialized variable: q2" cwe="457" file0="/workspace/pocs/vdot/vdot.cpp">
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="76" column="53"/>
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="67" column="15" info="Assignment &apos;q2=(const uint8_t*)&amp;u2&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>q2</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: q1" verbose="Uninitialized variable: q1" cwe="457" file0="/workspace/pocs/vdot/vdot.cpp">
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="155" column="31"/>
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="146" column="15" info="Assignment &apos;q1=(const uint8_t*)&amp;u1&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>q1</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: q2" verbose="Uninitialized variable: q2" cwe="457" file0="/workspace/pocs/vdot/vdot.cpp">
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="155" column="53"/>
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="147" column="15" info="Assignment &apos;q2=(const uint8_t*)&amp;u2&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>q2</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_adapter_lora::alpha&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_adapter_lora::alpha&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-adapter.h" line="80" column="14"/>
+            <symbol>llama_adapter_lora::alpha</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_out_ids::out_ids&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_out_ids::out_ids&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="202" column="5"/>
+            <symbol>llm_graph_input_out_ids::out_ids</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_mean::mean&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_mean::mean&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="222" column="5"/>
+            <symbol>llm_graph_input_mean::mean</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_cls::cls&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_cls::cls&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="234" column="5"/>
+            <symbol>llm_graph_input_cls::cls</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_rs::s_copy&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_rs::s_copy&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="247" column="5"/>
+            <symbol>llm_graph_input_rs::s_copy</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_rs::s_copy_main&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_rs::s_copy_main&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="247" column="5"/>
+            <symbol>llm_graph_input_rs::s_copy_main</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_rs::s_copy_extra&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_rs::s_copy_extra&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="247" column="5"/>
+            <symbol>llm_graph_input_rs::s_copy_extra</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_rs::head&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_rs::head&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="247" column="5"/>
+            <symbol>llm_graph_input_rs::head</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_rs::rs_z&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_rs::rs_z&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="247" column="5"/>
+            <symbol>llm_graph_input_rs::rs_z</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_cross_embd::cross_embd&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_cross_embd::cross_embd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-adapter.cpp">
+            <location file="/workspace/src/llama-graph.h" line="270" column="5"/>
+            <symbol>llm_graph_input_cross_embd::cross_embd</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_batch_allocr::vocab&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_batch_allocr::vocab&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-batch.cpp">
+            <location file="/workspace/src/llama-batch.cpp" line="12" column="21"/>
+            <symbol>llama_batch_allocr::vocab</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_batch_allocr::n_embd&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_batch_allocr::n_embd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-batch.cpp">
+            <location file="/workspace/src/llama-batch.cpp" line="12" column="21"/>
+            <symbol>llama_batch_allocr::n_embd</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_batch_allocr::n_seq_max&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_batch_allocr::n_seq_max&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-batch.cpp">
+            <location file="/workspace/src/llama-batch.cpp" line="12" column="21"/>
+            <symbol>llama_batch_allocr::n_seq_max</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_batch_allocr::n_outputs&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_batch_allocr::n_outputs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-batch.cpp">
+            <location file="/workspace/src/llama-batch.cpp" line="12" column="21"/>
+            <symbol>llama_batch_allocr::n_outputs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_batch_allocr::n_used&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_batch_allocr::n_used&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-batch.cpp">
+            <location file="/workspace/src/llama-batch.cpp" line="12" column="21"/>
+            <symbol>llama_batch_allocr::n_used</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_kv_cache_context::kv&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_kv_cache_context::kv&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="2376" column="25"/>
+            <symbol>llama_kv_cache_context::kv</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_kv_cache_context::lctx&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_kv_cache_context::lctx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="2376" column="25"/>
+            <symbol>llama_kv_cache_context::lctx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_kv_cache_context::n_kv&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_kv_cache_context::n_kv&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="2376" column="25"/>
+            <symbol>llama_kv_cache_context::n_kv</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_kv_cache_context::lctx&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_kv_cache_context::lctx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="2378" column="25"/>
+            <symbol>llama_kv_cache_context::lctx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_kv_cache_context::n_kv&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_kv_cache_context::n_kv&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="2395" column="25"/>
+            <symbol>llama_kv_cache_context::n_kv</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llm_graph_input_k_shift::k_shift&apos; is not initialized in the constructor." verbose="Member variable &apos;llm_graph_input_k_shift::k_shift&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="1792" column="5"/>
+            <symbol>llm_graph_input_k_shift::k_shift</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;!can_use&apos; and inner condition is &apos;!can_use&apos;)." cwe="398" file0="/workspace/src/llama-kv-cache.cpp">
+            <location file="/workspace/src/llama-kv-cache.cpp" line="979" column="25" info="identical inner condition: !can_use"/>
+            <location file="/workspace/src/llama-kv-cache.cpp" line="970" column="21" info="outer condition: !can_use"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_memory_recurrent_context::mem&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_memory_recurrent_context::mem&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-memory-recurrent.cpp">
+            <location file="/workspace/src/llama-memory-recurrent.cpp" line="1172" column="33"/>
+            <symbol>llama_memory_recurrent_context::mem</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;impl::addr&apos; is not initialized in the constructor." verbose="Member variable &apos;impl::addr&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-mmap.cpp">
+            <location file="/workspace/src/llama-mmap.cpp" line="600" column="5"/>
+            <symbol>impl::addr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;impl::size&apos; is not initialized in the constructor." verbose="Member variable &apos;impl::size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-mmap.cpp">
+            <location file="/workspace/src/llama-mmap.cpp" line="600" column="5"/>
+            <symbol>impl::size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;no_init &lt; uint8_t &gt;::value&apos; is not initialized in the constructor." verbose="Member variable &apos;no_init &lt; uint8_t &gt;::value&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-model-loader.cpp">
+            <location file="/workspace/src/llama-impl.h" line="41" column="5"/>
+            <symbol>no_init &lt; uint8_t &gt;::value</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;llama_model::get_split_state_ud&apos; is not initialized in the constructor." verbose="Member variable &apos;llama_model::get_split_state_ud&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-model.cpp">
+            <location file="/workspace/src/llama-model.cpp" line="969" column="14"/>
+            <symbol>llama_model::get_split_state_ud</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;impl::has_tensor_overrides&apos; is not initialized in the constructor." verbose="Member variable &apos;impl::has_tensor_overrides&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-model.cpp">
+            <location file="/workspace/src/llama-model.cpp" line="935" column="5"/>
+            <symbol>impl::has_tensor_overrides</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid fout.write() argument nr 2. The value is 0 but the valid values are &apos;1:&apos;." verbose="Invalid fout.write() argument nr 2. The value is 0 but the valid values are &apos;1:&apos;." cwe="628" file0="/workspace/src/llama-quant.cpp">
+            <location file="/workspace/src/llama-quant.cpp" line="1260" column="49" info="Invalid argument"/>
+            <location file="/workspace/src/llama-quant.cpp" line="1242" column="43" info="Assuming condition is false"/>
+            <location file="/workspace/src/llama-quant.cpp" line="1241" column="28" info="Assignment &apos;new_size=0&apos;, assigned value is 0"/>
+            <symbol>fout.write</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;no_init &lt; float &gt;::value&apos; is not initialized in the constructor." verbose="Member variable &apos;no_init &lt; float &gt;::value&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-quant.cpp">
+            <location file="/workspace/src/llama-impl.h" line="41" column="5"/>
+            <symbol>no_init &lt; float &gt;::value</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &apos;cur_p-&gt;size&lt;=1&apos; is redundant or logf() argument nr 1 can have invalid value. The value is 0 but the valid values are &apos;1.4013e-45:&apos;." verbose="Either the condition &apos;cur_p-&gt;size&lt;=1&apos; is redundant or logf() argument nr 1 can have invalid value. The value is 0 but the valid values are &apos;1.4013e-45:&apos;." cwe="628" file0="/workspace/src/llama-sampler.cpp">
+            <location file="/workspace/src/llama-sampler.cpp" line="1927" column="40" info="Invalid argument"/>
+            <location file="/workspace/src/llama-sampler.cpp" line="1922" column="25" info="Assuming that condition &apos;cur_p-&gt;size&lt;=1&apos; is not redundant"/>
+            <symbol>logf</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &apos;len0&lt;0&apos; is redundant or ctx-&gt;buf0.resize() argument nr 1 can have invalid value. The value is -1 but the valid values are &apos;0:&apos;." verbose="Either the condition &apos;len0&lt;0&apos; is redundant or ctx-&gt;buf0.resize() argument nr 1 can have invalid value. The value is -1 but the valid values are &apos;0:&apos;." cwe="628" file0="/workspace/src/llama-sampler.cpp">
+            <location file="/workspace/src/llama-sampler.cpp" line="3680" column="34" info="Invalid argument"/>
+            <location file="/workspace/src/llama-sampler.cpp" line="3679" column="22" info="Assuming that condition &apos;len0&lt;0&apos; is not redundant"/>
+            <symbol>ctx-&gt;buf0.resize</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &apos;len1&lt;0&apos; is redundant or ctx-&gt;buf1.resize() argument nr 1 can have invalid value. The value is -1 but the valid values are &apos;0:&apos;." verbose="Either the condition &apos;len1&lt;0&apos; is redundant or ctx-&gt;buf1.resize() argument nr 1 can have invalid value. The value is -1 but the valid values are &apos;0:&apos;." cwe="628" file0="/workspace/src/llama-sampler.cpp">
+            <location file="/workspace/src/llama-sampler.cpp" line="3687" column="34" info="Invalid argument"/>
+            <location file="/workspace/src/llama-sampler.cpp" line="3686" column="22" info="Assuming that condition &apos;len1&lt;0&apos; is not redundant"/>
+            <symbol>ctx-&gt;buf1.resize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_undefined&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_undefined&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_undefined</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_number&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_number&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_number</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_letter&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_letter&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_letter</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_separator&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_separator&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_separator</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_accent_mark&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_accent_mark&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_accent_mark</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_punctuation&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_punctuation&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_punctuation</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_symbol&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_symbol&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_symbol</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_control&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_control&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_control</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_whitespace&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_whitespace&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_whitespace</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_lowercase&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_lowercase&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_lowercase</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_uppercase&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_uppercase&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_uppercase</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;unicode_cpt_flags::is_nfd&apos; is not initialized in the constructor." verbose="Member variable &apos;unicode_cpt_flags::is_nfd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/llama-vocab.cpp">
+            <location file="/workspace/src/unicode.h" line="41" column="12"/>
+            <symbol>unicode_cpt_flags::is_nfd</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;path_prefix.empty()&apos; is redundant or expression &apos;expanded_prefix[0]&apos; cause access out of bounds." verbose="Either the condition &apos;path_prefix.empty()&apos; is redundant or expression &apos;expanded_prefix[0]&apos; cause access out of bounds." cwe="398" file0="/workspace/tools/cli/cli.cpp">
+            <location file="/workspace/tools/cli/cli.cpp" line="278" column="41" info="Access out of bounds"/>
+            <location file="/workspace/tools/cli/cli.cpp" line="267" column="37" info="expanded_prefix is assigned &apos;path_prefix&apos; here."/>
+            <location file="/workspace/tools/cli/cli.cpp" line="282" column="38" info="Assuming that condition &apos;path_prefix.empty()&apos; is not redundant"/>
+            <symbol>expanded_prefix</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;buffer&apos;." verbose="Access of moved variable &apos;buffer&apos;." cwe="672" file0="/workspace/tools/completion/completion.cpp">
+            <location file="/workspace/tools/completion/completion.cpp" line="920" column="37" info="Access of moved variable &apos;buffer&apos;."/>
+            <location file="/workspace/tools/completion/completion.cpp" line="919" column="55" info="Calling std::move(buffer)"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;pca_model::ctx_host&apos; is not initialized in the constructor." verbose="Member variable &apos;pca_model::ctx_host&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/cvector-generator/cvector-generator.cpp">
+            <location file="/workspace/tools/cvector-generator/pca.hpp" line="63" column="5"/>
+            <symbol>pca_model::ctx_host</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/tools/imatrix/imatrix.cpp">
+            <location file="/workspace/tools/imatrix/imatrix.cpp" line="882" column="43" info="Invalid argument"/>
+            <location file="/workspace/tools/imatrix/imatrix.cpp" line="879" column="23" info="Assuming condition is false"/>
+            <location file="/workspace/tools/imatrix/imatrix.cpp" line="878" column="23" info="Assignment &apos;sum_exp=0.0&apos;, assigned value is 0.0"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;cx&apos; and &apos;cy&apos;." verbose="Finding variables &apos;cx&apos; and &apos;cy&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/tools/mtmd/debug/mtmd-debug.cpp">
+            <location file="/workspace/tools/mtmd/debug/mtmd-debug.cpp" line="177" column="19"/>
+            <location file="/workspace/tools/mtmd/debug/mtmd-debug.cpp" line="178" column="19"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;mtmd_audio_preprocessor_whisper::cache&apos; is not initialized in the constructor." verbose="Member variable &apos;mtmd_audio_preprocessor_whisper::cache&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/mtmd/mtmd-audio.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-audio.h" line="64" column="5"/>
+            <symbol>mtmd_audio_preprocessor_whisper::cache</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;mtmd_audio_preprocessor_conformer::cache&apos; is not initialized in the constructor." verbose="Member variable &apos;mtmd_audio_preprocessor_conformer::cache&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/mtmd/mtmd-audio.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-audio.h" line="73" column="5"/>
+            <symbol>mtmd_audio_preprocessor_conformer::cache</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;mtmd_audio_preprocessor_granite_speech::cache&apos; is not initialized in the constructor." verbose="Member variable &apos;mtmd_audio_preprocessor_granite_speech::cache&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/mtmd/mtmd-audio.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-audio.h" line="82" column="5"/>
+            <symbol>mtmd_audio_preprocessor_granite_speech::cache</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;mtmd_audio_preprocessor_gemma4a::cache&apos; is not initialized in the constructor." verbose="Member variable &apos;mtmd_audio_preprocessor_gemma4a::cache&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/mtmd/mtmd-audio.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-audio.h" line="91" column="5"/>
+            <symbol>mtmd_audio_preprocessor_gemma4a::cache</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;mtmd_audio_preprocessor_qwen3a::cache&apos; is not initialized in the constructor." verbose="Member variable &apos;mtmd_audio_preprocessor_qwen3a::cache&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/mtmd/mtmd-audio.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-audio.h" line="100" column="5"/>
+            <symbol>mtmd_audio_preprocessor_qwen3a::cache</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;ss0&apos; and &apos;ss1&apos;." verbose="Finding variables &apos;ss0&apos; and &apos;ss1&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/tools/mtmd/mtmd-image.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="473" column="29"/>
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="474" column="29"/>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;ss1&apos; and &apos;ss2&apos;." verbose="Finding variables &apos;ss1&apos; and &apos;ss2&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/tools/mtmd/mtmd-image.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="474" column="29"/>
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="475" column="29"/>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;ss0&apos; and &apos;ss1&apos;." verbose="Finding variables &apos;ss0&apos; and &apos;ss1&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/tools/mtmd/mtmd-image.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="510" column="29"/>
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="511" column="29"/>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;ss1&apos; and &apos;ss2&apos;." verbose="Finding variables &apos;ss1&apos; and &apos;ss2&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/tools/mtmd/mtmd-image.cpp">
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="511" column="29"/>
+            <location file="/workspace/tools/mtmd/mtmd-image.cpp" line="512" column="29"/>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/tools/perplexity/perplexity.cpp">
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="69" column="43" info="Invalid argument"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="66" column="23" info="Assuming condition is false"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="65" column="23" info="Assignment &apos;sum_exp=0.0&apos;, assigned value is 0.0"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/tools/perplexity/perplexity.cpp">
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="91" column="35" info="Invalid argument"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="88" column="23" info="Assuming condition is false"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="87" column="23" info="Assignment &apos;sum_exp=0.0&apos;, assigned value is 0.0"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/tools/perplexity/perplexity.cpp">
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="204" column="35" info="Invalid argument"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="201" column="23" info="Assuming condition is false"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="200" column="23" info="Assignment &apos;sum_exp=0.0&apos;, assigned value is 0.0"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid std::log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid std::log() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/workspace/tools/perplexity/perplexity.cpp">
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="730" column="97" info="Invalid argument"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="727" column="35" info="Assuming condition is false"/>
+            <location file="/workspace/tools/perplexity/perplexity.cpp" line="726" column="32" info="Assignment &apos;sum_p=0.f&apos;, assigned value is 0.0"/>
+            <symbol>std::log</symbol>
+        </error>
+        <error id="invalidContainerReference" severity="error" msg="Reference to imatrix_data that may be invalid." verbose="Reference to imatrix_data that may be invalid." cwe="664" file0="/workspace/tools/quantize/quantize.cpp">
+            <location file="/workspace/tools/quantize/quantize.cpp" line="216" column="9"/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="213" column="26" info="After calling &apos;imatrix_data={}&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="211" column="23" info="Assuming condition is true."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="184" column="177" info="Passed to reference."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="206" column="18" info="Assigned to reference."/>
+        </error>
+        <error id="invalidContainerReference" severity="error" msg="Reference to imatrix_data that may be invalid." verbose="Reference to imatrix_data that may be invalid." cwe="664" file0="/workspace/tools/quantize/quantize.cpp">
+            <location file="/workspace/tools/quantize/quantize.cpp" line="224" column="29"/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="220" column="26" info="After calling &apos;imatrix_data={}&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="223" column="19" info="Assuming condition is true."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="218" column="20" info="Assuming condition is true."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="184" column="177" info="Passed to reference."/>
+            <location file="/workspace/tools/quantize/quantize.cpp" line="206" column="18" info="Assigned to reference."/>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it!=tokens.map_idx_to_media.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." verbose="Either the condition &apos;it!=tokens.map_idx_to_media.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." cwe="825" file0="/workspace/tools/server/server-common.cpp">
+            <location file="/workspace/tools/server/server-common.cpp" line="386" column="52" info="Dereference of an invalid iterator"/>
+            <location file="/workspace/tools/server/server-common.cpp" line="385" column="60" info="Assuming that condition &apos;it!=tokens.map_idx_to_media.end()&apos; is not redundant"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it!=tokens.map_idx_to_media.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." verbose="Either the condition &apos;it!=tokens.map_idx_to_media.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." cwe="825" file0="/workspace/tools/server/server-common.cpp">
+            <location file="/workspace/tools/server/server-common.cpp" line="388" column="42" info="Dereference of an invalid iterator"/>
+            <location file="/workspace/tools/server/server-common.cpp" line="385" column="60" info="Assuming that condition &apos;it!=tokens.map_idx_to_media.end()&apos; is not redundant"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;server_task::type&apos; is not initialized in the constructor." verbose="Member variable &apos;server_task::type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/server/server-context.cpp">
+            <location file="/workspace/tools/server/server-task.h" line="170" column="5"/>
+            <symbol>server_task::type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;server_task::slot_action&apos; is not initialized in the constructor." verbose="Member variable &apos;server_task::slot_action&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/server/server-context.cpp">
+            <location file="/workspace/tools/server/server-task.h" line="170" column="5"/>
+            <symbol>server_task::slot_action</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;server_task::slot_action&apos; is not initialized in the constructor." verbose="Member variable &apos;server_task::slot_action&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/server/server-context.cpp">
+            <location file="/workspace/tools/server/server-task.h" line="172" column="5"/>
+            <symbol>server_task::slot_action</symbol>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;states.size()&gt;1&apos; and inner condition is &apos;states.empty()&apos;)." cwe="398" file0="/workspace/tools/server/server-task.cpp">
+            <location file="/workspace/tools/server/server-task.cpp" line="2138" column="29" info="opposite inner condition: states.empty()"/>
+            <location file="/workspace/tools/server/server-task.cpp" line="2137" column="30" info="outer condition: states.size()&gt;1"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;states.size()&gt;1&apos; and inner condition is &apos;states.empty()&apos;)." cwe="398" file0="/workspace/tools/server/server-task.cpp">
+            <location file="/workspace/tools/server/server-task.cpp" line="2156" column="29" info="opposite inner condition: states.empty()"/>
+            <location file="/workspace/tools/server/server-task.cpp" line="2155" column="30" info="outer condition: states.size()&gt;1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ChunkedDecoder::line_buf&apos; is not initialized in the constructor." verbose="Member variable &apos;ChunkedDecoder::line_buf&apos; is not initialized in the constructor." cwe="398" file0="/workspace/vendor/cpp-httplib/httplib.cpp">
+            <location file="/workspace/vendor/cpp-httplib/httplib.cpp" line="9174" column="17"/>
+            <symbol>ChunkedDecoder::line_buf</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;dl_handle_deleter&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;dl_handle_deleter&apos;" cwe="758">
+            <location file="/workspace/ggml/src/ggml-backend-dl.h" line="32" column="1"/>
+            <location file="/workspace/ggml/src/ggml-backend-dl.h" line="22" column="1"/>
+            <symbol>dl_handle_deleter</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;dl_handle_deleter&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;dl_handle_deleter&apos;" cwe="758">
+            <location file="/workspace/ggml/src/ggml-backend-dl.h" line="32" column="1"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/libdl.h" line="22" column="1"/>
+            <symbol>dl_handle_deleter</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;block_q8_0&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;block_q8_0&apos;" cwe="758">
+            <location file="/workspace/pocs/vdot/q8dot.cpp" line="36" column="9"/>
+            <location file="/workspace/pocs/vdot/vdot.cpp" line="55" column="9"/>
+            <symbol>block_q8_0</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ring_buffer &lt; llama_token &gt;&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ring_buffer &lt; llama_token &gt;&apos;" cwe="758">
+            <location file="/workspace/common/sampling.cpp" line="21" column="1"/>
+            <location file="/workspace/src/llama-sampler.cpp" line="25" column="1"/>
+            <symbol>ring_buffer &lt; llama_token &gt;</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;callback_data&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;callback_data&apos;" cwe="758">
+            <location file="/workspace/examples/diffusion/diffusion-cli.cpp" line="15" column="1"/>
+            <location file="/workspace/tools/cvector-generator/cvector-generator.cpp" line="58" column="1"/>
+            <symbol>callback_data</symbol>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument dst that points at uninitialized variable x" verbose="Using argument dst that points at uninitialized variable x" cwe="457">
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/hvx-base.h" line="36" column="28" info="Using argument dst"/>
+            <location file="/workspace/ggml/src/ggml-hexagon/htp/hvx-base.h" line="70" column="20" info="Calling function hvx_vec_store_a, 1st argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

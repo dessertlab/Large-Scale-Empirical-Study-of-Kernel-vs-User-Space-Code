@@ -1,0 +1,4945 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/snprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1027",
+              "name": "buffer/getopt_long",
+              "shortDescription": {
+                "text": "Some older implementations do not protect against internal buffer overflows (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1048",
+              "name": "random/nrand48",
+              "shortDescription": {
+                "text": "This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-327",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1017",
+              "name": "format/fprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1044",
+              "name": "shell/system",
+              "shortDescription": {
+                "text": "This causes a new program to execute and is difficult to use safely (CWE-78)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-78",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/open",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1053",
+              "name": "buffer/getenv",
+              "shortDescription": {
+                "text": "Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/807.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-807",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1043",
+              "name": "shell/execvp",
+              "shortDescription": {
+                "text": "This causes a new program to execute and is difficult to use safely (CWE-78)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-78",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1035",
+              "name": "race/readlink",
+              "shortDescription": {
+                "text": "This accepts filename arguments; if an attacker can move those files or change the link content, a race condition results. Also, it does not terminate with ASCII NUL. (CWE-362, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1026",
+              "name": "buffer/realpath",
+              "shortDescription": {
+                "text": "This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-785",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1008",
+              "name": "buffer/strncpy",
+              "shortDescription": {
+                "text": "Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1021",
+              "name": "buffer/sscanf",
+              "shortDescription": {
+                "text": "The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1023",
+              "name": "buffer/MultiByteToWideChar",
+              "shortDescription": {
+                "text": "Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/recv",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/audio_player.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    char str[5 + 1]; // max 65535"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d230b58e51aa706a1c6c317947b9a2a7ac4ef2ad733ce438edefac59eb3f6a18"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/audio_player.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 13,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "    int r = snprintf(str, sizeof(str), \"%\" PRIu16, (uint16_t) aout_samples);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "429cdfb0e1645b6d8d0e43914744fd25ee96042b314f92153a6ce3473d687a26"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 11,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    const char *shortcuts[MAX_EQUIVALENT_SHORTCUTS + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "43b05e2eae5176f243284fd34c767fdc264ddcc2ddfb9015a479d80961cb118f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1404,
+                  "startColumn": 5,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    printf(\"\\n    %s\\n\", buf.s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d8c8afafcf593b8a5e3dbcd59c567c1c917f7ac4b36bb1b14b1f798f73d3d6bc"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1409,
+                  "startColumn": 5,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "    printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1425,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1429,
+                  "startColumn": 5,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    printf(\"%s\\n\", text);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b957ea3e7d6916c7738acf9245039d25cff45a777f0ec5ff755555c91776368a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1440,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1444,
+                  "startColumn": 5,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    printf(\"\\n%s\\n\", intro);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80628030951bf4f8043491622041f15ef264974f98e3af147790006a0afca74e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1454,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1458,
+                  "startColumn": 9,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "        printf(\"    %s\\n\", shortcut->shortcuts[i]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f54519f373a1ad6235cbc458f893cdfc6f5d2d1798944d94979408ecabcb815c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1464,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1468,
+                  "startColumn": 5,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    printf(\"%s\\n\", text);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b957ea3e7d6916c7738acf9245039d25cff45a777f0ec5ff755555c91776368a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1478,
+                  "startColumn": 5,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    printf(\"\\n    %s\\n\", envvar->name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f9614d6ff52cd22db663959875c845a71b790345af34cfad3eed0513a5c98bd"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1481,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1485,
+                  "startColumn": 5,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    printf(\"%s\\n\", text);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b957ea3e7d6916c7738acf9245039d25cff45a777f0ec5ff755555c91776368a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1497,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        printf(\"<ERROR>\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0a0f0a88c14a31b2bd6afde127a9424cfbfa3284d6f13d61c6ed7c325336319"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1501,
+                  "startColumn": 12,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "    assert(strlen(text) >= 9); // Contains at least the initial indentation"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2c461aa29af1f69bb30f040f66a45aa5a6d4b5a19ae6cdd43ccb4b3941a551fb"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1504,
+                  "startColumn": 5,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    printf(\"    %3d  %s\\n\", status->value, text + 9);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6e1dc45d5ea4b5b17d17b008dc7bcd151c5bea9c03a342e2a0b83ce25876e6e8"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1528,
+                  "startColumn": 5,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    printf(\"Usage: %s [options]\\n\\n\""
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1443ec5c749433a382b1f70ca7a45c166581948a68b0631ecf64b5d0f856816f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1535,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    printf(\"\\nShortcuts:\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bc2c0eecb9d2d68dc871b35b54c0f0cc0539ee39bf8f76c482ad7ea3a18a8907"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1542,
+                  "startColumn": 5,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    printf(\"\\nEnvironment variables:\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "efeac287af94d4230ee05602efc259e3c42d0af5b5b0b9d622c69df43833f19f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1547,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    printf(\"\\nExit status:\\n\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6da4768730ab8bdf4136933fb22b23bd001012b5e5e9e6e528a46e5badadc615"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1908,
+                  "startColumn": 55,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "        size_t limit = comma ? (size_t) (comma - s) : strlen(s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6db5822367acabf4f5ff9dbbc48bd30e186801fe375d8663351822878db57c5c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2334,
+                  "startColumn": 12,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    assert(strlen(s) >= 4);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e08bc0974ef7276b5b24b34818c67aaeefa520701e30294ae587bec6f3f288e7"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2354,
+                  "startColumn": 18,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    size_t len = strlen(s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a97de4652570b87ff7852e93e85b81c781e5548e375be307f47d6fe256cfc1f8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2414,
+                  "startColumn": 18,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    size_t len = strlen(s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a97de4652570b87ff7852e93e85b81c781e5548e375be307f47d6fe256cfc1f8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1027",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getopt_long:Some older implementations do not protect against internal buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/cli.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2476,
+                  "startColumn": 17,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "    while ((c = getopt_long(argc, argv, optstring, longopts, NULL)) != -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d1f0ef19ab30b6ecd6bc3f78b8c5d382ec73ad1d475cf9b735f2dc61985d860e"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 19,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    size_t size = strlen(s) + 1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "60e8ebc98093d17c858653b50211ec62aad69a151c9cfcdb80fdbea444abba5a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 9,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "        memcpy(dup, s, size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bc2b13f081dc0aca5a45278d8f25f49700f8117889a82d74fa63e8f6266bd24c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 15,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    int len = vsnprintf(NULL, 0, fmt, va);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1e4c03e7dce185ee200b3b5d7e6377c16f0f68365e5aca23833a07a28bd94df7"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 16,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    int len2 = vsnprintf(str, len + 1, fmt, va);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f4390cf417ac1399ac10d24d0ba1affe43b8727a1521fc0144814492056653d8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/nrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 6,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "long nrand48(unsigned short xsubi[3]) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b44071f56a74e3869784de7951dd1a6e239a5c7f69e308c25ec2cdd06d33a380"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 6,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "long jrand48(unsigned short xsubi[3]) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "102bf064682fa681eb74d64a45f309db3a39aad2fe137d22499a102d7864db51"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/recorder.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    memcpy(extradata, packet->data, packet->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7c4d8785dc3cd765bc76300974303cb2ba4619357c4b8c4745d27b2e35f47dbe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 22,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "        size_t len = strlen(arg);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dd8b1a1ad03da316ae07a3e7675ded8039c9ce10879e3fd9a3ed03938918073c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 13,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "            memcpy(&buf[idx], \"...\", 3);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f17f7b97afe2384ec3878df9a79dc0134e491aa7eb532525cc80cf67daf3d0f7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 9,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "        memcpy(&buf[idx], arg, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ef1314aef3d22fb320751cf2d0137818ff951730dbaccdcbdc6c5adfa2de77af"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 5,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    char local[4 + 5 + 1]; // tcp:PORT"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81ad9f768c15aa0cbbc29eb9c57612c65b540ec5895cce354a749a05353e273b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    char remote[108 + 14 + 1]; // localabstract:NAME"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "41f1dde39b9df562fb79c976cebc1eee283688e5061043bb7fe97f3b043f6247"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 13,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    int r = snprintf(local, sizeof(local), \"tcp:%\" PRIu16, local_port);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "098bd4b3e225650851cc0ca2f1aff572b0ee36159b9763950086490954459c07"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 9,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    r = snprintf(remote, sizeof(remote), \"localabstract:%s\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ec4efaa1684699e23d4bf4ce02282b59c6156e332ea32b45e5cc6f66cb530291"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 5,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    char local[4 + 5 + 1]; // tcp:PORT"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81ad9f768c15aa0cbbc29eb9c57612c65b540ec5895cce354a749a05353e273b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 276,
+                  "startColumn": 13,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    int r = snprintf(local, sizeof(local), \"tcp:%\" PRIu16, local_port);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "098bd4b3e225650851cc0ca2f1aff572b0ee36159b9763950086490954459c07"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 5,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    char local[4 + 5 + 1]; // tcp:PORT"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81ad9f768c15aa0cbbc29eb9c57612c65b540ec5895cce354a749a05353e273b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    char remote[108 + 14 + 1]; // localabstract:NAME"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "41f1dde39b9df562fb79c976cebc1eee283688e5061043bb7fe97f3b043f6247"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 13,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    int r = snprintf(local, sizeof(local), \"tcp:%\" PRIu16, local_port);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "098bd4b3e225650851cc0ca2f1aff572b0ee36159b9763950086490954459c07"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 9,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    r = snprintf(remote, sizeof(remote), \"localabstract:%s\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ec4efaa1684699e23d4bf4ce02282b59c6156e332ea32b45e5cc6f66cb530291"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 315,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    char remote[108 + 14 + 1]; // localabstract:NAME"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "41f1dde39b9df562fb79c976cebc1eee283688e5061043bb7fe97f3b043f6247"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 316,
+                  "startColumn": 13,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "    int r = snprintf(remote, sizeof(remote), \"localabstract:%s\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ed6d4b14f88c8bf7034beaeaf4f04af5cee625a674ecc642381e09361b45eb42"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 358,
+                  "startColumn": 5,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    char port_string[5 + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b7964c9ede91ac07f9df0b152cb80fb1028dfb725336318e23953c1077578127"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 359,
+                  "startColumn": 13,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "    int r = snprintf(port_string, sizeof(port_string), \"%\" PRIu16, port);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "862d4832f2936bc1ba77d74e5684b2c791e61589d21e35761c1b694d83b49dbd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 385,
+                  "startColumn": 5,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "    char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 408,
+                  "startColumn": 9,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        fprintf(stderr, \"%s\\n\", buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36e26768c63773f10caddbf7f8a68568f5fdff9e91ff38b7973f3ba1fd4c2f7e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 41,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "                    size_t serial_len = strlen(selector->serial);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38e7a781fa241fd81f34f4217d55a8dbf43ede481b0024ec30d5f3b5424b710e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 681,
+                  "startColumn": 5,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "    char buf[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e6ef4b73cb0cf74f88a6a9d4e04522c79ea9387f8f272e9d0ac542fa7168aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 716,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    char buf[1024];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5065f5757ec562d76d80e513ac33668b30265995d34290fc3fe7083c178c0622"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/adb/adb_parser.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 18,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    size_t len = strlen(line);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "733001c297c98459f7913dc6688c96563628531a003101e921388a865909730b"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/nrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 6,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "long nrand48(unsigned short xsubi[3]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7ed136168766c2467908c6f8b273cd7ff08c7dbd5d88aadbccb35a71e43301c9"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/compat.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 6,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "long jrand48(unsigned short xsubi[3]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d360101ec5932520d7c52d85ea874f0efe1dab765065046e12f9e5a47c47a387"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1044",
+          "level": "error",
+          "message": {
+            "text": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/clock.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 49,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "sc_clock_update(struct sc_clock *clock, sc_tick system, sc_tick stream) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cec41c9648cef8533b1be04abf13a80a3180d3604fde08af6e1da4d5a5b2f5d1"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/usb/aoa_hid.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 11,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "        } open;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7257412a82d9285f69c6dcc895e91a73b777177a8cc6a4e14606c7ac2d292a38"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/usb/usb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    char buffer[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bbb368e12028053051f7e7a8cae6a0668c5084d93a02908e0f475627036496c7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/usb/usb.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 5,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    memcpy(s, buffer, result);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c81bd27b83300ae0423d240fbaab1e188d7459aa38dfe4264f035f27dd889f5a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/audio_regulator.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 9,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    if (read < out_samples) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f329b67ce04ae01fe921e2763eb5c168d9d22b193bb8cc4321370efec3b152a4"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/audio_regulator.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 42,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "        uint32_t silence = out_samples - read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ebc5160d3dd025dc1b57477e321e8d3b6962ba3634fe31c0de0a082fc4373520"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/audio_regulator.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 31,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "        memset(out + TO_BYTES(read), 0, TO_BYTES(silence));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9706d9340fa18ed830b898c224d01f18fde338b346b5c5570a8259ba05e028f8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/packet_merger.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 9,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "        memcpy(merger->config, packet->data, packet->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "efc8a7b356bddded6f076b49a29314add902274b53569a5ac57c584707bd8ce5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/packet_merger.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 9,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "        memcpy(packet->data, merger->config, config_size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b44034780752f43ee3a591a40dc39e5bbb5e95bd7fc0d7acc7ce02349268134e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/screen.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 10,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    bool open; // track the open/close state to assert correct behavior"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb13f1e17413522d61d836c563055bc8b43c73f7b35f132f2092d2dabf96f81c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/server.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    char device_name[SC_DEVICE_NAME_FIELD_LENGTH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54303e2cb8bfd2d11cb0f297e6d8789ab58c52bc47dd20c7687fbd2042b1fee1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/trait/packet_sink.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 12,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    bool (*open)(struct sc_packet_sink *sink, AVCodecContext *ctx,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f1ed25e6d1bd4eaa6f071e1fbe79cf583517ef6b46245190b9af6360c8407efc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/trait/frame_sink.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 12,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    bool (*open)(struct sc_frame_sink *sink, const AVCodecContext *ctx,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ccd6a676b0ce1f242f7a3d12c184f9c8e05ed04d0c004f0f5ab932b594b0ee7c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/main.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 5,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    printf(\"scrcpy \" SCRCPY_VERSION"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9d2a77746fc1dba04ea1ef04d3a6904f0975937ae93272d944c08c35bfc24321"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/main.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 9,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "        printf(\"Press Enter to continue...\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d2be2758796ab327e8d8bc0ed42a2f891d8f081d0933d3f0d94b4cadff069658"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/getchar:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/main.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 9,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "        getchar();"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "90fc9bf4d6142b7ae6cc2e44a236bcc874555b42532ed82eac09fa85581f952d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/device_msg.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 17,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "                memcpy(text, &buf[5], clipboard_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "70b9880a7aa1f8d7ac0ab3a6e71b257dba8a1472031325d065132bf0432b685c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/device_msg.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 17,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "                memcpy(data, &buf[5], size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "84617683acf00bf99e3c0998971c66a809e5ce93995207ecac9b01d6676cd051"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/server.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 11,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    const char *cmd[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "948912e52d4663152ebf67bd6b068d3b14d14e97cd74003e0887c7b6ada5de2c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/server.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 476,
+                  "startColumn": 15,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "        free((char *) cmd[i]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "144b5af726db706103f0f2a3ef453bc07a658966f51d4e5982c3292b1a903f3e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/server.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 999,
+                  "startColumn": 38,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "            const char *env_serial = getenv(\"ANDROID_SERIAL\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0288cbf6ebef73b76cd64117a248b06dc2397030ebad8041a362889caaf3e9d6"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    printf(\"\\nDependencies (compiled / linked):\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "960cb5f23a73af97d53e6f21b6234187610de9ad3eb03de9afd19c70a67f05f6"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 5,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    printf(\" - SDL: %u.%u.%u / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "970ff74c4fcf8d2f9d557c5464c4946a3002b49c1604fcaf5afcfcef5c060b9f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    printf(\" - libavcodec: %u.%u.%u / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2959d2e477353766c299d9dcb40f88df1109f6ebc6ac5517de2e605a63a29284"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    printf(\" - libavformat: %u.%u.%u / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd35addde6a61b350fe5539bd1b6be3aee7afabd903c91e034e2e03c0576bdbd"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 5,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    printf(\" - libavutil: %u.%u.%u / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "62ab5539ec047814f17f46d2d0b7afb49861bb9463ded9019f868bcc1203c50b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    printf(\" - libavdevice: %u.%u.%u / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "818266108a6fa411ecfa31c0e4d60a7345ba6514d13f73eb864bbee14f3a360e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/version.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 5,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    printf(\" - libusb: - / %u.%u.%u\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb41805d6d86de03a48caf685d9a4ace7bfdb487d311877e3dbcc1f514ec0a04"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/uhid/gamepad_uhid.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 5,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    memcpy(msg.uhid_input.data, hid_input->data, hid_input->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7693021fdef07a7b5ba1988051fa505c8fbb49dfc2475fdfdaa5531b725ee326"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/uhid/keyboard_uhid.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 5,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    memcpy(msg.uhid_input.data, hid_input->data, hid_input->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7693021fdef07a7b5ba1988051fa505c8fbb49dfc2475fdfdaa5531b725ee326"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/uhid/mouse_uhid.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 5,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    memcpy(msg.uhid_input.data, hid_input->data, hid_input->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7693021fdef07a7b5ba1988051fa505c8fbb49dfc2475fdfdaa5531b725ee326"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 27,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "            int devnull = open(\"/dev/null\", O_RDONLY | O_CREAT, 0666);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "874ddeaa770696dcc72b28c03a04102a0861bd4acfc01873be5c8827af4006d2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 27,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "            int devnull = open(\"/dev/null\", O_WRONLY | O_CREAT, 0666);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5e0ba83b0ced928eb969674c09b21e4c09a167e2ecec5ef69aa17a60b8a5d87c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 27,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "            int devnull = open(\"/dev/null\", O_WRONLY | O_CREAT, 0666);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5e0ba83b0ced928eb969674c09b21e4c09a167e2ecec5ef69aa17a60b8a5d87c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/execvp:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 13,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "            execvp(argv[0], (char *const *) argv);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fc6de664d8fa9fa4f34116ec40bf2469604ac9305bed49e2477ee3561db8f59c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 9,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    if (read(internal[0], &res, sizeof(res)) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5e8a456a55a829711e73a08e1c1af4302943c0f108af73b9fd98ca08be61d345"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 228,
+                  "startColumn": 12,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    return read(pipe, data, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "745d304d4a2871dc72ac57eeaaccb5fad1c1e8b6ca01219a941e329bce9d5d15"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 18,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    char *path = getenv(\"PATH\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "de27b2b6b438080dc999cc63b5c8fa9276f276fdf724489ebeea78c40eea7ac4"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    size_t file_len = strlen(file);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "35ff211ae552b13c88ae847019be7317648f3cac835fc367b88d6729b11a7d18"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 26,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        size_t dir_len = strlen(dir);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "262fb701168d392978bba2cb2feabdcbf41b93a4430d5c3dc42f6efc3950c12c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 9,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "        memcpy(fullpath, dir, dir_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ade246f8d96ee191f380711513fcf9d4f51d5d8f1a875a33d71c2fa9eb5e259f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 9,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "        memcpy(fullpath + dir_len + 1, file, file_len + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3fcd47bf5a5944504ce469af67fb47121a07d6c636a33f710015516ba7c41453"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    char buf[PATH_MAX + 1]; // +1 for the null byte"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f5139781e5fda04507d2a69284bbed70069cfb622cd86310f5d53542a70a85ff"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1035",
+          "level": "error",
+          "message": {
+            "text": "race/readlink:This accepts filename arguments; if an attacker can move those files or change the link content, a race condition results. Also, it does not terminate with ASCII NUL. (CWE-362, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 19,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    ssize_t len = readlink(\"/proc/self/exe\", buf, PATH_MAX);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c4cb9bf3bf67a996ce3938ff044905f808f10cba34257d421fff03971df8a9f7"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bccc52b0116e68b26a8fb862f2f766a6c4f06ed3e5c48f125f9f60e5c9a2feea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 12,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    return realpath(buf, NULL);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da1f32f8b0eb972d67935795b8cab0ff7378c44582ca67b173d5c93585ffbae5"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/sys/unix/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 18,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    char *path = getenv(\"_\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6554119dc64c276ae86cf8b32374c1dd4180907404249e598d4325bbddc6b0f6"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/v4l2_sink.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    memcpy(extradata, packet->data, packet->size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7c4d8785dc3cd765bc76300974303cb2ba4619357c4b8c4745d27b2e35f47dbe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1008",
+          "level": "note",
+          "message": {
+            "text": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/v4l2_sink.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 5,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    strncpy(vs->format_ctx->filename, vs->device_name,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "065fe815bf941b63ebd77fc38d8a62be5c411aa1b7859ae036cd8b94164b9c54"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/opengl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 13,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "    int r = sscanf(version, \"%d.%d\", &gl->version_major, &gl->version_minor);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "43325579622d1ee1fc053ccc644c430649a1ffd41c12043a5aab6858feeb9389"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/env.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "    const char *value = getenv(varname);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "09c648477aef986a16490ebb54b7e5cd726b1d0e90624e12843448674dab4014"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 24,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    size_t start_len = strlen(start);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18d2c7950d766eeb49c504f6b5e1346f76c4bb8ad6c734c1b971e3f379bc5f65"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 22,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    size_t end_len = strlen(end);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4ec48cc5a06ce3a9f356165132a28bbd8eebaff428b6cba01e880f6ec893796a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 5,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    memcpy(result, start, start_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e4f1045adcfc70681a872a60e80369193094f6a92f02185c810b46ff50bd73b1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 5,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    memcpy(result + start_len, end, end_len + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7c6d7c78ce69e134787f3abc0f26bb13bdcc402ab3c1b45ac750f95aad32447"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 54,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "        size_t token_len = p ? (size_t) (p - list) : strlen(list);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2a9f87e355676f27cb61007ecb1ccb22ce5c9dc0c119636ee54f33449443d4c0"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 18,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    size_t len = strlen(utf8);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8d3c9a572615eee66a77078fb5168796cac71f1cc33b20c18f39a6f682f418ae"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 15,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "    int len = MultiByteToWideChar(CP_UTF8, 0, utf8, -1, NULL, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb05f5d78afddbc4c7d982eb8e7709a15ea5fddb96f510c6074185e7592b4cd9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 5,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    MultiByteToWideChar(CP_UTF8, 0, utf8, -1, wide, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e5842b75fc84e10d9408a83295ee4b100e2c6a07aae85f706189c36de6e9dbf2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 236,
+                  "startColumn": 18,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    size_t cap = strlen(input) * 3 / 2;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0f01bdd2dd7255fe38def759fb4fb3e155af828ea4aa23bf802a29506b915285"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/str.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 353,
+                  "startColumn": 9,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "        snprintf(buffer + i * 3, 4, \"%02X \", data[i]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "01a50411e9fc53692071c50ab2b98081693fa6e2bd7e08092c6636e5e665e5b3"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/strbuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 12,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    assert(strlen(s) >= len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6d4f3333a9b48a7b106dada951fcc672bb9688ff45b3b2dd9edeede7d7c00a29"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/strbuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 5,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    memcpy(&buf->s[buf->len], s, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "32558177cf047ae9ab273159552d372361f49d333a0310aa9510025299bd3018"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/vecdeque.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 5,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "    memcpy(newptr, (char *) ptr + (oldorigin * item_size),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d8d29d26bc07b7c9f6dc03343fe8fe7178bf4a1a7001c4b15bcf195f206e5e82"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/vecdeque.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 9,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "        memcpy((char *) newptr + (right_len * item_size), ptr,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fc2c176d7c3d52371d12b145450021afc931cab468b3e8b0d2a2de08dd4c4eed"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 22,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    size_t fmt_len = strlen(fmt);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0d9421e0ad9d9cceaa13e78c37eea7ec36add5300b34c4ccae66a41ffe156818"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 5,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "    memcpy(local_fmt, \"[FFmpeg] \", 9); // do not write the final '\\0'"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af70d3446130031d2d0c328074049ef66a233cfa9784620955a1a7282ecd0c22"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 5,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    memcpy(local_fmt + 9, fmt, fmt_len + 1); // include '\\0'"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "68cc98de5f12140ac55288be3a93e6b69efa512f20e3e1d82fabcb60a060a8c5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 14,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "static const char *const sc_sdl_log_priority_names[SDL_LOG_PRIORITY_COUNT] = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c86c09c915af0ac476ded7703d95deb89ecf9be4eff3499ddcd3a5c822c0668"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 5,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    fprintf(out, \"%s: %s\\n\", prio_name, message);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "95fb386feb68281f36a13703e19c28ae69f69d226a06872ab4084e9c4276e065"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/audiobuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 9,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "        memcpy(to,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "04713650b6af71af9b4bf0e844b2e3c43be6c88520bca393012a6e0e1cda3afe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/audiobuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 13,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "            memcpy(to + (right_count * buf->sample_size),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40d0ccf99e4f2574b4bdaae5e00119704314b6941d97ab42566e32c4896097b9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/audiobuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 5,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    memcpy(buf->data + (head * buf->sample_size),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dc265ab029ced2c1f682d6c4898e82ecae9a04fd5e088464a322037cc88ccd2e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/audiobuf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 9,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "        memcpy(buf->data,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f5c9f910c09eab3307500555e502942d2dd0637a254ff7b0c42e4f286edba459"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 22,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    size_t dir_len = strlen(dir);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "262fb701168d392978bba2cb2feabdcbf41b93a4430d5c3dc42f6efc3950c12c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    size_t name_len = strlen(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ddef90b9999538f13fe46ae55a1647847ad42fbcbe3d51b241107b535b9de2bc"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 5,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    memcpy(path, dir, dir_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e824a1ed22ac65a0bb5aafcbf0f8a557c01e0c72ec1d33d9e869a413065880c0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    memcpy(&path[dir_len + 1], name, name_len + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e3387ad84595118a051791671f7f8dfe7058a4295efccc44e313bf9aa56abbfa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/strbuf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 37,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "    return sc_strbuf_append(buf, s, strlen(s));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "283190dee962a507a230b606645fef536c1e2767f281735fd8812c62c6dcb334"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/thread.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 12,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    assert(strlen(name) <= 15);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7c4e03f9e2dcd08a202d12f623655e9af0378a22fddce529038209e74b97113a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/net.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 12,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    return recv(raw_sock, buf, len, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "127d29abf4cd9d5855ac24bd34c012cd40271b8751e16ac6843814917b3d91c3"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/net.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 12,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    return recv(raw_sock, buf, len, MSG_WAITALL);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cca6fcfab4d45344cd4029595251d42745808cd96a91183f43c91f80a5dbef06"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/jrand48:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/rand.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    return jrand48(rand->xsubi);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7901c0e31a28c8f8cb4b013940afa56fa9a7d98a398cb092bbc29f4afcffa6a"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/vector.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 255,
+                  "startColumn": 9,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "        memcpy(&(pv)->data[(pv)->size], items, (count) * sizeof(*(pv)->data)); \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c11dd747abdf811347672a61377f96fd67b9fe33bb3e9393cb13ed173f625a10"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/util/vector.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 333,
+                  "startColumn": 9,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        memcpy(&(pv)->data[index], items, count * sizeof(*(pv)->data)); \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ace3d14b309d47c31343f2f43d4d899c9e826290159667e645be58829b4708e4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1044",
+          "level": "error",
+          "message": {
+            "text": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/clock.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 13,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    sc_tick system;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "135854b992b7476d3ca792c5581b7cd34f1cfe81c83fc6ed594cc74c99ba6254"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1044",
+          "level": "error",
+          "message": {
+            "text": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/clock.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 49,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "sc_clock_update(struct sc_clock *clock, sc_tick system, sc_tick stream);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "99b8428680e21360457ab8b1c97c0f2b044abb6ab3cf1e6ee7cab35c1ccc489f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/control_msg.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 5,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    memcpy(payload, utf8, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2e0427f393a1ad34c15bd75e9fcd9231c851cf950e96c9e524fd8366cfe6cffa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/control_msg.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 13,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "            memcpy(&buf[index], msg->uhid_create.report_desc,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eadae06b59b76bb271b24a637630bdba733f63908df547143112863e15ddcb9c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/app/src/control_msg.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 13,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            memcpy(&buf[5], msg->uhid_input.data, msg->uhid_input.size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "707af4f22c1f2310a0aba3352f83420b1346ec479b139384284fdeb36f10f45c"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

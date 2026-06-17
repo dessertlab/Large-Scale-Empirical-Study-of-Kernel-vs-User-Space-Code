@@ -1,0 +1,2082 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/@react-native-windows/automation-channel/windows/AutomationChannel/Server.cpp",
+      "line": 37,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/@react-native-windows/automation-channel/windows/AutomationChannel/Server.cpp",
+      "line": 78,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 24,
+      "message": "The one definition rule is violated, different classes/structs have the same name 'CompReactPackageProvider'",
+      "rule": "ctuOneDefinitionRuleViolation",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 120,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 130,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 191,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 205,
+      "message": "Null pointer dereference: reinterpret_cast<volatile int*>(nullptr)",
+      "rule": "nullPointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/RNTesterApp-Fabric.cpp",
+      "line": 277,
+      "message": "Unused variable value 'asyncStatus'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 29,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 54,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 73,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 104,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 216,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/e2e-test-app-fabric/windows/RNTesterApp-Fabric/Screenshots.cpp",
+      "line": 227,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/playground/windows/playground-composition/CustomComponent.cpp",
+      "line": 58,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/playground/windows/playground-composition/Playground-Composition.cpp",
+      "line": 260,
+      "message": "Unused variable value 'asyncStatus'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/packages/playground/windows/playground-composition/Playground-Composition.cpp",
+      "line": 460,
+      "message": "Unused variable value 'asyncStatus'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 96,
+      "message": "format/vfprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 102,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 355,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 3604,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 3616,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/packages/react-native-platform-override/src/e2etest/collateral/sampleOverrideRepo/ReactCommon/yoga/yoga/Yoga.cpp",
+      "line": 3617,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/sample-custom-component/windows/SampleCustomComponent/codegen/react/components/SampleCustomComponent/CalendarView.g.h",
+      "line": 172,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/sample-custom-component/windows/SampleCustomComponent/codegen/react/components/SampleCustomComponent/ComboBox.g.h",
+      "line": 176,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/sample-custom-component/windows/SampleCustomComponent/codegen/react/components/SampleCustomComponent/CustomAccessibility.g.h",
+      "line": 148,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/sample-custom-component/windows/SampleCustomComponent/codegen/react/components/SampleCustomComponent/DrawingIsland.g.h",
+      "line": 148,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/packages/sample-custom-component/windows/SampleCustomComponent/codegen/react/components/SampleCustomComponent/MovingLight.g.h",
+      "line": 401,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Common/unicode.cpp",
+      "line": 41,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Common/unicode.cpp",
+      "line": 69,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Common/unicode.cpp",
+      "line": 89,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Common/unicode.cpp",
+      "line": 178,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/HttpOriginPolicyIntegrationTest.cpp",
+      "line": 238,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_ATTRIBUTE is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/HttpResourceIntegrationTests.cpp",
+      "line": 44,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-480",
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/HttpServer.cpp",
+      "line": 172,
+      "message": "Rethrowing current exception with 'throw;', it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object",
+      "rule": "rethrowNoCurrentException",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-480",
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/HttpServer.cpp",
+      "line": 255,
+      "message": "Rethrowing current exception with 'throw;', it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object",
+      "rule": "rethrowNoCurrentException",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/Modules/TestAppState.h",
+      "line": 15,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/Modules/TestDeviceInfo.h",
+      "line": 15,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/Modules/TestModule.h",
+      "line": 32,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/WebSocketIntegrationTest.cpp",
+      "line": 176,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_ATTRIBUTE is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Desktop.IntegrationTests/WebSocketIntegrationTest.cpp",
+      "line": 231,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/LayoutAnimationTests.cpp",
+      "line": 144,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+      "line": 24,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+      "line": 29,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+      "line": 76,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+      "line": 89,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/MemoryMappedBufferTests.cpp",
+      "line": 100,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/OriginPolicyHttpFilterTest.cpp",
+      "line": 34,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/RedirectHttpFilterUnitTest.cpp",
+      "line": 41,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/ScriptStoreTests.cpp",
+      "line": 33,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Desktop.UnitTests/ScriptStoreTests.cpp",
+      "line": 36,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 18,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 19,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 20,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 21,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 26,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 30,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 56,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 60,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 84,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Desktop.UnitTests/UnicodeConversionTest.cpp",
+      "line": 90,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/UtilsTest.cpp",
+      "line": 70,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-319",
+      "filename": "/workspace/vnext/Desktop.UnitTests/WinRTWebSocketResourceUnitTest.cpp",
+      "line": 43,
+      "message": "Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.",
+      "rule": "javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop.UnitTests/WinRTWebSocketResourceUnitTest.cpp",
+      "line": 77,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_ATTRIBUTE is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Desktop/module.g.cpp",
+      "line": 138,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/JSValueReaderTest.cpp",
+      "line": 51,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/JSValueTest.cpp",
+      "line": 61,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/NoAttributeNativeModuleTest.cpp",
+      "line": 649,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/Point.h",
+      "line": 8,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/ReactContextTest.cpp",
+      "line": 128,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx.UnitTests/ReactPromiseTest.cpp",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx/JSI/JsiApiContext.cpp",
+      "line": 49,
+      "message": "Returning pointer to local variable 'runtimeHolder' that will be invalid when returning.",
+      "rule": "returnDanglingLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Microsoft.ReactNative.Cxx/StructInfo.h",
+      "line": 100,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ExecuteJsiTests.cpp",
+      "line": 21,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/JsiSimpleTurboModuleTests.cpp",
+      "line": 45,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/JsiTurboModuleTests.cpp",
+      "line": 206,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ReactInstanceSettingsTests.cpp",
+      "line": 28,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ReactNativeHostTests.cpp",
+      "line": 20,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ReactNonAbiValueTests.cpp",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ReactNotificationServiceTests.cpp",
+      "line": 30,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/ReactPropertyBagTests.cpp",
+      "line": 28,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/TestReactNativeHostHolder.cpp",
+      "line": 20,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/TestReactNativeHostHolder.cpp",
+      "line": 61,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative.IntegrationTests/TurboModuleTests.cpp",
+      "line": 26,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isBarrelButtonPressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isCanceled' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isEraser' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isHorizontalMouseWheel' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isInRange' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isInverted' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isLeftButtonPressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isMiddleButtonPressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isPrimary' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isRightButtonPressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isXButton1Pressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_isXButton2Pressed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_touchConfidence' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_mouseWheelDelta' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_orientation' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_pressure' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_twist' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_xTilt' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 162,
+      "message": "Member variable 'PointerPointProperties::m_yTilt' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 352,
+      "message": "Member variable 'PointerPoint::m_msg' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 352,
+      "message": "Member variable 'PointerPoint::m_wParam' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 352,
+      "message": "Member variable 'PointerPoint::m_lParam' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 355,
+      "message": "Member variable 'PointerPoint::m_msg' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 355,
+      "message": "Member variable 'PointerPoint::m_wParam' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/Composition.Input.cpp",
+      "line": 355,
+      "message": "Member variable 'PointerPoint::m_lParam' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/CompositionDynamicAutomationProvider.cpp",
+      "line": 706,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/CompositionDynamicAutomationProvider.cpp",
+      "line": 715,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/CompositionViewComponentView.cpp",
+      "line": 254,
+      "message": "Either the condition 'm_focusPrimitive' is redundant or there is possible null pointer dereference: m_focusPrimitive.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/DebuggingOverlayComponentView.cpp",
+      "line": 49,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/ReactNativeIsland.cpp",
+      "line": 798,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+      "line": 86,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+      "line": 541,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TextInput/WindowsTextInputComponentView.cpp",
+      "line": 1043,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TooltipService.cpp",
+      "line": 34,
+      "message": "Member variable 'TooltipData::width' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Fabric/Composition/TooltipService.cpp",
+      "line": 34,
+      "message": "Member variable 'TooltipData::height' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/IReactDispatcher.cpp",
+      "line": 56,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/JsiApi.cpp",
+      "line": 287,
+      "message": "Returning object that points to local variable 'ref' that will be invalid when returning.",
+      "rule": "returnDanglingLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AccessibilityInfoModule.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AlertModule.h",
+      "line": 20,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/AdditionAnimatedNode.cpp",
+      "line": 18,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/DiffClampAnimatedNode.cpp",
+      "line": 16,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/DivisionAnimatedNode.cpp",
+      "line": 17,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/InterpolationAnimatedNode.cpp",
+      "line": 54,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/InterpolationAnimatedNode.h",
+      "line": 56,
+      "message": "The class 'InterpolationAnimatedNode' defines member variable with name 's_inputName' also defined in its parent class 'ValueAnimatedNode'.",
+      "rule": "duplInheritedMember",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/ModulusAnimatedNode.cpp",
+      "line": 16,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/MultiplicationAnimatedNode.cpp",
+      "line": 17,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/NativeAnimatedModule.h",
+      "line": 64,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/SpringAnimationDriver.h",
+      "line": 40,
+      "message": "The class 'SpringAnimationDriver' defines member variable with name 'm_iterations' also defined in its parent class 'AnimationDriver'.",
+      "rule": "duplInheritedMember",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/StyleAnimatedNode.cpp",
+      "line": 17,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/SubtractionAnimatedNode.cpp",
+      "line": 17,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Animated/TransformAnimatedNode.cpp",
+      "line": 20,
+      "message": "Assert statement calls a function which may have desired side effects: 'HasCompatibleAnimationDriver'.",
+      "rule": "assertWithSideEffect",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AppStateModule.h",
+      "line": 19,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AppThemeModuleUwp.cpp",
+      "line": 93,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AppThemeModuleUwp.h",
+      "line": 43,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_GET_CONSTANTS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/AppearanceModule.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_FIELD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/ClipboardModule.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/DevSettingsModule.h",
+      "line": 17,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/DeviceInfoModule.h",
+      "line": 54,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/ExceptionsManager.h",
+      "line": 18,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/I18nManagerModule.h",
+      "line": 23,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/ImageViewManagerModule.h",
+      "line": 18,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/LinkingManagerModule.h",
+      "line": 21,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/LogBoxModule.h",
+      "line": 19,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/PlatformConstantsWinModule.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_GET_CONSTANTS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/SampleTurboModule.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/SourceCode.h",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Modules/Timing.h",
+      "line": 85,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/CrashManager.cpp",
+      "line": 50,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/CrashManager.cpp",
+      "line": 116,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/JSCallInvokerScheduler.cpp",
+      "line": 28,
+      "message": "Virtual function 'AwaitTermination' is called from destructor '~JSCallInvokerScheduler()' at line 59. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/MsoUtils.cpp",
+      "line": 11,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If MSO_CLASS_GUID is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/ReactErrorProvider.h",
+      "line": 24,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If MSO_CLASS_GUID is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/ReactHost.cpp",
+      "line": 307,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactHost/ReactInstanceWin.cpp",
+      "line": 416,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/ReactInstanceSettings.h",
+      "line": 29,
+      "message": "Member variable 'InstanceLoadedEventArgs::m_failed' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Utils/LocalBundleReader.cpp",
+      "line": 64,
+      "message": "Out of bounds access of result, index 'result.length()' is out of bounds.",
+      "rule": "containerOutOfBoundsIndexExpression",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Microsoft.ReactNative/Utils/ValueUtils.cpp",
+      "line": 54,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACTWINDOWS_API_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/activeObject/activeObjectTest.cpp",
+      "line": 272,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/dispatchQueue/dispatchQueueTest.cpp",
+      "line": 29,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/errorCode/errorProviderTest.cpp",
+      "line": 12,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If MSO_CLASS_GUID is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/vnext/Mso.UnitTests/errorCode/maybeTest.cpp",
+      "line": 421,
+      "message": "Access of moved variable 'error'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/vnext/Mso.UnitTests/errorCode/maybeTest.cpp",
+      "line": 444,
+      "message": "Access of moved variable 'error'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/vnext/Mso.UnitTests/errorCode/maybeTest.cpp",
+      "line": 607,
+      "message": "Access of moved variable 'err'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/eventWaitHandle/eventWaitHandleTest.cpp",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/functional/functorTest.cpp",
+      "line": 1081,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TestClassComponent is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/arrayViewTest.cpp",
+      "line": 19,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/cancellationTokenTest.cpp",
+      "line": 23,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/executorTest.cpp",
+      "line": 26,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/futureFuncTest.cpp",
+      "line": 22,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/futureTest.cpp",
+      "line": 23,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/futureTestEx.cpp",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/futureWeakPtrTest.cpp",
+      "line": 25,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/maybeInvokerTest.cpp",
+      "line": 19,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/promiseGroupTest.cpp",
+      "line": 20,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/promiseTest.cpp",
+      "line": 20,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/whenAllTest.cpp",
+      "line": 29,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/future/whenAnyTest.cpp",
+      "line": 45,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/guid/guidTest.cpp",
+      "line": 87,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If MSO_DEFINE_GUID_TOKEN is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Mso.UnitTests/guid/guidTest.cpp",
+      "line": 90,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/object/TCntPtrTest.cpp",
+      "line": 19,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TestClassComponent is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/objectRefCountTest.cpp",
+      "line": 42,
+      "message": "Member variable 'ObjectRefCountSample2Init::m_value' is not initialized in the constructor.",
+      "rule": "uninitMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/objectRefCountTest.cpp",
+      "line": 42,
+      "message": "Member variable 'ObjectRefCountSample2Init::m_deleted' is not initialized in the constructor.",
+      "rule": "uninitMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/objectRefCountTest.cpp",
+      "line": 143,
+      "message": "Member variable 'ObjectRefCountSample21Init::m_value' is not initialized in the constructor.",
+      "rule": "uninitMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/objectRefCountTest.cpp",
+      "line": 143,
+      "message": "Member variable 'ObjectRefCountSample21Init::m_deleted' is not initialized in the constructor.",
+      "rule": "uninitMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/object/objectWithWeakRefTest.cpp",
+      "line": 212,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso.UnitTests/object/queryCastTest.cpp",
+      "line": 374,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TestClassComponent is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/refCountedObjectTest.cpp",
+      "line": 463,
+      "message": "Member variable 'SomeVirtualClass::x' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/refCountedObjectTest.cpp",
+      "line": 463,
+      "message": "Member variable 'SomeVirtualClass::y' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/refCountedObjectTest.cpp",
+      "line": 479,
+      "message": "Member variable 'SomeVirtualClass::x' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/refCountedObjectTest.cpp",
+      "line": 479,
+      "message": "Member variable 'SomeVirtualClass::y' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/unknownObjectTest.cpp",
+      "line": 800,
+      "message": "Member variable 'SomeVirtualClass::x' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso.UnitTests/object/unknownObjectTest.cpp",
+      "line": 800,
+      "message": "Member variable 'SomeVirtualClass::y' is not initialized in the constructor. Maybe it should be initialized directly in the class SomeVirtualClass?",
+      "rule": "uninitDerivedMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Mso/guid/msoGuidDetails.h",
+      "line": 142,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Mso/guid/msoGuidDetails.h",
+      "line": 145,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 37,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 39,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 436,
+      "message": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 437,
+      "message": "format/vfwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 438,
+      "message": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 444,
+      "message": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 445,
+      "message": "format/vfwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/motifCpp/motifCppTest.h",
+      "line": 447,
+      "message": "format/fwprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/vnext/Mso/src/crash/crash_min.cpp",
+      "line": 11,
+      "message": "Null pointer dereference: (int*)0",
+      "rule": "nullPointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/vnext/Mso/src/crash/crash_min.cpp",
+      "line": 24,
+      "message": "Null pointer dereference: (int*)0",
+      "rule": "nullPointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Mso/src/debugAssertApi/debugAssertApi.cpp",
+      "line": 86,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Mso/src/debugAssertApi/debugAssertApi.cpp",
+      "line": 87,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/looperScheduler.cpp",
+      "line": 22,
+      "message": "Virtual function 'AwaitTermination' is called from destructor '~LooperScheduler()' at line 40. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/queueService.cpp",
+      "line": 95,
+      "message": "Access of moved variable 'taskBatch'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/queueService.h",
+      "line": 48,
+      "message": "Virtual function 'AwaitTermination' is called from destructor '~QueueService()' at line 20. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/threadPoolScheduler_win.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 100ms",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/uiScheduler_winrt.cpp",
+      "line": 137,
+      "message": "Virtual function 'AwaitTermination' is called from destructor '~UISchedulerWinRT < DispatcherTraits < MicrosoftTypeTag > >()' at line 230. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/uiScheduler_winrt.cpp",
+      "line": 137,
+      "message": "Virtual function 'AwaitTermination' is called from destructor '~UISchedulerWinRT < WindowsDispatcherTraits >()' at line 230. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Mso/src/dispatchQueue/uiScheduler_winrt.cpp",
+      "line": 357,
+      "message": "Identical condition and return expression 'queue', return value is always 0",
+      "rule": "identicalConditionAfterEarlyExit",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/eventWaitHandle/eventWaitHandleImpl_win.cpp",
+      "line": 17,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Requires_lock_not_held_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Mso/src/future/futureImpl.h",
+      "line": 228,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Success_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/cxxreact/JSExecutor.cpp",
+      "line": 33,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/jsinspector-modern/NetworkIOAgent.cpp",
+      "line": 92,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/ReactCommon/TEMP_UntilReactCommonUpdate/react/runtime/ReactInstance.cpp",
+      "line": 58,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Shared/BaseScriptStoreImpl.cpp",
+      "line": 92,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Shared/BaseScriptStoreImpl.cpp",
+      "line": 100,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-319",
+      "filename": "/workspace/vnext/Shared/DevServerHelper.h",
+      "line": 117,
+      "message": "Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.",
+      "rule": "javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-319",
+      "filename": "/workspace/vnext/Shared/DevServerHelper.h",
+      "line": 118,
+      "message": "Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.",
+      "rule": "javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-319",
+      "filename": "/workspace/vnext/Shared/DevServerHelper.h",
+      "line": 121,
+      "message": "Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.",
+      "rule": "javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Shared/DevSupportManager.cpp",
+      "line": 175,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/DevSupportManager.cpp",
+      "line": 305,
+      "message": "Out of bounds access of result, index 'result.length()' is out of bounds.",
+      "rule": "containerOutOfBoundsIndexExpression",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/DevSupportManager.h",
+      "line": 39,
+      "message": "Member variable 'DevSupportManager::m_cancellation_token' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Shared/Modules/BlobModule.h",
+      "line": 23,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Shared/Modules/FileReaderModule.h",
+      "line": 24,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Shared/Modules/HttpModule.h",
+      "line": 19,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If REACT_INIT is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-319",
+      "filename": "/workspace/vnext/Shared/Networking/IWebSocketResource.h",
+      "line": 92,
+      "message": "Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.",
+      "rule": "javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/vnext/Shared/Networking/OriginPolicyHttpFilter.cpp",
+      "line": 352,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTHttpResource.cpp",
+      "line": 224,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTHttpResource.cpp",
+      "line": 416,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.cpp",
+      "line": 177,
+      "message": "Access of moved variable 'errorMessage'.",
+      "rule": "accessMoved",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.cpp",
+      "line": 434,
+      "message": "Member variable 'WinRTWebSocketResource::m_connectRequested' is not initialized in the constructor.",
+      "rule": "uninitMemberVarPrivate",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.cpp",
+      "line": 439,
+      "message": "Member variable 'WinRTWebSocketResource::m_connectRequested' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.cpp",
+      "line": 449,
+      "message": "Member variable 'WinRTWebSocketResource::m_connectRequested' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.cpp",
+      "line": 564,
+      "message": "Uninitialized variable: isBinaryLocal",
+      "rule": "legacyUninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/Shared/Networking/WinRTWebSocketResource.h",
+      "line": 298,
+      "message": "Virtual function 'Close' is called from destructor '~WinRTWebSocketResource()' at line 454. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-771",
+      "filename": "/workspace/vnext/Shared/OInstance.cpp",
+      "line": 318,
+      "message": "Return value of allocation function 'new' is not stored.",
+      "rule": "leakReturnValNotUsed",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/Shared/OInstance.cpp",
+      "line": 322,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/Shared/SafeLoadLibrary.cpp",
+      "line": 66,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Shared/Utils.cpp",
+      "line": 25,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/vnext/Shared/Utils.cpp",
+      "line": 34,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/vnext/include/Shared/cdebug.h",
+      "line": 43,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/vnext/stubs/double-conversion/double-conversion.h",
+      "line": 30,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/template/cpp-lib/src/ReactPackageProvider.h",
+      "line": 6,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/templates/cpp-lib/windows/MyLib/MyLib.cpp",
+      "line": 5,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/vnext/templates/cpp-lib/windows/MyLib/ReactPackageProvider.h",
+      "line": 7,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 254,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 178,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 71,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 5,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/react-native-windows/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

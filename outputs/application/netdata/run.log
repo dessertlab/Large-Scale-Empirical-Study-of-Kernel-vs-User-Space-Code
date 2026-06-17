@@ -1,0 +1,18 @@
+[application/netdata] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/netdata
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/netdata
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 7247 findings, exit 0, 6.80s
+[2/4] semgrep completed: 75 findings, exit 0, 22.41s
+[3/4] codeql completed: 216 findings, exit 0, 163.33s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[4/4] cppcheck completed: 164 findings, exit 0, 554.12s
+
+Summary: 4 completed, 0 failed, 7702 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/netdata/report.json

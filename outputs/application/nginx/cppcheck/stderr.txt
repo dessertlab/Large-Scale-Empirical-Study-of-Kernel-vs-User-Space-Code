@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/core/ngx_conf_file.c">
+            <location file="/workspace/src/core/ngx_conf_file.c" line="191" column="9"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: key" verbose="Uninitialized variable: key" cwe="457" file0="/workspace/src/event/modules/ngx_iocp_module.c">
+            <location file="/workspace/src/event/modules/ngx_iocp_module.c" line="251" column="64"/>
+            <symbol>key</symbol>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="277" column="20"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="200" column="28" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="274" column="30" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="274" column="30" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="277" column="20"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="190" column="28" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="274" column="40" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="274" column="40" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="28"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="315" column="28" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="29" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="29" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="28"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="308" column="58" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="39" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="331" column="39" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="389" column="24"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="315" column="28" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="380" column="34" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="380" column="34" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="389" column="24"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="308" column="58" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="380" column="44" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="380" column="44" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;id&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="403" column="16"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="315" column="28" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="400" column="26" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="400" column="26" info="Address of variable taken here."/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;data&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/event/ngx_event_openssl_cache.c">
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="403" column="16"/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="308" column="58" info="Variable created here."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="400" column="36" info="Passed to initializer list."/>
+            <location file="/workspace/src/event/ngx_event_openssl_cache.c" line="400" column="36" info="Address of variable taken here."/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: ll" verbose="Possible null pointer dereference: ll" cwe="476" file0="/workspace/src/event/ngx_event_pipe.c">
+            <location file="/workspace/src/event/ngx_event_pipe.c" line="674" column="18" info="Null pointer dereference"/>
+            <location file="/workspace/src/event/ngx_event_pipe.c" line="631" column="14" info="Assignment &apos;ll=NULL&apos;, assigned value is 0"/>
+            <symbol>ll</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;in&apos; is redundant or there is possible null pointer dereference: in." verbose="Either the condition &apos;in&apos; is redundant or there is possible null pointer dereference: in." cwe="476" file0="/workspace/src/event/quic/ngx_event_quic_frames.c">
+            <location file="/workspace/src/event/quic/ngx_event_quic_frames.c" line="619" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/src/event/quic/ngx_event_quic_frames.c" line="599" column="16" info="Assuming that condition &apos;in&apos; is not redundant"/>
+            <symbol>in</symbol>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/http/modules/ngx_http_charset_filter_module.c">
+            <location file="/workspace/src/http/modules/ngx_http_charset_filter_module.c" line="1277" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/http/modules/ngx_http_geo_module.c">
+            <location file="/workspace/src/http/modules/ngx_http_geo_module.c" line="471" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/http/modules/ngx_http_map_module.c">
+            <location file="/workspace/src/http/modules/ngx_http_map_module.c" line="273" column="5"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: len" verbose="Uninitialized variable: len" cwe="457" file0="/workspace/src/http/ngx_http_variables.c">
+            <location file="/workspace/src/http/ngx_http_variables.c" line="990" column="9"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: size" verbose="Uninitialized variable: size" cwe="457" file0="/workspace/src/http/v2/ngx_http_v2_filter_module.c">
+            <location file="/workspace/src/http/v2/ngx_http_v2_filter_module.c" line="1096" column="13"/>
+            <location file="/workspace/src/http/v2/ngx_http_v2_filter_module.c" line="1084" column="12" info="Assuming condition is false"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: fd" verbose="Uninitialized variable: fd" cwe="457" file0="/workspace/src/os/unix/ngx_channel.c">
+            <location file="/workspace/src/os/unix/ngx_channel.c" line="124" column="36"/>
+            <symbol>fd</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: iov" verbose="Possible null pointer dereference: iov" cwe="476" file0="/workspace/src/os/unix/ngx_readv_chain.c">
+            <location file="/workspace/src/os/unix/ngx_readv_chain.c" line="122" column="55" info="Null pointer dereference"/>
+            <location file="/workspace/src/os/unix/ngx_readv_chain.c" line="86" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/src/os/unix/ngx_readv_chain.c" line="75" column="11" info="Assignment &apos;iov=NULL&apos;, assigned value is 0"/>
+            <symbol>iov</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;dir-&gt;name&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;dir-&gt;name&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/src/os/win32/ngx_files.c">
+            <location file="/workspace/src/os/win32/ngx_files.c" line="1307" column="17" info="Null pointer addition"/>
+            <location file="/workspace/src/os/win32/ngx_files.c" line="677" column="30" info="Calling function &apos;ngx_utf16_to_utf8&apos;, 1st argument &apos;name&apos; value is 0"/>
+            <location file="/workspace/src/os/win32/ngx_files.c" line="674" column="10" info="name is assigned &apos;dir-&gt;name&apos; here."/>
+            <location file="/workspace/src/os/win32/ngx_files.c" line="685" column="16" info="Assuming that condition &apos;dir-&gt;name&apos; is not redundant"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/stream/ngx_stream_geo_module.c">
+            <location file="/workspace/src/stream/ngx_stream_geo_module.c" line="441" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/stream/ngx_stream_map_module.c">
+            <location file="/workspace/src/stream/ngx_stream_map_module.c" line="272" column="5"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

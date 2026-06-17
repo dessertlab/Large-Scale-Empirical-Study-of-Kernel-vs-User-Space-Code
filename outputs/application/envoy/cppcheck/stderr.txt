@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/api/bazel/cc_proto_descriptor_library/testdata/global_fallback_test.cc">
+            <location file="/workspace/api/bazel/cc_proto_descriptor_library/testdata/global_fallback_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/api/bazel/cc_proto_descriptor_library/testdata/text_format_transcoder_test.cc">
+            <location file="/workspace/api/bazel/cc_proto_descriptor_library/testdata/text_format_transcoder_test.cc" line="65" column="1"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/compat/openssl/source/SSL_CTX_set_custom_verify.cc">
+            <location file="/workspace/compat/openssl/source/SSL_CTX_set_custom_verify.cc" line="86" column="26"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc">
+            <location file="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc" line="110" column="19"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found unused cast of expression &apos;arg&apos;." verbose="Redundant code: Found unused cast of expression &apos;arg&apos;." cwe="398" file0="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc">
+            <location file="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc" line="49" column="77"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: callback" verbose="Uninitialized variable: callback" cwe="457" file0="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc">
+            <location file="/workspace/compat/openssl/source/SSL_CTX_set_select_certificate_cb.cc" line="107" column="14"/>
+            <symbol>callback</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/contrib/exe/contrib_version_test.cc">
+            <location file="/workspace/contrib/exe/contrib_version_test.cc" line="12" column="1"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/contrib/golang/filters/http/source/golang_filter.cc">
+            <location file="/workspace/contrib/golang/filters/http/source/golang_filter.cc" line="684" column="7"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/contrib/golang/upstreams/http/tcp/source/upstream_request.cc">
+            <location file="/workspace/contrib/golang/upstreams/http/tcp/source/upstream_request.cc" line="409" column="7"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;IstioStatsFilter::network_read_callbacks_&apos; is not initialized in the constructor." verbose="Member variable &apos;IstioStatsFilter::network_read_callbacks_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/contrib/istio/filters/http/istio_stats/source/istio_stats.cc">
+            <location file="/workspace/contrib/istio/filters/http/istio_stats/source/istio_stats.cc" line="776" column="3"/>
+            <symbol>IstioStatsFilter::network_read_callbacks_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/contrib/postgres_inspector/filters/listener/source/config.cc">
+            <location file="/workspace/contrib/postgres_inspector/filters/listener/source/config.cc" line="49" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/mobile/library/common/network/apple_system_proxy_settings_monitor.cc">
+            <location file="/workspace/mobile/library/common/network/apple_system_proxy_settings_monitor.cc" line="31" column="25"/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning object that points to local variable &apos;buffer&apos; that will be invalid when returning." verbose="Returning object that points to local variable &apos;buffer&apos; that will be invalid when returning." cwe="562" file0="/workspace/source/common/api/win32/os_sys_calls_impl.cc">
+            <location file="/workspace/source/common/api/win32/os_sys_calls_impl.cc" line="92" column="22"/>
+            <location file="/workspace/source/common/api/win32/os_sys_calls_impl.cc" line="82" column="8" info="Variable created here."/>
+            <location file="/workspace/source/common/api/win32/os_sys_calls_impl.cc" line="92" column="32" info="Passed to constructor of &apos;wsamsgResult&apos;."/>
+            <location file="/workspace/source/common/api/win32/os_sys_calls_impl.cc" line="92" column="33" info="Passed to &apos;move&apos;."/>
+            <location file="/workspace/source/common/api/win32/os_sys_calls_impl.cc" line="83" column="35" info="Pointer to container is created here."/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: buffer" verbose="Null pointer dereference: buffer" cwe="476" file0="/workspace/source/common/common/utility.cc">
+            <location file="/workspace/source/common/common/utility.cc" line="64" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/source/common/common/utility.cc" line="61" column="16" info="Assuming condition is false"/>
+            <location file="/workspace/source/common/common/utility.cc" line="57" column="18" info="Assignment &apos;buffer=NULL&apos;, assigned value is 0"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RangeTimerImpl::scope_&apos; is not initialized in the constructor." verbose="Member variable &apos;RangeTimerImpl::scope_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/source/common/event/scaled_range_timer_manager_impl.cc">
+            <location file="/workspace/source/common/event/scaled_range_timer_manager_impl.cc" line="35" column="3"/>
+            <symbol>RangeTimerImpl::scope_</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;disableTimer&apos; is called from destructor &apos;~RangeTimerImpl()&apos; at line 39. Dynamic binding is not used." verbose="Virtual function &apos;disableTimer&apos; is called from destructor &apos;~RangeTimerImpl()&apos; at line 39. Dynamic binding is not used." file0="/workspace/source/common/event/scaled_range_timer_manager_impl.cc">
+            <location file="/workspace/source/common/event/scaled_range_timer_manager_impl.cc" line="41" column="8" info="disableTimer is a virtual function"/>
+            <location file="/workspace/source/common/event/scaled_range_timer_manager_impl.cc" line="39" column="32" info="Calling disableTimer"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/source/common/http/conn_manager_impl.cc">
+            <location file="/workspace/source/common/http/conn_manager_impl.cc" line="1563" column="5"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/source/common/http/conn_manager_impl.cc">
+            <location file="/workspace/source/common/http/conn_manager_impl.cc" line="2030" column="5"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If INLINE_REQ_HEADERS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If INLINE_REQ_HEADERS is a macro then please configure it." file0="/workspace/source/common/http/header_map_impl.cc">
+            <location file="/workspace/source/common/http/header_map_impl.cc" line="118" column="3"/>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;Field::value_&apos; is not initialized in the constructor." verbose="Member variable &apos;Field::value_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/source/common/json/json_internal.cc">
+            <location file="/workspace/source/common/json/json_internal.cc" line="130" column="12"/>
+            <symbol>Field::value_</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/source/common/protobuf/utility.cc">
+            <location file="/workspace/source/common/protobuf/utility.cc" line="138" column="24"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;connection_data&apos;." verbose="Access of moved variable &apos;connection_data&apos;." cwe="672" file0="/workspace/source/common/tcp/conn_pool.cc">
+            <location file="/workspace/source/common/tcp/conn_pool.cc" line="193" column="8" info="Access of moved variable &apos;connection_data&apos;."/>
+            <location file="/workspace/source/common/tcp/conn_pool.cc" line="190" column="26" info="Calling std::move(connection_data)"/>
+            <symbol>connection_data</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/source/exe/process_wide.cc">
+            <location file="/workspace/source/exe/process_wide.cc" line="14" column="43"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/access_loggers/fluentd/config.cc">
+            <location file="/workspace/source/extensions/access_loggers/fluentd/config.cc" line="91" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/access_loggers/open_telemetry/config.cc">
+            <location file="/workspace/source/extensions/access_loggers/open_telemetry/config.cc" line="102" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If activeDynamicModuleLoadBalancers is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If activeDynamicModuleLoadBalancers is a macro then please configure it." file0="/workspace/source/extensions/clusters/dynamic_modules/cluster.cc">
+            <location file="/workspace/source/extensions/clusters/dynamic_modules/cluster.cc" line="615" column="56"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;lhs&apos; and &apos;rhs&apos; are used together." verbose="Iterators to containers from different expressions &apos;lhs&apos; and &apos;rhs&apos; are used together." cwe="664" file0="/workspace/source/extensions/clusters/redis/redis_cluster_lb.cc">
+            <location file="/workspace/source/extensions/clusters/redis/redis_cluster_lb.cc" line="28" column="78"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If AsyncFileManagerThreadPool is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If AsyncFileManagerThreadPool is a macro then please configure it." file0="/workspace/source/extensions/common/async_files/async_file_manager_thread_pool.cc">
+            <location file="/workspace/source/extensions/common/async_files/async_file_manager_thread_pool.cc" line="37" column="30"/>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;arn_split.size()&lt;3&apos; is redundant or arn_split size can be 3. Expression &apos;arn_split[3]&apos; cause access out of bounds." verbose="Either the condition &apos;arn_split.size()&lt;3&apos; is redundant or arn_split size can be 3. Expression &apos;arn_split[3]&apos; cause access out of bounds." cwe="398" file0="/workspace/source/extensions/common/aws/utility.cc">
+            <location file="/workspace/source/extensions/common/aws/utility.cc" line="379" column="23" info="Access out of bounds"/>
+            <location file="/workspace/source/extensions/common/aws/utility.cc" line="376" column="24" info="Assuming that condition &apos;arn_split.size()&lt;3&apos; is not redundant"/>
+            <symbol>arn_split</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;api_state&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;api_state&apos; doesn&apos;t have a parent." file0="/workspace/source/extensions/config_subscription/grpc/grpc_mux_impl.cc">
+            <location file="/workspace/source/extensions/config_subscription/grpc/grpc_mux_impl.cc" line="445" column="43"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/common/rbac/principals/mtls_authenticated/mtls_authenticated.cc">
+            <location file="/workspace/source/extensions/filters/common/rbac/principals/mtls_authenticated/mtls_authenticated.cc" line="15" column="39"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENFORCE_RBAC_FILTER_STATS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENFORCE_RBAC_FILTER_STATS is a macro then please configure it." file0="/workspace/source/extensions/filters/common/rbac/utility.cc">
+            <location file="/workspace/source/extensions/filters/common/rbac/utility.cc" line="26" column="7"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." verbose="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." cwe="664" file0="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc">
+            <location file="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc" line="507" column="61"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." verbose="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." cwe="664" file0="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc">
+            <location file="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc" line="508" column="61"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." verbose="Iterators to containers from different expressions &apos;subscriber.range_&apos; and &apos;range&apos; are used together." cwe="664" file0="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc">
+            <location file="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc" line="514" column="22"/>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;r&apos; and &apos;range&apos; are used together." verbose="Iterators to containers from different expressions &apos;r&apos; and &apos;range&apos; are used together." cwe="664" file0="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc">
+            <location file="/workspace/source/extensions/filters/http/cache_v2/cache_sessions_impl.cc" line="528" column="55"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;callback-&gt;cleaned_up_&apos;, second condition is always false" verbose="Identical condition &apos;callback-&gt;cleaned_up_&apos;, second condition is always false" cwe="398" file0="/workspace/source/extensions/filters/http/dynamic_modules/filter.cc">
+            <location file="/workspace/source/extensions/filters/http/dynamic_modules/filter.cc" line="344" column="17" info="Testing identical condition &apos;callback-&gt;cleaned_up_&apos;"/>
+            <location file="/workspace/source/extensions/filters/http/dynamic_modules/filter.cc" line="340" column="17" info="If condition &apos;callback-&gt;cleaned_up_&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;callback-&gt;cleaned_up_&apos;, second condition is always false" verbose="Identical condition &apos;callback-&gt;cleaned_up_&apos;, second condition is always false" cwe="398" file0="/workspace/source/extensions/filters/http/dynamic_modules/filter_config.cc">
+            <location file="/workspace/source/extensions/filters/http/dynamic_modules/filter_config.cc" line="406" column="17" info="Testing identical condition &apos;callback-&gt;cleaned_up_&apos;"/>
+            <location file="/workspace/source/extensions/filters/http/dynamic_modules/filter_config.cc" line="402" column="17" info="If condition &apos;callback-&gt;cleaned_up_&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/http/geoip/config.cc">
+            <location file="/workspace/source/extensions/filters/http/geoip/config.cc" line="53" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/listener/http_inspector/config.cc">
+            <location file="/workspace/source/extensions/filters/listener/http_inspector/config.cc" line="40" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/listener/original_dst/config.cc">
+            <location file="/workspace/source/extensions/filters/listener/original_dst/config.cc" line="60" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/listener/original_src/original_src_config_factory.cc">
+            <location file="/workspace/source/extensions/filters/listener/original_src/original_src_config_factory.cc" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/listener/proxy_protocol/config.cc">
+            <location file="/workspace/source/extensions/filters/listener/proxy_protocol/config.cc" line="49" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/source/extensions/filters/listener/tls_inspector/config.cc">
+            <location file="/workspace/source/extensions/filters/listener/tls_inspector/config.cc" line="49" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;factory==nullptr&apos; is redundant or there is possible null pointer dereference: factory." verbose="Either the condition &apos;factory==nullptr&apos; is redundant or there is possible null pointer dereference: factory." cwe="476" file0="/workspace/source/extensions/filters/network/generic_proxy/route_impl.cc">
+            <location file="/workspace/source/extensions/filters/network/generic_proxy/route_impl.cc" line="38" column="39" info="Null pointer dereference"/>
+            <location file="/workspace/source/extensions/filters/network/generic_proxy/route_impl.cc" line="32" column="15" info="Assuming that condition &apos;factory==nullptr&apos; is not redundant"/>
+            <symbol>factory</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ALL_COMMAND_STATS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ALL_COMMAND_STATS is a macro then please configure it." file0="/workspace/source/extensions/filters/network/redis_proxy/command_splitter_impl.cc">
+            <location file="/workspace/source/extensions/filters/network/redis_proxy/command_splitter_impl.cc" line="1232" column="24"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: pos" verbose="Uninitialized variable: pos" cwe="457" file0="/workspace/source/extensions/filters/udp/dns_filter/dns_filter_utils.cc">
+            <location file="/workspace/source/extensions/filters/udp/dns_filter/dns_filter_utils.cc" line="89" column="22"/>
+            <location file="/workspace/source/extensions/filters/udp/dns_filter/dns_filter_utils.cc" line="81" column="20" info="Assuming condition is false"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/source/extensions/network/dns_resolver/cares/dns_impl.cc">
+            <location file="/workspace/source/extensions/network/dns_resolver/cares/dns_impl.cc" line="705" column="58"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/testdata/check_format/canonical_api_deps.other.cc">
+            <location file="/workspace/tools/testdata/check_format/canonical_api_deps.other.cc" line="1" column="9"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/tools/testdata/check_format/real_time_source.cc">
+            <location file="/workspace/tools/testdata/check_format/real_time_source.cc" line="3" column="13"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/tools/testdata/check_format/real_time_source_override.cc">
+            <location file="/workspace/tools/testdata/check_format/real_time_source_override.cc" line="4" column="3"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/tools/testdata/check_format/real_time_system.cc">
+            <location file="/workspace/tools/testdata/check_format/real_time_system.cc" line="3" column="13"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::stoi() is not used." verbose="Return value of function std::stoi() is not used." cwe="252" file0="/workspace/tools/testdata/check_format/source/raw_try.cc">
+            <location file="/workspace/tools/testdata/check_format/source/raw_try.cc" line="9" column="12"/>
+            <symbol>std::stoi</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/tools/testdata/check_format/unpack_to.cc">
+            <location file="/workspace/tools/testdata/check_format/unpack_to.cc" line="6" column="3"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

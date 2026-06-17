@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/cmd-find.c">
+            <location file="/workspace/cmd-find.c" line="980" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/compat/imsg-buffer.c">
+            <location file="/workspace/compat/imsg-buffer.c" line="49" column="13"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="645" column="42" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="643" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="647" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="643" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="664" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="662" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="666" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="662" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="684" column="34" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="681" column="27" info="Assignment &apos;cf=arg&apos;, assigned value is 0"/>
+            <location file="/workspace/file.c" line="807" column="36" info="Calling function &apos;file_read_error_callback&apos;, 3rd argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/file.c" line="803" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="686" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="681" column="27" info="Assignment &apos;cf=arg&apos;, assigned value is 0"/>
+            <location file="/workspace/file.c" line="807" column="36" info="Calling function &apos;file_read_error_callback&apos;, 3rd argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/file.c" line="803" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/file.c">
+            <location file="/workspace/file.c" line="805" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/file.c" line="803" column="49" info="Assuming that condition &apos;(cf=client_files_RB_FIND(files,&amp;find))==NULL&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;px&apos; to itself." verbose="Redundant assignment of &apos;px&apos; to itself." cwe="398" file0="/workspace/grid-view.c">
+            <location file="/workspace/grid-view.c" line="98" column="5"/>
+            <symbol>px</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;px&apos; to itself." verbose="Redundant assignment of &apos;px&apos; to itself." cwe="398" file0="/workspace/grid-view.c">
+            <location file="/workspace/grid-view.c" line="201" column="5"/>
+            <symbol>px</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;px&apos; to itself." verbose="Redundant assignment of &apos;px&apos; to itself." cwe="398" file0="/workspace/grid-view.c">
+            <location file="/workspace/grid-view.c" line="218" column="5"/>
+            <symbol>px</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;px&apos; to itself." verbose="Redundant assignment of &apos;px&apos; to itself." cwe="398" file0="/workspace/grid-view.c">
+            <location file="/workspace/grid-view.c" line="231" column="5"/>
+            <symbol>px</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." verbose="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." cwe="476" file0="/workspace/options.c">
+            <location file="/workspace/options.c" line="120" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/options.c" line="118" column="8" info="Assuming that condition &apos;o==NULL&apos; is not redundant"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." verbose="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." cwe="476" file0="/workspace/options.c">
+            <location file="/workspace/options.c" line="734" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/options.c" line="732" column="8" info="Assuming that condition &apos;o==NULL&apos; is not redundant"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." verbose="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." cwe="476" file0="/workspace/options.c">
+            <location file="/workspace/options.c" line="747" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/options.c" line="745" column="8" info="Assuming that condition &apos;o==NULL&apos; is not redundant"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." verbose="Either the condition &apos;o==NULL&apos; is redundant or there is possible null pointer dereference: o." cwe="476" file0="/workspace/options.c">
+            <location file="/workspace/options.c" line="760" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/options.c" line="758" column="8" info="Assuming that condition &apos;o==NULL&apos; is not redundant"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/screen-write.c">
+            <location file="/workspace/screen-write.c" line="1146" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/screen-write.c">
+            <location file="/workspace/screen-write.c" line="1149" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="984" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="994" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="987" column="26" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="994" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="988" column="24" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="994" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="990" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="994" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="1038" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="1045" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="1041" column="24" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="1045" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="1198" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="1205" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="1237" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="1242" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." verbose="Either the condition &apos;item==NULL&apos; is redundant or there is possible null pointer dereference: item." cwe="476" file0="/workspace/window-customize.c">
+            <location file="/workspace/window-customize.c" line="1260" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/window-customize.c" line="1266" column="11" info="Assuming that condition &apos;item==NULL&apos; is not redundant"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: wp" verbose="Null pointer dereference: wp" cwe="476">
+            <location file="/workspace/layout.c" line="220" column="2" info="Dereferencing argument wp that is null"/>
+            <location file="/workspace/layout-set.c" line="277" column="19" info="Calling function layout_make_leaf, 2nd argument is null"/>
+            <location file="/workspace/layout-set.c" line="275" column="13" info="Assuming that condition &apos;wp!=NULL&apos; is not redundant"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable entry" verbose="Using argument elm that points at uninitialized variable entry" cwe="457">
+            <location file="/workspace/arguments.c" line="64" column="1" info="Using argument elm"/>
+            <location file="/workspace/arguments.c" line="80" column="10" info="Calling function args_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument a1 that points at uninitialized variable entry" verbose="Using argument a1 that points at uninitialized variable entry" cwe="457">
+            <location file="/workspace/arguments.c" line="70" column="10" info="Using argument a1"/>
+            <location file="/workspace/arguments.c" line="64" column="1" info="Calling function args_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/arguments.c" line="80" column="10" info="Calling function args_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/cmd-wait-for.c" line="63" column="1" info="Using argument elm"/>
+            <location file="/workspace/cmd-wait-for.c" line="128" column="7" info="Calling function wait_channels_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument wc1 that points at uninitialized variable find" verbose="Using argument wc1 that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/cmd-wait-for.c" line="68" column="17" info="Using argument wc1"/>
+            <location file="/workspace/cmd-wait-for.c" line="63" column="1" info="Calling function wait_channel_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/cmd-wait-for.c" line="128" column="7" info="Calling function wait_channels_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument csub1 that points at uninitialized variable find" verbose="Using argument csub1 that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="161" column="17" info="Using argument csub1"/>
+            <location file="/workspace/control.c" line="163" column="1" info="Calling function control_sub_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/control.c" line="1147" column="14" info="Calling function control_subs_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="163" column="1" info="Using argument elm"/>
+            <location file="/workspace/control.c" line="1147" column="14" info="Calling function control_subs_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument csp1 that points at uninitialized variable find" verbose="Using argument csp1 that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="170" column="6" info="Using argument csp1"/>
+            <location file="/workspace/control.c" line="180" column="1" info="Calling function control_sub_pane_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/control.c" line="941" column="8" info="Calling function control_sub_panes_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="180" column="1" info="Using argument elm"/>
+            <location file="/workspace/control.c" line="941" column="8" info="Calling function control_sub_panes_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument csw1 that points at uninitialized variable find" verbose="Using argument csw1 that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="188" column="6" info="Using argument csw1"/>
+            <location file="/workspace/control.c" line="198" column="1" info="Calling function control_sub_window_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/control.c" line="1021" column="8" info="Calling function control_sub_windows_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/control.c" line="198" column="1" info="Using argument elm"/>
+            <location file="/workspace/control.c" line="1021" column="8" info="Calling function control_sub_windows_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable envent" verbose="Using argument elm that points at uninitialized variable envent" cwe="457">
+            <location file="/workspace/environ.c" line="34" column="1" info="Using argument elm"/>
+            <location file="/workspace/environ.c" line="107" column="10" info="Calling function environ_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument envent1 that points at uninitialized variable envent" verbose="Using argument envent1 that points at uninitialized variable envent" cwe="457">
+            <location file="/workspace/environ.c" line="39" column="17" info="Using argument envent1"/>
+            <location file="/workspace/environ.c" line="34" column="1" info="Calling function environ_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/environ.c" line="107" column="10" info="Calling function environ_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/file.c" line="38" column="1" info="Using argument elm"/>
+            <location file="/workspace/file.c" line="215" column="12" info="Calling function client_files_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument cf1 that points at uninitialized variable find" verbose="Using argument cf1 that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/file.c" line="66" column="6" info="Using argument cf1"/>
+            <location file="/workspace/file.c" line="38" column="1" info="Calling function file_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/file.c" line="215" column="12" info="Calling function client_files_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable fj0" verbose="Using argument elm that points at uninitialized variable fj0" cwe="457">
+            <location file="/workspace/format.c" line="74" column="1" info="Using argument elm"/>
+            <location file="/workspace/format.c" line="392" column="12" info="Calling function format_job_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument fj1 that points at uninitialized variable fj0" verbose="Using argument fj1 that points at uninitialized variable fj0" cwe="457">
+            <location file="/workspace/format.c" line="80" column="6" info="Using argument fj1"/>
+            <location file="/workspace/format.c" line="74" column="1" info="Calling function format_job_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/format.c" line="392" column="12" info="Calling function format_job_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument left that points at uninitialized variable find" verbose="Using argument left that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/hyperlinks.c" line="79" column="7" info="Using argument left"/>
+            <location file="/workspace/hyperlinks.c" line="99" column="1" info="Calling function hyperlinks_by_uri_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/hyperlinks.c" line="154" column="9" info="Calling function hyperlinks_by_uri_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/hyperlinks.c" line="99" column="1" info="Using argument elm"/>
+            <location file="/workspace/hyperlinks.c" line="154" column="9" info="Calling function hyperlinks_by_uri_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument left that points at uninitialized variable find" verbose="Using argument left that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/hyperlinks.c" line="106" column="10" info="Using argument left"/>
+            <location file="/workspace/hyperlinks.c" line="110" column="1" info="Calling function hyperlinks_by_inner_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/hyperlinks.c" line="188" column="8" info="Calling function hyperlinks_by_inner_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable find" verbose="Using argument elm that points at uninitialized variable find" cwe="457">
+            <location file="/workspace/hyperlinks.c" line="110" column="1" info="Using argument elm"/>
+            <location file="/workspace/hyperlinks.c" line="188" column="8" info="Calling function hyperlinks_by_inner_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable bd" verbose="Using argument elm that points at uninitialized variable bd" cwe="457">
+            <location file="/workspace/key-bindings.c" line="76" column="1" info="Using argument elm"/>
+            <location file="/workspace/key-bindings.c" line="166" column="10" info="Calling function key_bindings_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable table_find" verbose="Using argument elm that points at uninitialized variable table_find" cwe="457">
+            <location file="/workspace/key-bindings.c" line="78" column="1" info="Using argument elm"/>
+            <location file="/workspace/key-bindings.c" line="111" column="10" info="Calling function key_tables_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument table1 that points at uninitialized variable table_find" verbose="Using argument table1 that points at uninitialized variable table_find" cwe="457">
+            <location file="/workspace/key-bindings.c" line="84" column="17" info="Using argument table1"/>
+            <location file="/workspace/key-bindings.c" line="78" column="1" info="Calling function key_table_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/key-bindings.c" line="111" column="10" info="Calling function key_tables_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument bd1 that points at uninitialized variable bd" verbose="Using argument bd1 that points at uninitialized variable bd" cwe="457">
+            <location file="/workspace/key-bindings.c" line="90" column="6" info="Using argument bd1"/>
+            <location file="/workspace/key-bindings.c" line="76" column="1" info="Calling function key_bindings_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/key-bindings.c" line="166" column="10" info="Calling function key_bindings_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable pbfind" verbose="Using argument elm that points at uninitialized variable pbfind" cwe="457">
+            <location file="/workspace/paste.c" line="40" column="1" info="Using argument elm"/>
+            <location file="/workspace/paste.c" line="133" column="10" info="Calling function paste_name_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument a that points at uninitialized variable pbfind" verbose="Using argument a that points at uninitialized variable pbfind" cwe="457">
+            <location file="/workspace/paste.c" line="49" column="17" info="Using argument a"/>
+            <location file="/workspace/paste.c" line="40" column="1" info="Calling function paste_cmp_names, 1st argument is uninitialized"/>
+            <location file="/workspace/paste.c" line="133" column="10" info="Calling function paste_name_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument s1 that points at uninitialized variable s" verbose="Using argument s1 that points at uninitialized variable s" cwe="457">
+            <location file="/workspace/session.c" line="43" column="17" info="Using argument s1"/>
+            <location file="/workspace/session.c" line="45" column="1" info="Calling function session_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/session.c" line="77" column="10" info="Calling function sessions_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable s" verbose="Using argument elm that points at uninitialized variable s" cwe="457">
+            <location file="/workspace/session.c" line="45" column="1" info="Using argument elm"/>
+            <location file="/workspace/session.c" line="77" column="10" info="Calling function sessions_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument s1 that points at uninitialized variable sg" verbose="Using argument s1 that points at uninitialized variable sg" cwe="457">
+            <location file="/workspace/session.c" line="50" column="17" info="Using argument s1"/>
+            <location file="/workspace/session.c" line="52" column="1" info="Calling function session_group_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/session.c" line="524" column="10" info="Calling function session_groups_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable sg" verbose="Using argument elm that points at uninitialized variable sg" cwe="457">
+            <location file="/workspace/session.c" line="52" column="1" info="Using argument elm"/>
+            <location file="/workspace/session.c" line="524" column="10" info="Calling function session_groups_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument sort_crit that points at uninitialized variable sort_crit" verbose="Using argument sort_crit that points at uninitialized variable sort_crit" cwe="457">
+            <location file="/workspace/sort.c" line="35" column="6" info="Using argument sort_crit"/>
+            <location file="/workspace/sort.c" line="412" column="2" info="Calling function sort_qsort, 5th argument is uninitialized"/>
+            <location file="/workspace/cmd-list-buffers.c" line="69" column="22" info="Calling function sort_get_buffers, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument uw1 that points at uninitialized variable uw" verbose="Using argument uw1 that points at uninitialized variable uw" cwe="457">
+            <location file="/workspace/utf8.c" line="41" column="6" info="Using argument uw1"/>
+            <location file="/workspace/utf8.c" line="48" column="1" info="Calling function utf8_width_cache_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/utf8.c" line="292" column="9" info="Calling function utf8_width_cache_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable uw" verbose="Using argument elm that points at uninitialized variable uw" cwe="457">
+            <location file="/workspace/utf8.c" line="48" column="1" info="Using argument elm"/>
+            <location file="/workspace/utf8.c" line="292" column="9" info="Calling function utf8_width_cache_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument ui1 that points at uninitialized variable ui" verbose="Using argument ui1 that points at uninitialized variable ui" cwe="457">
+            <location file="/workspace/utf8.c" line="230" column="6" info="Using argument ui1"/>
+            <location file="/workspace/utf8.c" line="237" column="1" info="Calling function utf8_data_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/utf8.c" line="271" column="10" info="Calling function utf8_data_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable ui" verbose="Using argument elm that points at uninitialized variable ui" cwe="457">
+            <location file="/workspace/utf8.c" line="237" column="1" info="Using argument elm"/>
+            <location file="/workspace/utf8.c" line="271" column="10" info="Calling function utf8_data_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument ui1 that points at uninitialized variable ui" verbose="Using argument ui1 that points at uninitialized variable ui" cwe="457">
+            <location file="/workspace/utf8.c" line="243" column="6" info="Using argument ui1"/>
+            <location file="/workspace/utf8.c" line="250" column="1" info="Calling function utf8_index_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/utf8.c" line="282" column="10" info="Calling function utf8_index_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable ui" verbose="Using argument elm that points at uninitialized variable ui" cwe="457">
+            <location file="/workspace/utf8.c" line="250" column="1" info="Using argument elm"/>
+            <location file="/workspace/utf8.c" line="282" column="10" info="Calling function utf8_index_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable w" verbose="Using argument elm that points at uninitialized variable w" cwe="457">
+            <location file="/workspace/window.c" line="76" column="1" info="Using argument elm"/>
+            <location file="/workspace/window.c" line="284" column="10" info="Calling function windows_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable wl" verbose="Using argument elm that points at uninitialized variable wl" cwe="457">
+            <location file="/workspace/window.c" line="77" column="1" info="Using argument elm"/>
+            <location file="/workspace/window.c" line="120" column="10" info="Calling function winlinks_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument elm that points at uninitialized variable wp" verbose="Using argument elm that points at uninitialized variable wp" cwe="457">
+            <location file="/workspace/window.c" line="78" column="1" info="Using argument elm"/>
+            <location file="/workspace/window.c" line="1003" column="10" info="Calling function window_pane_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument w1 that points at uninitialized variable w" verbose="Using argument w1 that points at uninitialized variable w" cwe="457">
+            <location file="/workspace/window.c" line="83" column="10" info="Using argument w1"/>
+            <location file="/workspace/window.c" line="76" column="1" info="Calling function window_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/window.c" line="284" column="10" info="Calling function windows_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument wl1 that points at uninitialized variable wl" verbose="Using argument wl1 that points at uninitialized variable wl" cwe="457">
+            <location file="/workspace/window.c" line="89" column="10" info="Using argument wl1"/>
+            <location file="/workspace/window.c" line="77" column="1" info="Calling function winlink_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/window.c" line="120" column="10" info="Calling function winlinks_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument wp1 that points at uninitialized variable wp" verbose="Using argument wp1 that points at uninitialized variable wp" cwe="457">
+            <location file="/workspace/window.c" line="95" column="10" info="Using argument wp1"/>
+            <location file="/workspace/window.c" line="78" column="1" info="Calling function window_pane_cmp, 1st argument is uninitialized"/>
+            <location file="/workspace/window.c" line="1003" column="10" info="Calling function window_pane_tree_RB_FIND, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

@@ -1,0 +1,60 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020",
+      "CWE-120"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "weex_core/Source/base/crash/crash_handler.cpp",
+        "line": 236,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "weex_core/Source/base/crash/crash_handler.cpp",
+        "line": 236,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "weex_core/Source/wson/wson_util.cpp",
+        "line": 235,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "weex_core/Source/wson/wson_util.cpp",
+        "line": 235,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  }
+]

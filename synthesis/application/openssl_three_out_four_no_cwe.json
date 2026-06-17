@@ -1,0 +1,76 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 772,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 772,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 772,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 802,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 802,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "demos/http3/ossl-nghttp3-demo-server.c",
+        "line": 802,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  }
+]

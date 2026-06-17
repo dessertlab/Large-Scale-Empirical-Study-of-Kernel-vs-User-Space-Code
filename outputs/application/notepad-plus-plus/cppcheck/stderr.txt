@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MD5::digestRaw&apos; is not initialized in the constructor." verbose="Member variable &apos;MD5::digestRaw&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/md5/md5Dlgs.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/md5/md5.h" line="242" column="3"/>
+            <symbol>MD5::digestRaw</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MD5::digestChars&apos; is not initialized in the constructor." verbose="Member variable &apos;MD5::digestChars&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/md5/md5Dlgs.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/md5/md5.h" line="242" column="3"/>
+            <symbol>MD5::digestChars</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CSHA1::m_reserved0&apos; is not initialized in the constructor." verbose="Member variable &apos;CSHA1::m_reserved0&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp" line="48" column="8"/>
+            <symbol>CSHA1::m_reserved0</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CSHA1::m_buffer&apos; is not initialized in the constructor." verbose="Member variable &apos;CSHA1::m_buffer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp" line="48" column="8"/>
+            <symbol>CSHA1::m_buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CSHA1::m_digest&apos; is not initialized in the constructor." verbose="Member variable &apos;CSHA1::m_digest&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp" line="48" column="8"/>
+            <symbol>CSHA1::m_digest</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CSHA1::m_reserved1&apos; is not initialized in the constructor." verbose="Member variable &apos;CSHA1::m_reserved1&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp" line="48" column="8"/>
+            <symbol>CSHA1::m_reserved1</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CSHA1::m_workspace&apos; is not initialized in the constructor." verbose="Member variable &apos;CSHA1::m_workspace&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp">
+            <location file="/workspace/PowerEditor/src/MISC/sha1/sha1.cpp" line="48" column="8"/>
+            <symbol>CSHA1::m_workspace</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentLineSymbol&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentLineSymbol&apos; and &apos;commentLineSymbol==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5387" column="54"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentStart&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentStart&apos; and &apos;commentStart==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5390" column="43"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentEnd&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentEnd&apos; and &apos;commentEnd==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5390" column="100"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentStart&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentStart&apos; and &apos;commentStart==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5689" column="44"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentEnd&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentEnd&apos; and &apos;commentEnd==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5689" column="107"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentLineSymbol&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentLineSymbol&apos; and &apos;commentLineSymbol==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="5691" column="53"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentStart&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentStart&apos; and &apos;commentStart==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="8830" column="44"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentEnd&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentEnd&apos; and &apos;commentEnd==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="8830" column="107"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;!commentLineSymbol&apos; found multiple times in chain of &apos;||&apos; operators because &apos;!commentLineSymbol&apos; and &apos;commentLineSymbol==NULL&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/PowerEditor/src/Notepad_plus.cpp">
+            <location file="/workspace/PowerEditor/src/Notepad_plus.cpp" line="8832" column="53"/>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;NppParameters::L_END&apos; is not initialized in the constructor." verbose="Member variable &apos;NppParameters::L_END&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/Parameters.cpp">
+            <location file="/workspace/PowerEditor/src/Parameters.cpp" line="1148" column="16"/>
+            <symbol>NppParameters::L_END</symbol>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;invalid buffer for getEOLFormatForm()&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;invalid buffer for getEOLFormatForm()&quot; to bool always evaluates to true." cwe="571" file0="/workspace/PowerEditor/src/ScintillaComponent/Buffer.cpp">
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/Buffer.cpp" line="49" column="45"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;crange.cpMin&gt;=posAfter&apos; and inner condition is &apos;crange.cpMin&gt;=posBefore&apos;)." cwe="398" file0="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp">
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3485" column="22" info="identical inner condition: crange.cpMin&gt;=posBefore"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3483" column="21" info="outer condition: crange.cpMin&gt;=posAfter"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3464" column="30" info="&apos;posBefore&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,line)&apos; here."/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3466" column="29" info="&apos;posAfter&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,line)&apos; here."/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;crange.cpMax&gt;=posAfter&apos; and inner condition is &apos;crange.cpMax&gt;=posBefore&apos;)." cwe="398" file0="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp">
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3493" column="22" info="identical inner condition: crange.cpMax&gt;=posBefore"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3491" column="21" info="outer condition: crange.cpMax&gt;=posAfter"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3464" column="30" info="&apos;posBefore&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,line)&apos; here."/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3466" column="29" info="&apos;posAfter&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,line)&apos; here."/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;posStart&gt;=posAfter&apos; and inner condition is &apos;posStart&gt;=posBefore&apos;)." cwe="398" file0="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp">
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3534" column="19" info="identical inner condition: posStart&gt;=posBefore"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3532" column="18" info="outer condition: posStart&gt;=posAfter"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3512" column="31" info="&apos;posBefore&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,l)&apos; here."/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3514" column="30" info="&apos;posAfter&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,l)&apos; here."/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;posEnd&gt;=posAfter&apos; and inner condition is &apos;posEnd&gt;=posBefore&apos;)." cwe="398" file0="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp">
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3542" column="17" info="identical inner condition: posEnd&gt;=posBefore"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3540" column="16" info="outer condition: posEnd&gt;=posAfter"/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3512" column="31" info="&apos;posBefore&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,l)&apos; here."/>
+            <location file="/workspace/PowerEditor/src/ScintillaComponent/ScintillaEditView.cpp" line="3514" column="30" info="&apos;posAfter&apos; is assigned value &apos;execute(SCI_GETLINEINDENTPOSITION,l)&apos; here."/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Utf8_Iter::m_code&apos; is not initialized in the constructor." verbose="Member variable &apos;Utf8_Iter::m_code&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/Utf8_16.cpp">
+            <location file="/workspace/PowerEditor/src/Utf8_16.cpp" line="533" column="12"/>
+            <symbol>Utf8_Iter::m_code</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Utf8_Iter::m_count&apos; is not initialized in the constructor." verbose="Member variable &apos;Utf8_Iter::m_count&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/Utf8_16.cpp">
+            <location file="/workspace/PowerEditor/src/Utf8_16.cpp" line="533" column="12"/>
+            <symbol>Utf8_Iter::m_count</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;ByteArray&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ByteArray&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/WinControls/ClipboardHistory/clipboardHistoryPanel.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/ClipboardHistory/clipboardHistoryPanel.cpp" line="93" column="2"/>
+            <symbol>ByteArray</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;ByteArray&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ByteArray&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/WinControls/ClipboardHistory/clipboardHistoryPanel.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/ClipboardHistory/clipboardHistoryPanel.cpp" line="93" column="2"/>
+            <symbol>ByteArray</symbol>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;iCont&gt;=4&apos; is redundant or the array &apos;_iContMap[50]&apos; is accessed at index 50, which is out of bounds." verbose="Either the condition &apos;iCont&gt;=4&apos; is redundant or the array &apos;_iContMap[50]&apos; is accessed at index 50, which is out of bounds." cwe="788" file0="/workspace/PowerEditor/src/WinControls/DockingWnd/DockingManager.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/DockingWnd/DockingManager.cpp" line="630" column="17" info="Array index out of bounds"/>
+            <location file="/workspace/PowerEditor/src/WinControls/DockingWnd/DockingManager.cpp" line="627" column="13" info="Assuming that condition &apos;iCont&gt;=4&apos; is not redundant"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: str" verbose="Uninitialized variable: str" cwe="457" file0="/workspace/PowerEditor/src/WinControls/Grid/ShortcutMapper.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/Grid/ShortcutMapper.cpp" line="175" column="10"/>
+            <symbol>str</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHODIMP_ is a macro then please configure it." file0="/workspace/PowerEditor/src/WinControls/OpenSaveFileDialog/CustomFileDialog.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/OpenSaveFileDialog/CustomFileDialog.cpp" line="222" column="2"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;CReadDirectoryChanges&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;CReadDirectoryChanges&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/WinControls/ReadDirectoryChanges/ReadDirectoryChanges.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/ReadDirectoryChanges/ReadDirectoryChanges.cpp" line="40" column="2"/>
+            <symbol>CReadDirectoryChanges</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;CReadDirectoryChanges&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;CReadDirectoryChanges&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/WinControls/ReadDirectoryChanges/ReadDirectoryChanges.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/ReadDirectoryChanges/ReadDirectoryChanges.cpp" line="40" column="2"/>
+            <symbol>CReadDirectoryChanges</symbol>
+        </error>
+        <error id="uselessCallsRemove" severity="warning" msg="Return value of std::remove() ignored. Elements remain in container." verbose="The return value of std::remove() is ignored. This function returns an iterator to the end of the range containing those elements that should be kept. Elements past new end remain valid but with unspecified values. Use the erase method of the container to delete them." cwe="762" file0="/workspace/PowerEditor/src/WinControls/VerticalFileSwitcher/VerticalFileSwitcherListView.cpp">
+            <location file="/workspace/PowerEditor/src/WinControls/VerticalFileSwitcher/VerticalFileSwitcherListView.cpp" line="400" column="0"/>
+            <symbol>remove</symbol>
+        </error>
+        <error id="signConversionCond" severity="warning" msg="Expression &apos;page_offset&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;page_offset&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="/workspace/PowerEditor/src/pugixml/pugixml.cpp">
+            <location file="/workspace/PowerEditor/src/pugixml/pugixml.cpp" line="707" column="11" info="Negative value is converted to an unsigned value"/>
+            <location file="/workspace/PowerEditor/src/pugixml/pugixml.cpp" line="708" column="23" info="Assuming that condition &apos;page_offset&gt;=0&apos; is not redundant"/>
+            <symbol>page_offset</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CharDistributionAnalysis::mCharToFreqOrder&apos; is not initialized in the constructor." verbose="Member variable &apos;CharDistributionAnalysis::mCharToFreqOrder&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/uchardet/CharDistribution.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/CharDistribution.h" line="50" column="3"/>
+            <symbol>CharDistributionAnalysis::mCharToFreqOrder</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CharDistributionAnalysis::mTableSize&apos; is not initialized in the constructor." verbose="Member variable &apos;CharDistributionAnalysis::mTableSize&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/uchardet/CharDistribution.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/CharDistribution.h" line="50" column="3"/>
+            <symbol>CharDistributionAnalysis::mTableSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CharDistributionAnalysis::mTypicalDistributionRatio&apos; is not initialized in the constructor." verbose="Member variable &apos;CharDistributionAnalysis::mTypicalDistributionRatio&apos; is not initialized in the constructor." cwe="398" file0="/workspace/PowerEditor/src/uchardet/CharDistribution.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/CharDistribution.h" line="50" column="3"/>
+            <symbol>CharDistributionAnalysis::mTypicalDistributionRatio</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Reset&apos; is called from constructor &apos;nsSingleByteCharSetProber(const SequenceModel*model)&apos; at line 69. Dynamic binding is not used." verbose="Virtual function &apos;Reset&apos; is called from constructor &apos;nsSingleByteCharSetProber(const SequenceModel*model)&apos; at line 69. Dynamic binding is not used." file0="/workspace/PowerEditor/src/uchardet/LangBulgarianModel.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsSBCharSetProber.h" line="76" column="21" info="Reset is a virtual function"/>
+            <location file="/workspace/PowerEditor/src/uchardet/nsSBCharSetProber.h" line="69" column="43" info="Calling Reset"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Reset&apos; is called from constructor &apos;nsSingleByteCharSetProber(const SequenceModel*model,bool reversed,nsCharSetProber*nameProber)&apos; at line 71. Dynamic binding is not used." verbose="Virtual function &apos;Reset&apos; is called from constructor &apos;nsSingleByteCharSetProber(const SequenceModel*model,bool reversed,nsCharSetProber*nameProber)&apos; at line 71. Dynamic binding is not used." file0="/workspace/PowerEditor/src/uchardet/LangBulgarianModel.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsSBCharSetProber.h" line="76" column="21" info="Reset is a virtual function"/>
+            <location file="/workspace/PowerEditor/src/uchardet/nsSBCharSetProber.h" line="71" column="68" info="Calling Reset"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsBig5Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsBig5Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsBig5Prober.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsBig5Prober.h" line="49" column="4"/>
+            <symbol>nsBig5Prober</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsBig5Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsBig5Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsBig5Prober.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsBig5Prober.h" line="49" column="4"/>
+            <symbol>nsBig5Prober</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsEUCJPProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCJPProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCJPProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCJPProber.h" line="55" column="4"/>
+            <symbol>nsEUCJPProber</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsEUCJPProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCJPProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCJPProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCJPProber.h" line="55" column="4"/>
+            <symbol>nsEUCJPProber</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsEUCKRProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCKRProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCKRProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCKRProber.h" line="49" column="4"/>
+            <symbol>nsEUCKRProber</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsEUCKRProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCKRProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCKRProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCKRProber.h" line="49" column="4"/>
+            <symbol>nsEUCKRProber</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsEUCTWProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCTWProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCTWProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCTWProber.h" line="49" column="4"/>
+            <symbol>nsEUCTWProber</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsEUCTWProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsEUCTWProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsEUCTWProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsEUCTWProber.h" line="49" column="4"/>
+            <symbol>nsEUCTWProber</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsGB18030Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsGB18030Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsGB2312Prober.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsGB2312Prober.h" line="51" column="4"/>
+            <symbol>nsGB18030Prober</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsGB18030Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsGB18030Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsGB2312Prober.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsGB2312Prober.h" line="51" column="4"/>
+            <symbol>nsGB18030Prober</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Reset&apos; is called from constructor &apos;nsHebrewProber()&apos; at line 48. Dynamic binding is not used." verbose="Virtual function &apos;Reset&apos; is called from constructor &apos;nsHebrewProber()&apos; at line 48. Dynamic binding is not used." file0="/workspace/PowerEditor/src/uchardet/nsHebrewProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsHebrewProber.h" line="53" column="16" info="Reset is a virtual function"/>
+            <location file="/workspace/PowerEditor/src/uchardet/nsHebrewProber.h" line="48" column="59" info="Calling Reset"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsSJISProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsSJISProber&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsMBCSGroupProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsSJISProber.h" line="56" column="4"/>
+            <symbol>nsSJISProber</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsSJISProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsSJISProber&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsMBCSGroupProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsSJISProber.h" line="56" column="4"/>
+            <symbol>nsSJISProber</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;nsUTF8Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsUTF8Prober&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsMBCSGroupProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsUTF8Prober.h" line="47" column="17"/>
+            <symbol>nsUTF8Prober</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;nsUTF8Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;nsUTF8Prober&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/PowerEditor/src/uchardet/nsMBCSGroupProber.cpp">
+            <location file="/workspace/PowerEditor/src/uchardet/nsUTF8Prober.h" line="47" column="17"/>
+            <symbol>nsUTF8Prober</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;int&apos;" verbose="Unused variable value &apos;int&apos;" cwe="398" file0="/workspace/PowerEditor/src/winmain.cpp">
+            <location file="/workspace/PowerEditor/src/winmain.cpp" line="719" column="8"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;sc.atLineEnd&apos; and inner condition is &apos;sc.atLineEnd&apos;)." cwe="398" file0="/workspace/lexilla/lexers/LexAU3.cxx">
+            <location file="/workspace/lexilla/lexers/LexAU3.cxx" line="261" column="13" info="identical inner condition: sc.atLineEnd"/>
+            <location file="/workspace/lexilla/lexers/LexAU3.cxx" line="258" column="11" info="outer condition: sc.atLineEnd"/>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;definition.empty()&apos; is redundant or expression &apos;definition.at(afterName)&apos; cause access out of bounds." verbose="Either the condition &apos;definition.empty()&apos; is redundant or expression &apos;definition.at(afterName)&apos; cause access out of bounds." cwe="398" file0="/workspace/lexilla/lexers/LexCPP.cxx">
+            <location file="/workspace/lexilla/lexers/LexCPP.cxx" line="363" column="20" info="Access out of bounds"/>
+            <location file="/workspace/lexilla/lexers/LexCPP.cxx" line="370" column="26" info="Assuming that condition &apos;definition.empty()&apos; is not redundant"/>
+            <symbol>definition</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/lexilla/lexers/LexTCMD.cxx">
+            <location file="/workspace/lexilla/lexers/LexTCMD.cxx" line="242" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it." file0="/workspace/scintilla/gtk/PlatGTK.cxx">
+            <location file="/workspace/scintilla/gtk/PlatGTK.cxx" line="1536" column="1"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found unused cast of expression &apos;leadByte&apos;." verbose="Redundant code: Found unused cast of expression &apos;leadByte&apos;." cwe="398" file0="/workspace/scintilla/src/Document.cxx">
+            <location file="/workspace/scintilla/src/Document.cxx" line="2404" column="50"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." file0="/workspace/scintilla/win32/ScintillaWin.cxx">
+            <location file="/workspace/scintilla/win32/ScintillaWin.cxx" line="228" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." file0="/workspace/scintilla/win32/SurfaceD2D.cxx">
+            <location file="/workspace/scintilla/win32/SurfaceD2D.cxx" line="914" column="2"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

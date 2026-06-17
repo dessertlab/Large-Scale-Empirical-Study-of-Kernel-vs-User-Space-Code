@@ -1,0 +1,118 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-468"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "lib/curl_sha512_256.c",
+        "line": 667,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "lib/curl_sha512_256.c",
+        "line": 667,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-468"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "lib/curl_sha512_256.c",
+        "line": 686,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "lib/curl_sha512_256.c",
+        "line": 686,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck"
+    ],
+    "cwes": [
+      "CWE-260",
+      "CWE-476"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "lib/curl_trc.c",
+        "line": 166,
+        "cwe": "CWE-260",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "lib/curl_trc.c",
+        "line": 166,
+        "cwe": "CWE-476",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "lib/file.c",
+        "line": 546,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "lib/file.c",
+        "line": 546,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

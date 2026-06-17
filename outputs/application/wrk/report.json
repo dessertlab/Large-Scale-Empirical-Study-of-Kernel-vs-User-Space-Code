@@ -1,0 +1,674 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 133,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 140,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 143,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 146,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 157,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 175,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 188,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 194,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 224,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ae_evport.c",
+      "line": 308,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/ae_select.c",
+      "line": 81,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/ae_select.c",
+      "line": 82,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/aprintf.c",
+      "line": 14,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/aprintf.c",
+      "line": 17,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/aprintf.c",
+      "line": 22,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/http_parser.c",
+      "line": 186,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/http_parser.c",
+      "line": 2085,
+      "message": "Using argument parser that points at uninitialized variable parser",
+      "rule": "ctuuninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/net.c",
+      "line": 18,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/net.h",
+      "line": 18,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/script.c",
+      "line": 95,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/script.c",
+      "line": 163,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/script.c",
+      "line": 296,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/script.c",
+      "line": 312,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/script.c",
+      "line": 325,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/script.c",
+      "line": 326,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/script.c",
+      "line": 452,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/script.c",
+      "line": 508,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/script.c",
+      "line": 564,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/stats.h",
+      "line": 12,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/units.c",
+      "line": 60,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/units.c",
+      "line": 63,
+      "message": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 45,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 77,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 98,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 125,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 138,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 139,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 180,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/src/wrk.c",
+      "line": 182,
+      "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/src/wrk.c",
+      "line": 182,
+      "message": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/src/wrk.c",
+      "line": 182,
+      "message": "%d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/src/wrk.c",
+      "line": 182,
+      "message": "%d in format string (no. 4) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 182,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/src/wrk.c",
+      "line": 187,
+      "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 187,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 190,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 191,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/wrk.c",
+      "line": 463,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/wrk.c",
+      "line": 492,
+      "message": "buffer/getopt_long:Some older implementations do not protect against internal buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1027",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 517,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 518,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 531,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 536,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 547,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/wrk.c",
+      "line": 552,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 558,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 568,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 572,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 577,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 581,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/wrk.c",
+      "line": 583,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/wrk.h",
+      "line": 63,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 89,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 205,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 208,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 241,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 242,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 246,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 247,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 248,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 317,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 319,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 323,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 325,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 326,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/zmalloc.c",
+      "line": 327,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/script.c",
+      "line": 451,
+      "message": "Call to gai_strerror with untrusted data from [call to getaddrinfo](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 78,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 1,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 7,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 70,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/wrk/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

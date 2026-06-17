@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;top_index_n&apos; and &apos;data_index_n&apos;." verbose="Finding variables &apos;top_index_n&apos; and &apos;data_index_n&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/src/caffe/data_transformer.cpp">
+            <location file="/workspace/src/caffe/data_transformer.cpp" line="414" column="9"/>
+            <location file="/workspace/src/caffe/data_transformer.cpp" line="415" column="9"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="73" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="112" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="150" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="188" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="212" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="236" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="260" column="5"/>
+        </error>
+        <error id="rethrowNoCurrentException" severity="error" msg="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" verbose="Rethrowing current exception with &apos;throw;&apos;, it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object" cwe="480" file0="/workspace/src/caffe/layer_factory.cpp">
+            <location file="/workspace/src/caffe/layer_factory.cpp" line="284" column="5"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: static_cast&lt;volatile int*&gt;(NULL)" verbose="Null pointer dereference: static_cast&lt;volatile int*&gt;(NULL)" cwe="476" file0="/workspace/src/gtest/gtest-all.cpp">
+            <location file="/workspace/src/gtest/gtest-all.cpp" line="5098" column="34" info="Null pointer dereference"/>
+            <symbol>static_cast&lt;volatile int*&gt;(NULL)</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

@@ -1,0 +1,2948 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1007",
+              "name": "buffer/StrCat",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1043",
+              "name": "shell/ShellExecute",
+              "shortDescription": {
+                "text": "This causes a new program to execute and is difficult to use safely (CWE-78)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-78",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1026",
+              "name": "buffer/realpath",
+              "shortDescription": {
+                "text": "This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-785",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/open",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1053",
+              "name": "buffer/getenv",
+              "shortDescription": {
+                "text": "Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/807.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-807",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/wcslen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/spec/fixtures/native-addon/osr-gpu/binding_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 5,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    memcpy(destData + row * desc.Width * 4,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "56717dfb9ff04167b7e27ed236e7ff960e31f9c8c2d90ce8e9e046e6c29b1b82"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/spec/fixtures/native-addon/uv-dlopen/main.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 3,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  char lib_path[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e4aa0e2852a7d883dd4ff5007c0cf23b4d9ec29c51a3b9982aa07f94daa3ea4d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/gin_helper/function_template.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 21,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "            ? base::StrCat({\"Illegal invocation: Function must be \""
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7b425a928d83a24139a5f9ea73aa34f8ca39626575ede690c1991cf9d3458b83"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/platform_util_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 308,
+                  "startColumn": 7,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "      ShellExecute(nullptr, L\"open\", dir.value().c_str(), nullptr, nullptr,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ce74666ab6940aeca155e1a9927304d8d91a67d5cf277cb3d1f4396f8a30ea5b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/platform_util_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 436,
+                  "startColumn": 3,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "  wchar_t system_buffer[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "991afcdbc26c171e14873ff0a4bd0319e4918b14f49deb60f73d8a6d159a1d04"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/application_info_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 3,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "  wchar_t packageFamilyName[PACKAGE_FAMILY_NAME_MAX_LENGTH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f308e37442db3da94d9e02df56256f754c08a9868c3f9399b168bc529ee46813"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/application_info_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 7,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "      wchar_t buf[64] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9078a8f0227a3e989f225c055c33d333a4147dcc4b2f2bd7ddcf94e75f3a6cf5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/application_info_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 5,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "    wchar_t buf[64] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9078a8f0227a3e989f225c055c33d333a4147dcc4b2f2bd7ddcf94e75f3a6cf5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/application_info_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 9,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "        wchar_t buf[64] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9078a8f0227a3e989f225c055c33d333a4147dcc4b2f2bd7ddcf94e75f3a6cf5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/api/electron_api_asar.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 20,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    base::FilePath realpath;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7894184ac6388b30096249daf209e0daa0663d6d046882d44e42b3af1669d36d"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/api/electron_api_asar.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 61,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "    if (!wrap->archive_ || !wrap->archive_->Realpath(path, &realpath)) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "783fbd8e5100ac221552ffbcc5fc9cdf7c708948239bd997a49fa2908fc24fbf"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/api/electron_api_asar.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 57,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "    args.GetReturnValue().Set(gin::ConvertToV8(isolate, realpath));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c63f25de8dc024cd898e2fa158197950c13736b8077af78f9064d6d8a2652ac5"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/crash_keys.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 15,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "        base::StrCat({\"The crash key name, '\", key, \"', is longer than \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f29e079c6ca8e72f750242d708f0b7f71c3d06b892815168ae7312df85f1d9ad"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/platform_util_linux.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 19,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "                  open(full_path.value().c_str(), O_RDONLY | O_CLOEXEC)));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f05d27ee47fe4d0d8d3197879488ba2e4f7bca1a143293c8302daddf2d96d3c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/asar/archive.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 40,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "                       base::FilePath* realpath) const {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "91c1f82c9bbf72057b41003241635d29c1ebc4fabfcfbab2a8f3a7da84ed3291"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/asar/archive.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 61,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "  bool Realpath(const base::FilePath& path, base::FilePath* realpath) const;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dca711644396e4408a4566728512aea62ac7b4eec9aef197db09f3f4d7986c4b"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/node_util.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 34,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "      dict.Set(\"location\", base::StrCat({\", at \", str, \":\", line_str}));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ed143d57a8f1e1587ff93301a6a1e2dca4cac183d8608a3b45b7900c2f9f8a9e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/common/node_util.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 164,
+                  "startColumn": 23,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "      errstr += base::StrCat({\" \", *jsonstr});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0484b16ad52109c538c7c0a0634c3ae1e5aa479a15377de3507fca225e702bd8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/app/electron_main_mac.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 33,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  const char* const indicator = getenv(name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b55b448cfbce64d081f4aa74f5f5472b94648949595b4ad1e480836e353ceeb9"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/app/electron_main_linux.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 33,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  const char* const indicator = getenv(name.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b55b448cfbce64d081f4aa74f5f5472b94648949595b4ad1e480836e353ceeb9"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/renderer/preload_utils.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 15,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "        base::StrCat({\"No such binding: \", binding_key}));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "665e8b280e52d807a9a1cc8491d226f792fd7b5bcb234873a0705488c6dfc35e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/renderer/preload_utils.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 5,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    char buf[U_MAX_VERSION_STRING_LENGTH] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5bd9d9b7d6b8a1b9cbc9f6c5e428be4af23fade8558513bdddffaf85679d14cb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/renderer/api/electron_api_web_frame.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 433,
+                  "startColumn": 26,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "      *error_msg = base::StrCat({\"Render frame was torn down before webFrame.\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0f39b45e0711be91f6a33bf1e40bb3ea7e2ddfe1a46d25f824a5141204591d6e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/renderer/web_worker_observer.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 37,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "      std::string blink_key = base::StrCat({\"blink\", key});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4ba5452508ef839de07b6c79275558a320845eb2c6fab080eccb4d51a0256f23"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/renderer/web_worker_observer.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 35,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    std::string blink_key = base::StrCat({\"blink\", key});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4ba5452508ef839de07b6c79275558a320845eb2c6fab080eccb4d51a0256f23"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/win/scoped_hstring.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 31,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  WindowsCreateString(source, wcslen(source), &str_);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cddadb347fa333d089d8e59831b754144832123fc93469633d75ee6c411b0c0d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/relauncher_linux.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 39,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  base::ScopedFD devnull(HANDLE_EINTR(open(\"/dev/null\", O_WRONLY)));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4daeb27957b565c23e63fb1f8965463082b880dfa9642cc49946c39a0a4955ae"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/usb/usb_chooser_controller.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 17,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "          base::StrCat({\"The device id \", device_id, \" was not found.\"}),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6ce4c8feb24c36594c07c95acc10ee216fde4967867c9baf12ea9c8f8447d792"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/relauncher_mac.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 39,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  base::ScopedFD devnull(HANDLE_EINTR(open(\"/dev/null\", O_WRONLY)));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4daeb27957b565c23e63fb1f8965463082b880dfa9642cc49946c39a0a4955ae"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/ui/win/jump_list.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c324abf2dc04ee0a052f175eccf3b4faa4a5fa7e564c68edb168c7f32909861"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/ui/win/jump_list.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 3,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "  wchar_t item_desc[INFOTIPSIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6fe942ff1a27aeb699f3ea7edb3511f0278162c5e62a3ebd0b47754034e2823c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/ui/devtools_ui_bundle_data_source.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 21,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "  return GURL(base::StrCat({content::kChromeDevToolsScheme,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "046af91a9e34b61e4d34d8db316cbd2c2f91735a11758ade6cb30cc7fe5dd78e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/ui/devtools_ui_theme_data_source.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 34,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "  std::string css_string = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d357115c714dda5b24d2531aeb1a0b4d2e5ec5b1be08db9ac5b22847d301cd92"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/relauncher.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 34,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "  int read_result = HANDLE_EINTR(read(pipe_read_fd.get(), &read_char, 1));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f0934162cdd6aedd8380a6e74bb1fa1ac072aaac9942913dec89459c0cb88827"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/hid/hid_chooser_controller.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 17,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "          base::StrCat({\"The device id \", device_id, \" was not found.\"}),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6ce4c8feb24c36594c07c95acc10ee216fde4967867c9baf12ea9c8f8447d792"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 8,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "#ifdef StrCat"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f3f3f6fa40accfcea5e201bac475bde4dba3d14b6c1cd2ae012c1e27f859538a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 8,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "#undef StrCat"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be45b4462025d18b57b57f86a893f44a2ddaa7c14f18c0a13043ae91ef6f1622"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c324abf2dc04ee0a052f175eccf3b4faa4a5fa7e564c68edb168c7f32909861"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 3,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "  wchar_t target_path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "71378f725315c39cd0092715b3c183a439ef1e819a1e010b2ba0906f1c8ae305"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 3,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  wchar_t work_dir[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2e9f24a7915c8d2388c31de1e84b9845badb61075fc914697aec0b06d0813a1d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_activator.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 268,
+                  "startColumn": 13,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "            wchar_t buf[64] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9078a8f0227a3e989f225c055c33d333a4147dcc4b2f2bd7ddcf94e75f3a6cf5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 17,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "          base::StrCat({msg, \", ERROR \", FailureResultToString(_hrTemp)}); \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "381766e3c9259e76dbf63e9e79d28e544d5f129e1a373c37cdef202152aecca5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 35,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  std::string hresult_str = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be0b003f2ee957651cdc7e6eba20fb11c294a5bc1fa9418a4e7453eea7f2b812"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 18,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "    return base::StrCat({\"Notification failed - \", it->second, hresult_str});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb211f6bf3fcee835f60a34662c32b9ce581fe89fc62026600ccc3642c86d2e9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 18,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bcb921892ca596e8340b2c0a8d7016b8e3f7ebc3fcfeb17015c31fc31086ee72"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 20,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    DebugLog(base::StrCat({\"toast_xml length: \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ab3088ae6dc1d158f5fbb55332376243cdf5bee64abf5b7e36f5866cda132847"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 18,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat({\"Task runner valid: \", task_runner ? \"yes\" : \"no\"}));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0fed76415c88ab43d1b7d064e23293a4dda64d035172e6b8f4fe3052b89b706a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 266,
+                  "startColumn": 18,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bcb921892ca596e8340b2c0a8d7016b8e3f7ebc3fcfeb17015c31fc31086ee72"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 320,
+                  "startColumn": 20,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    DebugLog(base::StrCat({\"XmlDocumentFromString returned HRESULT: \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7ee9da345278ab4083564a403e4809b73ebbdc006660cfe233417d3df031ce7b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 324,
+                  "startColumn": 17,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "          base::StrCat({\"XML: Invalid XML, ERROR \", FailureResultToString(hr)});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cd1416b82a583f8c90f69509e9fff684cb30699f678469074af9f61bd9bf6d1d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 325,
+                  "startColumn": 22,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "      DebugLog(base::StrCat({\"XML parsing failed, posting error: \", err}));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "07455df3c9e5f43bf874c862bb55247b601929db32002cc7759dd4b6873a5533"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 347,
+                  "startColumn": 17,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "          base::StrCat({\"XML: Invalid XML, ERROR \", FailureResultToString(hr)});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cd1416b82a583f8c90f69509e9fff684cb30699f678469074af9f61bd9bf6d1d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 380,
+                  "startColumn": 15,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "        base::StrCat({\"WinAPI: GetActivationFactory failed, ERROR \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "75892438afaa389ba853496f810ddeeaca52c7030b0502b23abdca6dbcc4565c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 391,
+                  "startColumn": 15,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "        base::StrCat({\"WinAPI: CreateToastNotification failed, ERROR \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c9a364419084532ebfc772609f947b1cbc68578d3f548223d40d94fdc3bb2421"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 402,
+                  "startColumn": 15,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "        base::StrCat({\"WinAPI: Getting Notification interface failed, ERROR \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "41ca6ff961c08282e1afd4259672338f9fc393f056b0142fa046acee7f366643"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 414,
+                  "startColumn": 13,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "      base::StrCat({\"Setting group: \", base::WideToUTF8(group_str),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7e59f9d77868082f7d6685d2e5cf34a8fb6e49bcb8bab2a39b3d60376bf4112b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 29,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    std::string err = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a1c3681dcec4ed09689dbec1d0d4111e7e29407e300a5f443c8f93f3fde1127f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 427,
+                  "startColumn": 18,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat({\"Setting tag: \", base::WideToUTF8(tag_str),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c0cdbdbf24bca24cef83443c2285725fffd42eb9fac80d017baaa170c5e6a4f2"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 29,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    std::string err = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a1c3681dcec4ed09689dbec1d0d4111e7e29407e300a5f443c8f93f3fde1127f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 451,
+                  "startColumn": 31,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "      std::string err = base::StrCat({\"WinAPI: Setting priority failed, ERROR \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bbe3ab249f1cd88ea31cbc087325dfc9d98d8a447975d5248fca46ca775dbac0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 476,
+                  "startColumn": 29,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    std::string err = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a1c3681dcec4ed09689dbec1d0d4111e7e29407e300a5f443c8f93f3fde1127f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 489,
+                  "startColumn": 29,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    std::string err = base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a1c3681dcec4ed09689dbec1d0d4111e7e29407e300a5f443c8f93f3fde1127f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 509,
+                  "startColumn": 18,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bcb921892ca596e8340b2c0a8d7016b8e3f7ebc3fcfeb17015c31fc31086ee72"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 523,
+                  "startColumn": 30,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "              DebugLog(base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bcb921892ca596e8340b2c0a8d7016b8e3f7ebc3fcfeb17015c31fc31086ee72"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 530,
+                  "startColumn": 28,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "            DebugLog(base::StrCat("
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bcb921892ca596e8340b2c0a8d7016b8e3f7ebc3fcfeb17015c31fc31086ee72"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 534,
+                  "startColumn": 23,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "                base::StrCat({\"Delegate is set: \", delegate ? \"yes\" : \"no\"}));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f545c05f79ca85a2ab0242006d414bb6d8446c7a9a7109786dc196e595acda1e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 566,
+                  "startColumn": 18,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "  DebugLog(base::StrCat({\"Removing with group: \", base::WideToUTF8(group_str),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c5b7a7f9850d55b7bfaabbaab08fa864cf22a41309ac57df693823ccdc9c2391"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 682,
+                  "startColumn": 19,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "            base::StrCat({\"type=action&action=\", base::NumberToString(i),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b6f6f9ea0086c493669dacaf8fe09728b0155a17c93a5f7298f2487b03f53580"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 689,
+                  "startColumn": 19,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "            base::StrCat({kSelection, base::NumberToString(i)});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "234e724ed9b5fb3b2f562cf93352589cdd476aaf4ed4a543fd77308b94a62b0f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 706,
+                  "startColumn": 19,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "            base::StrCat({\"type=action&action=\", base::NumberToString(i),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b6f6f9ea0086c493669dacaf8fe09728b0155a17c93a5f7298f2487b03f53580"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/win/windows_toast_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 721,
+                  "startColumn": 32,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "      std::string args = base::StrCat({\"type=reply&tag=\", notification_id});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ed7aaa67f16daac9abf87f884c2b2232f1d59bec7b7fbedef82bce91b2acb6f2"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/notifications/linux/libnotify_notification.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 7,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  if (getenv(\"ELECTRON_USE_UBUNTU_NOTIFIER\"))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a93a06fc36fa62700efb92aec5c3b04fb80306d1a75c872c0d4c23e963d4ee30"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/file_system_access/file_system_access_permission_context.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 29,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "                    : base::StrCat({kCustomLastPickedDirectoryKey, \"-\", id});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "63da895a5664733d862e797843b3f9d21549549e296bed5ffc3f80ae4fc5474a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/relauncher_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 16,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "  return base::StrCat({L\"ElectronRelauncherWaitEvent-\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4542bf465f95d8249508656e8e3f481992bde4fa1c8acf3cc74152c3b6483db7"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_app.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1002,
+                  "startColumn": 35,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "    base::WideToUTF8(locale_name, wcslen(locale_name), &region);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "48bf3636d37afd23492e3ec1948d06f34e950078103a31712f123232b84710c9"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_app.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1009,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    char temporaryCString[3];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "28d7ab3cf4823f299bd0507af2b380c35dcf189c53a97ae174cda6c93d697176"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_web_contents.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2417,
+                  "startColumn": 17,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "          base::StrCat({\"Failed to load URL: \", url.possibly_invalid_spec(),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a5e582ce6c9fb9b542d4018fd7cc4d0f49c9ed5a023c569a78636252bcaa1948"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 26,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "      if (!::CreatePipe(&read, &write, nullptr, 0)) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5bd07350bf045611a9b11c9ac7002b04808f046389be90e2189ad66d741ab12d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 31,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "        stdout_read_handle_ = read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a2bacb9de7b381e4bc4de94da4acf239ab613caace41e9633bcd00d8a2df37e5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 56,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "            _open_osfhandle(reinterpret_cast<intptr_t>(read), _O_RDONLY);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1e8aae34accd54bf5a9b8899d16dbf61295a5dd905040e3787a93df714396348"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 31,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "        stderr_read_handle_ = read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6661c452ea3b4eca53b70a695932a95dbd2d7c04d3604a73f90f27c4176d402d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 140,
+                  "startColumn": 56,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "            _open_osfhandle(reinterpret_cast<intptr_t>(read), _O_RDONLY);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1e8aae34accd54bf5a9b8899d16dbf61295a5dd905040e3787a93df714396348"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 21,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "      int devnull = open(\"/dev/null\", O_WRONLY);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fdab434a2499a999415e879e4fe97948b98bc1282bdc972fb9a9f6b3a3bb08f6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/api/electron_api_utility_process.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 379,
+                  "startColumn": 19,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            base::StrCat({\"Port at index \", base::NumberToString(i),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54a5dc5b0dbf9945da3022eef56fc1ff1622c0ecc19532e057bdc94d97b5c7a1"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 18,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "    *exe = base::StrCat({result, L\" \\\"%1\\\"\"});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "49737de0e05523a0f43bd2395254f020fef3f31d0669f2ebcd399d0f2f8764e0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1007",
+          "level": "error",
+          "message": {
+            "text": "buffer/StrCat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 18,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    *exe = base::StrCat({electron::AddQuoteForArg(*exe), L\" \\\"%1\\\"\"});"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0efa0a4c0738962670e088c7c07a2c22d5319b67002d0dcb588d6b829e89d3de"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 3,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "  wchar_t out_buffer[1024];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "15249559b18f3344735748d99d833e08801bf50cbff8d92e0379b74477b4d5f3"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 11,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "          wchar_t startup_binary[12];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b938a021fe8585022d75ee52fab4c0eb93ded0bb95bec9cd30b0e6b3e26d6ffd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 15,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "              wchar_t binary_accepted[12] = {0x00, 0x00, 0x00, 0x00,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9aebb13862d17cb970c128b1408e9df3247f13def982123fe3eaef85058c2280"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/browser_win.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 246,
+                  "startColumn": 15,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "              wchar_t binary_accepted_alt[12] = {0x02, 0x00, 0x00, 0x00,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "44f997f3f44e5d6b01a12c78459951238cfa023cb50d6bceb6d83064f4ae01eb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/shell/browser/electron_browser_main_parts_posix.cc",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 37,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "    const ssize_t rv = HANDLE_EINTR(read(fd, bytes.data(), bytes.size()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "354fb87d4dc0202a9b6fa77555d8023431f8f5b3fcf1811d84d3e104c82f84d0"
+          },
+          "rank": 0.2
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

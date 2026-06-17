@@ -1,0 +1,826 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc-override.h",
+      "line": 28,
+      "message": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!).",
+      "rule": "FF1026",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/include/mimalloc-override.h",
+      "line": 53,
+      "message": "free/memalign:On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676).",
+      "rule": "FF1067",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc/atomic.h",
+      "line": 203,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc/atomic.h",
+      "line": 350,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc/atomic.h",
+      "line": 537,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc/internal.h",
+      "line": 1112,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/include/mimalloc/internal.h",
+      "line": 1125,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/include/mimalloc/types.h",
+      "line": 562,
+      "message": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/alloc-aligned.c",
+      "line": 31,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/alloc-aligned.c",
+      "line": 67,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/alloc-override.c",
+      "line": 79,
+      "message": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!).",
+      "rule": "FF1026",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/alloc-override.c",
+      "line": 359,
+      "message": "free/memalign:On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676).",
+      "rule": "FF1067",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/alloc-posix.c",
+      "line": 104,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/alloc-posix.c",
+      "line": 163,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/alloc-posix.c",
+      "line": 190,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/alloc.c",
+      "line": 429,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/alloc.c",
+      "line": 469,
+      "message": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!).",
+      "rule": "FF1026",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/alloc.c",
+      "line": 486,
+      "message": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!).",
+      "rule": "FF1026",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/arena-abandon.c",
+      "line": 95,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/arena.c",
+      "line": 940,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/bitmap.c",
+      "line": 324,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/free.c",
+      "line": 35,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/free.c",
+      "line": 432,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/free.c",
+      "line": 432,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/heap.c",
+      "line": 521,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/libc.c",
+      "line": 99,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/options.c",
+      "line": 258,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/options.c",
+      "line": 339,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/options.c",
+      "line": 474,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/options.c",
+      "line": 491,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/options.c",
+      "line": 610,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/options.c",
+      "line": 611,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/os.c",
+      "line": 79,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/page-queue.c",
+      "line": 71,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 102,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 105,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 111,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 127,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 601,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 746,
+      "message": "Uninitialized variable: info",
+      "rule": "uninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 821,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 824,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/prim/unix/prim.c",
+      "line": 830,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/prim/wasi/prim.c",
+      "line": 244,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/prim/wasi/prim.c",
+      "line": 247,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/prim/wasi/prim.c",
+      "line": 253,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/prim/windows/etw.h",
+      "line": 693,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 151,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 159,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 165,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 547,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 652,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/prim/windows/prim.c",
+      "line": 1022,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/segment-map.c",
+      "line": 33,
+      "message": "failed to evaluate #if condition, division/modulo by zero",
+      "rule": "preprocessorErrorDirective",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/segment.c",
+      "line": 1664,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/stats.c",
+      "line": 29,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 136,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 156,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 254,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 308,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 540,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 547,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 554,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 562,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/stats.c",
+      "line": 569,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "include/mimalloc/internal.h",
+      "line": 555,
+      "message": "This pointer might have type [mi_page_s](1) (size 112), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "include/mimalloc/internal.h",
+      "line": 613,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/alloc.c",
+      "line": 97,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/alloc.c",
+      "line": 107,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/alloc.c",
+      "line": 670,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/alloc.c",
+      "line": 670,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/alloc.c",
+      "line": 689,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 462,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 503,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 530,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 530,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 605,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/free.c",
+      "line": 605,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/page.c",
+      "line": 614,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/page.c",
+      "line": 640,
+      "message": "This pointer might have type [mi_block_s](1) (size 8), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 185,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 348,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 368,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 431,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 431,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 432,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 432,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 456,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 484,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 620,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 934,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 955,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 955,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 956,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 956,
+      "message": "This pointer might have type [mi_segment_s](1) (size 57744), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "src/segment.c",
+      "line": 1053,
+      "message": "This pointer might have type [mi_page_s](1) (size 112), but this pointer arithmetic is done with type uint8_t * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 97,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 31,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 16,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 50,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mimalloc/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

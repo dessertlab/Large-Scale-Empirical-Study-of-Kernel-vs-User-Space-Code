@@ -1,0 +1,129 @@
+[pipeline]
+fail_fast = false
+max_parallel_tools = 5
+
+[output]
+directory = "outputs"
+
+[tools.cppcheck]
+enabled = true
+image = "static-analysis-cppcheck:latest"
+command = "cppcheck"
+args = [
+  "--xml",
+  "--xml-version=2",
+  "--enable=warning",
+  "/workspace",
+]
+output_format = "xml"
+# Applied per chunk (one top-level subdirectory each), not to the whole tree.
+timeout_seconds = 0
+allowed_exit_codes = [0]
+container_workdir = "/workspace"
+
+[tools.cppcheck.options]
+# Threads per chunk. cppcheck runs one short-lived process per top-level
+# subdirectory; -j parallelizes within each so the huge trees (e.g. FreeBSD's
+# sys/) finish in reasonable wall time without one whole-tree process growing
+# unbounded and getting OOM-killed.
+jobs = 4
+# max_configs caps how many preprocessor (#ifdef) configurations cppcheck
+# re-checks per file. Unset, cppcheck keeps its default of 12. On heavily-
+# conditional trees such as FreeBSD's sys/dev drivers this re-checking dominates
+# the runtime; 2 cuts the long tail at the cost of skipping some rarer macro
+# combinations.
+max_configs = 2
+
+[tools.semgrep]
+enabled = true
+image = "static-analysis-semgrep:latest"
+command = "semgrep"
+args = [
+  "scan",
+  "--metrics",
+  "off",
+  "--json",
+  "--no-git-ignore",
+  "--novcs",
+  "--config",
+  "p/c",
+  "--config",
+  "p/cpp-audit",
+  "--config",
+  "p/security-audit",
+  "--config",
+  "p/cwe-top-25",
+  "--config",
+  "p/default",
+  "--config",
+  "p/r2c-security-audit",
+  "--config",
+  "p/c-audit-banned-functions",
+  "--config",
+  "p/owasp-top-ten",
+  "--config",
+  "p/secure-defaults",
+  "--config",
+  "p/security-code-scan",
+  "--config",
+  "p/sql-injection",
+  "--config",
+  "p/command-injection",
+  "/workspace",
+]
+output_format = "json"
+timeout_seconds = 0
+allowed_exit_codes = [0]
+container_workdir = "/workspace"
+
+[tools.codeql]
+enabled = true
+image = "static-analysis-codeql:latest"
+command = "codeql"
+platform = "linux/amd64"
+args = []
+output_format = "sarif"
+timeout_seconds = 86400
+allowed_exit_codes = [0]
+container_workdir = "/workspace"
+
+[tools.codeql.options]
+build_mode = "none"
+threads = 20
+ram = 32768
+alert_query_kinds = ["problem", "path-problem"]
+queries = [
+  "codeql/cpp-queries:Security/CWE",
+]
+
+[tools.flawfinder]
+enabled = true
+image = "static-analysis-flawfinder:latest"
+command = "flawfinder"
+args = [
+  "--sarif",
+  "--minlevel=3",
+  "/workspace",
+]
+output_format = "sarif"
+timeout_seconds = 0
+allowed_exit_codes = [0]
+container_workdir = "/workspace"
+
+[tools.ikos]
+enabled = false
+image = "static-analysis-ikos:latest"
+command = "ikos"
+args = ["--display-checks", "no", "-q"]
+output_format = "json"
+timeout_seconds = 0
+allowed_exit_codes = [0]
+container_workdir = "/workspace"
+report_command = "ikos-report"
+
+[tools.ikos.options]
+source_extensions = [".c", ".cc", ".cpp"]
+include_dirs = ["/workspace", "/workspace/include", "/workspace/src"]
+c_flags = ["-std=c11"]
+cpp_flags = ["-std=c++20"]
+auto_include_header_dirs = true

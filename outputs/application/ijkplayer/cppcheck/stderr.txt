@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/ijkmedia/ijkplayer/ff_ffplay.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ff_ffplay.c" line="531" column="9"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!ffp&apos; is redundant or there is possible null pointer dereference: ffp." verbose="Either the condition &apos;!ffp&apos; is redundant or there is possible null pointer dereference: ffp." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ff_ffplay.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ff_ffplay.c" line="2634" column="22" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ff_ffplay.c" line="2636" column="9" info="Assuming that condition &apos;!ffp&apos; is not redundant"/>
+            <symbol>ffp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="693" column="42" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1551" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="694" column="38" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1551" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="699" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1551" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1341" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1355" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1345" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1355" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1347" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1355" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1353" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1355" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1364" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1362" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1497" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1503" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1501" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1503" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1508" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1510" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1518" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1516" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1523" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1549" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;newbuffer&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;newbuffer&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="450" column="22" info="Null pointer addition"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="441" column="13" info="Assuming that condition &apos;newbuffer&apos; is not redundant"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;c-&gt;abort_request&apos;, return value is always 0" verbose="Identical condition and return expression &apos;c-&gt;abort_request&apos;, return value is always 0" cwe="398" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c" line="134" column="13" info="Returning identical expression &apos;c-&gt;abort_request&apos;"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c" line="131" column="10" info="If condition &apos;c-&gt;abort_request&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c" line="84" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c" line="88" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c" line="92" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c" line="109" column="9"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;c-&gt;abort_request&apos;, return value is always 0" verbose="Identical condition and return expression &apos;c-&gt;abort_request&apos;, return value is always 0" cwe="398" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c" line="70" column="13" info="Returning identical expression &apos;c-&gt;abort_request&apos;"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c" line="67" column="10" info="If condition &apos;c-&gt;abort_request&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!playlist&apos; is redundant or there is possible null pointer dereference: playlist." verbose="Either the condition &apos;!playlist&apos; is redundant or there is possible null pointer dereference: playlist." cwe="476" file0="/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c" line="708" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c" line="707" column="18" info="Assuming that condition &apos;!playlist&apos; is not redundant"/>
+            <symbol>playlist</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c">
+            <location file="/workspace/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c" line="205" column="13"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/ijkmedia/ijksdl/gles2/fsh/rgb.fsh.c">
+            <location file="/workspace/ijkmedia/ijksdl/gles2/fsh/rgb.fsh.c" line="25" column="26"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420p.fsh.c">
+            <location file="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420p.fsh.c" line="25" column="26"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420sp.fsh.c">
+            <location file="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420sp.fsh.c" line="25" column="26"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv444p10le.fsh.c">
+            <location file="/workspace/ijkmedia/ijksdl/gles2/fsh/yuv444p10le.fsh.c" line="25" column="26"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/ijkmedia/ijksdl/gles2/vsh/mvp.vsh.c">
+            <location file="/workspace/ijkmedia/ijksdl/gles2/vsh/mvp.vsh.c" line="25" column="26"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: clock" verbose="Uninitialized variable: clock" cwe="457" file0="/workspace/ijkmedia/ijksdl/ijksdl_timer.c">
+            <location file="/workspace/ijkmedia/ijksdl/ijksdl_timer.c" line="85" column="13"/>
+            <symbol>clock</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: input_buffer" verbose="Null pointer dereference: input_buffer" cwe="476">
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="693" column="42" info="Dereferencing argument input_buffer that is null"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1551" column="26" info="Calling function parse_string, 2nd argument is null"/>
+            <location file="/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c" line="1561" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

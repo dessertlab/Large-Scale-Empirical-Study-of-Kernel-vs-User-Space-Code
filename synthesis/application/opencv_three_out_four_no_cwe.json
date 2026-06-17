@@ -1,0 +1,46 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020",
+      "CWE-682"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "modules/dnn/src/torch/THDiskFile.cpp",
+        "line": 393,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "modules/dnn/src/torch/THDiskFile.cpp",
+        "line": 393,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "modules/dnn/src/torch/THDiskFile.cpp",
+        "line": 393,
+        "cwe": "CWE-682",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "modules/dnn/src/torch/THDiskFile.cpp",
+        "line": 393,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  }
+]

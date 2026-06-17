@@ -1,0 +1,4458 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_allegro5.cpp",
+      "line": 283,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_allegro5.cpp",
+      "line": 309,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx10.cpp",
+      "line": 133,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx10.cpp",
+      "line": 214,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx10.cpp",
+      "line": 215,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx10.cpp",
+      "line": 456,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx10.cpp",
+      "line": 509,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx11.cpp",
+      "line": 137,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx11.cpp",
+      "line": 223,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx11.cpp",
+      "line": 224,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx11.cpp",
+      "line": 472,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx11.cpp",
+      "line": 525,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 180,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 302,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 303,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 512,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 730,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_dx12.cpp",
+      "line": 762,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx9.cpp",
+      "line": 253,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_dx9.cpp",
+      "line": 351,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_glfw.cpp",
+      "line": 216,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/backends/imgui_impl_glfw.cpp",
+      "line": 666,
+      "message": "Analysis failed. If the code is valid then please report this failure.",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_glfw.cpp",
+      "line": 679,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/backends/imgui_impl_glfw.cpp",
+      "line": 1047,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl2.cpp",
+      "line": 83,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 228,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 237,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 307,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 687,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 707,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 713,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 726,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 732,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 757,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 996,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 1025,
+      "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 1025,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 1054,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 1055,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3.cpp",
+      "line": 1056,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_opengl3_loader.h",
+      "line": 831,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_sdl2.cpp",
+      "line": 150,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/backends/imgui_impl_sdl2.cpp",
+      "line": 487,
+      "message": "Analysis failed. If the code is valid then please report this failure.",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_sdl2.cpp",
+      "line": 505,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_sdl2.cpp",
+      "line": 524,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_sdl3.cpp",
+      "line": 114,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_sdl3.cpp",
+      "line": 508,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/backends/imgui_impl_sdl3.cpp",
+      "line": 527,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_sdlgpu3.cpp",
+      "line": 193,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_sdlgpu3.cpp",
+      "line": 194,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_sdlgpu3.cpp",
+      "line": 393,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_vulkan.cpp",
+      "line": 596,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_vulkan.cpp",
+      "line": 597,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_vulkan.cpp",
+      "line": 831,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_vulkan.cpp",
+      "line": 1243,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/backends/imgui_impl_vulkan.h",
+      "line": 69,
+      "message": "No header in #include",
+      "rule": "preprocessorErrorDirective",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 195,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 226,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 538,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 539,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1080,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1081,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1082,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1083,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1084,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/backends/imgui_impl_wgpu.cpp",
+      "line": 1085,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_win32.cpp",
+      "line": 797,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/backends/imgui_impl_win32.cpp",
+      "line": 814,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_opengl2/main.cpp",
+      "line": 32,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_opengl3/main.cpp",
+      "line": 34,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_vulkan/main.cpp",
+      "line": 60,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_vulkan/main.cpp",
+      "line": 66,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_vulkan/main.cpp",
+      "line": 75,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_vulkan/main.cpp",
+      "line": 221,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_vulkan/main.cpp",
+      "line": 365,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 45,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 171,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 302,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 320,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 323,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 331,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 354,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 368,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_glfw_wgpu/main.cpp",
+      "line": 453,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_null/main.cpp",
+      "line": 24,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_null/main.cpp",
+      "line": 38,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_directx11/main.cpp",
+      "line": 41,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_directx11/main.cpp",
+      "line": 56,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_opengl2/main.cpp",
+      "line": 33,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_opengl2/main.cpp",
+      "line": 53,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_opengl3/main.cpp",
+      "line": 38,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_opengl3/main.cpp",
+      "line": 87,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_opengl3/main.cpp",
+      "line": 94,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_sdlrenderer2/main.cpp",
+      "line": 35,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_sdlrenderer2/main.cpp",
+      "line": 50,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 57,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 66,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 212,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 352,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 367,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_vulkan/main.cpp",
+      "line": 383,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 62,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 157,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 288,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 306,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 309,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 317,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 340,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 354,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl2_wgpu/main.cpp",
+      "line": 440,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_directx11/main.cpp",
+      "line": 36,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_directx11/main.cpp",
+      "line": 46,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_opengl3/main.cpp",
+      "line": 32,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_opengl3/main.cpp",
+      "line": 76,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_opengl3/main.cpp",
+      "line": 82,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlgpu3/main.cpp",
+      "line": 33,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlgpu3/main.cpp",
+      "line": 43,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlgpu3/main.cpp",
+      "line": 53,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlgpu3/main.cpp",
+      "line": 60,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlrenderer3/main.cpp",
+      "line": 30,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_sdlrenderer3/main.cpp",
+      "line": 40,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 59,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 68,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 214,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 352,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 362,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_vulkan/main.cpp",
+      "line": 380,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 57,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 69,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 167,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 299,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 317,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 320,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 328,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 351,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 365,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_sdl3_wgpu/main.cpp",
+      "line": 451,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_win32_vulkan/main.cpp",
+      "line": 55,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_win32_vulkan/main.cpp",
+      "line": 64,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_win32_vulkan/main.cpp",
+      "line": 210,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/examples/example_win32_vulkan/main.cpp",
+      "line": 369,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 83,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 84,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 217,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 229,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 230,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 381,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 445,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 446,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 485,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 486,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 534,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 535,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 617,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 620,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 621,
+      "message": "%d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/examples/libs/usynergy/uSynergy.c",
+      "line": 621,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui.cpp",
+      "line": 1767,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2184,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2192,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2198,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2212,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2309,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2310,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2320,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2336,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2534,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2535,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2539,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2545,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2546,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2549,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2556,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2613,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2627,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 2728,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 3172,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/imgui.cpp",
+      "line": 3188,
+      "message": "va_list 'args_copy' used before va_start() was called.",
+      "rule": "va_list_usedBeforeStarted",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/imgui.cpp",
+      "line": 3193,
+      "message": "va_list 'args_copy' used before va_start() was called.",
+      "rule": "va_list_usedBeforeStarted",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui.cpp",
+      "line": 4728,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 5875,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 10488,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 12123,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 12478,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 12509,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 13298,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/imgui.cpp",
+      "line": 13650,
+      "message": "Null pointer dereference: window",
+      "rule": "ctunullpointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/imgui.cpp",
+      "line": 13650,
+      "message": "Either the condition 'prev_nav_window' is redundant or there is possible null pointer dereference: window.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15032,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15039,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15605,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15653,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15705,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15770,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15771,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15772,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15773,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15991,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 15999,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16075,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16103,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16106,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16124,
+      "message": "shell/execvp:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16336,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16396,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16593,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16740,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 16781,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17145,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17296,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17298,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17451,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17498,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17638,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17659,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17682,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17714,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17797,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.cpp",
+      "line": 17965,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.cpp",
+      "line": 18231,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2226,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2253,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2255,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2259,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2264,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui.h",
+      "line": 2265,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.h",
+      "line": 2700,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.h",
+      "line": 2753,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.h",
+      "line": 2763,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui.h",
+      "line": 3575,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 196,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 197,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 197,
+      "message": "format/_snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 199,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 200,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 745,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 780,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 810,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 815,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 817,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 820,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 825,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 995,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 1010,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 1285,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 1287,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2107,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2108,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2149,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2157,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2158,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2197,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2281,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2452,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2453,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2464,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2465,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2482,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2528,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2529,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2792,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2793,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2809,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2810,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2850,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2851,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2890,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2891,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2952,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 2953,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3018,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3019,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3060,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3061,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3103,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3104,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3388,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3389,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3463,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3477,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3643,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3644,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3645,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3651,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3776,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3830,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3876,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3877,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3878,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3879,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3880,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3881,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3882,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3889,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3937,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3943,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 3949,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 4008,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 4018,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 4506,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 4507,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5096,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5097,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5193,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5525,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5526,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5527,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5964,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 5965,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6206,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6207,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6239,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6247,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6353,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6354,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6355,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 6939,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7064,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7065,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7270,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7271,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7273,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7614,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7615,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7713,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7725,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7726,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7747,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 7748,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8127,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8128,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8140,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8159,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8362,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8655,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 8979,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9013,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9013,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9014,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9026,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9029,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9166,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9546,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 9547,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10143,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10144,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10477,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10487,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10488,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10517,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10560,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10561,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 10677,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 11128,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_demo.cpp",
+      "line": 11129,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 566,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 575,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2234,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2235,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2260,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2261,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2613,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2811,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2889,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 2990,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 4121,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 5006,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 5096,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 5152,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 5506,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 6263,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 6363,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_draw.cpp",
+      "line": 6552,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 237,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 388,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 423,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 758,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 1816,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 2215,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 2435,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 2596,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 3685,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_internal.h",
+      "line": 3893,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 2712,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 2774,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 2780,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 2789,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 2793,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3210,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3946,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3968,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3970,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3978,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3979,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3980,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3981,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3982,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3983,
+      "message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+      "rule": "uselessAssignmentPtrArg",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 3983,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 4096,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 4130,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_tables.cpp",
+      "line": 4161,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 1475,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2050,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2087,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2365,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2373,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2381,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2395,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2495,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2500,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2765,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 2796,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3357,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3394,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3548,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3755,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3756,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3771,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3794,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 3814,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4237,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4294,
+      "message": "Struct 'ImGuiInputTextState' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noCopyConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4294,
+      "message": "Struct 'ImGuiInputTextState' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noOperatorEq",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4319,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4399,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4600,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4660,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4841,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4861,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 4877,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5230,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5258,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5262,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5353,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5762,
+      "message": "Buffer 'col' is too small, the function 'ColorEdit4' expects a bigger buffer in 2nd argument",
+      "rule": "argumentSize",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5915,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5931,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 5933,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6024,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6029,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6122,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6255,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6615,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 6665,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 7596,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 7608,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 8568,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 9083,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imgui_widgets.cpp",
+      "line": 10495,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 286,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 287,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 294,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 294,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 337,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 343,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 343,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 345,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 345,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 377,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 378,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 387,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 387,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 441,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 442,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 487,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 492,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 2936,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4022,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4084,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4319,
+      "message": "Uninitialized variables: ranges.h_oversample, ranges.v_oversample",
+      "rule": "uninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4470,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4518,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/imstb_truetype.h",
+      "line": 4518,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 50,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 51,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 52,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 53,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 54,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 71,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 78,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 91,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 96,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 109,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 114,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 115,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 124,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 128,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 130,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 135,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 136,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 137,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 143,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 144,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 148,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 153,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 154,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 155,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 161,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 163,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 165,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/misc/fonts/binary_to_compressed_c.cpp",
+      "line": 251,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/misc/freetype/imgui_freetype.cpp",
+      "line": 100,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/misc/freetype/imgui_freetype.cpp",
+      "line": 153,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/misc/freetype/imgui_freetype.cpp",
+      "line": 340,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/misc/freetype/imgui_freetype.cpp",
+      "line": 370,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/misc/freetype/imgui_freetype.cpp",
+      "line": 442,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If IM_PLACEMENT_NEW is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_dx9.cpp",
+      "line": 345,
+      "message": "This pointer might have type [unsigned int](1) (size 4), but this pointer arithmetic is done with type const unsigned char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_dx9.cpp",
+      "line": 346,
+      "message": "This pointer might have type [unsigned int](1) (size 4), but this pointer arithmetic is done with type unsigned char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer2.cpp",
+      "line": 179,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer2.cpp",
+      "line": 180,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer2.cpp",
+      "line": 184,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer3.cpp",
+      "line": 202,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer3.cpp",
+      "line": 203,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "backends/imgui_impl_sdlrenderer3.cpp",
+      "line": 204,
+      "message": "This pointer might have type [ImDrawVert](1) (size 20), but this pointer arithmetic is done with type const char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "imgui.cpp",
+      "line": 2217,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "imgui.cpp",
+      "line": 3369,
+      "message": "[Extreme value](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/arithmetic-with-extreme-values",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "imgui_demo.cpp",
+      "line": 2108,
+      "message": "This 'call to sprintf' operation may require 322 bytes because of float conversions, but the target is only 32 bytes.",
+      "rule": "cpp/overrunning-write-with-float",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "imgui_demo.cpp",
+      "line": 2529,
+      "message": "This 'call to sprintf' operation may require 628 bytes because of float conversions, but the target is only 32 bytes.",
+      "rule": "cpp/overrunning-write-with-float",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "imgui_demo.cpp",
+      "line": 9658,
+      "message": "This pointer might have type [ExampleTreeNode](1) (size 80), but this pointer arithmetic is done with type unsigned char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "imgui_draw.cpp",
+      "line": 1891,
+      "message": "This pointer might have type [ImTriangulatorNode](1) (size 32), but this pointer arithmetic is done with type ImTriangulatorNode ** (size 8).",
+      "rule": "cpp/suspicious-pointer-scaling",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "imgui_internal.h",
+      "line": 809,
+      "message": "This pointer might have type [ImGuiTableSettings](1) (size 20), but this pointer arithmetic is done with type char * (size 1).\nThis pointer might have type [ImGuiWindowSettings](2) (size 16), but this pointer arithmetic is done with type char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "imgui_internal.h",
+      "line": 809,
+      "message": "This pointer might have type [ImGuiTableSettings](1) (size 20), but this pointer arithmetic is done with type char * (size 1).\nThis pointer might have type [ImGuiWindowSettings](2) (size 16), but this pointer arithmetic is done with type char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-468",
+      "filename": "imgui_widgets.cpp",
+      "line": 9030,
+      "message": "This pointer might have type [float](1) (size 4), but this pointer arithmetic is done with type const unsigned char * (size 1).",
+      "rule": "cpp/incorrect-pointer-scaling-char",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 188,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 189,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 190,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 191,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 192,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 193,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 194,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 195,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 201,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 226,
+      "message": "Call to fputc with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 318,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 318,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-129",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 319,
+      "message": "An array indexing expression depends on [string read by fread](1) that might be outside the bounds of the array.",
+      "rule": "cpp/unclear-array-index-validation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 320,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 320,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 321,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 321,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-129",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 321,
+      "message": "An array indexing expression depends on [string read by fread](1) that might be outside the bounds of the array.",
+      "rule": "cpp/unclear-array-index-validation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 322,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 322,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 323,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 323,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-129",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 323,
+      "message": "An array indexing expression depends on [string read by fread](1) that might be outside the bounds of the array.",
+      "rule": "cpp/unclear-array-index-validation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 324,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 324,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.\n[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-129",
+      "filename": "misc/fonts/binary_to_compressed_c.cpp",
+      "line": 325,
+      "message": "An array indexing expression depends on [string read by fread](1) that might be outside the bounds of the array.",
+      "rule": "cpp/unclear-array-index-validation",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 551,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 43,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 17,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 491,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/imgui/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

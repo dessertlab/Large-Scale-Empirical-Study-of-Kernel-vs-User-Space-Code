@@ -1,0 +1,67 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "Telegram/SourceFiles/_other/updater_linux.cpp",
+        "line": 70,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Telegram/SourceFiles/_other/updater_linux.cpp",
+        "line": 70,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "Telegram/SourceFiles/_other/updater_linux.cpp",
+        "line": 94,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Telegram/SourceFiles/_other/updater_linux.cpp",
+        "line": 94,
+        "cwe": "CWE-362",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Telegram/SourceFiles/_other/updater_linux.cpp",
+        "line": 94,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

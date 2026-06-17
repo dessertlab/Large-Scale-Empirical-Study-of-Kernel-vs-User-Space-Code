@@ -1,0 +1,89 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-457"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "PowerEditor/src/WinControls/Grid/ShortcutMapper.cpp",
+        "line": 175,
+        "cwe": "CWE-457",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "PowerEditor/src/WinControls/Grid/ShortcutMapper.cpp",
+        "line": 175,
+        "cwe": "CWE-119",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "lexilla/lexers/LexTCMD.cxx",
+        "line": 242,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "lexilla/lexers/LexTCMD.cxx",
+        "line": 242,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-398"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "scintilla/src/Document.cxx",
+        "line": 2404,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "scintilla/src/Document.cxx",
+        "line": 2404,
+        "cwe": "CWE-119",
+        "function": null
+      }
+    ]
+  }
+]

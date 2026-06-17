@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;b&lt;0xffff&apos; is redundant or the array &apos;z-&gt;size[288]&apos; is accessed at index 65534, which is out of bounds." verbose="Either the condition &apos;b&lt;0xffff&apos; is redundant or the array &apos;z-&gt;size[288]&apos; is accessed at index 65534, which is out of bounds." cwe="788" file0="/workspace/deprecated/stb_image.c">
+            <location file="/workspace/deprecated/stb_image.c" line="2103" column="18" info="Array index out of bounds"/>
+            <location file="/workspace/deprecated/stb_image.c" line="2102" column="10" info="Assuming that condition &apos;b&lt;0xffff&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;b&lt;0xffff&apos; is redundant or the array &apos;z-&gt;value[288]&apos; is accessed at index 65534, which is out of bounds." verbose="Either the condition &apos;b&lt;0xffff&apos; is redundant or the array &apos;z-&gt;value[288]&apos; is accessed at index 65534, which is out of bounds." cwe="788" file0="/workspace/deprecated/stb_image.c">
+            <location file="/workspace/deprecated/stb_image.c" line="2106" column="22" info="Array index out of bounds"/>
+            <location file="/workspace/deprecated/stb_image.c" line="2102" column="10" info="Assuming that condition &apos;b&lt;0xffff&apos; is not redundant"/>
+        </error>
+        <error id="resourceLeak" severity="error" msg="Resource leak: f" verbose="Resource leak: f" cwe="775" file0="/workspace/stb_image_resize_test/dotimings.c">
+            <location file="/workspace/stb_image_resize_test/dotimings.c" line="60" column="46"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="Syntax error in #elif" verbose="Syntax error in #elif">
+            <location file="/workspace/stb_image_resize_test/old_image_resize.h" line="463" column="0"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;start&apos; to itself." verbose="Redundant assignment of &apos;start&apos; to itself." cwe="398" file0="/workspace/stb_image_resize_test/stbirtest.c">
+            <location file="/workspace/stb_image_resize_test/stbirtest.c" line="280" column="66"/>
+            <symbol>start</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/stb_vorbis.c">
+            <location file="/workspace/stb_vorbis.c" line="2118" column="42"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/stb_vorbis.c">
+            <location file="/workspace/stb_vorbis.c" line="2635" column="28"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="invalidTestForOverflow" severity="warning" msg="Invalid test for overflow &apos;f-&gt;stream_start+loc&lt;f-&gt;stream_start&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." verbose="Invalid test for overflow &apos;f-&gt;stream_start+loc&lt;f-&gt;stream_start&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." cwe="391" file0="/workspace/stb_vorbis.c">
+            <location file="/workspace/stb_vorbis.c" line="1404" column="75"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: zero_channel" verbose="Uninitialized variable: zero_channel" cwe="457" file0="/workspace/stb_vorbis.c">
+            <location file="/workspace/stb_vorbis.c" line="3296" column="32"/>
+            <location file="/workspace/stb_vorbis.c" line="3198" column="16" info="Assuming condition is false"/>
+            <symbol>zero_channel</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/stb_vorbis.c">
+            <location file="/workspace/stb_vorbis.c" line="2120" column="37"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to expand &apos;realloc&apos;, Wrong number of parameters for macro &apos;realloc&apos;." verbose="failed to expand &apos;realloc&apos;, Wrong number of parameters for macro &apos;realloc&apos;.">
+            <location file="/workspace/stb_vorbis.c" line="5411" column="0"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;lines==NULL&apos; is redundant or there is possible null pointer dereference: lines." verbose="Either the condition &apos;lines==NULL&apos; is redundant or there is possible null pointer dereference: lines." cwe="476" file0="/workspace/tools/make_readme.c">
+            <location file="/workspace/tools/make_readme.c" line="24" column="19" info="Null pointer dereference"/>
+            <location file="/workspace/tools/make_readme.c" line="23" column="17" info="Assuming that condition &apos;lines==NULL&apos; is not redundant"/>
+            <symbol>lines</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!s2&apos; is redundant or there is possible null pointer dereference: s2." verbose="Either the condition &apos;!s2&apos; is redundant or there is possible null pointer dereference: s2." cwe="476" file0="/workspace/tools/make_readme.c">
+            <location file="/workspace/tools/make_readme.c" line="28" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/tools/make_readme.c" line="27" column="11" info="Assuming that condition &apos;!s2&apos; is not redundant"/>
+            <symbol>s2</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!s1&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!s1&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/tools/make_readme.c">
+            <location file="/workspace/tools/make_readme.c" line="26" column="21" info="Null pointer addition"/>
+            <location file="/workspace/tools/make_readme.c" line="25" column="11" info="Assuming that condition &apos;!s1&apos; is not redundant"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: pos" verbose="Uninitialized variable: pos" cwe="457" file0="/workspace/tools/unicode.c">
+            <location file="/workspace/tools/unicode.c" line="214" column="11"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: pos" verbose="Uninitialized variable: pos" cwe="457" file0="/workspace/tools/unicode.c">
+            <location file="/workspace/tools/unicode.c" line="297" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument z that points at uninitialized variable p" verbose="Using argument z that points at uninitialized variable p" cwe="457">
+            <location file="/workspace/deprecated/stb_image.c" line="2706" column="14" info="Using argument z"/>
+            <location file="/workspace/deprecated/stb_image.c" line="2857" column="8" info="Calling function parse_png_file, 1st argument is uninitialized"/>
+            <location file="/workspace/deprecated/stb_image.c" line="2880" column="17" info="Calling function do_png, 1st argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

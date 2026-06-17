@@ -1,0 +1,18 @@
+[application/rufus] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/rufus
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/rufus
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1624 findings, exit 0, 1.88s
+[2/4] semgrep completed: 55 findings, exit 0, 12.51s
+[3/4] codeql completed: 228 findings, exit 0, 59.04s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[4/4] cppcheck completed: 209 findings, exit 0, 345.81s
+
+Summary: 4 completed, 0 failed, 2116 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/rufus/report.json

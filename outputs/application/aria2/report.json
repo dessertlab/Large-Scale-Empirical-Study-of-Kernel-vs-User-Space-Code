@@ -1,0 +1,5226 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/examples/libaria2wx.cc",
+      "line": 188,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_EVENT_TABLE is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractBtMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AbstractDiskWriter.cc",
+      "line": 98,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/AbstractDiskWriter.cc",
+      "line": 99,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AbstractDiskWriter.cc",
+      "line": 316,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractDiskWriter.h",
+      "line": 78,
+      "message": "Virtual function 'closeFile' is called from destructor '~AbstractDiskWriter()' at line 74. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractHttpServerResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractProxyRequestCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractProxyResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AbstractSingleDiskAdaptor.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ActivePeerConnectionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AdaptiveURISelector.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/Adler32MessageDigestImpl.cc",
+      "line": 63,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ApiCallbackDownloadEventListener.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppleMessageDigestImpl.cc",
+      "line": 55,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase()' at line 50. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/AppleTLSContext.cc",
+      "line": 349,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AppleTLSSession.cc",
+      "line": 697,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppleTLSSession.h",
+      "line": 72,
+      "message": "Virtual function 'closeConnection' is called from destructor '~AppleTLSSession()' at line 505. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppleTLSSession.h",
+      "line": 106,
+      "message": "Virtual function 'getLastErrorString' is called from constructor 'AppleTLSSession(AppleTLSContext*ctx)' at line 486. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AppleTLSSession.h",
+      "line": 106,
+      "message": "Virtual function 'getLastErrorString' is called from constructor 'AppleTLSSession(AppleTLSContext*ctx)' at line 495. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/AsyncNameResolver.cc",
+      "line": 56,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AsyncNameResolver.cc",
+      "line": 74,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AsyncNameResolver.cc",
+      "line": 78,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AsyncNameResolver.cc",
+      "line": 82,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AsyncNameResolver.cc",
+      "line": 86,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/AsyncNameResolver.h",
+      "line": 111,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AsyncNameResolverMan.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AuthConfigFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/AutoSaveCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BackupIPv4ConnectCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-683",
+      "filename": "/workspace/src/BitfieldMan.cc",
+      "line": 494,
+      "message": "Function 'getAllMissingIndexes' argument order different: declaration 'misbitfield, mislen, bitfield, len' definition 'misbitfield, len, peerBitfield, peerBitfieldLength'",
+      "rule": "funcArgOrderDifferent",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-683",
+      "filename": "/workspace/src/BitfieldMan.cc",
+      "line": 514,
+      "message": "Function 'getAllMissingUnusedIndexes' argument order different: declaration 'misbitfield, mislen, bitfield, len' definition 'misbitfield, len, peerBitfield, peerBitfieldLength'",
+      "rule": "funcArgOrderDifferent",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtAllowedFastMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtBitfieldMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtBitfieldMessageValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtCancelMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtCheckIntegrityEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtChokeMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtDependency.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtExtendedMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtFileAllocationEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/BtHandshakeMessageValidator.h",
+      "line": 51,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtHaveAllMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtHaveMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtHaveNoneMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtInterestedMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtLeecherStateChoke.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtNotInterestedMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtPieceMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/BtPieceMessage.cc",
+      "line": 122,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtPieceMessageValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtPortMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtPostDownloadHandler.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtRegistry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtRejectMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtRequestMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtSeederStateChoke.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtSetup.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/BtSetup.cc",
+      "line": 235,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtStopDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtSuggestPieceMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/BtUnchokeMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/BufferedFile.cc",
+      "line": 69,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/BufferedFile.cc",
+      "line": 99,
+      "message": "format/vfprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CheckIntegrityCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CheckIntegrityDispatcherCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CheckIntegrityEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ChecksumCheckIntegrityEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ConnectCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ConsoleStatCalc.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ConsoleStatCalc.cc",
+      "line": 251,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ContentTypeRequestGroupCriteria.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Context.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/Context.cc",
+      "line": 120,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/Context.cc",
+      "line": 121,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/Context.cc",
+      "line": 122,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/Context.cc",
+      "line": 137,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CookieStorage.cc",
+      "line": 437,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CreateRequestCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTAbstractMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTAbstractNodeLookupTask.h",
+      "line": 68,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTAbstractNodeLookupTask.h",
+      "line": 142,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTAbstractTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTAnnouncePeerMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTAnnouncePeerMessage.cc",
+      "line": 74,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTAnnouncePeerMessage.h",
+      "line": 51,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTAnnouncePeerReplyMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTAutoSaveCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 61,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 62,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 82,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 181,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 182,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 184,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucket.cc",
+      "line": 185,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucket.h",
+      "line": 57,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucket.h",
+      "line": 59,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTBucketRefreshCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTBucketRefreshTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucketRefreshTask.cc",
+      "line": 63,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTBucketTree.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucketTree.cc",
+      "line": 56,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucketTree.cc",
+      "line": 57,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucketTree.cc",
+      "line": 66,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTBucketTree.cc",
+      "line": 67,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucketTree.h",
+      "line": 91,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTBucketTree.h",
+      "line": 92,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTEntryPointNameResolveCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTFindNodeMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTFindNodeMessage.cc",
+      "line": 59,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTFindNodeMessage.h",
+      "line": 45,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTFindNodeReplyMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTFindNodeReplyMessage.cc",
+      "line": 77,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTFindNodeReplyMessage.cc",
+      "line": 85,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTFindNodeReplyMessage.cc",
+      "line": 86,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTFindNodeReplyMessage.cc",
+      "line": 90,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTGetPeersCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTGetPeersMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTGetPeersMessage.cc",
+      "line": 71,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTGetPeersMessage.h",
+      "line": 54,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTGetPeersReplyMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTInteractionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageDispatcherImpl.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageFactoryImpl.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTMessageFactoryImpl.cc",
+      "line": 306,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageReceiver.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageTracker.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTMessageTrackerEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTNode.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTNode.cc",
+      "line": 55,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTNode.cc",
+      "line": 109,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTNode.h",
+      "line": 49,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTNodeLookupEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTNodeLookupTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTNodeLookupTaskCallback.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPeerAnnounceCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPeerAnnounceEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTPeerAnnounceEntry.cc",
+      "line": 47,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTPeerAnnounceEntry.h",
+      "line": 53,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPeerAnnounceStorage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPeerLookupTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPeerLookupTaskCallback.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPingMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPingReplyMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTPingReplyMessage.cc",
+      "line": 52,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTPingReplyMessage.h",
+      "line": 45,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTPingTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTQueryMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTRegistry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTReplaceNodeTask.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTResponseMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTRoutingTable.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTRoutingTableDeserializer.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableDeserializer.cc",
+      "line": 85,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableDeserializer.cc",
+      "line": 96,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableDeserializer.cc",
+      "line": 107,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTRoutingTableSerializer.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableSerializer.cc",
+      "line": 90,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableSerializer.cc",
+      "line": 101,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTRoutingTableSerializer.cc",
+      "line": 130,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTSetup.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTTaskFactoryImpl.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 52,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 57,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 58,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 68,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 75,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 76,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 77,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTTokenTracker.cc",
+      "line": 105,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DHTTokenTracker.h",
+      "line": 47,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTTokenUpdateCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DHTUnknownMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DHTUnknownMessage.cc",
+      "line": 63,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtAnnounce.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DefaultBtAnnounce.cc",
+      "line": 244,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/DefaultBtAnnounce.cc",
+      "line": 246,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtInteractive.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtMessageDispatcher.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtMessageFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtMessageReceiver.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DefaultBtMessageReceiver.cc",
+      "line": 71,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtProgressInfoFile.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DefaultBtProgressInfoFile.cc",
+      "line": 125,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DefaultBtProgressInfoFile.cc",
+      "line": 241,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DefaultBtProgressInfoFile.cc",
+      "line": 255,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultBtRequestFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultExtensionMessageFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultPeerStorage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DefaultPieceStorage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DirectDiskAdaptor.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DiskAdaptor.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadContext.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadEngine.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/DownloadEngine.cc",
+      "line": 110,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadEngineFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadHandler.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/DownloadResult.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/EvictSocketPoolCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Exception.cc",
+      "line": 98,
+      "message": "Syntax Error: AST broken, binary operator '=' doesn't have two operands.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/ExpatXmlParser.cc",
+      "line": 58,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/ExpatXmlParser.cc",
+      "line": 84,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FeedbackURISelector.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/File.cc",
+      "line": 379,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/File.cc",
+      "line": 388,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FileAllocationCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FileAllocationDispatcherCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FileAllocationEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FileEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FillRequestGroupCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 222,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 271,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 430,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 431,
+      "message": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 432,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/FtpConnection.cc",
+      "line": 504,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpFinishDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpInitiateConnectionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpNegotiationCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpTunnelRequestCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/FtpTunnelResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/GZipDecodingStreamFilter.cc",
+      "line": 97,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GZipDecodingStreamFilter.h",
+      "line": 70,
+      "message": "Virtual function 'release' is called from destructor '~GZipDecodingStreamFilter()' at line 55. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GZipEncoder.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/GZipEncoder.cc",
+      "line": 106,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/GZipFile.cc",
+      "line": 123,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/GZipFile.cc",
+      "line": 152,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/GenericParser.h",
+      "line": 108,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HandshakeExtensionMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HaveEraseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpConnection.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpHeaderProcessor.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 8_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpInitiateConnectionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpListenCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpProxyRequestCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpProxyResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpRequest.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpRequestCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpResponse.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpServer.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 16_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpServerBodyCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpServerCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/HttpServerCommand.cc",
+      "line": 129,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpServerResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/HttpSkipResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 57,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 64,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 66,
+      "message": "buffer/gets:Does not check for buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1014",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 70,
+      "message": "buffer/gets:Does not check for buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1014",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 72,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 87,
+      "message": "buffer/gets:Does not check for buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1014",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 88,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/IOFile.cc",
+      "line": 121,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.h",
+      "line": 59,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/IOFile.h",
+      "line": 64,
+      "message": "buffer/gets:Does not check for buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1014",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/IOFile.h",
+      "line": 81,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/IndexBtMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/IndexBtMessageValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/InitiateConnectionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/InitiateConnectionCommand.cc",
+      "line": 139,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/InitiateConnectionCommandFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/InitiatorMSEHandshakeCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/InorderURISelector.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/InternalARC4Encryptor.h",
+      "line": 44,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/InternalDHKeyExchange.cc",
+      "line": 72,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/InternalMessageDigestImpl.cc",
+      "line": 73,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/IteratableChecksumValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/IteratableChunkChecksumValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/JsonParser.cc",
+      "line": 330,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/JsonParser.cc",
+      "line": 633,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/JsonParser.cc",
+      "line": 668,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/KeepRunningCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibgcryptMessageDigestImpl.cc",
+      "line": 74,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase()' at line 62. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/LibgcryptMessageDigestImpl.cc",
+      "line": 89,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/LibgnutlsTLSSession.cc",
+      "line": 325,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/LibnettleMessageDigestImpl.cc",
+      "line": 48,
+      "message": "Member variable 'MessageDigestBase::len_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibnettleMessageDigestImpl.cc",
+      "line": 59,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase()' at line 50. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_sha1 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_md5 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_sha224 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_sha256 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_sha384 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LibsslMessageDigestImpl.cc",
+      "line": 76,
+      "message": "Virtual function 'reset' is called from constructor 'MessageDigestBase < EVP_sha512 >()' at line 70. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-248",
+      "filename": "/workspace/src/Lock.h",
+      "line": 58,
+      "message": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400).",
+      "rule": "FF1057",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Logger.cc",
+      "line": 128,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Logger.cc",
+      "line": 167,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LpdDispatchMessageCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LpdMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LpdMessageDispatcher.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LpdMessageReceiver.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/LpdMessageReceiver.cc",
+      "line": 87,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/LpdReceiveMessageCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 137,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 182,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 184,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 185,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 186,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 187,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 189,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 196,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 197,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 228,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 229,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 230,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 238,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 239,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 240,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 241,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 245,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 246,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 247,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 248,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 390,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 425,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 546,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.cc",
+      "line": 555,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.h",
+      "line": 85,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.h",
+      "line": 94,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.h",
+      "line": 95,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/MSEHandshake.h",
+      "line": 97,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/MSEHandshake.h",
+      "line": 137,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Metalink2RequestGroup.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MetalinkEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MetalinkParserController.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MetalinkPostDownloadHandler.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MultiDiskAdaptor.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/MultiDiskAdaptor.cc",
+      "line": 214,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/MultiDiskAdaptor.cc",
+      "line": 223,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MultiFileAllocationIterator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/MultiUrlRequestInfo.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/NameResolveCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/NetStat.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Notifier.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/NullOutputFile.h",
+      "line": 47,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/OpenedFileCounter.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/OptionHandlerException.cc",
+      "line": 62,
+      "message": "Syntax Error: AST broken, binary operator '=' doesn't have two operands.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/OptionHandlerFactory.cc",
+      "line": 1856,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/OptionHandlerFactory.cc",
+      "line": 1857,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/OptionHandlerFactory.cc",
+      "line": 1858,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/OptionHandlerImpl.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/OptionParser.cc",
+      "line": 166,
+      "message": "buffer/getopt_long:Some older implementations do not protect against internal buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1027",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/OptionParser.cc",
+      "line": 183,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/OptionParser.cc",
+      "line": 187,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/OptionParser.cc",
+      "line": 208,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/OptionParser.cc",
+      "line": 317,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/OutputFile.h",
+      "line": 53,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/OutputFile.h",
+      "line": 54,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/OutputFile.h",
+      "line": 58,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Peer.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/Peer.cc",
+      "line": 84,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Peer.h",
+      "line": 69,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerAbstractCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerAddrEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerChokeCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerConnection.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerInitiateConnectionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerInteractionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/PeerInteractionCommand.cc",
+      "line": 106,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerListenCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerReceiveHandshakeCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerSessionResource.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PeerStat.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Piece.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/PieceHashCheckIntegrityEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/PollEventPoll.cc",
+      "line": 170,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/PortEventPoll.cc",
+      "line": 80,
+      "message": "Class 'PortEventPoll' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noCopyConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/PortEventPoll.cc",
+      "line": 80,
+      "message": "Class 'PortEventPoll' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noOperatorEq",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ProtocolDetector.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ProtocolDetector.cc",
+      "line": 65,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ProtocolDetector.cc",
+      "line": 97,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RangeBtMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RangeBtMessageValidator.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RealtimeCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ReceiverMSEHandshakeCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Request.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RequestGroup.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RequestGroupEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RequestGroupMan.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RequestSlot.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RpcMethod.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RpcMethodFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/RpcMethodImpl.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/RpcMethodImpl.cc",
+      "line": 263,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SaveSessionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SeedCheckCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SegmentMan.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SelectEventPoll.cc",
+      "line": 175,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SelectEventPoll.cc",
+      "line": 176,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SelectEventPoll.cc",
+      "line": 180,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SessionSerializer.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/SessionSerializer.cc",
+      "line": 102,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SftpDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SftpFinishDownloadCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SftpNegotiationCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ShareRatioSeedCriteria.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SimpleBtMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SinkStreamFilter.cc",
+      "line": 83,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 110,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 111,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 868,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1237,
+      "message": "input/recvfrom:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1286,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1316,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1393,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1418,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1485,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1521,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1524,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1529,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1546,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1608,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1625,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1635,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1673,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1684,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/SocketCore.cc",
+      "line": 1693,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SocketRecvBuffer.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 16_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/SocketRecvBuffer.cc",
+      "line": 52,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/SocketRecvBuffer.h",
+      "line": 55,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/SpeedCalc.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Sqlite3CookieParser.cc",
+      "line": 107,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Sqlite3CookieParser.cc",
+      "line": 111,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/Sqlite3CookieParser.cc",
+      "line": 112,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/StreamCheckIntegrityEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/StreamFileAllocationEntry.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/TimeA2.cc",
+      "line": 70,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/TimeBasedCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/TimeSeedCriteria.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/TimedHaltCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/TimerA2.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/TrackerWatcherCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/TrackerWatcherCommand.cc",
+      "line": 110,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UDPTrackerClient.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/UDPTrackerClient.cc",
+      "line": 578,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/UDPTrackerClient.cc",
+      "line": 579,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/UDPTrackerClient.cc",
+      "line": 585,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UDPTrackerRequest.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTMetadataDataExtensionMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/UTMetadataDataExtensionMessage.cc",
+      "line": 92,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTMetadataPostDownloadHandler.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTMetadataRequestExtensionMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTMetadataRequestFactory.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTMetadataRequestTracker.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UTPexExtensionMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/UTPexExtensionMessage.cc",
+      "line": 104,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UnknownLengthPieceStorage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/UnknownOptionException.cc",
+      "line": 61,
+      "message": "Syntax Error: AST broken, binary operator '=' doesn't have two operands.",
+      "rule": "internalAstError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/ValueBaseStructParserStateMachine.cc",
+      "line": 63,
+      "message": "Member variable 'ValueBaseStructParserStateMachine::sessionData_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WatchProcessCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/WatchProcessCommand.cc",
+      "line": 110,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WebSocketInteractionCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WebSocketResponseCommand.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WebSocketSession.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WebSocketSessionMan.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/WinConsoleFile.cc",
+      "line": 132,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/WinConsoleFile.cc",
+      "line": 140,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/WinConsoleFile.cc",
+      "line": 142,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/WinConsoleFile.cc",
+      "line": 147,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/WinConsoleFile.h",
+      "line": 52,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WinConsoleFile.h",
+      "line": 53,
+      "message": "Virtual function 'supportsColor' is called from constructor 'WinConsoleFile(DWORD stdHandle)' at line 92. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/WinTLSContext.h",
+      "line": 87,
+      "message": "Virtual function 'setVerifyPeer' is called from constructor 'WinTLSContext(TLSSessionSide side,TLSVersion ver)' at line 107. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 444,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 453,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 483,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 485,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 488,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 491,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 502,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 570,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 598,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 661,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 672,
+      "message": "input/recv:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 674,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 677,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 680,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 691,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.cc",
+      "line": 701,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WinTLSSession.h",
+      "line": 97,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/WrDiskCacheEntry.cc",
+      "line": 115,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/XmlParser.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/XmlParser.cc",
+      "line": 66,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/XmlRpcRequestParserStateMachine.cc",
+      "line": 78,
+      "message": "Class 'XmlRpcRequestParserStateMachine' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noCopyConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/XmlRpcRequestParserStateMachine.cc",
+      "line": 78,
+      "message": "Class 'XmlRpcRequestParserStateMachine' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).",
+      "rule": "noOperatorEq",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/ZeroBtMessage.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/a2io.h",
+      "line": 157,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/a2io.h",
+      "line": 158,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/a2io.h",
+      "line": 184,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/a2io.h",
+      "line": 185,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/alloca.c",
+      "line": 149,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/alloca.c",
+      "line": 448,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/alloca.c",
+      "line": 468,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/aria2api.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-248",
+      "filename": "/workspace/src/asctime_r.c",
+      "line": 59,
+      "message": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400).",
+      "rule": "FF1057",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/asctime_r.c",
+      "line": 65,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/base32.cc",
+      "line": 58,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/base32.cc",
+      "line": 85,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/base32.h",
+      "line": 90,
+      "message": "The address of local variable 'buf' is accessed at non-zero index.",
+      "rule": "objectIndex",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/base64.h",
+      "line": 61,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-786",
+      "filename": "/workspace/src/base64.h",
+      "line": 159,
+      "message": "Array 'k[4]' accessed at index -1, which is out of bounds.",
+      "rule": "negativeIndex",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/bencode2.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bignum.h",
+      "line": 39,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bignum.h",
+      "line": 43,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bignum.h",
+      "line": 51,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bignum.h",
+      "line": 58,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bignum.h",
+      "line": 250,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 434,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 639,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 647,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 648,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 656,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 657,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 664,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 673,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 685,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 823,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 829,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 835,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 855,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/bittorrent_helper.cc",
+      "line": 864,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint32_t , 16 , 4 >::count_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint32_t , 16 , 4 >::offset_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint32_t , 16 , 5 >::count_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint32_t , 16 , 5 >::offset_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint64_t , 16 , 8 >::count_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 102,
+      "message": "Member variable 'AlgorithmImpl < uint64_t , 16 , 8 >::offset_' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 117,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 141,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 356,
+      "message": "Virtual function 'reset' is called from constructor 'MD5()' at line 311. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 356,
+      "message": "Virtual function 'reset' is called from destructor '~MD5()' at line 313. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 359,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 521,
+      "message": "Virtual function 'reset' is called from constructor 'SHA1()' at line 517. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 521,
+      "message": "Virtual function 'reset' is called from destructor '~SHA1()' at line 519. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 524,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 717,
+      "message": "Virtual function 'reset' is called from constructor 'SHA256()' at line 713. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 717,
+      "message": "Virtual function 'reset' is called from destructor '~SHA256()' at line 715. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 720,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 747,
+      "message": "Virtual function 'reset' is called from constructor 'SHA224()' at line 743. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 747,
+      "message": "Virtual function 'reset' is called from destructor '~SHA224()' at line 745. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 750,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 980,
+      "message": "Virtual function 'reset' is called from constructor 'SHA512()' at line 976. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 980,
+      "message": "Virtual function 'reset' is called from destructor '~SHA512()' at line 978. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 983,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 1012,
+      "message": "Virtual function 'reset' is called from constructor 'SHA384()' at line 1008. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 1012,
+      "message": "Virtual function 'reset' is called from destructor '~SHA384()' at line 1010. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/crypto_hash.cc",
+      "line": 1015,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/download_handlers.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/download_helper.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/fmt.cc",
+      "line": 47,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/fmt.cc",
+      "line": 49,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 126,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 126,
+      "message": "buffer/bcopy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 368,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 481,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 491,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 493,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 493,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 549,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 553,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 553,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 560,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 572,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 576,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 576,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 584,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 588,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/getaddrinfo.c",
+      "line": 588,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/json.cc",
+      "line": 74,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/libgen.c",
+      "line": 54,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/libgen.c",
+      "line": 72,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-248",
+      "filename": "/workspace/src/localtime_r.c",
+      "line": 59,
+      "message": "misc/InitializeCriticalSection:Exceptions can be thrown in low-memory situations (CWE-248, CWE-400).",
+      "rule": "FF1057",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/localtime_r.c",
+      "line": 65,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/main.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/message_digest_helper.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/metalink_helper.cc",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 4_k",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 79,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 102,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 103,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 136,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/option_processing.cc",
+      "line": 145,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/rpc_helper.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/strptime.c",
+      "line": 100,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/strptime.c",
+      "line": 405,
+      "message": "Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead.",
+      "rule": "allocaCalled",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/strptime.c",
+      "line": 406,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/strptime.c",
+      "line": 406,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/util.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/util.cc",
+      "line": 103,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/util.cc",
+      "line": 1748,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/util.cc",
+      "line": 1790,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/util.cc",
+      "line": 1895,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/util.cc",
+      "line": 1901,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/util.cc",
+      "line": 1904,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/util.cc",
+      "line": 1938,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/util.cc",
+      "line": 1970,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/util.cc",
+      "line": 2000,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/util.cc",
+      "line": 2001,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/util.cc",
+      "line": 2132,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/util.cc",
+      "line": 2208,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/util.cc",
+      "line": 2243,
+      "message": "shell/execlp:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/util.cc",
+      "line": 2269,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.cc",
+      "line": 2450,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.cc",
+      "line": 2460,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/src/util.h",
+      "line": 388,
+      "message": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676).",
+      "rule": "FF1069",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.h",
+      "line": 522,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.h",
+      "line": 579,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.h",
+      "line": 645,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/util.h",
+      "line": 694,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/util_security.cc",
+      "line": 169,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/wallclock.cc",
+      "line": 0,
+      "message": "Invalid value: 0_s",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/BufferedFile.cc",
+      "line": 69,
+      "message": "Call to fread with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "src/ConsoleStatCalc.cc",
+      "line": 253,
+      "message": "Call to 'localtime' is potentially dangerous.",
+      "rule": "cpp/potentially-dangerous-function",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 325,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 334,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 334,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 343,
+      "message": "[string read by fread](1) flows an expression which might overflow negatively.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 343,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an underflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 388,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 388,
+      "message": "Call to BitfieldMan with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 388,
+      "message": "Call to BitfieldMan with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 389,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 389,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/DefaultBtProgressInfoFile.cc",
+      "line": 398,
+      "message": "Call to BitfieldMan with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/GenericParser.h",
+      "line": 64,
+      "message": "Call to parseUpdate with untrusted data from [call to read](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/IOFile.cc",
+      "line": 57,
+      "message": "Call to onRead with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-191",
+      "filename": "src/LongestSequencePieceSelector.cc",
+      "line": 84,
+      "message": "Unsigned subtraction can never be negative.",
+      "rule": "cpp/unsigned-difference-expression-compared-zero",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/OptionParser.cc",
+      "line": 251,
+      "message": "Call to parse with untrusted data from [string read by fgets](1).\nCall to parse with untrusted data from [string read by fread](2).\nCall to parse with untrusted data from [string read by fgets](1).\nCall to parse with untrusted data from [string read by fread](2).\nCall to parse with untrusted data from [string read by fgets](1).\nCall to parse with untrusted data from [string read by fread](2).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/Piece.cc",
+      "line": 187,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "src/Piece.cc",
+      "line": 187,
+      "message": "Call to setBitfield with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "src/TimeA2.cc",
+      "line": 72,
+      "message": "Call to 'gmtime' is potentially dangerous.",
+      "rule": "cpp/potentially-dangerous-function",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/util.cc",
+      "line": 478,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/util.cc",
+      "line": 478,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/util.cc",
+      "line": 481,
+      "message": "[string read by fread](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/util.cc",
+      "line": 481,
+      "message": "[string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 647,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 24,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 297,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 321,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 5,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aria2/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

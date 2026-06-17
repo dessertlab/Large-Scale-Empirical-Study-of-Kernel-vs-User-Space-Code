@@ -1,0 +1,77 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "dll/3rdparty/libtirpc/src/getnetpath.c",
+        "line": 107,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "dll/3rdparty/libtirpc/src/getnetpath.c",
+        "line": 107,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "dll/3rdparty/libtirpc/src/getnetpath.c",
+        "line": 107,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "three_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-476",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "dll/win32/msvcrt/environ.c",
+        "line": 286,
+        "cwe": "CWE-476",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "dll/win32/msvcrt/environ.c",
+        "line": 286,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "dll/win32/msvcrt/environ.c",
+        "line": 286,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  }
+]

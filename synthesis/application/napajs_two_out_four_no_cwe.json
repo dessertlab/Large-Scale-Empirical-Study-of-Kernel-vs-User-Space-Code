@@ -1,0 +1,66 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "src/module/core-modules/node/file-system-helpers.cpp",
+        "line": 49,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "src/module/core-modules/node/file-system-helpers.cpp",
+        "line": 49,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "src/module/core-modules/node/file-system-helpers.cpp",
+        "line": 49,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "src/module/core-modules/node/file-system-helpers.cpp",
+        "line": 63,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "src/module/core-modules/node/file-system-helpers.cpp",
+        "line": 63,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

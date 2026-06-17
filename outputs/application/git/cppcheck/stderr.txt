@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!msg&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!msg&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/builtin/am.c">
+            <location file="/workspace/builtin/am.c" line="1390" column="27" info="Null pointer addition"/>
+            <location file="/workspace/builtin/am.c" line="1388" column="6" info="Assuming that condition &apos;!msg&apos; is not redundant"/>
+        </error>
+        <error id="resourceLeak" severity="error" msg="Resource leak: fp" verbose="Resource leak: fp" cwe="775" file0="/workspace/builtin/bisect.c">
+            <location file="/workspace/builtin/bisect.c" line="632" column="3"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!branch&apos; is redundant or there is possible null pointer dereference: branch." verbose="Either the condition &apos;!branch&apos; is redundant or there is possible null pointer dereference: branch." cwe="476" file0="/workspace/builtin/branch.c">
+            <location file="/workspace/builtin/branch.c" line="957" column="60" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/branch.c" line="949" column="7" info="Assuming that condition &apos;!branch&apos; is not redundant"/>
+            <symbol>branch</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/builtin/checkout.c">
+            <location file="/workspace/builtin/checkout.c" line="1490" column="3"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!tree&apos; is redundant or there is possible null pointer dereference: tree." verbose="Either the condition &apos;!tree&apos; is redundant or there is possible null pointer dereference: tree." cwe="476" file0="/workspace/builtin/checkout.c">
+            <location file="/workspace/builtin/checkout.c" line="856" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/checkout.c" line="851" column="7" info="Assuming that condition &apos;!tree&apos; is not redundant"/>
+            <symbol>tree</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/describe.c">
+            <location file="/workspace/builtin/describe.c" line="717" column="4"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!author&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!author&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/builtin/fast-export.c">
+            <location file="/workspace/builtin/fast-export.c" line="705" column="8" info="Null pointer addition"/>
+            <location file="/workspace/builtin/fast-export.c" line="702" column="6" info="Assuming that condition &apos;!author&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!committer&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!committer&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/builtin/fast-export.c">
+            <location file="/workspace/builtin/fast-export.c" line="712" column="11" info="Null pointer addition"/>
+            <location file="/workspace/builtin/fast-export.c" line="709" column="6" info="Assuming that condition &apos;!committer&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!c&apos; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &apos;!c&apos; is redundant or there is possible null pointer dereference: c." cwe="476" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="1307" column="31" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/fast-import.c" line="1304" column="7" info="Assuming that condition &apos;!c&apos; is not redundant"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!buf&apos; is redundant or there is possible null pointer dereference: buf." verbose="Either the condition &apos;!buf&apos; is redundant or there is possible null pointer dereference: buf." cwe="476" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="2611" column="22" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/fast-import.c" line="2609" column="6" info="Assuming that condition &apos;!buf&apos; is not redundant"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." verbose="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." cwe="476" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="3719" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/fast-import.c" line="3717" column="6" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!buf&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!buf&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="1295" column="19" info="Null pointer addition"/>
+            <location file="/workspace/builtin/fast-import.c" line="1285" column="7" info="Assuming that condition &apos;!buf&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!f&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="3720" column="3" info="Null pointer addition"/>
+            <location file="/workspace/builtin/fast-import.c" line="3717" column="6" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+        </error>
+        <error id="va_end_missing" severity="error" msg="va_list &apos;cp&apos; was opened but not closed by va_end()." verbose="va_list &apos;cp&apos; was opened but not closed by va_end()." cwe="664" file0="/workspace/builtin/fast-import.c">
+            <location file="/workspace/builtin/fast-import.c" line="446" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/fetch.c">
+            <location file="/workspace/builtin/fetch.c" line="1615" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." file0="/workspace/builtin/fsmonitor--daemon.c">
+            <location file="/workspace/builtin/fsmonitor--daemon.c" line="1427" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/help.c">
+            <location file="/workspace/builtin/help.c" line="223" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." file0="/workspace/builtin/last-modified.c">
+            <location file="/workspace/builtin/last-modified.c" line="91" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/log.c">
+            <location file="/workspace/builtin/log.c" line="232" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/merge.c">
+            <location file="/workspace/builtin/merge.c" line="880" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/name-rev.c">
+            <location file="/workspace/builtin/name-rev.c" line="877" column="3"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;value&apos; is freed twice." verbose="Memory pointed to by &apos;value&apos; is freed twice." cwe="415" file0="/workspace/builtin/notes.c">
+            <location file="/workspace/builtin/notes.c" line="333" column="2"/>
+            <location file="/workspace/builtin/notes.c" line="327" column="3"/>
+            <symbol>value</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: partial" verbose="Uninitialized variable: partial" cwe="457" file0="/workspace/builtin/notes.c">
+            <location file="/workspace/builtin/notes.c" line="839" column="6"/>
+            <location file="/workspace/builtin/notes.c" line="832" column="18" info="Assuming condition is true"/>
+            <symbol>partial</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If repo_for_each_pack is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If repo_for_each_pack is a macro then please configure it." file0="/workspace/builtin/pack-objects.c">
+            <location file="/workspace/builtin/pack-objects.c" line="4265" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If repo_for_each_pack is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If repo_for_each_pack is a macro then please configure it." file0="/workspace/builtin/pack-redundant.c">
+            <location file="/workspace/builtin/pack-redundant.c" line="586" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/remote.c">
+            <location file="/workspace/builtin/remote.c" line="1642" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/repack.c">
+            <location file="/workspace/builtin/repack.c" line="570" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/repo.c">
+            <location file="/workspace/builtin/repo.c" line="596" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/builtin/rev-list.c">
+            <location file="/workspace/builtin/rev-list.c" line="584" column="2"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!gitdir&apos; is redundant or there is possible null pointer dereference: gitdir." verbose="Either the condition &apos;!gitdir&apos; is redundant or there is possible null pointer dereference: gitdir." cwe="476" file0="/workspace/builtin/rev-parse.c">
+            <location file="/workspace/builtin/rev-parse.c" line="771" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/rev-parse.c" line="769" column="9" info="Assuming that condition &apos;!gitdir&apos; is not redundant"/>
+            <symbol>gitdir</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!arg&apos; is redundant or there is possible null pointer dereference: arg." verbose="Either the condition &apos;!arg&apos; is redundant or there is possible null pointer dereference: arg." cwe="476" file0="/workspace/builtin/rev-parse.c">
+            <location file="/workspace/builtin/rev-parse.c" line="823" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/rev-parse.c" line="821" column="9" info="Assuming that condition &apos;!arg&apos; is not redundant"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!arg&apos; is redundant or there is possible null pointer dereference: arg." verbose="Either the condition &apos;!arg&apos; is redundant or there is possible null pointer dereference: arg." cwe="476" file0="/workspace/builtin/rev-parse.c">
+            <location file="/workspace/builtin/rev-parse.c" line="875" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/rev-parse.c" line="873" column="9" info="Assuming that condition &apos;!arg&apos; is not redundant"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/builtin/submodule--helper.c">
+            <location file="/workspace/builtin/submodule--helper.c" line="1938" column="4"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!obj_buf&apos; is redundant or there is possible null pointer dereference: obj_buf." verbose="Either the condition &apos;!obj_buf&apos; is redundant or there is possible null pointer dereference: obj_buf." cwe="476" file0="/workspace/builtin/unpack-objects.c">
+            <location file="/workspace/builtin/unpack-objects.c" line="245" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/unpack-objects.c" line="243" column="6" info="Assuming that condition &apos;!obj_buf&apos; is not redundant"/>
+            <symbol>obj_buf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!obj&apos; is redundant or there is possible null pointer dereference: obj." verbose="Either the condition &apos;!obj&apos; is redundant or there is possible null pointer dereference: obj." cwe="476" file0="/workspace/builtin/unpack-objects.c">
+            <location file="/workspace/builtin/unpack-objects.c" line="307" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/unpack-objects.c" line="304" column="7" info="Assuming that condition &apos;!obj&apos; is not redundant"/>
+            <symbol>obj</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!blob&apos; is redundant or there is possible null pointer dereference: blob." verbose="Either the condition &apos;!blob&apos; is redundant or there is possible null pointer dereference: blob." cwe="476" file0="/workspace/builtin/unpack-objects.c">
+            <location file="/workspace/builtin/unpack-objects.c" line="413" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/builtin/unpack-objects.c" line="411" column="7" info="Assuming that condition &apos;!blob&apos; is not redundant"/>
+            <symbol>blob</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: re-&gt;whence" verbose="Uninitialized variable: re-&gt;whence" cwe="457" file0="/workspace/compat/fsmonitor/fsm-listen-linux.c">
+            <location file="/workspace/compat/fsmonitor/fsm-listen-linux.c" line="179" column="11"/>
+            <symbol>re-&gt;whence</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: w.ent, w.wd, w.cookie, w.dir" verbose="Uninitialized variables: w.ent, w.wd, w.cookie, w.dir" cwe="457" file0="/workspace/compat/fsmonitor/fsm-listen-linux.c">
+            <location file="/workspace/compat/fsmonitor/fsm-listen-linux.c" line="468" column="31"/>
+            <location file="/workspace/compat/fsmonitor/fsm-listen-linux.c" line="455" column="13" info="Assuming condition is false"/>
+            <symbol>w</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/compat/mingw.c">
+            <location file="/workspace/compat/mingw.c" line="3221" column="4"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;(len=xutftowcs_path(wtarget,target))&lt;0&apos; is redundant or the array &apos;wtarget[0]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;(len=xutftowcs_path(wtarget,target))&lt;0&apos; is redundant or the array &apos;wtarget[0]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/compat/mingw.c">
+            <location file="/workspace/compat/mingw.c" line="2917" column="14" info="Negative array index"/>
+            <location file="/workspace/compat/mingw.c" line="2916" column="9" info="len is decremented&apos;, new value is -1"/>
+            <location file="/workspace/compat/mingw.c" line="2911" column="46" info="Assuming that condition &apos;(len=xutftowcs_path(wtarget,target))&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/compat/mingw.c">
+            <location file="/workspace/compat/mingw.c" line="1165" column="27"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: status" verbose="Uninitialized variable: status" cwe="457" file0="/workspace/compat/mingw.c">
+            <location file="/workspace/compat/mingw.c" line="3727" column="67"/>
+            <symbol>status</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If gettext_noop is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If gettext_noop is a macro then please configure it." file0="/workspace/compat/regex/regcomp.c">
+            <location file="/workspace/compat/regex/regcomp.c" line="144" column="5"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/compat/regex/regex.c">
+            <location file="/workspace/compat/regex/regexec.c" line="1428" column="37"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/compat/regex/regex.c">
+            <location file="/workspace/compat/regex/regexec.c" line="3338" column="42"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/compat/regex/regex.c">
+            <location file="/workspace/compat/regex/regexec.c" line="3385" column="7"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/compat/regex/regex.c">
+            <location file="/workspace/compat/regex/regex_internal.h" line="697" column="23"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/reftable/blocksource.c">
+            <location file="/workspace/reftable/blocksource.c" line="18" column="40" info="Null pointer dereference"/>
+            <location file="/workspace/reftable/blocksource.c" line="19" column="6" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: new_tables" verbose="Possible null pointer dereference: new_tables" cwe="476" file0="/workspace/reftable/stack.c">
+            <location file="/workspace/reftable/stack.c" line="360" column="25" info="Null pointer dereference"/>
+            <location file="/workspace/reftable/stack.c" line="347" column="15" info="Assignment &apos;new_tables=NULL&apos;, assigned value is 0"/>
+            <symbol>new_tables</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="No header in #include" verbose="No header in #include">
+            <location file="/workspace/sha1dc/ubc_check.c" line="31" column="0"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="No header in #include" verbose="No header in #include">
+            <location file="/workspace/sha1dc/ubc_check.c" line="371" column="0"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="No header in #include" verbose="No header in #include">
+            <location file="/workspace/sha1dc/ubc_check.h" line="49" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/t/helper/test-example-tap.c">
+            <location file="/workspace/t/helper/test-example-tap.c" line="20" column="21"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If hashmap_for_each_entry is a macro then please configure it." file0="/workspace/t/helper/test-lazy-init-name-hash.c">
+            <location file="/workspace/t/helper/test-lazy-init-name-hash.c" line="51" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/t/helper/test-proc-receive.c">
+            <location file="/workspace/t/helper/test-proc-receive.c" line="183" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/t/helper/test-rot13-filter.c">
+            <location file="/workspace/t/helper/test-rot13-filter.c" line="178" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If for_each_string_list_item is a macro then please configure it." file0="/workspace/t/helper/test-string-list.c">
+            <location file="/workspace/t/helper/test-string-list.c" line="24" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="/workspace/t/t4051/appended1.c">
+            <location file="/workspace/t/t4051/appended1.c" line="3" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;}&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;}&apos;. Configuration: &apos;&apos;." file0="/workspace/t/t4051/appended2.c">
+            <location file="/workspace/t/t4051/appended2.c" line="35" column="1"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args_copy&apos; used before va_start() was called." verbose="va_list &apos;args_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/t/unit-tests/clar/clar.c">
+            <location file="/workspace/t/unit-tests/clar/clar.c" line="744" column="3"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args_copy&apos; used before va_start() was called." verbose="va_list &apos;args_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/t/unit-tests/clar/clar.c">
+            <location file="/workspace/t/unit-tests/clar/clar.c" line="745" column="48"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args_copy&apos; used before va_start() was called." verbose="va_list &apos;args_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/t/unit-tests/clar/clar.c">
+            <location file="/workspace/t/unit-tests/clar/clar.c" line="747" column="3"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tm" verbose="Uninitialized variable: &amp;tm" cwe="457" file0="/workspace/t/unit-tests/clar/clar.c">
+            <location file="/workspace/t/unit-tests/clar/clar/summary.h" line="29" column="2"/>
+            <symbol>&amp;tm</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="No header in #include" verbose="No header in #include">
+            <location file="/workspace/t/unit-tests/unit-test.h" line="8" column="0"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variables: entry.padding, entry.ent" verbose="Uninitialized variables: entry.padding, entry.ent" cwe="457" file0="/workspace/t/unit-tests/u-hashmap.c">
+            <location file="/workspace/t/unit-tests/u-hashmap.c" line="231" column="9"/>
+            <location file="/workspace/t/unit-tests/u-hashmap.c" line="222" column="23" info="Assuming condition is false"/>
+            <symbol>entry</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: actual_size" verbose="Uninitialized variable: actual_size" cwe="457" file0="/workspace/t/unit-tests/u-odb-inmemory.c">
+            <location file="/workspace/t/unit-tests/u-odb-inmemory.c" line="32" column="2"/>
+            <symbol>actual_size</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: actual_type" verbose="Uninitialized variable: actual_type" cwe="457" file0="/workspace/t/unit-tests/u-odb-inmemory.c">
+            <location file="/workspace/t/unit-tests/u-odb-inmemory.c" line="33" column="2"/>
+            <symbol>actual_type</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: actual_content" verbose="Uninitialized variable: actual_content" cwe="457" file0="/workspace/t/unit-tests/u-odb-inmemory.c">
+            <location file="/workspace/t/unit-tests/u-odb-inmemory.c" line="34" column="2"/>
+            <symbol>actual_content</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;parent_names&apos; is redundant or there is possible null pointer dereference: parent_names++." verbose="Either the condition &apos;parent_names&apos; is redundant or there is possible null pointer dereference: parent_names++." cwe="476" file0="/workspace/trace2/tr2_tgt_normal.c">
+            <location file="/workspace/trace2/tr2_tgt_normal.c" line="175" column="37" info="Null pointer dereference"/>
+            <location file="/workspace/trace2/tr2_tgt_normal.c" line="178" column="7" info="Assuming that condition &apos;parent_names&apos; is not redundant"/>
+            <symbol>parent_names++</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;parent_names&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;parent_names&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/trace2/tr2_tgt_normal.c">
+            <location file="/workspace/trace2/tr2_tgt_normal.c" line="175" column="37" info="Null pointer addition"/>
+            <location file="/workspace/trace2/tr2_tgt_normal.c" line="178" column="7" info="Assuming that condition &apos;parent_names&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: current_head" verbose="Null pointer dereference: current_head" cwe="476">
+            <location file="/workspace/builtin/commit.c" line="594" column="12" info="Dereferencing argument current_head that is null"/>
+            <location file="/workspace/builtin/commit.c" line="1082" column="17" info="Calling function is_a_merge, 1st argument is null"/>
+            <location file="/workspace/builtin/commit.c" line="1842" column="24" info="Calling function prepare_to_commit, 3rd argument is null"/>
+            <location file="/workspace/builtin/commit.c" line="1851" column="6" info="Assuming that condition &apos;!current_head&apos; is not redundant"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument revs that points at uninitialized variable revs" verbose="Using argument revs that points at uninitialized variable revs" cwe="457">
+            <location file="/workspace/builtin/bisect.c" line="577" column="36" info="Using argument revs"/>
+            <location file="/workspace/builtin/bisect.c" line="622" column="20" info="Calling function prepare_revs, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

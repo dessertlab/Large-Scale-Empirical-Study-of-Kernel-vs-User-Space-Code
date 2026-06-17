@@ -1,0 +1,28 @@
+[project]
+name = "static-analysis"
+version = "0.1.0"
+description = "Container-orchestrated C/C++ static analysis pipeline."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.0",
+    "scipy>=1.17.1",
+]
+
+[project.scripts]
+static-analysis = "static_analysis.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+include = ["static_analysis*"]

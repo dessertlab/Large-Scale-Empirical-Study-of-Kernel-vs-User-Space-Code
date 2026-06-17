@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!doc&apos; is redundant or there is possible null pointer dereference: doc." verbose="Either the condition &apos;!doc&apos; is redundant or there is possible null pointer dereference: doc." cwe="476" file0="/workspace/src/app/commands/cmd_fill_and_stroke.cpp">
+            <location file="/workspace/src/app/commands/cmd_fill_and_stroke.cpp" line="67" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/commands/cmd_fill_and_stroke.cpp" line="68" column="7" info="Assuming that condition &apos;!doc&apos; is not redundant"/>
+            <symbol>doc</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoFrameCommand::m_frame&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoFrameCommand::m_frame&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/commands/cmd_goto_frame.cpp">
+            <location file="/workspace/src/app/commands/cmd_goto_frame.cpp" line="153" column="3"/>
+            <symbol>GotoFrameCommand::m_frame</symbol>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;bg&lt;=3&apos; is redundant or the array &apos;bg_table[3]&apos; is accessed at index 3, which is out of bounds." verbose="Either the condition &apos;bg&lt;=3&apos; is redundant or the array &apos;bg_table[3]&apos; is accessed at index 3, which is out of bounds." cwe="788" file0="/workspace/src/app/commands/cmd_new_file.cpp">
+            <location file="/workspace/src/app/commands/cmd_new_file.cpp" line="183" column="25" info="Array index out of bounds"/>
+            <location file="/workspace/src/app/commands/cmd_new_file.cpp" line="182" column="23" info="Assuming that condition &apos;bg&lt;=3&apos; is not redundant"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NewFrameCommand::m_content&apos; is not initialized in the constructor." verbose="Member variable &apos;NewFrameCommand::m_content&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/commands/cmd_new_frame.cpp">
+            <location file="/workspace/src/app/commands/cmd_new_frame.cpp" line="50" column="18"/>
+            <symbol>NewFrameCommand::m_content</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NewLayerCommand::m_type&apos; is not initialized in the constructor." verbose="Member variable &apos;NewLayerCommand::m_type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/commands/cmd_new_layer.cpp">
+            <location file="/workspace/src/app/commands/cmd_new_layer.cpp" line="101" column="18"/>
+            <symbol>NewLayerCommand::m_type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NewLayerCommand::m_place&apos; is not initialized in the constructor." verbose="Member variable &apos;NewLayerCommand::m_place&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/commands/cmd_new_layer.cpp">
+            <location file="/workspace/src/app/commands/cmd_new_layer.cpp" line="101" column="18"/>
+            <symbol>NewLayerCommand::m_place</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ActionsList::m_itemHeight&apos; is not initialized in the constructor." verbose="Member variable &apos;ActionsList::m_itemHeight&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/commands/cmd_undo_history.cpp">
+            <location file="/workspace/src/app/commands/cmd_undo_history.cpp" line="53" column="5"/>
+            <symbol>ActionsList::m_itemHeight</symbol>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;m_sprite&apos; will use pointer to local variable &apos;spr&apos;." verbose="Non-local variable &apos;m_sprite&apos; will use pointer to local variable &apos;spr&apos;." cwe="562" file0="/workspace/src/app/crash/read_document.cpp">
+            <location file="/workspace/src/app/crash/read_document.cpp" line="260" column="5"/>
+            <location file="/workspace/src/app/crash/read_document.cpp" line="259" column="29" info="Variable created here."/>
+            <location file="/workspace/src/app/crash/read_document.cpp" line="260" column="23" info="Raw pointer to smart pointer created here."/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: win_infoheader.biClrUsed" verbose="Uninitialized struct member: win_infoheader.biClrUsed" cwe="457" file0="/workspace/src/app/file/bmp_format.cpp">
+            <location file="/workspace/src/app/file/bmp_format.cpp" line="306" column="27"/>
+            <symbol>win_infoheader.biClrUsed</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;m_doc&apos; is redundant or there is possible null pointer dereference: m_doc." verbose="Either the condition &apos;m_doc&apos; is redundant or there is possible null pointer dereference: m_doc." cwe="476" file0="/workspace/src/app/file/file.cpp">
+            <location file="/workspace/src/app/file/file.cpp" line="62" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/file.cpp" line="67" column="12" info="Assuming that condition &apos;m_doc&apos; is not redundant"/>
+            <symbol>m_doc</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;m_sprite&apos; is redundant or there is possible null pointer dereference: m_sprite." verbose="Either the condition &apos;m_sprite&apos; is redundant or there is possible null pointer dereference: m_sprite." cwe="476" file0="/workspace/src/app/file/file.cpp">
+            <location file="/workspace/src/app/file/file.cpp" line="63" column="14" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/file.cpp" line="67" column="21" info="Assuming that condition &apos;m_sprite&apos; is not redundant"/>
+            <symbol>m_sprite</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DRM_INVALID is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DRM_INVALID is a macro then please configure it." file0="/workspace/src/app/file/file_format.cpp">
+            <location file="/workspace/src/app/file/file_format.cpp" line="52" column="3"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GifDecoder::m_layer&apos; is not initialized in the constructor." verbose="Member variable &apos;GifDecoder::m_layer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="190" column="3"/>
+            <symbol>GifDecoder::m_layer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." verbose="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." cwe="476" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="485" column="19" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/gif_format.cpp" line="592" column="68" info="Assuming that condition &apos;colormap&apos; is not redundant"/>
+            <symbol>colormap</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." verbose="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." cwe="476" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="601" column="41" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/gif_format.cpp" line="592" column="68" info="Assuming that condition &apos;colormap&apos; is not redundant"/>
+            <symbol>colormap</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." verbose="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." cwe="476" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="602" column="41" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/gif_format.cpp" line="592" column="68" info="Assuming that condition &apos;colormap&apos; is not redundant"/>
+            <symbol>colormap</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." verbose="Either the condition &apos;colormap&apos; is redundant or there is possible null pointer dereference: colormap." cwe="476" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="603" column="41" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/file/gif_format.cpp" line="592" column="68" info="Assuming that condition &apos;colormap&apos; is not redundant"/>
+            <symbol>colormap</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GifEncoder::m_previousImage&apos; is not initialized in the constructor." verbose="Member variable &apos;GifEncoder::m_previousImage&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="933" column="3"/>
+            <symbol>GifEncoder::m_previousImage</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GifEncoder::m_currentImage&apos; is not initialized in the constructor." verbose="Member variable &apos;GifEncoder::m_currentImage&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="933" column="3"/>
+            <symbol>GifEncoder::m_currentImage</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GifEncoder::m_nextImage&apos; is not initialized in the constructor." verbose="Member variable &apos;GifEncoder::m_nextImage&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/file/gif_format.cpp">
+            <location file="/workspace/src/app/file/gif_format.cpp" line="933" column="3"/>
+            <symbol>GifEncoder::m_nextImage</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476" file0="/workspace/src/app/modules/gui.cpp">
+            <location file="/workspace/src/app/modules/gui.cpp" line="587" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/modules/gui.cpp" line="586" column="14" info="Assignment &apos;p=nullptr&apos;, assigned value is 0"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." verbose="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." cwe="476" file0="/workspace/src/app/script/editor_class.cpp">
+            <location file="/workspace/src/app/script/editor_class.cpp" line="140" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/script/editor_class.cpp" line="142" column="9" info="Assuming that condition &apos;m_askPoint&apos; is not redundant"/>
+            <symbol>m_askPoint</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." verbose="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." cwe="476" file0="/workspace/src/app/script/editor_class.cpp">
+            <location file="/workspace/src/app/script/editor_class.cpp" line="155" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/script/editor_class.cpp" line="157" column="9" info="Assuming that condition &apos;m_askPoint&apos; is not redundant"/>
+            <symbol>m_askPoint</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." verbose="Either the condition &apos;m_askPoint&apos; is redundant or there is possible null pointer dereference: m_askPoint." cwe="476" file0="/workspace/src/app/script/editor_class.cpp">
+            <location file="/workspace/src/app/script/editor_class.cpp" line="171" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/script/editor_class.cpp" line="173" column="9" info="Assuming that condition &apos;m_askPoint&apos; is not redundant"/>
+            <symbol>m_askPoint</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Painter::m_colorSelector&apos; is not initialized in the constructor." verbose="Member variable &apos;Painter::m_colorSelector&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/ui/color_selector.cpp">
+            <location file="/workspace/src/app/ui/color_selector.cpp" line="76" column="3"/>
+            <symbol>Painter::m_colorSelector</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Painter::m_manager&apos; is not initialized in the constructor." verbose="Member variable &apos;Painter::m_manager&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/ui/color_selector.cpp">
+            <location file="/workspace/src/app/ui/color_selector.cpp" line="76" column="3"/>
+            <symbol>Painter::m_manager</symbol>
+        </error>
+        <error id="invalidContainerLoop" severity="error" msg="Calling &apos;erase&apos; while iterating the container is invalid." verbose="Calling &apos;erase&apos; while iterating the container is invalid." cwe="664" file0="/workspace/src/app/ui/context_bar.cpp">
+            <location file="/workspace/src/app/ui/context_bar.cpp" line="719" column="20"/>
+            <location file="/workspace/src/app/ui/context_bar.cpp" line="709" column="7" info="Iterating container here."/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;widgetDock&apos; is redundant or there is possible null pointer dereference: widgetDock." verbose="Either the condition &apos;widgetDock&apos; is redundant or there is possible null pointer dereference: widgetDock." cwe="476" file0="/workspace/src/app/ui/dock.cpp">
+            <location file="/workspace/src/app/ui/dock.cpp" line="600" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/ui/dock.cpp" line="602" column="36" info="Assuming that condition &apos;widgetDock&apos; is not redundant"/>
+            <symbol>widgetDock</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ThresholdSlider::capture&apos; is not initialized in the constructor." verbose="Member variable &apos;ThresholdSlider::capture&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/ui/dynamics_popup.cpp">
+            <location file="/workspace/src/app/ui/dynamics_popup.cpp" line="57" column="3"/>
+            <symbol>ThresholdSlider::capture</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;tool&apos; is redundant or there is possible null pointer dereference: tool." verbose="Either the condition &apos;tool&apos; is redundant or there is possible null pointer dereference: tool." cwe="476" file0="/workspace/src/app/ui/editor/brush_preview.cpp">
+            <location file="/workspace/src/app/ui/editor/brush_preview.cpp" line="176" column="28" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/ui/editor/brush_preview.cpp" line="207" column="7" info="Assuming that condition &apos;tool&apos; is not redundant"/>
+            <symbol>tool</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;layer&apos; is redundant or there is possible null pointer dereference: layer." verbose="Either the condition &apos;layer&apos; is redundant or there is possible null pointer dereference: layer." cwe="476" file0="/workspace/src/app/ui/editor/moving_slice_state.cpp">
+            <location file="/workspace/src/app/ui/editor/moving_slice_state.cpp" line="120" column="42" info="Null pointer dereference"/>
+            <location file="/workspace/src/app/ui/editor/moving_slice_state.cpp" line="116" column="11" info="Assuming that condition &apos;layer&apos; is not redundant"/>
+            <symbol>layer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PaintToolLoopBase::m_mask&apos; is not initialized in the constructor." verbose="Member variable &apos;PaintToolLoopBase::m_mask&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/ui/editor/tool_loop_impl.cpp">
+            <location file="/workspace/src/app/ui/editor/tool_loop_impl.cpp" line="469" column="3"/>
+            <symbol>PaintToolLoopBase::m_mask</symbol>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;font&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;font&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/app/ui/skin/skin_theme.cpp">
+            <location file="/workspace/src/app/ui/skin/skin_theme.cpp" line="358" column="10"/>
+            <location file="/workspace/src/app/ui/skin/skin_theme.cpp" line="230" column="29" info="Variable created here."/>
+            <location file="/workspace/src/app/ui/skin/skin_theme.cpp" line="342" column="30" info="Raw pointer to smart pointer created here."/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DrawEntryTextDelegate::m_charStartX&apos; is not initialized in the constructor." verbose="Member variable &apos;DrawEntryTextDelegate::m_charStartX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/app/ui/skin/skin_theme.cpp">
+            <location file="/workspace/src/app/ui/skin/skin_theme.cpp" line="1395" column="3"/>
+            <symbol>DrawEntryTextDelegate::m_charStartX</symbol>
+        </error>
+        <error id="accessForwarded" severity="warning" msg="Access of forwarded variable &apos;pred&apos;." verbose="Access of forwarded variable &apos;pred&apos;." cwe="672" file0="/workspace/src/app/ui/timeline/timeline.cpp">
+            <location file="/workspace/src/app/ui/timeline/timeline.cpp" line="137" column="5" info="Access of forwarded variable &apos;pred&apos;."/>
+            <location file="/workspace/src/app/ui/timeline/timeline.cpp" line="135" column="44" info="Calling std::forward(pred)"/>
+            <symbol>pred</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDAPI_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDAPI_ is a macro then please configure it." file0="/workspace/src/desktop/win/dllmain.cpp">
+            <location file="/workspace/src/desktop/win/dllmain.cpp" line="47" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!mask&apos; is redundant or there is possible null pointer dereference: mask." verbose="Either the condition &apos;!mask&apos; is redundant or there is possible null pointer dereference: mask." cwe="476" file0="/workspace/src/doc/algorithm/fill_selection.cpp">
+            <location file="/workspace/src/doc/algorithm/fill_selection.cpp" line="28" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/src/doc/algorithm/fill_selection.cpp" line="29" column="7" info="Assuming that condition &apos;!mask&apos; is not redundant"/>
+            <symbol>mask</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!origMask&apos; is redundant or there is possible null pointer dereference: origMask." verbose="Either the condition &apos;!origMask&apos; is redundant or there is possible null pointer dereference: origMask." cwe="476" file0="/workspace/src/doc/algorithm/stroke_selection.cpp">
+            <location file="/workspace/src/doc/algorithm/stroke_selection.cpp" line="26" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/src/doc/algorithm/stroke_selection.cpp" line="27" column="7" info="Assuming that condition &apos;!origMask&apos; is not redundant"/>
+            <symbol>origMask</symbol>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it!=objects.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." verbose="Either the condition &apos;it!=objects.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." cwe="825" file0="/workspace/src/doc/object.cpp">
+            <location file="/workspace/src/doc/object.cpp" line="71" column="12" info="Dereference of an invalid iterator"/>
+            <location file="/workspace/src/doc/object.cpp" line="72" column="12" info="Assuming that condition &apos;it!=objects.end()&apos; is not redundant"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::r&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::r&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::r</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::g&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::g&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::g</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::b&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::b&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::b</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::a&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::a&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::a</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::index&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::index&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::index</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::div&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::div&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegate::div</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::matrixData&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::matrixData&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/convolution_matrix_filter.cpp">
+            <location file="/workspace/src/filters/convolution_matrix_filter.cpp" line="91" column="3"/>
+            <symbol>GetPixelsDelegate::matrixData</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateRgba::c&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateRgba::c&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/median_filter.cpp">
+            <location file="/workspace/src/filters/median_filter.cpp" line="34" column="3"/>
+            <symbol>GetPixelsDelegateRgba::c</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateGrayscale::c&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateGrayscale::c&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/median_filter.cpp">
+            <location file="/workspace/src/filters/median_filter.cpp" line="52" column="3"/>
+            <symbol>GetPixelsDelegateGrayscale::c</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegateIndexed::c&apos; is not initialized in the constructor." verbose="Member variable &apos;GetPixelsDelegateIndexed::c&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/filters/median_filter.cpp">
+            <location file="/workspace/src/filters/median_filter.cpp" line="70" column="3"/>
+            <symbol>GetPixelsDelegateIndexed::c</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::transparent&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::transparent&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/outline_filter.cpp">
+            <location file="/workspace/src/filters/outline_filter.cpp" line="73" column="3"/>
+            <symbol>GetPixelsDelegate::transparent</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::opaque&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::opaque&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/outline_filter.cpp">
+            <location file="/workspace/src/filters/outline_filter.cpp" line="73" column="3"/>
+            <symbol>GetPixelsDelegate::opaque</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::matrix&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::matrix&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/outline_filter.cpp">
+            <location file="/workspace/src/filters/outline_filter.cpp" line="73" column="3"/>
+            <symbol>GetPixelsDelegate::matrix</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;GetPixelsDelegate::bit&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" verbose="Member variable &apos;GetPixelsDelegate::bit&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?" cwe="398" file0="/workspace/src/filters/outline_filter.cpp">
+            <location file="/workspace/src/filters/outline_filter.cpp" line="73" column="3"/>
+            <symbol>GetPixelsDelegate::bit</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/src/fixmath/fixmath.cpp">
+            <location file="/workspace/src/fixmath/fixmath.cpp" line="213" column="19"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;menu==nullptr&apos; is redundant or there is possible null pointer dereference: menu." verbose="Either the condition &apos;menu==nullptr&apos; is redundant or there is possible null pointer dereference: menu." cwe="476" file0="/workspace/src/ui/menu.cpp">
+            <location file="/workspace/src/ui/menu.cpp" line="1072" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/src/ui/menu.cpp" line="1077" column="18" info="Assuming that condition &apos;menu==nullptr&apos; is not redundant"/>
+            <symbol>menu</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;display&apos; is redundant or there is possible null pointer dereference: display." verbose="Either the condition &apos;display&apos; is redundant or there is possible null pointer dereference: display." cwe="476" file0="/workspace/src/ui/view.cpp">
+            <location file="/workspace/src/ui/view.cpp" line="354" column="27" info="Null pointer dereference"/>
+            <location file="/workspace/src/ui/view.cpp" line="312" column="7" info="Assuming that condition &apos;display&apos; is not redundant"/>
+            <symbol>display</symbol>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument infoheader that points at uninitialized variable infoheader" verbose="Using argument infoheader that points at uninitialized variable infoheader" cwe="457">
+            <location file="/workspace/src/app/file/bmp_format.cpp" line="253" column="16" info="Using argument infoheader"/>
+            <location file="/workspace/src/app/file/bmp_format.cpp" line="955" column="30" info="Calling function read_win_bminfoheader, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

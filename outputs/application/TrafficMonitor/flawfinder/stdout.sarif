@@ -1,0 +1,4407 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1013",
+              "name": "buffer/wchar_t",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1047",
+              "name": "integer/_wtoi",
+              "shortDescription": {
+                "text": "Unless checked, the resulting number can exceed the expected range (CWE-190)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-190",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1043",
+              "name": "shell/ShellExecute",
+              "shortDescription": {
+                "text": "This causes a new program to execute and is difficult to use safely (CWE-78)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-78",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1023",
+              "name": "buffer/MultiByteToWideChar",
+              "shortDescription": {
+                "text": "Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/wcslen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1058",
+              "name": "misc/LoadLibrary",
+              "shortDescription": {
+                "text": "Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-829",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/_snprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1021",
+              "name": "buffer/sscanf",
+              "shortDescription": {
+                "text": "The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/fopen",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/fgetc",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/fread",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1017",
+              "name": "format/vfprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/PluginDemo/PluginDemo.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 5,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "    wchar_t buff[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "88ffd23966a65507872cecab999f211cf31d0fc70e74a00ae3446101e6169ce1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/PluginDemo/DataManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    wchar_t path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c324abf2dc04ee0a052f175eccf3b4faa4a5fa7e564c68edb168c7f32909861"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/PluginDemo/DataManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    wchar_t buff[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a84ddfb4ac95971a7a14e6a45579231bdda6350463b66c5e35c925cdb122e689"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/OpenHardwareMonitorApi/OpenHardwareMonitorImp.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 27,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "                int num = _wtoi(key_exist.substr(index + 1).c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0992acda8829e917a37486acb2f3a75b56e5cb8ccffbc890276c26f12db9afd5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/PluginManagerDlg.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 343,
+                  "startColumn": 9,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "        ShellExecute(NULL, _T(\"open\"), _T(\"explorer\"), plugin_dir.c_str(), NULL, SW_SHOWNORMAL);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "702608e3d4f987da2f14ac436845b557b84bb892fd7704bc0b5b6736a0a2e5ab"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 32,
+                  "endColumn": 83,
+                  "snippet": {
+                    "text": "    layout_item.x = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele, \"x\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0f17763bad1e0ffbb8ee5224b49565dff98afe82352ef6d691efe268d35c4036"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 32,
+                  "endColumn": 83,
+                  "snippet": {
+                    "text": "    layout_item.y = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele, \"y\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e1cb3237fb07891675c4b7a9af423f334bb822cc438d71e82f01f447b5a6b9b0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 36,
+                  "endColumn": 91,
+                  "snippet": {
+                    "text": "    layout_item.width = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele, \"width\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "985386569783fb97b0f4f35bd22a7e0234f4012398b9299026770a8325168f4f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 59,
+                  "endColumn": 114,
+                  "snippet": {
+                    "text": "    layout_item.align = static_cast<CSkinFile::Alignment>(atoi(CTinyXml2Helper::ElementAttribute(ele, \"align\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9165d24577e265946fbf02745e21c50da698b21987324e71f75b1c18b30d55e6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 31,
+                  "endColumn": 86,
+                  "snippet": {
+                    "text": "    layout.width = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele, \"width\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1288952e4cdde119b1ea37a1d67200aa84aa0f228ea3eb623cfef62c5587def6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 32,
+                  "endColumn": 88,
+                  "snippet": {
+                    "text": "    layout.height = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele, \"height\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "053d3b11cf05c38296621824ebe9e1805de17973e04981a5bec71b78e6a77704"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 62,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                            m_skin_info.text_color.push_back(atoi(str.c_str()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a91bf4a5226729fbe26b08bb3f2aeae4d359f2ccb149aa4e8c0bb7adae210497"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 54,
+                  "endColumn": 113,
+                  "snippet": {
+                    "text": "                        m_skin_info.font_info.size = atoi(CTinyXml2Helper::ElementAttribute(skin_item, \"size\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e9686b41b85e6b34de15bd8beeddf36c7b4738149c7910a5ca8406b34b66191a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 207,
+                  "startColumn": 42,
+                  "endColumn": 102,
+                  "snippet": {
+                    "text": "                        int font_style = atoi(CTinyXml2Helper::ElementAttribute(skin_item, \"style\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "72d52e9a6f716ee9c3d17e2d740771a7a8fa079025d90b257a7e62a4a4db2d51"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 56,
+                  "endColumn": 119,
+                  "snippet": {
+                    "text": "                m_layout_info.text_height = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(child, \"text_height\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "079498cbef4517007de6d0849892a0b44765028737d8300cbb5cebac85a38f77"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 51,
+                  "endColumn": 108,
+                  "snippet": {
+                    "text": "                m_preview_info.width = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(child, \"width\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "569638b82f8d5ba4b9a200340dddd11b06cd95128d1390d59615e6561c9dff93"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 52,
+                  "endColumn": 110,
+                  "snippet": {
+                    "text": "                m_preview_info.height = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(child, \"height\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80bea4ef42d868a5d3732ca14940c8970990c52ec1b28455f870c1561fd14a74"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 246,
+                  "startColumn": 61,
+                  "endColumn": 125,
+                  "snippet": {
+                    "text": "                        m_preview_info.l_pos.x = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele_priview_item, \"x\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d7dec72cd9df83ef9dd312dcaf46c5c4ce4e278a9b367daffcdf182f96e46c39"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 61,
+                  "endColumn": 125,
+                  "snippet": {
+                    "text": "                        m_preview_info.l_pos.y = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele_priview_item, \"y\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a4cb81f0918642155184a8cf96af7fc57f9153533da7b6fe8f926bf176a588fd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 61,
+                  "endColumn": 125,
+                  "snippet": {
+                    "text": "                        m_preview_info.s_pos.x = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele_priview_item, \"x\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9ff5a41b508eb04dc9e5547e5a5f6abd9cc6784c39151013ec85554a1c67480d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 61,
+                  "endColumn": 125,
+                  "snippet": {
+                    "text": "                        m_preview_info.s_pos.y = theApp.DPI(atoi(CTinyXml2Helper::ElementAttribute(ele_priview_item, \"y\")));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a206c17b4513dda47c446c1bb515c9f43ca743f53c9b89dfd7c9708a3606cf6a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/PluginUpdateHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 28,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "        versions.push_back(atoi(str_ver.c_str()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be03779e4ee8d3f5a6a2c9a9fed5700d4b6688fd16a6f431120449df943a72e3"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 12,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "    size = MultiByteToWideChar((utf8 ? CP_UTF8 : CP_ACP), 0, str, -1, NULL, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c394f469990f7962909e92696d592c0b5a8b485955d5b67b319633c8d22ff486"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 5,
+                  "endColumn": 83,
+                  "snippet": {
+                    "text": "    MultiByteToWideChar((utf8 ? CP_UTF8 : CP_ACP), 0, str, -1, str_unicode, size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40efad5d4160da5aebc1ce70510ff7c78c6e42dfba40e28845865c7162d744cd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 5,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "    char buff[32];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af70f891862e240ff12670ad2aa1f4c08dc5c2fa845455fdac4db44e421927a4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 441,
+                  "startColumn": 5,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "    char buff[32];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af70f891862e240ff12670ad2aa1f4c08dc5c2fa845455fdac4db44e421927a4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 471,
+                  "startColumn": 5,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    TCHAR file_path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af22e9c13164b711c7be18ed8ccff05fd9fa9c889f56362a9e5e899b4a8750a8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 488,
+                  "startColumn": 9,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        TCHAR workDirBuf[MAX_PATH]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b1ebb591031884a8d9e3ab382edf8dd175e19de398df01587f1dfaef8ef6dd0f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 513,
+                  "startColumn": 5,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    wchar_t szBuffer[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c074bc67c5adab5876ec8f3ebdf85f4df987953002dd384323ada3c4529b1d5f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 533,
+                  "startColumn": 20,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "        int nLen = wcslen(szBuffer);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a01ce78142196a4ab5b40b6e087951f01befb063e897ea1d57b94a76d1494557"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 552,
+                  "startColumn": 5,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    TCHAR pszStartUpPath[MAX_PATH]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7b75743e98586cc4d3094229c1e96c6639cfbc197edaf6dc65a90778c7fe4abd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 668,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    wchar_t path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c324abf2dc04ee0a052f175eccf3b4faa4a5fa7e564c68edb168c7f32909861"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 679,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    wchar_t buff[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2b880c0af0adef4fae9107a47a4357e598d872cdd12de2f645a8f96552c30416"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 687,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    wchar_t buff[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2b880c0af0adef4fae9107a47a4357e598d872cdd12de2f645a8f96552c30416"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 698,
+                  "startColumn": 5,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    TCHAR pszAppDataPath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "859fab70214fc20d82f20e7d107507912d8afd0ac7118084cabf8718fdfad0cb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Common.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 745,
+                  "startColumn": 5,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    TCHAR buff[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f2d9045a7934d8de3fc5cf7482d904fcadfac32b30dd6a82c3fd494ec065667"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar buff[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "967c3bdd7aaf41eccb304007e54fa58cba764fd786a0e6d6a78a9b7ab38faf4a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 19,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "\t\t\ttraffic.year = atoi(temp.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "27377da8b7d79fa0d708e26c18e971da0ca72e46c7047a23255290444bca9866"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 20,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\t\t\ttraffic.month = atoi(temp.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1188bb3a4e058cbcec5fa954d02d8a17044006759f84642ab059214b558e8071"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 18,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "\t\t\ttraffic.day = atoi(temp.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2367ed68de6ba441ca317e0d352fd61bc07c24120c485e94b9b8a8fd2858423f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/BaseDialog.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 474,
+                  "startColumn": 13,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "            TCHAR lpszClassName[AFX_MAX_CLASS_NAME + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ce9228113583c138bdf19fdfc6a2b14fe7424b5b1ef25286efcf7419f15dc72b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 510,
+                  "startColumn": 14,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "        std::memcpy(p_gpu_data, p_data, data_size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e30ff9ae5b9c928fadddd2bb20bd262adc3b764b4d1913287dd0b98702cbdc76"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 518,
+                  "startColumn": 18,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "            std::memcpy(p_to, p_from, input_pitch);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d9891a9b2e02a66004980bf27bd5742f2e501e0836d054dc751a55409b6b0b0f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1742,
+                  "startColumn": 21,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    auto length = ::wcslen(lpszString);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b45ece2af96aaf7bf79ac91fca57e1ba6bc1ee963decaa25744381a4b3223cf"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "        TCHAR szDumpFile[MAX_PATH] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "934e6c39067ad20470c53a6096008e057eb418bbc88e548bced918ab298adaf7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 13,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "            TCHAR moduleName[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e231f2fe7e4a6463436dae3f747a762e2805c56eb2f10cf1368d2aed3aa415a7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/_tcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 32,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "        for (int nIndex = (int)_tcslen(m_szDumpFilePath); nIndex >= 0; --nIndex)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b92f1fe8ec3f647160aee66c042e50c6b520bdc71e76f7d84c1a0aaa3672b6c8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/_tcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 83,
+                  "endColumn": 110,
+                  "snippet": {
+                    "text": "                ::memmove(m_szModuleFileName, m_szDumpFilePath + nIndex + 1, (int)_tcslen(m_szDumpFilePath));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "516bc1e33cf1075e10922e09db1706d01825ed3d6afb31def2b1d32e663d3161"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 5,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    wchar_t m_szDumpFilePath[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4853d2d5aadf7c8735e264c3548c6758ff2f5371164a52a503411d2d7bcd1cf1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/crashtool.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 5,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    wchar_t m_szModuleFileName[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5e071518bf188691eddbda4b19475ebafb29913dbeeb02418eddc1de552f3acc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/DllFunctions.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 21,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "        m_h_dll = ::LoadLibrary(dll_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1d5d56d1c22e8ddfd20865f93e8f5018964259c7cf56d7c617572f35176ac8b1"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/DllFunctions.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 21,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "        m_h_dll = ::LoadLibrary(dll_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1d5d56d1c22e8ddfd20865f93e8f5018964259c7cf56d7c617572f35176ac8b1"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/LinkStatic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 4,
+                  "endColumn": 84,
+                  "snippet": {
+                    "text": "\t\t\tShellExecute(NULL, _T(\"open\"), m_strURL, NULL, NULL, SW_SHOW);\t//\u00e6\u0089\u0093\u00e5\u00bc\u0080\u00e8\u00b6\u0085\u00e9\u0093\u00be\u00e6\u008e\u00a5"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "77224bdc585158135eaeaeec4ce6ff6cd9c5a671d63e4d7b0d9affad862494aa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskbarDefaultStyle.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "        wchar_t buff[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "733972c3c13813ed506cd2c95cd28af38da82ceeff6ff589e623975e52986e86"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskbarDefaultStyle.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\t\twchar_t buff[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "733972c3c13813ed506cd2c95cd28af38da82ceeff6ff589e623975e52986e86"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/HResultException.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 30,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "            auto hmodule = ::LoadLibrary(p_library_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2ffcc883188a07019722ec7facee0060050ad868580a3707ab28d871fd2634aa"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 592,
+                  "startColumn": 13,
+                  "endColumn": 105,
+                  "snippet": {
+                    "text": "            ShellExecute(NULL, _T(\"open\"), link.c_str(), NULL, NULL, SW_SHOW);      //\u00e8\u00bd\u00ac\u00e5\u0088\u00b0\u00e4\u00b8\u008b\u00e8\u00bd\u00bd\u00e9\u0093\u00be\u00e6\u008e\u00a5"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "98da9db77c41bd8e9ab3d4e654dc78bc4afceed43ea33c0d372609b54b898265"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 669,
+                  "startColumn": 9,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "        wchar_t buff[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d95b82b475fe62232752ee151cf7c32ae78e1112dbbff3ff325162d0451e7889"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 715,
+                  "startColumn": 9,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "        wchar_t buff[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d95b82b475fe62232752ee151cf7c32ae78e1112dbbff3ff325162d0451e7889"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 924,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    wchar_t path[MAX_PATH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c324abf2dc04ee0a052f175eccf3b4faa4a5fa7e564c68edb168c7f32909861"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1337,
+                  "startColumn": 5,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    ShellExecute(NULL, _T(\"open\"), help_url, NULL, NULL, SW_SHOW);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2cf837efa64b06339aeec147bae0585ee022beca92c960b104756ff7520956dd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1356,
+                  "startColumn": 5,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    ShellExecute(NULL, _T(\"open\"), url, NULL, NULL, SW_SHOW);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "803eda45d131db0977a0c8daef8b017ced56c182d32e89c62f6560f3c6f650b0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1378,
+                  "startColumn": 5,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    ShellExecute(NULL, _T(\"open\"), url, NULL, NULL, SW_SHOW);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "803eda45d131db0977a0c8daef8b017ced56c182d32e89c62f6560f3c6f650b0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskbarHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 5,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    TCHAR className[256];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "14fc59a7b5dbb94d23afab22bf15aa7835d6dd7f80b0850d678a8a6214576d86"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 309,
+                  "startColumn": 13,
+                  "endColumn": 109,
+                  "snippet": {
+                    "text": "            memcpy( newMem, _mem, sizeof(T)*_size );\t// warning: not using constructors, only works for PODs"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2b28cb03ec52b929c9ca3233101240a1ce5ff136cf1e08754947603721d2c820"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 413,
+                  "startColumn": 9,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "        printf( \"Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0cf05e236f2b24bdac1c8a45a2bc4d38f87cb7972845453dbfaeb69af6c65794"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 445,
+                  "startColumn": 9,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "        char    itemData[ITEM_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "990eafae5fdca62c721f8b1c21ddac7104779434c6e92db95242ec1137e60de9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2338,
+                  "startColumn": 55,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    inline void Write(const char* data) { Write(data, strlen(data)); }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8a80a657aaea1d3e019ebd93d62c954b3d2de88d19ae04ab3eb5f0fa4352474a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/_snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 25,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "\t#define TIXML_SNPRINTF\t_snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "052736b663ae40aa198e75620b2c5799414a760980b8515b563f513a4549f3d0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "error",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "\t#define TIXML_SSCANF\tsscanf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3e6b8f14b2b6c695725182688dc9ee5f182d734045d1596a97ac9c3328e11933"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 25,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "\t#define TIXML_SNPRINTF\tsnprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0ce599313869a06b02e18cc9ac4ad5bad2118c19a26a2211b0188841f30b35c0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 26,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "\t#define TIXML_VSNPRINTF\tvsnprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6cfd7192241aea4264e457ad29d78b45f1226150ae4712bdae5bd67ddd2c7e16"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 13,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tint len = vsnprintf( 0, 0, format, va );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cb2d3f4c94bdbea56c37f6f54efaed3362f54cc15acd72805d9f3070d1925909"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "error",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 25,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "\t#define TIXML_SSCANF   sscanf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "99c60315d3bee0df046b27312c6b2fba94781c5c8cf725b6ffa4a285f3cbde93"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 18,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    size_t len = strlen( str );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "33af06136127982954ecb1063f4961a93c20e9ded1a4a3f526571273d149224f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 201,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    memcpy( _start, str, len+1 );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "011955354c6f18f01f2670485eac3303c38c2db9841f2365e0113ab377d5afde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 21,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    size_t length = strlen( endTag );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5fc1aa4f982d30d08df22eb4daab4022a3751800b52a2ec92eaae8f301ca0230"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 325,
+                  "startColumn": 25,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "                        char buf[buflen] = { 0 };"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6567cfe0c8fd2f6281a472a09c364f751e6289becf5990be0d8a0679431b7ef3"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 337,
+                  "startColumn": 29,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "                            memcpy( q, buf, len );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0eb8277072d0b1ad05290eab8c2f7248076899f6a813151a15c122f1834bf279"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1412,
+                  "startColumn": 11,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    const char endTag[2] = { *p, 0 };"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d0638e9a2698b7cbe1910336fd3a2c47bd34774c64a931623bcc7bdd4d7ae892"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1497,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1505,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1513,
+                  "startColumn": 2,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "\tchar buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1520,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1528,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1535,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1542,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1660,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1668,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1676,
+                  "startColumn": 2,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "\tchar buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1682,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1690,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1698,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1706,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2261,
+                  "startColumn": 16,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    FILE* fp = fopen( filepath, mode );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0e965916e12c4f0376c201fbe93d0be849a9758cc6ca5661e0b969194688048f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2308,
+                  "startColumn": 10,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    if ( fgetc( fp ) == EOF && ferror( fp ) != 0 ) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f53664f7817a2a380ca9cd864d84e8ca5c733be7d6df4bce93b4a37d5fe5f69"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2344,
+                  "startColumn": 25,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "    const size_t read = fread( _charBuffer, 1, size, fp );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1e85a3fd53574c16589f20332249ff62135e8f0110047283fb0509e80f5af80b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2345,
+                  "startColumn": 10,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "    if ( read != size ) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d2dd09690c4e9321a7094e4b17c151a8dcef7c3ad41bc73fdbba6b85e70a40e4"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2396,
+                  "startColumn": 15,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "        len = strlen( p );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f73461e2a89195c23aa103d0a888856df894ad9ecc2af5e1aa792971e7e01611"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2400,
+                  "startColumn": 5,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    memcpy( _charBuffer, p, len );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d7fb366f50bf88cd20c92bca66aa52c9e880585463ca951765fbcb2f6f9e42c7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2444,
+                  "startColumn": 16,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "\t\tsize_t len = strlen(buffer);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e92686ea55386bebc720da6fbc2afafee3247fc4cb066c40017842cda812054b"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2446,
+                  "startColumn": 9,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "\t\tlen = strlen(buffer);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "05465483c6961ee2a09f4f17d757ef5d318f548226dd153de1d5119d5e4484a7"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2474,
+                  "startColumn": 5,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    printf(\"%s\\n\", ErrorStr());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0aafa2f6d8c657e3416104148e4a70a550466755d1e50da6304d1323a2be9382"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "error",
+          "message": {
+            "text": "format/vfprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2546,
+                  "startColumn": 9,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "        vfprintf( _fp, format, va );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dfba7cefbf7106bbaf56c0cd5746e7b753cd4f8755f36e987b625fdb36a71e73"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2569,
+                  "startColumn": 9,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "        memcpy( p, data, size );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7f15bf784b9de78144d799fb0e27c8714bc0fdf2485bfc07352aaf90dc866335"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2706,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2714,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2722,
+                  "startColumn": 2,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "\tchar buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2730,
+                  "startColumn": 2,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "\tchar buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2738,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2746,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2808,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2816,
+                  "startColumn": 2,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "\tchar buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2824,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2832,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2840,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2848,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2856,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char buf[BUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4298d4143cc1437dfebbefd75f1e760740ffd299e30823e8f21d7f26cf80a887"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskbarItemOrderHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 32,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "        m_item_order.push_back(_wtoi(s.c_str()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ffc75e5f0646b29f9e54ccf3313b835ceb53a56993ff69946a7f83958ca9d3a5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/GeneralSettingsDlg.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 556,
+                  "startColumn": 5,
+                  "endColumn": 95,
+                  "snippet": {
+                    "text": "    ShellExecute(NULL, _T(\"explore\"), theApp.m_config_dir.c_str(), NULL, NULL, SW_SHOWNORMAL);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3eecf0810218bbc602d15ab155ec65ce8d4c5ed9cd898abcb6e81ea53f93df9a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/TaskBarSettingsDlg.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 493,
+                  "startColumn": 9,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "        wchar_t buff[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a84ddfb4ac95971a7a14e6a45579231bdda6350463b66c5e35c925cdb122e689"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/IniHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 25,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "            values[i] = _wtoi(split_result[i].c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "26965470f6e146b1155603a471b5f94b1bcc45d18c074f650c13bb760a6949f8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/IniHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 361,
+                  "startColumn": 40,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "            m_ini_str.insert(key_pos + wcslen(KeyName) + 1, L\" =\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "534fbbca0b5c0cdc809b059ab633f47592b2ae7dfd15d5cd71faeb3ef94427ad"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/IniHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 33,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "            str_pos = key_pos + wcslen(KeyName) + 2;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9227e7eb0dc7193bff16032671deaecd2398bb6b48d6562460b6c3cd3ca2aa7e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/Test.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 5,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    printf(\"%d\", a);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "02955bc9914aa2b16fa5593328a12a6b4467b56c95a133dd189dd1368334a9f7"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/DllFunctions.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 25,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    m_shcore_module = ::LoadLibrary(_T(\"Shcore.dll\"));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1e17fb7d06d9923a738653d7a9d2d27d0de466754ec1b57351ce539a14f5b51f"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/PluginManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 37,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "        plugin_info.plugin_module = LoadLibrary(plugin_info.file_path.c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7fea984ac0083f1cf377b08c5ebc3349237d47db0fc1fbb060fa87ea82a1ebfb"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/PluginManager.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 7,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    ::memcpy(to, from, sizeof(T));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6fdb7ee1d45e72f613e9e0e127286081d87676603727797937874123d71190be"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 34,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            text_colors[*iter] = _wtoi(split_result[index].c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4e4b688e92d6607b956f186c8940daaa55199d9bf17fed15014ac3785e005a8c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 34,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "            text_colors[*iter] = _wtoi(split_result[0].c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0439c91801395c8b37f3411d7846b47f7ff9030d3c1bda935722ebac8f19d4dd"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 30,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    COLORREF default_color = _wtoi(default_str);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9c0cd741e73dac9316c00cb8975eb97f75a306949c7e9033073b8b4d0f44201f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 40,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "            text_colors[*iter].label = _wtoi(split_result[index].c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9ed2fceb11c547227dbeb069451bf32f75a1be196316fdde866503e39f0547ea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 40,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "            text_colors[*iter].value = _wtoi(split_result[index + 1].c_str());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2cb118b3cf676df2c07d6a6028b25f7534faf90c1564e65f0a0c0a9aa32ad404"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/RenderAPISupport.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "            char unused[2];                                                    \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0671746d0036d1c9aa9b72fcc4f36db22a0697ac59beeb137d702081fd902551"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/DrawTextManager.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 11,
+                  "endColumn": 91,
+                  "snippet": {
+                    "text": "        ::memcpy(p_found_function_pointer, &p_custom_function, sizeof(p_custom_function));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "10a5957377ed222d6d65335627f038ad3ba8dcc30b2458281fc1e6fa1bd87ad5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/SkinDlg.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 9,
+                  "endColumn": 105,
+                  "snippet": {
+                    "text": "        ShellExecute(NULL, _T(\"open\"), _T(\"explorer\"), theApp.m_skin_path.c_str(), NULL, SW_SHOWNORMAL);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "455affa6b1509a5776edf64ecf14388910ddafa534650b6e24c170701b2050bb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/TrafficMonitor/NetworkInfoDlg.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buff[3];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5ec6b5271538a8594768e459254b8536658edb838a1a5f2bdfd7d4e078b288b6"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

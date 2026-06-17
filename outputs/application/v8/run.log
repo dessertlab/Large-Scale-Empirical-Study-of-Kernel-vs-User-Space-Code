@@ -1,0 +1,18 @@
+[application/v8] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/v8
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/v8
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 2220 findings, exit 0, 10.85s
+[2/4] semgrep completed: 0 findings, exit 0, 26.10s
+[3/4] cppcheck completed: 370 findings, exit 0, 286.47s
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[4/4] codeql completed: 5 findings, exit 0, 401.23s
+
+Summary: 4 completed, 0 failed, 2595 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/v8/report.json

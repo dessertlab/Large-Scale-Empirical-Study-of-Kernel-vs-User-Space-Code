@@ -1,0 +1,5430 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1070",
+              "name": "input/recv",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/vsnprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1030",
+              "name": "race/access",
+              "shortDescription": {
+                "text": "This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-367",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1058",
+              "name": "misc/LoadLibrary",
+              "shortDescription": {
+                "text": "Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-829",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1048",
+              "name": "random/srand",
+              "shortDescription": {
+                "text": "This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-327",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/open",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1033",
+              "name": "race/chmod",
+              "shortDescription": {
+                "text": "This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1026",
+              "name": "buffer/realpath",
+              "shortDescription": {
+                "text": "This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-785",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1069",
+              "name": "obsolete/usleep",
+              "shortDescription": {
+                "text": "This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/676.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-676",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1049",
+              "name": "crypto/crypt_r",
+              "shortDescription": {
+                "text": "The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-327",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1041",
+              "name": "access/umask",
+              "shortDescription": {
+                "text": "Ensure that umask is given most restrictive possible setting (e.g., 066 or 077) (CWE-732)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-732",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1067",
+              "name": "free/memalign",
+              "shortDescription": {
+                "text": "On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/676.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-676",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1053",
+              "name": "buffer/getenv",
+              "shortDescription": {
+                "text": "Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/807.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-807",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1031",
+              "name": "race/chown",
+              "shortDescription": {
+                "text": "This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/ngx_http_request.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 706,
+                  "startColumn": 9,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, (char *) buf, size, MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fe8066bad201539870d0da9ac565910076fdd1eb28ace3e7092e059fec47b49a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/ngx_http_request.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3141,
+                  "startColumn": 5,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    char               buf[1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bfa5602d1f5cf1bf0597490a51d0c8655a8cd45e22c9189d93c150a91ef2948f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/ngx_http_request.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3226,
+                  "startColumn": 9,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, buf, 1, MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40f89ded9046ae48d7348a81587787cec228e70ffc136fd875c4ceb2d0e00443"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/ngx_http_upstream.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1354,
+                  "startColumn": 5,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    char                 buf[1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ead8286f42fcf7e68de0f8804a14931361fd3c27261cabb5fe8512cd281514d2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/ngx_http_upstream.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1497,
+                  "startColumn": 9,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, buf, 1, MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40f89ded9046ae48d7348a81587787cec228e70ffc136fd875c4ceb2d0e00443"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_xslt_filter_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 478,
+                  "startColumn": 18,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    n = (size_t) vsnprintf((char *) buf, NGX_MAX_ERROR_STR, msg, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5f04276d0ab0d1df6f3d8bfd7430f6e157ca6ea058baad6f91cc928ad6094b0b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_geo_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 648,
+                  "startColumn": 22,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "        if (strpbrk((char *) value[1].data, \"*?[\") == NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6705623daaeee48154e9ddc0bdf54a54d12db9ca95be6077147d216e28510655"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_ssi_filter_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2763,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    char                 buf[NGX_HTTP_SSI_DATE_LEN];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7a52bd09e07cc11ff49182a16bf2bcedf77c23cdd7ab7bc13c4b2b7f06f53ea9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_fastcgi_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1808,
+                  "startColumn": 47,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "                        if (ngx_strnstr(msg, (char *) pattern[i].data,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "95a55f289fe018b062c225e242cc66b7b387cbd14ea6332fc6e181fb123a9294"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_dav_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 17,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    ngx_uint_t  access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "03cace2da9bce57a7458c233f69972849c8f96179451b32b5bc684b31c1479dc"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_dav_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 41,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "      offsetof(ngx_http_dav_loc_conf_t, access),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2bdb6416689f1e8a7fd687d5595ba397dc5778f907c4f1d1ede01aaa070c8edb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_upstream_keepalive_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 402,
+                  "startColumn": 5,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    char               buf[1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bfa5602d1f5cf1bf0597490a51d0c8655a8cd45e22c9189d93c150a91ef2948f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_upstream_keepalive_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 414,
+                  "startColumn": 9,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, buf, 1, MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40f89ded9046ae48d7348a81587787cec228e70ffc136fd875c4ceb2d0e00443"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/perl/ngx_http_perl_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 458,
+                  "startColumn": 36,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            asv[i + 1] = newSVpvn((char *) args[i]->data, args[i]->len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d5075456be8219d07ba88ee0ab65de41cbba776552c10e923de289cc85848bf4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/perl/ngx_http_perl_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 623,
+                  "startColumn": 37,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            embedding[2 * i + 2] = (char *) m[i].data;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "68ba3da80a605e49352514b3102159b3c4407e24aad17c93c6e1f47943a16856"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/perl/ngx_http_perl_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 682,
+                  "startColumn": 21,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "        require_pv((char *) script[i].data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ce8785fa872365636e7550ec88d735e0c268b1b0e63c5adf856bdda30eff8a3c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/perl/ngx_http_perl_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1005,
+                  "startColumn": 31,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "        plcf->sub = newSVpvn((char *) value[1].data, value[1].len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "291881595db34b2b05a7454fc62aef9fa3b0657c141e6e37938b2a6f300eed7a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/perl/ngx_http_perl_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1077,
+                  "startColumn": 29,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "        pv->sub = newSVpvn((char *) value[2].data, value[2].len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18fd65454a233463a01d927e9c4d0778f5ba57473805057cff8c8a2123c639fa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 689,
+                  "startColumn": 32,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "    gcf->country = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2d671994eeee50d4f0a5e93304dcfe5b8d773dabd71c232f8e4d7318c5fcfb24"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 744,
+                  "startColumn": 28,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    gcf->org = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54544ed09edced7a44c0133c4fbe8daf9fc6be439cfd9d2e73473d1d67aa6e56"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/http/modules/ngx_http_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 805,
+                  "startColumn": 29,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    gcf->city = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1a784c3c155408037d17aaebdd742f366482eb6c13f81275bacc38250a75aa40"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_os.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 24,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    ngx_recv_pt        recv;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da5afbf854f410100283a56bdbb983e6c4389cfbd05e692166cec80935497568"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_event_log.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 11,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    const char     *msgarg[9];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9e6b512243d6f9ae5c8f82f01062e36e4eaf23a8164cb4b5ba0f88d3dd10bcc1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 64,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "ngx_open_file(u_char *name, u_long mode, u_long create, u_long access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d87a9ea2550d4fd2f1e252ebb68462840a94f894cc196ad3b5be41731d42153d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 67,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "ngx_open_tempfile(u_char *name, ngx_uint_t persistent, ngx_uint_t access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "09e56b5a4aa8744e60af20c2015deafa905b56568a9b41cfa2be496deda1117e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 715,
+                  "startColumn": 41,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "ngx_create_dir(u_char *name, ngx_uint_t access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a48daef4c60620f6b50d87fa19ca5def5887291b2f6e4017a9f415e497597b07"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 73,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "ngx_fd_t ngx_open_file(u_char *name, u_long mode, u_long create, u_long access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "289ff2c3f6d104057b6b0d504783400e5be02e989f38632f73a058adcaf6bb37"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 16,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    ngx_uint_t access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1faa56daa2b448406439a0580e286e1e05eb3a8baed30211508b9623f753fb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 51,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "ngx_int_t ngx_create_dir(u_char *name, ngx_uint_t access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da3a46fdcd6b9fc02ffbe3c433304231a16b33a31f06a1214181c3fab1046d25"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1058",
+          "level": "warning",
+          "message": {
+            "text": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_dlopen.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 36,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "#define ngx_dlopen(path)           LoadLibrary((char *) path)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9cd9806cfd78e456f85a5342513d7958190c1f91cfe56a7571c7716eb4fcc2ea"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_win32_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "char        ngx_unique[NGX_INT32_LEN + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6e2f858535927bb3a7aacbb3571d0d3f2fd7338f35a3c2594f230335cb2a6521"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_win32_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 276,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    srand((ngx_pid << 16) ^ (unsigned) tp->sec ^ tp->msec);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f0fb01c44c9af7b952a4d986c4a40f6e5b54ae16dfae20a60af7fdb533c10abc"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 5,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "    char            file[MAX_PATH + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "603a04957dc32db5f53e4739ee6adb51e3546d0d9e24387046eecdeac57a432d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 44,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                                          (char *) ngx_processes[s].term_event);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d661a178c4e83f3cce80ff1eb6162711d9ee8bfac7cd9ae7f7863c6f54181eea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 44,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                                          (char *) ngx_processes[s].quit_event);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bd886f1b4e644816fa195efb016c43b858f51bbb97b669167f9e82e7511a2966"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 41,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "                                       (char *) ngx_processes[s].reopen_event);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "323787d8cd607eda25082bee2d8554ff001f8823ea68704e15705a449ea4f0d0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 1,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "char           ngx_master_process_event_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bf652877e59b811f91c11a63d2bce477826aa558824c9e13e31f18bf30186d26"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 8,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "static char    ngx_stop_event_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ecba14682092f6237ae6c60f7ecf2483aad34aa9940cfa385c61de66982395f2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 8,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "static char    ngx_quit_event_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7bbb414ebeedb0f6e9f15cbccba866bca2ed38e5e015ebe57bcae223d6bf7ca3"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 8,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "static char    ngx_reopen_event_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b3df9f84f2c435f7c845374d30e101a32634e33ea6d9d45c7ea9718335b0fcff"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 8,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "static char    ngx_reload_event_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd54623ad345e566b323a0dbacef6ca6202032f699f99858953e86964efb76b1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 1,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "char           ngx_cache_manager_mutex_name[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8bc737dd05bf122c666dd640749b935eab57472bbb9500ab03a7591bbc13ec02"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 572,
+                  "startColumn": 5,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    char        wtevn[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ae0060d5dfbd5355d80a917f853ae58292740ff106deaa5d2a44b81e0ee3d52c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 573,
+                  "startColumn": 5,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    char        wqevn[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4ed65f83ddd1e9dd29f5059d48b4b957e1d7b7a7170a10d9e9042341f3a44ba8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 574,
+                  "startColumn": 5,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "    char        wroevn[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "63366d3f31ed466330a8e2933542107004cf1417f57a754306a5905c5976f602"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 770,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    srand((ngx_pid << 16) ^ (unsigned) tp->sec ^ tp->msec);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f0fb01c44c9af7b952a4d986c4a40f6e5b54ae16dfae20a60af7fdb533c10abc"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/win32/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1011,
+                  "startColumn": 5,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    char       evn[NGX_PROCESS_SYNC_NAME];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c76b6081ee55ead75425d2e424413d6a4abe3234f703caaddc14108e4facfa99"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_os.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 24,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    ngx_recv_pt        recv;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da5afbf854f410100283a56bdbb983e6c4389cfbd05e692166cec80935497568"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 9,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    n = read(file->fd, buf, size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "30f7526a208c194007610a3a2529e29b57a910a072b2a7058495da0a2dbd85bb"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 67,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "ngx_open_tempfile(u_char *name, ngx_uint_t persistent, ngx_uint_t access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "09e56b5a4aa8744e60af20c2015deafa905b56568a9b41cfa2be496deda1117e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 10,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    fd = open((const char *) name, O_CREAT|O_EXCL|O_RDWR,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ff88ccf31e6b7a6b424c9a10913b3238288a71e030f1cd3562056a85249784bb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 15,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "              access ? access : 0600);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f78342f45078e1f76c8eed6e9ac9011c0004f70eea8db3d66799d6a911fcb039"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 24,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "              access ? access : 0600);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f78342f45078e1f76c8eed6e9ac9011c0004f70eea8db3d66799d6a911fcb039"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_solaris_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "char ngx_solaris_sysname[20];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7c9f963a86f51e389d9678a62101a6b4e38c14b8aa59b9a063f8c37bbf2bda24"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_solaris_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "char ngx_solaris_release[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7cedad747d9eb510360730fe31b06f2989aad5a3f553f4d0ec039ea288db3d3c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_solaris_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "char ngx_solaris_version[50];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a3b569480723cd1837eff21ede48df50daea7a64fea89a6e88a55806ab380450"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 43,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "#define ngx_open_file(name, mode, create, access)                            \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb0b7d98af2ad3a9fa24797a4dd708a1aa8dc709175ba357f0709d201add4091"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    open((const char *) name, mode|create|O_BINARY, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f293d86a34edde7cc3b72733299743069218d9c9b1b9bf2a5faf67dac8bfcd0d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 53,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    open((const char *) name, mode|create|O_BINARY, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f293d86a34edde7cc3b72733299743069218d9c9b1b9bf2a5faf67dac8bfcd0d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 43,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "#define ngx_open_file(name, mode, create, access)                            \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb0b7d98af2ad3a9fa24797a4dd708a1aa8dc709175ba357f0709d201add4091"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    open((const char *) name, mode|create, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "57ee276141e65561c16bad996938a7b34b2eaee3abd9dac2e0e67f536e2fb962"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 44,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    open((const char *) name, mode|create, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "57ee276141e65561c16bad996938a7b34b2eaee3abd9dac2e0e67f536e2fb962"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 16,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    ngx_uint_t access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1faa56daa2b448406439a0580e286e1e05eb3a8baed30211508b9623f753fb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 34,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "#define ngx_read_fd              read"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "989e00803f842ba7f101089c8adf49a662efe7277e1806c8567c2666d0a5af2c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1033",
+          "level": "error",
+          "message": {
+            "text": "race/chmod:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 38,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "#define ngx_change_file_access(n, a) chmod((const char *) n, a)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da8f0e3d0516ce1f993824c404ba5194eacff5d2bc70c94e3f1130473ebf8bb2"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1026",
+          "level": "warning",
+          "message": {
+            "text": "buffer/realpath:This function does not protect against buffer overflows, and some implementations can overflow internally (CWE-120/CWE-785!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 200,
+                  "startColumn": 45,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "#define ngx_realpath(p, r)       (u_char *) realpath((char *) p, (char *) r)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "26c59e50391002d29baf08cb40f8f99f2f319fba09ee3fa335c8dc09cf8ba94c"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 30,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "#define ngx_create_dir(name, access) mkdir((const char *) name, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "92e5655f45d2bfe6e5dd85c04172b8f3470cf92504c74646864a0aab0b82443a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 65,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "#define ngx_create_dir(name, access) mkdir((const char *) name, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "92e5655f45d2bfe6e5dd85c04172b8f3470cf92504c74646864a0aab0b82443a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 357,
+                  "startColumn": 49,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "#define ngx_openat_file(fd, name, mode, create, access)                      \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1f78ca473b6a17054a3396a669696c052cf2df23a241bd89210325f9334f522c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_files.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 358,
+                  "startColumn": 50,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    openat(fd, (const char *) name, mode|create, access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d80aa3b67efb41c6de3fae0a33ea4d49905c5c2ca17a37f4c896318c09c8cf00"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/readv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_readv_chain.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 13,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "        n = readv(c->fd, (struct iovec *) vec.elts, vec.nelts);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "47c6a28007eb32c23d51383fbe5c8b32799a4e74001f8cd32b78fd79a46e489b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1069",
+          "level": "note",
+          "message": {
+            "text": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_process.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 28,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "#define ngx_sched_yield()  usleep(1)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8c656abf1a16baf682d0fda2a2129f831452c3a2ed99e2ede92f3bf40df5819e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1049",
+          "level": "error",
+          "message": {
+            "text": "crypto/crypt_r:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_user.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 13,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    value = crypt_r((char *) key, (char *) salt, &cd);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "005b5b28ce305fcb9b3e7820f61a982d0a705aad4193e643301be52ee53d6309"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1049",
+          "level": "error",
+          "message": {
+            "text": "crypto/crypt:The crypt functions use a poor one-way hashing algorithm; since they only accept passwords of 8 characters or fewer and only a two-byte salt, they are excessively vulnerable to dictionary attacks given today's faster computing equipment (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_user.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 13,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "    value = crypt((char *) key, (char *) salt);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8ad25a8eb2fca425790d7e097c9d0a4002a9be283f167852a00db89b0068e5b1"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_channel.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 9,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "        char            space[CMSG_SPACE(sizeof(int))];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7e52a3ad5c2b88ad2dc952ca8ee06f0ab53b117aedb4589e4ec04a52e28c475b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_channel.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 9,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "        char            space[CMSG_SPACE(sizeof(int))];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7e52a3ad5c2b88ad2dc952ca8ee06f0ab53b117aedb4589e4ec04a52e28c475b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recvmsg:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_channel.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    n = recvmsg(s, &msg, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4a29428c8cbab58def71bed36e9916cbad7c7f058d96516f1c0a11f1cb1e883f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_shmem.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 10,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    fd = open(\"/dev/zero\", O_RDWR);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6ca46b85cd7ceb2021e50be49cc235ec8066b3ee0623fd794224c6c5cbc76c3d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/srandom:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_posix_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 5,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    srandom(((unsigned) ngx_pid << 16) ^ tp->sec ^ tp->msec);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "933c1842a7aaa820da21383ff74c76c55ce871da590369815e2abcb1531ca842"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1041",
+          "level": "note",
+          "message": {
+            "text": "access/umask:Ensure that umask is given most restrictive possible setting (e.g., 066 or 077) (CWE-732)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_daemon.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 5,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "    umask(0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd811c39bee8e23905a680aba71554b3b303b72d54bd913f72220d65fd51d946"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_daemon.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 10,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    fd = open(\"/dev/null\", O_RDWR);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80886d2482c8d5b15e502e0f37b13770b733adf1e4cc50e88298370a4f2a34e2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1067",
+          "level": "note",
+          "message": {
+            "text": "free/memalign:On some systems (though not Linux-based systems) an attempt to free() results from memalign() may fail. This may, on a few systems, be exploitable. Also note that memalign() may not check that the boundary parameter is correct (CWE-676)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_alloc.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 9,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    p = memalign(alignment, size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5c592c96c50589c8b5bbfb161f4e86a6cacc757d940d78763da27a50b01fdda8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_time.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 9,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    if (getenv(\"TZ\")) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cc813c5f20f0c211f5049358d9107aa5ac0a8d69cd5d61a96dd67db9d84e91d3"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_time.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 5,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    char        buf[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "74bde876737f0942ef49027d116e587c4dc0c9f2e922759b154bf92be3da37b8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_freebsd_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "char    ngx_freebsd_kern_ostype[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9c6cf4856a0f5165d2934d0df17e4455d84c520dbc632424ac5068e91b5debb7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_freebsd_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "char    ngx_freebsd_kern_osrelease[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "25d4d8e5c2ccc9572dd2f7c003f9966513f25ea589d301b2afc5a2dd9e8fba4e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_freebsd_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 10,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    mo = getenv(\"MALLOC_OPTIONS\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ac18171c75db121ef4e229f3ebbc55e055791d24dce2fb7a169ae72cdba59e45"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_recv.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 13,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "        n = recv(c->fd, buf, size, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4dac08ede7ea8ad52ef63bc5f6b0a1337577cfc5cad534def47404f7017cd30b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1069",
+          "level": "note",
+          "message": {
+            "text": "obsolete/usleep:This C routine is considered obsolete (as opposed to the shell command by the same name). The interaction of this function with SIGALRM and other timer functions such as sleep(), alarm(), setitimer(), and nanosleep() is unspecified (CWE-676)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_time.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 38,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "#define ngx_msleep(ms)        (void) usleep(ms * 1000)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f276d4752ad5b6381b90471a6459cee07fd9b2985c6d7136815f716bb19c1046"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_udp_recv.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 13,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "        n = recv(c->fd, buf, size, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4dac08ede7ea8ad52ef63bc5f6b0a1337577cfc5cad534def47404f7017cd30b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_darwin_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "char     ngx_darwin_kern_ostype[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dbd8df8a7614b45b48be3a55bce1793e8ff12c4b5597836497e1ceb9e059ca62"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_darwin_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "char     ngx_darwin_kern_osrelease[128];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ce15775b7ccddb65872ebc8bdf600530e811fff16294cfaccaa19b5fc7e5b3b7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_darwin_init.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 9,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    if (getenv(\"MallocScribble\")) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1a6fa1ac9be6220b3883fbf3cf1d1292834b2d6d9ae3ea94ebad254bbfb5411c"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/srandom:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/os/unix/ngx_process_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 889,
+                  "startColumn": 5,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    srandom(((unsigned) ngx_pid << 16) ^ tp->sec ^ tp->msec);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "933c1842a7aaa820da21383ff74c76c55ce871da590369815e2abcb1531ca842"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_openssl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 9,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    if (getenv(\"OPENSSL_CONF\") == NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3a136a8424a5a4586a41b384edc61e9883cdb71a769b21f620aaf65fb5519e5b"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_openssl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 9,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    if (getenv(\"OPENSSL_CONF\") == NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3a136a8424a5a4586a41b384edc61e9883cdb71a769b21f620aaf65fb5519e5b"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_openssl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1693,
+                  "startColumn": 28,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "        in = BIO_new_file((char *) filename[i].data, \"r\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c1fbbd94c909a89ade358acae0e21d52150acb02b799a609e7c636309d721aad"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_openssl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2495,
+                  "startColumn": 5,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    char         buf[129], *s, *d;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "937494bf496315c9908174c146830a7c8519322fabe1039963a1055b3521d724"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_openssl.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 6568,
+                  "startColumn": 28,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    engine = ENGINE_by_id((char *) value[1].data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "958f9d33083ef276ee7ca4043d95ec8b27f3445f2bf167d4f6184c43ff46f0de"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_pipe.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 24,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "    unsigned           read:1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "55aeda6130237fc4f158bf7c505c64fe1844ac836e18bdd7653aee82061e532f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic_bpf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 571,
+                  "startColumn": 28,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    inherited = (u_char *) getenv(NGX_QUIC_BPF_VARNAME);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bb42874ddd867084708534d27767cebd8a3bb4f664bd4cc0505ce45546064bf4"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recvmsg:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic_udp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 13,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        n = recvmsg(lc->fd, &msg, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3c533dc0c511790d0c34c19c4fa48acfa0c9ac17f7cb602a86468273241b4299"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic_output.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 5,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    char             msg_control[CMSG_SPACE(sizeof(uint16_t))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d5a25c207983caf507e6dd5e33e8dfc7f8ef7496af55aa856bfbe537ac80f401"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic_output.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 434,
+                  "startColumn": 5,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "    char             msg_control[CMSG_SPACE(sizeof(uint16_t))];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "45d63659a9c1639116b0c37605bbb04e9866904e224c983a242966c0d4c55489"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic_output.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 727,
+                  "startColumn": 5,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "    char             msg_control[CMSG_SPACE(sizeof(ngx_addrinfo_t))];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f27506b05c71d31912d818a5f5d61d5dcdbe5394e49288254a923671a6bbdea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/quic/ngx_event_quic.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 36,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "    ngx_quic_buffer_t              recv;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e52966d97b4f94e6816a6e7695973f344d6fc66a81a168a86823631ff76c82e0"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recvmsg:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/ngx_event_udp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 13,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        n = recvmsg(lc->fd, &msg, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3c533dc0c511790d0c34c19c4fa48acfa0c9ac17f7cb602a86468273241b4299"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/modules/ngx_epoll_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 442,
+                  "startColumn": 13,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "        n = read(notify_fd, &count, sizeof(uint64_t));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ecd356f75c5ce4e90740d3bdcff14e76bd9dd6c48918831c8a69455181c06562"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/modules/ngx_epoll_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 955,
+                  "startColumn": 9,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    n = read(ngx_eventfd, &ready, 8);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "deb5b2d529a89449f753b480997287fb72dfbf94691cdd5c183bec7e38aac30d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/event/modules/ngx_devpoll_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 14,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "        dp = open(\"/dev/poll\", O_RDWR);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "775bfcd8c70667a1890b4d154841af98d6c2a976d99434c9da1d75316148c27a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1033",
+          "level": "error",
+          "message": {
+            "text": "race/chmod:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_connection.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 664,
+                  "startColumn": 21,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "                if (chmod((char *) name, mode) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4435a1193b1092dc224a054d517552cca3b8aab91c705f6795c18e74984c1f51"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_string.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2127,
+                  "startColumn": 12,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    return memcpy(dst, src, n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6f536e7059e44fc276ac819e10715ee234dbae505181104c707e02e1d0b8d4d9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 5,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "    char                 hostname[NGX_MAXHOSTNAMELEN];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6ff2125e005063053bae7baa17b7980b3de6d747923a5a57439845e23964ce0f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1031",
+          "level": "error",
+          "message": {
+            "text": "race/chown:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1243,
+                  "startColumn": 21,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "                if (chown((const char *) file[i].name.data, user, -1) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3157f424341310b0f10603574e3826c16e34d927ae91d4920a8f250808d8fb22"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1243,
+                  "startColumn": 34,
+                  "endColumn": 79,
+                  "snippet": {
+                    "text": "                if (chown((const char *) file[i].name.data, user, -1) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3157f424341310b0f10603574e3826c16e34d927ae91d4920a8f250808d8fb22"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1033",
+          "level": "error",
+          "message": {
+            "text": "race/chmod:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1262,
+                  "startColumn": 21,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                if (chmod((const char *) file[i].name.data, fi.st_mode) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dd5c10511e4234f2e430f0edeef3157f501c3ece9c3b9486165b0a57aff3be2d"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_cycle.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1262,
+                  "startColumn": 34,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                if (chmod((const char *) file[i].name.data, fi.st_mode) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dd5c10511e4234f2e430f0edeef3157f501c3ece9c3b9486165b0a57aff3be2d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 49,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "    ngx_int_t mode, ngx_int_t create, ngx_int_t access, ngx_log_t *log);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f292cdd244dba560c1d779c44892409c6a439d891548fb0e24bb7825d6466505"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 15,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    ngx_int_t access, ngx_log_t *log);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cbc65f6e2acfd818fed90dbc13aeaf09d5cfc8d069a1c3c0c8da10b827d42d44"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 493,
+                  "startColumn": 49,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    ngx_int_t mode, ngx_int_t create, ngx_int_t access, ngx_log_t *log)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b2331511a776639c6828fdc53a6424001df9d4f9f18a334ff38556dc77c5475"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 511,
+                  "startColumn": 53,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    fd = ngx_openat_file(at_fd, name, mode, create, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cd7849e87968618a42501e4865751aebb44927700a9e4b1b20850f5ca1fc8390"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 615,
+                  "startColumn": 49,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    ngx_int_t mode, ngx_int_t create, ngx_int_t access, ngx_log_t *log)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b2331511a776639c6828fdc53a6424001df9d4f9f18a334ff38556dc77c5475"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 621,
+                  "startColumn": 50,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    fd = ngx_open_file(name->data, mode, create, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "72547f7cbe0ff850db02434c5499dac34da719654e7c64015547046ae4e05af8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 638,
+                  "startColumn": 54,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "        fd = ngx_open_file(name->data, mode, create, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "72547f7cbe0ff850db02434c5499dac34da719654e7c64015547046ae4e05af8"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 748,
+                  "startColumn": 56,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "        fd = ngx_openat_file(at_fd, \".\", mode, create, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b5041f3a7dc1ea630f87a0a4a7e8015127b4341b637d5b3aba6a3fc2a260239f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 755,
+                  "startColumn": 60,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "        fd = ngx_openat_file_owner(at_fd, p, mode, create, access, log);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bb3762b968d29dfc4b08b11521a0e58744859a884c1d424218cd31f82bc1091c"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 758,
+                  "startColumn": 72,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "        fd = ngx_openat_file(at_fd, p, mode|NGX_FILE_NOFOLLOW, create, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a346252e84fc5480193ceb4e7640dd04dda7ba07bb4e8efe9012b558ac06562d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_config.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 34,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "#define ngx_random               random"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "71821a96cd89f9256e2520c4cf14a57e04b1a8c26dd193c65a218544758b6c65"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_bpf.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 5,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    char            buf[NGX_BPF_LOGBUF_SIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b7f25bffbf8871ef10515633468f2bce1fb647f039bd7dc8ca438f4813ae1c0e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 32,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    ngx_uint_t                 access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd022af7ca53e60300e80006f809297e977d038caf07bc9002a2f0c98e815fdd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 32,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    ngx_uint_t                 access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd022af7ca53e60300e80006f809297e977d038caf07bc9002a2f0c98e815fdd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 32,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    ngx_uint_t                 access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd022af7ca53e60300e80006f809297e977d038caf07bc9002a2f0c98e815fdd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 32,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    ngx_uint_t                 access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fd022af7ca53e60300e80006f809297e977d038caf07bc9002a2f0c98e815fdd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 16,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    ngx_uint_t access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1faa56daa2b448406439a0580e286e1e05eb3a8baed30211508b9623f753fb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 56,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "ngx_err_t ngx_create_full_path(u_char *dir, ngx_uint_t access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d413c393892aa2a9de0c401b1db416dcc1dbbcce8b1cbda69c87963eb9ae44ef"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 57,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "    ngx_uint_t persistent, ngx_uint_t clean, ngx_uint_t access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "35fe01c36e5bb02435c6eef6b6cb8443a9c7fc0d119ba48710402fcc8d0ad365"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 202,
+                  "startColumn": 67,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "        file->fd = ngx_open_tempfile(file->name.data, persistent, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f343579a74055b32645eb8ded8d52b79f8e1abb7abf211e499deec8cfd727d34"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 46,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "ngx_create_full_path(u_char *dir, ngx_uint_t access)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d5a0c2dce90b729d0ddf35a3f04328e20eb8fa3efef8c9f44eea70158c281f70"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 326,
+                  "startColumn": 33,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "        if (ngx_create_dir(dir, access) == NGX_FILE_ERROR) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d93fef13031845e2251b91b9e1ae736bdecc8a49b881f38ab072bda6428d3480"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 466,
+                  "startColumn": 36,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    ngx_uint_t   i, right, shift, *access, user;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54a5a64d0b2bc8b4cdd2633fa648b26af1a0b1062261a0b8fc364062de9736b4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 470,
+                  "startColumn": 10,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    if (*access != NGX_CONF_UNSET_UINT) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3e46621fcaecce5ce30433ffcee4217b54c11024c8bd6dac25ce37cd59bf2d8a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 510,
+                  "startColumn": 10,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "        *access |= right << shift;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9fd4402ffa28065dc2e4e6429f2363fc3dd737e7e031a0f0abfd32147c285ef0"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 513,
+                  "startColumn": 6,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    *access |= user;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "abc00e6110b162fe2fa3cb33da9464a05f95dc55f0cbbf19028619745607fefa"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1031",
+          "level": "error",
+          "message": {
+            "text": "race/chown:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 632,
+                  "startColumn": 17,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "            if (chown((const char *) path[i]->name.data, user, -1) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "73aee92b1111ff3ec2d793884f2bbeed90f28795e2b8e42a8726aa25dc010491"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 632,
+                  "startColumn": 30,
+                  "endColumn": 76,
+                  "snippet": {
+                    "text": "            if (chown((const char *) path[i]->name.data, user, -1) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "73aee92b1111ff3ec2d793884f2bbeed90f28795e2b8e42a8726aa25dc010491"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1033",
+          "level": "error",
+          "message": {
+            "text": "race/chmod:This accepts filename arguments; if an attacker can move those files, a race condition results. (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 645,
+                  "startColumn": 17,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "            if (chmod((const char *) path[i]->name.data, fi.st_mode) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2a992c86cff32790315f710b915493f70006f4dda8770e264ead266bc983389e"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 645,
+                  "startColumn": 30,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "            if (chmod((const char *) path[i]->name.data, fi.st_mode) == -1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2a992c86cff32790315f710b915493f70006f4dda8770e264ead266bc983389e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 804,
+                  "startColumn": 23,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    ngx_uint_t        access;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f8bf0e6902ca2a5900b922f4c0046f7b78566ea1af02c3c5afcccd3426bcd1d7"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_file.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 848,
+                  "startColumn": 65,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "    nfd = ngx_open_file(to, NGX_FILE_WRONLY, NGX_FILE_TRUNCATE, access);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2dec25a62cc1c75945270692621890dff1474d9d966bf23f5e2b4d84bee6b1f5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_open_file_cache.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 30,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    ngx_event_t             *read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e2e5a1ebf2ab87fccc9862472eb9d03c773c009e97b588438dc157b534dc29ba"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_connection.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 25,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    unsigned            open:1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "267d906973234988965a46d491e8dca59823dac7aa9da4ced61590841af4365b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_connection.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 25,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    ngx_event_t        *read;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "135757232080740d3e4c96eae4847e024d82e123da46a0fadc47e47096d1f212"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_connection.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 25,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    ngx_recv_pt         recv;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e95e5702bb0ac05fecfbf077f1c9bd2b15f44769b59f748c432920954fc9094c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_string.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 29,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "#define ngx_strlen(s)       strlen((const char *) s)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0e39d11ff44fbe84bc2cc7fa099a151a6ffd598309ab18322f6aaf0d80a96b8a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_string.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 42,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "#define ngx_memcpy(dst, src, n)   (void) memcpy(dst, src, n)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d87a4842c8ba3ca806d548f9fb3035b9b88443b4475ac1ef601b932d94808674"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/ngx_string.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 48,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "#define ngx_cpymem(dst, src, n)   (((u_char *) memcpy(dst, src, n)) + (n))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a7e1bf7589a7345b9b886f5184110a908c20db6ca98dbd7a0f712f771befccb9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/nginx.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 466,
+                  "startColumn": 28,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    inherited = (u_char *) getenv(NGINX_VAR);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "40ce00773f1636765da3a3a81c268ca36cf1ae1ed3563ab5a603c293b59b8b63"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/nginx.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 607,
+                  "startColumn": 29,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "                env[n++] = (char *) var[i].data;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1026aa1e648c9d68d813d612ee7676349b2753b705e831f0c74383d529b2e2a0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/nginx.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1300,
+                  "startColumn": 22,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    ccf->username = (char *) value[1].data;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3852f185f00dfc347c08a8e0823ee3f5dce25ed7cf2f65718afff4eda890ab2f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/core/nginx.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1303,
+                  "startColumn": 27,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    pwd = getpwnam((const char *) value[1].data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6f094a5f6e6f5425555e1f22e0a6e25d79c32796f7dde1f91ff0beac1b800048"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mail/ngx_mail_handler.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 221,
+                  "startColumn": 9,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, (char *) buf, sizeof(buf), MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "44829c2507e58b8db6ca0db032e9c116e36181044f59686f3a53eba4ef83e579"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/misc/ngx_google_perftools_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 9,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    if (getenv(\"CPUPROFILE\")) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d515a28c93b291d256055da852501508d95256e68024ebeaa88913e654c1825b"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 638,
+                  "startColumn": 32,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "    gcf->country = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2d671994eeee50d4f0a5e93304dcfe5b8d773dabd71c232f8e4d7318c5fcfb24"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 693,
+                  "startColumn": 28,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    gcf->org = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54544ed09edced7a44c0133c4fbe8daf9fc6be439cfd9d2e73473d1d67aa6e56"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_geoip_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 754,
+                  "startColumn": 29,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    gcf->city = GeoIP_open((char *) value[1].data, GEOIP_MEMORY_CACHE);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1a784c3c155408037d17aaebdd742f366482eb6c13f81275bacc38250a75aa40"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_handler.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 9,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, (char *) buf, sizeof(buf), MSG_PEEK);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "44829c2507e58b8db6ca0db032e9c116e36181044f59686f3a53eba4ef83e579"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_geo_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 608,
+                  "startColumn": 22,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "        if (strpbrk((char *) value[1].data, \"*?[\") == NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6705623daaeee48154e9ddc0bdf54a54d12db9ca95be6077147d216e28510655"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/stream/ngx_stream_core_module.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 356,
+                  "startColumn": 9,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    n = recv(c->fd, (char *) c->buffer->last,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b1918b8bdd30e751b52bf35544e92ba739a688b7865d98fd36331c69645f6e1"
+          },
+          "rank": 0.0
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

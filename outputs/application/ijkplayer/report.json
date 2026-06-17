@@ -1,0 +1,1970 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_cmdutils.c",
+      "line": 75,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffmsg_queue.h",
+      "line": 160,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 99,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 388,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 389,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 529,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 530,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 531,
+      "message": "%lld in format string (no. 1) requires 'long long' but the argument type is 'signed long'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 531,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 532,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 533,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 535,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 546,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 852,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 858,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 859,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 867,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 888,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 890,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1610,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1778,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1779,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1792,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1793,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1797,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1851,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1852,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1860,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1864,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1887,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1889,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1891,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1899,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1900,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1903,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1909,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 1946,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2109,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2399,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2615,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2634,
+      "message": "Either the condition '!ffp' is redundant or there is possible null pointer dereference: ffp.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2684,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 2738,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 3722,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 3723,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 3856,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 4274,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 83,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 84,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 152,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 158,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 263,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 443,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-682",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 450,
+      "message": "Either the condition 'newbuffer' is redundant or there is pointer arithmetic with NULL pointer.",
+      "rule": "nullPointerArithmeticRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 463,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 473,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 485,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 490,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 493,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 496,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 693,
+      "message": "Null pointer dereference: input_buffer",
+      "rule": "ctunullpointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 693,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 694,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 699,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 842,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 842,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 883,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 929,
+      "message": "buffer/sprintf:Does not check for buffer overflows (CWE-120).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1008,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1119,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1275,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1275,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1284,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1284,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1293,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1293,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1311,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1317,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1341,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1345,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1347,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1353,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1364,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1497,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1501,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1508,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1518,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1523,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1549,
+      "message": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/cJSON.c",
+      "line": 1832,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 672,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 682,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 685,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 692,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 698,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 703,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 713,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 719,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 722,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 732,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 737,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 747,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 750,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 758,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkasync.c",
+      "line": 761,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkioapplication.h",
+      "line": 51,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 92,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 134,
+      "message": "Identical condition and return expression 'c->abort_request', return value is always 0",
+      "rule": "identicalConditionAfterEarlyExit",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 177,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 323,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 379,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 587,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 606,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 617,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 664,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 664,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 904,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 1145,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 80,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 84,
+      "message": "%lld in format string (no. 1) requires 'long long' but the argument type is 'signed long'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 84,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 85,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 88,
+      "message": "%lld in format string (no. 1) requires 'long long' but the argument type is 'signed long'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 88,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 89,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 92,
+      "message": "%lld in format string (no. 1) requires 'long long' but the argument type is 'signed long'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 92,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 93,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 96,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 97,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 106,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 109,
+      "message": "%lld in format string (no. 1) requires 'long long' but the argument type is 'signed long'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 109,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 110,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 113,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 114,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 117,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 118,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 121,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 122,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 125,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 126,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 139,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 154,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 211,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 227,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 239,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 248,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 257,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 267,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 290,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 299,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 308,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 341,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 346,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 391,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 391,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 396,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 396,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiomanager.h",
+      "line": 39,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c",
+      "line": 70,
+      "message": "Identical condition and return expression 'c->abort_request', return value is always 0",
+      "rule": "identicalConditionAfterEarlyExit",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c",
+      "line": 96,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkiourlhook.c",
+      "line": 184,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 111,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 142,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 238,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 239,
+      "message": "format/vsprintf:Potential format string problem (CWE-134).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 332,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 558,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 558,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 564,
+      "message": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120).",
+      "rule": "FF1008",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 564,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 708,
+      "message": "Either the condition '!playlist' is redundant or there is possible null pointer dereference: playlist.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 904,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1012,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1012,
+      "message": "Finding triggers whenever there is a strcat or strncat used. This is an issue because strcat or strncat can lead to buffer overflow vulns. Fix this by using strcat_s instead.",
+      "rule": "c.lang.security.insecure-use-strcat-fn.insecure-use-strcat-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1015,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1015,
+      "message": "Finding triggers whenever there is a strcat or strncat used. This is an issue because strcat or strncat can lead to buffer overflow vulns. Fix this by using strcat_s instead.",
+      "rule": "c.lang.security.insecure-use-strcat-fn.insecure-use-strcat-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1017,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1017,
+      "message": "Finding triggers whenever there is a strcat or strncat used. This is an issue because strcat or strncat can lead to buffer overflow vulns. Fix this by using strcat_s instead.",
+      "rule": "c.lang.security.insecure-use-strcat-fn.insecure-use-strcat-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1020,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1021,
+      "message": "format/sprintf:Potential format string problem (CWE-134).",
+      "rule": "FF1015",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1022,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1022,
+      "message": "Finding triggers whenever there is a strcat or strncat used. This is an issue because strcat or strncat can lead to buffer overflow vulns. Fix this by using strcat_s instead.",
+      "rule": "c.lang.security.insecure-use-strcat-fn.insecure-use-strcat-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1025,
+      "message": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).",
+      "rule": "FF1005",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1025,
+      "message": "Finding triggers whenever there is a strcat or strncat used. This is an issue because strcat or strncat can lead to buffer overflow vulns. Fix this by using strcat_s instead.",
+      "rule": "c.lang.security.insecure-use-strcat-fn.insecure-use-strcat-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1190,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1194,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1595,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-676",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1595,
+      "message": "Finding triggers whenever there is a strcpy or strncpy used. This is an issue because strcpy does not affirm the size of the destination array and strncpy will not automatically NULL-terminate strings. This can lead to buffer overflows, which can cause program crashes and potentially let an attacker inject code in the program. Fix this by using strcpy_s instead (although note that strcpy_s is an optional part of the C11 standard, and so may not be available).",
+      "rule": "c.lang.security.insecure-use-string-copy-fn.insecure-use-string-copy-fn",
+      "tool": "semgrep"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1681,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1862,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1877,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1908,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1917,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1923,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.c",
+      "line": 1970,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.h",
+      "line": 14,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklas.h",
+      "line": 31,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijklivehook.c",
+      "line": 109,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c",
+      "line": 152,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavformat/ijkurlhook.c",
+      "line": 154,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 116,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 116,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 150,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 151,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 157,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkdict.c",
+      "line": 158,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c",
+      "line": 138,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c",
+      "line": 180,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c",
+      "line": 202,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkfifo.c",
+      "line": 224,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkavutil/ijkutils.c",
+      "line": 15,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/ijkmedia/ijkplayer/ijkmeta.c",
+      "line": 128,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/ijkmedia/ijksdl/ffmpeg/ijksdl_vout_overlay_ffmpeg.c",
+      "line": 205,
+      "message": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.",
+      "rule": "invalidPrintfArgType_sint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/fsh/rgb.fsh.c",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420p.fsh.c",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/fsh/yuv420sp.fsh.c",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/fsh/yuv444p10le.fsh.c",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/renderer.c",
+      "line": 36,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/shader.c",
+      "line": 36,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/ijkmedia/ijksdl/gles2/vsh/mvp.vsh.c",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_extra_log.c",
+      "line": 39,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_extra_log.c",
+      "line": 42,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_extra_log.c",
+      "line": 75,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_extra_log.c",
+      "line": 77,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_log.h",
+      "line": 67,
+      "message": "format/vprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_log.h",
+      "line": 68,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_thread.h",
+      "line": 42,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/ijkmedia/ijksdl/ijksdl_timer.c",
+      "line": 85,
+      "message": "Uninitialized variable: clock",
+      "rule": "uninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "ijkmedia/ijkplayer/ff_ffplay.c",
+      "line": 531,
+      "message": "This 'call to sprintf' operation requires 21 bytes but the destination is only 16 bytes.",
+      "rule": "cpp/overrunning-write",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 323,
+      "message": "Call to read with untrusted data from [call to read](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiocache.c",
+      "line": 323,
+      "message": "Call to read with untrusted data from [call to read](1).",
+      "rule": "cpp/untrusted-data-to-external-api",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 139,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 246,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 265,
+      "message": "[string read by fgets](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "ijkmedia/ijkplayer/ijkavformat/ijkiomanager.c",
+      "line": 346,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "ijkmedia/ijkplayer/ijkavutil/ijkthreadpool.c",
+      "line": 150,
+      "message": "This lock might not be unlocked or might be locked more times than it is unlocked.",
+      "rule": "cpp/unreleased-lock",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "ijkmedia/ijkplayer/ijkavutil/ijkthreadpool.c",
+      "line": 217,
+      "message": "This lock might not be unlocked or might be locked more times than it is unlocked.",
+      "rule": "cpp/unreleased-lock",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 240,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 9,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 33,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 183,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 15,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ijkplayer/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

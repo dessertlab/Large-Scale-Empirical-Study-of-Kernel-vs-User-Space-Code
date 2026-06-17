@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/autocompact_test.cc">
+            <location file="/workspace/db/autocompact_test.cc" line="106" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/corruption_test.cc">
+            <location file="/workspace/db/corruption_test.cc" line="193" column="1"/>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;version&apos; is initialized by itself." verbose="Member variable &apos;version&apos; is initialized by itself." cwe="665" file0="/workspace/db/db_impl.cc">
+            <location file="/workspace/db/db_impl.cc" line="1068" column="18"/>
+            <symbol>version</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;mem&apos; is initialized by itself." verbose="Member variable &apos;mem&apos; is initialized by itself." cwe="665" file0="/workspace/db/db_impl.cc">
+            <location file="/workspace/db/db_impl.cc" line="1068" column="36"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;imm&apos; is initialized by itself." verbose="Member variable &apos;imm&apos; is initialized by itself." cwe="665" file0="/workspace/db/db_impl.cc">
+            <location file="/workspace/db/db_impl.cc" line="1068" column="46"/>
+            <symbol>imm</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_test.cc">
+            <location file="/workspace/db/db_test.cc" line="571" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/dbformat_test.cc">
+            <location file="/workspace/db/dbformat_test.cc" line="45" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/fault_injection_test.cc">
+            <location file="/workspace/db/fault_injection_test.cc" line="540" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/filename_test.cc">
+            <location file="/workspace/db/filename_test.cc" line="73" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/log_test.cc">
+            <location file="/workspace/db/log_test.cc" line="261" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/recovery_test.cc">
+            <location file="/workspace/db/recovery_test.cc" line="161" column="1"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;Repairer&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Repairer&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/db/repair.cc">
+            <location file="/workspace/db/repair.cc" line="57" column="5"/>
+            <symbol>Repairer</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;Repairer&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Repairer&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/db/repair.cc">
+            <location file="/workspace/db/repair.cc" line="57" column="5"/>
+            <symbol>Repairer</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/skiplist_test.cc">
+            <location file="/workspace/db/skiplist_test.cc" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/version_edit_test.cc">
+            <location file="/workspace/db/version_edit_test.cc" line="21" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;LevelFileNumIterator::value_buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;LevelFileNumIterator::value_buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="165" column="3"/>
+            <symbol>LevelFileNumIterator::value_buf_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/version_set_test.cc">
+            <location file="/workspace/db/version_set_test.cc" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/write_batch_test.cc">
+            <location file="/workspace/db/write_batch_test.cc" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/helpers/memenv/memenv_test.cc">
+            <location file="/workspace/helpers/memenv/memenv_test.cc" line="26" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/issues/issue178_test.cc">
+            <location file="/workspace/issues/issue178_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/issues/issue320_test.cc">
+            <location file="/workspace/issues/issue320_test.cc" line="41" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/filter_block_test.cc">
+            <location file="/workspace/table/filter_block_test.cc" line="44" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/table_test.cc">
+            <location file="/workspace/table/table_test.cc" line="613" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/arena_test.cc">
+            <location file="/workspace/util/arena_test.cc" line="14" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/bloom_test.cc">
+            <location file="/workspace/util/bloom_test.cc" line="82" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/cache_test.cc">
+            <location file="/workspace/util/cache_test.cc" line="67" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/coding_test.cc">
+            <location file="/workspace/util/coding_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/crc32c_test.cc">
+            <location file="/workspace/util/crc32c_test.cc" line="41" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PosixWritableFile::buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;PosixWritableFile::buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/util/env_posix.cc">
+            <location file="/workspace/util/env_posix.cc" line="279" column="3"/>
+            <symbol>PosixWritableFile::buf_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/env_posix_test.cc">
+            <location file="/workspace/util/env_posix_test.cc" line="184" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/env_test.cc">
+            <location file="/workspace/util/env_test.cc" line="24" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WindowsWritableFile::buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;WindowsWritableFile::buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/util/env_windows.cc">
+            <location file="/workspace/util/env_windows.cc" line="268" column="3"/>
+            <symbol>WindowsWritableFile::buf_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/env_windows_test.cc">
+            <location file="/workspace/util/env_windows_test.cc" line="26" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/logging_test.cc">
+            <location file="/workspace/util/logging_test.cc" line="53" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/no_destructor_test.cc">
+            <location file="/workspace/util/no_destructor_test.cc" line="32" column="1"/>
+        </error>
+    </errors>
+</results>

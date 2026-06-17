@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="cppcheckError" severity="error" msg="Analysis failed. If the code is valid then please report this failure." verbose="Analysis failed. If the code is valid then please report this failure." file0="/workspace/backends/imgui_impl_glfw.cpp">
+            <location file="/workspace/backends/imgui_impl_glfw.cpp" line="666" column="145"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/backends/imgui_impl_opengl3.cpp">
+            <location file="/workspace/backends/imgui_impl_opengl3.cpp" line="1025" column="5"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Analysis failed. If the code is valid then please report this failure." verbose="Analysis failed. If the code is valid then please report this failure." file0="/workspace/backends/imgui_impl_sdl2.cpp">
+            <location file="/workspace/backends/imgui_impl_sdl2.cpp" line="487" column="145"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="No header in #include" verbose="No header in #include">
+            <location file="/workspace/backends/imgui_impl_vulkan.h" line="69" column="0"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/examples/libs/usynergy/uSynergy.c">
+            <location file="/workspace/examples/libs/usynergy/uSynergy.c" line="621" column="3"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;prev_nav_window&apos; is redundant or there is possible null pointer dereference: window." verbose="Either the condition &apos;prev_nav_window&apos; is redundant or there is possible null pointer dereference: window." cwe="476" file0="/workspace/imgui.cpp">
+            <location file="/workspace/imgui.cpp" line="13650" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/imgui.cpp" line="13661" column="53" info="Calling function &apos;NavRestoreLastChildNavWindow&apos;, 1st argument &apos;g.NavWindow&apos; value is 0"/>
+            <location file="/workspace/imgui.cpp" line="13660" column="38" info="prev_nav_window is assigned &apos;g.NavWindow&apos; here."/>
+            <location file="/workspace/imgui.cpp" line="13663" column="13" info="Assuming that condition &apos;prev_nav_window&apos; is not redundant"/>
+            <symbol>window</symbol>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args_copy&apos; used before va_start() was called." verbose="va_list &apos;args_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/imgui.cpp">
+            <location file="/workspace/imgui.cpp" line="3188" column="5"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args_copy&apos; used before va_start() was called." verbose="va_list &apos;args_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/imgui.cpp">
+            <location file="/workspace/imgui.cpp" line="3193" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/imgui_demo.cpp">
+            <location file="/workspace/imgui_demo.cpp" line="2149" column="32"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variables: ranges.h_oversample, ranges.v_oversample" verbose="Uninitialized variables: ranges.h_oversample, ranges.v_oversample" cwe="457" file0="/workspace/imgui_draw.cpp">
+            <location file="/workspace/imstb_truetype.h" line="4319" column="21"/>
+            <location file="/workspace/imstb_truetype.h" line="4355" column="59" info="Calling function &apos;stbtt_PackFontRanges&apos;, 4th argument &apos;&amp;range&apos; value is &lt;Uninit&gt;"/>
+            <symbol>ranges</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/imgui_tables.cpp">
+            <location file="/workspace/imgui_tables.cpp" line="3983" column="67"/>
+        </error>
+        <error id="argumentSize" severity="warning" msg="Buffer &apos;col&apos; is too small, the function &apos;ColorEdit4&apos; expects a bigger buffer in 2nd argument" verbose="Buffer &apos;col&apos; is too small, the function &apos;ColorEdit4&apos; expects a bigger buffer in 2nd argument" cwe="398" file0="/workspace/imgui_widgets.cpp">
+            <location file="/workspace/imgui_widgets.cpp" line="5762" column="12"/>
+            <location file="/workspace/imgui_widgets.cpp" line="5760" column="49" info="Passing buffer &apos;col&apos; to function that is declared here"/>
+            <location file="/workspace/imgui_widgets.cpp" line="5796" column="49" info="Declaration of 2nd function argument."/>
+            <location file="/workspace/imgui_widgets.cpp" line="5762" column="12" info="Function &apos;ColorEdit4&apos; is called"/>
+            <symbol>ColorEdit4</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Struct &apos;ImGuiInputTextState&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;ImGuiInputTextState&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/imgui_widgets.cpp">
+            <location file="/workspace/imgui_widgets.cpp" line="4294" column="5"/>
+            <symbol>ImGuiInputTextState</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;ImGuiInputTextState&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;ImGuiInputTextState&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/imgui_widgets.cpp">
+            <location file="/workspace/imgui_widgets.cpp" line="4294" column="5"/>
+            <symbol>ImGuiInputTextState</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IM_PLACEMENT_NEW is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IM_PLACEMENT_NEW is a macro then please configure it." file0="/workspace/misc/freetype/imgui_freetype.cpp">
+            <location file="/workspace/misc/freetype/imgui_freetype.cpp" line="442" column="5"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: window" verbose="Null pointer dereference: window" cwe="476">
+            <location file="/workspace/imgui.cpp" line="13650" column="9" info="Dereferencing argument window that is null"/>
+            <location file="/workspace/imgui.cpp" line="13661" column="51" info="Calling function NavRestoreLastChildNavWindow, 1st argument is null"/>
+            <location file="/workspace/imgui.cpp" line="13660" column="38" info="prev_nav_window is assigned &apos;g.NavWindow&apos; here."/>
+            <location file="/workspace/imgui.cpp" line="13663" column="13" info="Assuming that condition &apos;prev_nav_window&apos; is not redundant"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

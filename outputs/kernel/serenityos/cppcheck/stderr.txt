@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toDoubleNumber: input was not completely consumed: 0b001100" verbose="Internal Error. MathLib::toDoubleNumber: input was not completely consumed: 0b001100" file0="/workspace/Kernel/Arch/aarch64/Interrupts.cpp">
+            <location file="/workspace/Kernel/Arch/aarch64/Interrupts.cpp" line="0" column="0"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found unused cast of expression &apos;function&apos;." verbose="Redundant code: Found unused cast of expression &apos;function&apos;." cwe="398" file0="/workspace/Kernel/Arch/aarch64/PSCI.cpp">
+            <location file="/workspace/Kernel/Arch/aarch64/PSCI.cpp" line="36" column="61"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found unused cast of expression &apos;function&apos;." verbose="Redundant code: Found unused cast of expression &apos;function&apos;." cwe="398" file0="/workspace/Kernel/Arch/aarch64/PSCI.cpp">
+            <location file="/workspace/Kernel/Arch/aarch64/PSCI.cpp" line="56" column="57"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_RISCV_EXTENSIONS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ENUMERATE_RISCV_EXTENSIONS is a macro then please configure it." file0="/workspace/Kernel/Arch/riscv64/CPUID.cpp">
+            <location file="/workspace/Kernel/Arch/riscv64/CPUID.cpp" line="35" column="5"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="169" column="35" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="230" column="35" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="300" column="38" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="349" column="38" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="398" column="38" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Arch/x86_64/Processor.cpp">
+            <location file="/workspace/Kernel/Arch/x86_64/Processor.cpp" line="477" column="48" info="Integer overflow"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;m_operational_registers.usb_status.raw&apos; to itself." verbose="Redundant assignment of &apos;m_operational_registers.usb_status.raw&apos; to itself." cwe="398" file0="/workspace/Kernel/Bus/USB/xHCI/xHCIController.cpp">
+            <location file="/workspace/Kernel/Bus/USB/xHCI/xHCIController.cpp" line="219" column="44"/>
+            <symbol>m_operational_registers.usb_status.raw</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_widget_type&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_widget_type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_widget_type</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_power_control_supported&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_power_control_supported&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_power_control_supported</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_connection_list_present&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_connection_list_present&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_connection_list_present</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_format_override&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_format_override&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_format_override</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_amp_param_override&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_amp_param_override&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_amp_param_override</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_output_amp_present&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_output_amp_present&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_output_amp_present</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_input_amp_present&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_input_amp_present&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_input_amp_present</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_output_amp_capabilities&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_output_amp_capabilities&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_output_amp_capabilities</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_input_amp_capabilities&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_input_amp_capabilities&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_input_amp_capabilities</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_pin_complex_input_supported&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_pin_complex_input_supported&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_pin_complex_input_supported</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_pin_complex_output_supported&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_pin_complex_output_supported&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_pin_complex_output_supported</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WidgetNode::m_pin_configuration_default&apos; is not initialized in the constructor." verbose="Member variable &apos;WidgetNode::m_pin_configuration_default&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="357" column="5"/>
+            <symbol>WidgetNode::m_pin_configuration_default</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;FunctionGroupNode::m_function_group_type&apos; is not initialized in the constructor." verbose="Member variable &apos;FunctionGroupNode::m_function_group_type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.cpp">
+            <location file="/workspace/Kernel/Devices/Audio/IntelHDA/Codec.h" line="413" column="5"/>
+            <symbol>FunctionGroupNode::m_function_group_type</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/DisplayConnectorGroup.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/DisplayConnectorGroup.cpp" line="263" column="87" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/DisplayConnectorGroup.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/DisplayConnectorGroup.cpp" line="270" column="92" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Plane/DisplayPlane.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Plane/DisplayPlane.cpp" line="57" column="44" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Plane/DisplayPlane.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Plane/DisplayPlane.cpp" line="65" column="39" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Plane/G33DisplayPlane.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Plane/G33DisplayPlane.cpp" line="48" column="42" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Transcoder/AnalogDisplayTranscoder.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Transcoder/AnalogDisplayTranscoder.cpp" line="56" column="100" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Transcoder/AnalogDisplayTranscoder.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Transcoder/AnalogDisplayTranscoder.cpp" line="75" column="32" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp" line="81" column="44" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp" line="90" column="47" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp">
+            <location file="/workspace/Kernel/Devices/GPU/Intel/Transcoder/DisplayTranscoder.cpp" line="91" column="39" info="Integer overflow"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1zu" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1zu" file0="/workspace/Kernel/Devices/Input/HID/KeyboardDriver.cpp">
+            <location file="/workspace/Kernel/Devices/Input/HID/KeyboardDriver.cpp" line="0" column="0"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/Storage/AHCI/Controller.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/AHCI/Controller.cpp" line="54" column="37" info="Integer overflow"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;m_port_registers.serr&apos; to itself." verbose="Redundant assignment of &apos;m_port_registers.serr&apos; to itself." cwe="398" file0="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp" line="73" column="27"/>
+            <symbol>m_port_registers.serr</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;0b1000&lt;&lt;28&apos;." verbose="Signed integer overflow for expression &apos;0b1000&lt;&lt;28&apos;." cwe="190" file0="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp" line="402" column="73" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/AHCI/Port.cpp" line="536" column="86" info="Integer overflow"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 4uz" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 4uz" file0="/workspace/Kernel/Devices/Storage/USB/BOT/BulkSCSIStorageDevice.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/USB/BOT/BulkSCSIStorageDevice.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 4uz" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 4uz" file0="/workspace/Kernel/Devices/Storage/USB/UAS/UASStorageDevice.cpp">
+            <location file="/workspace/Kernel/Devices/Storage/USB/UAS/UASStorageDevice.cpp" line="0" column="0"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/FileSystem/Inode.cpp">
+            <location file="/workspace/Kernel/FileSystem/Inode.cpp" line="398" column="12"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/FileSystem/Plan9FS/FileSystem.cpp">
+            <location file="/workspace/Kernel/FileSystem/Plan9FS/FileSystem.cpp" line="216" column="16"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;page_table_entry==nullptr&apos; is redundant or there is possible null pointer dereference: page_table_entry." verbose="Either the condition &apos;page_table_entry==nullptr&apos; is redundant or there is possible null pointer dereference: page_table_entry." cwe="476" file0="/workspace/Kernel/Memory/Region.cpp">
+            <location file="/workspace/Kernel/Memory/Region.cpp" line="520" column="14" info="Null pointer dereference"/>
+            <location file="/workspace/Kernel/Memory/Region.cpp" line="517" column="30" info="Assuming that condition &apos;page_table_entry==nullptr&apos; is not redundant"/>
+            <symbol>page_table_entry</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Net/LocalSocket.cpp">
+            <location file="/workspace/Kernel/Net/LocalSocket.cpp" line="210" column="8"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Net/Routing.cpp">
+            <location file="/workspace/Kernel/Net/Routing.cpp" line="334" column="8"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Net/TCPSocket.cpp">
+            <location file="/workspace/Kernel/Net/TCPSocket.cpp" line="591" column="12"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Syscalls/read.cpp">
+            <location file="/workspace/Kernel/Syscalls/read.cpp" line="31" column="16"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Syscalls/socket.cpp">
+            <location file="/workspace/Kernel/Syscalls/socket.cpp" line="124" column="12"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Syscalls/waitid.cpp">
+            <location file="/workspace/Kernel/Syscalls/waitid.cpp" line="16" column="8"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, &apos;if&apos; doesn&apos;t have two operands." file0="/workspace/Kernel/Syscalls/write.cpp">
+            <location file="/workspace/Kernel/Syscalls/write.cpp" line="74" column="16"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;trap&apos; is redundant or there is possible null pointer dereference: trap." verbose="Either the condition &apos;trap&apos; is redundant or there is possible null pointer dereference: trap." cwe="476" file0="/workspace/Kernel/Tasks/Thread.cpp">
+            <location file="/workspace/Kernel/Tasks/Thread.cpp" line="1166" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/Kernel/Tasks/Thread.cpp" line="1161" column="12" info="Assuming that condition &apos;trap&apos; is not redundant"/>
+            <symbol>trap</symbol>
+        </error>
+    </errors>
+</results>

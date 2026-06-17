@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="localMutex" severity="warning" msg="The lock is ineffective because the mutex is locked at the same scope as the mutex itself." verbose="The lock is ineffective because the mutex is locked at the same scope as the mutex itself." cwe="667" file0="/workspace/examples/cpp/csm/csm_greeter_client.cc">
+            <location file="/workspace/examples/cpp/csm/csm_greeter_client.cc" line="129" column="34"/>
+        </error>
+        <error id="localMutex" severity="warning" msg="The lock is ineffective because the mutex is locked at the same scope as the mutex itself." verbose="The lock is ineffective because the mutex is locked at the same scope as the mutex itself." cwe="667" file0="/workspace/examples/cpp/multiplex/multiplex_client.cc">
+            <location file="/workspace/examples/cpp/multiplex/multiplex_client.cc" line="62" column="32"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;meter_provider&apos;." verbose="Access of moved variable &apos;meter_provider&apos;." cwe="672" file0="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc">
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc" line="78" column="39" info="Access of moved variable &apos;meter_provider&apos;."/>
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc" line="78" column="29" info="Calling std::move(meter_provider)"/>
+            <symbol>meter_provider</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;tracer_provider&apos;." verbose="Access of moved variable &apos;tracer_provider&apos;." cwe="672" file0="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc">
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc" line="79" column="40" info="Access of moved variable &apos;tracer_provider&apos;."/>
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_client.cc" line="79" column="30" info="Calling std::move(tracer_provider)"/>
+            <symbol>tracer_provider</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;meter_provider&apos;." verbose="Access of moved variable &apos;meter_provider&apos;." cwe="672" file0="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc">
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc" line="80" column="39" info="Access of moved variable &apos;meter_provider&apos;."/>
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc" line="80" column="29" info="Calling std::move(meter_provider)"/>
+            <symbol>meter_provider</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;tracer_provider&apos;." verbose="Access of moved variable &apos;tracer_provider&apos;." cwe="672" file0="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc">
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc" line="81" column="40" info="Access of moved variable &apos;tracer_provider&apos;."/>
+            <location file="/workspace/examples/cpp/otel/ostream/greeter_callback_server.cc" line="81" column="30" info="Calling std::move(tracer_provider)"/>
+            <symbol>tracer_provider</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;url&apos;." verbose="Access of moved variable &apos;url&apos;." cwe="672" file0="/workspace/src/core/channelz/zviz/html.cc">
+            <location file="/workspace/src/core/channelz/zviz/html.cc" line="63" column="36" info="Access of moved variable &apos;url&apos;."/>
+            <location file="/workspace/src/core/channelz/zviz/html.cc" line="63" column="26" info="Calling std::move(url)"/>
+            <symbol>url</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;self&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;self&apos; doesn&apos;t have a parent." file0="/workspace/src/core/client_channel/client_channel.cc">
+            <location file="/workspace/src/core/client_channel/client_channel.cc" line="241" column="14"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;chand_&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;chand_&apos; doesn&apos;t have a parent." file0="/workspace/src/core/client_channel/client_channel_filter.cc">
+            <location file="/workspace/src/core/client_channel/client_channel_filter.cc" line="454" column="49"/>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;remaining&apos; is initialized by itself." verbose="Member variable &apos;remaining&apos; is initialized by itself." cwe="665" file0="/workspace/src/core/ext/transport/chaotic_good/data_endpoints.cc">
+            <location file="/workspace/src/core/ext/transport/chaotic_good/data_endpoints.cc" line="1056" column="9"/>
+            <symbol>remaining</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;sc&apos;." verbose="Access of moved variable &apos;sc&apos;." cwe="672" file0="/workspace/src/core/ext/transport/chttp2/server/chttp2_server.cc">
+            <location file="/workspace/src/core/ext/transport/chttp2/server/chttp2_server.cc" line="961" column="40" info="Access of moved variable &apos;sc&apos;."/>
+            <location file="/workspace/src/core/ext/transport/chttp2/server/chttp2_server.cc" line="961" column="30" info="Calling std::move(sc)"/>
+            <symbol>sc</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: out" verbose="Uninitialized variable: out" cwe="457" file0="/workspace/src/core/ext/transport/chttp2/transport/bin_encoder.cc">
+            <location file="/workspace/src/core/ext/transport/chttp2/transport/bin_encoder.cc" line="57" column="9"/>
+            <symbol>out</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;t&apos;." verbose="Access of moved variable &apos;t&apos;." cwe="672" file0="/workspace/src/core/ext/transport/chttp2/transport/chttp2_transport.cc">
+            <location file="/workspace/src/core/ext/transport/chttp2/transport/chttp2_transport.cc" line="3407" column="20" info="Access of moved variable &apos;t&apos;."/>
+            <location file="/workspace/src/core/ext/transport/chttp2/transport/chttp2_transport.cc" line="3401" column="50" info="Calling std::move(t)"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/core/ext/transport/chttp2/transport/hpack_parser.cc">
+            <location file="/workspace/src/core/ext/transport/chttp2/transport/hpack_parser.cc" line="478" column="34"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;inproc_transport::accept_stream_cb&apos; is not initialized in the constructor." verbose="Member variable &apos;inproc_transport::accept_stream_cb&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc">
+            <location file="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc" line="98" column="3"/>
+            <symbol>inproc_transport::accept_stream_cb</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;inproc_transport::accept_stream_data&apos; is not initialized in the constructor." verbose="Member variable &apos;inproc_transport::accept_stream_data&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc">
+            <location file="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc" line="98" column="3"/>
+            <symbol>inproc_transport::accept_stream_data</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;inproc_transport::other_side&apos; is not initialized in the constructor." verbose="Member variable &apos;inproc_transport::other_side&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc">
+            <location file="/workspace/src/core/ext/transport/inproc/legacy_inproc_transport.cc" line="98" column="3"/>
+            <symbol>inproc_transport::other_side</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/cel/expr/checked.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/cel/expr/checked.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/cel/expr/syntax.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/cel/expr/syntax.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/certs.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/certs.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/clusters.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/clusters.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/config_dump.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/config_dump.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/config_dump_shared.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/config_dump_shared.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/init_dump.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/init_dump.upb_minitable.c" line="27" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/listeners.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/listeners.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/server_info.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/server_info.upb_minitable.c" line="36" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/admin/v3/tap.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/admin/v3/tap.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/annotations/deprecation.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/annotations/deprecation.upb_minitable.c" line="20" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/annotations/resource.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/annotations/resource.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/accesslog/v3/accesslog.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/accesslog/v3/accesslog.upb_minitable.c" line="38" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/bootstrap/v3/bootstrap.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/bootstrap/v3/bootstrap.upb_minitable.c" line="90" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/circuit_breaker.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/circuit_breaker.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/cluster.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/cluster.upb_minitable.c" line="51" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/filter.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/filter.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/outlier_detection.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/cluster/v3/outlier_detection.upb_minitable.c" line="56" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/common/matcher/v3/matcher.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/common/matcher/v3/matcher.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/common/mutation_rules/v3/mutation_rules.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/common/mutation_rules/v3/mutation_rules.upb_minitable.c" line="38" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/address.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/address.upb_minitable.c" line="113" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/backoff.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/backoff.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/base.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/base.upb_minitable.c" line="65" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/config_source.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/config_source.upb_minitable.c" line="45" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/event_service_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/event_service_config.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/extension.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/extension.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/grpc_method_list.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/grpc_method_list.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/grpc_service.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/grpc_service.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/health_check.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/health_check.upb_minitable.c" line="85" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/http_service.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/http_service.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/http_uri.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/http_uri.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/protocol.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/protocol.upb_minitable.c" line="45" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/proxy_protocol.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/proxy_protocol.upb_minitable.c" line="54" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/resolver.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/resolver.upb_minitable.c" line="53" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/socket_cmsg_headers.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/socket_cmsg_headers.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/socket_option.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/socket_option.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/substitution_format_string.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/substitution_format_string.upb_minitable.c" line="58" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/udp_socket_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/core/v3/udp_socket_config.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/endpoint.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/endpoint.upb_minitable.c" line="36" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/endpoint_components.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/endpoint_components.upb_minitable.c" line="39" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/load_report.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/endpoint/v3/load_report.upb_minitable.c" line="47" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/api_listener.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/api_listener.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/listener.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/listener.upb_minitable.c" line="45" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/listener_components.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/listener_components.upb_minitable.c" line="39" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/quic_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/quic_config.upb_minitable.c" line="49" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/udp_listener_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/listener/v3/udp_listener_config.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/metrics/v3/metrics_service.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/metrics/v3/metrics_service.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/metrics/v3/stats.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/metrics/v3/stats.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/overload/v3/overload.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/overload/v3/overload.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/rbac/v3/rbac.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/rbac/v3/rbac.upb_minitable.c" line="44" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/route.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/route.upb_minitable.c" line="51" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/route_components.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/route_components.upb_minitable.c" line="70" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/scoped_route.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/route/v3/scoped_route.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/tap/v3/common.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/tap/v3/common.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/datadog.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/datadog.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/dynamic_ot.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/dynamic_ot.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/http_tracer.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/http_tracer.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/lightstep.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/lightstep.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/opentelemetry.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/opentelemetry.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/service.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/service.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/skywalking.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/skywalking.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/xray.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/xray.upb_minitable.c" line="36" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/zipkin.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/config/trace/v3/zipkin.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/data/accesslog/v3/accesslog.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/data/accesslog/v3/accesslog.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/clusters/aggregate/v3/cluster.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/clusters/aggregate/v3/cluster.upb_minitable.c" line="51" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/common/matching/v3/extension_matcher.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/common/matching/v3/extension_matcher.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/common/fault/v3/fault.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/common/fault/v3/fault.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/composite/v3/composite.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/composite/v3/composite.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/fault/v3/fault.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/fault/v3/fault.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/gcp_authn/v3/gcp_authn.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/gcp_authn/v3/gcp_authn.upb_minitable.c" line="38" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/rbac/v3/rbac.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/rbac/v3/rbac.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/router/v3/router.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/router/v3/router.upb_minitable.c" line="42" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/stateful_session/v3/stateful_session.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/http/stateful_session/v3/stateful_session.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/network/http_connection_manager/v3/http_connection_manager.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/filters/network/http_connection_manager/v3/http_connection_manager.upb_minitable.c" line="106" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/tls/v3/tls_credentials.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/tls/v3/tls_credentials.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/xds/v3/xds_credentials.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/grpc_service/channel_credentials/xds/v3/xds_credentials.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/http/stateful_session/cookie/v3/cookie.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/http/stateful_session/cookie/v3/cookie.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/client_side_weighted_round_robin/v3/client_side_weighted_round_robin.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/client_side_weighted_round_robin/v3/client_side_weighted_round_robin.upb_minitable.c" line="38" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/common/v3/common.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/common/v3/common.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/ring_hash/v3/ring_hash.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/ring_hash/v3/ring_hash.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/wrr_locality/v3/wrr_locality.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/wrr_locality/v3/wrr_locality.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/http_11_proxy/v3/upstream_http_11_connect.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/http_11_proxy/v3/upstream_http_11_connect.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/common.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/common.upb_minitable.c" line="70" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/secret.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/secret.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/tls.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/tls.upb_minitable.c" line="42" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/tls_spiffe_validator_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/transport_sockets/tls/v3/tls_spiffe_validator_config.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/extensions/upstreams/http/v3/http_protocol_options.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/extensions/upstreams/http/v3/http_protocol_options.upb_minitable.c" line="43" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/service/discovery/v3/discovery.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/service/discovery/v3/discovery.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/service/load_stats/v3/lrs.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/service/load_stats/v3/lrs.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/service/status/v3/csds.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/service/status/v3/csds.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/http/v3/cookie.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/http/v3/cookie.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/http/v3/path_transformation.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/http/v3/path_transformation.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/address.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/address.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/filter_state.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/filter_state.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/metadata.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/metadata.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/node.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/node.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/number.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/number.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/path.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/path.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/regex.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/regex.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/string.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/string.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/struct.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/struct.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/value.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/matcher/v3/value.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/metadata/v3/metadata.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/metadata/v3/metadata.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/tracing/v3/custom_tag.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/tracing/v3/custom_tag.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/v3/hash_policy.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/v3/hash_policy.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/v3/ratelimit_strategy.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/v3/ratelimit_strategy.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/envoy/type/v3/token_bucket.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/envoy/type/v3/token_bucket.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/api/annotations.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/api/annotations.upb_minitable.c" line="21" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/api/expr/v1alpha1/checked.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/api/expr/v1alpha1/checked.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/api/expr/v1alpha1/syntax.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/api/expr/v1alpha1/syntax.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/api/http.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/api/http.upb_minitable.c" line="27" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/api/httpbody.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/api/httpbody.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/protobuf/descriptor.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/protobuf/descriptor.upb_minitable.c" line="26" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/protobuf/struct.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/protobuf/struct.upb_minitable.c" line="26" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/google/rpc/status.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/google/rpc/status.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/channelz.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/channelz.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/channelz.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/channelz.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/promise.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/promise.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/property_list.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/property_list.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/service.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/channelz/v2/service.upb_minitable.c" line="52" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/altscontext.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/altscontext.upb_minitable.c" line="33" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/handshaker.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/handshaker.upb_minitable.c" line="53" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/transport_security_common.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/gcp/transport_security_common.upb_minitable.c" line="27" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/lb/v1/load_balancer.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/lb/v1/load_balancer.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/lookup/v1/rls.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/lookup/v1/rls.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/src/proto/grpc/lookup/v1/rls_config.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/src/proto/grpc/lookup/v1/rls_config.upb_minitable.c" line="54" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/udpa/annotations/migrate.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/udpa/annotations/migrate.upb_minitable.c" line="85" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/udpa/annotations/security.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/udpa/annotations/security.upb_minitable.c" line="44" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/udpa/annotations/sensitive.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/udpa/annotations/sensitive.upb_minitable.c" line="20" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/udpa/annotations/status.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/udpa/annotations/status.upb_minitable.c" line="43" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/udpa/annotations/versioning.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/udpa/annotations/versioning.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/validate/validate.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/validate/validate.upb_minitable.c" line="50" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/annotations/v3/migrate.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/annotations/v3/migrate.upb_minitable.c" line="85" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/annotations/v3/security.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/annotations/v3/security.upb_minitable.c" line="44" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/annotations/v3/sensitive.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/annotations/v3/sensitive.upb_minitable.c" line="20" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/annotations/v3/status.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/annotations/v3/status.upb_minitable.c" line="103" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/annotations/v3/versioning.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/annotations/v3/versioning.upb_minitable.c" line="40" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/cidr.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/cidr.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/collection_entry.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/collection_entry.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/context_params.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/context_params.upb_minitable.c" line="27" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/extension.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/extension.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/resource.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/resource.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/resource_locator.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/resource_locator.upb_minitable.c" line="34" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/core/v3/resource_name.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/core/v3/resource_name.upb_minitable.c" line="32" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/data/orca/v3/orca_load_report.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/data/orca/v3/orca_load_report.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/service/orca/v3/orca.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/service/orca/v3/orca.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/cel.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/cel.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/domain.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/domain.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/ip.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/ip.upb_minitable.c" line="30" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/matcher.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/matcher.upb_minitable.c" line="31" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/range.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/range.upb_minitable.c" line="29" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/regex.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/regex.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/string.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/matcher/v3/string.upb_minitable.c" line="35" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/v3/cel.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/v3/cel.upb_minitable.c" line="37" column="4"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: { . UPB_PRIVATE" verbose="syntax error: { . UPB_PRIVATE" file0="/workspace/src/core/ext/upb-gen/xds/type/v3/typed_struct.upb_minitable.c">
+            <location file="/workspace/src/core/ext/upb-gen/xds/type/v3/typed_struct.upb_minitable.c" line="28" column="4"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If read_mu is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If read_mu is a macro then please configure it." file0="/workspace/src/core/handshaker/security/pipelined_secure_endpoint.cc">
+            <location file="/workspace/src/core/handshaker/security/pipelined_secure_endpoint.cc" line="112" column="10"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If read_mu is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If read_mu is a macro then please configure it." file0="/workspace/src/core/handshaker/security/secure_endpoint.cc">
+            <location file="/workspace/src/core/handshaker/security/secure_endpoint.cc" line="134" column="10"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;HostnameQueryArg::pending_requests&apos; is not initialized in the constructor." verbose="Member variable &apos;HostnameQueryArg::pending_requests&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/event_engine/ares_resolver.cc">
+            <location file="/workspace/src/core/lib/event_engine/ares_resolver.cc" line="185" column="3"/>
+            <symbol>HostnameQueryArg::pending_requests</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/event_engine/cf_engine/cfstream_endpoint.cc">
+            <location file="/workspace/src/core/lib/event_engine/cf_engine/cfstream_endpoint.cc" line="238" column="7"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If mu is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If mu is a macro then please configure it." file0="/workspace/src/core/lib/event_engine/posix_engine/ev_poll_posix.cc">
+            <location file="/workspace/src/core/lib/event_engine/posix_engine/ev_poll_posix.cc" line="184" column="21"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/event_engine/posix_engine/lockfree_event.cc">
+            <location file="/workspace/src/core/lib/event_engine/posix_engine/lockfree_event.cc" line="146" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/event_engine/posix_engine/posix_engine_listener.cc">
+            <location file="/workspace/src/core/lib/event_engine/posix_engine/posix_engine_listener.cc" line="258" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/iomgr/cfstream_handle.cc">
+            <location file="/workspace/src/core/lib/iomgr/cfstream_handle.cc" line="87" column="7"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/core/lib/iomgr/ev_apple.cc">
+            <location file="/workspace/src/core/lib/iomgr/ev_apple.cc" line="222" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/core/lib/iomgr/ev_poll_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="940" column="19"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EventEngineEndpointWrapper::pending_read_cb_&apos; is not initialized in the constructor." verbose="Member variable &apos;EventEngineEndpointWrapper::pending_read_cb_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc">
+            <location file="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc" line="395" column="29"/>
+            <symbol>EventEngineEndpointWrapper::pending_read_cb_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EventEngineEndpointWrapper::pending_write_cb_&apos; is not initialized in the constructor." verbose="Member variable &apos;EventEngineEndpointWrapper::pending_write_cb_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc">
+            <location file="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc" line="395" column="29"/>
+            <symbol>EventEngineEndpointWrapper::pending_write_cb_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EventEngineEndpointWrapper::pending_read_buffer_&apos; is not initialized in the constructor." verbose="Member variable &apos;EventEngineEndpointWrapper::pending_read_buffer_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc">
+            <location file="/workspace/src/core/lib/iomgr/event_engine_shims/endpoint.cc" line="395" column="29"/>
+            <symbol>EventEngineEndpointWrapper::pending_read_buffer_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/iomgr/lockfree_event.cc">
+            <location file="/workspace/src/core/lib/iomgr/lockfree_event.cc" line="154" column="3"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/core/lib/iomgr/pollset_windows.cc">
+            <location file="/workspace/src/core/lib/iomgr/pollset_windows.cc" line="110" column="19"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::em_fd&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::em_fd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::em_fd</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::fd&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::fd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::fd</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::inq&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::inq&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::inq</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::target_length&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::target_length&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::target_length</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::bytes_read_this_round&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::bytes_read_this_round&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::bytes_read_this_round</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::outgoing_buffer&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::outgoing_buffer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::outgoing_buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::outgoing_byte_idx&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::outgoing_byte_idx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::outgoing_byte_idx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::read_cb&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::read_cb&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::read_cb</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::write_cb&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::write_cb&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::write_cb</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::release_fd_cb&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::release_fd_cb&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::release_fd_cb</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::release_fd&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::release_fd&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::release_fd</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::outgoing_buffer_arg&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::outgoing_buffer_arg&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::outgoing_buffer_arg</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::bytes_counter&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::bytes_counter&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::bytes_counter</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::min_progress_size&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::min_progress_size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::min_progress_size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::is_first_read&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::is_first_read&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::is_first_read</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::inq_capable&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::inq_capable&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::inq_capable</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::socket_ts_enabled&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::socket_ts_enabled&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::socket_ts_enabled</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;grpc_tcp::ts_capable&apos; is not initialized in the constructor." verbose="Member variable &apos;grpc_tcp::ts_capable&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/iomgr/tcp_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_posix.cc" line="478" column="12"/>
+            <symbol>grpc_tcp::ts_capable</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/iomgr/tcp_server_posix.cc">
+            <location file="/workspace/src/core/lib/iomgr/tcp_server_posix.cc" line="495" column="3"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PartyWakeup::prev_state&apos; is not initialized in the constructor." verbose="Member variable &apos;PartyWakeup::prev_state&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/lib/promise/party.cc">
+            <location file="/workspace/src/core/lib/promise/party.cc" line="307" column="5"/>
+            <symbol>PartyWakeup::prev_state</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: activation" verbose="Null pointer dereference: activation" cwe="476" file0="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc">
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="135" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="121" column="37" info="Assuming container is not empty"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="99" column="27" info="Assuming container is not empty"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="98" column="41" info="Assignment &apos;std::unique_ptr&lt;mock_cel::Activation&gt;activation&apos;, assigned value is 0"/>
+            <symbol>activation</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: activation" verbose="Null pointer dereference: activation" cwe="476" file0="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc">
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="145" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="99" column="27" info="Assuming container is not empty"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="98" column="41" info="Assignment &apos;std::unique_ptr&lt;mock_cel::Activation&gt;activation&apos;, assigned value is 0"/>
+            <symbol>activation</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: activation" verbose="Null pointer dereference: activation" cwe="476" file0="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc">
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="155" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="99" column="27" info="Assuming container is not empty"/>
+            <location file="/workspace/src/core/lib/security/authorization/cel_authorization_engine.cc" line="98" column="41" info="Assignment &apos;std::unique_ptr&lt;mock_cel::Activation&gt;activation&apos;, assigned value is 0"/>
+            <symbol>activation</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: b" verbose="Uninitialized variable: b" cwe="457" file0="/workspace/src/core/lib/slice/slice.cc">
+            <location file="/workspace/src/core/lib/slice/slice.cc" line="477" column="15"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: b" verbose="Uninitialized variable: b" cwe="457" file0="/workspace/src/core/lib/slice/slice.cc">
+            <location file="/workspace/src/core/lib/slice/slice.cc" line="486" column="15"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/core/lib/surface/channel_stack_type.cc">
+            <location file="/workspace/src/core/lib/surface/channel_stack_type.cc" line="44" column="35"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/lib/surface/completion_queue.cc">
+            <location file="/workspace/src/core/lib/surface/completion_queue.cc" line="1188" column="3"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;arg==nullptr&apos; is redundant or there is possible null pointer dereference: arg." verbose="Either the condition &apos;arg==nullptr&apos; is redundant or there is possible null pointer dereference: arg." cwe="476" file0="/workspace/src/core/load_balancing/grpclb/grpclb.cc">
+            <location file="/workspace/src/core/load_balancing/grpclb/grpclb.cc" line="803" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/src/core/load_balancing/grpclb/grpclb.cc" line="793" column="11" info="Assuming that condition &apos;arg==nullptr&apos; is not redundant"/>
+            <symbol>arg</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: endpoint_weight.normalized_weight" verbose="Uninitialized variable: endpoint_weight.normalized_weight" cwe="457" file0="/workspace/src/core/load_balancing/ring_hash/ring_hash.cc">
+            <location file="/workspace/src/core/load_balancing/ring_hash/ring_hash.cc" line="467" column="42"/>
+            <symbol>endpoint_weight</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: endpoint_weight.normalized_weight" verbose="Uninitialized struct member: endpoint_weight.normalized_weight" cwe="457" file0="/workspace/src/core/load_balancing/ring_hash/ring_hash.cc">
+            <location file="/workspace/src/core/load_balancing/ring_hash/ring_hash.cc" line="467" column="42"/>
+            <symbol>endpoint_weight.normalized_weight</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Find is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Find is a macro then please configure it." file0="/workspace/src/core/load_balancing/rls/rls.cc">
+            <location file="/workspace/src/core/load_balancing/rls/rls.cc" line="492" column="12"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/load_balancing/weighted_target/weighted_target.cc">
+            <location file="/workspace/src/core/load_balancing/weighted_target/weighted_target.cc" line="417" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/load_balancing/xds/xds_cluster_manager.cc">
+            <location file="/workspace/src/core/load_balancing/xds/xds_cluster_manager.cc" line="345" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If grpc_ares_ev_driver_ref is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If grpc_ares_ev_driver_ref is a macro then please configure it." file0="/workspace/src/core/resolver/dns/c_ares/grpc_ares_wrapper.cc">
+            <location file="/workspace/src/core/resolver/dns/c_ares/grpc_ares_wrapper.cc" line="196" column="29"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GPR_UNREACHABLE_CODE is a macro then please configure it." file0="/workspace/src/core/server/server.cc">
+            <location file="/workspace/src/core/server/server.cc" line="1981" column="7"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: frame_size_buffer" verbose="Uninitialized variable: frame_size_buffer" cwe="457" file0="/workspace/src/core/tsi/alts/zero_copy_frame_protector/alts_zero_copy_grpc_protector.cc">
+            <location file="/workspace/src/core/tsi/alts/zero_copy_frame_protector/alts_zero_copy_grpc_protector.cc" line="89" column="48"/>
+            <location file="/workspace/src/core/tsi/alts/zero_copy_frame_protector/alts_zero_copy_grpc_protector.cc" line="75" column="24" info="Assuming condition is false"/>
+            <symbol>frame_size_buffer</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: buf" verbose="Uninitialized variable: buf" cwe="457" file0="/workspace/src/core/tsi/fake_transport_security.cc">
+            <location file="/workspace/src/core/tsi/fake_transport_security.cc" line="114" column="33"/>
+            <location file="/workspace/src/core/tsi/fake_transport_security.cc" line="146" column="31" info="Calling function &apos;load32_little_endian&apos;, 1st argument &apos;frame_size_buffer&apos; value is &lt;Uninit&gt;"/>
+            <location file="/workspace/src/core/tsi/fake_transport_security.cc" line="133" column="24" info="Assuming condition is false"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tsi_ssl_handshaker::ssl&apos; is not initialized in the constructor." verbose="Member variable &apos;tsi_ssl_handshaker::ssl&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/tsi/ssl_transport_security.cc">
+            <location file="/workspace/src/core/tsi/ssl_transport_security.cc" line="191" column="3"/>
+            <symbol>tsi_ssl_handshaker::ssl</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tsi_ssl_handshaker::network_io&apos; is not initialized in the constructor." verbose="Member variable &apos;tsi_ssl_handshaker::network_io&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/tsi/ssl_transport_security.cc">
+            <location file="/workspace/src/core/tsi/ssl_transport_security.cc" line="191" column="3"/>
+            <symbol>tsi_ssl_handshaker::network_io</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tsi_ssl_handshaker::outgoing_bytes_buffer&apos; is not initialized in the constructor." verbose="Member variable &apos;tsi_ssl_handshaker::outgoing_bytes_buffer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/tsi/ssl_transport_security.cc">
+            <location file="/workspace/src/core/tsi/ssl_transport_security.cc" line="191" column="3"/>
+            <symbol>tsi_ssl_handshaker::outgoing_bytes_buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tsi_ssl_handshaker::outgoing_bytes_buffer_size&apos; is not initialized in the constructor." verbose="Member variable &apos;tsi_ssl_handshaker::outgoing_bytes_buffer_size&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/tsi/ssl_transport_security.cc">
+            <location file="/workspace/src/core/tsi/ssl_transport_security.cc" line="191" column="3"/>
+            <symbol>tsi_ssl_handshaker::outgoing_bytes_buffer_size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;tsi_ssl_handshaker::factory_ref&apos; is not initialized in the constructor." verbose="Member variable &apos;tsi_ssl_handshaker::factory_ref&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/tsi/ssl_transport_security.cc">
+            <location file="/workspace/src/core/tsi/ssl_transport_security.cc" line="191" column="3"/>
+            <symbol>tsi_ssl_handshaker::factory_ref</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;sc&apos;." verbose="Access of moved variable &apos;sc&apos;." cwe="672" file0="/workspace/src/core/util/http_client/httpcli.cc">
+            <location file="/workspace/src/core/util/http_client/httpcli.cc" line="382" column="35" info="Access of moved variable &apos;sc&apos;."/>
+            <location file="/workspace/src/core/util/http_client/httpcli.cc" line="382" column="25" info="Calling std::move(sc)"/>
+            <symbol>sc</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WorkSerializerImpl::items_processed_during_run_&apos; is not initialized in the constructor." verbose="Member variable &apos;WorkSerializerImpl::items_processed_during_run_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/core/util/work_serializer.cc">
+            <location file="/workspace/src/core/util/work_serializer.cc" line="60" column="12"/>
+            <symbol>WorkSerializerImpl::items_processed_during_run_</symbol>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/cpp/client/channel_cc.cc">
+            <location file="/workspace/src/cpp/client/channel_cc.cc" line="89" column="3"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OpenCensusServerCallTracer::stats_buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;OpenCensusServerCallTracer::stats_buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/cpp/ext/filters/census/server_call_tracer.cc">
+            <location file="/workspace/src/cpp/ext/filters/census/server_call_tracer.cc" line="102" column="3"/>
+            <symbol>OpenCensusServerCallTracer::stats_buf_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/cpp/server/server_cc.cc">
+            <location file="/workspace/src/cpp/server/server_cc.cc" line="1051" column="52"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ZEND_BEGIN_MODULE_GLOBALS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ZEND_BEGIN_MODULE_GLOBALS is a macro then please configure it." file0="/workspace/src/php/ext/grpc/call.c">
+            <location file="/workspace/src/php/ext/grpc/php_grpc.h" line="75" column="1"/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;slice&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;slice&apos; that will be invalid when returning." cwe="562" file0="/workspace/src/ruby/ext/grpc/rb_byte_buffer.c">
+            <location file="/workspace/src/ruby/ext/grpc/rb_byte_buffer.c" line="35" column="10"/>
+            <location file="/workspace/src/ruby/ext/grpc/rb_byte_buffer.c" line="32" column="14" info="Variable created here."/>
+            <location file="/workspace/src/ruby/ext/grpc/rb_byte_buffer.c" line="33" column="58" info="Passed to initializer list."/>
+            <location file="/workspace/src/ruby/ext/grpc/rb_byte_buffer.c" line="33" column="58" info="Address of variable taken here."/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/codegen/core/gen_experiments/experiments_compiler_test.cc">
+            <location file="/workspace/tools/codegen/core/gen_experiments/experiments_compiler_test.cc" line="165" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/codegen/core/generate_trace_flags_test.cc">
+            <location file="/workspace/tools/codegen/core/generate_trace_flags_test.cc" line="27" column="1"/>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/compression/greeter_client.cc" line="42" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/compression/greeter_server.cc" line="43" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/csm/csm_greeter_server.cc" line="58" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/deadline/server.cc" line="53" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/debugging/crashing_greeter_client.cc" line="42" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/error_details/greeter_client.cc" line="47" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/error_details/greeter_server.cc" line="53" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/error_handling/greeter_client.cc" line="43" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/error_handling/greeter_server.cc" line="49" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/gcp_observability/helloworld/greeter_client.cc" line="47" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/generic_api/greeter_client.cc" line="48" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/generic_api/greeter_server.cc" line="52" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/health/health_client.cc" line="51" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/health/health_server.cc" line="50" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/greeter_async_client.cc" line="47" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/greeter_async_client2.cc" line="47" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/greeter_client.cc" line="43" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/greeter_server.cc" line="49" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/xds_greeter_client.cc" line="44" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/helloworld/xds_greeter_server.cc" line="54" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;KeyValueStoreClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;KeyValueStoreClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/cancellation/client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/interceptors/client.cc" line="47" column="1"/>
+            <symbol>KeyValueStoreClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;KeyValueStoreServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;KeyValueStoreServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/cancellation/server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/interceptors/server.cc" line="90" column="1"/>
+            <symbol>KeyValueStoreServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/load_balancing/greeter_client.cc" line="41" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/load_balancing/greeter_server.cc" line="42" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/metadata/greeter_server.cc" line="42" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/orca/orca_server.cc" line="47" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/reflection/reflection_server.cc" line="38" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/retry/client.cc" line="58" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/retry/server.cc" line="44" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/multiplex/multiplex_server.cc" line="67" column="1"/>
+            <location file="/workspace/examples/cpp/route_guide/route_guide_callback_server.cc" line="89" column="1"/>
+            <symbol>RouteGuideImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/route_guide/route_guide_callback_client.cc" line="76" column="1"/>
+            <location file="/workspace/examples/cpp/route_guide/route_guide_client.cc" line="76" column="1"/>
+            <symbol>RouteGuideClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;RouteGuideImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/multiplex/multiplex_server.cc" line="67" column="1"/>
+            <location file="/workspace/examples/cpp/route_guide/route_guide_server.cc" line="89" column="1"/>
+            <symbol>RouteGuideImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/systemd_socket_activation/client.cc" line="32" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/systemd_socket_activation/server.cc" line="36" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/unix_abstract_sockets/client.cc" line="32" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterServiceImpl&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_server.cc" line="45" column="1"/>
+            <location file="/workspace/examples/cpp/unix_abstract_sockets/server.cc" line="36" column="1"/>
+            <symbol>GreeterServiceImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;GreeterClient&apos;" cwe="758">
+            <location file="/workspace/examples/cpp/auth/ssl_client.cc" line="47" column="1"/>
+            <location file="/workspace/examples/cpp/wait_for_ready/greeter_callback_client.cc" line="47" column="1"/>
+            <symbol>GreeterClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;grpc_fork_fd_list&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;grpc_fork_fd_list&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/ev_epoll1_linux.cc" line="142" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="69" column="1"/>
+            <symbol>grpc_fork_fd_list</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;grpc_fd&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;grpc_fd&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/ev_epoll1_linux.cc" line="148" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="79" column="1"/>
+            <symbol>grpc_fd</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset_worker&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset_worker&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/ev_epoll1_linux.cc" line="186" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="192" column="1"/>
+            <symbol>grpc_pollset_worker</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/ev_epoll1_linux.cc" line="214" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="200" column="1"/>
+            <symbol>grpc_pollset</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset_set&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;grpc_pollset_set&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/ev_epoll1_linux.cc" line="239" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/ev_poll_posix.cc" line="248" column="1"/>
+            <symbol>grpc_pollset_set</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;async_connect&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;async_connect&apos;" cwe="758">
+            <location file="/workspace/src/core/lib/iomgr/tcp_client_posix.cc" line="61" column="1"/>
+            <location file="/workspace/src/core/lib/iomgr/tcp_client_windows.cc" line="48" column="1"/>
+            <symbol>async_connect</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;gpr_subprocess&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;gpr_subprocess&apos;" cwe="758">
+            <location file="/workspace/src/core/util/subprocess_posix.cc" line="39" column="1"/>
+            <location file="/workspace/src/core/util/subprocess_windows.cc" line="38" column="1"/>
+            <symbol>gpr_subprocess</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

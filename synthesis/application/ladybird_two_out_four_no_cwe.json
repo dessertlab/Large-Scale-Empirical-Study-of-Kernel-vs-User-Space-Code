@@ -1,0 +1,147 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-457"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "Libraries/LibIPC/TransportMachPort.cpp",
+        "line": 339,
+        "cwe": "CWE-457",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Libraries/LibIPC/TransportMachPort.cpp",
+        "line": 339,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-457"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "Libraries/LibIPC/TransportSocket.cpp",
+        "line": 147,
+        "cwe": "CWE-457",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Libraries/LibIPC/TransportSocket.cpp",
+        "line": 147,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-457"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "Libraries/LibIPC/TransportSocket.cpp",
+        "line": 220,
+        "cwe": "CWE-457",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Libraries/LibIPC/TransportSocket.cpp",
+        "line": 220,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-367"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "Meta/Lagom/Fuzzers/EntryShim.cpp",
+        "line": 35,
+        "cwe": "CWE-367",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Meta/Lagom/Fuzzers/EntryShim.cpp",
+        "line": 35,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "Meta/Lagom/Fuzzers/EntryShim.cpp",
+        "line": 67,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Meta/Lagom/Fuzzers/EntryShim.cpp",
+        "line": 67,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

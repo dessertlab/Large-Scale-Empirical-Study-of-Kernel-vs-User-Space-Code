@@ -1,0 +1,4850 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/dep/Console/conmsgl3.h",
+      "line": 215,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/dep/Console/winconp.h",
+      "line": 152,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/dep/Console/winconp.h",
+      "line": 153,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/samples/ConPTY/EchoCon/EchoCon/EchoCon.cpp",
+      "line": 45,
+      "message": "shell/CreateProcess:This causes a new process to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1046",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/samples/ConPTY/EchoCon/EchoCon/EchoCon.cpp",
+      "line": 45,
+      "message": "shell/CreateProcess:This causes a new process to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1046",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/samples/ConPTY/EchoCon/EchoCon/EchoCon.cpp",
+      "line": 173,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/scratch/ScratchIslandApp/SampleApp/MySettings.h",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CORE_SETTINGS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/audio/midi/MidiAudio.cpp",
+      "line": 46,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/audio/midi/MidiAudio.cpp",
+      "line": 122,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/ElevateShim/elevate-shim.cpp",
+      "line": 50,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/ShellExtension/OpenTerminalHere.cpp",
+      "line": 28,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/ShellExtension/dllmain.cpp",
+      "line": 26,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If STDAPI_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/AboutDialog.cpp",
+      "line": 47,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/AboutDialog.cpp",
+      "line": 49,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/AboutDialog.cpp",
+      "line": 57,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/cascadia/TerminalApp/MarkdownPaneContent.h",
+      "line": 31,
+      "message": "Unused variable value 'reason'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 68,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 69,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 91,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 132,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 169,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3076,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3078,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3549,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3594,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3597,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3602,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalApp/TerminalPage.cpp",
+      "line": 3605,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/AzureConnection.cpp",
+      "line": 415,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/AzureConnection.cpp",
+      "line": 416,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/AzureConnection.cpp",
+      "line": 424,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalConnection/BaseTerminalConnection.h",
+      "line": 55,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If CATCH_FAIL_FAST is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalConnection/CTerminalHandoff.cpp",
+      "line": 32,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 570,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 571,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 750,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 765,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 809,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 832,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalConnection/ConptyConnection.cpp",
+      "line": 838,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1698,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1907,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1909,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1926,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1930,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1930,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1937,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1943,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/ControlCore.cpp",
+      "line": 1945,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/cascadia/TerminalControl/TermControl.cpp",
+      "line": 629,
+      "message": "Signed integer overflow for expression '0xff<<24'.",
+      "rule": "integerOverflow",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/TermControl.cpp",
+      "line": 1345,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/TermControl.cpp",
+      "line": 1619,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalControl/TermControl.cpp",
+      "line": 1668,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalControl/TermControl.cpp",
+      "line": 1705,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalCore/Terminal.cpp",
+      "line": 292,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalCore/TerminalApi.cpp",
+      "line": 47,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalCore/terminalrenderdata.cpp",
+      "line": 109,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsEditor/Appearances.cpp",
+      "line": 58,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsEditor/Appearances.cpp",
+      "line": 320,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsEditor/ProfileViewModel.cpp",
+      "line": 240,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/TerminalSettingsEditor/ProfileViewModel.cpp",
+      "line": 243,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/ActionArgs.cpp",
+      "line": 966,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/CascadiaSettingsSerialization.cpp",
+      "line": 171,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/CascadiaSettingsSerialization.cpp",
+      "line": 177,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/PowershellCoreProfileGenerator.cpp",
+      "line": 178,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/Profile.cpp",
+      "line": 483,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/Theme.cpp",
+      "line": 306,
+      "message": "failed to expand 'MTSM_THEME_WINDOW_SETTINGS', Invalid ## usage when expanding 'LOG_IF_SET': Unexpected token '{'",
+      "rule": "preprocessorErrorDirective",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/Theme.h",
+      "line": 84,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If WINRT_PROPERTY is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/VsDevShellGenerator.cpp",
+      "line": 16,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/TerminalSettingsModel/WslDistroGenerator.cpp",
+      "line": 157,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/cascadia/UnitTests_SettingsModel/TerminalSettingsTests.cpp",
+      "line": 111,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/UnitTests_TerminalCore/InputTest.cpp",
+      "line": 21,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/UnitTests_TerminalCore/ScrollTest.cpp",
+      "line": 147,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/WinRTUtils/LibraryResources.cpp",
+      "line": 43,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/WinRTUtils/LibraryResources.cpp",
+      "line": 44,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/WinRTUtils/LibraryResources.cpp",
+      "line": 80,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/WinRTUtils/inc/LibraryResources.h",
+      "line": 32,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/cascadia/WinRTUtils/inc/ThrottledFunc.h",
+      "line": 44,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/WindowsTerminal/IslandWindow.h",
+      "line": 25,
+      "message": "Virtual function 'Close' is called from destructor '~IslandWindow()' at line 84. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/cascadia/WindowsTerminal/NonClientIslandWindow.h",
+      "line": 32,
+      "message": "Virtual function 'Close' is called from destructor '~NonClientIslandWindow()' at line 33. Dynamic binding is not used.",
+      "rule": "virtualCallInConstructor",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/WindowsTerminal/VirtualDesktopUtils.cpp",
+      "line": 53,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/cascadia/WindowsTerminal/WindowEmperor.cpp",
+      "line": 371,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/cascadia/fzf/fzf.cpp",
+      "line": 393,
+      "message": "Iterators to containers from different expressions 'std::ranges::unique(allUtf32Pos)' and 'allUtf32Pos' are used together.",
+      "rule": "mismatchingContainerExpression",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/AccessibilityNotifier.cpp",
+      "line": 364,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ApiRoutines.h",
+      "line": 75,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ApiRoutines.h",
+      "line": 80,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/PtySignalInputThread.cpp",
+      "line": 98,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 62,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 89,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 128,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 136,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 154,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtInputThread.cpp",
+      "line": 159,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 346,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 352,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 377,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 384,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 387,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 671,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 854,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/VtIo.cpp",
+      "line": 859,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/_output.cpp",
+      "line": 497,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 190,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 343,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 458,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 488,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 588,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 610,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/_stream.cpp",
+      "line": 672,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/conddkrefs.h",
+      "line": 148,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_bytes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 139,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 166,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 170,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 171,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 192,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 216,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/directio.cpp",
+      "line": 217,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/exe/CConsoleHandoff.cpp",
+      "line": 38,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/exe/exemain.cpp",
+      "line": 39,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If STDMETHOD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_AliasTestsHelpers.hpp",
+      "line": 40,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_AliasTestsHelpers.hpp",
+      "line": 49,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 71,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 74,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 114,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 116,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 117,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 166,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 167,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 173,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 174,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 179,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_BufferTests.cpp",
+      "line": 180,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 37,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TEST_METHOD_PROPERTY is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 113,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 123,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 133,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 150,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 257,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 259,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 275,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 277,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 296,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 298,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 315,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 317,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 337,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 339,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 356,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 358,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 453,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_FileTests.cpp",
+      "line": 468,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_FillOutputTests.cpp",
+      "line": 40,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_FillOutputTests.cpp",
+      "line": 41,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/API_FontTests.cpp",
+      "line": 29,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TEST_METHOD_PROPERTY is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_InputTests.cpp",
+      "line": 333,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_InputTests.cpp",
+      "line": 400,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_InputTests.cpp",
+      "line": 590,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_MultipleInflightMessageTests.cpp",
+      "line": 55,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_MultipleInflightMessageTests.cpp",
+      "line": 70,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/API_MultipleInflightMessageTests.cpp",
+      "line": 109,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_OutputTests.cpp",
+      "line": 1014,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_OutputTests.cpp",
+      "line": 1018,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_OutputTests.cpp",
+      "line": 1020,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/API_PolicyTests.cpp",
+      "line": 23,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TEST_METHOD_PROPERTY is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/API_PolicyTests.cpp",
+      "line": 36,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/API_PolicyTests.cpp",
+      "line": 37,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/API_RgbColorTests.cpp",
+      "line": 126,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/API_RgbColorTests.cpp",
+      "line": 134,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/API_RgbColorTests.cpp",
+      "line": 143,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/API_RgbColorTests.cpp",
+      "line": 165,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/API_RgbColorTests.cpp",
+      "line": 226,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_TitleTests.cpp",
+      "line": 173,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/API_TitleTests.cpp",
+      "line": 257,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 160,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If END_TEST_METHOD is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1367,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1394,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1410,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1451,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1545,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1548,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1590,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1595,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1605,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1617,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1645,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1649,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1784,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1785,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1787,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1788,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ft_host/CJK_DbcsTests.cpp",
+      "line": 1789,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_host/CanaryTests.cpp",
+      "line": 94,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/Message_KeyPressTests.cpp",
+      "line": 32,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ft_host/Message_KeyPressTests.cpp",
+      "line": 437,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_host/OneCoreDelay.hpp",
+      "line": 54,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ft_integrity/IntegrityTest.cpp",
+      "line": 39,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ft_integrity/IntegrityTest.cpp",
+      "line": 180,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/inputBuffer.cpp",
+      "line": 89,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/inputBuffer.cpp",
+      "line": 96,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/inputBuffer.cpp",
+      "line": 120,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/inputBuffer.cpp",
+      "line": 422,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/inputBuffer.cpp",
+      "line": 570,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/misc.cpp",
+      "line": 82,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/readDataCooked.cpp",
+      "line": 207,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/readDataCooked.cpp",
+      "line": 1353,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/renderFontDefaults.cpp",
+      "line": 22,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/renderFontDefaults.cpp",
+      "line": 25,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/screenInfo.cpp",
+      "line": 1277,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/srvinit.cpp",
+      "line": 32,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/stream.cpp",
+      "line": 179,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/stream.cpp",
+      "line": 262,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/tracing.cpp",
+      "line": 55,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/tracing.cpp",
+      "line": 77,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/AliasTests.cpp",
+      "line": 62,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 220,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 237,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 283,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 300,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 322,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ut_host/ApiRoutinesTests.cpp",
+      "line": 364,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/InitTests.cpp",
+      "line": 38,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/host/ut_host/OutputCellIteratorTests.cpp",
+      "line": 468,
+      "message": "Unused variable value 'wch'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/host/ut_host/OutputCellIteratorTests.cpp",
+      "line": 494,
+      "message": "Unused variable value 'wch'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/ScreenBufferTests.cpp",
+      "line": 1040,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ut_host/ScreenBufferTests.cpp",
+      "line": 2348,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/host/ut_host/ScreenBufferTests.cpp",
+      "line": 2424,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/SelectionTests.cpp",
+      "line": 390,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/TextBufferTests.cpp",
+      "line": 1513,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/TitleTests.cpp",
+      "line": 34,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/host/ut_host/UtilsTests.cpp",
+      "line": 36,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/host/ut_host/VtIoTests.cpp",
+      "line": 67,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/host/ut_host/VtIoTests.cpp",
+      "line": 75,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ut_host/VtIoTests.cpp",
+      "line": 80,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/host/ut_host/VtIoTests.cpp",
+      "line": 81,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/inc/consoletaeftemplates.hpp",
+      "line": 60,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/inc/til/env.h",
+      "line": 393,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/hash.h",
+      "line": 72,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/hash.h",
+      "line": 122,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/hash.h",
+      "line": 129,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/throttled_func.h",
+      "line": 51,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/inc/til/u8u16convert.h",
+      "line": 29,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/inc/til/u8u16convert.h",
+      "line": 42,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/u8u16convert.h",
+      "line": 73,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/u8u16convert.h",
+      "line": 123,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/inc/til/u8u16convert.h",
+      "line": 161,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/interactivity/onecore/BgfxEngine.cpp",
+      "line": 67,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/interactivity/win32/Clipboard.cpp",
+      "line": 225,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/interactivity/win32/SystemConfigurationProvider.cpp",
+      "line": 186,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/interactivity/win32/ut_interactivity_win32/UiaTextRangeTests.cpp",
+      "line": 1210,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/interactivity/win32/windowUiaProvider.cpp",
+      "line": 17,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/propsheet/OptionsPage.cpp",
+      "line": 281,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/propsheet/TerminalPropsheetPage.cpp",
+      "line": 440,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/propsheet/console.cpp",
+      "line": 56,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/propsheet/font.h",
+      "line": 109,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/propsheet/fontdlg.cpp",
+      "line": 980,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/propsheet/misc.cpp",
+      "line": 106,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/propsheet/registry.cpp",
+      "line": 870,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/src/propsheet/util.cpp",
+      "line": 19,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/propslib/DelegationConfig.cpp",
+      "line": 159,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/propslib/DelegationConfig.cpp",
+      "line": 253,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/propslib/DelegationConfig.cpp",
+      "line": 303,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/propslib/RegistrySerialization.hpp",
+      "line": 41,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_bytes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/propslib/TrueTypeFontList.cpp",
+      "line": 99,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.api.cpp",
+      "line": 203,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.api.cpp",
+      "line": 258,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.cpp",
+      "line": 59,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.cpp",
+      "line": 579,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.cpp",
+      "line": 728,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.cpp",
+      "line": 732,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/atlas/AtlasEngine.r.cpp",
+      "line": 33,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/BackendD2D.cpp",
+      "line": 1007,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/BackendD2D.h",
+      "line": 79,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 1012,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 1099,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 1288,
+      "message": "The address of local variable 'foregroundBitmap' might be accessed at non-zero index.",
+      "rule": "objectIndex",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 1300,
+      "message": "The address of local variable 'foregroundBitmap' might be accessed at non-zero index.",
+      "rule": "objectIndex",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 1803,
+      "message": "The address of local variable 'foregroundBitmap' might be accessed at non-zero index.",
+      "rule": "objectIndex",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 2316,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.cpp",
+      "line": 2345,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/BackendD3D.h",
+      "line": 343,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/atlas/DWriteTextAnalysis.cpp",
+      "line": 156,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/renderer/atlas/dwrite_helpers.cpp",
+      "line": 167,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/base/renderer.cpp",
+      "line": 424,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/gdi/paint.cpp",
+      "line": 387,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/renderer/gdi/paint.cpp",
+      "line": 394,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/gdi/paint.cpp",
+      "line": 517,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/state.cpp",
+      "line": 21,
+      "message": "Member variable 'GdiEngine::_isTrueTypeFont' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/state.cpp",
+      "line": 21,
+      "message": "Member variable 'GdiEngine::_lineMetrics' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 8,
+      "message": "Unused variable value 'lParam'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 9,
+      "message": "Unused variable value 'FontType'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 10,
+      "message": "Unused variable value 'lpntme'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 37,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 39,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 41,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 47,
+      "message": "Unused variable value 'argc'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/renderer/gdi/tool/main.cpp",
+      "line": 48,
+      "message": "Unused variable value 'argv'",
+      "rule": "constStatement",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/uia/UiaRenderer.cpp",
+      "line": 79,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/renderer/wddmcon/WddmConRenderer.cpp",
+      "line": 154,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/server/ApiDispatchers.cpp",
+      "line": 70,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/ApiDispatchers.cpp",
+      "line": 610,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/ApiDispatchers.cpp",
+      "line": 663,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/ApiDispatchers.cpp",
+      "line": 1265,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/ApiDispatchers.cpp",
+      "line": 1898,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/ApiMessage.cpp",
+      "line": 38,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/server/ApiMessage.cpp",
+      "line": 100,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/server/ApiMessage.h",
+      "line": 41,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_bytes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/server/DeviceHandle.cpp",
+      "line": 103,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/server/Entrypoints.cpp",
+      "line": 150,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/IApiRoutines.h",
+      "line": 85,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/server/IApiRoutines.h",
+      "line": 90,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/DispatchTypes.hpp",
+      "line": 64,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_pendingCellMatrix' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_cellHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_pendingCellHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_sizeDeclaredAsMatrix' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_declaredWidth' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_declaredHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_usedWidth' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_usedHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_fullWidth' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_fullHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_textWidth' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_textOffset' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_textCenteringHint' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_fontSet' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_pendingFontSet' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_fontUsage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_pendingFontUsage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_linesPerPage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_columnsPerPage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_isTextFont' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_charsetSize' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_pendingCharsetSize' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_charsetIdInitialized' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_startChar' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_lastChar' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_currentChar' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_bufferCleared' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_sixelColumn' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 9,
+      "message": "Member variable 'FontBuffer::_sixelRow' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/terminal/adapter/FontBuffer.cpp",
+      "line": 587,
+      "message": "Signed integer overflow for expression '1<<y'.",
+      "rule": "integerOverflow",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/adapter/SixelParser.cpp",
+      "line": 0,
+      "message": "Internal Error. MathLib::toLongNumber: input was not completely consumed: 500ms",
+      "rule": "cppcheckError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/MouseInputTest.cpp",
+      "line": 97,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/MouseInputTest.cpp",
+      "line": 229,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 450,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 1557,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 1591,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 1620,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 1645,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 1689,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 2100,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 2139,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 2166,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 2180,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/adapterTest.cpp",
+      "line": 2186,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/inputTest.cpp",
+      "line": 300,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/inputTest.cpp",
+      "line": 536,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/inputTest.cpp",
+      "line": 545,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/adapter/ut_adapter/kittyKeyboardProtocol.cpp",
+      "line": 258,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-762",
+      "filename": "/workspace/src/terminal/input/terminalInput.cpp",
+      "line": 1477,
+      "message": "Using 'memset' on struct that contains a 'std::wstring_view'.",
+      "rule": "memsetClass",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/input/terminalInput.hpp",
+      "line": 96,
+      "message": "Member variable 'CodepointBuffer::buf' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/input/terminalInput.hpp",
+      "line": 102,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/terminal/input/terminalInput.hpp",
+      "line": 126,
+      "message": "Member variable 'KeyboardHelper::_keyboardState' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/VTCommandFuzzer.cpp",
+      "line": 609,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/VTCommandFuzzer.cpp",
+      "line": 617,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/VTCommandFuzzer.cpp",
+      "line": 648,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-252",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_directed.h",
+      "line": 468,
+      "message": "Return value of function AddFuzzArrayEntry() is not used.",
+      "rule": "ignoredReturnValue",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_directed.h",
+      "line": 991,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_directed.h",
+      "line": 992,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 175,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 192,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 305,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 331,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 371,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 380,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 386,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzer/fuzzing_logic.h",
+      "line": 485,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/echoDispatch.cpp",
+      "line": 12,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/echoDispatch.cpp",
+      "line": 18,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 14,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 15,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 32,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 39,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 40,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 56,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 57,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 59,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 68,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/terminal/parser/ft_fuzzwrapper/main.cpp",
+      "line": 79,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/parser/ut_parser/Base64Test.cpp",
+      "line": 42,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/parser/ut_parser/Base64Test.cpp",
+      "line": 59,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/parser/ut_parser/InputEngineTest.cpp",
+      "line": 1509,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/parser/ut_parser/OutputEngineTest.cpp",
+      "line": 54,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/terminal/parser/ut_parser/OutputEngineTest.cpp",
+      "line": 1520,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/terminal/parser/ut_parser/StateMachineTest.cpp",
+      "line": 285,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/src/til/ut_til/FlatSetTests.cpp",
+      "line": 12,
+      "message": "The one definition rule is violated, different classes/structs have the same name 'Data'",
+      "rule": "ctuOneDefinitionRuleViolation",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/RectangleTests.cpp",
+      "line": 715,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_METHOD_PROPERTIES is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/RunLengthEncodingTests.cpp",
+      "line": 183,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/SPSCTests.cpp",
+      "line": 51,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/SmallVectorTests.cpp",
+      "line": 106,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/mutex.cpp",
+      "line": 14,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/til/ut_til/string.cpp",
+      "line": 101,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/til/ut_til/string.cpp",
+      "line": 102,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/til/ut_til/throttled_func.cpp",
+      "line": 15,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 206,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 227,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 227,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 231,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 242,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.cpp",
+      "line": 249,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.h",
+      "line": 96,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/arena.h",
+      "line": 122,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/conhost.cpp",
+      "line": 45,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/ConsoleBench/conhost.cpp",
+      "line": 50,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/conhost.cpp",
+      "line": 141,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 290,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 297,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 309,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 316,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 338,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 340,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 340,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 369,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 379,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 391,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 401,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 529,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 534,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 553,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 554,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-788",
+      "filename": "/workspace/src/tools/ConsoleBench/main.cpp",
+      "line": 819,
+      "message": "Array 'buffer[32]' accessed at index 64, which is out of bounds.",
+      "rule": "arrayIndexOutOfBounds",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/ConsoleMonitor/main.cpp",
+      "line": 241,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/RenderingTests/main.cpp",
+      "line": 91,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/RenderingTests/main.cpp",
+      "line": 168,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/RenderingTests/main.cpp",
+      "line": 221,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/RenderingTests/main.cpp",
+      "line": 304,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/tools/U8U16Test/main.cpp",
+      "line": 18,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If NTSTATUS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/U8U16Test/main.cpp",
+      "line": 190,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/U8U16Test/main.cpp",
+      "line": 250,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/U8U16Test/main.cpp",
+      "line": 346,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/U8U16Test/main.cpp",
+      "line": 421,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/crt.cpp",
+      "line": 8,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/crt.cpp",
+      "line": 9,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 215,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 230,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 349,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 550,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 550,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 553,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 553,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 664,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/benchcat/main.cpp",
+      "line": 678,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 35,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 40,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 45,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 75,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 80,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 84,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 91,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/buffersize/main.cpp",
+      "line": 96,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 278,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 530,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-401",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 576,
+      "message": "Memory leak: buf",
+      "rule": "memleak",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 649,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 650,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 651,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 652,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 653,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 654,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 655,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 656,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 657,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 658,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 659,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 660,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 661,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 662,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 663,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 664,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 665,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 666,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 667,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 668,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 718,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 748,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 765,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 782,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/closetest/closetest.cpp",
+      "line": 799,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 43,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 177,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 188,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 209,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 220,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 255,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 280,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 281,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 282,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 283,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 284,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 285,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 286,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 287,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 302,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 306,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 311,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 316,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 321,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 326,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 335,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 369,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 382,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 383,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/echokey/main.cpp",
+      "line": 384,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 130,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 141,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 150,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 159,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 166,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 173,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 180,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 187,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/fontlist/main.cpp",
+      "line": 236,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/integrity/lib/util.cpp",
+      "line": 43,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 8,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 9,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 51,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 56,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 60,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 67,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 71,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 78,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 82,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 89,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 93,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 100,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 104,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 111,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 115,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 124,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 133,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 146,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 147,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 148,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 152,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 153,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 156,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 157,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 158,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 159,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 164,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 165,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 167,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 170,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 186,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 191,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 217,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 222,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 227,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 244,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/lnkd/main.cpp",
+      "line": 256,
+      "message": "format/wprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 27,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If _Out_writes_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 79,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 97,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 103,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 142,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 143,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 155,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 156,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 164,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 204,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 205,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 215,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 217,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 217,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 221,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/tools/vtpipeterm/main.cpp",
+      "line": 260,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/tsf/Implementation.cpp",
+      "line": 289,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/CodepointWidthDetector.cpp",
+      "line": 1219,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/types/CodepointWidthDetector.cpp",
+      "line": 1232,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/ScreenInfoUiaProviderBase.cpp",
+      "line": 35,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/UiaTextRangeBase.cpp",
+      "line": 20,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/colorTable.cpp",
+      "line": 297,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/types/convert.cpp",
+      "line": 39,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/types/convert.cpp",
+      "line": 50,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/inc/utils.hpp",
+      "line": 80,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DEFINE_ENUM_FLAG_OPERATORS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/types/utils.cpp",
+      "line": 31,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/types/utils.cpp",
+      "line": 66,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/utils.cpp",
+      "line": 181,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/types/viewport.cpp",
+      "line": 656,
+      "message": "syntax error: keyword 'try' is not allowed in global scope",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/winconpty/ft_pty/ConPtyTests.cpp",
+      "line": 68,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/winconpty/ft_pty/ConPtyTests.cpp",
+      "line": 72,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/winconpty/ft_pty/ConPtyTests.cpp",
+      "line": 73,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/winconpty/ft_pty/ConPtyTests.cpp",
+      "line": 88,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/winconpty/ft_pty/ConPtyTests.cpp",
+      "line": 96,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_CLASS is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "src/host/consoleInformation.cpp",
+      "line": 30,
+      "message": "Mutex _lock might be locked already, which could cause a deadlock.",
+      "rule": "cpp/twice-locked",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "src/host/server.h",
+      "line": 153,
+      "message": "Mutex _lock has a cyclic lock order dependency with [mutex _lock](1).",
+      "rule": "cpp/lock-order-cycle",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "src/inc/til/ticket_lock.h",
+      "line": 104,
+      "message": "Mutex _lock might be locked already, which could cause a deadlock.",
+      "rule": "cpp/twice-locked",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-764",
+      "filename": "src/inc/til/ticket_lock.h",
+      "line": 150,
+      "message": "Mutex _lock has a cyclic lock order dependency with [mutex _lock](1).",
+      "rule": "cpp/lock-order-cycle",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-704",
+      "filename": "src/server/ApiDispatchers.cpp",
+      "line": 268,
+      "message": "Conversion from pointer to const wchar_t *. Use of invalid string can lead to undefined behavior.",
+      "rule": "cpp/incorrect-string-type-conversion",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 600,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 5,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 139,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 456,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/terminal/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid fputc() argument nr 1. The value is -119 but the valid values are &apos;0:&apos;." verbose="Invalid fputc() argument nr 1. The value is -119 but the valid values are &apos;0:&apos;." cwe="628" file0="/workspace/Examples/main.cpp">
+            <location file="/workspace/Examples/DataCollection/writePNG.h" line="144" column="5" info="Invalid argument"/>
+            <location file="/workspace/Examples/DataCollection/writePNG.h" line="144" column="5" info="Assignment &apos;i=0&apos;, assigned value is 0"/>
+            <symbol>fputc</symbol>
+        </error>
+        <error id="invalidFunctionArgBool" severity="error" msg="Invalid fputc() argument nr 1. A non-boolean value is required." verbose="Invalid fputc() argument nr 1. A non-boolean value is required." cwe="628" file0="/workspace/Examples/main.cpp">
+            <location file="/workspace/Examples/DataCollection/writePNG.h" line="158" column="9"/>
+            <symbol>fputc</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DataCollectorSGM::p_state&apos; is not initialized in the constructor." verbose="Member variable &apos;DataCollectorSGM::p_state&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Examples/main.cpp">
+            <location file="/workspace/Examples/DataCollection/DataCollectorSGM.h" line="36" column="5"/>
+            <symbol>DataCollectorSGM::p_state</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DataCollectorSGM::w&apos; is not initialized in the constructor." verbose="Member variable &apos;DataCollectorSGM::w&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Examples/main.cpp">
+            <location file="/workspace/Examples/DataCollection/DataCollectorSGM.h" line="36" column="5"/>
+            <symbol>DataCollectorSGM::w</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DataCollectorSGM::h&apos; is not initialized in the constructor." verbose="Member variable &apos;DataCollectorSGM::h&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Examples/main.cpp">
+            <location file="/workspace/Examples/DataCollection/DataCollectorSGM.h" line="36" column="5"/>
+            <symbol>DataCollectorSGM::h</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GetSetParamCommand::value&apos; is not initialized in the constructor." verbose="Member variable &apos;GetSetParamCommand::value&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="152" column="5"/>
+            <symbol>GetSetParamCommand::value</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TakeOffCommand::targetAlt&apos; is not initialized in the constructor." verbose="Member variable &apos;TakeOffCommand::targetAlt&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="175" column="5"/>
+            <symbol>TakeOffCommand::targetAlt</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TakeOffCommand::reached&apos; is not initialized in the constructor." verbose="Member variable &apos;TakeOffCommand::reached&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="175" column="5"/>
+            <symbol>TakeOffCommand::reached</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TakeOffCommand::offground&apos; is not initialized in the constructor." verbose="Member variable &apos;TakeOffCommand::offground&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="175" column="5"/>
+            <symbol>TakeOffCommand::offground</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;LandCommand::landed&apos; is not initialized in the constructor." verbose="Member variable &apos;LandCommand::landed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="196" column="5"/>
+            <symbol>LandCommand::landed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RtlCommand::landed&apos; is not initialized in the constructor." verbose="Member variable &apos;RtlCommand::landed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="217" column="5"/>
+            <symbol>RtlCommand::landed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MissionCommand::landed&apos; is not initialized in the constructor." verbose="Member variable &apos;MissionCommand::landed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="276" column="5"/>
+            <symbol>MissionCommand::landed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CapabilitiesCommand::landed&apos; is not initialized in the constructor." verbose="Member variable &apos;CapabilitiesCommand::landed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="297" column="5"/>
+            <symbol>CapabilitiesCommand::landed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SendImageCommand::width&apos; is not initialized in the constructor." verbose="Member variable &apos;SendImageCommand::width&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="441" column="5"/>
+            <symbol>SendImageCommand::width</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SendImageCommand::height&apos; is not initialized in the constructor." verbose="Member variable &apos;SendImageCommand::height&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="441" column="5"/>
+            <symbol>SendImageCommand::height</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PlayLogCommand::quaternion_&apos; is not initialized in the constructor." verbose="Member variable &apos;PlayLogCommand::quaternion_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="462" column="5"/>
+            <symbol>PlayLogCommand::quaternion_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PlayLogCommand::x&apos; is not initialized in the constructor." verbose="Member variable &apos;PlayLogCommand::x&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="462" column="5"/>
+            <symbol>PlayLogCommand::x</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PlayLogCommand::y&apos; is not initialized in the constructor." verbose="Member variable &apos;PlayLogCommand::y&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="462" column="5"/>
+            <symbol>PlayLogCommand::y</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PlayLogCommand::z&apos; is not initialized in the constructor." verbose="Member variable &apos;PlayLogCommand::z&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="462" column="5"/>
+            <symbol>PlayLogCommand::z</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PlayLogCommand::_syncParams&apos; is not initialized in the constructor." verbose="Member variable &apos;PlayLogCommand::_syncParams&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="462" column="5"/>
+            <symbol>PlayLogCommand::_syncParams</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::hasLocalPosition&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::hasLocalPosition&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::hasLocalPosition</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::requestedControl&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::requestedControl&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::requestedControl</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::targetReached&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::targetReached&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::targetReached</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::targetPosition&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::targetPosition&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::targetPosition</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::targetVelocity&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::targetVelocity&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::targetVelocity</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::targetVelocityAltHold&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::targetVelocityAltHold&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::targetVelocityAltHold</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::settled&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::settled&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::settled</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::x&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::x&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::x</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::y&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::y&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::y</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::z&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::z&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::z</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::tx&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::tx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::tx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::ty&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::ty&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::ty</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::tz&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::tz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::tz</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::vx&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::vx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::vx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::vy&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::vy&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::vy</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::vz&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::vz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::vz</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::pitch&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::pitch&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::pitch</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::pitchSpeed&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::pitchSpeed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::pitchSpeed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::roll&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::roll&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::roll</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::rollSpeed&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::rollSpeed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::rollSpeed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::yaw&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::yaw&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::yaw</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::yawSpeed&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::yawSpeed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::yawSpeed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::tvx&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::tvx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::tvx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::tvy&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::tvy&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::tvy</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::tvz&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::tvz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::tvz</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::is_yaw&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::is_yaw&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::is_yaw</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::theading&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::theading&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::theading</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::targetSpeed&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::targetSpeed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::targetSpeed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GotoCommand::cruise_speed_&apos; is not initialized in the constructor." verbose="Member variable &apos;GotoCommand::cruise_speed_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="543" column="5"/>
+            <symbol>GotoCommand::cruise_speed_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::radius&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::radius&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::radius</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::cx&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::cx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::cx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::cy&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::cy&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::cy</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::cz&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::cz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::cz</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::orbitSpeed&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::orbitSpeed&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::orbitSpeed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::startAngle&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::startAngle&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::startAngle</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::previousAngle&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::previousAngle&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::previousAngle</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::halfWay&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::halfWay&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::halfWay</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::startTime&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::startTime&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::startTime</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrbitCommand::orbits&apos; is not initialized in the constructor." verbose="Member variable &apos;OrbitCommand::orbits&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="591" column="5"/>
+            <symbol>OrbitCommand::orbits</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RotateCommand::speed_&apos; is not initialized in the constructor." verbose="Member variable &apos;RotateCommand::speed_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="642" column="5"/>
+            <symbol>RotateCommand::speed_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RotateCommand::start_&apos; is not initialized in the constructor." verbose="Member variable &apos;RotateCommand::start_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="642" column="5"/>
+            <symbol>RotateCommand::start_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RotateCommand::count_down_&apos; is not initialized in the constructor." verbose="Member variable &apos;RotateCommand::count_down_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="642" column="5"/>
+            <symbol>RotateCommand::count_down_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::started_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::started_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::started_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::leg_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::leg_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::leg_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::speed_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::speed_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::speed_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::sx_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::sx_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::sx_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::sy_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::sy_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::sy_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SquareCommand::sz_&apos; is not initialized in the constructor." verbose="Member variable &apos;SquareCommand::sz_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="667" column="5"/>
+            <symbol>SquareCommand::sz_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::sx_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::sx_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::sx_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::sy_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::sy_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::sy_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::sz_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::sz_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::sz_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::started_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::started_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::started_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::ready_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::ready_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::ready_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::start_thrust_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::start_thrust_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::start_thrust_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::previous_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::previous_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::previous_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::flipped_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::flipped_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::flipped_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::ramp_up_speed_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::ramp_up_speed_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::ramp_up_speed_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::xaxis_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::xaxis_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::xaxis_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::meter_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::meter_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::meter_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiggleCommand::thrust_controller_&apos; is not initialized in the constructor." verbose="Member variable &apos;WiggleCommand::thrust_controller_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="777" column="5"/>
+            <symbol>WiggleCommand::thrust_controller_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::sx_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::sx_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::sx_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::sy_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::sy_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::sy_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::sz_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::sz_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::sz_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::kp_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::kp_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::kp_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::ki_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::ki_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::ki_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::kd_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::kd_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::kd_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::start_thrust_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::start_thrust_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::start_thrust_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::started_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::started_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::started_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::ready_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::ready_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::ready_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AltHoldCommand::thrust_controller_&apos; is not initialized in the constructor." verbose="Member variable &apos;AltHoldCommand::thrust_controller_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="808" column="5"/>
+            <symbol>AltHoldCommand::thrust_controller_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SetMessageIntervalCommand::msgid_&apos; is not initialized in the constructor." verbose="Member variable &apos;SetMessageIntervalCommand::msgid_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="900" column="5"/>
+            <symbol>SetMessageIntervalCommand::msgid_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SetMessageIntervalCommand::frequency_&apos; is not initialized in the constructor." verbose="Member variable &apos;SetMessageIntervalCommand::frequency_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="900" column="5"/>
+            <symbol>SetMessageIntervalCommand::frequency_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WaitForAltitudeCommand::z&apos; is not initialized in the constructor." verbose="Member variable &apos;WaitForAltitudeCommand::z&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="924" column="5"/>
+            <symbol>WaitForAltitudeCommand::z</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WaitForAltitudeCommand::dz&apos; is not initialized in the constructor." verbose="Member variable &apos;WaitForAltitudeCommand::dz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="924" column="5"/>
+            <symbol>WaitForAltitudeCommand::dz</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WaitForAltitudeCommand::dvz&apos; is not initialized in the constructor." verbose="Member variable &apos;WaitForAltitudeCommand::dvz&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="924" column="5"/>
+            <symbol>WaitForAltitudeCommand::dvz</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Close&apos; is called from destructor &apos;~Command()&apos; at line 39. Dynamic binding is not used." verbose="Virtual function &apos;Close&apos; is called from destructor &apos;~Command()&apos; at line 39. Dynamic binding is not used." file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.h" line="60" column="18" info="Close is a virtual function"/>
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.cpp" line="39" column="5" info="Calling Close"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/MavLinkCom/MavLinkTest/Commands.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/Commands.cpp" line="1140" column="39" info="Integer overflow"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CsvWriter::begin&apos; is not initialized in the constructor." verbose="Member variable &apos;CsvWriter::begin&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/main.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/main.cpp" line="208" column="5"/>
+            <symbol>CsvWriter::begin</symbol>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;line.length()&gt;0&apos; and inner condition is &apos;line.length()==0&apos;)." cwe="398" file0="/workspace/MavLinkCom/MavLinkTest/main.cpp">
+            <location file="/workspace/MavLinkCom/MavLinkTest/main.cpp" line="1417" column="31" info="opposite inner condition: line.length()==0"/>
+            <location file="/workspace/MavLinkCom/MavLinkTest/main.cpp" line="1416" column="27" info="outer condition: line.length()&gt;0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/MavLinkCom/src/MavLinkMessageBase.cpp">
+            <location file="/workspace/MavLinkCom/mavlink/mavlink_types.h" line="46" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/MavLinkCom/src/MavLinkMessageBase.cpp">
+            <location file="/workspace/MavLinkCom/src/MavLinkMessageBase.cpp" line="236" column="5"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AdHocConnectionImpl::snapshot_stale&apos; is not initialized in the constructor." verbose="Member variable &apos;AdHocConnectionImpl::snapshot_stale&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/src/impl/AdHocConnectionImpl.cpp">
+            <location file="/workspace/MavLinkCom/src/impl/AdHocConnectionImpl.cpp" line="15" column="22"/>
+            <symbol>AdHocConnectionImpl::snapshot_stale</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MavLinkConnectionImpl::snapshot_stale&apos; is not initialized in the constructor." verbose="Member variable &apos;MavLinkConnectionImpl::snapshot_stale&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/src/impl/MavLinkConnectionImpl.cpp">
+            <location file="/workspace/MavLinkCom/src/impl/MavLinkConnectionImpl.cpp" line="16" column="24"/>
+            <symbol>MavLinkConnectionImpl::snapshot_stale</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MavLinkConnectionImpl::message_buf&apos; is not initialized in the constructor." verbose="Member variable &apos;MavLinkConnectionImpl::message_buf&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/src/impl/MavLinkConnectionImpl.cpp">
+            <location file="/workspace/MavLinkCom/src/impl/MavLinkConnectionImpl.cpp" line="16" column="24"/>
+            <symbol>MavLinkConnectionImpl::message_buf</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MavLinkNodeImpl::inside_handle_message_&apos; is not initialized in the constructor." verbose="Member variable &apos;MavLinkNodeImpl::inside_handle_message_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/src/impl/MavLinkNodeImpl.cpp">
+            <location file="/workspace/MavLinkCom/src/impl/MavLinkNodeImpl.cpp" line="16" column="18"/>
+            <symbol>MavLinkNodeImpl::inside_handle_message_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MavLinkVideoClientImpl::incoming_image&apos; is not initialized in the constructor." verbose="Member variable &apos;MavLinkVideoClientImpl::incoming_image&apos; is not initialized in the constructor." cwe="398" file0="/workspace/MavLinkCom/src/impl/MavLinkVideoStreamImpl.cpp">
+            <location file="/workspace/MavLinkCom/src/impl/MavLinkVideoStreamImpl.cpp" line="16" column="25"/>
+            <symbol>MavLinkVideoClientImpl::incoming_image</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;SGMStereo&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;SGMStereo&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/SGM/src/sgmstereo/sgmstereo.cpp">
+            <location file="/workspace/SGM/src/sgmstereo/sgmstereo.cpp" line="51" column="5"/>
+            <symbol>SGMStereo</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;SGMStereo&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;SGMStereo&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/SGM/src/sgmstereo/sgmstereo.cpp">
+            <location file="/workspace/SGM/src/sgmstereo/sgmstereo.cpp" line="51" column="5"/>
+            <symbol>SGMStereo</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::downSampleFactor&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::downSampleFactor&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::downSampleFactor</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::inputFrameWidth&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::inputFrameWidth&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::inputFrameWidth</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::inputFrameHeight&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::inputFrameHeight&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::inputFrameHeight</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::ndisps&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::ndisps&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::ndisps</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::minDisp&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::minDisp&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::minDisp</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::maxDisp&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::maxDisp&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::maxDisp</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::confThreshold&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::confThreshold&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::confThreshold</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::sgmStereo&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::sgmStereo&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::sgmStereo</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::processingFrameWidth&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::processingFrameWidth&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::processingFrameWidth</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::processingFrameHeight&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::processingFrameHeight&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::processingFrameHeight</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::dispMap&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::dispMap&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::dispMap</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CStateStereo::confMap&apos; is not initialized in the constructor." verbose="Member variable &apos;CStateStereo::confMap&apos; is not initialized in the constructor." cwe="398" file0="/workspace/SGM/src/stereoPipeline/StateStereo.cpp">
+            <location file="/workspace/SGM/src/stereoPipeline/StateStereo.cpp" line="11" column="15"/>
+            <symbol>CStateStereo::confMap</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;Logger::logLevel_Information&apos; is not initialized in the constructor." verbose="Member variable &apos;Logger::logLevel_Information&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.h" line="24" column="5"/>
+            <symbol>Logger::logLevel_Information</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;Logger::logLevel_Warning&apos; is not initialized in the constructor." verbose="Member variable &apos;Logger::logLevel_Warning&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.h" line="24" column="5"/>
+            <symbol>Logger::logLevel_Warning</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;Logger::logLevel_Error&apos; is not initialized in the constructor." verbose="Member variable &apos;Logger::logLevel_Error&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.h" line="24" column="5"/>
+            <symbol>Logger::logLevel_Error</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;ltm" verbose="Uninitialized variable: &amp;ltm" cwe="457" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Logger.cpp" line="30" column="40"/>
+            <symbol>&amp;ltm</symbol>
+        </error>
+        <error id="danglingTemporaryLifetime" severity="error" msg="Using object that is a temporary." verbose="Using object that is a temporary." cwe="562" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="97" column="25"/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="96" column="60" info="Temporary created here."/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="96" column="68" info="Passed to constructor of &apos;AirSimRCData&apos;."/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="96" column="68" info="Pointer to container is created here."/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PawnSimApi::state_&apos; is not initialized in the constructor." verbose="Member variable &apos;PawnSimApi::state_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="8" column="13"/>
+            <symbol>PawnSimApi::state_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PawnSimApi::initial_state_&apos; is not initialized in the constructor." verbose="Member variable &apos;PawnSimApi::initial_state_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/PawnSimApi.cpp" line="8" column="13"/>
+            <symbol>PawnSimApi::initial_state_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SimHUD::simmode_&apos; is not initialized in the constructor." verbose="Member variable &apos;SimHUD::simmode_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimHUD/SimHUD.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimHUD/SimHUD.cpp" line="6" column="9"/>
+            <symbol>SimHUD::simmode_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SimModeBase::tod_start_time_&apos; is not initialized in the constructor." verbose="Member variable &apos;SimModeBase::tod_start_time_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp" line="8" column="14"/>
+            <symbol>SimModeBase::tod_start_time_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SimModeBase::record_tick_count&apos; is not initialized in the constructor." verbose="Member variable &apos;SimModeBase::record_tick_count&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp" line="8" column="14"/>
+            <symbol>SimModeBase::record_tick_count</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: api_server_" verbose="Null pointer dereference: api_server_" cwe="476" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeBase.cpp" line="157" column="13" info="Null pointer dereference"/>
+            <symbol>api_server_</symbol>
+        </error>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;physics_engine_&apos; will use pointer to local variable &apos;physics_engine&apos;." verbose="Non-local variable &apos;physics_engine_&apos; will use pointer to local variable &apos;physics_engine&apos;." cwe="562" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp" line="22" column="5"/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp" line="21" column="40" info="Variable created here."/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp" line="22" column="41" info="Raw pointer to smart pointer created here."/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SimModeWorldBase::physics_engine_&apos; is not initialized in the constructor." verbose="Member variable &apos;SimModeWorldBase::physics_engine_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/SimMode/SimModeWorldBase.cpp" line="5" column="19"/>
+            <symbol>SimModeWorldBase::physics_engine_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::rotor_count_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::rotor_count_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::rotor_count_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::reset_pending_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::reset_pending_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::reset_pending_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::did_reset_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::did_reset_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::did_reset_</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;setPose&apos; is called from constructor &apos;MultirotorPawnSimApi(const Params&amp;params)&apos; at line 17. Dynamic binding is not used." verbose="Virtual function &apos;setPose&apos; is called from constructor &apos;MultirotorPawnSimApi(const Params&amp;params)&apos; at line 17. Dynamic binding is not used." file0="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.h" line="32" column="18" info="setPose is a virtual function"/>
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="17" column="5" info="Calling setPose"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UENUM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UENUM is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/AirBlueprintLib.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/AirBlueprintLib.h" line="28" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_MODULE is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/AirSim.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/AirSim.cpp" line="15" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/AirSimGameMode.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/AirSimGameMode.h" line="17" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/CameraDirector.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/ObjectFilter.h" line="17" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UFUNCTION is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UFUNCTION is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/SimHUD/SimHUD.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/SimHUD/SimHUDWidget.h" line="15" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GENERATED_BODY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/SimMode/SimModeBase.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/SimMode/SimModeBase.h" line="27" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/TextureShuffleActor.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/TextureShuffleActor.h" line="16" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Car/CarPawn.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Car/CarPawn.h" line="81" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/ComputerVision/ComputerVisionPawn.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/ComputerVision/ComputerVisionPawn.h" line="40" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UPROPERTY is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/FlyingPawn.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/FlyingPawn.h" line="19" column="5"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::rotor_count_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::rotor_count_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::rotor_count_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::pending_pose_collisions_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::pending_pose_collisions_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::pending_pose_collisions_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::pending_pose_status_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::pending_pose_status_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::pending_pose_status_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::reset_pending_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::reset_pending_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::reset_pending_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MultirotorPawnSimApi::did_reset_&apos; is not initialized in the constructor." verbose="Member variable &apos;MultirotorPawnSimApi::did_reset_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnSimApi.cpp" line="9" column="23"/>
+            <symbol>MultirotorPawnSimApi::did_reset_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If UENUM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If UENUM is a macro then please configure it." file0="/workspace/Unreal/Plugins/AirSim/Source/Weather/WeatherLib.cpp">
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Weather/WeatherLib.h" line="15" column="1"/>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;MultirotorPawnEvents&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;MultirotorPawnEvents&apos;" cwe="758">
+            <location file="/workspace/Unity/AirLibWrapper/AirsimWrapper/Source/Vehicles/Multirotor/MultirotorPawnEvents.h" line="6" column="1"/>
+            <location file="/workspace/Unreal/Plugins/AirSim/Source/Vehicles/Multirotor/MultirotorPawnEvents.h" line="10" column="1"/>
+            <symbol>MultirotorPawnEvents</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

@@ -1,0 +1,60 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "log.c",
+        "line": 64,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "log.c",
+        "line": 64,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "status.c",
+        "line": 158,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "status.c",
+        "line": 158,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[application/mongo] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/mongo
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mongo
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1257 findings, exit 0, 20.36s
+[2/4] semgrep completed: 0 findings, exit 0, 45.08s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[cppcheck] still running | elapsed 00:10:00 | timeout none
+[codeql] still running | elapsed 00:10:00 | timeout 24:00:00 | remaining before timeout 23:49:59
+[cppcheck] still running | elapsed 00:15:00 | timeout none
+[codeql] still running | elapsed 00:15:00 | timeout 24:00:00 | remaining before timeout 23:44:59
+[cppcheck] still running | elapsed 00:20:00 | timeout none
+[codeql] still running | elapsed 00:20:00 | timeout 24:00:00 | remaining before timeout 23:39:59
+[cppcheck] still running | elapsed 00:25:00 | timeout none
+[codeql] still running | elapsed 00:25:00 | timeout 24:00:00 | remaining before timeout 23:34:59
+[cppcheck] still running | elapsed 00:30:00 | timeout none
+[codeql] still running | elapsed 00:30:00 | timeout 24:00:00 | remaining before timeout 23:29:59
+[cppcheck] still running | elapsed 00:35:00 | timeout none
+[codeql] still running | elapsed 00:35:00 | timeout 24:00:00 | remaining before timeout 23:24:59
+[3/4] cppcheck completed: 2265 findings, exit 0, 2148.88s
+[codeql] still running | elapsed 00:40:00 | timeout 24:00:00 | remaining before timeout 23:19:59
+[4/4] codeql completed: 11 findings, exit 0, 2446.35s
+
+Summary: 4 completed, 0 failed, 3533 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/mongo/report.json

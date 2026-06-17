@@ -1,0 +1,23 @@
+[application/redis] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/redis
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/redis
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 2724 findings, exit 0, 2.70s
+[2/4] semgrep completed: 4 findings, exit 0, 13.00s
+[3/4] codeql completed: 236 findings, exit 0, 75.25s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[cppcheck] still running | elapsed 00:10:00 | timeout none
+[cppcheck] still running | elapsed 00:15:00 | timeout none
+[cppcheck] still running | elapsed 00:20:00 | timeout none
+[cppcheck] still running | elapsed 00:25:00 | timeout none
+[cppcheck] still running | elapsed 00:30:00 | timeout none
+[4/4] cppcheck completed: 22 findings, exit 0, 2012.37s
+
+Summary: 4 completed, 0 failed, 2986 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/redis/report.json

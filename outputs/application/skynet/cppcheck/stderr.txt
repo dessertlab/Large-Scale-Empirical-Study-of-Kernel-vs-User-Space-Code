@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." cwe="476" file0="/workspace/3rd/compat-mingw/compat.c">
+            <location file="/workspace/3rd/compat-mingw/wepoll.c" line="2163" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/3rd/compat-mingw/wepoll.c" line="2165" column="7" info="Assuming that condition &apos;node&apos; is not redundant"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 4) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 4) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/3rd/lpeg/lpprint.c">
+            <location file="/workspace/3rd/lpeg/lpprint.c" line="152" column="3"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;b&apos; used instead of size of its data." verbose="Size of pointer &apos;b&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*b)&apos;." cwe="467" file0="/workspace/3rd/lua/lauxlib.c">
+            <location file="/workspace/3rd/lua/lauxlib.c" line="1161" column="3"/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;x&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;x&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="82" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="82" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;x&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;x&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="117" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="117" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="278" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="278" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="279" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="279" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="280" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="280" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/ldump.c">
+            <location file="/workspace/3rd/lua/ldump.c" line="281" column="3"/>
+            <location file="/workspace/3rd/lua/ldump.c" line="281" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476" file0="/workspace/3rd/lua/lstring.c">
+            <location file="/workspace/3rd/lua/lstring.c" line="57" column="35" info="Null pointer dereference"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476" file0="/workspace/3rd/lua/lstring.c">
+            <location file="/workspace/3rd/lua/lstring.c" line="248" column="22" info="Null pointer dereference"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476" file0="/workspace/3rd/lua/lstring.c">
+            <location file="/workspace/3rd/lua/lstring.c" line="263" column="10" info="Null pointer dereference"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476" file0="/workspace/3rd/lua/lstring.c">
+            <location file="/workspace/3rd/lua/lstring.c" line="282" column="12" info="Null pointer dereference"/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;x&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;x&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="124" column="3"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="124" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="385" column="3"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="385" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="386" column="3"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="386" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="387" column="3"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="387" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;i&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;i&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="388" column="3"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="388" column="3" info="Address of variable taken here."/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;f-&gt;source==NULL&apos; is redundant or there is possible null pointer dereference: x_." verbose="Either the condition &apos;f-&gt;source==NULL&apos; is redundant or there is possible null pointer dereference: x_." cwe="476" file0="/workspace/3rd/lua/lundump.c">
+            <location file="/workspace/3rd/lua/lundump.c" line="237" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/3rd/lua/lundump.c" line="237" column="20" info="x_ is assigned &apos;f-&gt;source&apos; here."/>
+            <location file="/workspace/3rd/lua/lundump.c" line="235" column="23" info="Assuming that condition &apos;f-&gt;source==NULL&apos; is not redundant"/>
+            <symbol>x_</symbol>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;level&gt;=32&apos; is redundant or the array &apos;ms-&gt;capture[32]&apos; is accessed at index 32, which is out of bounds." verbose="Either the condition &apos;level&gt;=32&apos; is redundant or the array &apos;ms-&gt;capture[32]&apos; is accessed at index 32, which is out of bounds." cwe="788" file0="/workspace/3rd/lua/onelua.c">
+            <location file="/workspace/3rd/lua/lstrlib.c" line="541" column="14" info="Array index out of bounds"/>
+            <location file="/workspace/3rd/lua/lstrlib.c" line="540" column="13" info="Assuming that condition &apos;level&gt;=32&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;level&gt;=32&apos; is redundant or the array &apos;ms-&gt;capture[32]&apos; is accessed at index 32, which is out of bounds." verbose="Either the condition &apos;level&gt;=32&apos; is redundant or the array &apos;ms-&gt;capture[32]&apos; is accessed at index 32, which is out of bounds." cwe="788" file0="/workspace/3rd/lua/onelua.c">
+            <location file="/workspace/3rd/lua/lstrlib.c" line="542" column="14" info="Array index out of bounds"/>
+            <location file="/workspace/3rd/lua/lstrlib.c" line="540" column="13" info="Assuming that condition &apos;level&gt;=32&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;4&gt;j&apos; is redundant or the array &apos;c[4]&apos; is accessed at index 4, which is out of bounds." verbose="Either the condition &apos;4&gt;j&apos; is redundant or the array &apos;c[4]&apos; is accessed at index 4, which is out of bounds." cwe="788" file0="/workspace/lualib-src/lua-crypt.c">
+            <location file="/workspace/lualib-src/lua-crypt.c" line="968" column="6" info="Array index out of bounds"/>
+            <location file="/workspace/lualib-src/lua-crypt.c" line="964" column="18" info="Assuming that condition &apos;4&gt;j&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;4&gt;j&apos; is redundant or the array &apos;c[4]&apos; is accessed at index 4, which is out of bounds." verbose="Either the condition &apos;4&gt;j&apos; is redundant or the array &apos;c[4]&apos; is accessed at index 4, which is out of bounds." cwe="788" file0="/workspace/lualib-src/lua-crypt.c">
+            <location file="/workspace/lualib-src/lua-crypt.c" line="970" column="9" info="Array index out of bounds"/>
+            <location file="/workspace/lualib-src/lua-crypt.c" line="964" column="18" info="Assuming that condition &apos;4&gt;j&apos; is not redundant"/>
+        </error>
+        <error id="overlappingWriteUnion" severity="error" msg="Overlapping read/write of union is undefined behavior" verbose="Overlapping read/write of union is undefined behavior" file0="/workspace/lualib-src/lua-datasheet.c">
+            <location file="/workspace/lualib-src/lua-datasheet.c" line="196" column="10"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SPIN_UNLOCK is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SPIN_UNLOCK is a macro then please configure it." file0="/workspace/lualib-src/lua-debugchannel.c">
+            <location file="/workspace/lualib-src/lua-debugchannel.c" line="64" column="2"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." verbose="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="379" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="377" column="10" info="Assuming that condition &apos;pn==NULL&apos; is not redundant"/>
+            <symbol>pn</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." verbose="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="387" column="14" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="385" column="10" info="Assuming that condition &apos;pn==NULL&apos; is not redundant"/>
+            <symbol>pn</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." verbose="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="395" column="14" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="393" column="10" info="Assuming that condition &apos;pn==NULL&apos; is not redundant"/>
+            <symbol>pn</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." verbose="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="403" column="14" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="401" column="10" info="Assuming that condition &apos;pn==NULL&apos; is not redundant"/>
+            <symbol>pn</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." verbose="Either the condition &apos;pn==NULL&apos; is redundant or there is possible null pointer dereference: pn." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="418" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="416" column="9" info="Assuming that condition &apos;pn==NULL&apos; is not redundant"/>
+            <symbol>pn</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;v==NULL&apos; is redundant or there is possible null pointer dereference: v." verbose="Either the condition &apos;v==NULL&apos; is redundant or there is possible null pointer dereference: v." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="429" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="426" column="8" info="Assuming that condition &apos;v==NULL&apos; is not redundant"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;t==NULL&apos; is redundant or there is possible null pointer dereference: t." verbose="Either the condition &apos;t==NULL&apos; is redundant or there is possible null pointer dereference: t." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="452" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="449" column="8" info="Assuming that condition &apos;t==NULL&apos; is not redundant"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;plen==NULL&apos; is redundant or there is possible null pointer dereference: plen." verbose="Either the condition &apos;plen==NULL&apos; is redundant or there is possible null pointer dereference: plen." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="506" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="502" column="13" info="Assuming that condition &apos;plen==NULL&apos; is not redundant"/>
+            <symbol>plen</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;plen==NULL&apos; is redundant or there is possible null pointer dereference: plen." verbose="Either the condition &apos;plen==NULL&apos; is redundant or there is possible null pointer dereference: plen." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="517" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="513" column="13" info="Assuming that condition &apos;plen==NULL&apos; is not redundant"/>
+            <symbol>plen</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;t==NULL&apos; is redundant or there is possible null pointer dereference: t." verbose="Either the condition &apos;t==NULL&apos; is redundant or there is possible null pointer dereference: t." cwe="476" file0="/workspace/lualib-src/lua-seri.c">
+            <location file="/workspace/lualib-src/lua-seri.c" line="540" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lualib-src/lua-seri.c" line="537" column="7" info="Assuming that condition &apos;t==NULL&apos; is not redundant"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="786" column="3"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="911" column="4"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="1124" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="1136" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="1149" column="4"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;base*base&apos;." verbose="Signed integer overflow for expression &apos;base*base&apos;." cwe="190" file0="/workspace/lualib-src/sproto/sproto.c">
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="189" column="20" info="Integer overflow"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="187" column="8" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="189" column="20" info="Calling function &apos;calc_pow&apos;, 1st argument &apos;base*base&apos; value is 100000000"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="187" column="8" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="189" column="20" info="Calling function &apos;calc_pow&apos;, 1st argument &apos;base*base&apos; value is 10000"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="187" column="8" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="189" column="20" info="Calling function &apos;calc_pow&apos;, 1st argument &apos;base*base&apos; value is 100"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="187" column="8" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/lualib-src/sproto/sproto.c" line="244" column="25" info="Calling function &apos;calc_pow&apos;, 1st argument &apos;10&apos; value is 10"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/service-src/service_gate.c">
+            <location file="/workspace/service-src/service_gate.c" line="353" column="10"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: aTaskInfo" verbose="Uninitialized variable: aTaskInfo" cwe="457" file0="/workspace/service-src/service_snlua.c">
+            <location file="/workspace/service-src/service_snlua.c" line="112" column="89"/>
+            <symbol>aTaskInfo</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/skynet-src/skynet_server.c">
+            <location file="/workspace/skynet-src/skynet_server.c" line="433" column="2"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/skynet-src/skynet_start.c">
+            <location file="/workspace/skynet-src/skynet_start.c" line="243" column="2"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: s" verbose="Null pointer dereference: s" cwe="476">
+            <location file="/workspace/3rd/lua/lauxlib.c" line="1030" column="25" info="Dereferencing argument s that is null"/>
+            <location file="/workspace/3rd/lua/loadlib.c" line="488" column="3" info="Calling function luaL_addgsub, 2nd argument is null"/>
+            <location file="/workspace/3rd/lua/loadlib.c" line="524" column="20" info="Calling function searchpath, 3rd argument is null"/>
+            <location file="/workspace/3rd/lua/loadlib.c" line="522" column="7" info="Assuming that condition &apos;path==NULL&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: ctx" verbose="Null pointer dereference: ctx" cwe="476">
+            <location file="/workspace/skynet-src/skynet_server.c" line="183" column="18" info="Dereferencing argument ctx that is null"/>
+            <location file="/workspace/skynet-src/skynet_server.c" line="682" column="14" info="Calling function skynet_context_newsession, 1st argument is null"/>
+            <location file="/workspace/skynet-src/skynet_server.c" line="704" column="14" info="Calling function _filter_args, 1st argument is null"/>
+            <location file="/workspace/skynet-src/skynet_server.c" line="697" column="31" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/skynet-src/skynet_server.c" line="121" column="14" info="Calling function &apos;skynet_send&apos;, 1st argument &apos;NULL&apos; value is 0"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument cs that points at uninitialized variable cs" verbose="Using argument cs that points at uninitialized variable cs" cwe="457">
+            <location file="/workspace/3rd/lpeg/lpcap.c" line="333" column="18" info="Using argument cs"/>
+            <location file="/workspace/3rd/lpeg/lpvm.c" line="395" column="23" info="Calling function runtimecap, 1st argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument fs that points at uninitialized variable funcstate" verbose="Using argument fs that points at uninitialized variable funcstate" cwe="457">
+            <location file="/workspace/3rd/lua/lparser.c" line="801" column="14" info="Using argument fs"/>
+            <location file="/workspace/3rd/lua/lparser.c" line="2153" column="3" info="Calling function open_func, 2nd argument is uninitialized"/>
+            <location file="/workspace/3rd/lua/lparser.c" line="2186" column="11" info="Calling function mainfunc, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

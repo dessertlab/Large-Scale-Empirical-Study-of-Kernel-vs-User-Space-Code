@@ -1,0 +1,31 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-764"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "Kernel/Devices/Input/KeyboardDevice.cpp",
+        "line": 95,
+        "cwe": "CWE-120",
+        "function": "Kernel/Devices/Input/KeyboardDevice.cpp::Kernel::KeyboardDevice::read:95-119"
+      },
+      {
+        "tool": "codeql",
+        "filename": "Kernel/Devices/Input/KeyboardDevice.cpp",
+        "line": 116,
+        "cwe": "CWE-764",
+        "function": "Kernel/Devices/Input/KeyboardDevice.cpp::Kernel::KeyboardDevice::read:95-119"
+      }
+    ]
+  }
+]

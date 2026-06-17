@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;takeAt&apos; is called from destructor &apos;~FlowLayout()&apos; at line 29. Dynamic binding is not used." verbose="Virtual function &apos;takeAt&apos; is called from destructor &apos;~FlowLayout()&apos; at line 29. Dynamic binding is not used." file0="/workspace/frontend/components/FlowLayout.cpp">
+            <location file="/workspace/frontend/components/FlowLayout.hpp" line="31" column="15" info="takeAt is a virtual function"/>
+            <location file="/workspace/frontend/components/FlowLayout.cpp" line="29" column="17" info="Calling takeAt"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::drawLabel&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::drawLabel&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::drawLabel</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::drawSafeArea&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::drawSafeArea&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::drawSafeArea</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::multiviewLayout&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::multiviewLayout&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::multiviewLayout</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::maxSrcs&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::maxSrcs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::maxSrcs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::offset&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::offset&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::offset</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::pvwprgCX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::pvwprgCX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::pvwprgCX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::pvwprgCY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::pvwprgCY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::pvwprgCY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::sourceX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::sourceX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::sourceX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::sourceY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::sourceY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::sourceY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::labelX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::labelX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::labelX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::labelY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::labelY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::labelY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::scenesCX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::scenesCX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::scenesCX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::scenesCY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::scenesCY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::scenesCY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::ppiCX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::ppiCX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::ppiCX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::ppiCY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::ppiCY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::ppiCY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siCX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siCX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siCX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siCY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siCY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siCY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::ppiScaleX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::ppiScaleX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::ppiScaleX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::ppiScaleY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::ppiScaleY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::ppiScaleY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siScaleX&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siScaleX&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siScaleX</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::siScaleY&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::siScaleY&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::siScaleY</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::fw&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::fw&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::fw</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::fh&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::fh&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::fh</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Multiview::ratio&apos; is not initialized in the constructor." verbose="Member variable &apos;Multiview::ratio&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/components/Multiview.cpp">
+            <location file="/workspace/frontend/components/Multiview.cpp" line="8" column="12"/>
+            <symbol>Multiview::ratio</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/frontend/components/VolumeMeter.cpp">
+            <location file="/workspace/frontend/components/VolumeMeter.hpp" line="16" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/frontend/components/VolumeName.cpp">
+            <location file="/workspace/frontend/components/VolumeName.hpp" line="28" column="2"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;YoutubeChatDock::isLoggedIn&apos; is not initialized in the constructor." verbose="Member variable &apos;YoutubeChatDock::isLoggedIn&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/docks/YouTubeChatDock.cpp">
+            <location file="/workspace/frontend/docks/YouTubeChatDock.hpp" line="13" column="2"/>
+            <symbol>YoutubeChatDock::isLoggedIn</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/frontend/plugins/aja-output-ui/aja-ui-main.cpp">
+            <location file="/workspace/frontend/plugins/aja-output-ui/aja-ui-main.cpp" line="18" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/frontend/plugins/decklink-output-ui/decklink-ui-main.cpp">
+            <location file="/workspace/frontend/plugins/decklink-output-ui/decklink-ui-main.cpp" line="12" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." file0="/workspace/frontend/plugins/frontend-tools/captions-mssapi-stream.cpp">
+            <location file="/workspace/frontend/plugins/frontend-tools/captions-mssapi-stream.hpp" line="53" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/frontend/plugins/frontend-tools/frontend-tools.c">
+            <location file="/workspace/frontend/plugins/frontend-tools/frontend-tools.c" line="3" column="1"/>
+        </error>
+        <error id="invalidLifetime" severity="error" msg="Using pointer to local variable &apos;_temp&apos; that is out of scope." verbose="Using pointer to local variable &apos;_temp&apos; that is out of scope." cwe="562" file0="/workspace/frontend/plugins/frontend-tools/scripts.cpp">
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="655" column="40"/>
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="647" column="16" info="Variable created here."/>
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="650" column="29" info="Pointer to container is created here."/>
+        </error>
+        <error id="invalidLifetime" severity="error" msg="Using pointer to local variable &apos;_temp&apos; that is out of scope." verbose="Using pointer to local variable &apos;_temp&apos; that is out of scope." cwe="562" file0="/workspace/frontend/plugins/frontend-tools/scripts.cpp">
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="656" column="29"/>
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="647" column="16" info="Variable created here."/>
+            <location file="/workspace/frontend/plugins/frontend-tools/scripts.cpp" line="650" column="29" info="Pointer to container is created here."/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/frontend/settings/OBSBasicSettings.cpp">
+            <location file="/workspace/frontend/settings/OBSBasicSettings.hpp" line="43" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." file0="/workspace/frontend/settings/OBSBasicSettings_Stream.cpp">
+            <location file="/workspace/frontend/settings/OBSBasicSettings_Stream.cpp" line="1714" column="27"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/frontend/updater/init-hook-files.c">
+            <location file="/workspace/frontend/updater/init-hook-files.c" line="88" column="67"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." file0="/workspace/frontend/utility/FFmpegCodec.cpp">
+            <location file="/workspace/frontend/utility/FFmpegCodec.hpp" line="69" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it." file0="/workspace/frontend/utility/FFmpegFormat.cpp">
+            <location file="/workspace/frontend/utility/FFmpegFormat.hpp" line="77" column="1"/>
+        </error>
+        <error id="containerOutOfBounds" severity="error" msg="Out of bounds access in expression &apos;str.back()&apos; because &apos;str&apos; is empty." verbose="Out of bounds access in expression &apos;str.back()&apos; because &apos;str&apos; is empty." cwe="398" file0="/workspace/frontend/utility/RemoteTextThread.cpp">
+            <location file="/workspace/frontend/utility/RemoteTextThread.cpp" line="109" column="14" info="Access out of bounds"/>
+            <location file="/workspace/frontend/utility/RemoteTextThread.cpp" line="106" column="6" info="Assuming condition is false"/>
+            <symbol>str</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;RemuxWorker::lastProgress&apos; is not initialized in the constructor." verbose="Member variable &apos;RemuxWorker::lastProgress&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/utility/RemuxWorker.cpp">
+            <location file="/workspace/frontend/utility/RemuxWorker.hpp" line="33" column="11"/>
+            <symbol>RemuxWorker::lastProgress</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;YoutubeApiWrappers::lastError&apos; is not initialized in the constructor." verbose="Member variable &apos;YoutubeApiWrappers::lastError&apos; is not initialized in the constructor." cwe="398" file0="/workspace/frontend/utility/YoutubeApiWrappers.cpp">
+            <location file="/workspace/frontend/utility/YoutubeApiWrappers.cpp" line="63" column="21"/>
+            <symbol>YoutubeApiWrappers::lastError</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/frontend/widgets/AudioMixer.cpp">
+            <location file="/workspace/frontend/widgets/OBSBasic.hpp" line="187" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." file0="/workspace/frontend/widgets/OBSBasic_SceneItems.cpp">
+            <location file="/workspace/frontend/widgets/OBSBasic_SceneItems.cpp" line="97" column="26"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." file0="/workspace/frontend/wizards/AutoConfig.cpp">
+            <location file="/workspace/frontend/wizards/AutoConfig.cpp" line="226" column="28"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;stopped&apos;, second condition is always false" verbose="Identical condition &apos;stopped&apos;, second condition is always false" cwe="398" file0="/workspace/frontend/wizards/AutoConfigTestPage.cpp">
+            <location file="/workspace/frontend/wizards/AutoConfigTestPage.cpp" line="366" column="7" info="Testing identical condition &apos;stopped&apos;"/>
+            <location file="/workspace/frontend/wizards/AutoConfigTestPage.cpp" line="353" column="7" info="If condition &apos;stopped&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;gs_obj::obj_type&apos; is not initialized in the constructor." verbose="Member variable &apos;gs_obj::obj_type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/libobs-d3d11/d3d11-duplicator.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.hpp" line="366" column="9"/>
+            <symbol>gs_obj::obj_type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;gs_texture::levels&apos; is not initialized in the constructor." verbose="Member variable &apos;gs_texture::levels&apos; is not initialized in the constructor." cwe="398" file0="/workspace/libobs-d3d11/d3d11-duplicator.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.hpp" line="478" column="9"/>
+            <symbol>gs_texture::levels</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/libobs-d3d11/d3d11-shader.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-shader.cpp" line="226" column="2"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;gs_shader_param::pos&apos; is not initialized in the constructor." verbose="Member variable &apos;gs_shader_param::pos&apos; is not initialized in the constructor." cwe="398" file0="/workspace/libobs-d3d11/d3d11-shaderprocessor.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-shaderprocessor.cpp" line="147" column="18"/>
+            <symbol>gs_shader_param::pos</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." verbose="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." cwe="476" file0="/workspace/libobs-d3d11/d3d11-subsystem.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1770" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1774" column="25" info="Assuming that condition &apos;curVertexShader&apos; is not redundant"/>
+            <symbol>curVertexShader</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." verbose="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." cwe="476" file0="/workspace/libobs-d3d11/d3d11-subsystem.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1771" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1774" column="25" info="Assuming that condition &apos;curVertexShader&apos; is not redundant"/>
+            <symbol>curVertexShader</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." verbose="Either the condition &apos;curVertexShader&apos; is redundant or there is possible null pointer dereference: curVertexShader." cwe="476" file0="/workspace/libobs-d3d11/d3d11-subsystem.cpp">
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1772" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/libobs-d3d11/d3d11-subsystem.cpp" line="1774" column="25" info="Assuming that condition &apos;curVertexShader&apos; is not redundant"/>
+            <symbol>curVertexShader</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!temp&apos; is redundant or there is possible null pointer dereference: temp." verbose="Either the condition &apos;!temp&apos; is redundant or there is possible null pointer dereference: temp." cwe="476" file0="/workspace/libobs/audio-monitoring/osx/coreaudio-enum-devices.c">
+            <location file="/workspace/libobs/util/darray.h" line="422" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/libobs/util/darray.h" line="416" column="6" info="Assuming that condition &apos;!temp&apos; is not redundant"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!temp&apos; is redundant or there is possible null pointer dereference: temp." verbose="Either the condition &apos;!temp&apos; is redundant or there is possible null pointer dereference: temp." cwe="476" file0="/workspace/libobs/audio-monitoring/osx/coreaudio-enum-devices.c">
+            <location file="/workspace/libobs/util/darray.h" line="424" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/libobs/util/darray.h" line="416" column="6" info="Assuming that condition &apos;!temp&apos; is not redundant"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1215" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1218" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1218" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1222" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1222" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1222" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1226" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1226" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1226" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 4) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." verbose="%ld in format string (no. 4) requires &apos;long&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/libobs/graphics/effect-parser.c">
+            <location file="/workspace/libobs/graphics/effect-parser.c" line="1226" column="3"/>
+        </error>
+        <error id="returnDanglingLifetime" severity="error" msg="Returning pointer to local variable &apos;new_data&apos; that will be invalid when returning." verbose="Returning pointer to local variable &apos;new_data&apos; that will be invalid when returning." cwe="562" file0="/workspace/libobs/graphics/graphics.c">
+            <location file="/workspace/libobs/graphics/graphics.c" line="1326" column="50"/>
+            <location file="/workspace/libobs/graphics/graphics.c" line="1317" column="22" info="Variable created here."/>
+            <location file="/workspace/libobs/graphics/graphics.c" line="1326" column="69" info="Passed to initializer list."/>
+            <location file="/workspace/libobs/graphics/graphics.c" line="1326" column="69" info="Address of variable taken here."/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: r" verbose="Uninitialized variable: r" cwe="457" file0="/workspace/libobs/obs-audio-controls.c">
+            <location file="/workspace/libobs/obs-audio-controls.c" line="360" column="9"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: r" verbose="Uninitialized variable: r" cwe="457" file0="/workspace/libobs/obs-audio-controls.c">
+            <location file="/workspace/libobs/obs-audio-controls.c" line="376" column="9"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 32 bits is undefined behaviour. See condition at line 170." verbose="Shifting 32-bit value by 32 bits is undefined behaviour. See condition at line 170." cwe="758" file0="/workspace/libobs/obs-avc.c">
+            <location file="/workspace/libobs/obs-avc.c" line="173" column="48" info="Shift"/>
+            <location file="/workspace/libobs/obs-avc.c" line="170" column="11" info="Assuming that condition &apos;i&lt;32&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!old_data&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;!old_data&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="/workspace/libobs/obs-data.c">
+            <location file="/workspace/libobs/obs-data.c" line="355" column="45" info="Null pointer subtraction"/>
+            <location file="/workspace/libobs/obs-data.c" line="358" column="6" info="Assuming that condition &apos;!old_data&apos; is not redundant"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" verbose="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" cwe="457" file0="/workspace/libobs/obs-data.c">
+            <location file="/workspace/libobs/obs-data.c" line="681" column="24"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" verbose="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" cwe="457" file0="/workspace/libobs/obs-data.c">
+            <location file="/workspace/libobs/obs-data.c" line="800" column="36"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" verbose="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" cwe="457" file0="/workspace/libobs/obs-data.c">
+            <location file="/workspace/libobs/obs-data.c" line="1009" column="21"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" verbose="Uninitialized variables: item.ref, item.name, item.parent, item.hh, item.type, item.name_len, item.data_len, item.data_size, item.default_len, item.default_size, item.autoselect_size, item.capacity" cwe="457" file0="/workspace/libobs/obs-data.c">
+            <location file="/workspace/libobs/obs-data.c" line="1058" column="14"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;type" verbose="Uninitialized variable: p-&gt;type" cwe="457" file0="/workspace/libobs/obs-properties.c">
+            <location file="/workspace/libobs/obs-properties.c" line="701" column="10"/>
+            <symbol>p-&gt;type</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;name" verbose="Uninitialized variable: p-&gt;name" cwe="457" file0="/workspace/libobs/obs-properties.c">
+            <location file="/workspace/libobs/obs-properties.c" line="725" column="27"/>
+            <symbol>p-&gt;name</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: speed" verbose="Uninitialized variable: speed" cwe="457" file0="/workspace/libobs/obs-windows.c">
+            <location file="/workspace/libobs/obs-windows.c" line="85" column="63"/>
+            <location file="/workspace/libobs/obs-windows.c" line="73" column="13" info="Assuming condition is false"/>
+            <symbol>speed</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;video&apos; is redundant or there is possible null pointer dereference: video." verbose="Either the condition &apos;video&apos; is redundant or there is possible null pointer dereference: video." cwe="476" file0="/workspace/libobs/obs.c">
+            <location file="/workspace/libobs/obs.c" line="800" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/libobs/obs.c" line="831" column="22" info="Calling function &apos;obs_free_video_mix&apos;, 1st argument &apos;video&apos; value is 0"/>
+            <location file="/workspace/libobs/obs.c" line="828" column="36" info="video is assigned &apos;obs-&gt;video.mixes.array[i]&apos; here."/>
+            <location file="/workspace/libobs/obs.c" line="828" column="60" info="Assignment to &apos;video=obs-&gt;video.mixes.array[i]&apos;"/>
+            <location file="/workspace/libobs/obs.c" line="829" column="7" info="Assuming that condition &apos;video&apos; is not redundant"/>
+            <symbol>video</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: section-&gt;name" verbose="Uninitialized variable: section-&gt;name" cwe="457" file0="/workspace/libobs/util/config-file.c">
+            <location file="/workspace/libobs/util/config-file.c" line="362" column="27"/>
+            <symbol>section-&gt;name</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: item-&gt;value" verbose="Uninitialized variable: item-&gt;value" cwe="457" file0="/workspace/libobs/util/config-file.c">
+            <location file="/workspace/libobs/util/config-file.c" line="366" column="26"/>
+            <symbol>item-&gt;value</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/libobs/util/platform-windows.c">
+            <location file="/workspace/libobs/util/platform-windows.c" line="971" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: remainingSpace" verbose="Uninitialized variable: remainingSpace" cwe="457" file0="/workspace/libobs/util/platform-windows.c">
+            <location file="/workspace/libobs/util/platform-windows.c" line="601" column="69"/>
+            <symbol>remainingSpace</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dw_val" verbose="Uninitialized variable: dw_val" cwe="457" file0="/workspace/libobs/util/platform-windows.c">
+            <location file="/workspace/libobs/util/platform-windows.c" line="1064" column="84"/>
+            <location file="/workspace/libobs/util/platform-windows.c" line="1059" column="13" info="Assuming condition is false"/>
+            <symbol>dw_val</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OutputProps::sdiTransport&apos; is not initialized in the constructor." verbose="Member variable &apos;OutputProps::sdiTransport&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/aja/aja-props.cpp">
+            <location file="/workspace/plugins/aja/aja-props.cpp" line="220" column="14"/>
+            <symbol>OutputProps::sdiTransport</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/plugins/aja/aja-routing.cpp">
+            <location file="/workspace/plugins/aja/aja-routing.cpp" line="76" column="12"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/plugins/aja/aja-routing.cpp">
+            <location file="/workspace/plugins/aja/aja-routing.cpp" line="88" column="14"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/aja/main.cpp">
+            <location file="/workspace/plugins/aja/main.cpp" line="5" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/coreaudio-encoder/encoder.cpp">
+            <location file="/workspace/plugins/coreaudio-encoder/encoder.cpp" line="1252" column="1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/plugins/decklink/DecklinkBase.cpp">
+            <location file="/workspace/plugins/decklink/mac/decklink-sdk/DeckLinkAPI.h" line="150" column="70" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/plugins/decklink/DecklinkBase.cpp">
+            <location file="/workspace/plugins/decklink/linux/decklink-sdk/DeckLinkAPI.h" line="146" column="70" info="Integer overflow"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Deactivate&apos; is called from destructor &apos;~DeckLinkInput()&apos; at line 15. Dynamic binding is not used." verbose="Virtual function &apos;Deactivate&apos; is called from destructor &apos;~DeckLinkInput()&apos; at line 15. Dynamic binding is not used." file0="/workspace/plugins/decklink/DecklinkInput.cpp">
+            <location file="/workspace/plugins/decklink/DecklinkInput.hpp" line="31" column="7" info="Deactivate is a virtual function"/>
+            <location file="/workspace/plugins/decklink/DecklinkInput.cpp" line="15" column="2" info="Calling Deactivate"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Deactivate&apos; is called from destructor &apos;~DeckLinkOutput()&apos; at line 15. Dynamic binding is not used." verbose="Virtual function &apos;Deactivate&apos; is called from destructor &apos;~DeckLinkOutput()&apos; at line 15. Dynamic binding is not used." file0="/workspace/plugins/decklink/DecklinkOutput.cpp">
+            <location file="/workspace/plugins/decklink/DecklinkOutput.hpp" line="29" column="7" info="Deactivate is a virtual function"/>
+            <location file="/workspace/plugins/decklink/DecklinkOutput.cpp" line="15" column="2" info="Calling Deactivate"/>
+        </error>
+        <error id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: OBSVideoFrame::data" verbose="Mismatching allocation and deallocation: OBSVideoFrame::data" cwe="762" file0="/workspace/plugins/decklink/OBSVideoFrame.cpp">
+            <location file="/workspace/plugins/decklink/OBSVideoFrame.cpp" line="15" column="2"/>
+            <symbol>OBSVideoFrame::data</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;OBSVideoFrame&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;OBSVideoFrame&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/plugins/decklink/OBSVideoFrame.cpp">
+            <location file="/workspace/plugins/decklink/OBSVideoFrame.cpp" line="9" column="8"/>
+            <symbol>OBSVideoFrame</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;OBSVideoFrame&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;OBSVideoFrame&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/plugins/decklink/OBSVideoFrame.cpp">
+            <location file="/workspace/plugins/decklink/OBSVideoFrame.cpp" line="9" column="8"/>
+            <symbol>OBSVideoFrame</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::swap&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::swap&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::swap</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::allow10Bit&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::allow10Bit&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::allow10Bit</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::videoConnection&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::videoConnection&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::videoConnection</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::audioConnection&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::audioConnection&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::audioConnection</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::frameDuration&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::frameDuration&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::frameDuration</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::frameTimescale&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::frameTimescale&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::frameTimescale</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeckLinkDeviceInstance::totalFramesScheduled&apos; is not initialized in the constructor." verbose="Member variable &apos;DeckLinkDeviceInstance::totalFramesScheduled&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/decklink/decklink-device-instance.cpp">
+            <location file="/workspace/plugins/decklink/decklink-device-instance.cpp" line="111" column="25"/>
+            <symbol>DeckLinkDeviceInstance::totalFramesScheduled</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/decklink/plugin-main.cpp">
+            <location file="/workspace/plugins/decklink/plugin-main.cpp" line="4" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/image-source/image-source.c">
+            <location file="/workspace/plugins/image-source/image-source.c" line="385" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-alsa/linux-alsa.c">
+            <location file="/workspace/plugins/linux-alsa/linux-alsa.c" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-capture/linux-capture.c">
+            <location file="/workspace/plugins/linux-capture/linux-capture.c" line="21" column="1"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!firstMark&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!firstMark&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/plugins/linux-capture/xcomposite-input.c">
+            <location file="/workspace/plugins/linux-capture/xcomposite-input.c" line="266" column="36" info="Null pointer addition"/>
+            <location file="/workspace/plugins/linux-capture/xcomposite-input.c" line="270" column="6" info="Assuming that condition &apos;!firstMark&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmetic" severity="error" msg="Pointer addition with NULL pointer." verbose="Pointer addition with NULL pointer." cwe="682" file0="/workspace/plugins/linux-capture/xcomposite-input.c">
+            <location file="/workspace/plugins/linux-capture/xcomposite-input.c" line="267" column="36" info="Null pointer addition"/>
+            <location file="/workspace/plugins/linux-capture/xcomposite-input.c" line="263" column="37" info="Assignment &apos;secondMark=firstMark?strstr(firstMark+markSize,&quot;\r\n&quot;):NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-jack/linux-jack.c">
+            <location file="/workspace/plugins/linux-jack/linux-jack.c" line="19" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;id" verbose="Uninitialized variable: p-&gt;id" cwe="457" file0="/workspace/plugins/linux-pipewire/camera-portal.c">
+            <location file="/workspace/plugins/linux-pipewire/camera-portal.c" line="146" column="34"/>
+            <symbol>p-&gt;id</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: p-&gt;id" verbose="Uninitialized variable: p-&gt;id" cwe="457" file0="/workspace/plugins/linux-pipewire/camera-portal.c">
+            <location file="/workspace/plugins/linux-pipewire/camera-portal.c" line="194" column="11"/>
+            <symbol>p-&gt;id</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;id" verbose="Uninitialized variable: p-&gt;id" cwe="457" file0="/workspace/plugins/linux-pipewire/camera-portal.c">
+            <location file="/workspace/plugins/linux-pipewire/camera-portal.c" line="338" column="10"/>
+            <symbol>p-&gt;id</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;id" verbose="Uninitialized variable: p-&gt;id" cwe="457" file0="/workspace/plugins/linux-pipewire/camera-portal.c">
+            <location file="/workspace/plugins/linux-pipewire/camera-portal.c" line="588" column="10"/>
+            <symbol>p-&gt;id</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p-&gt;id" verbose="Uninitialized variable: p-&gt;id" cwe="457" file0="/workspace/plugins/linux-pipewire/camera-portal.c">
+            <location file="/workspace/plugins/linux-pipewire/camera-portal.c" line="661" column="10"/>
+            <symbol>p-&gt;id</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-pipewire/linux-pipewire.c">
+            <location file="/workspace/plugins/linux-pipewire/linux-pipewire.c" line="33" column="1"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/plugins/linux-pipewire/pipewire.c">
+            <location file="/workspace/plugins/linux-pipewire/pipewire.c" line="748" column="23"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/plugins/linux-pipewire/pipewire.c">
+            <location file="/workspace/plugins/linux-pipewire/pipewire.c" line="749" column="23"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/plugins/linux-pipewire/pipewire.c">
+            <location file="/workspace/plugins/linux-pipewire/pipewire.c" line="750" column="25"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/plugins/linux-pipewire/pipewire.c">
+            <location file="/workspace/plugins/linux-pipewire/pipewire.c" line="751" column="14"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-pulseaudio/linux-pulseaudio.c">
+            <location file="/workspace/plugins/linux-pulseaudio/linux-pulseaudio.c" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/linux-v4l2/linux-v4l2.c">
+            <location file="/workspace/plugins/linux-v4l2/linux-v4l2.c" line="20" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/mac-capture/plugin-main.c">
+            <location file="/workspace/plugins/mac-capture/plugin-main.c" line="3" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/mac-syphon/plugin-main.c">
+            <location file="/workspace/plugins/mac-syphon/plugin-main.c" line="3" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/plugins/mac-videotoolbox/encoder.c">
+            <location file="/workspace/plugins/mac-videotoolbox/encoder.c" line="1426" column="59"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/nv-filters/nv-filters.c">
+            <location file="/workspace/plugins/nv-filters/nv-filters.c" line="3" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;rc_mode&apos; is redundant or there is possible null pointer dereference: rc_mode." verbose="Either the condition &apos;rc_mode&apos; is redundant or there is possible null pointer dereference: rc_mode." cwe="476" file0="/workspace/plugins/obs-ffmpeg/obs-ffmpeg-vaapi.c">
+            <location file="/workspace/plugins/obs-ffmpeg/obs-ffmpeg-vaapi.c" line="232" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/plugins/obs-ffmpeg/obs-ffmpeg-vaapi.c" line="235" column="9" info="Assuming that condition &apos;rc_mode&apos; is not redundant"/>
+            <symbol>rc_mode</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-ffmpeg/obs-ffmpeg.c">
+            <location file="/workspace/plugins/obs-ffmpeg/obs-ffmpeg.c" line="18" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::encoder&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::encoder&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::encoder</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::encoder_str&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::encoder_str&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::encoder_str</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::codec&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::codec&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::codec</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::cx&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::cx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::cx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::cy&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::cy&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::cy</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::fps_num&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::fps_num&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::fps_num</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::fps_den&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::fps_den&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::fps_den</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;amf_base::full_range&apos; is not initialized in the constructor." verbose="Member variable &apos;amf_base::full_range&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-ffmpeg/texture-amf.cpp">
+            <location file="/workspace/plugins/obs-ffmpeg/texture-amf.cpp" line="190" column="9"/>
+            <symbol>amf_base::full_range</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!channel_data&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!channel_data&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/plugins/obs-filters/invert-audio-polarity.c">
+            <location file="/workspace/plugins/obs-filters/invert-audio-polarity.c" line="26" column="46" info="Null pointer addition"/>
+            <location file="/workspace/plugins/obs-filters/invert-audio-polarity.c" line="28" column="7" info="Assuming that condition &apos;!channel_data&apos; is not redundant"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-filters/obs-filters.c">
+            <location file="/workspace/plugins/obs-filters/obs-filters.c" line="3" column="1"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;m==1&apos; and inner condition is &apos;!(m==1)&apos;)." cwe="398" file0="/workspace/plugins/obs-filters/rnnoise/src/kiss_fft.c">
+            <location file="/workspace/plugins/obs-filters/rnnoise/src/kiss_fft.c" line="57" column="7" info="opposite inner condition: !(m==1)"/>
+            <location file="/workspace/plugins/obs-filters/rnnoise/src/kiss_fft.c" line="55" column="9" info="outer condition: m==1"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: (int*)0" verbose="Null pointer dereference: (int*)0" cwe="476" file0="/workspace/plugins/obs-filters/rnnoise/src/rnn.c">
+            <location file="/workspace/plugins/obs-filters/rnnoise/src/rnn.c" line="105" column="7" info="Null pointer dereference"/>
+            <symbol>(int*)0</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: (int*)0" verbose="Null pointer dereference: (int*)0" cwe="476" file0="/workspace/plugins/obs-filters/rnnoise/src/rnn.c">
+            <location file="/workspace/plugins/obs-filters/rnnoise/src/rnn.c" line="151" column="13" info="Null pointer dereference"/>
+            <symbol>(int*)0</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variables: downscales.cx, downscales.cy" verbose="Uninitialized variables: downscales.cx, downscales.cy" cwe="457" file0="/workspace/plugins/obs-filters/scale-filter.c">
+            <location file="/workspace/plugins/obs-filters/scale-filter.c" line="522" column="39"/>
+            <location file="/workspace/plugins/obs-filters/scale-filter.c" line="496" column="23" info="Assuming condition is false"/>
+            <symbol>downscales</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-libfdk/obs-libfdk.c">
+            <location file="/workspace/plugins/obs-libfdk/obs-libfdk.c" line="326" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::init&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::init&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::init</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::shutdown&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::shutdown&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::shutdown</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDriverVersion&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDriverVersion&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDriverVersion</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDeviceHandleByPCIBusId&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDeviceHandleByPCIBusId&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDeviceHandleByPCIBusId</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDeviceUUID&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDeviceUUID&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDeviceUUID</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDeviceName&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDeviceName&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDeviceName</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDevicePCIeGen&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDevicePCIeGen&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDevicePCIeGen</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDevicePCIeWidth&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDevicePCIeWidth&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDevicePCIeWidth</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getDeviceArchitecture&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getDeviceArchitecture&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getDeviceArchitecture</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getEncoderSessions&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getEncoderSessions&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getEncoderSessions</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getEncoderCapacity&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getEncoderCapacity&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getEncoderCapacity</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;NVML::getEncoderUtilisation&apos; is not initialized in the constructor." verbose="Member variable &apos;NVML::getEncoderUtilisation&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="136" column="2"/>
+            <symbol>NVML::getEncoderUtilisation</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="442" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="442" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 8) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 8) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="521" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 9) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 9) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc-test/obs-nvenc-test.cpp" line="521" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-nvenc/obs-nvenc.c">
+            <location file="/workspace/plugins/obs-nvenc/obs-nvenc.c" line="5" column="1"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ptr" verbose="Memory leak: ptr" cwe="401" file0="/workspace/plugins/obs-outputs/librtmp/rtmp.c">
+            <location file="/workspace/plugins/obs-outputs/librtmp/rtmp.c" line="267" column="5"/>
+            <symbol>ptr</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-outputs/obs-outputs.c">
+            <location file="/workspace/plugins/obs-outputs/obs-outputs.c" line="8" column="1"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buffer_delay_length_minus_1" verbose="Uninitialized variable: buffer_delay_length_minus_1" cwe="457" file0="/workspace/plugins/obs-outputs/rtmp-av1.c">
+            <location file="/workspace/plugins/obs-outputs/rtmp-av1.c" line="376" column="26"/>
+            <symbol>buffer_delay_length_minus_1</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pEncoder&apos; is redundant or there is possible null pointer dereference: pEncoder." verbose="Either the condition &apos;pEncoder&apos; is redundant or there is possible null pointer dereference: pEncoder." cwe="476" file0="/workspace/plugins/obs-qsv11/QSV_Encoder.cpp">
+            <location file="/workspace/plugins/obs-qsv11/QSV_Encoder.cpp" line="82" column="18" info="Null pointer dereference"/>
+            <location file="/workspace/plugins/obs-qsv11/QSV_Encoder.cpp" line="130" column="7" info="Assuming that condition &apos;pEncoder&apos; is not redundant"/>
+            <symbol>pEncoder</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;hWnd&apos;" verbose="Unused variable value &apos;hWnd&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="64" column="2"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;bCreateSharedHandles&apos;" verbose="Unused variable value &apos;bCreateSharedHandles&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="65" column="2"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;pthis&apos;" verbose="Unused variable value &apos;pthis&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="306" column="2"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;pthis&apos;" verbose="Unused variable value &apos;pthis&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="382" column="2"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;pthis&apos;" verbose="Unused variable value &apos;pthis&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="408" column="2"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;pthis&apos;" verbose="Unused variable value &apos;pthis&apos;" cwe="398" file0="/workspace/plugins/obs-qsv11/common_directx11.cpp">
+            <location file="/workspace/plugins/obs-qsv11/common_directx11.cpp" line="449" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-qsv11/obs-qsv11-plugin-main.c">
+            <location file="/workspace/plugins/obs-qsv11/obs-qsv11-plugin-main.c" line="60" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-text/gdiplus/obs-text.cpp">
+            <location file="/workspace/plugins/obs-text/gdiplus/obs-text.cpp" line="885" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-transitions/obs-transitions.c">
+            <location file="/workspace/plugins/obs-transitions/obs-transitions.c" line="3" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;VSTPlugin::effectName&apos; is not initialized in the constructor." verbose="Member variable &apos;VSTPlugin::effectName&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-vst/VSTPlugin.cpp">
+            <location file="/workspace/plugins/obs-vst/VSTPlugin.cpp" line="82" column="12"/>
+            <symbol>VSTPlugin::effectName</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;VSTPlugin::vendorString&apos; is not initialized in the constructor." verbose="Member variable &apos;VSTPlugin::vendorString&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/obs-vst/VSTPlugin.cpp">
+            <location file="/workspace/plugins/obs-vst/VSTPlugin.cpp" line="82" column="12"/>
+            <symbol>VSTPlugin::vendorString</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-vst/obs-vst.cpp">
+            <location file="/workspace/plugins/obs-vst/obs-vst.cpp" line="31" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-webrtc/obs-webrtc.cpp">
+            <location file="/workspace/plugins/obs-webrtc/obs-webrtc.cpp" line="6" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/obs-x264/obs-x264-plugin-main.c">
+            <location file="/workspace/plugins/obs-x264/obs-x264-plugin-main.c" line="3" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/oss-audio/oss-audio.c">
+            <location file="/workspace/plugins/oss-audio/oss-audio.c" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/rtmp-services/rtmp-services-main.c">
+            <location file="/workspace/plugins/rtmp-services/rtmp-services-main.c" line="13" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/sndio/sndio.c">
+            <location file="/workspace/plugins/sndio/sndio.c" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/text-freetype2/text-freetype2.c">
+            <location file="/workspace/plugins/text-freetype2/text-freetype2.c" line="29" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/vlc-video/vlc-video-plugin.c">
+            <location file="/workspace/plugins/vlc-video/vlc-video-plugin.c" line="8" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/plugins/win-capture/game-capture-file-init.c">
+            <location file="/workspace/plugins/win-capture/game-capture-file-init.c" line="124" column="67"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: monitor" verbose="Uninitialized variable: monitor" cwe="457" file0="/workspace/plugins/win-capture/game-capture.c">
+            <location file="/workspace/plugins/win-capture/game-capture.c" line="2195" column="78"/>
+            <symbol>monitor</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/win-capture/plugin-main.c">
+            <location file="/workspace/plugins/win-capture/plugin-main.c" line="18" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/win-dshow/dshow-plugin.cpp">
+            <location file="/workspace/plugins/win-dshow/dshow-plugin.cpp" line="8" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." file0="/workspace/plugins/win-dshow/virtualcam-module/virtualcam-module.cpp">
+            <location file="/workspace/plugins/win-dshow/virtualcam-module/virtualcam-module.cpp" line="24" column="2"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DShowEncoder::frameInterval&apos; is not initialized in the constructor." verbose="Member variable &apos;DShowEncoder::frameInterval&apos; is not initialized in the constructor." cwe="398" file0="/workspace/plugins/win-dshow/win-dshow-encoder.cpp">
+            <location file="/workspace/plugins/win-dshow/win-dshow-encoder.cpp" line="28" column="9"/>
+            <symbol>DShowEncoder::frameInterval</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: data.input" verbose="Uninitialized variable: data.input" cwe="457" file0="/workspace/plugins/win-dshow/win-dshow.cpp">
+            <location file="/workspace/plugins/win-dshow/win-dshow.cpp" line="878" column="7"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it." file0="/workspace/plugins/win-wasapi/plugin-main.cpp">
+            <location file="/workspace/plugins/win-wasapi/plugin-main.cpp" line="7" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHODIMP_ is a macro then please configure it." file0="/workspace/plugins/win-wasapi/wasapi-notify.cpp">
+            <location file="/workspace/plugins/win-wasapi/wasapi-notify.cpp" line="15" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." file0="/workspace/plugins/win-wasapi/win-wasapi.cpp">
+            <location file="/workspace/plugins/win-wasapi/win-wasapi.cpp" line="104" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_DISABLE_DEPRECATION is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRAGMA_DISABLE_DEPRECATION is a macro then please configure it." file0="/workspace/shared/properties-view/properties-view.cpp">
+            <location file="/workspace/shared/properties-view/properties-view.cpp" line="609" column="2"/>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;audio_repack&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;audio_repack&apos;" cwe="758">
+            <location file="/workspace/plugins/aja/audio-repack.h" line="16" column="1"/>
+            <location file="/workspace/plugins/decklink/audio-repack.h" line="16" column="1"/>
+            <symbol>audio_repack</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;AudioRepacker&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;AudioRepacker&apos;" cwe="758">
+            <location file="/workspace/plugins/aja/audio-repack.hpp" line="5" column="1"/>
+            <location file="/workspace/plugins/decklink/audio-repack.hpp" line="5" column="1"/>
+            <symbol>AudioRepacker</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;adapter_caps&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;adapter_caps&apos;" cwe="758">
+            <location file="/workspace/plugins/obs-ffmpeg/obs-amf-test/obs-amf-test.cpp" line="25" column="1"/>
+            <location file="/workspace/plugins/obs-qsv11/obs-qsv-test/obs-qsv-test.cpp" line="22" column="1"/>
+            <symbol>adapter_caps</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: video" verbose="Null pointer dereference: video" cwe="476">
+            <location file="/workspace/libobs/obs.c" line="800" column="6" info="Dereferencing argument video that is null"/>
+            <location file="/workspace/libobs/obs.c" line="831" column="21" info="Calling function obs_free_video_mix, 1st argument is null"/>
+            <location file="/workspace/libobs/obs.c" line="828" column="36" info="video is assigned &apos;obs-&gt;video.mixes.array[i]&apos; here."/>
+            <location file="/workspace/libobs/obs.c" line="828" column="60" info="Assignment to &apos;video=obs-&gt;video.mixes.array[i]&apos;"/>
+            <location file="/workspace/libobs/obs.c" line="829" column="7" info="Assuming that condition &apos;video&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/plugins/win-dshow/ffmpeg-decode.c" line="211" column="32" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/plugins/win-dshow/ffmpeg-decode.c" line="222" column="2" info="Calling function copy_data, 2nd argument is null"/>
+            <location file="/workspace/plugins/win-dshow/win-dshow.cpp" line="621" column="37" info="Calling function ffmpeg_decode_audio, 2nd argument is null"/>
+            <location file="/workspace/plugins/win-dshow/win-dshow.cpp" line="640" column="10" info="Assignment &apos;data=nullptr&apos;, assigned value is 0"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument packet that points at uninitialized variable packet" verbose="Using argument packet that points at uninitialized variable packet" cwe="457">
+            <location file="/workspace/plugins/obs-outputs/librtmp/rtmp.c" line="4101" column="9" info="Using argument packet"/>
+            <location file="/workspace/plugins/obs-outputs/librtmp/rtmp.c" line="1675" column="28" info="Calling function RTMP_SendPacket, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

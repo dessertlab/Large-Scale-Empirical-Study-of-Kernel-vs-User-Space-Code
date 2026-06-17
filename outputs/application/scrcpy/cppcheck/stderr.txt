@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;otg&apos; and inner condition is &apos;v4l2&apos;)." cwe="398" file0="/workspace/app/src/cli.c">
+            <location file="/workspace/app/src/cli.c" line="3456" column="13" info="identical inner condition: v4l2"/>
+            <location file="/workspace/app/src/cli.c" line="3429" column="9" info="outer condition: otg"/>
+            <location file="/workspace/app/src/cli.c" line="2949" column="17" info="&apos;v4l2&apos; is assigned value &apos;false&apos; here."/>
+            <location file="/workspace/app/src/cli.c" line="2948" column="16" info="&apos;otg&apos; is assigned value &apos;false&apos; here."/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/app/src/cli.c">
+            <location file="/workspace/app/src/cli.c" line="1504" column="5"/>
+        </error>
+    </errors>
+</results>

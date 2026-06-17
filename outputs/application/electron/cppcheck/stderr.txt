@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/shell/browser/api/electron_api_power_monitor.cc">
+            <location file="/workspace/shell/browser/api/electron_api_power_monitor.cc" line="44" column="17"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/shell/browser/api/electron_api_web_contents.cc">
+            <location file="/workspace/shell/browser/api/electron_api_web_contents.cc" line="292" column="18"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;api_web_contents&apos; is redundant or there is possible null pointer dereference: api_web_contents." verbose="Either the condition &apos;api_web_contents&apos; is redundant or there is possible null pointer dereference: api_web_contents." cwe="476" file0="/workspace/shell/browser/extensions/api/tabs/tabs_api.cc">
+            <location file="/workspace/shell/browser/extensions/api/tabs/tabs_api.cc" line="691" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/shell/browser/extensions/api/tabs/tabs_api.cc" line="698" column="7" info="Assuming that condition &apos;api_web_contents&apos; is not redundant"/>
+            <symbol>api_web_contents</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ALL_FONT_SCRIPTS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ALL_FONT_SCRIPTS is a macro then please configure it." file0="/workspace/shell/browser/font_defaults.cc">
+            <location file="/workspace/shell/browser/font_defaults.cc" line="272" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHODIMP_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IFACEMETHODIMP_ is a macro then please configure it." file0="/workspace/shell/browser/notifications/win/windows_toast_activator.cc">
+            <location file="/workspace/shell/browser/notifications/win/windows_toast_activator.cc" line="103" column="3"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: embedder_host_view" verbose="Possible null pointer dereference: embedder_host_view" cwe="476" file0="/workspace/shell/browser/osr/osr_render_widget_host_view.cc">
+            <location file="/workspace/shell/browser/osr/osr_render_widget_host_view.cc" line="545" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/shell/browser/osr/osr_render_widget_host_view.cc" line="537" column="7" info="Assuming condition is false"/>
+            <location file="/workspace/shell/browser/osr/osr_render_widget_host_view.cc" line="536" column="55" info="Assignment &apos;embedder_host_view=nullptr&apos;, assigned value is 0"/>
+            <symbol>embedder_host_view</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STRINGIZE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STRINGIZE is a macro then please configure it." file0="/workspace/shell/browser/ui/gtk_util.cc">
+            <location file="/workspace/shell/browser/ui/gtk_util.cc" line="28" column="13"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If BEGIN_METADATA is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If BEGIN_METADATA is a macro then please configure it." file0="/workspace/shell/browser/ui/views/autofill_popup_view.cc">
+            <location file="/workspace/shell/browser/ui/views/autofill_popup_view.cc" line="33" column="1"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: zero" verbose="Possible null pointer dereference: zero" cwe="476" file0="/workspace/shell/common/api/electron_bindings.cc">
+            <location file="/workspace/shell/common/api/electron_bindings.cc" line="118" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/shell/common/api/electron_bindings.cc" line="117" column="24" info="Assignment &apos;zero=nullptr&apos;, assigned value is 0"/>
+            <symbol>zero</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: zero" verbose="Possible null pointer dereference: zero" cwe="476" file0="/workspace/shell/common/node_bindings.cc">
+            <location file="/workspace/shell/common/node_bindings.cc" line="181" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/shell/common/node_bindings.cc" line="180" column="24" info="Assignment &apos;zero=nullptr&apos;, assigned value is 0"/>
+            <symbol>zero</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/shell/common/node_natives_code_cache.cc">
+            <location file="/workspace/shell/common/node_natives_code_cache.cc" line="27" column="19"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!target_isolate&apos; is redundant or there is possible null pointer dereference: isolate." verbose="Either the condition &apos;!target_isolate&apos; is redundant or there is possible null pointer dereference: isolate." cwe="476" file0="/workspace/shell/renderer/api/electron_api_context_bridge.cc">
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="794" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="835" column="24" info="Calling function &apos;GetTargetContext&apos;, 1st argument &apos;isolate&apos; value is 0"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="833" column="31" info="target_isolate is assigned &apos;isolate&apos; here."/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="836" column="41" info="Assuming that condition &apos;!target_isolate&apos; is not redundant"/>
+            <symbol>isolate</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!target_isolate&apos; is redundant or there is possible null pointer dereference: isolate." verbose="Either the condition &apos;!target_isolate&apos; is redundant or there is possible null pointer dereference: isolate." cwe="476" file0="/workspace/shell/renderer/api/electron_api_context_bridge.cc">
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="831" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="833" column="33" info="Assignment to &apos;target_isolate=isolate&apos;"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="836" column="41" info="Assuming that condition &apos;!target_isolate&apos; is not redundant"/>
+            <symbol>isolate</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GC_PLUGIN_IGNORE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GC_PLUGIN_IGNORE is a macro then please configure it." file0="/workspace/shell/renderer/preload_realm_context.cc">
+            <location file="/workspace/shell/renderer/preload_realm_context.cc" line="240" column="3"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: zero" verbose="Possible null pointer dereference: zero" cwe="476" file0="/workspace/shell/services/node/node_service.cc">
+            <location file="/workspace/shell/services/node/node_service.cc" line="56" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/shell/services/node/node_service.cc" line="55" column="24" info="Assignment &apos;zero=nullptr&apos;, assigned value is 0"/>
+            <symbol>zero</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: isolate" verbose="Null pointer dereference: isolate" cwe="476">
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="794" column="43" info="Dereferencing argument isolate that is null"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="835" column="23" info="Calling function GetTargetContext, 1st argument is null"/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="833" column="31" info="target_isolate is assigned &apos;isolate&apos; here."/>
+            <location file="/workspace/shell/renderer/api/electron_api_context_bridge.cc" line="836" column="41" info="Assuming that condition &apos;!target_isolate&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,18 @@
+[application/grpc] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/grpc
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/grpc
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1791 findings, exit 0, 5.38s
+[2/4] semgrep completed: 14 findings, exit 0, 17.95s
+[3/4] cppcheck completed: 283 findings, exit 0, 33.54s
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[4/4] codeql completed: 7 findings, exit 0, 362.65s
+
+Summary: 4 completed, 0 failed, 2095 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/grpc/report.json

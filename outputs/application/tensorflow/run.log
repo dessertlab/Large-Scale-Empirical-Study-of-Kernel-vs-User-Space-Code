@@ -1,0 +1,20 @@
+[application/tensorflow] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/tensorflow
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/tensorflow
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 10840 findings, exit 0, 19.09s
+[2/4] semgrep completed: 2 findings, exit 0, 37.25s
+[3/4] cppcheck completed: 1999 findings, exit 0, 240.73s
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[codeql] still running | elapsed 00:10:00 | timeout 24:00:00 | remaining before timeout 23:49:59
+[codeql] still running | elapsed 00:15:00 | timeout 24:00:00 | remaining before timeout 23:44:59
+[4/4] codeql completed: 31 findings, exit 0, 1104.54s
+
+Summary: 4 completed, 0 failed, 12872 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/tensorflow/report.json

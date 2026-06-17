@@ -1,0 +1,118 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+        "line": 94,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+        "line": 94,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+        "line": 98,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+        "line": 98,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+        "line": 44,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+        "line": 44,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+        "line": 97,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+        "line": 97,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

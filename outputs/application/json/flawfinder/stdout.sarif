@@ -1,0 +1,1337 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/fgetc",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/fread",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/snprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 10,
+                  "endColumn": 92,
+                  "snippet": {
+                    "text": "    std::printf(\"LLVM C++ Standard Library (libc++), _LIBCPP_VERSION=%d\", _LIBCPP_VERSION);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "597b96d46787f6ec3259efb757a7ce4d6360c4f1c4888a3e3ab653ff93271046"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 10,
+                  "endColumn": 86,
+                  "snippet": {
+                    "text": "    std::printf(\"GNU C++ Standard Library (libstdc++), __GLIBCXX__=%d\", __GLIBCXX__);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "612469bf87e9ed45c53da48883c2b1c6b56fab1ea4051cd57be7e9c7bae77061"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 10,
+                  "endColumn": 103,
+                  "snippet": {
+                    "text": "    std::printf(\"Microsoft C++ Standard Library (MSVC STL), _MSVC_STL_VERSION=%d\", _MSVC_STL_VERSION);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dd48088f922c94b26edf0e2d81d30a1fd405359bf5d13a628893f45624680a45"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 10,
+                  "endColumn": 106,
+                  "snippet": {
+                    "text": "    std::printf(\"NVIDIA C++ Standard Library (libcudacxx), _LIBCUDACXX_VERSION=%d\", _LIBCUDACXX_VERSION);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2adb6a0704a3e31e7ed1c0b3b21055e2f8c6d2bb1980bf76615656ae48ba3fe2"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 10,
+                  "endColumn": 103,
+                  "snippet": {
+                    "text": "    std::printf(\"Electronic Arts Standard Template Library (EASTL), EASTL_VERSION=%d\", EASTL_VERSION);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f5d840f365a812305fa94c8f863f30245c0bb711c28afa5f30814428779b6d5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/cmake/detect_libcpp_version.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 10,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    std::printf(\"unknown\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "86be9e202cf36de8eb7502283d1c26d7196803ad4d3510922b112457ec4837f4"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1659,
+                  "startColumn": 86,
+                  "endColumn": 120,
+                  "snippet": {
+                    "text": "    #define JSON_HEDLEY_PRINTF_FORMAT(string_idx,first_to_check) __declspec(vaformat(printf,string_idx,first_to_check))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dda37152915b99920b14439194e58b5e1a0dbaebb70f592fe0ea37cc17b80813"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2158,
+                  "startColumn": 12,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "((struct { char v[sizeof(void) * 2]; } *) 1) \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "980d1333f365856705c9183050b116a091affe93508a83c30b9384e6723b7ab1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 4432,
+                  "startColumn": 9,
+                  "endColumn": 109,
+                  "snippet": {
+                    "text": "        char x[2]; // NOLINT(cppcoreguidelines-avoid-c-arrays,hicpp-avoid-c-arrays,modernize-avoid-c-arrays)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "280846dc2e079afa80660a71c7bcd032e6de0e022ce714018ff440f6b479589b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 4648,
+                  "startColumn": 14,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    return ::strlen(cstr) + concat_length(rest...);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2496e1f91c9508e78a32a7ec1d13c4a5eb221a6dfa24cc78b75546f3c27c3334"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 6878,
+                  "startColumn": 21,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "        return std::fgetc(m_file);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3a371f970c3da6442dd9fe61b06b5cbcd7aa50595776d29c7cbd374ed212ebdf"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 6885,
+                  "startColumn": 16,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        return fread(dest, 1, sizeof(T) * count, m_file);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d4b0e9ae7771e6c66a29867aa33b17ca51b0415e23bb7b0e0c93ab5bd031304f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 7316,
+                  "startColumn": 24,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "    auto length = std::strlen(reinterpret_cast<const char*>(b));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3f7b4df71f158b51b43eed52a4a4944e86e53869e81b7a15ce047f9f74b603af"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 8855,
+                  "startColumn": 41,
+                  "endColumn": 175,
+                  "snippet": {
+                    "text": "                static_cast<void>((std::snprintf)(cs.data(), cs.size(), \"<U+%.4X>\", static_cast<unsigned char>(c))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1ca314cc900277072e5bd90eb4b9aa4fc66344163bf609f96b99caca89d719ae"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 10482,
+                  "startColumn": 41,
+                  "endColumn": 184,
+                  "snippet": {
+                    "text": "                static_cast<void>((std::snprintf)(cr.data(), cr.size(), \"%.2hhX\", static_cast<unsigned char>(element_type))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81447f63b79f44a1d744736b32a2eab328b40b7b36e63a3295e50030aa4bac08"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 13122,
+                  "startColumn": 33,
+                  "endColumn": 171,
+                  "snippet": {
+                    "text": "        static_cast<void>((std::snprintf)(cr.data(), cr.size(), \"%.2hhX\", static_cast<unsigned char>(current))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7adc24b9a7f54e89faf513030a83ef41d5bbfb0c0363a025e4b4da0576e33c2a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 17941,
+                  "startColumn": 14,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "        std::memcpy(vec.data(), &n, sizeof(NumberType));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e73efa4716d95e0afcf22b6c5e35800cca19efa2cec44afb0cb8faa8f7e8f557"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18012,
+                  "startColumn": 14,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "        std::memcpy(&result, &x, sizeof(x));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1594f6225e9602b885ea88698d08160e74263b8be6448477d3dfd3b69bbf2e64"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 18126,
+                  "startColumn": 10,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    std::memcpy(&target, &source, sizeof(Source));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9b4abce64d932ca7d548d1c673f3c04f80be83c610bc68ee2b3df5acbd9e3569"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19643,
+                  "startColumn": 61,
+                  "endColumn": 114,
+                  "snippet": {
+                    "text": "                                    static_cast<void>((std::snprintf)(string_buffer.data() + bytes, 7, \"\\\\u%04x\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34cc5d9616a2329383b9ed4bcefcb28b30d78cd5ae77b145848440fcd8f8b9d9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19650,
+                  "startColumn": 61,
+                  "endColumn": 122,
+                  "snippet": {
+                    "text": "                                    static_cast<void>((std::snprintf)(string_buffer.data() + bytes, 13, \"\\\\u%04x\\\\u%04x\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a78c2f7f7f1368102d40c651104ef8a8cc3bae85881a15350879ad39bb855eb5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20006,
+                  "startColumn": 22,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "        return (std::snprintf)(buf, size, \"%.*g\", d, x);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "201bf09e57cc94868e813d42783ef9162eae190b7ee5b98bd045bc0bc7415cae"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/single_include/nlohmann/json.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20013,
+                  "startColumn": 22,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        return (std::snprintf)(buf, size, \"%.*Lg\", d, x);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "29c48b80f2479e2ffa39c0c655466703cc92b367ea8f25e99afb9b40f4f74280"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/input_adapters.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 21,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "        return std::fgetc(m_file);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3a371f970c3da6442dd9fe61b06b5cbcd7aa50595776d29c7cbd374ed212ebdf"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/input_adapters.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 16,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        return fread(dest, 1, sizeof(T) * count, m_file);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d4b0e9ae7771e6c66a29867aa33b17ca51b0415e23bb7b0e0c93ab5bd031304f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/input_adapters.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 507,
+                  "startColumn": 24,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "    auto length = std::strlen(reinterpret_cast<const char*>(b));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3f7b4df71f158b51b43eed52a4a4944e86e53869e81b7a15ce047f9f74b603af"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/binary_reader.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 340,
+                  "startColumn": 41,
+                  "endColumn": 184,
+                  "snippet": {
+                    "text": "                static_cast<void>((std::snprintf)(cr.data(), cr.size(), \"%.2hhX\", static_cast<unsigned char>(element_type))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "81447f63b79f44a1d744736b32a2eab328b40b7b36e63a3295e50030aa4bac08"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/binary_reader.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2980,
+                  "startColumn": 33,
+                  "endColumn": 171,
+                  "snippet": {
+                    "text": "        static_cast<void>((std::snprintf)(cr.data(), cr.size(), \"%.2hhX\", static_cast<unsigned char>(current))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7adc24b9a7f54e89faf513030a83ef41d5bbfb0c0363a025e4b4da0576e33c2a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/input/lexer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1471,
+                  "startColumn": 41,
+                  "endColumn": 175,
+                  "snippet": {
+                    "text": "                static_cast<void>((std::snprintf)(cs.data(), cs.size(), \"<U+%.4X>\", static_cast<unsigned char>(c))); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1ca314cc900277072e5bd90eb4b9aa4fc66344163bf609f96b99caca89d719ae"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/serializer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 469,
+                  "startColumn": 61,
+                  "endColumn": 114,
+                  "snippet": {
+                    "text": "                                    static_cast<void>((std::snprintf)(string_buffer.data() + bytes, 7, \"\\\\u%04x\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34cc5d9616a2329383b9ed4bcefcb28b30d78cd5ae77b145848440fcd8f8b9d9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/serializer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 476,
+                  "startColumn": 61,
+                  "endColumn": 122,
+                  "snippet": {
+                    "text": "                                    static_cast<void>((std::snprintf)(string_buffer.data() + bytes, 13, \"\\\\u%04x\\\\u%04x\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a78c2f7f7f1368102d40c651104ef8a8cc3bae85881a15350879ad39bb855eb5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/serializer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 832,
+                  "startColumn": 22,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "        return (std::snprintf)(buf, size, \"%.*g\", d, x);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "201bf09e57cc94868e813d42783ef9162eae190b7ee5b98bd045bc0bc7415cae"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/serializer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 839,
+                  "startColumn": 22,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        return (std::snprintf)(buf, size, \"%.*Lg\", d, x);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "29c48b80f2479e2ffa39c0c655466703cc92b367ea8f25e99afb9b40f4f74280"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/binary_writer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1761,
+                  "startColumn": 14,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "        std::memcpy(vec.data(), &n, sizeof(NumberType));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e73efa4716d95e0afcf22b6c5e35800cca19efa2cec44afb0cb8faa8f7e8f557"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/output/binary_writer.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1832,
+                  "startColumn": 14,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "        std::memcpy(&result, &x, sizeof(x));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1594f6225e9602b885ea88698d08160e74263b8be6448477d3dfd3b69bbf2e64"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/meta/type_traits.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 692,
+                  "startColumn": 9,
+                  "endColumn": 109,
+                  "snippet": {
+                    "text": "        char x[2]; // NOLINT(cppcoreguidelines-avoid-c-arrays,hicpp-avoid-c-arrays,modernize-avoid-c-arrays)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "280846dc2e079afa80660a71c7bcd032e6de0e022ce714018ff440f6b479589b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/string_concat.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 14,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    return ::strlen(cstr) + concat_length(rest...);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2496e1f91c9508e78a32a7ec1d13c4a5eb221a6dfa24cc78b75546f3c27c3334"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/include/nlohmann/detail/conversions/to_chars.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 10,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    std::memcpy(&target, &source, sizeof(Source));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9b4abce64d932ca7d548d1c673f3c04f80be83c610bc68ee2b3df5acbd9e3569"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

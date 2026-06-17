@@ -1,0 +1,38 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-398"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "src/base/utils/randomlayer_linux.cpp",
+        "line": 54,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "src/base/utils/randomlayer_linux.cpp",
+        "line": 54,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "src/base/utils/randomlayer_linux.cpp",
+        "line": 54,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/alloc-aligned.c">
+            <location file="/workspace/src/alloc-aligned.c" line="67" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/alloc-aligned.c">
+            <location file="/workspace/src/alloc-aligned.c" line="31" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/alloc-posix.c">
+            <location file="/workspace/src/alloc-posix.c" line="104" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/alloc.c">
+            <location file="/workspace/src/free.c" line="35" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/arena-abandon.c">
+            <location file="/workspace/src/arena-abandon.c" line="95" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/bitmap.c">
+            <location file="/workspace/src/bitmap.c" line="324" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/heap.c">
+            <location file="/workspace/src/heap.c" line="521" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/libc.c">
+            <location file="/workspace/src/libc.c" line="99" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/options.c">
+            <location file="/workspace/src/options.c" line="258" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/os.c">
+            <location file="/workspace/src/os.c" line="79" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/page-queue.c">
+            <location file="/workspace/src/page-queue.c" line="71" column="3"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: info" verbose="Uninitialized variable: info" cwe="457" file0="/workspace/src/prim/osx/prim.c">
+            <location file="/workspace/src/prim/unix/prim.c" line="746" column="66"/>
+            <symbol>info</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #if condition, division/modulo by zero" verbose="failed to evaluate #if condition, division/modulo by zero">
+            <location file="/workspace/src/segment-map.c" line="33" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/segment.c">
+            <location file="/workspace/src/segment.c" line="1664" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/stats.c">
+            <location file="/workspace/src/stats.c" line="29" column="3"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

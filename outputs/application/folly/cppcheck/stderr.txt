@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/folly/Benchmark.cpp">
+            <location file="/workspace/folly/Benchmark.cpp" line="242" column="1"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Struct &apos;HostAndPort&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;HostAndPort&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/folly/SocketAddress.cpp">
+            <location file="/workspace/folly/SocketAddress.cpp" line="82" column="5"/>
+            <symbol>HostAndPort</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;HostAndPort&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;HostAndPort&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/folly/SocketAddress.cpp">
+            <location file="/workspace/folly/SocketAddress.cpp" line="82" column="5"/>
+            <symbol>HostAndPort</symbol>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap&apos; used before va_start() was called." verbose="va_list &apos;ap&apos; used before va_start() was called." cwe="664" file0="/workspace/folly/String.cpp">
+            <location file="/workspace/folly/String.cpp" line="227" column="32"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap&apos; used before va_start() was called." verbose="va_list &apos;ap&apos; used before va_start() was called." cwe="664" file0="/workspace/folly/String.cpp">
+            <location file="/workspace/folly/String.cpp" line="244" column="41"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap&apos; used before va_start() was called." verbose="va_list &apos;ap&apos; used before va_start() was called." cwe="664" file0="/workspace/folly/String.cpp">
+            <location file="/workspace/folly/String.cpp" line="259" column="40"/>
+        </error>
+        <error id="leakReturnValNotUsed" severity="error" msg="Return value of allocation function &apos;new&apos; is not stored." verbose="Return value of allocation function &apos;new&apos; is not stored." cwe="771" file0="/workspace/folly/Subprocess.cpp">
+            <location file="/workspace/folly/Subprocess.cpp" line="391" column="36"/>
+            <symbol>new</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Same expression &apos;nr_pidfd_send_signal&gt;=0&apos; found multiple times in chain of &apos;&amp;&amp;&apos; operators because &apos;nr_pidfd_send_signal&gt;=0&apos; and &apos;nr_pidfd_open&gt;=0&apos; represent the same value." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/folly/debugging/symbolizer/SignalHandler.cpp">
+            <location file="/workspace/folly/debugging/symbolizer/SignalHandler.cpp" line="158" column="55"/>
+            <location file="/workspace/folly/debugging/symbolizer/SignalHandler.cpp" line="156" column="35" info="&apos;nr_pidfd_open&apos; is assigned value &apos;-1&apos; here."/>
+            <location file="/workspace/folly/debugging/symbolizer/SignalHandler.cpp" line="155" column="42" info="&apos;nr_pidfd_send_signal&apos; is assigned value &apos;-1&apos; here."/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/folly/debugging/symbolizer/SymbolizePrinter.cpp">
+            <location file="/workspace/folly/debugging/symbolizer/SymbolizePrinter.cpp" line="114" column="71"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;firstHalf&apos;." verbose="Access of moved variable &apos;firstHalf&apos;." cwe="672" file0="/workspace/folly/detail/BenchmarkAdaptive.cpp">
+            <location file="/workspace/folly/detail/BenchmarkAdaptive.cpp" line="44" column="38" info="Access of moved variable &apos;firstHalf&apos;."/>
+            <location file="/workspace/folly/detail/BenchmarkAdaptive.cpp" line="44" column="28" info="Calling std::move(firstHalf)"/>
+            <symbol>firstHalf</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;secondHalf&apos;." verbose="Access of moved variable &apos;secondHalf&apos;." cwe="672" file0="/workspace/folly/detail/BenchmarkAdaptive.cpp">
+            <location file="/workspace/folly/detail/BenchmarkAdaptive.cpp" line="45" column="38" info="Access of moved variable &apos;secondHalf&apos;."/>
+            <location file="/workspace/folly/detail/BenchmarkAdaptive.cpp" line="45" column="28" info="Calling std::move(secondHalf)"/>
+            <symbol>secondHalf</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;|&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;|&apos; doesn&apos;t have two operands." file0="/workspace/folly/detail/base64_detail/Base64SWAR.cpp">
+            <location file="/workspace/folly/detail/base64_detail/Base64SWAR.cpp" line="110" column="56"/>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;ThreadListHook::poolId_&apos; is not initialized in the constructor." verbose="Member variable &apos;ThreadListHook::poolId_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/folly/executors/GlobalThreadPoolList.cpp">
+            <location file="/workspace/folly/executors/GlobalThreadPoolList.cpp" line="42" column="3"/>
+            <symbol>ThreadListHook::poolId_</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;ThreadListHook::osThreadId_&apos; is not initialized in the constructor." verbose="Member variable &apos;ThreadListHook::osThreadId_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/folly/executors/GlobalThreadPoolList.cpp">
+            <location file="/workspace/folly/executors/GlobalThreadPoolList.cpp" line="42" column="3"/>
+            <symbol>ThreadListHook::osThreadId_</symbol>
+        </error>
+        <error id="mismatchingContainerExpression" severity="warning" msg="Iterators to containers from different expressions &apos;record&apos; and &apos;range_&apos; are used together." verbose="Iterators to containers from different expressions &apos;record&apos; and &apos;range_&apos; are used together." cwe="664" file0="/workspace/folly/io/RecordIO.cpp">
+            <location file="/workspace/folly/io/RecordIO.cpp" line="90" column="27"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called." verbose="The obsolete function &apos;alloca&apos; is called. In C++11 and later it is recommended to use std::array&lt;&gt; or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/folly/io/async/AsyncSSLSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncSSLSocket.cpp" line="1721" column="32"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called." verbose="The obsolete function &apos;alloca&apos; is called. In C++11 and later it is recommended to use std::array&lt;&gt; or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/folly/io/async/AsyncSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncSocket.cpp" line="3931" column="53"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;ioBuf&apos;." verbose="Access of moved variable &apos;ioBuf&apos;." cwe="672" file0="/workspace/folly/io/async/AsyncSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncSocket.cpp" line="1950" column="32" info="Access of moved variable &apos;ioBuf&apos;."/>
+            <location file="/workspace/folly/io/async/AsyncSocket.cpp" line="1945" column="18" info="Calling std::move(ioBuf)"/>
+            <symbol>ioBuf</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;buf&apos;." verbose="Access of moved variable &apos;buf&apos;." cwe="672" file0="/workspace/folly/io/async/AsyncUDPSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="691" column="25" info="Access of moved variable &apos;buf&apos;."/>
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="687" column="22" info="Calling std::move(buf)"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="457" file0="/workspace/folly/io/async/AsyncUDPSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="907" column="10"/>
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="878" column="32" info="Assuming condition is true"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="457" file0="/workspace/folly/io/async/AsyncUDPSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="966" column="10"/>
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="935" column="32" info="Assuming condition is true"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOLLY_POP_WARNING is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOLLY_POP_WARNING is a macro then please configure it." file0="/workspace/folly/io/async/AsyncUDPSocket.cpp">
+            <location file="/workspace/folly/io/async/AsyncUDPSocket.cpp" line="752" column="5"/>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it==readyEvents_.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." verbose="Either the condition &apos;it==readyEvents_.end()&apos; is redundant or there is possible dereference of an invalid iterator: it." cwe="825" file0="/workspace/folly/io/async/EventBasePoller.cpp">
+            <location file="/workspace/folly/io/async/EventBasePoller.cpp" line="356" column="7" info="Dereference of an invalid iterator"/>
+            <location file="/workspace/folly/io/async/EventBasePoller.cpp" line="341" column="12" info="Assuming that condition &apos;it==readyEvents_.end()&apos; is not redundant"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EventBasePollerIoUring::eventFdBuf_&apos; is not initialized in the constructor." verbose="Member variable &apos;EventBasePollerIoUring::eventFdBuf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/folly/io/async/EventBasePoller.cpp">
+            <location file="/workspace/folly/io/async/EventBasePoller.cpp" line="500" column="3"/>
+            <symbol>EventBasePollerIoUring::eventFdBuf_</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!pobject&apos; is redundant or there is possible null pointer dereference: pobject." verbose="Either the condition &apos;!pobject&apos; is redundant or there is possible null pointer dereference: pobject." cwe="476" file0="/workspace/folly/json/dynamic.cpp">
+            <location file="/workspace/folly/json/dynamic.cpp" line="217" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="213" column="17" info="pobject is assigned &apos;get_nothrow&lt;ObjectImpl&gt;()&apos; here."/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="213" column="42" info="Assignment to &apos;pobject=get_nothrow&lt;ObjectImpl&gt;()&apos;"/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="214" column="7" info="Assuming that condition &apos;!pobject&apos; is not redundant"/>
+            <symbol>pobject</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!pobject&apos; is redundant or there is possible null pointer dereference: pobject." verbose="Either the condition &apos;!pobject&apos; is redundant or there is possible null pointer dereference: pobject." cwe="476" file0="/workspace/folly/json/dynamic.cpp">
+            <location file="/workspace/folly/json/dynamic.cpp" line="290" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="286" column="17" info="pobject is assigned &apos;get_nothrow&lt;ObjectImpl&gt;()&apos; here."/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="286" column="42" info="Assignment to &apos;pobject=get_nothrow&lt;ObjectImpl&gt;()&apos;"/>
+            <location file="/workspace/folly/json/dynamic.cpp" line="287" column="7" info="Assuming that condition &apos;!pobject&apos; is not redundant"/>
+            <symbol>pobject</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;value&apos;." verbose="Access of moved variable &apos;value&apos;." cwe="672" file0="/workspace/folly/json/json.cpp">
+            <location file="/workspace/folly/json/json.cpp" line="721" column="28" info="Access of moved variable &apos;value&apos;."/>
+            <location file="/workspace/folly/json/json.cpp" line="716" column="57" info="Calling std::move(value)"/>
+            <symbol>value</symbol>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;end==block_.end()&apos; is redundant or there is possible dereference of an invalid iterator: end." verbose="Either the condition &apos;end==block_.end()&apos; is redundant or there is possible dereference of an invalid iterator: end." cwe="825" file0="/workspace/folly/logging/LoggerDB.cpp">
+            <location file="/workspace/folly/logging/LoggerDB.cpp" line="641" column="6" info="Dereference of an invalid iterator"/>
+            <location file="/workspace/folly/logging/LoggerDB.cpp" line="636" column="13" info="Assuming that condition &apos;end==block_.end()&apos; is not redundant"/>
+            <symbol>end</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOLLY_CLANG_DISABLE_WARNING is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOLLY_CLANG_DISABLE_WARNING is a macro then please configure it." file0="/workspace/folly/net/NetOps.cpp">
+            <location file="/workspace/folly/net/NetOps.cpp" line="809" column="3"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;version_&gt;=version&apos;, second condition is always false" verbose="Identical condition &apos;version_&gt;=version&apos;, second condition is always false" cwe="398" file0="/workspace/folly/observer/detail/Core.cpp">
+            <location file="/workspace/folly/observer/detail/Core.cpp" line="60" column="18" info="Testing identical condition &apos;version_&gt;=version&apos;"/>
+            <location file="/workspace/folly/observer/detail/Core.cpp" line="52" column="16" info="If condition &apos;version_&gt;=version&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;args&apos; used before va_start() was called." verbose="va_list &apos;args&apos; used before va_start() was called." cwe="664" file0="/workspace/folly/portability/Stdio.cpp">
+            <location file="/workspace/folly/portability/Stdio.cpp" line="36" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOLLY_NON_EXHAUSTIVE_SWITCH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOLLY_NON_EXHAUSTIVE_SWITCH is a macro then please configure it." file0="/workspace/folly/result/rich_exception_ptr.cpp">
+            <location file="/workspace/folly/result/rich_exception_ptr.cpp" line="33" column="3"/>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;extent_hooks_s&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;extent_hooks_s&apos;" cwe="758">
+            <location file="/workspace/folly/memory/IoUringArena.cpp" line="45" column="1"/>
+            <location file="/workspace/folly/memory/JemallocHugePageAllocator.cpp" line="65" column="1"/>
+            <symbol>extent_hooks_s</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

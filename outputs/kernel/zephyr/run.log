@@ -1,0 +1,20 @@
+[kernel/zephyr] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/kernel/zephyr
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/kernel/zephyr
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 6405 findings, exit 0, 19.66s
+[2/4] semgrep completed: 235 findings, exit 0, 56.64s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[3/4] cppcheck completed: 835 findings, exit 0, 405.52s
+[codeql] still running | elapsed 00:10:00 | timeout 24:00:00 | remaining before timeout 23:49:59
+[4/4] codeql completed: 314 findings, exit 0, 811.67s
+
+Summary: 4 completed, 0 failed, 7789 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/kernel/zephyr/report.json

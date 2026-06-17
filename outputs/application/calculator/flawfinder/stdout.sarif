@@ -1,0 +1,923 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1022",
+              "name": "buffer/wcslen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/wchar_t",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1047",
+              "name": "integer/_wtoi",
+              "shortDescription": {
+                "text": "Unless checked, the resulting number can exceed the expected range (CWE-190)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-190",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1071",
+              "name": "buffer/equal",
+              "shortDescription": {
+                "text": "Function does not check the second iterator for over-read conditions (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1017",
+              "name": "format/fprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/DataLoaders/CurrencyDataLoader.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 16,
+                  "endColumn": 100,
+                  "snippet": {
+                    "text": "        assert(wcslen(forcedResponseLanguage) > 0 && \"forcedResponseLanguage shall not be empty.\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "15aeef19a67c7913eede7af596bda84d6a08e681a6c80c2a6908316fc6455b79"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 17,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "                wchar_t resolvedName[LOCALE_NAME_MAX_LENGTH];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6e92a4604a276f8ac3a784d16d06b91edfa03eda00a4bed425cd279131d80e63"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 21,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "                    wchar_t decimalString[LocaleSettingBufferSize] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a140bae5a6998f59efbc6a0f01ecedae8c3e929a10dfec2328d1c6c44cc34ed4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 21,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                    wchar_t groupingSymbolString[LocaleSettingBufferSize] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6d494ba0d5b18ecb8f7a3f2487a57579d22965f4f07c9082c0ae2c3004db61c2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 226,
+                  "startColumn": 21,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "                    wchar_t numberGroupingString[LocaleSettingBufferSize] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f916d6f2519f65dbf5a52590f506b0c1c7a650d6c7bf4c9c9a81fbfe70e58bf8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 21,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "                    wchar_t listSeparatorString[4] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6c8ae6eec7ff4c83a9e6a32156b1cd39742c6934c70402dd3519a179e65f8332"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 17,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "                wchar_t day[80] = L\"\";"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5cbf6b5a3dd0c010973bd10d2e77b652049e06bcde35cd29e0445ea6ee6ada8d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 84,
+                  "endColumn": 142,
+                  "snippet": {
+                    "text": "                m_firstDayOfWeek = static_cast<Windows::Globalization::DayOfWeek>((_wtoi(day) + 1) % 7); // static cast int to DayOfWeek enum"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "02db3b60df240265fc673de2c3dadf3c5ac1f051317ceb2e789565f5e8d19352"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 881,
+                  "startColumn": 28,
+                  "endColumn": 118,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(memorizedNumbers.begin(), memorizedNumbers.end(), expectedMemorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "88eac60a04f85bd634fd7f9b3397798dd0069c0f702e3d51eb941a6b63a2f110"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 885,
+                  "startColumn": 28,
+                  "endColumn": 126,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(expectedMemorizedNumbers.begin(), expectedMemorizedNumbers.end(), memorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "363ee3888c5107641942732d03fd71a568288c8fbaf02c8a738ad5fd17417354"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 904,
+                  "startColumn": 28,
+                  "endColumn": 118,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(memorizedNumbers.begin(), memorizedNumbers.end(), expectedMemorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "88eac60a04f85bd634fd7f9b3397798dd0069c0f702e3d51eb941a6b63a2f110"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 908,
+                  "startColumn": 28,
+                  "endColumn": 126,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(expectedMemorizedNumbers.begin(), expectedMemorizedNumbers.end(), memorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "363ee3888c5107641942732d03fd71a568288c8fbaf02c8a738ad5fd17417354"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 930,
+                  "startColumn": 28,
+                  "endColumn": 118,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(memorizedNumbers.begin(), memorizedNumbers.end(), expectedMemorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "88eac60a04f85bd634fd7f9b3397798dd0069c0f702e3d51eb941a6b63a2f110"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 934,
+                  "startColumn": 28,
+                  "endColumn": 126,
+                  "snippet": {
+                    "text": "            isEqual = std::equal(expectedMemorizedNumbers.begin(), expectedMemorizedNumbers.end(), memorizedNumbers.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "363ee3888c5107641942732d03fd71a568288c8fbaf02c8a738ad5fd17417354"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 21,
+                  "endColumn": 96,
+                  "snippet": {
+                    "text": "    VERIFY_IS_FALSE(equal(stringsToSort.begin(), stringsToSort.end(), expectedResult.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4532ab60e21f3551f05033f178c4c88564c3db3bcfb424497e0f2dc5846d520c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 20,
+                  "endColumn": 95,
+                  "snippet": {
+                    "text": "    VERIFY_IS_TRUE(equal(stringsToSort.begin(), stringsToSort.end(), expectedResult.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ede527ff82505d190d5287caf4662980663d56eedf88e819d782984d29fba34c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 21,
+                  "endColumn": 96,
+                  "snippet": {
+                    "text": "    VERIFY_IS_FALSE(equal(stringsToSort.begin(), stringsToSort.end(), expectedResult.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4532ab60e21f3551f05033f178c4c88564c3db3bcfb424497e0f2dc5846d520c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 20,
+                  "endColumn": 95,
+                  "snippet": {
+                    "text": "    VERIFY_IS_TRUE(equal(stringsToSort.begin(), stringsToSort.end(), expectedResult.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ede527ff82505d190d5287caf4662980663d56eedf88e819d782984d29fba34c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 21,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "    VERIFY_IS_FALSE(equal(stringsToSort.begin(), stringsToSort.end(), expected2Result.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8ddf389d45dc4df8c76aef009b6c8411c51642fa1c61890f579fdafd7307440e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 20,
+                  "endColumn": 96,
+                  "snippet": {
+                    "text": "    VERIFY_IS_TRUE(equal(stringsToSort.begin(), stringsToSort.end(), expected2Result.begin()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6f10b4dbd62b22590b59328473b206088a827a1f4692823b0fb94077000e97a0"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/Calculator/DesignData/DesignStandardCalculatorViewModel.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 21,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "                    wchar_t wzi[5];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2d3849b1ee1d4c9f02d73e7c411e068c5e43a64dd849320b91af0aeaf827bb15"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcManager/Ratpack/conv.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 5,
+                  "endColumn": 85,
+                  "snippet": {
+                    "text": "    memcpy(dest, src, (int)(sizeof(NUMBER) + ((src)->cdigit) * (sizeof(MANTTYPE))));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9c494dec5ee53b199f6c0ab5065b3c536dea72f588011f844e2ed02ebdee1822"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcManager/Ratpack/support.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 5,
+                  "endColumn": 161,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"// Autogenerated by _dumprawrat in support.cpp\\n\");                                                                                       \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24106c7081f319c5796a5acbe4a55ea782f1c67b593c494fe85c13474879784e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcManager/Ratpack/support.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 5,
+                  "endColumn": 161,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"inline const NUMBER init_\" #v \"= {\\n\");                                                                                                   \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "89770975134cb978a145ce390a27d7b0e4857cd1a9b42439bc8f865c1c4f070c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/CalcManager/Ratpack/support.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"};\\n\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f90d43f27bcb73c355882b40577d1a47ac5bcaa0fab6791b003703b52fdf5af9"
+          },
+          "rank": 0.0
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

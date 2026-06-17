@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/src/config.cpp">
+            <location file="/workspace/src/config.h" line="44" column="5"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;len&apos; to itself." verbose="Redundant assignment of &apos;len&apos; to itself." cwe="398" file0="/workspace/src/linenoise/src/example.c">
+            <location file="/workspace/src/linenoise/src/example.c" line="62" column="9"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;c&apos; to itself." verbose="Redundant assignment of &apos;c&apos; to itself." cwe="398" file0="/workspace/src/linenoise/src/example.c">
+            <location file="/workspace/src/linenoise/src/example.c" line="63" column="7"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1269" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3524" column="3"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="2169" column="9"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="2275" column="9"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3090" column="7"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3094" column="14"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3098" column="14"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3131" column="7"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;entries&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;entries&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="2426" column="7"/>
+            <symbol>entries</symbol>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &apos;mg_get_var&apos; argument order different: declaration &apos;data, data_len, var_name, buf, buf_len&apos; definition &apos;buf, buf_len, name, dst, dst_len&apos;" verbose="Function &apos;mg_get_var&apos; argument order different: declaration &apos;data, data_len, var_name, buf, buf_len&apos; definition &apos;buf, buf_len, name, dst, dst_len&apos;" cwe="683" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1474" column="28"/>
+            <location file="/workspace/src/mongoose/mongoose.h" line="187" column="28"/>
+            <symbol>mg_get_var</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: *sp.next" verbose="Uninitialized variable: *sp.next" cwe="457" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3931" column="55"/>
+            <location file="/workspace/src/mongoose/mongoose.c" line="3954" column="27" info="Calling function &apos;produce_socket&apos;, 2nd argument &apos;&amp;accepted&apos; value is &lt;Uninit&gt;"/>
+            <symbol>*sp</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 3) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 3) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1378" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 4) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 4) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1378" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="830" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="848" column="3"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1125" column="3"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: cmdline" verbose="Uninitialized variable: cmdline" cwe="457" file0="/workspace/src/mongoose/mongoose.c">
+            <location file="/workspace/src/mongoose/mongoose.c" line="1180" column="21"/>
+            <symbol>cmdline</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/src/system.cpp">
+            <location file="/workspace/src/system.h" line="47" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it." file0="/workspace/src/webpage.cpp">
+            <location file="/workspace/src/webpage.h" line="52" column="5"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument sp that points at uninitialized variable accepted" verbose="Using argument sp that points at uninitialized variable accepted" cwe="457">
+            <location file="/workspace/src/mongoose/mongoose.c" line="3931" column="56" info="Using argument sp"/>
+            <location file="/workspace/src/mongoose/mongoose.c" line="3954" column="21" info="Calling function produce_socket, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

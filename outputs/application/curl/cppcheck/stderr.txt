@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." file0="/workspace/CMake/CurlTests.c">
+            <location file="/workspace/CMake/CurlTests.c" line="345" column="26"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/asyn-thrdd.c">
+            <location file="/workspace/lib/asyn-thrdd.c" line="579" column="28" info="Null pointer dereference"/>
+            <location file="/workspace/lib/asyn-thrdd.c" line="578" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-capsule.c">
+            <location file="/workspace/lib/cf-capsule.c" line="68" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-capsule.c" line="67" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="523" column="12" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="487" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="537" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="533" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="95" column="34" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="246" column="67" info="Calling function &apos;h1_proxy_is_udp&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="714" column="30" info="Calling function &apos;start_CONNECT&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="713" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="180" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="176" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="181" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="176" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="190" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="185" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="195" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="185" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="242" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="714" column="34" info="Calling function &apos;start_CONNECT&apos;, 2nd argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="713" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="746" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="745" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="830" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="829" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="905" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="903" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-h1-proxy.c">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="913" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="912" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-haproxy.c">
+            <location file="/workspace/lib/cf-haproxy.c" line="173" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-haproxy.c" line="172" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-haproxy.c">
+            <location file="/workspace/lib/cf-haproxy.c" line="180" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-haproxy.c" line="179" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-haproxy.c">
+            <location file="/workspace/lib/cf-haproxy.c" line="181" column="24" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-haproxy.c" line="179" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-haproxy.c">
+            <location file="/workspace/lib/cf-haproxy.c" line="182" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-haproxy.c" line="179" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-https-connect.c">
+            <location file="/workspace/lib/cf-https-connect.c" line="395" column="27" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="513" column="32" info="Calling function &apos;cf_hc_set_baller1&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="512" column="5" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-https-connect.c">
+            <location file="/workspace/lib/cf-https-connect.c" line="737" column="25" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="736" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-https-connect.c">
+            <location file="/workspace/lib/cf-https-connect.c" line="738" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="736" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-https-connect.c">
+            <location file="/workspace/lib/cf-https-connect.c" line="740" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="736" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="759" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="754" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="766" column="33" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="900" column="25" info="Calling function &apos;cf_ip_happy_ctx_clear&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="899" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="861" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="872" column="10" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="862" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="872" column="10" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="869" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="872" column="10" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="883" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="878" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="901" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="899" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-ip-happy.c">
+            <location file="/workspace/lib/cf-ip-happy.c" line="904" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="899" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="134" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="133" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="155" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="152" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="161" column="29" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="158" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="902" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="898" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="981" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="980" column="5" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="1022" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="1020" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="1534" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="1532" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="1911" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="1906" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cf-socket.c">
+            <location file="/workspace/lib/cf-socket.c" line="2189" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cf-socket.c" line="2171" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cfilters.c">
+            <location file="/workspace/lib/cfilters.c" line="235" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cfilters.c" line="234" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/cfilters.c">
+            <location file="/workspace/lib/cfilters.c" line="237" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cfilters.c" line="234" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;cpool&apos; and inner condition is &apos;cpool&apos;)." cwe="398" file0="/workspace/lib/conncache.c">
+            <location file="/workspace/lib/conncache.c" line="577" column="7" info="identical inner condition: cpool"/>
+            <location file="/workspace/lib/conncache.c" line="573" column="6" info="outer condition: cpool"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cpool&apos; is redundant or there is possible null pointer dereference: cpool." verbose="Either the condition &apos;cpool&apos; is redundant or there is possible null pointer dereference: cpool." cwe="476" file0="/workspace/lib/conncache.c">
+            <location file="/workspace/lib/conncache.c" line="578" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/conncache.c" line="577" column="7" info="Assuming that condition &apos;cpool&apos; is not redundant"/>
+            <symbol>cpool</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/connect.c">
+            <location file="/workspace/lib/connect.c" line="609" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/connect.c" line="608" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/connect.c">
+            <location file="/workspace/lib/connect.c" line="612" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/connect.c" line="608" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/connect.c">
+            <location file="/workspace/lib/connect.c" line="425" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/connect.c" line="421" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cshutdn.c">
+            <location file="/workspace/lib/cshutdn.c" line="139" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cshutdn.c" line="415" column="30" info="Calling function &apos;Curl_cshutdn_terminate&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/cshutdn.c" line="413" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/cshutdn.c">
+            <location file="/workspace/lib/cshutdn.c" line="163" column="28" info="Null pointer dereference"/>
+            <location file="/workspace/lib/cshutdn.c" line="162" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_gssapi.c">
+            <location file="/workspace/lib/curl_gssapi.c" line="337" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_gssapi.c" line="332" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_sasl.c">
+            <location file="/workspace/lib/curl_sasl.c" line="840" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_sasl.c" line="839" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_sasl.c">
+            <location file="/workspace/lib/curl_sasl.c" line="898" column="19" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_sasl.c" line="884" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_trc.c">
+            <location file="/workspace/lib/curl_trc.c" line="130" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_trc.c" line="138" column="10" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_trc.c">
+            <location file="/workspace/lib/curl_trc.c" line="135" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_trc.c" line="138" column="10" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_trc.c">
+            <location file="/workspace/lib/curl_trc.c" line="149" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_trc.c" line="138" column="10" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_trc.c">
+            <location file="/workspace/lib/curl_trc.c" line="165" column="40" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_trc.c" line="160" column="12" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/curl_trc.c">
+            <location file="/workspace/lib/curl_trc.c" line="166" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curl_trc.c" line="160" column="12" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." verbose="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." cwe="476" file0="/workspace/lib/curlx/strparse.c">
+            <location file="/workspace/lib/curlx/strparse.c" line="87" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curlx/strparse.c" line="89" column="15" info="Assuming that condition &apos;linep&apos; is not redundant"/>
+            <symbol>linep</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." verbose="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." cwe="476" file0="/workspace/lib/curlx/strparse.c">
+            <location file="/workspace/lib/curlx/strparse.c" line="110" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curlx/strparse.c" line="112" column="15" info="Assuming that condition &apos;linep&apos; is not redundant"/>
+            <symbol>linep</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." verbose="Either the condition &apos;linep&apos; is redundant or there is possible null pointer dereference: linep." cwe="476" file0="/workspace/lib/curlx/strparse.c">
+            <location file="/workspace/lib/curlx/strparse.c" line="286" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/lib/curlx/strparse.c" line="288" column="15" info="Assuming that condition &apos;linep&apos; is not redundant"/>
+            <symbol>linep</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If macOS is a macro then please configure it." file0="/workspace/lib/curlx/timeval.c">
+            <location file="/workspace/lib/curlx/timeval.c" line="72" column="26"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/cw-pause.c">
+            <location file="/workspace/lib/cw-pause.c" line="174" column="14" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/cw-pause.c" line="169" column="8" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/dnscache.c">
+            <location file="/workspace/lib/dnscache.c" line="852" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/lib/dnscache.c" line="851" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="3741" column="14" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/ftp.c" line="3733" column="8" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="4118" column="14" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/ftp.c" line="4105" column="10" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="359" column="34" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="357" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="463" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2877" column="44" info="Calling function &apos;ftp_check_ctrl_on_data_wait&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/ftp.c" line="2874" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="644" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="476" column="28" info="Calling function &apos;getftpresponse&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/ftp.c" line="475" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="647" column="46" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="476" column="28" info="Calling function &apos;getftpresponse&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/ftp.c" line="475" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="1784" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="1783" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="1845" column="28" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="1841" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="1998" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="1994" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="2011" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2125" column="37" info="Calling function &apos;ftp_control_addr_dup&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/ftp.c" line="2123" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="2586" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2576" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="2594" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2592" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="2603" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2601" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="2866" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="2864" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="3087" column="18" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="3085" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="3088" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="3085" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="3089" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="3085" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="3893" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="3891" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ftp.c">
+            <location file="/workspace/lib/ftp.c" line="4079" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ftp.c" line="4078" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/hostip.c">
+            <location file="/workspace/lib/hostip.c" line="370" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/hostip.c" line="368" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/hostip.c">
+            <location file="/workspace/lib/hostip.c" line="371" column="35" info="Null pointer dereference"/>
+            <location file="/workspace/lib/hostip.c" line="368" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1634" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/http.c" line="1628" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="399" column="26" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4047" column="41" info="Calling function &apos;http_perhapsrewind&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/http.c" line="4045" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="467" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="456" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="468" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="456" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="580" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="578" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="581" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="578" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="982" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="981" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1001" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1000" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1019" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1018" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1126" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1125" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1131" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1125" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1272" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1271" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="1286" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="1276" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="2381" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="2379" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="2677" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="2675" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="2687" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="2684" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="4051" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4042" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="4054" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4042" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="4055" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4042" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="4080" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4079" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="4147" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="4139" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/http.c">
+            <location file="/workspace/lib/http.c" line="3988" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http.c" line="3987" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/http_proxy.c">
+            <location file="/workspace/lib/http_proxy.c" line="572" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http_proxy.c" line="569" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/http_proxy.c">
+            <location file="/workspace/lib/http_proxy.c" line="716" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http_proxy.c" line="715" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." verbose="Either the condition &apos;cf&apos; is redundant or there is possible null pointer dereference: cf." cwe="476" file0="/workspace/lib/http_proxy.c">
+            <location file="/workspace/lib/http_proxy.c" line="717" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/http_proxy.c" line="715" column="3" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+            <symbol>cf</symbol>
+        </error>
+        <error id="objectIndex" severity="error" msg="The address of local variable &apos;path&apos; is accessed at non-zero index." verbose="The address of local variable &apos;path&apos; is accessed at non-zero index." cwe="758" file0="/workspace/lib/imap.c">
+            <location file="/workspace/lib/imap.c" line="1810" column="26"/>
+            <location file="/workspace/lib/imap.c" line="1804" column="22" info="Assuming condition is false"/>
+            <location file="/workspace/lib/imap.c" line="1800" column="23" info="Address of variable taken here."/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="457" file0="/workspace/lib/mime.c">
+            <location file="/workspace/lib/mime.c" line="1540" column="10"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;num&gt;0&apos; is redundant or there is division by zero at line 806." verbose="Either the condition &apos;num&gt;0&apos; is redundant or there is division by zero at line 806." cwe="369" file0="/workspace/lib/mprintf.c">
+            <location file="/workspace/lib/mprintf.c" line="806" column="25" info="Division by zero"/>
+            <location file="/workspace/lib/mprintf.c" line="807" column="14" info="Assignment to &apos;num/=base&apos;"/>
+            <location file="/workspace/lib/mprintf.c" line="805" column="15" info="Assuming that condition &apos;num&gt;0&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/mqtt.c">
+            <location file="/workspace/lib/mqtt.c" line="645" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/mqtt.c" line="925" column="15" info="Calling function &apos;mqstate&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/mqtt.c" line="923" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/mqtt.c">
+            <location file="/workspace/lib/mqtt.c" line="708" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/mqtt.c" line="707" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="136" column="25" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2444" column="3" info="Calling function &apos;mstate&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/multi.c" line="2426" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="168" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="164" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="180" column="52" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="177" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="181" column="52" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="177" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="692" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2509" column="18" info="Calling function &apos;multi_done&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/multi.c" line="2507" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="697" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="694" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2000" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="1994" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2048" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2047" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2049" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2047" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2050" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2047" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2052" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2047" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2421" column="40" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2420" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2447" column="44" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2426" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2448" column="42" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2426" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2449" column="44" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2426" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="2450" column="41" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2426" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="3796" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="3791" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="3819" column="44" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2918" column="44" info="Calling function &apos;move_pending_to_connect&apos;, 2nd argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/multi.c" line="2917" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="3820" column="41" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="2918" column="44" info="Calling function &apos;move_pending_to_connect&apos;, 2nd argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/multi.c" line="2917" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/multi.c">
+            <location file="/workspace/lib/multi.c" line="4141" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/multi.c" line="1016" column="29" info="Calling function &apos;Curl_multi_mark_dirty&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/multi.c" line="1014" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;find" verbose="Uninitialized variable: &amp;find" cwe="457" file0="/workspace/lib/parsedate.c">
+            <location file="/workspace/lib/parsedate.c" line="248" column="20"/>
+            <symbol>&amp;find</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/rand.c">
+            <location file="/workspace/lib/rand.c" line="212" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/rand.c" line="208" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/rtsp.c">
+            <location file="/workspace/lib/rtsp.c" line="187" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/rtsp.c" line="185" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="367" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/sendf.c" line="364" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="49" column="33" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="89" column="19" info="Calling function &apos;cl_reset_writer&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/sendf.c" line="83" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="60" column="33" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="87" column="21" info="Calling function &apos;cl_reset_reader&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/sendf.c" line="86" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="61" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="87" column="21" info="Calling function &apos;cl_reset_reader&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/sendf.c" line="86" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="91" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="83" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="92" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="83" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="218" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="216" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="219" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="216" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/sendf.c">
+            <location file="/workspace/lib/sendf.c" line="282" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/sendf.c" line="274" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/smtp.c">
+            <location file="/workspace/lib/smtp.c" line="1767" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/smtp.c" line="1765" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/socks.c">
+            <location file="/workspace/lib/socks.c" line="585" column="30" info="Null pointer dereference"/>
+            <location file="/workspace/lib/socks.c" line="1047" column="40" info="Calling function &apos;socks5_req0_init&apos;, 3rd argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/socks.c" line="1045" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/socks_gssapi.c">
+            <location file="/workspace/lib/socks_gssapi.c" line="404" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/lib/socks_gssapi.c" line="370" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/telnet.c">
+            <location file="/workspace/lib/telnet.c" line="1429" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/telnet.c" line="1383" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/lib/thrdqueue.c">
+            <location file="/workspace/lib/thrdqueue.c" line="281" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/transfer.c">
+            <location file="/workspace/lib/transfer.c" line="131" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/transfer.c" line="130" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/transfer.c">
+            <location file="/workspace/lib/transfer.c" line="138" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/transfer.c" line="137" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/transfer.c">
+            <location file="/workspace/lib/transfer.c" line="323" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/transfer.c" line="320" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/transfer.c">
+            <location file="/workspace/lib/transfer.c" line="644" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/lib/transfer.c" line="643" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/transfer.c">
+            <location file="/workspace/lib/transfer.c" line="649" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/lib/transfer.c" line="643" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: str" verbose="Uninitialized variable: str" cwe="457" file0="/workspace/lib/vtls/cipher_suite.c">
+            <location file="/workspace/lib/vtls/cipher_suite.c" line="666" column="37"/>
+            <symbol>str</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/lib/vtls/openssl.c">
+            <location file="/workspace/lib/vtls/openssl.c" line="3152" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/lib/vtls/openssl.c" line="3114" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;ctx&apos; is redundant or there is possible null pointer dereference: ctx." verbose="Either the condition &apos;ctx&apos; is redundant or there is possible null pointer dereference: ctx." cwe="476" file0="/workspace/lib/vtls/rustls.c">
+            <location file="/workspace/lib/vtls/rustls.c" line="89" column="47" info="Null pointer dereference"/>
+            <location file="/workspace/lib/vtls/rustls.c" line="84" column="38" info="ctx is assigned &apos;cf-&gt;ctx&apos; here."/>
+            <location file="/workspace/lib/vtls/rustls.c" line="84" column="42" info="Assignment to &apos;ctx=cf-&gt;ctx&apos;"/>
+            <location file="/workspace/lib/vtls/rustls.c" line="88" column="15" info="Assuming that condition &apos;ctx&apos; is not redundant"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ws.c">
+            <location file="/workspace/lib/ws.c" line="1349" column="33" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ws.c" line="1342" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." verbose="Either the condition &apos;data&apos; is redundant or there is possible null pointer dereference: data." cwe="476" file0="/workspace/lib/ws.c">
+            <location file="/workspace/lib/ws.c" line="1619" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/lib/ws.c" line="1613" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;ndummy" verbose="Uninitialized variable: &amp;ndummy" cwe="457" file0="/workspace/lib/ws.c">
+            <location file="/workspace/lib/ws.c" line="1778" column="34"/>
+            <symbol>&amp;ndummy</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;result&apos;, return value is always 0" verbose="Identical condition and return expression &apos;result&apos;, return value is always 0" cwe="398" file0="/workspace/src/config2setopts.c">
+            <location file="/workspace/src/config2setopts.c" line="609" column="10" info="Returning identical expression &apos;result&apos;"/>
+            <location file="/workspace/src/config2setopts.c" line="602" column="6" info="If condition &apos;result&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: keyword &apos;while&apos; is not allowed in global scope" verbose="syntax error: keyword &apos;while&apos; is not allowed in global scope" file0="/workspace/src/tool_filetime.c">
+            <location file="/workspace/src/tool_filetime.c" line="86" column="6"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;l&apos; is redundant or there is possible null pointer dereference: l." verbose="Either the condition &apos;l&apos; is redundant or there is possible null pointer dereference: l." cwe="476" file0="/workspace/src/tool_formparse.c">
+            <location file="/workspace/src/tool_formparse.c" line="480" column="32" info="Null pointer dereference"/>
+            <location file="/workspace/src/tool_formparse.c" line="477" column="13" info="Assuming that condition &apos;l&apos; is not redundant"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: &amp;key.desc, &amp;key.letter, &amp;key.cmd" verbose="Uninitialized variables: &amp;key.desc, &amp;key.letter, &amp;key.cmd" cwe="457" file0="/workspace/src/tool_getparam.c">
+            <location file="/workspace/src/tool_getparam.c" line="1082" column="18"/>
+            <symbol>&amp;key</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;find.value" verbose="Uninitialized variable: &amp;find.value" cwe="457" file0="/workspace/src/tool_getparam.c">
+            <location file="/workspace/src/tool_getparam.c" line="2588" column="21"/>
+            <symbol>&amp;find</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf" verbose="Null pointer dereference: cf" cwe="476">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="95" column="34" info="Dereferencing argument cf that is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="246" column="66" info="Calling function h1_proxy_is_udp, 1st argument is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="714" column="30" info="Calling function &apos;start_CONNECT&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="713" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="242" column="3" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="714" column="29" info="Calling function start_CONNECT, 2nd argument is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="713" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf" verbose="Null pointer dereference: cf" cwe="476">
+            <location file="/workspace/lib/cf-h1-proxy.c" line="284" column="12" info="Dereferencing argument cf that is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="723" column="28" info="Calling function send_CONNECT, 1st argument is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="722" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf" verbose="Null pointer dereference: cf" cwe="476">
+            <location file="/workspace/lib/cf-https-connect.c" line="395" column="27" info="Dereferencing argument cf that is null"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="513" column="31" info="Calling function cf_hc_set_baller1, 1st argument is null"/>
+            <location file="/workspace/lib/cf-https-connect.c" line="512" column="5" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf" verbose="Null pointer dereference: cf" cwe="476">
+            <location file="/workspace/lib/cf-ip-happy.c" line="766" column="33" info="Dereferencing argument cf that is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="864" column="28" info="Calling function cf_ip_happy_ctx_clear, 1st argument is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="872" column="10" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/cfilters.c" line="181" column="8" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cshutdn.c" line="153" column="18" info="Calling function Curl_conn_close, 1st argument is null"/>
+            <location file="/workspace/lib/cshutdn.c" line="150" column="3" info="Assuming that condition &apos;admin&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf_at" verbose="Null pointer dereference: cf_at" cwe="476">
+            <location file="/workspace/lib/cfilters.c" line="385" column="10" info="Dereferencing argument cf_at that is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="1006" column="3" info="Calling function Curl_conn_cf_insert_after, 1st argument is null"/>
+            <location file="/workspace/lib/http_proxy.c" line="610" column="45" info="Calling function Curl_cf_h1_proxy_insert_after, 1st argument is null"/>
+            <location file="/workspace/lib/http_proxy.c" line="609" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/cfilters.c" line="1100" column="16" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/transfer.c" line="856" column="3" info="Calling function Curl_conn_ev_data_done_send, 1st argument is null"/>
+            <location file="/workspace/lib/request.c" line="295" column="30" info="Calling function Curl_xfer_send_close, 1st argument is null"/>
+            <location file="/workspace/lib/request.c" line="280" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/curl_share.c" line="390" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="2578" column="24" info="Calling function Curl_share_unlock, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="2563" column="15" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/curl_trc.c" line="181" column="6" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cf-socket.c" line="2071" column="5" info="Calling function Curl_failf, 1st argument is null"/>
+            <location file="/workspace/lib/cf-socket.c" line="2180" column="32" info="Calling function cf_tcp_set_accepted_remote_ip, 2nd argument is null"/>
+            <location file="/workspace/lib/cf-socket.c" line="2171" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/curl_trc.c" line="201" column="6" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="468" column="20" info="Calling function Curl_reset_fail, 1st argument is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="462" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/dnscache.c" line="146" column="6" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/dnscache.c" line="630" column="38" info="Calling function dnscache_get, 1st argument is null"/>
+            <location file="/workspace/lib/cf-socket.c" line="698" column="30" info="Calling function Curl_dns_entry_unlink, 1st argument is null"/>
+            <location file="/workspace/lib/cf-socket.c" line="696" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/ftp.c" line="463" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/ftp.c" line="2779" column="41" info="Calling function ftp_check_ctrl_on_data_wait, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="2777" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/ftp.c" line="644" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/ftp.c" line="476" column="27" info="Calling function getftpresponse, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="475" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/ftp.c" line="2011" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/ftp.c" line="2125" column="36" info="Calling function ftp_control_addr_dup, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="2123" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/ftp.c" line="2225" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/ftp.c" line="2393" column="23" info="Calling function ftp_do_more, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="2444" column="30" info="Calling function ftp_dophase_done, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="2442" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/http.c" line="399" column="26" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="4047" column="40" info="Calling function http_perhapsrewind, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4045" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/http.c" line="1934" column="40" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http_aws_sigv4.c" line="929" column="19" info="Calling function Curl_http_method, 1st argument is null"/>
+            <location file="/workspace/lib/http_aws_sigv4.c" line="924" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: cf" verbose="Null pointer dereference: cf" cwe="476">
+            <location file="/workspace/lib/http_proxy.c" line="278" column="28" info="Dereferencing argument cf that is null"/>
+            <location file="/workspace/lib/http_proxy.c" line="446" column="14" info="Calling function http_proxy_create_CONNECTUDP, 2nd argument is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="244" column="49" info="Calling function Curl_http_proxy_create_tunnel_request, 2nd argument is null"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="714" column="30" info="Calling function &apos;start_CONNECT&apos;, 1st argument &apos;cf&apos; value is 0"/>
+            <location file="/workspace/lib/cf-h1-proxy.c" line="713" column="7" info="Assuming that condition &apos;cf&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/imap.c" line="170" column="44" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/imap.c" line="516" column="12" info="Calling function imap_sendf, 1st argument is null"/>
+            <location file="/workspace/lib/imap.c" line="1017" column="33" info="Calling function imap_perform_capability, 1st argument is null"/>
+            <location file="/workspace/lib/imap.c" line="1010" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/mqtt.c" line="645" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/mqtt.c" line="925" column="14" info="Calling function mqstate, 1st argument is null"/>
+            <location file="/workspace/lib/mqtt.c" line="923" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="136" column="25" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/multi.c" line="2002" column="5" info="Calling function mstate, 1st argument is null"/>
+            <location file="/workspace/lib/multi.c" line="2001" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="692" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/multi.c" line="2509" column="17" info="Calling function multi_done, 1st argument is null"/>
+            <location file="/workspace/lib/multi.c" line="2507" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="940" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cshutdn.c" line="118" column="25" info="Calling function Curl_detach_connection, 1st argument is null"/>
+            <location file="/workspace/lib/cshutdn.c" line="117" column="3" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="3682" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/multi.c" line="3751" column="3" info="Calling function Curl_expire_ex, 1st argument is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="527" column="20" info="Calling function Curl_expire, 1st argument is null"/>
+            <location file="/workspace/lib/cf-ip-happy.c" line="525" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="3819" column="44" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/multi.c" line="2918" column="36" info="Calling function move_pending_to_connect, 2nd argument is null"/>
+            <location file="/workspace/lib/multi.c" line="2917" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="4005" column="3" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/transfer.c" line="333" column="30" info="Calling function Curl_multi_xfer_buf_release, 1st argument is null"/>
+            <location file="/workspace/lib/transfer.c" line="328" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/multi.c" line="4141" column="6" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/multi.c" line="1016" column="28" info="Calling function Curl_multi_mark_dirty, 1st argument is null"/>
+            <location file="/workspace/lib/multi.c" line="1014" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/pingpong.c" line="66" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/ftp.c" line="3494" column="31" info="Calling function Curl_pp_statemach, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="3493" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/pingpong.c" line="151" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/pingpong.c" line="217" column="12" info="Calling function Curl_pp_vsendf, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="1844" column="27" info="Calling function Curl_pp_sendf, 1st argument is null"/>
+            <location file="/workspace/lib/ftp.c" line="1841" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/progress.c" line="175" column="27" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/dnscache.c" line="438" column="23" info="Calling function Curl_pgrs_now, 1st argument is null"/>
+            <location file="/workspace/lib/dnscache.c" line="545" column="30" info="Calling function dnscache_entry_create, 1st argument is null"/>
+            <location file="/workspace/lib/dnscache.c" line="832" column="31" info="Calling function &apos;dnscache_add_addr&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/dnscache.c" line="814" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/request.c" line="483" column="7" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="4052" column="33" info="Calling function Curl_req_abort_sending, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4042" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="49" column="33" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/sendf.c" line="89" column="18" info="Calling function cl_reset_writer, 1st argument is null"/>
+            <location file="/workspace/lib/sendf.c" line="83" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="60" column="33" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/sendf.c" line="87" column="20" info="Calling function cl_reset_reader, 1st argument is null"/>
+            <location file="/workspace/lib/sendf.c" line="86" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="119" column="16" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="4077" column="30" info="Calling function Curl_creader_will_rewind, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4059" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="124" column="3" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="418" column="28" info="Calling function Curl_creader_set_rewind, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="417" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="390" column="7" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/imap.c" line="1257" column="35" info="Calling function Curl_client_write, 1st argument is null"/>
+            <location file="/workspace/lib/imap.c" line="1254" column="9" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="488" column="16" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/cw-pause.c" line="220" column="14" info="Calling function Curl_cwriter_get_by_type, 1st argument is null"/>
+            <location file="/workspace/lib/cw-out.c" line="502" column="33" info="Calling function Curl_cw_pause_flush, 1st argument is null"/>
+            <location file="/workspace/lib/cw-out.c" line="500" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="1412" column="28" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="400" column="52" info="Calling function Curl_creader_total_length, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4047" column="41" info="Calling function &apos;http_perhapsrewind&apos;, 1st argument &apos;data&apos; value is 0"/>
+            <location file="/workspace/lib/http.c" line="4045" column="13" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/sendf.c" line="1472" column="11" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http.c" line="1572" column="28" info="Calling function Curl_creader_get_by_type, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4060" column="34" info="Calling function http_exp100_send_anyway, 1st argument is null"/>
+            <location file="/workspace/lib/http.c" line="4059" column="11" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/socks.c" line="585" column="30" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/socks.c" line="1047" column="31" info="Calling function socks5_req0_init, 3rd argument is null"/>
+            <location file="/workspace/lib/socks.c" line="1045" column="5" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: data" verbose="Null pointer dereference: data" cwe="476">
+            <location file="/workspace/lib/transfer.c" line="93" column="14" info="Dereferencing argument data that is null"/>
+            <location file="/workspace/lib/http_aws_sigv4.c" line="568" column="11" info="Calling function Curl_checkheaders, 1st argument is null"/>
+            <location file="/workspace/lib/http_aws_sigv4.c" line="932" column="26" info="Calling function parse_content_sha_hdr, 1st argument is null"/>
+            <location file="/workspace/lib/http_aws_sigv4.c" line="924" column="7" info="Assuming that condition &apos;data&apos; is not redundant"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

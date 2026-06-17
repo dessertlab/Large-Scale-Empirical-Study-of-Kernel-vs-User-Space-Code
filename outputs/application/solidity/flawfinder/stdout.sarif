@@ -1,0 +1,616 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1048",
+              "name": "random/random",
+              "shortDescription": {
+                "text": "This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-327",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/fread",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1071",
+              "name": "buffer/equal",
+              "shortDescription": {
+                "text": "Function does not check the second iterator for over-read conditions (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1030",
+              "name": "race/access",
+              "shortDescription": {
+                "text": "This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-367",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 58,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "\tstatic void reset(uint32_t seed) { s_generator = boost::random::mt19937(seed); }"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bec7f94b9abf6dfe17a3525128cd778460421821756db2b8b9a45a0d5fe156ed"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 29,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "\tthread_local static boost::random::mt19937 s_generator;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "80a44a70d0fdad56d5f6c84787e4e679fe9ea0f2a1d7bfb89308f7ad20fd143b"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 21,
+                  "endColumn": 95,
+                  "snippet": {
+                    "text": "thread_local boost::random::mt19937 SimulationRNG::s_generator(SimulationRNG::generateSeed());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ade2a2856cf3319dd0d824aa62a66c3a932a391664fd48c3b64a269c42f00ca2"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 9,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "\tboost::random::bernoulli_distribution<double> distribution(_successProbability);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "06c724572b723cc0260c7a641cfea2b78969e8d78cd61d000fb570257934622c"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 9,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "\tboost::random::uniform_int_distribution<size_t> distribution(_min, _max);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6b495f52dc52be329b9aef53b7c388a61cab1bfc5c18b410cc4858e9564eef18"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1048",
+          "level": "warning",
+          "message": {
+            "text": "random/random:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/tools/yulPhaser/SimulationRNG.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 9,
+                  "endColumn": 110,
+                  "snippet": {
+                    "text": "\tboost::random::binomial_distribution<long> distribution(static_cast<long>(_numTrials), _successProbability);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c466a32911891c07f47d8dd159b66489bd8a36577005cefe4a876f0dbcf2dcc8"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolidity/lsp/Transport.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 17,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "\tauto const n = fread(buffer.data(), 1, _byteCount, stdin);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8aeb8a2d5b36059b34a06c00fac3b5160856e43c18618304b6db9832d060bf33"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolidity/analysis/DocStringAnalyser.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 23,
+                  "endColumn": 136,
+                  "snippet": {
+                    "text": "\treturn boost::range::equal(_a.parameters(), _b.parameters(), [](auto const& pa, auto const& pb) { return pa->name() == pb->name(); });"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4cee5a01d2d355b6c53fcacbb752587037e60f5408c47222bf19c00066888cbc"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1071",
+          "level": "note",
+          "message": {
+            "text": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolidity/interface/ImportRemapper.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 10,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "\t\treturn equal(_a.begin(), _a.end(), _b.begin());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b674ea651a97e7c80f40031378252d578064e5d36fbb3e6331f3d7f64859f930"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolidity/formal/CHC.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 804,
+                  "startColumn": 65,
+                  "endColumn": 104,
+                  "snippet": {
+                    "text": "\t\tauto const& contractType = dynamic_cast<ContractType const&>(*access.expression().annotation().type);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c81e5bb5d59bfe0869c1cb0482b4b6dbe77ffd716df1c79abdd2a9281dc47324"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1030",
+          "level": "error",
+          "message": {
+            "text": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolidity/formal/CHC.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 806,
+                  "startColumn": 65,
+                  "endColumn": 87,
+                  "snippet": {
+                    "text": "\t\tstate().readStateVars(contractType.contractDefinition(), expr(access.expression()));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f2d56549216a984d1acde3a42233cae06c518097ec5c89f399527206c1675ee4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolutil/FixedHash.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(m_data.data(), _array.data(), _array.size());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "957fdf5a485c4af83858fe54844a7dae82db87a33af9a6c4814b929e2db49a59"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/libsolutil/FixedHash.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 4,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(m_data.data(), _b.data(), std::min<size_t>(_b.size(), N));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "23078bf390e2bf45ca85759ad0d76f990a8628ec9e295983a361205f3e6bff60"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/liblangutil/Token.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 9,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\tstatic char const* const names[TokenTraits::count()] = { TOKEN_LIST(T, T) };"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ebac81ec8c072662f4f6e2138c6cfa8fc210ca4a9b31f818a9c256b7c9823a8d"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

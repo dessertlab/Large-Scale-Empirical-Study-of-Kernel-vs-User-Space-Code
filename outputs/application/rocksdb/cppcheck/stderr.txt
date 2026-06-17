@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cache/cache_reservation_manager_test.cc">
+            <location file="/workspace/cache/cache_reservation_manager_test.cc" line="40" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cache/cache_test.cc">
+            <location file="/workspace/cache/cache_test.cc" line="176" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cache/compressed_secondary_cache_test.cc">
+            <location file="/workspace/cache/compressed_secondary_cache_test.cc" line="832" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cache/lru_cache_test.cc">
+            <location file="/workspace/cache/lru_cache_test.cc" line="155" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cache/tiered_secondary_cache_test.cc">
+            <location file="/workspace/cache/tiered_secondary_cache_test.cc" line="236" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cfh!=nullptr&apos; is redundant or there is possible null pointer dereference: cfh." verbose="Either the condition &apos;cfh!=nullptr&apos; is redundant or there is possible null pointer dereference: cfh." cwe="476" file0="/workspace/db/arena_wrapped_db_iter.cc">
+            <location file="/workspace/db/arena_wrapped_db_iter.cc" line="259" column="36" info="Null pointer dereference"/>
+            <location file="/workspace/db/arena_wrapped_db_iter.cc" line="264" column="11" info="Assuming that condition &apos;cfh!=nullptr&apos; is not redundant"/>
+            <symbol>cfh</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_counting_iterator_test.cc">
+            <location file="/workspace/db/blob/blob_counting_iterator_test.cc" line="38" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_file_addition_test.cc">
+            <location file="/workspace/db/blob/blob_file_addition_test.cc" line="32" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_file_builder_test.cc">
+            <location file="/workspace/db/blob/blob_file_builder_test.cc" line="120" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_file_cache_test.cc">
+            <location file="/workspace/db/blob/blob_file_cache_test.cc" line="93" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_file_garbage_test.cc">
+            <location file="/workspace/db/blob/blob_file_garbage_test.cc" line="32" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_file_reader_test.cc">
+            <location file="/workspace/db/blob/blob_file_reader_test.cc" line="139" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_garbage_meter_test.cc">
+            <location file="/workspace/db/blob/blob_garbage_meter_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/blob_source_test.cc">
+            <location file="/workspace/db/blob/blob_source_test.cc" line="136" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/db_blob_basic_test.cc">
+            <location file="/workspace/db/blob/db_blob_basic_test.cc" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/db_blob_compaction_test.cc">
+            <location file="/workspace/db/blob/db_blob_compaction_test.cc" line="225" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/db_blob_corruption_test.cc">
+            <location file="/workspace/db/blob/db_blob_corruption_test.cc" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/db_blob_direct_write_test.cc">
+            <location file="/workspace/db/blob/db_blob_direct_write_test.cc" line="281" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/blob/db_blob_index_test.cc">
+            <location file="/workspace/db/blob/db_blob_index_test.cc" line="184" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::state_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::state_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::state_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::destructor_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::destructor_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::destructor_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::name_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::name_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::name_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_ts_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_ts_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_ts_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_without_ts_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_without_ts_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="454" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_without_ts_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::state_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::state_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::state_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::destructor_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::destructor_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::destructor_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::name_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::name_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::name_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_ts_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_ts_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_ts_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;rocksdb_comparator_t::compare_without_ts_&apos; is not initialized in the constructor." verbose="Member variable &apos;rocksdb_comparator_t::compare_without_ts_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="456" column="3"/>
+            <symbol>rocksdb_comparator_t::compare_without_ts_</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: c_handles.rep" verbose="Uninitialized struct member: c_handles.rep" cwe="457" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="1796" column="10"/>
+            <symbol>c_handles.rep</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: c_handles.immortal" verbose="Uninitialized struct member: c_handles.immortal" cwe="457" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="1796" column="10"/>
+            <symbol>c_handles.immortal</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: buf.rep" verbose="Uninitialized struct member: buf.rep" cwe="457" file0="/workspace/db/c.cc">
+            <location file="/workspace/db/c.cc" line="7755" column="12"/>
+            <symbol>buf.rep</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/column_family_test.cc">
+            <location file="/workspace/db/column_family_test.cc" line="520" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compact_files_test.cc">
+            <location file="/workspace/db/compact_files_test.cc" line="62" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/clipping_iterator_test.cc">
+            <location file="/workspace/db/compaction/clipping_iterator_test.cc" line="82" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/compaction_iterator_test.cc">
+            <location file="/workspace/db/compaction/compaction_iterator_test.cc" line="377" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/compaction_job_stats_test.cc">
+            <location file="/workspace/db/compaction/compaction_job_stats_test.cc" line="598" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/compaction_job_test.cc">
+            <location file="/workspace/db/compaction/compaction_job_test.cc" line="777" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/compaction_picker_test.cc">
+            <location file="/workspace/db/compaction/compaction_picker_test.cc" line="360" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;UniversalCompactionBuilder::score_&apos; is not initialized in the constructor." verbose="Member variable &apos;UniversalCompactionBuilder::score_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/compaction/compaction_picker_universal.cc">
+            <location file="/workspace/db/compaction/compaction_picker_universal.cc" line="35" column="3"/>
+            <symbol>UniversalCompactionBuilder::score_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;UniversalCompactionBuilder::max_run_size_&apos; is not initialized in the constructor." verbose="Member variable &apos;UniversalCompactionBuilder::max_run_size_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/compaction/compaction_picker_universal.cc">
+            <location file="/workspace/db/compaction/compaction_picker_universal.cc" line="35" column="3"/>
+            <symbol>UniversalCompactionBuilder::max_run_size_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;StatusSerializationAdapter::code&apos; is not initialized in the constructor." verbose="Member variable &apos;StatusSerializationAdapter::code&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/compaction/compaction_service_job.cc">
+            <location file="/workspace/db/compaction/compaction_service_job.cc" line="901" column="3"/>
+            <symbol>StatusSerializationAdapter::code</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;StatusSerializationAdapter::subcode&apos; is not initialized in the constructor." verbose="Member variable &apos;StatusSerializationAdapter::subcode&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/compaction/compaction_service_job.cc">
+            <location file="/workspace/db/compaction/compaction_service_job.cc" line="901" column="3"/>
+            <symbol>StatusSerializationAdapter::subcode</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;StatusSerializationAdapter::severity&apos; is not initialized in the constructor." verbose="Member variable &apos;StatusSerializationAdapter::severity&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/compaction/compaction_service_job.cc">
+            <location file="/workspace/db/compaction/compaction_service_job.cc" line="901" column="3"/>
+            <symbol>StatusSerializationAdapter::severity</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/compaction_service_test.cc">
+            <location file="/workspace/db/compaction/compaction_service_test.cc" line="294" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/compaction/tiered_compaction_test.cc">
+            <location file="/workspace/db/compaction/tiered_compaction_test.cc" line="176" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/comparator_db_test.cc">
+            <location file="/workspace/db/comparator_db_test.cc" line="321" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/corruption_test.cc">
+            <location file="/workspace/db/corruption_test.cc" line="314" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/cuckoo_table_db_test.cc">
+            <location file="/workspace/db/cuckoo_table_db_test.cc" line="116" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_basic_test.cc">
+            <location file="/workspace/db/db_basic_test.cc" line="91" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_block_cache_test.cc">
+            <location file="/workspace/db/db_block_cache_test.cc" line="151" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_bloom_filter_test.cc">
+            <location file="/workspace/db/db_bloom_filter_test.cc" line="145" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_clip_test.cc">
+            <location file="/workspace/db/db_clip_test.cc" line="17" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_compaction_abort_test.cc">
+            <location file="/workspace/db/db_compaction_abort_test.cc" line="293" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_compaction_filter_test.cc">
+            <location file="/workspace/db/db_compaction_filter_test.cc" line="302" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_compaction_test.cc">
+            <location file="/workspace/db/db_compaction_test.cc" line="446" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_dynamic_level_test.cc">
+            <location file="/workspace/db/db_dynamic_level_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_encryption_test.cc">
+            <location file="/workspace/db/db_encryption_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_etc3_test.cc">
+            <location file="/workspace/db/db_etc3_test.cc" line="15" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_flush_test.cc">
+            <location file="/workspace/db/db_flush_test.cc" line="64" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_follower_test.cc">
+            <location file="/workspace/db/db_follower_test.cc" line="243" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_inplace_update_test.cc">
+            <location file="/workspace/db/db_inplace_update_test.cc" line="20" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_io_failure_test.cc">
+            <location file="/workspace/db/db_io_failure_test.cc" line="251" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_iter_stress_test.cc">
+            <location file="/workspace/db/db_iter_stress_test.cc" line="423" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_iter_test.cc">
+            <location file="/workspace/db/db_iter_test.cc" line="246" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_iterator_test.cc">
+            <location file="/workspace/db/db_iterator_test.cc" line="45" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_kv_checksum_test.cc">
+            <location file="/workspace/db/db_kv_checksum_test.cc" line="221" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_log_iter_test.cc">
+            <location file="/workspace/db/db_log_iter_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_logical_block_size_cache_test.cc">
+            <location file="/workspace/db/db_logical_block_size_cache_test.cc" line="61" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_memtable_test.cc">
+            <location file="/workspace/db/db_memtable_test.cc" line="127" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_merge_operand_test.cc">
+            <location file="/workspace/db/db_merge_operand_test.cc" line="48" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_merge_operator_test.cc">
+            <location file="/workspace/db/db_merge_operator_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_open_with_config_test.cc">
+            <location file="/workspace/db/db_open_with_config_test.cc" line="57" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_options_test.cc">
+            <location file="/workspace/db/db_options_test.cc" line="89" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_properties_test.cc">
+            <location file="/workspace/db/db_properties_test.cc" line="58" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_range_del_test.cc">
+            <location file="/workspace/db/db_range_del_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_rate_limiter_test.cc">
+            <location file="/workspace/db/db_rate_limiter_test.cc" line="104" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_readonly_with_timestamp_test.cc">
+            <location file="/workspace/db/db_readonly_with_timestamp_test.cc" line="67" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_secondary_test.cc">
+            <location file="/workspace/db/db_secondary_test.cc" line="127" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_sst_test.cc">
+            <location file="/workspace/db/db_sst_test.cc" line="57" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_statistics_test.cc">
+            <location file="/workspace/db/db_statistics_test.cc" line="24" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_table_properties_test.cc">
+            <location file="/workspace/db/db_table_properties_test.cc" line="102" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_tailing_iter_test.cc">
+            <location file="/workspace/db/db_tailing_iter_test.cc" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_test.cc">
+            <location file="/workspace/db/db_test.cc" line="103" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_test2.cc">
+            <location file="/workspace/db/db_test2.cc" line="41" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_universal_compaction_test.cc">
+            <location file="/workspace/db/db_universal_compaction_test.cc" line="102" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;(&apos;. Configuration: &apos;ENABLE_SINGLE_LEVEL_DTC&apos;." verbose="Unmatched &apos;(&apos;. Configuration: &apos;ENABLE_SINGLE_LEVEL_DTC&apos;." file0="/workspace/db/db_universal_compaction_test.cc">
+            <location file="/workspace/db/db_universal_compaction_test.cc" line="1989" column="20"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_wal_test.cc">
+            <location file="/workspace/db/db_wal_test.cc" line="222" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_with_timestamp_basic_test.cc">
+            <location file="/workspace/db/db_with_timestamp_basic_test.cc" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_with_timestamp_compaction_test.cc">
+            <location file="/workspace/db/db_with_timestamp_compaction_test.cc" line="173" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_write_buffer_manager_test.cc">
+            <location file="/workspace/db/db_write_buffer_manager_test.cc" line="24" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/db_write_test.cc">
+            <location file="/workspace/db/db_write_test.cc" line="43" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/dbformat_test.cc">
+            <location file="/workspace/db/dbformat_test.cc" line="55" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/deletefile_test.cc">
+            <location file="/workspace/db/deletefile_test.cc" line="138" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/error_handler_fs_test.cc">
+            <location file="/workspace/db/error_handler_fs_test.cc" line="166" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/external_sst_file_basic_test.cc">
+            <location file="/workspace/db/external_sst_file_basic_test.cc" line="227" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/external_sst_file_test.cc">
+            <location file="/workspace/db/external_sst_file_test.cc" line="301" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/fault_injection_test.cc">
+            <location file="/workspace/db/fault_injection_test.cc" line="363" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/file_indexer_test.cc">
+            <location file="/workspace/db/file_indexer_test.cc" line="96" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/filename_test.cc">
+            <location file="/workspace/db/filename_test.cc" line="20" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;new_mem&apos; is redundant or there is possible null pointer dereference: new_mem." verbose="Either the condition &apos;new_mem&apos; is redundant or there is possible null pointer dereference: new_mem." cwe="476" file0="/workspace/db/flush_job.cc">
+            <location file="/workspace/db/flush_job.cc" line="631" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/db/flush_job.cc" line="668" column="13" info="Assuming that condition &apos;new_mem&apos; is not redundant"/>
+            <symbol>new_mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;new_mem&apos; is redundant or there is possible null pointer dereference: new_mem." verbose="Either the condition &apos;new_mem&apos; is redundant or there is possible null pointer dereference: new_mem." cwe="476" file0="/workspace/db/flush_job.cc">
+            <location file="/workspace/db/flush_job.cc" line="636" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/db/flush_job.cc" line="668" column="13" info="Assuming that condition &apos;new_mem&apos; is not redundant"/>
+            <symbol>new_mem</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/flush_job_test.cc">
+            <location file="/workspace/db/flush_job_test.cc" line="186" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Writer::pad1&apos; is not initialized in the constructor." verbose="Member variable &apos;Writer::pad1&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/forward_iterator_bench.cc">
+            <location file="/workspace/db/forward_iterator_bench.cc" line="206" column="12"/>
+            <symbol>Writer::pad1</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Writer::pad2&apos; is not initialized in the constructor." verbose="Member variable &apos;Writer::pad2&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/forward_iterator_bench.cc">
+            <location file="/workspace/db/forward_iterator_bench.cc" line="206" column="12"/>
+            <symbol>Writer::pad2</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 3) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/db/forward_iterator_bench.cc">
+            <location file="/workspace/db/forward_iterator_bench.cc" line="290" column="7"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 5) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 5) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/db/forward_iterator_bench.cc">
+            <location file="/workspace/db/forward_iterator_bench.cc" line="290" column="7"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/import_column_family_test.cc">
+            <location file="/workspace/db/import_column_family_test.cc" line="88" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/listener_test.cc">
+            <location file="/workspace/db/listener_test.cc" line="151" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/log_test.cc">
+            <location file="/workspace/db/log_test.cc" line="282" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/manual_compaction_test.cc">
+            <location file="/workspace/db/manual_compaction_test.cc" line="99" column="1"/>
+        </error>
+        <error id="derefInvalidIterator" severity="warning" msg="Possible dereference of an invalid iterator: it" verbose="Possible dereference of an invalid iterator: it. Make sure to check that the iterator is valid before dereferencing it - not after." cwe="825" file0="/workspace/db/memtable_list.cc">
+            <location file="/workspace/db/memtable_list.cc" line="484" column="12"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/memtable_list_test.cc">
+            <location file="/workspace/db/memtable_list_test.cc" line="222" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/merge_helper_test.cc">
+            <location file="/workspace/db/merge_helper_test.cc" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/merge_test.cc">
+            <location file="/workspace/db/merge_test.cc" line="605" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/multi_cf_iterator_test.cc">
+            <location file="/workspace/db/multi_cf_iterator_test.cc" line="90" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/obsolete_files_test.cc">
+            <location file="/workspace/db/obsolete_files_test.cc" line="170" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/options_file_test.cc">
+            <location file="/workspace/db/options_file_test.cc" line="63" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/perf_context_test.cc">
+            <location file="/workspace/db/perf_context_test.cc" line="69" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/periodic_task_scheduler_test.cc">
+            <location file="/workspace/db/periodic_task_scheduler_test.cc" line="41" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/plain_table_db_test.cc">
+            <location file="/workspace/db/plain_table_db_test.cc" line="42" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/prefix_test.cc">
+            <location file="/workspace/db/prefix_test.cc" line="304" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/range_del_aggregator_test.cc">
+            <location file="/workspace/db/range_del_aggregator_test.cc" line="197" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/range_tombstone_fragmenter_test.cc">
+            <location file="/workspace/db/range_tombstone_fragmenter_test.cc" line="117" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/repair_test.cc">
+            <location file="/workspace/db/repair_test.cc" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/seqno_time_test.cc">
+            <location file="/workspace/db/seqno_time_test.cc" line="72" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/table_properties_collector_test.cc">
+            <location file="/workspace/db/table_properties_collector_test.cc" line="341" column="1"/>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;Rep&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Rep&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/db/version_builder.cc">
+            <location file="/workspace/db/version_builder.cc" line="355" column="5"/>
+            <symbol>Rep</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/version_builder_test.cc">
+            <location file="/workspace/db/version_builder_test.cc" line="166" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/version_edit_test.cc">
+            <location file="/workspace/db/version_edit_test.cc" line="43" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;FilePickerContext::search_left_bound&apos; is not initialized in the constructor." verbose="Member variable &apos;FilePickerContext::search_left_bound&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="563" column="5"/>
+            <symbol>FilePickerContext::search_left_bound</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;FilePickerContext::search_right_bound&apos; is not initialized in the constructor." verbose="Member variable &apos;FilePickerContext::search_right_bound&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="563" column="5"/>
+            <symbol>FilePickerContext::search_right_bound</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;FilePickerContext::curr_index_in_curr_level&apos; is not initialized in the constructor." verbose="Member variable &apos;FilePickerContext::curr_index_in_curr_level&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="563" column="5"/>
+            <symbol>FilePickerContext::curr_index_in_curr_level</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;FilePickerContext::start_index_in_curr_level&apos; is not initialized in the constructor." verbose="Member variable &apos;FilePickerContext::start_index_in_curr_level&apos; is not initialized in the constructor." cwe="398" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="563" column="5"/>
+            <symbol>FilePickerContext::start_index_in_curr_level</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;flevel_!=nullptr&apos; is redundant or there is possible null pointer dereference: flevel_." verbose="Either the condition &apos;flevel_!=nullptr&apos; is redundant or there is possible null pointer dereference: flevel_." cwe="476" file0="/workspace/db/version_set.cc">
+            <location file="/workspace/db/version_set.cc" line="995" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/db/version_set.cc" line="1012" column="20" info="Assuming that condition &apos;flevel_!=nullptr&apos; is not redundant"/>
+            <symbol>flevel_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/version_set_test.cc">
+            <location file="/workspace/db/version_set_test.cc" line="76" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wal_edit_test.cc">
+            <location file="/workspace/db/wal_edit_test.cc" line="41" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wal_manager_test.cc">
+            <location file="/workspace/db/wal_manager_test.cc" line="131" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wide/db_wide_basic_test.cc">
+            <location file="/workspace/db/wide/db_wide_basic_test.cc" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wide/db_wide_blob_direct_write_test.cc">
+            <location file="/workspace/db/wide/db_wide_blob_direct_write_test.cc" line="615" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wide/wide_column_serialization_test.cc">
+            <location file="/workspace/db/wide/wide_column_serialization_test.cc" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/wide/wide_columns_helper_test.cc">
+            <location file="/workspace/db/wide/wide_columns_helper_test.cc" line="21" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/write_batch_test.cc">
+            <location file="/workspace/db/write_batch_test.cc" line="167" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/write_callback_test.cc">
+            <location file="/workspace/db/write_callback_test.cc" line="130" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/db/write_controller_test.cc">
+            <location file="/workspace/db/write_controller_test.cc" line="36" column="1"/>
+        </error>
+        <error id="mismatchingContainers" severity="error" msg="Iterators of different containers &apos;Value(cf,0)&apos; and &apos;Value(cf+1,0)&apos; are used together." verbose="Iterators of different containers &apos;Value(cf,0)&apos; and &apos;Value(cf+1,0)&apos; are used together." cwe="664" file0="/workspace/db_stress_tool/expected_state.cc">
+            <location file="/workspace/db_stress_tool/expected_state.cc" line="27" column="19"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!iter&apos; is redundant or there is possible null pointer dereference: iter." verbose="Either the condition &apos;!iter&apos; is redundant or there is possible null pointer dereference: iter." cwe="476" file0="/workspace/examples/multi_processes_example.cc">
+            <location file="/workspace/examples/multi_processes_example.cc" line="320" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/examples/multi_processes_example.cc" line="316" column="11" info="Assuming that condition &apos;!iter&apos; is not redundant"/>
+            <symbol>iter</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!iter&apos; is redundant or there is possible null pointer dereference: iter." verbose="Either the condition &apos;!iter&apos; is redundant or there is possible null pointer dereference: iter." cwe="476" file0="/workspace/examples/multi_processes_example.cc">
+            <location file="/workspace/examples/multi_processes_example.cc" line="321" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/examples/multi_processes_example.cc" line="316" column="11" info="Assuming that condition &apos;!iter&apos; is not redundant"/>
+            <symbol>iter</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/file/delete_scheduler_test.cc">
+            <location file="/workspace/file/delete_scheduler_test.cc" line="122" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/file/prefetch_test.cc">
+            <location file="/workspace/file/prefetch_test.cc" line="218" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/file/random_access_file_reader_test.cc">
+            <location file="/workspace/file/random_access_file_reader_test.cc" line="68" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/logging/auto_roll_logger_test.cc">
+            <location file="/workspace/logging/auto_roll_logger_test.cc" line="204" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/logging/env_logger_test.cc">
+            <location file="/workspace/logging/env_logger_test.cc" line="58" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/logging/event_logger_test.cc">
+            <location file="/workspace/logging/event_logger_test.cc" line="28" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/memory/arena_test.cc">
+            <location file="/workspace/memory/arena_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/memory/memory_allocator_test.cc">
+            <location file="/workspace/memory/memory_allocator_test.cc" line="43" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Node::key&apos; is not initialized in the constructor." verbose="Member variable &apos;Node::key&apos; is not initialized in the constructor." cwe="398" file0="/workspace/memtable/hash_linklist_rep.cc">
+            <location file="/workspace/memtable/hash_linklist_rep.cc" line="83" column="3"/>
+            <symbol>Node::key</symbol>
+        </error>
+        <error id="noDestructor" severity="warning" msg="Class &apos;HashLinkListRep&apos; has dynamic memory/resource allocation(s). The destructor is explicitly defaulted but the default destructor does not work well. It is recommended to define the destructor." verbose="Class &apos;HashLinkListRep&apos; has dynamic memory/resource allocation(s). The destructor is explicitly defaulted but the default destructor does not work well. It is recommended to define the destructor." cwe="398" file0="/workspace/memtable/hash_linklist_rep.cc">
+            <location file="/workspace/memtable/hash_linklist_rep.cc" line="521" column="3"/>
+            <symbol>HashLinkListRep</symbol>
+        </error>
+        <error id="noDestructor" severity="warning" msg="Class &apos;HashSkipListRep&apos; has dynamic memory/resource allocation(s). The destructor is explicitly defaulted but the default destructor does not work well. It is recommended to define the destructor." verbose="Class &apos;HashSkipListRep&apos; has dynamic memory/resource allocation(s). The destructor is explicitly defaulted but the default destructor does not work well. It is recommended to define the destructor." cwe="398" file0="/workspace/memtable/hash_skiplist_rep.cc">
+            <location file="/workspace/memtable/hash_skiplist_rep.cc" line="244" column="3"/>
+            <symbol>HashSkipListRep</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/memtable/inlineskiplist_test.cc">
+            <location file="/workspace/memtable/inlineskiplist_test.cc" line="106" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/memtable/skiplist_test.cc">
+            <location file="/workspace/memtable/skiplist_test.cc" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ALIGN_AS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ALIGN_AS is a macro then please configure it." file0="/workspace/memtable/vectorrep.cc">
+            <location file="/workspace/memtable/vectorrep.cc" line="110" column="3"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/memtable/write_buffer_manager_test.cc">
+            <location file="/workspace/memtable/write_buffer_manager_test.cc" line="20" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/monitoring/histogram_test.cc">
+            <location file="/workspace/monitoring/histogram_test.cc" line="90" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/monitoring/statistics_test.cc">
+            <location file="/workspace/monitoring/statistics_test.cc" line="21" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/monitoring/stats_history_test.cc">
+            <location file="/workspace/monitoring/stats_history_test.cc" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/options/configurable_test.cc">
+            <location file="/workspace/options/configurable_test.cc" line="99" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/options/customizable_test.cc">
+            <location file="/workspace/options/customizable_test.cc" line="276" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/options/options_settable_test.cc">
+            <location file="/workspace/options/options_settable_test.cc" line="117" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/options/options_test.cc">
+            <location file="/workspace/options/options_test.cc" line="69" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;t" verbose="Uninitialized variable: &amp;t" cwe="457" file0="/workspace/port/win/env_win.cc">
+            <location file="/workspace/port/win/env_win.cc" line="110" column="29"/>
+            <symbol>&amp;t</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;t" verbose="Uninitialized variable: &amp;t" cwe="457" file0="/workspace/port/win/win_logger.cc">
+            <location file="/workspace/port/win/win_logger.cc" line="123" column="17"/>
+            <symbol>&amp;t</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/block_based_table_builder.cc">
+            <location file="/workspace/table/block_based/block_based_table_builder.cc" line="2206" column="5"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="AST broken, ternary operator missing operand(s)" verbose="AST broken, ternary operator missing operand(s)" file0="/workspace/table/block_based/block_based_table_reader.cc">
+            <location file="/workspace/table/block_based/block_based_table_reader.cc" line="2722" column="14"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/block_based_table_reader_test.cc">
+            <location file="/workspace/table/block_based/block_based_table_reader_test.cc" line="379" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;value_offset" verbose="Uninitialized variable: &amp;value_offset" cwe="457" file0="/workspace/table/block_based/block_builder.cc">
+            <location file="/workspace/table/block_based/block_builder.cc" line="394" column="35"/>
+            <symbol>&amp;value_offset</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/block_test.cc">
+            <location file="/workspace/table/block_based/block_test.cc" line="108" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/data_block_hash_index_test.cc">
+            <location file="/workspace/table/block_based/data_block_hash_index_test.cc" line="75" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/full_filter_block_test.cc">
+            <location file="/workspace/table/block_based/full_filter_block_test.cc" line="116" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_based/partitioned_filter_block_test.cc">
+            <location file="/workspace/table/block_based/partitioned_filter_block_test.cc" line="356" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/block_fetcher_test.cc">
+            <location file="/workspace/table/block_fetcher_test.cc" line="393" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/cleanable_test.cc">
+            <location file="/workspace/table/cleanable_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/cuckoo/cuckoo_table_builder_test.cc">
+            <location file="/workspace/table/cuckoo/cuckoo_table_builder_test.cc" line="171" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/cuckoo/cuckoo_table_reader_test.cc">
+            <location file="/workspace/table/cuckoo/cuckoo_table_reader_test.cc" line="211" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BlockFetcher::stack_buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;BlockFetcher::stack_buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/table/format.cc">
+            <location file="/workspace/table/block_fetcher.h" line="42" column="3"/>
+            <symbol>BlockFetcher::stack_buf_</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/merger_test.cc">
+            <location file="/workspace/table/merger_test.cc" line="122" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/sst_file_reader_test.cc">
+            <location file="/workspace/table/sst_file_reader_test.cc" line="114" column="1"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="AST broken, ternary operator missing operand(s)" verbose="AST broken, ternary operator missing operand(s)" file0="/workspace/table/table_reader_bench.cc">
+            <location file="/workspace/table/table_reader_bench.cc" line="214" column="27"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/table/table_test.cc">
+            <location file="/workspace/table/table_test.cc" line="1369" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/test_util/testutil_test.cc">
+            <location file="/workspace/test_util/testutil_test.cc" line="21" column="1"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/test_util/transaction_test_util.cc">
+            <location file="/workspace/test_util/transaction_test_util.cc" line="320" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If GTEST_DISABLE_MSC_DEPRECATED_PUSH_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If GTEST_DISABLE_MSC_DEPRECATED_PUSH_ is a macro then please configure it." file0="/workspace/third-party/gtest-1.8.1/fused-src/gtest/gtest-all.cc">
+            <location file="/workspace/third-party/gtest-1.8.1/fused-src/gtest/gtest-all.cc" line="10425" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/block_cache_analyzer/block_cache_trace_analyzer_test.cc">
+            <location file="/workspace/tools/block_cache_analyzer/block_cache_trace_analyzer_test.cc" line="229" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SharedState::total&apos; is not initialized in the constructor." verbose="Member variable &apos;SharedState::total&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="2852" column="3"/>
+            <symbol>SharedState::total</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SharedState::num_initialized&apos; is not initialized in the constructor." verbose="Member variable &apos;SharedState::num_initialized&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="2852" column="3"/>
+            <symbol>SharedState::num_initialized</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SharedState::num_done&apos; is not initialized in the constructor." verbose="Member variable &apos;SharedState::num_done&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="2852" column="3"/>
+            <symbol>SharedState::num_done</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SharedState::start&apos; is not initialized in the constructor." verbose="Member variable &apos;SharedState::start&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="2852" column="3"/>
+            <symbol>SharedState::start</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ThreadState::shared&apos; is not initialized in the constructor." verbose="Member variable &apos;ThreadState::shared&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="2862" column="12"/>
+            <symbol>ThreadState::shared</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Benchmark::writes_before_delete_range_&apos; is not initialized in the constructor." verbose="Member variable &apos;Benchmark::writes_before_delete_range_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="3461" column="3"/>
+            <symbol>Benchmark::writes_before_delete_range_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Benchmark::writes_per_range_tombstone_&apos; is not initialized in the constructor." verbose="Member variable &apos;Benchmark::writes_per_range_tombstone_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="3461" column="3"/>
+            <symbol>Benchmark::writes_per_range_tombstone_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Benchmark::range_tombstone_width_&apos; is not initialized in the constructor." verbose="Member variable &apos;Benchmark::range_tombstone_width_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="3461" column="3"/>
+            <symbol>Benchmark::range_tombstone_width_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Benchmark::max_num_range_tombstones_&apos; is not initialized in the constructor." verbose="Member variable &apos;Benchmark::max_num_range_tombstones_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="3461" column="3"/>
+            <symbol>Benchmark::max_num_range_tombstones_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Benchmark::deletes_&apos; is not initialized in the constructor." verbose="Member variable &apos;Benchmark::deletes_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="3461" column="3"/>
+            <symbol>Benchmark::deletes_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;QueryDecider::range_&apos; is not initialized in the constructor." verbose="Member variable &apos;QueryDecider::range_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="7377" column="5"/>
+            <symbol>QueryDecider::range_</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/tools/db_bench_tool.cc">
+            <location file="/workspace/tools/db_bench_tool.cc" line="8063" column="15"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/db_bench_tool_test.cc">
+            <location file="/workspace/tools/db_bench_tool_test.cc" line="130" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/io_tracer_parser_test.cc">
+            <location file="/workspace/tools/io_tracer_parser_test.cc" line="108" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/ldb_cmd_test.cc">
+            <location file="/workspace/tools/ldb_cmd_test.cc" line="51" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/reduce_levels_test.cc">
+            <location file="/workspace/tools/reduce_levels_test.cc" line="105" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/sst_dump_test.cc">
+            <location file="/workspace/tools/sst_dump_test.cc" line="222" column="1"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: BlockBasedTableOptions{}.enable_index_compression" verbose="Uninitialized variable: BlockBasedTableOptions{}.enable_index_compression" cwe="457" file0="/workspace/tools/sst_dump_tool.cc">
+            <location file="/workspace/tools/sst_dump_tool.cc" line="208" column="31"/>
+            <symbol>BlockBasedTableOptions{}.enable_index_compression</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/tools/trace_analyzer_test.cc">
+            <location file="/workspace/tools/trace_analyzer_test.cc" line="212" column="1"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/tools/trace_analyzer_tool.cc">
+            <location file="/workspace/tools/trace_analyzer_tool.cc" line="813" column="19"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/trace_replay/block_cache_tracer_test.cc">
+            <location file="/workspace/trace_replay/block_cache_tracer_test.cc" line="164" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/trace_replay/io_tracer_test.cc">
+            <location file="/workspace/trace_replay/io_tracer_test.cc" line="91" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/autovector_test.cc">
+            <location file="/workspace/util/autovector_test.cc" line="33" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/bloom_test.cc">
+            <location file="/workspace/util/bloom_test.cc" line="196" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/coding_test.cc">
+            <location file="/workspace/util/coding_test.cc" line="21" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ZSTDCachedData::padding&apos; is not initialized in the constructor." verbose="Member variable &apos;ZSTDCachedData::padding&apos; is not initialized in the constructor." cwe="398" file0="/workspace/util/compression_context_cache.cc">
+            <location file="/workspace/util/compression_context_cache.cc" line="37" column="3"/>
+            <symbol>ZSTDCachedData::padding</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/compression_test.cc">
+            <location file="/workspace/util/compression_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/crc32c_test.cc">
+            <location file="/workspace/util/crc32c_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/defer_test.cc">
+            <location file="/workspace/util/defer_test.cc" line="16" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/dynamic_bloom_test.cc">
+            <location file="/workspace/util/dynamic_bloom_test.cc" line="61" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/file_reader_writer_test.cc">
+            <location file="/workspace/util/file_reader_writer_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/filelock_test.cc">
+            <location file="/workspace/util/filelock_test.cc" line="116" column="1"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758" file0="/workspace/util/hash_test.cc">
+            <location file="/workspace/util/hash_test.cc" line="745" column="44"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;i&apos;" verbose="Unused variable value &apos;i&apos;" cwe="398" file0="/workspace/util/hash_test.cc">
+            <location file="/workspace/util/hash_test.cc" line="611" column="45"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 64 bits is undefined behaviour" verbose="Shifting 32-bit value by 64 bits is undefined behaviour" cwe="758" file0="/workspace/util/hash_test.cc">
+            <location file="/workspace/util/hash_test.cc" line="695" column="22" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 64 bits is undefined behaviour" verbose="Shifting 64-bit value by 64 bits is undefined behaviour" cwe="758" file0="/workspace/util/hash_test.cc">
+            <location file="/workspace/util/hash_test.cc" line="695" column="22" info="Shift"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/heap_test.cc">
+            <location file="/workspace/util/heap_test.cc" line="36" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/interval_test.cc">
+            <location file="/workspace/util/interval_test.cc" line="14" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/io_dispatcher_test.cc">
+            <location file="/workspace/util/io_dispatcher_test.cc" line="390" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/rate_limiter_test.cc">
+            <location file="/workspace/util/rate_limiter_test.cc" line="35" column="1"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff128Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff128Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="221" column="25" info="Derived variable &apos;TypesAndSettings_Coeff128Smash::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff128Smash</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff64Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff64Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="227" column="25" info="Derived variable &apos;TypesAndSettings_Coeff64Smash::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff64Smash</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff64Smash0&apos; defines member variable with name &apos;kFirstCoeffAlwaysOne&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff64Smash0&apos; defines member variable with name &apos;kFirstCoeffAlwaysOne&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="230" column="25" info="Derived variable &apos;TypesAndSettings_Coeff64Smash0::kFirstCoeffAlwaysOne&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="203" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kFirstCoeffAlwaysOne&apos;"/>
+            <symbol>TypesAndSettings_Coeff64Smash0</symbol>
+            <symbol>kFirstCoeffAlwaysOne</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff128_Homog&apos; defines member variable with name &apos;kHomogeneous&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff128_Homog&apos; defines member variable with name &apos;kHomogeneous&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="235" column="25" info="Derived variable &apos;TypesAndSettings_Coeff128_Homog::kHomogeneous&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="202" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kHomogeneous&apos;"/>
+            <symbol>TypesAndSettings_Coeff128_Homog</symbol>
+            <symbol>kHomogeneous</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff128Smash_Homog&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff128Smash_Homog&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="249" column="25" info="Derived variable &apos;TypesAndSettings_Coeff128Smash_Homog::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff128Smash_Homog</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff64Smash_Homog&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff64Smash_Homog&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="258" column="25" info="Derived variable &apos;TypesAndSettings_Coeff64Smash_Homog::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff64Smash_Homog</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_NoAlwaysOne&apos; defines member variable with name &apos;kFirstCoeffAlwaysOne&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_NoAlwaysOne&apos; defines member variable with name &apos;kFirstCoeffAlwaysOne&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="299" column="25" info="Derived variable &apos;TypesAndSettings_NoAlwaysOne::kFirstCoeffAlwaysOne&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="203" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kFirstCoeffAlwaysOne&apos;"/>
+            <symbol>TypesAndSettings_NoAlwaysOne</symbol>
+            <symbol>kFirstCoeffAlwaysOne</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_AllowZeroStarts&apos; defines member variable with name &apos;kAllowZeroStarts&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_AllowZeroStarts&apos; defines member variable with name &apos;kAllowZeroStarts&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="302" column="25" info="Derived variable &apos;TypesAndSettings_AllowZeroStarts::kAllowZeroStarts&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="205" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kAllowZeroStarts&apos;"/>
+            <symbol>TypesAndSettings_AllowZeroStarts</symbol>
+            <symbol>kAllowZeroStarts</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff32Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff32Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="342" column="25" info="Derived variable &apos;TypesAndSettings_Coeff32Smash::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff32Smash</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;TypesAndSettings_Coeff16Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;TypesAndSettings_Coeff16Smash&apos; defines member variable with name &apos;kUseSmash&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="348" column="25" info="Derived variable &apos;TypesAndSettings_Coeff16Smash::kUseSmash&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="204" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kUseSmash&apos;"/>
+            <symbol>TypesAndSettings_Coeff16Smash</symbol>
+            <symbol>kUseSmash</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The struct &apos;PhsfTypesAndSettings&apos; defines member variable with name &apos;kIsFilter&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." verbose="The struct &apos;PhsfTypesAndSettings&apos; defines member variable with name &apos;kIsFilter&apos; also defined in its parent struct &apos;DefaultTypesAndSettings&apos;." cwe="398" file0="/workspace/util/ribbon_test.cc">
+            <location file="/workspace/util/ribbon_test.cc" line="1086" column="25" info="Derived variable &apos;PhsfTypesAndSettings::kIsFilter&apos;"/>
+            <location file="/workspace/util/ribbon_test.cc" line="201" column="25" info="Parent variable &apos;DefaultTypesAndSettings::kIsFilter&apos;"/>
+            <symbol>PhsfTypesAndSettings</symbol>
+            <symbol>kIsFilter</symbol>
+            <symbol>DefaultTypesAndSettings</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/slice_test.cc">
+            <location file="/workspace/util/slice_test.cc" line="53" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/slice_transform_test.cc">
+            <location file="/workspace/util/slice_transform_test.cc" line="23" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/thread_list_test.cc">
+            <location file="/workspace/util/thread_list_test.cc" line="103" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/thread_local_test.cc">
+            <location file="/workspace/util/thread_local_test.cc" line="63" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/timer_queue_test.cc">
+            <location file="/workspace/util/timer_queue_test.cc" line="48" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/timer_test.cc">
+            <location file="/workspace/util/timer_test.cc" line="28" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/udt_util_test.cc">
+            <location file="/workspace/util/udt_util_test.cc" line="219" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/util/work_queue_test.cc">
+            <location file="/workspace/util/work_queue_test.cc" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If XXH_ALIGN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If XXH_ALIGN is a macro then please configure it." file0="/workspace/util/xxhash.cc">
+            <location file="/workspace/util/xxhash.h" line="3651" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/agg_merge/agg_merge_test.cc">
+            <location file="/workspace/utilities/agg_merge/agg_merge_test.cc" line="25" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/backup/backup_engine_test.cc">
+            <location file="/workspace/utilities/backup/backup_engine_test.cc" line="1103" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/blob_db/blob_db_test.cc">
+            <location file="/workspace/utilities/blob_db/blob_db_test.cc" line="301" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/cassandra/cassandra_format_test.cc">
+            <location file="/workspace/utilities/cassandra/cassandra_format_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/cassandra/cassandra_functional_test.cc">
+            <location file="/workspace/utilities/cassandra/cassandra_functional_test.cc" line="144" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/cassandra/cassandra_row_merge_test.cc">
+            <location file="/workspace/utilities/cassandra/cassandra_row_merge_test.cc" line="16" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/cassandra/cassandra_serialize_test.cc">
+            <location file="/workspace/utilities/cassandra/cassandra_serialize_test.cc" line="43" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/checkpoint/checkpoint_test.cc">
+            <location file="/workspace/utilities/checkpoint/checkpoint_test.cc" line="271" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/env_mirror_test.cc">
+            <location file="/workspace/utilities/env_mirror_test.cc" line="33" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/env_timed_test.cc">
+            <location file="/workspace/utilities/env_timed_test.cc" line="14" column="1"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: dummy_bool" verbose="Uninitialized variable: dummy_bool" cwe="457" file0="/workspace/utilities/fault_injection_fs.cc">
+            <location file="/workspace/utilities/fault_injection_fs.cc" line="1473" column="45"/>
+            <symbol>dummy_bool</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/fault_injection_fs_test.cc">
+            <location file="/workspace/utilities/fault_injection_fs_test.cc" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/memory/memory_test.cc">
+            <location file="/workspace/utilities/memory/memory_test.cc" line="78" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/merge_operators/string_append/stringappend_test.cc">
+            <location file="/workspace/utilities/merge_operators/string_append/stringappend_test.cc" line="155" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/object_registry_test.cc">
+            <location file="/workspace/utilities/object_registry_test.cc" line="49" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/option_change_migration/option_change_migration_test.cc">
+            <location file="/workspace/utilities/option_change_migration/option_change_migration_test.cc" line="56" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/options/options_util_test.cc">
+            <location file="/workspace/utilities/options/options_util_test.cc" line="44" column="1"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;ComputeCRC&apos;." verbose="Non-pure function: &apos;ComputeCRC&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="194" column="34"/>
+            <symbol>ComputeCRC</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="183" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="184" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="185" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="191" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/utilities/persistent_cache/block_cache_tier_file.cc">
+            <location file="/workspace/utilities/persistent_cache/block_cache_tier_file.cc" line="191" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/persistent_cache/hash_table_test.cc">
+            <location file="/workspace/utilities/persistent_cache/hash_table_test.cc" line="82" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/persistent_cache/persistent_cache_test.cc">
+            <location file="/workspace/utilities/persistent_cache/persistent_cache_test.cc" line="127" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/secondary_index/faiss_ivf_index_test.cc">
+            <location file="/workspace/utilities/secondary_index/faiss_ivf_index_test.cc" line="227" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/simulator_cache/cache_simulator_test.cc">
+            <location file="/workspace/utilities/simulator_cache/cache_simulator_test.cc" line="98" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/simulator_cache/sim_cache_test.cc">
+            <location file="/workspace/utilities/simulator_cache/sim_cache_test.cc" line="77" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/sorted_run_builder/sorted_run_builder_test.cc">
+            <location file="/workspace/utilities/sorted_run_builder/sorted_run_builder_test.cc" line="53" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/table_properties_collectors/compact_for_tiering_collector_test.cc">
+            <location file="/workspace/utilities/table_properties_collectors/compact_for_tiering_collector_test.cc" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/table_properties_collectors/compact_on_deletion_collector_test.cc">
+            <location file="/workspace/utilities/table_properties_collectors/compact_on_deletion_collector_test.cc" line="83" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/lock/point/point_lock_manager_stress_test.cc">
+            <location file="/workspace/utilities/transactions/lock/point/point_lock_manager_stress_test.cc" line="51" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/lock/point/point_lock_manager_test.cc">
+            <location file="/workspace/utilities/transactions/lock/point/point_lock_manager_test.cc" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/lock/range/range_locking_test.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_locking_test.cc" line="66" column="1"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc" line="122" column="3"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_root&apos;." verbose="Non-pure function: &apos;is_root&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc" line="127" column="5"/>
+            <symbol>is_root</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc" line="128" column="5"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tmp_index" verbose="Uninitialized variable: &amp;tmp_index" cwe="457" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/util/omt_impl.h" line="519" column="59"/>
+            <symbol>&amp;tmp_index</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tmp_index" verbose="Uninitialized variable: &amp;tmp_index" cwe="457" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/concurrent_tree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/util/omt_impl.h" line="536" column="59"/>
+            <symbol>&amp;tmp_index</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc" line="295" column="3"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc" line="333" column="3"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc" line="698" column="7"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;is_empty&apos;." verbose="Non-pure function: &apos;is_empty&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc" line="952" column="3"/>
+            <symbol>is_empty</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: lock.range" verbose="Uninitialized variable: lock.range" cwe="457" file0="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc">
+            <location file="/workspace/utilities/transactions/lock/range/range_tree/lib/locktree/locktree.cc" line="782" column="38"/>
+            <symbol>lock</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/optimistic_transaction_test.cc">
+            <location file="/workspace/utilities/transactions/optimistic_transaction_test.cc" line="80" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/timestamped_snapshot_test.cc">
+            <location file="/workspace/utilities/transactions/timestamped_snapshot_test.cc" line="61" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/transaction_test.cc">
+            <location file="/workspace/utilities/transactions/transaction_test.cc" line="9092" column="25"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/write_committed_transaction_ts_test.cc">
+            <location file="/workspace/utilities/transactions/write_committed_transaction_ts_test.cc" line="24" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/write_prepared_transaction_seqno_test.cc">
+            <location file="/workspace/utilities/transactions/write_prepared_transaction_seqno_test.cc" line="101" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/write_prepared_transaction_test.cc">
+            <location file="/workspace/utilities/transactions/write_prepared_transaction_test.cc" line="110" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/transactions/write_unprepared_transaction_test.cc">
+            <location file="/workspace/utilities/transactions/write_unprepared_transaction_test.cc" line="71" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/trie_index/trie_index_db_test.cc">
+            <location file="/workspace/utilities/trie_index/trie_index_db_test.cc" line="614" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/trie_index/trie_index_test.cc">
+            <location file="/workspace/utilities/trie_index/trie_index_test.cc" line="64" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/ttl/ttl_test.cc">
+            <location file="/workspace/utilities/ttl/ttl_test.cc" line="419" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/types_util_test.cc">
+            <location file="/workspace/utilities/types_util_test.cc" line="33" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/util_merge_operators_test.cc">
+            <location file="/workspace/utilities/util_merge_operators_test.cc" line="75" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/utilities/write_batch_with_index/write_batch_with_index_test.cc">
+            <location file="/workspace/utilities/write_batch_with_index/write_batch_with_index_test.cc" line="712" column="1"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument t that points at uninitialized variable t" verbose="Using argument t that points at uninitialized variable t" cwe="457">
+            <location file="/workspace/db/repair.cc" line="536" column="31" info="Using argument t"/>
+            <location file="/workspace/db/repair.cc" line="518" column="32" info="Calling function ScanTable, 1st argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

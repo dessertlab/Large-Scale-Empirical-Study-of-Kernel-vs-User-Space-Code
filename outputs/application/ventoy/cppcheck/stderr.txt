@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/FUSEISO/vtoy_fuse_iso.c">
+            <location file="/workspace/FUSEISO/vtoy_fuse_iso.c" line="257" column="5"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/FUSEISO/vtoy_fuse_iso.c">
+            <location file="/workspace/FUSEISO/vtoy_fuse_iso.c" line="241" column="9"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;buf&apos; is redundant or there is possible null pointer dereference: buf." verbose="Either the condition &apos;buf&apos; is redundant or there is possible null pointer dereference: buf." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/blscfg.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/blscfg.c" line="488" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/blscfg.c" line="486" column="14" info="Assuming that condition &apos;buf&apos; is not redundant"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!readbuf&apos;, second condition is always false" verbose="Identical condition &apos;!readbuf&apos;, second condition is always false" cwe="398" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/hashsum.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/hashsum.c" line="77" column="7" info="Testing identical condition &apos;!readbuf&apos;"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/commands/hashsum.c" line="74" column="7" info="If condition &apos;!readbuf&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 127 bits is undefined behaviour. See condition at line 908." verbose="Shifting 32-bit value by 127 bits is undefined behaviour. See condition at line 908." cwe="758" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/ntfs.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/ntfs.c" line="909" column="30" info="Shift"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/ntfs.c" line="907" column="23" info="sectors_per_cluster is assigned &apos;bpb.sectors_per_cluster&apos; here."/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/ntfs.c" line="908" column="27" info="Assuming that condition &apos;sectors_per_cluster&gt;0x80&apos; is not redundant"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c" line="406" column="53" info="Integer overflow"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: keys_end" verbose="Uninitialized variable: keys_end" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c" line="629" column="8"/>
+            <symbol>keys_end</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: data_end" verbose="Uninitialized variable: data_end" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/fs/xfs.c" line="629" column="19"/>
+            <symbol>data_end</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOR_ACTIVE_TERM_OUTPUTS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOR_ACTIVE_TERM_OUTPUTS is a macro then please configure it." file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/kern/term.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/kern/term.c" line="79" column="7"/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: nlefto || nstartedfw &amp;&amp; !(nblockfw)." verbose="Logical conjunction always evaluates to false: nlefto || nstartedfw &amp;&amp; !(nblockfw). Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="688" column="9"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="676" column="53" info="&apos;nstartedfw&apos; is assigned value &apos;0&apos; here."/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="676" column="67" info="&apos;nblockfw&apos; is assigned value &apos;0&apos; here."/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: nlefto || nstartedfw &amp;&amp; !(nblockfw)." verbose="Logical conjunction always evaluates to false: nlefto || nstartedfw &amp;&amp; !(nblockfw). Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="738" column="14"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="676" column="53" info="&apos;nstartedfw&apos; is assigned value &apos;0&apos; here."/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/lib/relocator.c" line="676" column="67" info="&apos;nblockfw&apos; is assigned value &apos;0&apos; here."/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;align&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;align&apos;." cwe="190" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/i386/linux.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/i386/linux.c" line="1080" column="50" info="Integer overflow"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/i386/linux.c" line="1079" column="29" info="Assuming that condition &apos;align&lt;32&apos; is not redundant"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: *root" verbose="Uninitialized variable: *root" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/linux.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/linux.c" line="117" column="18"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/loader/linux.c" line="114" column="11" info="Assuming condition is false"/>
+            <symbol>*root</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!port&apos; is redundant or there is possible null pointer dereference: port." verbose="Either the condition &apos;!port&apos; is redundant or there is possible null pointer dereference: port." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/term/serial.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/term/serial.c" line="151" column="22" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/term/serial.c" line="170" column="7" info="Assuming that condition &apos;!port&apos; is not redundant"/>
+            <symbol>port</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: r-&gt;m_num_bits" verbose="Uninitialized variable: r-&gt;m_num_bits" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1139" column="17"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1137" column="53" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1430" column="29" info="Calling function &apos;tinfl_decompress&apos;, 1st argument &apos;&amp;decomp&apos; value is &lt;Uninit&gt;"/>
+            <symbol>r-&gt;m_num_bits</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1153" column="5"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1156" column="7"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1157" column="65"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1161" column="9"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1198" column="53"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1199" column="124"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1199" column="217"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1231" column="24"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1236" column="49"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1253" column="13"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1302" column="46"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: extra_bits" verbose="Uninitialized variable: extra_bits" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1302" column="100"/>
+            <symbol>extra_bits</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1304" column="9"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1306" column="46"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: extra_bits" verbose="Uninitialized variable: extra_bits" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1306" column="97"/>
+            <symbol>extra_bits</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: c" verbose="Uninitialized variable: c" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/miniz.c" line="1367" column="5"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;readchk[0]==0&apos; and inner condition is &apos;readchk[0]==0&apos;)." cwe="398" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="6627" column="32" info="identical inner condition: readchk[0]==0"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="6619" column="24" info="outer condition: readchk[0]==0"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="2117" column="13" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="2112" column="17" info="Assuming that condition &apos;node&apos; is not redundant"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &apos;node&apos; is redundant or there is possible null pointer dereference: node." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="2118" column="19" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_cmd.c" line="2112" column="17" info="Assuming that condition &apos;node&apos; is not redundant"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;persistent_buf&apos; and inner condition is &apos;persistent_buf&apos;)." cwe="398" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_linux.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_linux.c" line="1489" column="9" info="identical inner condition: persistent_buf"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_linux.c" line="1485" column="32" info="outer condition: persistent_buf"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: fe_entry_size_offset" verbose="Uninitialized variable: fe_entry_size_offset" cwe="457" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_windows.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_windows.c" line="509" column="38"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/grub-core/ventoy/ventoy_windows.c" line="483" column="48" info="Assuming condition is true"/>
+            <symbol>fe_entry_size_offset</symbol>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;r&lt;0&apos; is redundant or the array &apos;buf[8192]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;r&lt;0&apos; is redundant or the array &apos;buf[8192]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install-common.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install-common.c" line="946" column="6" info="Negative array index"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install-common.c" line="943" column="9" info="Assuming that condition &apos;r&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!flf&apos; is redundant or there is possible null pointer dereference: flf." verbose="Either the condition &apos;!flf&apos; is redundant or there is possible null pointer dereference: flf." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1425" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1423" column="12" info="Assuming that condition &apos;!flf&apos; is not redundant"/>
+            <symbol>flf</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." verbose="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1790" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1788" column="8" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." verbose="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1890" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-install.c" line="1888" column="8" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SUFFIX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SUFFIX is a macro then please configure it." file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkimagexx.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkimagexx.c" line="209" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." verbose="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="136" column="16" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="133" column="11" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." verbose="Either the condition &apos;!f&apos; is redundant or there is possible null pointer dereference: f." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="137" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="133" column="11" info="Assuming that condition &apos;!f&apos; is not redundant"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!cfg&apos; is redundant or there is possible null pointer dereference: cfg." verbose="Either the condition &apos;!cfg&apos; is redundant or there is possible null pointer dereference: cfg." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="154" column="12" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="151" column="7" info="Assuming that condition &apos;!cfg&apos; is not redundant"/>
+            <symbol>cfg</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!cfg&apos; is redundant or there is possible null pointer dereference: cfg." verbose="Either the condition &apos;!cfg&apos; is redundant or there is possible null pointer dereference: cfg." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="155" column="11" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mknetdir.c" line="151" column="7" info="Assuming that condition &apos;!cfg&apos; is not redundant"/>
+            <symbol>cfg</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!bi&apos; is redundant or there is possible null pointer dereference: bi." verbose="Either the condition &apos;!bi&apos; is redundant or there is possible null pointer dereference: bi." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c" line="634" column="32" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c" line="631" column="12" info="Assuming that condition &apos;!bi&apos; is not redundant"/>
+            <symbol>bi</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!out&apos; is redundant or there is possible null pointer dereference: out." verbose="Either the condition &apos;!out&apos; is redundant or there is possible null pointer dereference: out." cwe="476" file0="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c">
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c" line="893" column="28" info="Null pointer dereference"/>
+            <location file="/workspace/GRUB2/MOD_SRC/grub-2.04/util/grub-mkrescue.c" line="889" column="11" info="Assuming that condition &apos;!out&apos; is not redundant"/>
+            <symbol>out</symbol>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;asciiName[7]&apos; accessed at index 35, which is out of bounds." verbose="Array &apos;asciiName[7]&apos; accessed at index 35, which is out of bounds." cwe="788" file0="/workspace/LinuxGUI/Ventoy2Disk/Core/ventoy_util.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Core/ventoy_util.c" line="371" column="28" info="Array index out of bounds"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c" line="615" column="9"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c" line="745" column="9"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;space&apos; to itself." verbose="Redundant assignment of &apos;space&apos; to itself." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/GTK/ventoy_gtk.c" line="685" column="19"/>
+            <symbol>space</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="500" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="502" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="504" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="507" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="509" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_string.c" line="511" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="154" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="158" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="4337" column="2"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="4338" column="37"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="4339" column="2"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="4345" column="3"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="4347" column="3"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ts_before-&gt;tv_nsec" verbose="Uninitialized variable: ts_before-&gt;tv_nsec" cwe="457" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="1883" column="47"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="3990" column="52" info="Calling function &apos;mg_difftimespec&apos;, 2nd argument &apos;&amp;start&apos; value is &lt;Uninit&gt;"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="3904" column="14" info="Assuming condition is false"/>
+            <symbol>ts_before-&gt;tv_nsec</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." verbose="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." cwe="476" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="12328" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="12331" column="3" info="Assuming that condition &apos;sp&apos; is not redundant"/>
+            <symbol>sp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." verbose="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." cwe="476" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="12487" column="49" info="Null pointer dereference"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="12489" column="3" info="Assuming that condition &apos;sp&apos; is not redundant"/>
+            <symbol>sp</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;memory&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;memory&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="656" column="41" info="Null pointer subtraction"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="659" column="6" info="Assuming that condition &apos;memory&apos; is not redundant"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/Lib/xz-embedded/linux/lib/xz/xz_dec_bcj.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/xz-embedded/linux/lib/xz/xz_dec_bcj.c" line="350" column="2"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyQThread::m_secureboot&apos; is not initialized in the constructor." verbose="Member variable &apos;MyQThread::m_secureboot&apos; is not initialized in the constructor." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/QT/ventoy2diskwindow.cpp">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/QT/ventoy2diskwindow.cpp" line="16" column="12"/>
+            <symbol>MyQThread::m_secureboot</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyQThread::m_align4K&apos; is not initialized in the constructor." verbose="Member variable &apos;MyQThread::m_align4K&apos; is not initialized in the constructor." cwe="398" file0="/workspace/LinuxGUI/Ventoy2Disk/QT/ventoy2diskwindow.cpp">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/QT/ventoy2diskwindow.cpp" line="16" column="12"/>
+            <symbol>MyQThread::m_align4K</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: format" verbose="Uninitialized variable: format" cwe="457" file0="/workspace/LinuxGUI/Ventoy2Disk/ventoy_gui.c">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/ventoy_gui.c" line="845" column="9"/>
+            <symbol>format</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dwSize" verbose="Uninitialized variable: dwSize" cwe="457" file0="/workspace/Plugson/src/Core/ventoy_util_windows.c">
+            <location file="/workspace/Plugson/src/Core/ventoy_util_windows.c" line="288" column="19"/>
+            <location file="/workspace/Plugson/src/Core/ventoy_util_windows.c" line="276" column="16" info="Assuming condition is false"/>
+            <symbol>dwSize</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="500" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="502" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="504" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="507" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="509" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_string.c" line="511" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="154" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c">
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="158" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/Plugson/src/Lib/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4351" column="2"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4352" column="37"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4353" column="2"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4359" column="3"/>
+        </error>
+        <error id="va_list_usedBeforeStarted" severity="error" msg="va_list &apos;ap_copy&apos; used before va_start() was called." verbose="va_list &apos;ap_copy&apos; used before va_start() was called." cwe="664" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4361" column="3"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;path&apos; is redundant or there is possible null pointer dereference: src." verbose="Either the condition &apos;path&apos; is redundant or there is possible null pointer dereference: src." cwe="476" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="1572" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="2865" column="18" info="Calling function &apos;mg_strlcpy&apos;, 2nd argument &apos;path&apos; value is 0"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="3034" column="24" info="Calling function &apos;path_to_unicode&apos;, 2nd argument &apos;path&apos; value is 0"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="3027" column="9" info="Assuming that condition &apos;path&apos; is not redundant"/>
+            <symbol>src</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ts_before-&gt;tv_nsec" verbose="Uninitialized variable: ts_before-&gt;tv_nsec" cwe="457" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="1883" column="47"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4004" column="52" info="Calling function &apos;mg_difftimespec&apos;, 2nd argument &apos;&amp;start&apos; value is &lt;Uninit&gt;"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="3918" column="14" info="Assuming condition is false"/>
+            <symbol>ts_before-&gt;tv_nsec</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." verbose="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." cwe="476" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="12342" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="12345" column="3" info="Assuming that condition &apos;sp&apos; is not redundant"/>
+            <symbol>sp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." verbose="Either the condition &apos;sp&apos; is redundant or there is possible null pointer dereference: sp." cwe="476" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="12501" column="49" info="Null pointer dereference"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="12503" column="3" info="Assuming that condition &apos;sp&apos; is not redundant"/>
+            <symbol>sp</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;memory&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;memory&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="656" column="41" info="Null pointer subtraction"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="659" column="6" info="Assuming that condition &apos;memory&apos; is not redundant"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/Plugson/src/Lib/xz-embedded/linux/lib/xz/xz_dec_bcj.c">
+            <location file="/workspace/Plugson/src/Lib/xz-embedded/linux/lib/xz/xz_dec_bcj.c" line="350" column="2"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &apos;node&apos; used instead of size of its data." verbose="Size of pointer &apos;node&apos; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &apos;sizeof(*node)&apos;." cwe="467" file0="/workspace/Plugson/src/Web/ventoy_http.c">
+            <location file="/workspace/Plugson/src/Web/ventoy_http.c" line="205" column="23"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;err&apos;, return value is always 0" verbose="Identical condition and return expression &apos;err&apos;, return value is always 0" cwe="398" file0="/workspace/SQUASHFS/squashfs-tools-4.4/kernel/kernel-2.6/fs/squashfs/inode.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/kernel/kernel-2.6/fs/squashfs/inode.c" line="75" column="9" info="Returning identical expression &apos;err&apos;"/>
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/kernel/kernel-2.6/fs/squashfs/inode.c" line="65" column="6" info="If condition &apos;err&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;argv&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;argv&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c" line="328" column="3"/>
+            <symbol>argv</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;argv&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;argv&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c" line="499" column="3"/>
+            <symbol>argv</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;spec_list&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;spec_list&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c" line="579" column="3"/>
+            <symbol>spec_list</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;expr_msg&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;expr_msg&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c" line="642" column="3"/>
+            <symbol>expr_msg</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;buffer&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;buffer&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/action.c" line="2560" column="3"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4981" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4983" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4986" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4988" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4992" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4994" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5003" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5012" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5013" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5018" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5023" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="5028" column="4"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;subpath&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;subpath&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="848" column="4"/>
+            <symbol>subpath</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;block_list&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;block_list&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="2646" column="4"/>
+            <symbol>block_list</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;b_buffer&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;b_buffer&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="3046" column="3"/>
+            <symbol>b_buffer</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;exclude_paths&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;exclude_paths&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4247" column="3"/>
+            <symbol>exclude_paths</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;exclude_paths&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;exclude_paths&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4265" column="3"/>
+            <symbol>exclude_paths</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;old_root_entry&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;old_root_entry&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="4274" column="2"/>
+            <symbol>old_root_entry</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;fragment_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;fragment_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="6217" column="4"/>
+            <symbol>fragment_table</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: cur" verbose="Possible null pointer dereference: cur" cwe="476" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="3982" column="3" info="Null pointer dereference"/>
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="3936" column="9" info="Assuming condition is false"/>
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/mksquashfs.c" line="3928" column="9" info="Assignment &apos;cur=NULL&apos;, assigned value is 0"/>
+            <symbol>cur</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;pseudo_file&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;pseudo_file&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/pseudo.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/pseudo.c" line="255" column="2"/>
+            <symbol>pseudo_file</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;line&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;line&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_file.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_file.c" line="65" column="5"/>
+            <symbol>line</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c" line="605" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c" line="606" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c" line="607" column="2"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;inode_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;inode_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_fs.c" line="146" column="4"/>
+            <symbol>inode_table</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;xattrs&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;xattrs&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_xattrs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_xattrs.c" line="267" column="3"/>
+            <symbol>xattrs</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;xattr_list&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;xattr_list&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_xattrs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/read_xattrs.c" line="379" column="4"/>
+            <symbol>xattr_list</symbol>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;block_size&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;block_size&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquash-1.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquash-1.c" line="43" column="4"/>
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquash-1.c" line="43" column="4" info="Address of variable taken here."/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;signed long long&apos;." verbose="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;signed long long&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1825" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1851" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1898" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1900" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1905" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1906" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 3) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 3) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="2758" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="3128" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="3128" column="4"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;inode_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;inode_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="875" column="4"/>
+            <symbol>inode_table</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;directory_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;directory_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/unsquashfs.c" line="1353" column="4"/>
+            <symbol>directory_table</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;xattr_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;xattr_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c" line="256" column="4"/>
+            <symbol>xattr_table</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;data_cache&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;data_cache&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c" line="280" column="4"/>
+            <symbol>data_cache</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;xattr_id_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;xattr_id_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c" line="396" column="2"/>
+            <symbol>xattr_id_table</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;xattr_table&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;xattr_table&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c">
+            <location file="/workspace/SQUASHFS/squashfs-tools-4.4/squashfs-tools/xattr.c" line="439" column="4"/>
+            <symbol>xattr_table</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: ep" verbose="Uninitialized variable: ep" cwe="457" file0="/workspace/Unix/ventoy_unix_src/DragonFly/mount_tmpfs.c">
+            <location file="/workspace/Unix/ventoy_unix_src/DragonFly/mount_tmpfs.c" line="302" column="26"/>
+            <symbol>ep</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;signed long long&apos;." verbose="%llu in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;signed long long&apos;." cwe="686" file0="/workspace/VBLADE/vblade-master/aoe.c">
+            <location file="/workspace/VBLADE/vblade-master/aoe.c" line="718" column="4"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: n" verbose="Uninitialized variable: n" cwe="457" file0="/workspace/VBLADE/vblade-master/config/u64.c">
+            <location file="/workspace/VBLADE/vblade-master/config/u64.c" line="6" column="23"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/DiskService_vds.c" line="1282" column="8"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="457" file0="/workspace/Ventoy2Disk/Ventoy2Disk/Utility.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/Utility.c" line="536" column="5"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: Value" verbose="Uninitialized variable: Value" cwe="457" file0="/workspace/Ventoy2Disk/Ventoy2Disk/Utility.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/Utility.c" line="1175" column="72"/>
+            <symbol>Value</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/Ventoy2Disk/Ventoy2Disk/WinDialog.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/WinDialog.c" line="728" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c" line="391" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c" line="392" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_access.c" line="393" column="5"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="500" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="502" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="504" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="507" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="509" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_string.c" line="511" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="154" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="158" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/Ventoy2Disk/Ventoy2Disk/xz-embedded-20130513/linux/lib/xz/xz_dec_bcj.c">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/xz-embedded-20130513/linux/lib/xz/xz_dec_bcj.c" line="350" column="2"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/Vlnk/src/crc32.c">
+            <location file="/workspace/Vlnk/src/crc32.c" line="54" column="35" info="Integer overflow"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;ttm" verbose="Uninitialized variable: &amp;ttm" cwe="457" file0="/workspace/Vlnk/src/main_windows.c">
+            <location file="/workspace/Vlnk/src/main_windows.c" line="116" column="17"/>
+            <symbol>&amp;ttm</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dwSize" verbose="Uninitialized variable: dwSize" cwe="457" file0="/workspace/Vlnk/src/main_windows.c">
+            <location file="/workspace/Vlnk/src/main_windows.c" line="220" column="19"/>
+            <location file="/workspace/Vlnk/src/main_windows.c" line="208" column="16" info="Assuming condition is false"/>
+            <symbol>dwSize</symbol>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;ulErrCode&gt;((unsigned int)(sizeof(g_aszErrMsg)/sizeof((g_aszErrMsg)[0])))&apos; is redundant or the array &apos;g_aszErrMsg[13]&apos; is accessed at index 13, which is out of bounds." verbose="Either the condition &apos;ulErrCode&gt;((unsigned int)(sizeof(g_aszErrMsg)/sizeof((g_aszErrMsg)[0])))&apos; is redundant or the array &apos;g_aszErrMsg[13]&apos; is accessed at index 13, which is out of bounds." cwe="788" file0="/workspace/VtoyTool/BabyISO/biso.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="66" column="23" info="Array index out of bounds"/>
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="61" column="19" info="Assuming that condition &apos;ulErrCode&gt;((unsigned int)(sizeof(g_aszErrMsg)/sizeof((g_aszErrMsg)[0])))&apos; is not redundant"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;&apos;/&apos;==pcFullPath[0]&apos;, second condition is always false" verbose="Identical condition &apos;&apos;/&apos;==pcFullPath[0]&apos;, second condition is always false" cwe="398" file0="/workspace/VtoyTool/BabyISO/biso.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="458" column="68" info="Testing identical condition &apos;&apos;/&apos;==pcFullPath[0]&apos;"/>
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="450" column="13" info="If condition &apos;&apos;/&apos;==pcFullPath[0]&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(void*)0!=pstCurDir&apos; is redundant or there is possible null pointer dereference: pstCurDir." verbose="Either the condition &apos;(void*)0!=pstCurDir&apos; is redundant or there is possible null pointer dereference: pstCurDir." cwe="476" file0="/workspace/VtoyTool/BabyISO/biso.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="543" column="22" info="Null pointer dereference"/>
+            <location file="/workspace/VtoyTool/BabyISO/biso.c" line="495" column="65" info="Assuming that condition &apos;(void*)0!=pstCurDir&apos; is not redundant"/>
+            <symbol>pstCurDir</symbol>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;pstParser-&gt;pstBVD-&gt;uiBootCatlogStart&apos; to itself." verbose="Redundant assignment of &apos;pstParser-&gt;pstBVD-&gt;uiBootCatlogStart&apos; to itself." cwe="398" file0="/workspace/VtoyTool/BabyISO/biso_9660.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso_9660.c" line="199" column="54"/>
+            <symbol>pstParser-&gt;pstBVD-&gt;uiBootCatlogStart</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/VtoyTool/BabyISO/biso_eltorito.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso_eltorito.c" line="68" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/VtoyTool/BabyISO/biso_eltorito.c">
+            <location file="/workspace/VtoyTool/BabyISO/biso_eltorito.c" line="81" column="13"/>
+        </error>
+        <error id="resourceLeak" severity="error" msg="Resource leak: fp" verbose="Resource leak: fp" cwe="775" file0="/workspace/VtoyTool/vtoykmod.c">
+            <location file="/workspace/VtoyTool/vtoykmod.c" line="242" column="9"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoycli/fat_io_lib/release/fat_access.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_access.c" line="391" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoycli/fat_io_lib/release/fat_access.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_access.c" line="392" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoycli/fat_io_lib/release/fat_access.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_access.c" line="393" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoycli/fat_io_lib/release/fat_filelib.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_filelib.c" line="1496" column="17"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoycli/fat_io_lib/release/fat_misc.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_misc.c" line="468" column="5"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="500" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="502" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="504" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="507" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="509" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoycli/fat_io_lib/release/fat_string.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_string.c" line="511" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/vtoycli/fat_io_lib/release/fat_table.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="154" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/vtoycli/fat_io_lib/release/fat_table.c">
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="158" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/vtoycli/fat_io_lib/release/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="54" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="55" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="56" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="57" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="60" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="96" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="97" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lx in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lx in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoycli/vtoygpt.c">
+            <location file="/workspace/vtoycli/vtoygpt.c" line="98" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="152" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="153" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="154" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="155" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="158" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="194" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="195" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lx in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lx in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/vtoygpt/vtoygpt.c">
+            <location file="/workspace/vtoygpt/vtoygpt.c" line="196" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c" line="391" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c" line="392" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_access.c" line="393" column="5"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="500" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="502" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_get_extension&apos;." verbose="Non-pure function: &apos;fatfs_get_extension&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="504" column="12"/>
+            <symbol>fatfs_get_extension</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="507" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="509" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;fatfs_create_path_string&apos;." verbose="Non-pure function: &apos;fatfs_create_path_string&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_string.c" line="511" column="12"/>
+            <symbol>fatfs_create_path_string</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="154" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pcur" verbose="Possible null pointer dereference: pcur" cwe="476" file0="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c">
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="158" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="151" column="10" info="pcur is assigned &apos;last&apos; here."/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="122" column="12" info="Assuming condition is false"/>
+            <location file="/workspace/vtoyjump/vtoyjump/fat_io_lib/fat_table.c" line="118" column="31" info="Assignment &apos;last=0&apos;, assigned value is 0"/>
+            <symbol>pcur</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Redundant code: Found a statement that begins with numeric constant." verbose="Redundant code: Found a statement that begins with numeric constant." cwe="398" file0="/workspace/vtoyjump/vtoyjump/vtoyjump.c">
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="970" column="9"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dwSize" verbose="Uninitialized variable: dwSize" cwe="457" file0="/workspace/vtoyjump/vtoyjump/vtoyjump.c">
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="605" column="19"/>
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="593" column="16" info="Assuming condition is false"/>
+            <symbol>dwSize</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dwSize" verbose="Uninitialized variable: dwSize" cwe="457" file0="/workspace/vtoyjump/vtoyjump/vtoyjump.c">
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="1288" column="19"/>
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="1276" column="16" info="Assuming condition is false"/>
+            <symbol>dwSize</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: Value" verbose="Uninitialized variable: Value" cwe="457" file0="/workspace/vtoyjump/vtoyjump/vtoyjump.c">
+            <location file="/workspace/vtoyjump/vtoyjump/vtoyjump.c" line="1704" column="72"/>
+            <symbol>Value</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/vtoyjump/vtoyjump/xz-embedded-20130513/linux/lib/xz/xz_dec_bcj.c">
+            <location file="/workspace/vtoyjump/vtoyjump/xz-embedded-20130513/linux/lib/xz/xz_dec_bcj.c" line="350" column="2"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/wimboot/wimboot-2.7.3/src/coverity-model.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/coverity-model.c" line="13" column="1"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/wimboot/wimboot-2.7.3/src/coverity-model.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/coverity-model.c" line="15" column="1"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/huffman.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/huffman.c" line="75" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/huffman.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/huffman.c" line="145" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="78" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="78" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="78" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 4) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 4) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="78" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="140" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="140" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="140" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 4) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 4) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/int13.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/int13.c" line="140" column="2"/>
+        </error>
+        <error id="objectIndex" severity="warning" msg="The address of local variable &apos;data&apos; might be accessed at non-zero index." verbose="The address of local variable &apos;data&apos; might be accessed at non-zero index." cwe="758" file0="/workspace/wimboot/wimboot-2.7.3/src/lzx.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/lzx.c" line="565" column="8"/>
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/lzx.c" line="563" column="10" info="Address of variable taken here."/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/main.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/main.c" line="486" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/memmap.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/memmap.c" line="85" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/memmap.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/memmap.c" line="85" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/memmap.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/memmap.c" line="85" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/vdisk.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/vdisk.c" line="542" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="98" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="124" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="187" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="187" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 1) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="235" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="314" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="356" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wim.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wim.c" line="367" column="2"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="257" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="257" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 2) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="262" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="262" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 2) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="267" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 3) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="267" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%llx in format string (no. 3) requires &apos;unsigned long long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c">
+            <location file="/workspace/wimboot/wimboot-2.7.3/src/wimpatch.c" line="430" column="2"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: src" verbose="Null pointer dereference: src" cwe="476">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="1572" column="10" info="Dereferencing argument src that is null"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="2865" column="2" info="Calling function mg_strlcpy, 2nd argument is null"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="3034" column="17" info="Calling function path_to_unicode, 2nd argument is null"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="3027" column="9" info="Assuming that condition &apos;path&apos; is not redundant"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument ts_before that points at uninitialized variable start" verbose="Using argument ts_before that points at uninitialized variable start" cwe="457">
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="1883" column="36" info="Using argument ts_before"/>
+            <location file="/workspace/LinuxGUI/Ventoy2Disk/Lib/libhttp/include/civetweb.c" line="3990" column="45" info="Calling function mg_difftimespec, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument ts_before that points at uninitialized variable start" verbose="Using argument ts_before that points at uninitialized variable start" cwe="457">
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="1883" column="36" info="Using argument ts_before"/>
+            <location file="/workspace/Plugson/src/Lib/libhttp/include/civetweb.c" line="4004" column="45" info="Calling function mg_difftimespec, 2nd argument is uninitialized"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument dp that points at uninitialized variable dj" verbose="Using argument dp that points at uninitialized variable dj" cwe="457">
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/ff14/source/ff.c" line="1719" column="14" info="Using argument dp"/>
+            <location file="/workspace/Ventoy2Disk/Ventoy2Disk/ff14/source/ff.c" line="5324" column="16" info="Calling function dir_sdi, 1st argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

@@ -1,0 +1,1241 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/SimpleFS.h",
+        "line": 50,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/SimpleFS.h",
+        "line": 50,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/Win32/dirent.c",
+        "line": 55,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/Win32/dirent.c",
+        "line": 55,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "tools/depends/native/TexturePacker/src/Win32/dirent.c",
+        "line": 55,
+        "cwe": "CWE-676",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "tools/depends/native/TexturePacker/src/Win32/dirent.c",
+        "line": 55,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-398",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/XBTFWriter.cpp",
+        "line": 50,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-126",
+      "CWE-570"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 40,
+        "cwe": "CWE-570",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 40,
+        "cwe": "CWE-126",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 43,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 43,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 76,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "tools/depends/native/TexturePacker/src/cmdlineargs.h",
+        "line": 76,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 214,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 214,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 304,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 321,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 321,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 328,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 328,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 338,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 338,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 364,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 364,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 432,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp",
+        "line": 432,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-468"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 174,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 174,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 174,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-468"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 178,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 178,
+        "cwe": "CWE-468",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "tools/depends/native/TexturePacker/src/md5.cpp",
+        "line": 178,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "xbmc-xrandr.c",
+        "line": 2915,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "xbmc-xrandr.c",
+        "line": 2915,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 681,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 681,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 18,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 698,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 698,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 709,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 709,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 20,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 798,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/Inputstream.h",
+        "line": 798,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 21,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/VFS.h",
+        "line": 1170,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/VFS.h",
+        "line": 1170,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 22,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/inputstream/StreamCrypto.h",
+        "line": 86,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/addon-instance/inputstream/StreamCrypto.h",
+        "line": 86,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 23,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "addons/kodi-dev-kit/include/kodi/gui/Window.h",
+        "line": 899,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "addons/kodi-dev-kit/include/kodi/gui/Window.h",
+        "line": 899,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 24,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "cores/VideoPlayer/DVDCodecs/Overlay/DVDOverlayCodecSSA.cpp",
+        "line": 74,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "cores/VideoPlayer/DVDCodecs/Overlay/DVDOverlayCodecSSA.cpp",
+        "line": 74,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 25,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "cores/VideoPlayer/VideoPlayerRadioRDS.cpp",
+        "line": 1384,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "cores/VideoPlayer/VideoPlayerRadioRDS.cpp",
+        "line": 1384,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 26,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 245,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 245,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 27,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 246,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 246,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 28,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 262,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 262,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 29,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 263,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "interfaces/legacy/Control.cpp",
+        "line": 263,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 30,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "peripherals/devices/PeripheralCecAdapter.cpp",
+        "line": 1425,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "peripherals/devices/PeripheralCecAdapter.cpp",
+        "line": 1425,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 31,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "peripherals/devices/PeripheralCecAdapter.cpp",
+        "line": 1502,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "peripherals/devices/PeripheralCecAdapter.cpp",
+        "line": 1502,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 32,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "platform/linux/input/LIRC.cpp",
+        "line": 133,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "platform/linux/input/LIRC.cpp",
+        "line": 133,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 33,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "platform/linux/input/LIRC.cpp",
+        "line": 195,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "platform/linux/input/LIRC.cpp",
+        "line": 195,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 34,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-022",
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 367,
+        "cwe": "CWE-022",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 367,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 367,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 35,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-260"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 372,
+        "cwe": "CWE-260",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 372,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 36,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-260"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 446,
+        "cwe": "CWE-260",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "platform/posix/filesystem/SMBFile.cpp",
+        "line": 446,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 37,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-190",
+      "CWE-398"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "pvr/epg/EpgGuidePath.cpp",
+        "line": 34,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "pvr/epg/EpgGuidePath.cpp",
+        "line": 34,
+        "cwe": "CWE-190",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 38,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-078",
+      "CWE-114"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 341,
+        "cwe": "CWE-114",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 341,
+        "cwe": "CWE-078",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 39,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-078",
+      "CWE-114"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 432,
+        "cwe": "CWE-114",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 432,
+        "cwe": "CWE-078",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 40,
+    "rule": "two_out_four_no_cwe",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-078",
+      "CWE-114"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 442,
+        "cwe": "CWE-114",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "windowing/X11/XRandR.cpp",
+        "line": 442,
+        "cwe": "CWE-078",
+        "function": null
+      }
+    ]
+  }
+]

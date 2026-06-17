@@ -1,0 +1,19 @@
+[application/ventoy] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/ventoy
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ventoy
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 3356 findings, exit 0, 3.11s
+[2/4] semgrep completed: 95 findings, exit 0, 17.87s
+[3/4] codeql completed: 157 findings, exit 0, 57.43s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[cppcheck] still running | elapsed 00:10:00 | timeout none
+[4/4] cppcheck completed: 255 findings, exit 0, 666.86s
+
+Summary: 4 completed, 0 failed, 3863 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/ventoy/report.json

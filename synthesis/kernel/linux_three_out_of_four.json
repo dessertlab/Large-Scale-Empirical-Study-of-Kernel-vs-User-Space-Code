@@ -1,0 +1,136 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 138,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 138,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 138,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "arch/s390/tools/gen_opcode_table.c",
+        "line": 158,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-119",
+      "CWE-120"
+    ],
+    "representative_cwe": "CWE-119",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "fs/unicode/mkutf8data.c",
+        "line": 2251,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "cppcheck",
+        "filename": "fs/unicode/mkutf8data.c",
+        "line": 2251,
+        "cwe": "CWE-119",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "fs/unicode/mkutf8data.c",
+        "line": 2251,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

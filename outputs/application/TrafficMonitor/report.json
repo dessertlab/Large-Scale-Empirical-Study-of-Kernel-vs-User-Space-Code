@@ -1,0 +1,1490 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/OpenHardwareMonitorApi/OpenHardwareMonitorImp.cpp",
+      "line": 321,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/PluginDemo/DataManager.cpp",
+      "line": 24,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/PluginDemo/DataManager.cpp",
+      "line": 42,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/PluginDemo/OptionsDlg.cpp",
+      "line": 12,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_DYNAMIC is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/PluginDemo/PluginDemo.cpp",
+      "line": 38,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/TrafficMonitor/AdapterCommon.cpp",
+      "line": 42,
+      "message": "Uninitialized struct member: connection.in_bytes",
+      "rule": "uninitStructMember",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/TrafficMonitor/AdapterCommon.cpp",
+      "line": 42,
+      "message": "Uninitialized struct member: connection.out_bytes",
+      "rule": "uninitStructMember",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/TrafficMonitor/AdapterCommon.cpp",
+      "line": 42,
+      "message": "Uninitialized variables: connection.in_bytes, connection.out_bytes",
+      "rule": "uninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/BaseDialog.cpp",
+      "line": 474,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/CMFCColorDialogEx.h",
+      "line": 18,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/CTabCtrlEx.cpp",
+      "line": 10,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_DYNAMIC is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 5,
+      "message": "Member variable 'CVariant::m_value_double' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 11,
+      "message": "Member variable 'CVariant::m_value_double' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 17,
+      "message": "Member variable 'CVariant::m_value_int' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 23,
+      "message": "Member variable 'CVariant::m_value_int' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 23,
+      "message": "Member variable 'CVariant::m_value_double' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 29,
+      "message": "Member variable 'CVariant::m_value_int' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 29,
+      "message": "Member variable 'CVariant::m_value_double' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 35,
+      "message": "Member variable 'CVariant::m_value_int' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/CVariant.cpp",
+      "line": 35,
+      "message": "Member variable 'CVariant::m_value_double' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/ColorSettingListCtrl.h",
+      "line": 20,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/ComboBox2.cpp",
+      "line": 10,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_DYNAMIC is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 19,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 22,
+      "message": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120).",
+      "rule": "FF1023",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 429,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 441,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 471,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 488,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 513,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 533,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 552,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 668,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 679,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 687,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 698,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/Common.cpp",
+      "line": 745,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/TrafficMonitor/DllFunctions.cpp",
+      "line": 7,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/TrafficMonitor/DllFunctions.h",
+      "line": 22,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/TrafficMonitor/DllFunctions.h",
+      "line": 75,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/DrawTextManager.h",
+      "line": 126,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/GeneralSettingsDlg.cpp",
+      "line": 556,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/TrafficMonitor/HResultException.cpp",
+      "line": 13,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+      "line": 17,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+      "line": 59,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+      "line": 63,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/HistoryTrafficFile.cpp",
+      "line": 67,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/HistoryTrafficListCtrl.h",
+      "line": 30,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/IniHelper.cpp",
+      "line": 152,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/IniHelper.cpp",
+      "line": 361,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/IniHelper.cpp",
+      "line": 362,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/LinkStatic.cpp",
+      "line": 74,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/ListCtrlEx.h",
+      "line": 38,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/NetworkInfoDlg.cpp",
+      "line": 57,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/TrafficMonitor/Nullable.hpp",
+      "line": 88,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-758",
+      "filename": "/workspace/TrafficMonitor/Nullable.hpp",
+      "line": 106,
+      "message": "Found an exit path from function with non-void return type that has missing return statement",
+      "rule": "missingReturn",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/Nullable.hpp",
+      "line": 132,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/Nullable.hpp",
+      "line": 137,
+      "message": "Exception thrown in function declared not to throw exceptions.",
+      "rule": "throwInNoexceptFunction",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/PictureStatic.h",
+      "line": 25,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-829",
+      "filename": "/workspace/TrafficMonitor/PluginManager.cpp",
+      "line": 60,
+      "message": "misc/LoadLibrary:Ensure that the full path to the library is specified, or current directory may be used (CWE-829, CWE-20).",
+      "rule": "FF1058",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/PluginManager.cpp",
+      "line": 245,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/PluginManagerDlg.cpp",
+      "line": 343,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/PluginUpdateHelper.cpp",
+      "line": 24,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/RenderAPISupport.h",
+      "line": 16,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+      "line": 52,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+      "line": 54,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+      "line": 80,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+      "line": 84,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SettingsHelper.cpp",
+      "line": 91,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/SkinDlg.cpp",
+      "line": 183,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 26,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 27,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 28,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 29,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 37,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 38,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 182,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 206,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 207,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 227,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 240,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 241,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 246,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 247,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 251,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/SkinFile.cpp",
+      "line": 252,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/SpinEdit.h",
+      "line": 27,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/StaticEx.h",
+      "line": 41,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/TabDlg.h",
+      "line": 41,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+      "line": 510,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+      "line": 518,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/TaskBarDlgDrawCommon.cpp",
+      "line": 1742,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TaskBarSettingsDlg.cpp",
+      "line": 493,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TaskbarDefaultStyle.cpp",
+      "line": 28,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TaskbarDefaultStyle.cpp",
+      "line": 62,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TaskbarHelper.cpp",
+      "line": 38,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/TrafficMonitor/TaskbarItemOrderHelper.cpp",
+      "line": 47,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/Test.cpp",
+      "line": 44,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 592,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 669,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 715,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 924,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 1337,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 1356,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.cpp",
+      "line": 1378,
+      "message": "shell/ShellExecute:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1043",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/TrafficMonitor/TrafficMonitor.h",
+      "line": 196,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DECLARE_MESSAGE_MAP is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/TrafficMonitor/UpdateHelper.cpp",
+      "line": 88,
+      "message": "Using object that is a temporary.",
+      "rule": "danglingTemporaryLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/TrafficMonitor/UpdateHelper.cpp",
+      "line": 89,
+      "message": "Using object that is a temporary.",
+      "rule": "danglingTemporaryLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/TrafficMonitor/UpdateHelper.cpp",
+      "line": 90,
+      "message": "Using object that is a temporary.",
+      "rule": "danglingTemporaryLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 28,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 58,
+      "message": "buffer/TCHAR:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 175,
+      "message": "buffer/_tcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 179,
+      "message": "buffer/_tcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 194,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/crashtool.cpp",
+      "line": 195,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 63,
+      "message": "format/_snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 65,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 92,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 93,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 96,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 100,
+      "message": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20).",
+      "rule": "FF1021",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 198,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 201,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 215,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 325,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 337,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-686",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 608,
+      "message": "%llu in format string (no. 1) requires 'unsigned long long' but the argument type is 'signed long long'.",
+      "rule": "invalidPrintfArgType_uint",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1412,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1497,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1505,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1513,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1520,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1528,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1535,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1542,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1660,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1668,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1676,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1682,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1690,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1698,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1706,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2261,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2308,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2344,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2345,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2396,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2400,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2444,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2446,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2474,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2546,
+      "message": "format/vfprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2569,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2706,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2714,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2722,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2730,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2738,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2746,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2808,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2816,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2824,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2832,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2840,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2848,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 2856,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 208,
+      "message": "Member variable 'DynArray < XMLNode * , 10 >::_pool' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 208,
+      "message": "Member variable 'DynArray < const char * , 10 >::_pool' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 208,
+      "message": "Member variable 'DynArray < char , 20 >::_pool' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 309,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 413,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 445,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 2338,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 237,
+      "message": "[string read by fread](1) flows an expression which might overflow negatively.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 243,
+      "message": "[string read by fread](1) flows an expression which might overflow negatively.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.cpp",
+      "line": 1912,
+      "message": "[string read by fread](1) flows an expression which might overflow negatively.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 572,
+      "message": "[string read by fread](1) flows an expression which might overflow negatively.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 572,
+      "message": "Call to isspace with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 580,
+      "message": "Call to isalpha with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-020",
+      "filename": "TrafficMonitor/tinyxml2/tinyxml2.h",
+      "line": 588,
+      "message": "Call to isdigit with untrusted data from [string read by fread](1).",
+      "rule": "cpp/untrusted-data-to-external-api-ir",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 180,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 7,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 36,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 137,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/TrafficMonitor/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

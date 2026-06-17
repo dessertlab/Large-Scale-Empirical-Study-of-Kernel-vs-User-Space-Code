@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;key_param==NULL&apos; is redundant or there is possible null pointer dereference: key_param." verbose="Either the condition &apos;key_param==NULL&apos; is redundant or there is possible null pointer dereference: key_param." cwe="476" file0="/workspace/apps/cms.c">
+            <location file="/workspace/apps/cms.c" line="812" column="40" info="Null pointer dereference"/>
+            <location file="/workspace/apps/cms.c" line="797" column="27" info="Assuming that condition &apos;key_param==NULL&apos; is not redundant"/>
+            <symbol>key_param</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/apps/lib/app_provider.c">
+            <location file="/workspace/apps/lib/app_provider.c" line="20" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/apps/lib/apps.c">
+            <location file="/workspace/apps/lib/apps.c" line="68" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." file0="/workspace/apps/lib/cmp_mock_srv.c">
+            <location file="/workspace/crypto/cmp/cmp_local.h" line="155" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/apps/list.c">
+            <location file="/workspace/apps/list.c" line="112" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/apps/openssl.c">
+            <location file="/workspace/apps/openssl.c" line="157" column="1"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #if condition, division/modulo by zero" verbose="failed to evaluate #if condition, division/modulo by zero">
+            <location file="/workspace/apps/openssl.c" line="27" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/apps/speed.c">
+            <location file="/workspace/apps/speed.c" line="1709" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SKM_DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SKM_DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/asn1/a_bitstr.c">
+            <location file="/workspace/crypto/asn1/asn1_local.h" line="18" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/evp_asn1.c">
+            <location file="/workspace/crypto/asn1/evp_asn1.c" line="96" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_ref is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_ref is a macro then please configure it." file0="/workspace/crypto/asn1/n_pkey.c">
+            <location file="/workspace/crypto/asn1/n_pkey.c" line="43" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." file0="/workspace/crypto/asn1/nsseq.c">
+            <location file="/workspace/crypto/asn1/nsseq.c" line="32" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/p5_pbe.c">
+            <location file="/workspace/crypto/asn1/p5_pbe.c" line="22" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/p5_pbev2.c">
+            <location file="/workspace/crypto/asn1/p5_pbev2.c" line="41" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/p5_scrypt.c">
+            <location file="/workspace/crypto/asn1/p5_scrypt.c" line="31" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." file0="/workspace/crypto/asn1/p8_pkey.c">
+            <location file="/workspace/crypto/asn1/p8_pkey.c" line="49" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_ASN1_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_ASN1_TYPE is a macro then please configure it." file0="/workspace/crypto/asn1/tasn_typ.c">
+            <location file="/workspace/crypto/asn1/tasn_typ.c" line="30" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/x_algor.c">
+            <location file="/workspace/crypto/asn1/x_algor.c" line="21" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it." file0="/workspace/crypto/asn1/x_bignum.c">
+            <location file="/workspace/crypto/asn1/x_bignum.c" line="59" column="54"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_ITEM_end is a macro then please configure it." file0="/workspace/crypto/asn1/x_long.c">
+            <location file="/workspace/crypto/asn1/x_long.c" line="43" column="64"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/x_sig.c">
+            <location file="/workspace/crypto/asn1/x_sig.c" line="19" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/x_spki.c">
+            <location file="/workspace/crypto/asn1/x_spki.c" line="18" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/asn1/x_val.c">
+            <location file="/workspace/crypto/asn1/x_val.c" line="18" column="3"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &apos;NULL&apos;. Did you intend to use strcmp() instead?" cwe="595" file0="/workspace/crypto/bio/bio_addr.c">
+            <location file="/workspace/crypto/bio/bio_addr.c" line="832" column="61"/>
+            <symbol>NULL</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;locaddr" verbose="Uninitialized variable: &amp;locaddr" cwe="457" file0="/workspace/crypto/bio/bio_sock2.c">
+            <location file="/workspace/crypto/bio/bio_sock2.c" line="423" column="38"/>
+            <symbol>&amp;locaddr</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to expand &apos;mul_add&apos;, Wrong number of parameters for macro &apos;mul_add&apos;." verbose="failed to expand &apos;mul_add&apos;, Wrong number of parameters for macro &apos;mul_add&apos;.">
+            <location file="/workspace/crypto/bn/bn_asm.c" line="118" column="0"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/crypto/bn/asm/x86_64-gcc.c">
+            <location file="/workspace/crypto/bn/bn_asm.c" line="906" column="15"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/crypto/bn/asm/x86_64-gcc.c">
+            <location file="/workspace/crypto/bn/bn_asm.c" line="1039" column="15"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/crypto/bn/bn_exp.c">
+            <location file="/workspace/crypto/bn/bn_exp.c" line="855" column="14"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;mult&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;mult&apos;." cwe="190" file0="/workspace/crypto/bn/bn_lib.c">
+            <location file="/workspace/crypto/bn/bn_lib.c" line="45" column="26" info="Integer overflow"/>
+            <location file="/workspace/crypto/bn/bn_lib.c" line="43" column="36" info="Assignment &apos;mult=sizeof(int)*8-1&apos;, assigned value is 31"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;high&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;high&apos;." cwe="190" file0="/workspace/crypto/bn/bn_lib.c">
+            <location file="/workspace/crypto/bn/bn_lib.c" line="51" column="31" info="Integer overflow"/>
+            <location file="/workspace/crypto/bn/bn_lib.c" line="49" column="36" info="Assignment &apos;high=sizeof(int)*8-1&apos;, assigned value is 31"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;low&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;low&apos;." cwe="190" file0="/workspace/crypto/bn/bn_lib.c">
+            <location file="/workspace/crypto/bn/bn_lib.c" line="57" column="30" info="Integer overflow"/>
+            <location file="/workspace/crypto/bn/bn_lib.c" line="55" column="35" info="Assignment &apos;low=sizeof(int)*8-1&apos;, assigned value is 31"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;mont&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;mont&apos;." cwe="190" file0="/workspace/crypto/bn/bn_lib.c">
+            <location file="/workspace/crypto/bn/bn_lib.c" line="63" column="31" info="Integer overflow"/>
+            <location file="/workspace/crypto/bn/bn_lib.c" line="61" column="36" info="Assignment &apos;mont=sizeof(int)*8-1&apos;, assigned value is 31"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="440" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -5, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -5, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="440" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="442" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -5, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -5, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="442" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." verbose="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="593" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." verbose="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="595" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." verbose="Array &apos;buf.bn[7]&apos; accessed at index -7, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="599" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="794" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="798" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="817" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="827" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="832" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="837" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[8]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="842" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -8, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -8, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1054" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1082" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1088" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1093" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1104" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." verbose="Array &apos;buf.bn[12]&apos; accessed at index -12, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1109" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[3]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;buf.bn[3]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="440" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[3]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;buf.bn[3]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="442" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="593" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="595" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -3, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="599" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="794" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="798" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="817" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="827" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="832" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="837" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[4]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="842" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -4, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -4, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1054" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1082" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1088" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1093" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1104" column="9" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." verbose="Array &apos;buf.bn[6]&apos; accessed at index -6, which is out of bounds." cwe="786" file0="/workspace/crypto/bn/bn_nist.c">
+            <location file="/workspace/crypto/bn/bn_nist.c" line="1109" column="9" info="Negative array index"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." file0="/workspace/crypto/cms/cms_asn1.c">
+            <location file="/workspace/crypto/cms/cms_local.h" line="398" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/conf/conf_mod.c">
+            <location file="/workspace/crypto/conf/conf_mod.c" line="24" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If HT_START_KEY_DEFN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If HT_START_KEY_DEFN is a macro then please configure it." file0="/workspace/crypto/core_namemap.c">
+            <location file="/workspace/crypto/core_namemap.c" line="20" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_FUNCTIONS is a macro then please configure it." file0="/workspace/crypto/crmf/crmf_asn.c">
+            <location file="/workspace/crypto/crmf/crmf_local.h" line="83" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: d" verbose="Uninitialized variable: d" cwe="457" file0="/workspace/crypto/des/ofb64ede.c">
+            <location file="/workspace/crypto/des/ofb64ede.c" line="42" column="18"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: dp" verbose="Uninitialized variable: dp" cwe="457" file0="/workspace/crypto/des/ofb64ede.c">
+            <location file="/workspace/crypto/des/ofb64ede.c" line="43" column="5"/>
+            <location file="/workspace/crypto/des/ofb64ede.c" line="42" column="10" info="Assignment &apos;dp=(char*)d&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>dp</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: d" verbose="Uninitialized variable: d" cwe="457" file0="/workspace/crypto/des/ofb64enc.c">
+            <location file="/workspace/crypto/des/ofb64enc.c" line="41" column="10"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_cb is a macro then please configure it." file0="/workspace/crypto/dh/dh_asn1.c">
+            <location file="/workspace/crypto/dh/dh_asn1.c" line="54" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_cb is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END_cb is a macro then please configure it." file0="/workspace/crypto/dsa/dsa_asn1.c">
+            <location file="/workspace/crypto/dsa/dsa_asn1.c" line="48" column="3"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;i==64&apos; is redundant or the array &apos;lpProcName[13]&apos; is accessed at index 64, which is out of bounds." verbose="Either the condition &apos;i==64&apos; is redundant or the array &apos;lpProcName[13]&apos; is accessed at index 64, which is out of bounds." cwe="788" file0="/workspace/crypto/dso/dso_win32.c">
+            <location file="/workspace/crypto/dso/dso_win32.c" line="22" column="27" info="Array index out of bounds"/>
+            <location file="/workspace/crypto/dso/dso_win32.c" line="24" column="11" info="Assuming that condition &apos;i==64&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;lpProcName[13]&apos; accessed at index 63, which is out of bounds." verbose="Array &apos;lpProcName[13]&apos; accessed at index 63, which is out of bounds." cwe="788" file0="/workspace/crypto/dso/dso_win32.c">
+            <location file="/workspace/crypto/dso/dso_win32.c" line="23" column="43" info="Array index out of bounds"/>
+        </error>
+        <error id="allocaCalled" severity="warning" msg="Obsolete function &apos;alloca&apos; called. In C99 and later it is recommended to use a variable length array instead." verbose="The obsolete function &apos;alloca&apos; is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function &apos;alloca&apos; is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca)." file0="/workspace/crypto/dso/dso_win32.c">
+            <location file="/workspace/crypto/dso/dso_win32.c" line="42" column="22"/>
+            <symbol>alloca</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: b-&gt;n" verbose="Uninitialized variable: b-&gt;n" cwe="457" file0="/workspace/crypto/ec/curve448/curve448.c">
+            <location file="/workspace/crypto/ec/curve448/curve448.c" line="96" column="15"/>
+            <location file="/workspace/crypto/ec/curve448/curve448.c" line="623" column="18" info="Calling function &apos;pt_to_pniels&apos;, 1st argument &apos;twop&apos; value is &lt;Uninit&gt;"/>
+            <location file="/workspace/crypto/ec/curve448/curve448.c" line="619" column="15" info="Assuming condition is false"/>
+            <symbol>b-&gt;n</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/ec/ec_asn1.c">
+            <location file="/workspace/crypto/ec/ec_asn1.c" line="106" column="3"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dgst!=NULL&apos; is redundant or there is possible null pointer dereference: dgst." verbose="Either the condition &apos;dgst!=NULL&apos; is redundant or there is possible null pointer dereference: dgst." cwe="476" file0="/workspace/crypto/ec/ecp_s390x_nistp.c">
+            <location file="/workspace/crypto/ec/ecp_s390x_nistp.c" line="197" column="44" info="Null pointer dereference"/>
+            <location file="/workspace/crypto/ec/ecp_s390x_nistp.c" line="225" column="22" info="Assuming that condition &apos;dgst!=NULL&apos; is not redundant"/>
+            <symbol>dgst</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/encode_decode/decoder_lib.c">
+            <location file="/workspace/crypto/encode_decode/encoder_local.h" line="68" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/ess/ess_asn1.c">
+            <location file="/workspace/crypto/ess/ess_asn1.c" line="22" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/evp/asymcipher.c">
+            <location file="/workspace/crypto/evp/evp_local.h" line="297" column="1"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/crypto/evp/ctrl_params_translate.c">
+            <location file="/workspace/crypto/evp/ctrl_params_translate.c" line="1166" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_BLOCK_CIPHER is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_BLOCK_CIPHER is a macro then please configure it." file0="/workspace/crypto/evp/e_aria.c">
+            <location file="/workspace/crypto/evp/e_aria.c" line="16" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If BLOCK_CIPHER_defs is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If BLOCK_CIPHER_defs is a macro then please configure it." file0="/workspace/crypto/evp/e_des.c">
+            <location file="/workspace/crypto/evp/e_des.c" line="15" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If BLOCK_CIPHER_defs is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If BLOCK_CIPHER_defs is a macro then please configure it." file0="/workspace/crypto/evp/e_des3.c">
+            <location file="/workspace/crypto/evp/e_des3.c" line="15" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_BLOCK_CIPHER is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_BLOCK_CIPHER is a macro then please configure it." file0="/workspace/crypto/evp/e_rc2.c">
+            <location file="/workspace/crypto/evp/e_rc2.c" line="15" column="1"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;mdname!=NULL&apos; and inner condition is &apos;mdname!=NULL&apos;)." cwe="398" file0="/workspace/crypto/hpke/hpke_util.c">
+            <location file="/workspace/crypto/hpke/hpke_util.c" line="409" column="20" info="identical inner condition: mdname!=NULL"/>
+            <location file="/workspace/crypto/hpke/hpke_util.c" line="406" column="32" info="outer condition: mdname!=NULL"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF is a macro then please configure it." file0="/workspace/crypto/initthread.c">
+            <location file="/workspace/crypto/initthread.c" line="47" column="1"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tmp_endptr" verbose="Uninitialized variable: &amp;tmp_endptr" cwe="457" file0="/workspace/crypto/o_str.c">
+            <location file="/workspace/crypto/o_str.c" line="131" column="47"/>
+            <symbol>&amp;tmp_endptr</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/objects/o_names.c">
+            <location file="/workspace/crypto/objects/obj_local.h" line="23" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/objects/obj_xref.c">
+            <location file="/workspace/crypto/objects/obj_xref.h" line="26" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/ocsp/ocsp_asn.c">
+            <location file="/workspace/crypto/ocsp/ocsp_asn.c" line="19" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF_CONST is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF_CONST is a macro then please configure it." file0="/workspace/crypto/param_build_set.c">
+            <location file="/workspace/crypto/param_build_set.c" line="20" column="1"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (4.29497e+09) to integer conversion overflow." verbose="Undefined behaviour: float (4.29497e+09) to integer conversion overflow." cwe="190" file0="/workspace/crypto/params.c">
+            <location file="/workspace/crypto/params.c" line="1274" column="40" info="float to integer conversion"/>
+            <location file="/workspace/crypto/params.c" line="1272" column="33" info="Assuming that condition &apos;val&lt;d_pow_32&apos; is not redundant"/>
+            <location file="/workspace/crypto/params.c" line="1234" column="33" info="Assignment &apos;d_pow_32=2.0*((double)(((uint32_t)1)&lt;&lt;31))&apos;, assigned value is 4294967296.0"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (1.84467e+19) to integer conversion overflow." verbose="Undefined behaviour: float (1.84467e+19) to integer conversion overflow." cwe="190" file0="/workspace/crypto/params.c">
+            <location file="/workspace/crypto/params.c" line="1282" column="40" info="float to integer conversion"/>
+            <location file="/workspace/crypto/params.c" line="1280" column="33" info="Assuming that condition &apos;val&lt;d_pow_64&apos; is not redundant"/>
+            <location file="/workspace/crypto/params.c" line="1236" column="44" info="Assignment &apos;d_pow_64=4.0*((double)(((uint32_t)1)&lt;&lt;31))*((double)(((uint32_t)1)&lt;&lt;31))&apos;, assigned value is 1.84467440737e+19"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it." file0="/workspace/crypto/pem/pem_all.c">
+            <location file="/workspace/crypto/pem/pem_all.c" line="37" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_PEM_rw is a macro then please configure it." file0="/workspace/crypto/pem/pem_pk8.c">
+            <location file="/workspace/crypto/pem/pem_pk8.c" line="268" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/pkcs12/p12_asn.c">
+            <location file="/workspace/crypto/pkcs12/p12_asn.c" line="23" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_NDEF_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_NDEF_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/pkcs7/pk7_asn1.c">
+            <location file="/workspace/crypto/pkcs7/pk7_asn1.c" line="131" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/property/property.c">
+            <location file="/workspace/crypto/property/property.c" line="92" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/property/property_parse.c">
+            <location file="/workspace/crypto/property/property_parse.c" line="23" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/provider.c">
+            <location file="/workspace/crypto/provider_local.h" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/rsa/rsa_asn1.c">
+            <location file="/workspace/crypto/rsa/rsa_asn1.c" line="55" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/rsa/rsa_backend.c">
+            <location file="/workspace/crypto/rsa/rsa_backend.c" line="36" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/rsa/rsa_gen.c">
+            <location file="/workspace/crypto/rsa/rsa_gen.c" line="82" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/rsa/rsa_lib.c">
+            <location file="/workspace/crypto/rsa/rsa_lib.c" line="720" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/sm2/sm2_crypt.c">
+            <location file="/workspace/crypto/sm2/sm2_crypt.c" line="43" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it." file0="/workspace/crypto/stack/stack.c">
+            <location file="/workspace/crypto/stack/stack.c" line="18" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/ts/ts_asn1.c">
+            <location file="/workspace/crypto/ts/ts_asn1.c" line="18" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF_CONST is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF_CONST is a macro then please configure it." file0="/workspace/crypto/ts/ts_rsp_sign.c">
+            <location file="/workspace/crypto/ts/ts_rsp_sign.c" line="22" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/crypto/x509/by_dir.c">
+            <location file="/workspace/crypto/x509/x509_local.h" line="184" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_CHOICE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_CHOICE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_aaa.c">
+            <location file="/workspace/crypto/x509/v3_aaa.c" line="21" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_admis.c">
+            <location file="/workspace/crypto/x509/v3_admis.c" line="46" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_akeya.c">
+            <location file="/workspace/crypto/x509/v3_akeya.c" line="21" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_attrdesc.c">
+            <location file="/workspace/crypto/x509/v3_attrdesc.c" line="41" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_attrmap.c">
+            <location file="/workspace/crypto/x509/v3_attrmap.c" line="18" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_ITEM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_ITEM is a macro then please configure it." file0="/workspace/crypto/x509/v3_authattid.c">
+            <location file="/workspace/crypto/x509/v3_authattid.c" line="19" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." file0="/workspace/crypto/x509/v3_extku.c">
+            <location file="/workspace/crypto/x509/v3_extku.c" line="71" column="42"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_genn.c">
+            <location file="/workspace/crypto/x509/v3_genn.c" line="20" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_info.c">
+            <location file="/workspace/crypto/x509/v3_info.c" line="51" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_ist.c">
+            <location file="/workspace/crypto/x509/v3_ist.c" line="32" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_SIGNED is a macro then please configure it." file0="/workspace/crypto/x509/v3_ncons.c">
+            <location file="/workspace/crypto/x509/v3_ncons.c" line="25" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_pcia.c">
+            <location file="/workspace/crypto/x509/v3_pcia.c" line="53" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_pcons.c">
+            <location file="/workspace/crypto/x509/v3_pcons.c" line="39" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_pku.c">
+            <location file="/workspace/crypto/x509/v3_pku.c" line="32" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_pmaps.c">
+            <location file="/workspace/crypto/x509/v3_pmaps.c" line="37" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_rolespec.c">
+            <location file="/workspace/crypto/x509/v3_rolespec.c" line="20" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." file0="/workspace/crypto/x509/v3_sda.c">
+            <location file="/workspace/crypto/x509/v3_sda.c" line="15" column="46"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_sxnet.c">
+            <location file="/workspace/crypto/x509/v3_sxnet.c" line="53" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/v3_timespec.c">
+            <location file="/workspace/crypto/x509/v3_timespec.c" line="113" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_EX_TEMPLATE_TYPE is a macro then please configure it." file0="/workspace/crypto/x509/v3_usernotice.c">
+            <location file="/workspace/crypto/x509/v3_usernotice.c" line="16" column="47"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_ITEM is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_ASN1_ITEM is a macro then please configure it." file0="/workspace/crypto/x509/x509_acert.c">
+            <location file="/workspace/crypto/x509/x509_acert.h" line="17" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/x_ietfatt.c">
+            <location file="/workspace/crypto/x509/x_ietfatt.c" line="54" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_EXTERN_ASN1 is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_EXTERN_ASN1 is a macro then please configure it." file0="/workspace/crypto/x509/x_pubkey.c">
+            <location file="/workspace/crypto/x509/x_pubkey.c" line="276" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it." file0="/workspace/crypto/x509/x_req.c">
+            <location file="/workspace/crypto/x509/x_req.c" line="111" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END_enc is a macro then please configure it." file0="/workspace/crypto/x509/x_x509.c">
+            <location file="/workspace/crypto/x509/x_x509.c" line="29" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/crypto/x509/x_x509a.c">
+            <location file="/workspace/crypto/x509/x_x509a.c" line="32" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/demos/digest/EVP_MD_demo.c">
+            <location file="/workspace/demos/digest/EVP_MD_demo.c" line="207" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="326" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="505" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="586" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="782" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="865" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="865" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 3) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 3) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="865" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="870" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." verbose="%lld in format string (no. 2) requires &apos;long long&apos; but the argument type is &apos;unsigned long long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="870" column="5"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." verbose="%ld in format string (no. 2) requires &apos;long&apos; but the argument type is &apos;unsigned long&apos;." cwe="686" file0="/workspace/demos/http3/ossl-nghttp3-demo-server.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo-server.c" line="1229" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="fscanf() without field width limits can crash with huge input data." verbose="fscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/demos/http3/ossl-nghttp3-demo.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo.c" line="205" column="17"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;req_array&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;req_array&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/demos/http3/ossl-nghttp3-demo.c">
+            <location file="/workspace/demos/http3/ossl-nghttp3-demo.c" line="203" column="13"/>
+            <symbol>req_array</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_LIST_FOREACH_DELSAFE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_LIST_FOREACH_DELSAFE is a macro then please configure it." file0="/workspace/demos/quic/poll-server/quic-server-ssl-poll-http.c">
+            <location file="/workspace/demos/quic/poll-server/quic-server-ssl-poll-http.c" line="1044" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/doc/designs/ddd/ddd-02-conn-nonblocking.c">
+            <location file="/workspace/doc/designs/ddd/ddd-02-conn-nonblocking.c" line="369" column="54"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/doc/designs/ddd/ddd-04-fd-nonblocking.c">
+            <location file="/workspace/doc/designs/ddd/ddd-04-fd-nonblocking.c" line="384" column="54"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: conn" verbose="Memory leak: conn" cwe="401" file0="/workspace/doc/designs/ddd/ddd-05-mem-nonblocking.c">
+            <location file="/workspace/doc/designs/ddd/ddd-05-mem-nonblocking.c" line="115" column="9"/>
+            <symbol>conn</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: conn" verbose="Memory leak: conn" cwe="401" file0="/workspace/doc/designs/ddd/ddd-05-mem-nonblocking.c">
+            <location file="/workspace/doc/designs/ddd/ddd-05-mem-nonblocking.c" line="124" column="9"/>
+            <symbol>conn</symbol>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/doc/designs/ddd/ddd-06-mem-uv.c">
+            <location file="/workspace/doc/designs/ddd/ddd-06-mem-uv.c" line="227" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If HT_START_KEY_DEFN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If HT_START_KEY_DEFN is a macro then please configure it." file0="/workspace/fuzz/hashtable.c">
+            <location file="/workspace/fuzz/hashtable.c" line="27" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/fuzz/provider.c">
+            <location file="/workspace/fuzz/provider.c" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_aes.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aes.c" line="52" column="1"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: blocks[0].c" verbose="Uninitialized variable: blocks[0].c" cwe="457" file0="/workspace/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha1_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha1_hw.c" line="146" column="57"/>
+            <symbol>blocks[0].c</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: blocks[0].c" verbose="Uninitialized variable: blocks[0].c" cwe="457" file0="/workspace/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha256_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha256_hw.c" line="150" column="57"/>
+            <symbol>blocks[0].c</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_aes_cfb_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aes_cfb_hw.c" line="63" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_aes_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aes_hw.c" line="128" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_aria.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aria.c" line="44" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_aria_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_aria_hw.c" line="33" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_var_keylen_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_var_keylen_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_blowfish.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_blowfish.c" line="52" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_blowfish_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_blowfish_hw.c" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_camellia.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_camellia.c" line="50" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_camellia_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_camellia_hw.c" line="43" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_var_keylen_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_var_keylen_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_cast5.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_cast5.c" line="53" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_cast5_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_cast5_hw.c" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_des.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_des.c" line="130" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_idea.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_idea.c" line="51" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_idea_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_idea_hw.c" line="54" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_rc2.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_rc2.c" line="223" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_rc2_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_rc2_hw.c" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_GETTABLE_CTX_PARAMS_START is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_rc5.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_rc5.c" line="105" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_rc5_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_rc5_hw.c" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_seed.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_seed.c" line="50" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_CBC is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_seed_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_seed_hw.c" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_generic_cipher is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_sm4.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_sm4.c" line="44" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CIPHER_HW_COPYCTX is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_sm4_hw.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_sm4_hw.c" line="122" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_SETTABLE_CTX_PARAMS_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CIPHER_DEFAULT_SETTABLE_CTX_PARAMS_START is a macro then please configure it." file0="/workspace/providers/implementations/ciphers/cipher_tdes_common.c">
+            <location file="/workspace/providers/implementations/ciphers/cipher_tdes_common.c" line="172" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="/workspace/providers/implementations/digests/cshake_prov.c">
+            <location file="/workspace/providers/implementations/digests/cshake_prov.c" line="504" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="/workspace/providers/implementations/digests/ml_dsa_mu_prov.c">
+            <location file="/workspace/providers/implementations/digests/ml_dsa_mu_prov.c" line="331" column="50"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_digest_functions_with_settable_ctx is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_digest_functions_with_settable_ctx is a macro then please configure it." file0="/workspace/providers/implementations/digests/sha2_prov.c">
+            <location file="/workspace/providers/implementations/digests/sha2_prov.c" line="284" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="/workspace/providers/implementations/digests/sha3_prov.c">
+            <location file="/workspace/providers/implementations/digests/sha3_prov.c" line="765" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;KECCAK1600_ASM;OPENSSL_CPUID_OBJ;__s390__&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;KECCAK1600_ASM;OPENSSL_CPUID_OBJ;__s390__&apos;." file0="/workspace/providers/implementations/digests/sha3_prov.c">
+            <location file="/workspace/providers/implementations/digests/sha3_prov.c" line="765" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;KECCAK1600_ASM;__aarch64__&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;KECCAK1600_ASM;__aarch64__&apos;." file0="/workspace/providers/implementations/digests/sha3_prov.c">
+            <location file="/workspace/providers/implementations/digests/sha3_prov.c" line="765" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If static_ASN1_SEQUENCE_END is a macro then please configure it." file0="/workspace/providers/implementations/encode_decode/decode_der2key.c">
+            <location file="/workspace/providers/implementations/encode_decode/decode_der2key.c" line="62" column="3"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF_CONST is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_SPECIAL_STACK_OF_CONST is a macro then please configure it." file0="/workspace/providers/implementations/encode_decode/encode_key2text.c">
+            <location file="/workspace/providers/implementations/encode_decode/encode_key2text.c" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/exchange/dh_exch.c">
+            <location file="/workspace/providers/implementations/exchange/dh_exch.c" line="101" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/kdfs/kbkdf.c">
+            <location file="/workspace/providers/implementations/kdfs/kbkdf.c" line="137" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." file0="/workspace/providers/implementations/kdfs/tls1_prf.c">
+            <location file="/workspace/providers/implementations/kdfs/tls1_prf.c" line="76" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/kdfs/x942kdf.c">
+            <location file="/workspace/providers/implementations/kdfs/x942kdf.c" line="354" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/providers/implementations/keymgmt/rsa_kmgmt.c">
+            <location file="/workspace/providers/implementations/keymgmt/rsa_kmgmt.c" line="61" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/rands/drbg_hash.c">
+            <location file="/workspace/providers/implementations/rands/drbg_hash.c" line="441" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/rands/drbg_hmac.c">
+            <location file="/workspace/providers/implementations/rands/drbg_hmac.c" line="333" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/signature/ecdsa_sig.c">
+            <location file="/workspace/providers/implementations/signature/ecdsa_sig.c" line="180" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_FIPS_IND_INIT is a macro then please configure it." file0="/workspace/providers/implementations/signature/rsa_sig.c">
+            <location file="/workspace/providers/implementations/signature/rsa_sig.c" line="253" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DEFINE_STACK_OF is a macro then please configure it." file0="/workspace/providers/implementations/storemgmt/file_store.c">
+            <location file="/workspace/providers/implementations/storemgmt/file_store.c" line="33" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_CORE_MAKE_FUNC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_CORE_MAKE_FUNC is a macro then please configure it." file0="/workspace/ssl/bio_ssl.c">
+            <location file="/workspace/ssl/record/record.h" line="190" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." file0="/workspace/ssl/quic/cc_newreno.c">
+            <location file="/workspace/ssl/quic/cc_newreno.c" line="5" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If QLOG_EVENT_BEGIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If QLOG_EVENT_BEGIN is a macro then please configure it." file0="/workspace/ssl/quic/qlog_event_helpers.c">
+            <location file="/workspace/ssl/quic/qlog_event_helpers.c" line="20" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." file0="/workspace/ssl/quic/quic_fc.c">
+            <location file="/workspace/ssl/quic/quic_fc.c" line="16" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_LIST_FOREACH_DELSAFE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_LIST_FOREACH_DELSAFE is a macro then please configure it." file0="/workspace/ssl/quic/quic_rcidm.c">
+            <location file="/workspace/ssl/quic/quic_rcidm.c" line="317" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;slot==NULL&apos; is redundant or there is possible null pointer dereference: slot." verbose="Either the condition &apos;slot==NULL&apos; is redundant or there is possible null pointer dereference: slot." cwe="476" file0="/workspace/ssl/quic/quic_reactor_wait_ctx.c">
+            <location file="/workspace/ssl/quic/quic_reactor_wait_ctx.c" line="49" column="9" info="Null pointer dereference"/>
+            <location file="/workspace/ssl/quic/quic_reactor_wait_ctx.c" line="52" column="14" info="Assuming that condition &apos;slot==NULL&apos; is not redundant"/>
+            <symbol>slot</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." file0="/workspace/ssl/quic/quic_wire.c">
+            <location file="/workspace/ssl/quic/quic_wire.c" line="17" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If OSSL_SAFE_MATH_UNSIGNED is a macro then please configure it." file0="/workspace/ssl/rio/poll_builder.c">
+            <location file="/workspace/ssl/rio/poll_builder.c" line="15" column="1"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

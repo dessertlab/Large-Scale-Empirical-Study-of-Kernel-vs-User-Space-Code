@@ -1,0 +1,145 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "backends/imgui_impl_opengl3.cpp",
+        "line": 1025,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "backends/imgui_impl_opengl3.cpp",
+        "line": 1025,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "examples/libs/usynergy/uSynergy.c",
+        "line": 621,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "examples/libs/usynergy/uSynergy.c",
+        "line": 621,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120"
+    ],
+    "representative_cwe": "CWE-120",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "imgui_demo.cpp",
+        "line": 2108,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "imgui_demo.cpp",
+        "line": 2108,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120"
+    ],
+    "representative_cwe": "CWE-120",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "imgui_demo.cpp",
+        "line": 2529,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "imgui_demo.cpp",
+        "line": 2529,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-398"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "imgui_tables.cpp",
+        "line": 3983,
+        "cwe": "CWE-398",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "imgui_tables.cpp",
+        "line": 3983,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  }
+]

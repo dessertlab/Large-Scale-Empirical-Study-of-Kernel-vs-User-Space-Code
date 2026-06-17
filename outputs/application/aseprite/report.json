@@ -1,0 +1,2482 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-398",
+      "filename": "",
+      "line": null,
+      "message": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+      "rule": "toomanyconfigs",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/app.cpp",
+      "line": 604,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/commands/cmd_fill_and_stroke.cpp",
+      "line": 67,
+      "message": "Either the condition '!doc' is redundant or there is possible null pointer dereference: doc.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/commands/cmd_goto_frame.cpp",
+      "line": 153,
+      "message": "Member variable 'GotoFrameCommand::m_frame' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-788",
+      "filename": "/workspace/src/app/commands/cmd_new_file.cpp",
+      "line": 183,
+      "message": "Either the condition 'bg<=3' is redundant or the array 'bg_table[3]' is accessed at index 3, which is out of bounds.",
+      "rule": "arrayIndexOutOfBoundsCond",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/commands/cmd_new_frame.cpp",
+      "line": 50,
+      "message": "Member variable 'NewFrameCommand::m_content' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/commands/cmd_new_layer.cpp",
+      "line": 101,
+      "message": "Member variable 'NewLayerCommand::m_type' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/commands/cmd_new_layer.cpp",
+      "line": 101,
+      "message": "Member variable 'NewLayerCommand::m_place' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/commands/cmd_undo_history.cpp",
+      "line": 53,
+      "message": "Member variable 'ActionsList::m_itemHeight' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 58,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 78,
+      "message": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).",
+      "rule": "FF1001",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/console.cpp",
+      "line": 246,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/console.h",
+      "line": 22,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/app/crash/read_document.cpp",
+      "line": 260,
+      "message": "Non-local variable 'm_sprite' will use pointer to local variable 'spr'.",
+      "rule": "danglingLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 253,
+      "message": "Using argument infoheader that points at uninitialized variable infoheader",
+      "rule": "ctuuninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 306,
+      "message": "Uninitialized struct member: win_infoheader.biClrUsed",
+      "rule": "uninitStructMember",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 467,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 468,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 469,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 477,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 486,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 494,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 520,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 552,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 580,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 621,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 629,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 630,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 631,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 638,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 646,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 647,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 648,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 649,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 720,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 721,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 736,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 737,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 744,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 750,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 773,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 791,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 792,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 809,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 810,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 903,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/bmp_format.cpp",
+      "line": 923,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 83,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 86,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 91,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 93,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 102,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 107,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 108,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 116,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 124,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 129,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 131,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 134,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 137,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 138,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 139,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 140,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 142,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 143,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 146,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 147,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 149,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 188,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 226,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/css_format.cpp",
+      "line": 235,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/file.cpp",
+      "line": 62,
+      "message": "Either the condition 'm_doc' is redundant or there is possible null pointer dereference: m_doc.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/file.cpp",
+      "line": 63,
+      "message": "Either the condition 'm_sprite' is redundant or there is possible null pointer dereference: m_sprite.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/file.cpp",
+      "line": 1365,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/file.cpp",
+      "line": 1368,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file/file_data.cpp",
+      "line": 62,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file/file_data.cpp",
+      "line": 69,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file/file_data.cpp",
+      "line": 73,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/app/file/file_format.cpp",
+      "line": 52,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If DRM_INVALID is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/app/file/file_tests.cpp",
+      "line": 47,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/app/file/file_tests.cpp",
+      "line": 70,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/app/file/file_tests.cpp",
+      "line": 326,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/app/file/file_tests.cpp",
+      "line": 350,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 190,
+      "message": "Member variable 'GifDecoder::m_layer' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 485,
+      "message": "Either the condition 'colormap' is redundant or there is possible null pointer dereference: colormap.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 601,
+      "message": "Either the condition 'colormap' is redundant or there is possible null pointer dereference: colormap.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 602,
+      "message": "Either the condition 'colormap' is redundant or there is possible null pointer dereference: colormap.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 603,
+      "message": "Either the condition 'colormap' is redundant or there is possible null pointer dereference: colormap.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 933,
+      "message": "Member variable 'GifEncoder::m_previousImage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 933,
+      "message": "Member variable 'GifEncoder::m_currentImage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 933,
+      "message": "Member variable 'GifEncoder::m_nextImage' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 1290,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 1291,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 1305,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 1307,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/gif_format.cpp",
+      "line": 1331,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 109,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 110,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 111,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 112,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 163,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 164,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 165,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 166,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 181,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 190,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 191,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 192,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 200,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 209,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/ico_format.cpp",
+      "line": 220,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/jpeg_format.cpp",
+      "line": 97,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/jpeg_format.cpp",
+      "line": 395,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 65,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 66,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 67,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 69,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 82,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 83,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 84,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 88,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 90,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 98,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 113,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 116,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 160,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 163,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 164,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/pcx_format.cpp",
+      "line": 165,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/app/file/qoi_format.cpp",
+      "line": 63,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 81,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 91,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 92,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 158,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 159,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 190,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/file/svg_format.cpp",
+      "line": 219,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/app/file/webp_format.cpp",
+      "line": 99,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file/webp_format.cpp",
+      "line": 173,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 800,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 801,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 847,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 858,
+      "message": "buffer/CopyMemory:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 918,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 922,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 926,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/file_system.cpp",
+      "line": 931,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/filename_formatter.cpp",
+      "line": 33,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/filename_formatter.cpp",
+      "line": 76,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/app/fonts/font_info.cpp",
+      "line": 233,
+      "message": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/app/ini_file.cpp",
+      "line": 77,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/modules/gui.cpp",
+      "line": 290,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/modules/gui.cpp",
+      "line": 587,
+      "message": "Null pointer dereference: p",
+      "rule": "nullPointer",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/app/pref/preferences.cpp",
+      "line": 89,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 86,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 90,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 96,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 100,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 106,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 110,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 114,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 135,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 136,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 140,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 156,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 189,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-807",
+      "filename": "/workspace/src/app/resource_finder.cpp",
+      "line": 232,
+      "message": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20).",
+      "rule": "FF1053",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/script/app_clipboard_object.cpp",
+      "line": 218,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/script/app_fs_object.cpp",
+      "line": 25,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/app/script/canvas_widget.cpp",
+      "line": 185,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/script/editor_class.cpp",
+      "line": 140,
+      "message": "Either the condition 'm_askPoint' is redundant or there is possible null pointer dereference: m_askPoint.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/script/editor_class.cpp",
+      "line": 155,
+      "message": "Either the condition 'm_askPoint' is redundant or there is possible null pointer dereference: m_askPoint.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/script/editor_class.cpp",
+      "line": 171,
+      "message": "Either the condition 'm_askPoint' is redundant or there is possible null pointer dereference: m_askPoint.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/script/engine.cpp",
+      "line": 101,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/script/engine.cpp",
+      "line": 695,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/script/image_class.cpp",
+      "line": 689,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/script/json_class.cpp",
+      "line": 212,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/script/require.cpp",
+      "line": 21,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/script/security.cpp",
+      "line": 327,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/script/security.cpp",
+      "line": 375,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/script/security.cpp",
+      "line": 427,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/script/security.cpp",
+      "line": 429,
+      "message": "race/access:This usually indicates a security flaw. If an attacker can change anything along the path between the call to access() and the file's actual use (e.g., by moving files), the attacker can exploit the race condition (CWE-362/CWE-367!).",
+      "rule": "FF1030",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/send_crash.cpp",
+      "line": 76,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/app/ui/alpha_slider.cpp",
+      "line": 51,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/ui/alpha_slider.cpp",
+      "line": 56,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/app/ui/browser_view.cpp",
+      "line": 105,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/ui/color_selector.cpp",
+      "line": 76,
+      "message": "Member variable 'Painter::m_colorSelector' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/ui/color_selector.cpp",
+      "line": 76,
+      "message": "Member variable 'Painter::m_manager' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-664",
+      "filename": "/workspace/src/app/ui/context_bar.cpp",
+      "line": 719,
+      "message": "Calling 'erase' while iterating the container is invalid.",
+      "rule": "invalidContainerLoop",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/ui/dock.cpp",
+      "line": 600,
+      "message": "Either the condition 'widgetDock' is redundant or there is possible null pointer dereference: widgetDock.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/ui/dynamics_popup.cpp",
+      "line": 57,
+      "message": "Member variable 'ThresholdSlider::capture' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/ui/editor/brush_preview.cpp",
+      "line": 176,
+      "message": "Either the condition 'tool' is redundant or there is possible null pointer dereference: tool.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/app/ui/editor/moving_slice_state.cpp",
+      "line": 120,
+      "message": "Either the condition 'layer' is redundant or there is possible null pointer dereference: layer.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/ui/editor/tool_loop_impl.cpp",
+      "line": 469,
+      "message": "Member variable 'PaintToolLoopBase::m_mask' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/app/ui/skin/skin_theme.cpp",
+      "line": 358,
+      "message": "Returning pointer to local variable 'font' that will be invalid when returning.",
+      "rule": "returnDanglingLifetime",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/app/ui/skin/skin_theme.cpp",
+      "line": 1395,
+      "message": "Member variable 'DrawEntryTextDelegate::m_charStartX' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-672",
+      "filename": "/workspace/src/app/ui/timeline/timeline.cpp",
+      "line": 137,
+      "message": "Access of forwarded variable 'pred'.",
+      "rule": "accessForwarded",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/app/util/clipboard_native.cpp",
+      "line": 60,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/decode_webp.cpp",
+      "line": 77,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/util/filetoks.cpp",
+      "line": 52,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/util/filetoks.cpp",
+      "line": 93,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/app/util/filetoks.cpp",
+      "line": 108,
+      "message": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/msk_file.cpp",
+      "line": 60,
+      "message": "buffer/getc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/util/open_batch.h",
+      "line": 22,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 51,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 52,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 54,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 65,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 66,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 67,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 79,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 100,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 107,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 127,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 128,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 129,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 139,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/util/pic_file.cpp",
+      "line": 146,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/util/shader_helpers.cpp",
+      "line": 43,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/app/util/shader_helpers.cpp",
+      "line": 62,
+      "message": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1016",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/win/file_associations.cpp",
+      "line": 28,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/app/win/file_associations.cpp",
+      "line": 31,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/win/thumbnails.cpp",
+      "line": 40,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/win/thumbnails.cpp",
+      "line": 44,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/app/win/thumbnails.cpp",
+      "line": 52,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/desktop/win/dllmain.cpp",
+      "line": 47,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If STDAPI_ is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/desktop/win/helpers.h",
+      "line": 105,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/dio/detect_format.cpp",
+      "line": 123,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/dio/pixel_io.h",
+      "line": 109,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/dio/pixel_io.h",
+      "line": 113,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/dio/stdio.cpp",
+      "line": 33,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-20",
+      "filename": "/workspace/src/dio/stdio.cpp",
+      "line": 43,
+      "message": "input/fread:Function accepts input from outside program (CWE-20).",
+      "rule": "FF1070",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/doc/algorithm/fill_selection.cpp",
+      "line": 28,
+      "message": "Either the condition '!mask' is redundant or there is possible null pointer dereference: mask.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/doc/algorithm/stroke_selection.cpp",
+      "line": 26,
+      "message": "Either the condition '!origMask' is redundant or there is possible null pointer dereference: origMask.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 33,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 55,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 56,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 57,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 85,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 86,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 87,
+      "message": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/file/col_file.cpp",
+      "line": 103,
+      "message": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/frames_sequence.cpp",
+      "line": 190,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/frames_sequence.h",
+      "line": 61,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.cpp",
+      "line": 56,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.cpp",
+      "line": 58,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.cpp",
+      "line": 61,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.cpp",
+      "line": 63,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.h",
+      "line": 25,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.h",
+      "line": 25,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-362",
+      "filename": "/workspace/src/doc/mask_boundaries.h",
+      "line": 28,
+      "message": "misc/open:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362).",
+      "rule": "FF1040",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-825",
+      "filename": "/workspace/src/doc/object.cpp",
+      "line": 71,
+      "message": "Either the condition 'it!=objects.end()' is redundant or there is possible dereference of an invalid iterator: it.",
+      "rule": "derefInvalidIteratorRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/selected_frames.cpp",
+      "line": 186,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/selected_frames.h",
+      "line": 57,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/selected_layers.cpp",
+      "line": 247,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/doc/selected_layers.h",
+      "line": 58,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegate::div' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegate::matrixData' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegateIndexed::r' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegateIndexed::g' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegateIndexed::b' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegateIndexed::a' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/convolution_matrix_filter.cpp",
+      "line": 91,
+      "message": "Member variable 'GetPixelsDelegateIndexed::index' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/median_filter.cpp",
+      "line": 34,
+      "message": "Member variable 'GetPixelsDelegateRgba::c' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/median_filter.cpp",
+      "line": 52,
+      "message": "Member variable 'GetPixelsDelegateGrayscale::c' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/median_filter.cpp",
+      "line": 70,
+      "message": "Member variable 'GetPixelsDelegateIndexed::c' is not initialized in the constructor.",
+      "rule": "uninitMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/outline_filter.cpp",
+      "line": 73,
+      "message": "Member variable 'GetPixelsDelegate::transparent' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/outline_filter.cpp",
+      "line": 73,
+      "message": "Member variable 'GetPixelsDelegate::opaque' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/outline_filter.cpp",
+      "line": 73,
+      "message": "Member variable 'GetPixelsDelegate::matrix' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-398",
+      "filename": "/workspace/src/filters/outline_filter.cpp",
+      "line": 73,
+      "message": "Member variable 'GetPixelsDelegate::bit' is not initialized in the constructor. Maybe it should be initialized directly in the class GetPixelsDelegate?",
+      "rule": "uninitDerivedMemberVar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/fixmath/fixmath.cpp",
+      "line": 213,
+      "message": "Uninitialized variable: c",
+      "rule": "uninitvar",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-327",
+      "filename": "/workspace/src/main/main.cpp",
+      "line": 97,
+      "message": "random/srand:This function is not sufficiently random for security-related functions such as key and nonce creation (CWE-327).",
+      "rule": "FF1048",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ui/entry.cpp",
+      "line": 69,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ui/entry.cpp",
+      "line": 73,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/ui/menu.cpp",
+      "line": 1072,
+      "message": "Either the condition 'menu==nullptr' is redundant or there is possible null pointer dereference: menu.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-78",
+      "filename": "/workspace/src/ui/message.cpp",
+      "line": 43,
+      "message": "shell/system:This causes a new program to execute and is difficult to use safely (CWE-78).",
+      "rule": "FF1044",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ui/slider.cpp",
+      "line": 92,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ui/slider.cpp",
+      "line": 93,
+      "message": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-476",
+      "filename": "/workspace/src/ui/view.cpp",
+      "line": 354,
+      "message": "Either the condition 'display' is redundant or there is possible null pointer dereference: display.",
+      "rule": "nullPointerRedundantCheck",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/ui/widget.cpp",
+      "line": 161,
+      "message": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/ui/widget.cpp",
+      "line": 162,
+      "message": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134).",
+      "rule": "FF1019",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/view/range.cpp",
+      "line": 204,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/view/range.h",
+      "line": 77,
+      "message": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20).",
+      "rule": "FF1029",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 86,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 87,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 97,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 98,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 115,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 115,
+      "message": "[string read by fgets](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 116,
+      "message": "[string read by fgets](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 140,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 140,
+      "message": "[string read by fgets](1) flows to an operand of an arithmetic expression, potentially causing an overflow.",
+      "rule": "cpp/tainted-arithmetic",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "src/app/commands/filters/convolution_matrix_stock.cpp",
+      "line": 147,
+      "message": "[string read by fgets](1) flows an expression which might overflow.",
+      "rule": "cpp/integer-overflow-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 79,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 88,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 89,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 92,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 95,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-170",
+      "filename": "src/dio/detect_format.cpp",
+      "line": 125,
+      "message": "String operation depends on [string read by fread](1) that may not be null terminated.",
+      "rule": "cpp/user-controlled-null-termination-tainted",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-732",
+      "filename": "src/doc/file/col_file.cpp",
+      "line": 103,
+      "message": "A file may be created here with mode 0666, which would make it world-writable.",
+      "rule": "cpp/world-writable-file-creation",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-835",
+      "filename": "src/doc/image_tests.cpp",
+      "line": 234,
+      "message": "Function exit is unreachable because this condition is always true.",
+      "rule": "cpp/infinite-loop-with-unsatisfiable-exit-condition",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-835",
+      "filename": "src/doc/image_tests.cpp",
+      "line": 248,
+      "message": "Function exit is unreachable because this condition is always true.",
+      "rule": "cpp/infinite-loop-with-unsatisfiable-exit-condition",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-835",
+      "filename": "src/doc/image_tests.cpp",
+      "line": 262,
+      "message": "Function exit is unreachable because this condition is always true.",
+      "rule": "cpp/infinite-loop-with-unsatisfiable-exit-condition",
+      "tool": "codeql"
+    },
+    {
+      "cwe": "CWE-835",
+      "filename": "src/doc/image_tests.cpp",
+      "line": 276,
+      "message": "Function exit is unreachable because this condition is always true.",
+      "rule": "cpp/infinite-loop-with-unsatisfiable-exit-condition",
+      "tool": "codeql"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 304,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 21,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 58,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 225,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/aseprite/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

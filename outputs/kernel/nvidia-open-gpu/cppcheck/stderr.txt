@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: timer-&gt;kernel_timer_created" verbose="Uninitialized variable: timer-&gt;kernel_timer_created" cwe="457" file0="/workspace/kernel-open/nvidia-modeset/nvidia-modeset-linux.c">
+            <location file="/workspace/kernel-open/nvidia-modeset/nvidia-modeset-linux.c" line="2205" column="20"/>
+            <symbol>timer-&gt;kernel_timer_created</symbol>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #if condition, division/modulo by zero" verbose="failed to evaluate #if condition, division/modulo by zero">
+            <location file="/workspace/kernel-open/nvidia-uvm/uvm_va_block_types.h" line="60" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ALIGN_BYTES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ALIGN_BYTES is a macro then please configure it." file0="/workspace/kernel-open/nvidia-uvm/uvm_kvmalloc_test.c">
+            <location file="/workspace/kernel-open/nvidia-uvm/uvm_test_ioctl.h" line="1175" column="57"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." verbose="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." cwe="476" file0="/workspace/kernel-open/nvidia/libspdm_aead.c">
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead.c" line="427" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead.c" line="416" column="23" info="Assuming that condition &apos;data_out_size!=NULL&apos; is not redundant"/>
+            <symbol>data_out_size</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." verbose="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." cwe="476" file0="/workspace/kernel-open/nvidia/libspdm_aead.c">
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead.c" line="472" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead.c" line="461" column="23" info="Assuming that condition &apos;data_out_size!=NULL&apos; is not redundant"/>
+            <symbol>data_out_size</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." verbose="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." cwe="476" file0="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c">
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c" line="69" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c" line="58" column="23" info="Assuming that condition &apos;data_out_size!=NULL&apos; is not redundant"/>
+            <symbol>data_out_size</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." verbose="Either the condition &apos;data_out_size!=NULL&apos; is redundant or there is possible null pointer dereference: data_out_size." cwe="476" file0="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c">
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c" line="113" column="6" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/libspdm_aead_aes_gcm.c" line="102" column="23" info="Assuming that condition &apos;data_out_size!=NULL&apos; is not redundant"/>
+            <symbol>data_out_size</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: curr-&gt;adapter" verbose="Uninitialized variable: curr-&gt;adapter" cwe="457" file0="/workspace/kernel-open/nvidia/linux_nvswitch.c">
+            <location file="/workspace/kernel-open/nvidia/linux_nvswitch.c" line="447" column="40"/>
+            <symbol>curr-&gt;adapter</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/kernel-open/nvidia/nv-caps.c">
+            <location file="/workspace/kernel-open/nvidia/nv-caps.c" line="196" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/kernel-open/nvidia/nv-caps.c">
+            <location file="/workspace/kernel-open/nvidia/nv-caps.c" line="215" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/kernel-open/nvidia/nv-caps.c">
+            <location file="/workspace/kernel-open/nvidia/nv-caps.c" line="234" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/kernel-open/nvidia/nv-caps.c">
+            <location file="/workspace/kernel-open/nvidia/nv-caps.c" line="245" column="13"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: entry-&gt;name" verbose="Uninitialized variable: entry-&gt;name" cwe="457" file0="/workspace/kernel-open/nvidia/nv-caps.c">
+            <location file="/workspace/kernel-open/nvidia/nv-caps.c" line="322" column="33"/>
+            <symbol>entry-&gt;name</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." verbose="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." cwe="476" file0="/workspace/kernel-open/nvidia/nv-dma.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="64" column="22" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="353" column="36" info="Calling function &apos;nv_dma_is_addressable&apos;, 1st argument &apos;dma_dev&apos; value is 0"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="355" column="13" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+            <symbol>dma_dev</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." verbose="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." cwe="476" file0="/workspace/kernel-open/nvidia/nv-dma.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="712" column="49" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="817" column="33" info="Calling function &apos;nv_dma_use_map_resource&apos;, 1st argument &apos;dma_dev&apos; value is 0"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="824" column="13" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+            <symbol>dma_dev</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;peer_dma_dev&apos; is redundant or there is possible null pointer dereference: peer_dma_dev." verbose="Either the condition &apos;peer_dma_dev&apos; is redundant or there is possible null pointer dereference: peer_dma_dev." cwe="476" file0="/workspace/kernel-open/nvidia/nv-dma.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="745" column="47" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="752" column="9" info="Assuming that condition &apos;peer_dma_dev&apos; is not redundant"/>
+            <symbol>peer_dma_dev</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." verbose="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." cwe="476" file0="/workspace/kernel-open/nvidia/nv-dma.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="820" column="32" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="824" column="13" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+            <symbol>dma_dev</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." verbose="Either the condition &apos;dma_dev&apos; is redundant or there is possible null pointer dereference: dma_dev." cwe="476" file0="/workspace/kernel-open/nvidia/nv-dma.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="822" column="31" info="Null pointer dereference"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="824" column="13" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+            <symbol>dma_dev</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If of_property_for_each_u32 is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If of_property_for_each_u32 is a macro then please configure it." file0="/workspace/kernel-open/nvidia/nv-dsi-parse-panel-props.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dsi-parse-panel-props.c" line="500" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If of_property_for_each_u32 is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If of_property_for_each_u32 is a macro then please configure it." file0="/workspace/kernel-open/nvidia/nv-dsi-parse-panel-props.c">
+            <location file="/workspace/kernel-open/nvidia/nv-dsi-parse-panel-props.c" line="502" column="5"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: cur-&gt;dma_mapping" verbose="Uninitialized variable: cur-&gt;dma_mapping" cwe="457" file0="/workspace/kernel-open/nvidia/nv-p2p.c">
+            <location file="/workspace/kernel-open/nvidia/nv-p2p.c" line="156" column="56"/>
+            <symbol>cur-&gt;dma_mapping</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: tptr-&gt;gpc_master" verbose="Uninitialized variable: tptr-&gt;gpc_master" cwe="457" file0="/workspace/kernel-open/nvidia/nv-pci.c">
+            <location file="/workspace/kernel-open/nvidia/nv-pci.c" line="862" column="19"/>
+            <location file="/workspace/kernel-open/nvidia/nv-pci.c" line="838" column="29" info="Assuming condition is false"/>
+            <symbol>tptr-&gt;gpc_master</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: tptr-&gt;clk" verbose="Uninitialized variable: tptr-&gt;clk" cwe="457" file0="/workspace/kernel-open/nvidia/nv-pci.c">
+            <location file="/workspace/kernel-open/nvidia/nv-pci.c" line="1649" column="19"/>
+            <symbol>tptr-&gt;clk</symbol>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/kernel-open/nvidia/nv-procfs.c">
+            <location file="/workspace/kernel-open/nvidia/nv-procfs.c" line="890" column="13"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_FREE_PAGES is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_FREE_PAGES is a macro then please configure it." file0="/workspace/kernel-open/nvidia/nv-vm.c">
+            <location file="/workspace/kernel-open/nvidia/nv-vm.c" line="501" column="9"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;pIterAddr&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;pIterAddr&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/kernel-open/nvidia/os-interface.c">
+            <location file="/workspace/kernel-open/nvidia/os-interface.c" line="1529" column="70" info="Null pointer addition"/>
+            <location file="/workspace/kernel-open/nvidia/os-interface.c" line="1531" column="13" info="Assuming that condition &apos;pIterAddr&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;string==NULL&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;string==NULL&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/workspace/kernel-open/nvidia/os-registry.c">
+            <location file="/workspace/kernel-open/nvidia/os-registry.c" line="109" column="37" info="Null pointer addition"/>
+            <location file="/workspace/kernel-open/nvidia/os-registry.c" line="108" column="15" info="token is assigned &apos;string&apos; here."/>
+            <location file="/workspace/kernel-open/nvidia/os-registry.c" line="111" column="20" info="Assuming that condition &apos;string==NULL&apos; is not redundant"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" file0="/workspace/src/common/displayport/src/dp_configcaps.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_configcaps.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" file0="/workspace/src/common/displayport/src/dp_configcaps2x.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_configcaps2x.cpp" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SET_DP_IMP_ERROR is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SET_DP_IMP_ERROR is a macro then please configure it." file0="/workspace/src/common/displayport/src/dp_connectorimpl.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_connectorimpl.cpp" line="1703" column="21"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_CMD_DP" file0="/workspace/src/common/displayport/src/dp_connectorimpl2x.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_connectorimpl2x.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DP" file0="/workspace/src/common/displayport/src/dp_evoadapter.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_evoadapter.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL" file0="/workspace/src/common/displayport/src/dp_evoadapter2x.cpp">
+            <location file="/workspace/src/common/displayport/src/dp_evoadapter2x.cpp" line="0" column="0"/>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;Invalid pkt type!&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;Invalid pkt type!&quot; to bool always evaluates to true." cwe="571" file0="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C871.c">
+            <location file="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C871.c" line="616" column="9"/>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;MoreInfoframe: Buffer size insufficient to copy read packet data&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;MoreInfoframe: Buffer size insufficient to copy read packet data&quot; to bool always evaluates to true." cwe="571" file0="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C871.c">
+            <location file="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C871.c" line="663" column="13"/>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;CRC Override bit not supported in Nvd 5.0&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;CRC Override bit not supported in Nvd 5.0&quot; to bool always evaluates to true." cwe="571" file0="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c">
+            <location file="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c" line="67" column="5"/>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;window channel priv reg control not supported in Nvd5.0&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;window channel priv reg control not supported in Nvd5.0&quot; to bool always evaluates to true." cwe="571" file0="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c">
+            <location file="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c" line="69" column="5"/>
+        </error>
+        <error id="incorrectStringBooleanError" severity="warning" msg="Conversion of string literal &quot;LoadV location not supported in Nvd5.0&quot; to bool always evaluates to true." verbose="Conversion of string literal &quot;LoadV location not supported in Nvd5.0&quot; to bool always evaluates to true." cwe="571" file0="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c">
+            <location file="/workspace/src/common/modeset/hdmipacket/nvhdmipkt_C971.c" line="71" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_cvt.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_cvt.c" line="91" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_displayid20.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_displayid20.c" line="52" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_dmt.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_dmt.c" line="161" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_edid.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_edid.c" line="140" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_edidext_861.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_edidext_861.c" line="452" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_edidext_displayid.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_edidext_displayid.c" line="75" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_edidext_displayid20.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_edidext_displayid20.c" line="79" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_gtf.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_gtf.c" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_ovt.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_ovt.c" line="54" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_tv.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_tv.c" line="69" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CODE_SEGMENT is a macro then please configure it." file0="/workspace/src/common/modeset/timing/nvt_util.c">
+            <location file="/workspace/src/common/modeset/timing/nvt_util.c" line="100" column="1"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;NVSWITCH_NVLINK_COUNTER_DL_RX_ERR_CRC_LANE_L7&apos; found multiple times in chain of &apos;|&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c">
+            <location file="/workspace/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c" line="95" column="19"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/common/nvswitch/kernel/lr10/clock_lr10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/clock_lr10.c" line="344" column="54"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;link==NULL&apos; is redundant or there is possible null pointer dereference: link." verbose="Either the condition &apos;link==NULL&apos; is redundant or there is possible null pointer dereference: link." cwe="476" file0="/workspace/src/common/nvswitch/kernel/lr10/link_lr10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/link_lr10.c" line="2637" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/link_lr10.c" line="2640" column="15" info="Assuming that condition &apos;link==NULL&apos; is not redundant"/>
+            <symbol>link</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/common/nvswitch/kernel/lr10/lr10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/lr10.c" line="1528" column="52"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/common/nvswitch/kernel/lr10/minion_lr10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/minion_lr10.c" line="57" column="54"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;pFlcn-&gt;bOSReady&apos;, second condition is always false" verbose="Identical condition &apos;pFlcn-&gt;bOSReady&apos;, second condition is always false" cwe="398" file0="/workspace/src/common/nvswitch/kernel/lr10/soe_lr10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/soe_lr10.c" line="2534" column="18" info="Testing identical condition &apos;pFlcn-&gt;bOSReady&apos;"/>
+            <location file="/workspace/src/common/nvswitch/kernel/lr10/soe_lr10.c" line="2523" column="14" info="If condition &apos;pFlcn-&gt;bOSReady&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NVSWITCH_LIST_LS10_ENGINE_UC is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NVSWITCH_LIST_LS10_ENGINE_UC is a macro then please configure it." file0="/workspace/src/common/nvswitch/kernel/ls10/discovery_ls10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/ls10/discovery_ls10.c" line="1011" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/common/nvswitch/kernel/ls10/ls10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/ls10/ls10.c" line="4842" column="50"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/common/nvswitch/kernel/ls10/sugen_ls10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/ls10/sugen_ls10.c" line="833" column="59"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/common/nvswitch/kernel/ls10/tnvl_ls10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/ls10/tnvl_ls10.c" line="508" column="5"/>
+        </error>
+        <error id="invalidTestForOverflow" severity="warning" msg="Invalid test for overflow &apos;pCert+0x4&lt;=pCert&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." verbose="Invalid test for overflow &apos;pCert+0x4&lt;=pCert&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." cwe="391" file0="/workspace/src/common/nvswitch/kernel/ls10/tnvl_ls10.c">
+            <location file="/workspace/src/common/nvswitch/kernel/ls10/tnvl_ls10.c" line="259" column="44"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." file0="/workspace/src/common/nvswitch/kernel/nvswitch.c">
+            <location file="/workspace/src/common/nvswitch/kernel/nvswitch.c" line="5986" column="5"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;firstRun&apos; and inner condition is &apos;firstRun&apos;)." cwe="398" file0="/workspace/src/common/src/nv_smg.c">
+            <location file="/workspace/src/common/src/nv_smg.c" line="344" column="13" info="identical inner condition: firstRun"/>
+            <location file="/workspace/src/common/src/nv_smg.c" line="337" column="9" info="outer condition: firstRun"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: iter.header, iter.align" verbose="Uninitialized variables: iter.header, iter.align" cwe="457" file0="/workspace/src/common/unix/common/utils/nv_memory_tracker.c">
+            <location file="/workspace/src/common/unix/common/utils/nv_memory_tracker.c" line="222" column="31"/>
+            <symbol>iter</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/common/unix/xzminidec/src/xz_dec_bcj.c">
+            <location file="/workspace/src/common/unix/xzminidec/src/xz_dec_bcj.c" line="350" column="2"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="2136" column="9"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 2 parameters but only 1 is given." verbose="printf format string requires 2 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1070" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 3 parameters but only 1 is given." verbose="printf format string requires 3 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1173" column="9"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1296" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 2 parameters but only 1 is given." verbose="printf format string requires 2 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1307" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 6 parameters but only 1 is given." verbose="printf format string requires 6 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1319" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 6 parameters but only 1 is given." verbose="printf format string requires 6 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1326" column="9"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="error" msg="printf format string requires 4 parameters but only 1 is given." verbose="printf format string requires 4 parameters but only 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1363" column="5"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1398" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="1440" column="17"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="2079" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="2109" column="9"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="2219" column="13"/>
+        </error>
+        <error id="wrongPrintfScanfArgNum" severity="warning" msg="printf format string requires 0 parameters but 1 is given." verbose="printf format string requires 0 parameters but 1 is given." cwe="685" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="2250" column="9"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: &amp;tmStruct" verbose="Uninitialized variable: &amp;tmStruct" cwe="457" file0="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c" line="600" column="53"/>
+            <symbol>&amp;tmStruct</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;availableApiHeadsMask==0&apos;, second condition is always false" verbose="Identical condition &apos;availableApiHeadsMask==0&apos;, second condition is always false" cwe="398" file0="/workspace/src/nvidia-modeset/src/nvkms-console-restore.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-console-restore.c" line="871" column="43" info="Testing identical condition &apos;availableApiHeadsMask==0&apos;"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-console-restore.c" line="846" column="39" info="If condition &apos;availableApiHeadsMask==0&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: hwViewportInWidth" verbose="Uninitialized variable: hwViewportInWidth" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms-cursor.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-cursor.c" line="303" column="22"/>
+            <symbol>hwViewportInWidth</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;info&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;info&apos; doesn&apos;t have a parent." file0="/workspace/src/nvidia-modeset/src/nvkms-dma.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-dma.c" line="299" column="53"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DFP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DFP" file0="/workspace/src/nvidia-modeset/src/nvkms-dpy.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-dpy.c" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL" file0="/workspace/src/nvidia-modeset/src/nvkms-evo.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-evo.c" line="0" column="0"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;pHeadState&apos; to itself." verbose="Redundant assignment of &apos;pHeadState&apos; to itself." cwe="398" file0="/workspace/src/nvidia-modeset/src/nvkms-evo3.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-evo3.c" line="1092" column="49"/>
+            <symbol>pHeadState</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: hwViewportInWidth" verbose="Uninitialized variable: hwViewportInWidth" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms-flip.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-flip.c" line="817" column="22"/>
+            <symbol>hwViewportInWidth</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pHeads!=NULL&apos; is redundant or there is possible null pointer dereference: pHeads." verbose="Either the condition &apos;pHeads!=NULL&apos; is redundant or there is possible null pointer dereference: pHeads." cwe="476" file0="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="255" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="383" column="50" info="Calling function &apos;nvEvoLockHWStateNoLock&apos;, 3rd argument &apos;pHeads&apos; value is 0"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="385" column="21" info="Assuming that condition &apos;pHeads!=NULL&apos; is not redundant"/>
+            <symbol>pHeads</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pHeads!=NULL&apos; is redundant or there is possible null pointer dereference: pHeads." verbose="Either the condition &apos;pHeads!=NULL&apos; is redundant or there is possible null pointer dereference: pHeads." cwe="476" file0="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="317" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="694" column="53" info="Calling function &apos;nvEvoLockHWStateLockHeads&apos;, 3rd argument &apos;pHeads&apos; value is 0"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-hw-states.c" line="696" column="21" info="Assuming that condition &apos;pHeads!=NULL&apos; is not redundant"/>
+            <symbol>pHeads</symbol>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_CTRL_BUS_INFO" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_CTRL_BUS_INFO" file0="/workspace/src/nvidia-modeset/src/nvkms-rm.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms-rm.c" line="0" column="0"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDev-&gt;pDevEvo" verbose="Uninitialized variable: pOpenDev-&gt;pDevEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="248" column="23"/>
+            <symbol>pOpenDev-&gt;pDevEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenFrameLock-&gt;pFrameLockEvo" verbose="Uninitialized variable: pOpenFrameLock-&gt;pFrameLockEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="466" column="29"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="460" column="23" info="Assuming condition is false"/>
+            <symbol>pOpenFrameLock-&gt;pFrameLockEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenConnector-&gt;pConnectorEvo" verbose="Uninitialized variable: pOpenConnector-&gt;pConnectorEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="515" column="29"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="509" column="19" info="Assuming condition is false"/>
+            <symbol>pOpenConnector-&gt;pConnectorEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDev-&gt;pDevEvo" verbose="Uninitialized variable: pOpenDev-&gt;pDevEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="546" column="23"/>
+            <symbol>pOpenDev-&gt;pDevEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDisp-&gt;pDispEvo" verbose="Uninitialized variable: pOpenDisp-&gt;pDispEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="552" column="28"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="546" column="31" info="Assuming condition is false"/>
+            <symbol>pOpenDisp-&gt;pDispEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDev-&gt;pDevEvo" verbose="Uninitialized variable: pOpenDev-&gt;pDevEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="582" column="23"/>
+            <symbol>pOpenDev-&gt;pDevEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenFrameLock-&gt;pFrameLockEvo" verbose="Uninitialized variable: pOpenFrameLock-&gt;pFrameLockEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="608" column="29"/>
+            <symbol>pOpenFrameLock-&gt;pFrameLockEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: pOpenConnector.pConnectorEvo, pOpenConnector.nvKmsApiHandle" verbose="Uninitialized variables: pOpenConnector.pConnectorEvo, pOpenConnector.nvKmsApiHandle" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="690" column="42"/>
+            <symbol>pOpenConnector</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDisp-&gt;pDispEvo" verbose="Uninitialized variable: pOpenDisp-&gt;pDispEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="1552" column="60"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="1531" column="18" info="Assuming condition is false"/>
+            <symbol>pOpenDisp-&gt;pDispEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDisp-&gt;pDispEvo" verbose="Uninitialized variable: pOpenDisp-&gt;pDispEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="4389" column="33"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="4382" column="22" info="Assuming condition is false"/>
+            <symbol>pOpenDisp-&gt;pDispEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDisp-&gt;pDispEvo" verbose="Uninitialized variable: pOpenDisp-&gt;pDispEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="4559" column="33"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="4552" column="22" info="Assuming condition is false"/>
+            <symbol>pOpenDisp-&gt;pDispEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.deferredRequestFifoHandles, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" verbose="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.deferredRequestFifoHandles, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="5277" column="40"/>
+            <symbol>pOpenDev</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.deferredRequestFifoHandles, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" verbose="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.deferredRequestFifoHandles, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="6808" column="21"/>
+            <symbol>pOpenDev</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDev-&gt;pDevEvo" verbose="Uninitialized variable: pOpenDev-&gt;pDevEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="5605" column="27"/>
+            <symbol>pOpenDev-&gt;pDevEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pOpenDev-&gt;pDevEvo" verbose="Uninitialized variable: pOpenDev-&gt;pDevEvo" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="5722" column="48"/>
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="5716" column="40" info="Assuming condition is false"/>
+            <symbol>pOpenDev-&gt;pDevEvo</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" verbose="Uninitialized variables: pOpenDev.pDevEvo, pOpenDev.nvKmsApiHandle, pOpenDev.dispHandles, pOpenDev.surfaceHandles, pOpenDev.flipPermissions, pOpenDev.modesetPermissions, pOpenDev.isPrivileged, pOpenDev.swapGroupHandles, pOpenDev.openedGpuId" cwe="457" file0="/workspace/src/nvidia-modeset/src/nvkms.c">
+            <location file="/workspace/src/nvidia-modeset/src/nvkms.c" line="5919" column="21"/>
+            <symbol>pOpenDev</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/src/os.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/src/os.c" line="384" column="101"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/src/osapi.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/src/osapi.c" line="2656" column="95"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/src/osmemdesc.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/src/osmemdesc.c" line="267" column="109"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_CHECK_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_CHECK_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/src/unix_console.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/src/unix_console.c" line="104" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/decode.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/decode.c" line="99" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/ops.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/ops.c" line="92" column="55"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/ops2.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/ops2.c" line="60" column="51"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/prim_ops.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/prim_ops.c" line="2589" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DB is a macro then please configure it." file0="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/sys.c">
+            <location file="/workspace/src/nvidia/arch/nvalloc/unix/x86emu/sys.c" line="288" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_all_dcl_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_all_dcl_pb.c" line="20" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CONS_SEGMENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CONS_SEGMENT is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_bindata.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata.c" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_AD102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_AD102.c" line="4455" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_GA100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_GA100.c" line="4670" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_GA102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_GA102.c" line="4776" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_TU102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_TU102.c" line="4563" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_TU116.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterLoadUcode_TU116.c" line="4563" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_AD102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_AD102.c" line="2981" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_GA100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_GA100.c" line="2833" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_GA102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_GA102.c" line="2924" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_TU102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_TU102.c" line="2733" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_TU116.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveBooterUnloadUcode_TU116.c" line="2725" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GB100.c" line="59" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GB202.c" line="59" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GH100.c" line="59" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMCDesc_GR100.c" line="59" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GB100.c" line="26937" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GB202.c" line="29961" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GH100.c" line="26425" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveConcatenatedFMC_GR100.c" line="26648" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_AD102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_AD102.c" line="3939" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GA100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GA100.c" line="142" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GA102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GA102.c" line="2401" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB100.c" line="25245" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB10B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB10B.c" line="24221" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB202.c" line="36509" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB20B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GB20B.c" line="26781" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GH100.c" line="21149" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_GR100.c" line="25245" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_TU102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmBoot_TU102.c" line="142" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GB100.c" line="12398" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GB202.c" line="16238" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GH100.c" line="10625" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmCcFmcGfwProdSigned_GR100.c" line="12398" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB100.c" line="12542" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB10B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB10B.c" line="12113" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB202.c" line="18126" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB20B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GB20B.c" line="13473" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GH100.c" line="10545" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwDebugSigned_GR100.c" line="12574" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB100.c" line="12542" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB10B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB10B.c" line="12113" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB202.c" line="18126" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB20B.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GB20B.c" line="13473" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GH100.c" line="10545" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_kgspGetBinArchiveGspRmFmcGfwProdSigned_GR100.c" line="12574" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_ksec2GetBinArchiveBlUcode_TU102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_ksec2GetBinArchiveBlUcode_TU102.c" line="115" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_ksec2GetBinArchiveSecurescrubUcode_AD10X.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_ksec2GetBinArchiveSecurescrubUcode_AD10X.c" line="1229" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GB100.c" line="102" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GB20X.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GB20X.c" line="103" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GH100.c" line="102" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GR1XX.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL2Certificate_GR1XX.c" line="103" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB100.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB102.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB110.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB110.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB112.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB112.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB202.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB202.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB203.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB203.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB205.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB205.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB206.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB206.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB207.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GB207.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GH100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GH100.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GR100.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GR100.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GR102.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveIndividualL3Certificate_GR102.c" line="104" column="2"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveL1Certificate_IMPL.c">
+            <location file="/workspace/src/nvidia/generated/g_bindata_spdmGetBinArchiveL1Certificate_IMPL.c" line="93" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_crashcat_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_crashcat_pb.c" line="130" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_engines_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_engines_pb.c" line="20" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ENUM_DEF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ENUM_DEF is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_gpu_nvoc.c">
+            <location file="/workspace/src/nvidia/generated/g_gpu_nvoc.h" line="299" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_gr_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_gr_pb.c" line="48" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_gsp_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_gsp_pb.c" line="20" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_DEFAULT_DEF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_DEFAULT_DEF is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_journal_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_journal_pb.c" line="102" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_nvdebug_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_nvdebug_pb.c" line="62" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_rc_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_rc_pb.c" line="112" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_DEFAULT_DEF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_DEFAULT_DEF is a macro then please configure it." file0="/workspace/src/nvidia/generated/g_regs_pb.c">
+            <location file="/workspace/src/nvidia/generated/g_regs_pb.c" line="50" column="1"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;0&apos; found multiple times in chain of &apos;||&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/src/nvidia/generated/g_system_nvoc.c">
+            <location file="/workspace/src/nvidia/generated/g_system_nvoc.c" line="110" column="80"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_CONCATENATE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_CONCATENATE is a macro then please configure it." file0="/workspace/src/nvidia/interface/deprecated/rmapi_deprecated_control.c">
+            <location file="/workspace/src/nvidia/interface/deprecated/rmapi_deprecated_control.c" line="441" column="18"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 64-bit value by 64 bits is undefined behaviour" verbose="Shifting 64-bit value by 64 bits is undefined behaviour" cwe="758" file0="/workspace/src/nvidia/interface/rmapi/src/g_finn_rm_api.c">
+            <location file="/workspace/src/nvidia/interface/rmapi/src/g_finn_rm_api.c" line="233" column="21" info="Shift"/>
+            <location file="/workspace/src/nvidia/interface/rmapi/src/g_finn_rm_api.c" line="168" column="18" info="Assuming condition is Assuming condition is false"/>
+            <location file="/workspace/src/nvidia/interface/rmapi/src/g_finn_rm_api.c" line="7334" column="50" info="Calling function &apos;finn_read_buffer&apos;, 2nd argument &apos;64&apos; value is 64"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/core/locks.c">
+            <location file="/workspace/src/nvidia/src/kernel/core/locks.c" line="2229" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/core/system.c">
+            <location file="/workspace/src/nvidia/src/kernel/core/system.c" line="877" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If PRB_MAYBE_FIELD_NAME is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/diagnostics/nv_debug_dump.c">
+            <location file="/workspace/src/nvidia/src/kernel/diagnostics/nv_debug_dump.c" line="526" column="9"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" file0="/workspace/src/nvidia/src/kernel/gpu/arch/blackwell/kern_gpu_gb100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/arch/blackwell/kern_gpu_gb100.c" line="0" column="0"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c" line="3366" column="5"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pKernelMIGGPUInstance" verbose="Possible null pointer dereference: pKernelMIGGPUInstance" cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c" line="3088" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c" line="3079" column="69" info="Assuming condition is false"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/arch/maxwell/kern_bus_gm107.c" line="3075" column="62" info="Assignment &apos;pKernelMIGGPUInstance=NULL&apos;, assigned value is 0"/>
+            <symbol>pKernelMIGGPUInstance</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/bus/kern_bus.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/kern_bus.c" line="418" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/bus/kern_bus_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/kern_bus_ctrl.c" line="81" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/bus/p2p_api.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/bus/p2p_api.c" line="407" column="63"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;numPcesAssigned&lt;numPcesPerLce&apos; and inner condition is &apos;numPcesAssigned&gt;=numPcesPerLce&apos;)." cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="950" column="45" info="opposite inner condition: numPcesAssigned&gt;=numPcesPerLce"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="939" column="40" info="outer condition: numPcesAssigned&lt;numPcesPerLce"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;numPcesAssigned&lt;numPcesPerLce&apos; and inner condition is &apos;numPcesAssigned&gt;=numPcesPerLce&apos;)." cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="957" column="49" info="opposite inner condition: numPcesAssigned&gt;=numPcesPerLce"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="939" column="40" info="outer condition: numPcesAssigned&lt;numPcesPerLce"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;numPcesAssigned&lt;numPcesPerLce&apos; and inner condition is &apos;numPcesAssigned&gt;=numPcesPerLce&apos;)." cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="1252" column="41" info="opposite inner condition: numPcesAssigned&gt;=numPcesPerLce"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c" line="1246" column="36" info="outer condition: numPcesAssigned&lt;numPcesPerLce"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb202.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb202.c" line="92" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pceIndex!=NULL&apos; is redundant or there is possible null pointer dereference: pceIndex." verbose="Either the condition &apos;pceIndex!=NULL&apos; is redundant or there is possible null pointer dereference: pceIndex." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/hopper/kernel_ce_gh100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/hopper/kernel_ce_gh100.c" line="282" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/hopper/kernel_ce_gh100.c" line="276" column="19" info="Assuming that condition &apos;pceIndex!=NULL&apos; is not redundant"/>
+            <symbol>pceIndex</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_BEGIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_BEGIN is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/ce/arch/volta/kernel_ce_gv100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/arch/volta/kernel_ce_gv100.c" line="255" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If KCE_ITER_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/ce/kernel_ce.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/kernel_ce.c" line="919" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/ce/kernel_ce_context.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/ce/kernel_ce_context.c" line="71" column="44"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/device_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/device_ctrl.c" line="626" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/disp/disp_channel.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/disp_channel.c" line="706" column="5"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DFP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DFP" file0="/workspace/src/nvidia/src/kernel/gpu/disp/disp_common_ctrl_acpi.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/disp_common_ctrl_acpi.c" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DP" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0073_CTRL_DP" file0="/workspace/src/nvidia/src/kernel/gpu/disp/disp_common_kern_ctrl_minimal.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/disp_common_kern_ctrl_minimal.c" line="0" column="0"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pKernelDisplay==NULL&apos; is redundant or there is possible null pointer dereference: pKernelDisplay." verbose="Either the condition &apos;pKernelDisplay==NULL&apos; is redundant or there is possible null pointer dereference: pKernelDisplay." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1099" column="38" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1101" column="24" info="Assuming that condition &apos;pKernelDisplay==NULL&apos; is not redundant"/>
+            <symbol>pKernelDisplay</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pCallback&apos; is redundant or there is possible null pointer dereference: pCallback." verbose="Either the condition &apos;pCallback&apos; is redundant or there is possible null pointer dereference: pCallback." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1281" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1265" column="27" info="pCallback is assigned &apos;(VBLANKCALLBACK*)osVblankCallback.pParm3&apos; here."/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1265" column="29" info="Assignment to &apos;pCallback=(VBLANKCALLBACK*)osVblankCallback.pParm3&apos;"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/disp/kern_disp.c" line="1266" column="21" info="Assuming that condition &apos;pCallback&apos; is not redundant"/>
+            <symbol>pCallback</symbol>
+        </error>
+        <error id="unknownEvaluationOrder" severity="error" msg="Expression &apos;LEVEL_INFO,syncSkew&lt;=NV_P2061_V204_SYNC_SKEW_MAX_UNITS,syncSkew=NV_P2061_V204_SYNC_SKEW_MAX_UNITS&apos; depends on order of evaluation of side effects" verbose="Expression &apos;LEVEL_INFO,syncSkew&lt;=NV_P2061_V204_SYNC_SKEW_MAX_UNITS,syncSkew=NV_P2061_V204_SYNC_SKEW_MAX_UNITS&apos; depends on order of evaluation of side effects" cwe="768" file0="/workspace/src/nvidia/src/kernel/gpu/external_device/arch/pascal/kern_gsync_p2061.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/external_device/arch/pascal/kern_gsync_p2061.c" line="234" column="67"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/external_device/gsync.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/external_device/gsync.c" line="895" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/falcon/kernel_crashcat_engine.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/falcon/kernel_crashcat_engine.c" line="252" column="20"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/maxwell/kernel_channel_gm107.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/maxwell/kernel_channel_gm107.c" line="402" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/pascal/kernel_fifo_gp102.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/pascal/kernel_fifo_gp102.c" line="211" column="40"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/turing/kernel_channel_tu102.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/turing/kernel_channel_tu102.c" line="342" column="13"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pKernelChannelGroup!=NULL&apos; is redundant or there is possible null pointer dereference: pKernelChannelGroup." verbose="Either the condition &apos;pKernelChannelGroup!=NULL&apos; is redundant or there is possible null pointer dereference: pKernelChannelGroup." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/turing/kernel_fifo_tu102.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/turing/kernel_fifo_tu102.c" line="980" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/arch/turing/kernel_fifo_tu102.c" line="982" column="29" info="Assuming that condition &apos;pKernelChannelGroup!=NULL&apos; is not redundant"/>
+            <symbol>pKernelChannelGroup</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel.c" line="2116" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group.c" line="139" column="52"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c" line="192" column="57"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_ctxshare.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_ctxshare.c" line="281" column="79"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_fifo.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_fifo.c" line="3078" column="46"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_fifo_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_fifo_ctrl.c" line="648" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_idle_channels.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/fifo/kernel_idle_channels.c" line="219" column="53"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: +]" verbose="syntax error: +]" file0="/workspace/src/nvidia/src/kernel/gpu/gpu.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpu.c" line="1104" column="26"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pGpu!=NULL&apos; is redundant or there is possible null pointer dereference: pGpu." verbose="Either the condition &apos;pGpu!=NULL&apos; is redundant or there is possible null pointer dereference: pGpu." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c" line="363" column="63" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c" line="366" column="35" info="Assuming that condition &apos;pGpu!=NULL&apos; is not redundant"/>
+            <symbol>pGpu</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gpu_rmapi.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpu_rmapi.c" line="342" column="51"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gpu_user_shared_data.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpu_user_shared_data.c" line="719" column="55"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c" line="132" column="28"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gr/fecs_event_list.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/fecs_event_list.c" line="294" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c" line="2747" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics_context.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics_context.c" line="655" column="15"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;pKernelMIGGPUInstance&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;pKernelMIGGPUInstance&apos; doesn&apos;t have a parent." file0="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics_manager.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_graphics_manager.c" line="734" column="62"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_sm_debugger_session.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_sm_debugger_session.c" line="300" column="133"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_sm_debugger_session_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gr/kernel_sm_debugger_session_ctrl.c" line="683" column="48"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/gsp/kernel_gsp.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gsp/kernel_gsp.c" line="6067" column="9"/>
+        </error>
+        <error id="unknownEvaluationOrder" severity="error" msg="Expression &apos;nvStatus!=NV_WARN_MORE_PROCESSING_REQUIRED,nvStatus=NV_ERR_GENERIC&apos; depends on order of evaluation of side effects" verbose="Expression &apos;nvStatus!=NV_WARN_MORE_PROCESSING_REQUIRED,nvStatus=NV_ERR_GENERIC&apos; depends on order of evaluation of side effects" cwe="768" file0="/workspace/src/nvidia/src/kernel/gpu/gsp/kernel_gsp.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/gsp/kernel_gsp.c" line="1838" column="67"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pCntRef!=NULL&apos; is redundant or there is possible null pointer dereference: pCntRef." verbose="Either the condition &apos;pCntRef!=NULL&apos; is redundant or there is possible null pointer dereference: pCntRef." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/hwpm/profiler_v2/kern_profiler_v2_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/hwpm/profiler_v2/kern_profiler_v2_ctrl.c" line="152" column="31" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/hwpm/profiler_v2/kern_profiler_v2_ctrl.c" line="146" column="17" info="pCntRef is assigned &apos;pProfiler-&gt;ppBytesAvailable[pProfiler-&gt;pmaVchIdx]&apos; here."/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/hwpm/profiler_v2/kern_profiler_v2_ctrl.c" line="146" column="46" info="Assignment to &apos;pCntRef=pProfiler-&gt;ppBytesAvailable[pProfiler-&gt;pmaVchIdx]&apos;"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/hwpm/profiler_v2/kern_profiler_v2_ctrl.c" line="150" column="21" info="Assuming that condition &apos;pCntRef!=NULL&apos; is not redundant"/>
+            <symbol>pCntRef</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/intr/arch/turing/intr_tu102.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/intr/arch/turing/intr_tu102.c" line="880" column="7"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/intr/intr.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/intr/intr.c" line="161" column="13"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: numClasses" verbose="Uninitialized variable: numClasses" cwe="457" file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/mem_utils_gm107.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/mem_utils_gm107.c" line="2230" column="61"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/mem_utils_gm107.c" line="2217" column="23" info="Assuming condition is false"/>
+            <symbol>numClasses</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/virt_mem_allocator_gm107.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/virt_mem_allocator_gm107.c" line="695" column="45"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0050_CEUTILS" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0050_CEUTILS" file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/ce_utils.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/ce_utils.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/context_dma.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/context_dma.c" line="320" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/dma.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/dma.c" line="1012" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_ctrl.c" line="384" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_desc.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_desc.c" line="4463" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pWorkerParams==NULL&apos; is redundant or there is possible null pointer dereference: pWorkerParams." verbose="Either the condition &apos;pWorkerParams==NULL&apos; is redundant or there is possible null pointer dereference: pWorkerParams." cwe="476" file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mapper.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mapper.c" line="296" column="35" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mapper.c" line="297" column="23" info="Assuming that condition &apos;pWorkerParams==NULL&apos; is not redundant"/>
+            <symbol>pWorkerParams</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mgr.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mgr.c" line="3234" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mgr_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/mem_mgr_ctrl.c" line="205" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/method_notification.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/method_notification.c" line="361" column="5"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/phys_mem_allocator/phys_mem_allocator.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/phys_mem_allocator/phys_mem_allocator.c" line="2095" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/phys_mem_allocator/regmap.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/phys_mem_allocator/regmap.c" line="2087" column="42"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/sem_surf.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_mgr/sem_surf.c" line="766" column="55"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mem_sys/arch/rubin/kern_mem_sys_gr100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mem_sys/arch/rubin/kern_mem_sys_gr100.c" line="458" column="90"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mig_mgr/kernel_mig_manager.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mig_mgr/kernel_mig_manager.c" line="1423" column="34"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If BEGIN_DISCONTIG_FIELD_DESC64 is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If BEGIN_DISCONTIG_FIELD_DESC64 is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_fmt_tu10x.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_fmt_tu10x.c" line="45" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_INDEX_IN_MASK_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/mmu/kern_gmmu.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/mmu/kern_gmmu.c" line="840" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/blackwell/kernel_nvlink_gb100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/blackwell/kernel_nvlink_gb100.c" line="92" column="29"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/hopper/kernel_nvlink_gh100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/hopper/kernel_nvlink_gh100.c" line="518" column="23"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/pascal/kernel_nvlink_gp100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/nvlink/arch/pascal/kernel_nvlink_gp100.c" line="288" column="97"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" file0="/workspace/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelib.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelib.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkstate.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkstate.c" line="1242" column="31"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_callback.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_callback.c" line="82" column="60"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_watchdog.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_watchdog.c" line="630" column="91"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;chid&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;chid&apos;." cwe="190" file0="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_watchdog_callback.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_watchdog_callback.c" line="116" column="51" info="Integer overflow"/>
+            <location file="/workspace/src/nvidia/src/kernel/gpu/rc/kernel_rc_watchdog_callback.c" line="114" column="25" info="Assuming that condition &apos;chid&lt;32&apos; is not redundant"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/gpu/spdm/arch/hopper/spdm_certs_gh100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/spdm/arch/hopper/spdm_certs_gh100.c" line="443" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/spdm/arch/hopper/spdm_gh100.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/spdm/arch/hopper/spdm_gh100.c" line="823" column="5"/>
+        </error>
+        <error id="invalidTestForOverflow" severity="warning" msg="Invalid test for overflow &apos;pCert+0x4&lt;=pCert&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." verbose="Invalid test for overflow &apos;pCert+0x4&lt;=pCert&apos;; pointer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it&apos;s always false." cwe="391" file0="/workspace/src/nvidia/src/kernel/gpu/spdm/spdm.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/spdm/spdm.c" line="205" column="44"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 2080_GPU_CMD" file0="/workspace/src/nvidia/src/kernel/gpu/subdevice/subdevice_ctrl_gpu_kernel.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/subdevice/subdevice_ctrl_gpu_kernel.c" line="0" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu/video/kernel_video_engine.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu/video/kernel_video_engine.c" line="151" column="47"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/gpu_mgr/gpu_mgr.c">
+            <location file="/workspace/src/nvidia/src/kernel/gpu_mgr/gpu_mgr.c" line="4520" column="72"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_GPU_IN_MASK_UC_END is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If FOR_EACH_GPU_IN_MASK_UC_END is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/gpu_vaspace.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/gpu_vaspace.c" line="2733" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/mem.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/mem.c" line="410" column="10"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/os_desc_mem.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/os_desc_mem.c" line="209" column="42"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c" line="1013" column="5"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;poolAllocSizes[9]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;poolAllocSizes[9]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c" line="526" column="63" info="Negative array index"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: pPageHandle" verbose="Possible null pointer dereference: pPageHandle" cwe="476" file0="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c" line="738" column="45" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/pool_alloc.c" line="736" column="35" info="Assignment &apos;pPageHandle=NULL&apos;, assigned value is 0"/>
+            <symbol>pPageHandle</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/system_mem.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/system_mem.c" line="379" column="40"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/video_mem.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/video_mem.c" line="631" column="40"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If SLI_LOOP_START is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/mem_mgr/virtual_mem.c">
+            <location file="/workspace/src/nvidia/src/kernel/mem_mgr/virtual_mem.c" line="398" column="9"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c">
+            <location file="/workspace/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c" line="1460" column="13"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/platform/p2p/p2p_caps.c">
+            <location file="/workspace/src/nvidia/src/kernel/platform/p2p/p2p_caps.c" line="973" column="62"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0000_CTRL_PFM_REQ_HNDLR" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0000_CTRL_PFM_REQ_HNDLR" file0="/workspace/src/nvidia/src/kernel/platform/platform_request_handler_ctrl.c">
+            <location file="/workspace/src/nvidia/src/kernel/platform/platform_request_handler_ctrl.c" line="0" column="0"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="/workspace/src/nvidia/src/kernel/rmapi/alloc_free.c">
+            <location file="/workspace/src/nvidia/src/kernel/rmapi/alloc_free.c" line="866" column="9"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/rmapi/client_resource.c">
+            <location file="/workspace/src/nvidia/src/kernel/rmapi/client_resource.c" line="3799" column="59"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c">
+            <location file="/workspace/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c" line="676" column="98"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/rmapi/rmapi_cache.c">
+            <location file="/workspace/src/nvidia/src/kernel/rmapi/rmapi_cache.c" line="1515" column="55"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NV_ASSERT_OK_OR_ELSE is a macro then please configure it." file0="/workspace/src/nvidia/src/kernel/vgpu/vgpu_events.c">
+            <location file="/workspace/src/nvidia/src/kernel/vgpu/vgpu_events.c" line="241" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ( . hypervisorName" verbose="syntax error: ( . hypervisorName" file0="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/hyperv/hyperv.c">
+            <location file="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/hyperv/hyperv.c" line="100" column="12"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ( . hypervisorName" verbose="syntax error: ( . hypervisorName" file0="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/kvm/kvm.c">
+            <location file="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/kvm/kvm.c" line="50" column="12"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ( . hypervisorName" verbose="syntax error: ( . hypervisorName" file0="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/vmware/vmware.c">
+            <location file="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/vmware/vmware.c" line="50" column="12"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ( . hypervisorName" verbose="syntax error: ( . hypervisorName" file0="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/xen/xen.c">
+            <location file="/workspace/src/nvidia/src/kernel/virtualization/hypervisor/xen/xen.c" line="51" column="12"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!x&apos; is redundant or there is possible null pointer dereference: x." verbose="Either the condition &apos;!x&apos; is redundant or there is possible null pointer dereference: x." cwe="476" file0="/workspace/src/nvidia/src/libraries/containers/btree/btree.c">
+            <location file="/workspace/src/nvidia/src/libraries/containers/btree/btree.c" line="539" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/libraries/containers/btree/btree.c" line="459" column="30" info="Assuming that condition &apos;!x&apos; is not redundant"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;pRoot==NULL&apos; is redundant or there is possible null pointer dereference: pRoot." verbose="Either the condition &apos;pRoot==NULL&apos; is redundant or there is possible null pointer dereference: pRoot." cwe="476" file0="/workspace/src/nvidia/src/libraries/containers/btree/btree.c">
+            <location file="/workspace/src/nvidia/src/libraries/containers/btree/btree.c" line="563" column="57" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/libraries/containers/btree/btree.c" line="566" column="32" info="Assuming that condition &apos;pRoot==NULL&apos; is not redundant"/>
+            <symbol>pRoot</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!x&apos; is redundant or there is possible null pointer dereference: x." verbose="Either the condition &apos;!x&apos; is redundant or there is possible null pointer dereference: x." cwe="476" file0="/workspace/src/nvidia/src/libraries/containers/map.c">
+            <location file="/workspace/src/nvidia/src/libraries/containers/map.c" line="787" column="21" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/libraries/containers/map.c" line="697" column="31" info="Assuming that condition &apos;!x&apos; is not redundant"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_common_lib/libspdm_com_crypto_service.c">
+            <location file="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_common_lib/libspdm_com_crypto_service.c" line="249" column="49"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If LIBSPDM_DEBUG_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If LIBSPDM_DEBUG_CODE is a macro then please configure it." file0="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_finish.c">
+            <location file="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_finish.c" line="283" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If LIBSPDM_DEBUG_CODE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If LIBSPDM_DEBUG_CODE is a macro then please configure it." file0="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_key_exchange.c">
+            <location file="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_key_exchange.c" line="165" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;session_id!=NULL&apos; is redundant or there is possible null pointer dereference: session_id." verbose="Either the condition &apos;session_id!=NULL&apos; is redundant or there is possible null pointer dereference: session_id." cwe="476" file0="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_send_receive.c">
+            <location file="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_send_receive.c" line="232" column="37" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_send_receive.c" line="235" column="40" info="Assuming that condition &apos;session_id!=NULL&apos; is not redundant"/>
+            <symbol>session_id</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;s&apos; is redundant or there is possible null pointer dereference: s." verbose="Either the condition &apos;s&apos; is redundant or there is possible null pointer dereference: s." cwe="476" file0="/workspace/src/nvidia/src/libraries/nvport/string/string_generic.c">
+            <location file="/workspace/src/nvidia/src/libraries/nvport/string/string_generic.c" line="351" column="10" info="Null pointer dereference"/>
+            <location file="/workspace/src/nvidia/src/libraries/nvport/string/string_generic.c" line="346" column="12" info="Assuming that condition &apos;s&apos; is not redundant"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it." file0="/workspace/src/nvidia/src/libraries/resserv/src/rs_server.c">
+            <location file="/workspace/src/nvidia/src/libraries/resserv/src/rs_server.c" line="787" column="69"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;tlsDatabase.isrEntries[64]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;tlsDatabase.isrEntries[64]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/src/nvidia/src/libraries/tls/tls.c">
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="786" column="34" info="Negative array index"/>
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="776" column="39" info="Assuming condition is false"/>
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="769" column="24" info="Assignment &apos;closestIdx=~0x0&apos;, assigned value is -1"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array &apos;tlsDatabase.isrEntries[1024]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;tlsDatabase.isrEntries[1024]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/workspace/src/nvidia/src/libraries/tls/tls.c">
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="786" column="34" info="Negative array index"/>
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="776" column="39" info="Assuming condition is false"/>
+            <location file="/workspace/src/nvidia/src/libraries/tls/tls.c" line="769" column="24" info="Assignment &apos;closestIdx=~0x0&apos;, assigned value is -1"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: dma_dev" verbose="Null pointer dereference: dma_dev" cwe="476">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="64" column="22" info="Dereferencing argument dma_dev that is null"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="87" column="31" info="Calling function nv_dma_is_addressable, 1st argument is null"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="89" column="9" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: dma_dev" verbose="Null pointer dereference: dma_dev" cwe="476">
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="712" column="49" info="Dereferencing argument dma_dev that is null"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="817" column="32" info="Calling function nv_dma_use_map_resource, 1st argument is null"/>
+            <location file="/workspace/kernel-open/nvidia/nv-dma.c" line="824" column="13" info="Assuming that condition &apos;dma_dev&apos; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: directory" verbose="Null pointer dereference: directory" cwe="476">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="414" column="6" info="Dereferencing argument directory that is null"/>
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="916" column="30" info="Calling function dwarfReadFilename_V2, 3rd argument is null"/>
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="1063" column="28" info="Calling function dwarfParseUnitLines, 4th argument is null"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: filename" verbose="Null pointer dereference: filename" cwe="476">
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="415" column="6" info="Dereferencing argument filename that is null"/>
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="916" column="30" info="Calling function dwarfReadFilename_V2, 4th argument is null"/>
+            <location file="/workspace/src/common/uproc/os/libos-v3.1.0/lib/libdwarf.c" line="1063" column="28" info="Calling function dwarfParseUnitLines, 5th argument is null"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

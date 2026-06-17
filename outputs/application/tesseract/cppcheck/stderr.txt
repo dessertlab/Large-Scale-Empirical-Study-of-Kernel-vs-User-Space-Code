@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." verbose="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." cwe="476" file0="/workspace/src/ccmain/equationdetect.cpp">
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="57" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="54" column="27" info="cp1 is assigned &apos;*static_cast&lt;ColPartition*const*&gt;(p1)&apos; here."/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="54" column="29" info="Assignment to &apos;cp1=*static_cast&lt;ColPartition*const*&gt;(p1)&apos;"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="56" column="19" info="Assuming that condition &apos;cp1!=nullptr&apos; is not redundant"/>
+            <symbol>cp1</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." verbose="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." cwe="476" file0="/workspace/src/ccmain/equationdetect.cpp">
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="65" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="62" column="27" info="cp1 is assigned &apos;*static_cast&lt;ColPartition*const*&gt;(p1)&apos; here."/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="62" column="29" info="Assignment to &apos;cp1=*static_cast&lt;ColPartition*const*&gt;(p1)&apos;"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="64" column="19" info="Assuming that condition &apos;cp1!=nullptr&apos; is not redundant"/>
+            <symbol>cp1</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." verbose="Either the condition &apos;cp1!=nullptr&apos; is redundant or there is possible null pointer dereference: cp1." cwe="476" file0="/workspace/src/ccmain/equationdetect.cpp">
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="73" column="20" info="Null pointer dereference"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="70" column="27" info="cp1 is assigned &apos;*static_cast&lt;ColPartition*const*&gt;(p1)&apos; here."/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="70" column="29" info="Assignment to &apos;cp1=*static_cast&lt;ColPartition*const*&gt;(p1)&apos;"/>
+            <location file="/workspace/src/ccmain/equationdetect.cpp" line="72" column="19" info="Assuming that condition &apos;cp1!=nullptr&apos; is not redundant"/>
+            <symbol>cp1</symbol>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;Clear&apos; is called from destructor &apos;~ImageThresholder()&apos; at line 51. Dynamic binding is not used." verbose="Virtual function &apos;Clear&apos; is called from destructor &apos;~ImageThresholder()&apos; at line 51. Dynamic binding is not used." file0="/workspace/src/ccmain/thresholder.cpp">
+            <location file="/workspace/src/ccmain/thresholder.h" line="51" column="16" info="Clear is a virtual function"/>
+            <location file="/workspace/src/ccmain/thresholder.cpp" line="51" column="3" info="Calling Clear"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." file0="/workspace/src/ccstruct/blamer.cpp">
+            <location file="/workspace/src/ccstruct/ratngs.h" line="228" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." file0="/workspace/src/ccstruct/blobbox.cpp">
+            <location file="/workspace/src/ccstruct/blobbox.h" line="808" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/ccstruct/blobs.cpp">
+            <location file="/workspace/src/ccstruct/points.h" line="196" column="3"/>
+        </error>
+        <error id="thisSubtraction" severity="warning" msg="Suspicious pointer subtraction. Did you intend to write &apos;-&gt;&apos;?" verbose="Suspicious pointer subtraction. Did you intend to write &apos;-&gt;&apos;?" cwe="398" file0="/workspace/src/ccstruct/dppoint.cpp">
+            <location file="/workspace/src/ccstruct/dppoint.cpp" line="76" column="15"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::prev&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::prev&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::prev</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::current&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::current&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::current</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::next&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::next&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::next</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::cycle_pt&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::cycle_pt&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::cycle_pt</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::ex_current_was_last&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::ex_current_was_last&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::ex_current_was_last</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::ex_current_was_cycle_pt&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::ex_current_was_cycle_pt&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::ex_current_was_cycle_pt</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Iterator::started_cycling&apos; is not initialized in the constructor." verbose="Member variable &apos;Iterator::started_cycling&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/ccutil/ambigs.cpp">
+            <location file="/workspace/src/ccutil/elst.h" line="210" column="5"/>
+            <symbol>Iterator::started_cycling</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: reinterpret_cast&lt;int*&gt;(0)" verbose="Null pointer dereference: reinterpret_cast&lt;int*&gt;(0)" cwe="476" file0="/workspace/src/ccutil/errcode.cpp">
+            <location file="/workspace/src/ccutil/errcode.cpp" line="80" column="31" info="Null pointer dereference"/>
+            <symbol>reinterpret_cast&lt;int*&gt;(0)</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;INT_CLASS_STRUCT::ProtoSets&apos; is not initialized in the constructor." verbose="Member variable &apos;INT_CLASS_STRUCT::ProtoSets&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/intproto.h" line="94" column="3"/>
+            <symbol>INT_CLASS_STRUCT::ProtoSets</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;INT_CLASS_STRUCT::ConfigLengths&apos; is not initialized in the constructor." verbose="Member variable &apos;INT_CLASS_STRUCT::ConfigLengths&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/intproto.h" line="94" column="3"/>
+            <symbol>INT_CLASS_STRUCT::ConfigLengths</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TEMP_CONFIG_STRUCT::NumTimesSeen&apos; is not initialized in the constructor." verbose="Member variable &apos;TEMP_CONFIG_STRUCT::NumTimesSeen&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="33" column="3"/>
+            <symbol>TEMP_CONFIG_STRUCT::NumTimesSeen</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TEMP_CONFIG_STRUCT::ProtoVectorSize&apos; is not initialized in the constructor." verbose="Member variable &apos;TEMP_CONFIG_STRUCT::ProtoVectorSize&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="33" column="3"/>
+            <symbol>TEMP_CONFIG_STRUCT::ProtoVectorSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TEMP_CONFIG_STRUCT::FontinfoId&apos; is not initialized in the constructor." verbose="Member variable &apos;TEMP_CONFIG_STRUCT::FontinfoId&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="33" column="3"/>
+            <symbol>TEMP_CONFIG_STRUCT::FontinfoId</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PERM_CONFIG_STRUCT::Ambigs&apos; is not initialized in the constructor." verbose="Member variable &apos;PERM_CONFIG_STRUCT::Ambigs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="44" column="3"/>
+            <symbol>PERM_CONFIG_STRUCT::Ambigs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PERM_CONFIG_STRUCT::FontinfoId&apos; is not initialized in the constructor." verbose="Member variable &apos;PERM_CONFIG_STRUCT::FontinfoId&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="44" column="3"/>
+            <symbol>PERM_CONFIG_STRUCT::FontinfoId</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ADAPT_TEMPLATES_STRUCT::Templates&apos; is not initialized in the constructor." verbose="Member variable &apos;ADAPT_TEMPLATES_STRUCT::Templates&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="69" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT::Templates</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ADAPT_TEMPLATES_STRUCT::NumNonEmptyClasses&apos; is not initialized in the constructor." verbose="Member variable &apos;ADAPT_TEMPLATES_STRUCT::NumNonEmptyClasses&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="69" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT::NumNonEmptyClasses</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ADAPT_TEMPLATES_STRUCT::NumPermClasses&apos; is not initialized in the constructor." verbose="Member variable &apos;ADAPT_TEMPLATES_STRUCT::NumPermClasses&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="69" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT::NumPermClasses</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ADAPT_TEMPLATES_STRUCT::Class&apos; is not initialized in the constructor." verbose="Member variable &apos;ADAPT_TEMPLATES_STRUCT::Class&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.h" line="69" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT::Class</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;ADAPT_TEMPLATES_STRUCT&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ADAPT_TEMPLATES_STRUCT&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.cpp" line="96" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;ADAPT_TEMPLATES_STRUCT&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ADAPT_TEMPLATES_STRUCT&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/adaptive.cpp">
+            <location file="/workspace/src/classify/adaptive.cpp" line="96" column="3"/>
+            <symbol>ADAPT_TEMPLATES_STRUCT</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TrainingSample::cn_feature_&apos; is not initialized in the constructor." verbose="Member variable &apos;TrainingSample::cn_feature_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptmatch.cpp">
+            <location file="/workspace/src/classify/trainingsample.h" line="56" column="3"/>
+            <symbol>TrainingSample::cn_feature_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TrainingSample::geo_feature_&apos; is not initialized in the constructor." verbose="Member variable &apos;TrainingSample::geo_feature_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/adaptmatch.cpp">
+            <location file="/workspace/src/classify/trainingsample.h" line="56" column="3"/>
+            <symbol>TrainingSample::geo_feature_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Classify::CharNormCutoffs&apos; is not initialized in the constructor." verbose="Member variable &apos;Classify::CharNormCutoffs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/classify.cpp">
+            <location file="/workspace/src/classify/classify.cpp" line="60" column="11"/>
+            <symbol>Classify::CharNormCutoffs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Classify::BaselineCutoffs&apos; is not initialized in the constructor." verbose="Member variable &apos;Classify::BaselineCutoffs&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/classify.cpp">
+            <location file="/workspace/src/classify/classify.cpp" line="60" column="11"/>
+            <symbol>Classify::BaselineCutoffs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::Key&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::Key&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::Key</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::Data&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::Data&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::Data</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::BranchPoint&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::BranchPoint&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::BranchPoint</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::LeftBranch&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::LeftBranch&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::LeftBranch</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::RightBranch&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::RightBranch&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::RightBranch</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::Left&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::Left&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::Left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;KDNODE::Right&apos; is not initialized in the constructor." verbose="Member variable &apos;KDNODE::Right&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/kdtree.h" line="50" column="3"/>
+            <symbol>KDNODE::Right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::Clustered&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::Clustered&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::Clustered</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::Prototype&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::Prototype&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::Prototype</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::SampleCount&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::SampleCount&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::SampleCount</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::Left&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::Left&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::Left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::Right&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::Right&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::Right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CLUSTER::CharID&apos; is not initialized in the constructor." verbose="Member variable &apos;CLUSTER::CharID&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.h" line="35" column="3"/>
+            <symbol>CLUSTER::CharID</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BUCKETS::Bucket&apos; is not initialized in the constructor." verbose="Member variable &apos;BUCKETS::Bucket&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/cluster.cpp">
+            <location file="/workspace/src/classify/cluster.cpp" line="1275" column="3"/>
+            <symbol>BUCKETS::Bucket</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;ClassPruner&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ClassPruner&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/intmatcher.cpp">
+            <location file="/workspace/src/classify/intmatcher.cpp" line="144" column="5"/>
+            <symbol>ClassPruner</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;ClassPruner&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;ClassPruner&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/intmatcher.cpp">
+            <location file="/workspace/src/classify/intmatcher.cpp" line="144" column="5"/>
+            <symbol>ClassPruner</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Element::key&apos; is not initialized in the constructor." verbose="Member variable &apos;Element::key&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="59" column="5"/>
+            <symbol>Element::key</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Element::value&apos; is not initialized in the constructor." verbose="Member variable &apos;Element::value&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="59" column="5"/>
+            <symbol>Element::value</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;KDTreeSearch&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;KDTreeSearch&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="149" column="3"/>
+            <symbol>KDTreeSearch</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;KDTreeSearch&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;KDTreeSearch&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="149" column="3"/>
+            <symbol>KDTreeSearch</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;MinK &lt; float , void * &gt;&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;MinK &lt; float , void * &gt;&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="87" column="3"/>
+            <symbol>MinK &lt; float , void * &gt;</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;MinK &lt; float , void * &gt;&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;MinK &lt; float , void * &gt;&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/classify/kdtree.cpp">
+            <location file="/workspace/src/classify/kdtree.cpp" line="87" column="3"/>
+            <symbol>MinK &lt; float , void * &gt;</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;LSTM&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;LSTM&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/lstm/lstm.cpp">
+            <location file="/workspace/src/lstm/lstm.cpp" line="118" column="5"/>
+            <symbol>LSTM</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;LSTM&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;LSTM&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/lstm/lstm.cpp">
+            <location file="/workspace/src/lstm/lstm.cpp" line="118" column="5"/>
+            <symbol>LSTM</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GridBase::gridsize_&apos; is not initialized in the constructor." verbose="Member variable &apos;GridBase::gridsize_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/bbgrid.h" line="54" column="3"/>
+            <symbol>GridBase::gridsize_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GridBase::gridwidth_&apos; is not initialized in the constructor." verbose="Member variable &apos;GridBase::gridwidth_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/bbgrid.h" line="54" column="3"/>
+            <symbol>GridBase::gridwidth_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GridBase::gridheight_&apos; is not initialized in the constructor." verbose="Member variable &apos;GridBase::gridheight_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/bbgrid.h" line="54" column="3"/>
+            <symbol>GridBase::gridheight_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;GridBase::gridbuckets_&apos; is not initialized in the constructor." verbose="Member variable &apos;GridBase::gridbuckets_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/bbgrid.h" line="54" column="3"/>
+            <symbol>GridBase::gridbuckets_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TabConstraint::vector_&apos; is not initialized in the constructor." verbose="Member variable &apos;TabConstraint::vector_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/tabvector.h" line="72" column="3"/>
+            <symbol>TabConstraint::vector_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TabConstraint::is_top_&apos; is not initialized in the constructor." verbose="Member variable &apos;TabConstraint::is_top_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/tabvector.h" line="72" column="3"/>
+            <symbol>TabConstraint::is_top_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TabConstraint::y_min_&apos; is not initialized in the constructor." verbose="Member variable &apos;TabConstraint::y_min_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/tabvector.h" line="72" column="3"/>
+            <symbol>TabConstraint::y_min_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TabConstraint::y_max_&apos; is not initialized in the constructor." verbose="Member variable &apos;TabConstraint::y_max_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/alignedblob.cpp">
+            <location file="/workspace/src/textord/tabvector.h" line="72" column="3"/>
+            <symbol>TabConstraint::y_max_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." file0="/workspace/src/textord/baselinedetect.cpp">
+            <location file="/workspace/src/textord/pitsync1.h" line="81" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartition::color1_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartition::color1_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartition.h" line="72" column="3"/>
+            <symbol>ColPartition::color1_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartition::color2_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartition::color2_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartition.h" line="72" column="3"/>
+            <symbol>ColPartition::color2_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartition::special_blobs_densities_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartition::special_blobs_densities_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartition.h" line="72" column="3"/>
+            <symbol>ColPartition::special_blobs_densities_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartitionSet::good_column_count_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartitionSet::good_column_count_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartitionset.h" line="40" column="3"/>
+            <symbol>ColPartitionSet::good_column_count_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartitionSet::good_coverage_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartitionSet::good_coverage_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartitionset.h" line="40" column="3"/>
+            <symbol>ColPartitionSet::good_coverage_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartitionSet::bad_coverage_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartitionSet::bad_coverage_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/ccnontextdetect.cpp">
+            <location file="/workspace/src/textord/colpartitionset.h" line="40" column="3"/>
+            <symbol>ColPartitionSet::bad_coverage_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartition::color1_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartition::color1_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/colpartition.cpp">
+            <location file="/workspace/src/textord/colpartition.cpp" line="91" column="15"/>
+            <symbol>ColPartition::color1_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColPartition::color2_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColPartition::color2_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/colpartition.cpp">
+            <location file="/workspace/src/textord/colpartition.cpp" line="91" column="15"/>
+            <symbol>ColPartition::color2_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If ELISTIZEH is a macro then please configure it." file0="/workspace/src/textord/fpchop.cpp">
+            <location file="/workspace/src/textord/fpchop.h" line="59" column="1"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;GAPMAP&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;GAPMAP&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/textord/gap_map.cpp">
+            <location file="/workspace/src/textord/gap_map.cpp" line="87" column="3"/>
+            <symbol>GAPMAP</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;GAPMAP&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;GAPMAP&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/textord/gap_map.cpp">
+            <location file="/workspace/src/textord/gap_map.cpp" line="87" column="3"/>
+            <symbol>GAPMAP</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SORTED_FLOAT::entry&apos; is not initialized in the constructor." verbose="Member variable &apos;SORTED_FLOAT::entry&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/sortflts.cpp">
+            <location file="/workspace/src/textord/sortflts.h" line="30" column="3"/>
+            <symbol>SORTED_FLOAT::entry</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SORTED_FLOAT::address&apos; is not initialized in the constructor." verbose="Member variable &apos;SORTED_FLOAT::address&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/sortflts.cpp">
+            <location file="/workspace/src/textord/sortflts.h" line="30" column="3"/>
+            <symbol>SORTED_FLOAT::address</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColSegment::num_table_cells_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColSegment::num_table_cells_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/tablefind.cpp">
+            <location file="/workspace/src/textord/tablefind.cpp" line="2101" column="13"/>
+            <symbol>ColSegment::num_table_cells_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColSegment::num_text_cells_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColSegment::num_text_cells_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/tablefind.cpp">
+            <location file="/workspace/src/textord/tablefind.cpp" line="2101" column="13"/>
+            <symbol>ColSegment::num_text_cells_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ColSegment::type_&apos; is not initialized in the constructor." verbose="Member variable &apos;ColSegment::type_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/textord/tablefind.cpp">
+            <location file="/workspace/src/textord/tablefind.cpp" line="2101" column="13"/>
+            <symbol>ColSegment::type_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MERGE_CLASS_NODE::NumMerged&apos; is not initialized in the constructor." verbose="Member variable &apos;MERGE_CLASS_NODE::NumMerged&apos; is not initialized in the constructor." cwe="398" file0="/workspace/src/training/common/commontraining.cpp">
+            <location file="/workspace/src/training/common/commontraining.h" line="92" column="3"/>
+            <symbol>MERGE_CLASS_NODE::NumMerged</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/src/training/common/commontraining.cpp">
+            <location file="/workspace/src/training/common/commontraining.cpp" line="351" column="5"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;handleFailure&apos; is called from destructor &apos;~IcuErrorCode()&apos; at line 24. Dynamic binding is not used." verbose="Virtual function &apos;handleFailure&apos; is called from destructor &apos;~IcuErrorCode()&apos; at line 24. Dynamic binding is not used." file0="/workspace/src/training/unicharset/icuerrorcode.cpp">
+            <location file="/workspace/src/training/unicharset/icuerrorcode.h" line="51" column="8" info="handleFailure is a virtual function"/>
+            <location file="/workspace/src/training/unicharset/icuerrorcode.cpp" line="24" column="5" info="Calling handleFailure"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 3) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 3) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 4) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 4) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 5) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 5) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 6) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 6) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 7) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 7) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 8) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 8) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 9) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 9) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="/workspace/src/viewer/scrollview.cpp">
+            <location file="/workspace/src/viewer/scrollview.cpp" line="308" column="3"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;SVNetwork&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;SVNetwork&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/viewer/svutil.cpp">
+            <location file="/workspace/src/viewer/svutil.cpp" line="269" column="3"/>
+            <symbol>SVNetwork</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;SVNetwork&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;SVNetwork&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/src/viewer/svutil.cpp">
+            <location file="/workspace/src/viewer/svutil.cpp" line="269" column="3"/>
+            <symbol>SVNetwork</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;ambiguous_words&apos;" verbose="Unused variable value &apos;ambiguous_words&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="166" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;classifier_tester&apos;" verbose="Unused variable value &apos;classifier_tester&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="167" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;combine_lang_model&apos;" verbose="Unused variable value &apos;combine_lang_model&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="168" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;combine_tessdata&apos;" verbose="Unused variable value &apos;combine_tessdata&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="169" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;cntraining&apos;" verbose="Unused variable value &apos;cntraining&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="170" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;dawg2wordlist&apos;" verbose="Unused variable value &apos;dawg2wordlist&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="171" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;shapeclustering&apos;" verbose="Unused variable value &apos;shapeclustering&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="173" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;unicharset_extractor&apos;" verbose="Unused variable value &apos;unicharset_extractor&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="174" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;wordlist2dawg&apos;" verbose="Unused variable value &apos;wordlist2dawg&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="175" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;lstmeval&apos;" verbose="Unused variable value &apos;lstmeval&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="176" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;lstmtraining&apos;" verbose="Unused variable value &apos;lstmtraining&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="177" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;set_unicharset_properties&apos;" verbose="Unused variable value &apos;set_unicharset_properties&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="178" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;merge_unicharsets&apos;" verbose="Unused variable value &apos;merge_unicharsets&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="179" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;text2image&apos;" verbose="Unused variable value &apos;text2image&apos;" cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="192" column="5"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Found suspicious operator &apos;,&apos;, result is not used." verbose="Found suspicious operator &apos;,&apos;, result is not used." cwe="398" file0="/workspace/sw.cpp">
+            <location file="/workspace/sw.cpp" line="197" column="42"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/apiexample_test.cc">
+            <location file="/workspace/unittest/apiexample_test.cc" line="84" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/applybox_test.cc">
+            <location file="/workspace/unittest/applybox_test.cc" line="109" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/baseapi_test.cc">
+            <location file="/workspace/unittest/baseapi_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/baseapi_thread_test.cc">
+            <location file="/workspace/unittest/baseapi_thread_test.cc" line="179" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/bitvector_test.cc">
+            <location file="/workspace/unittest/bitvector_test.cc" line="116" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/colpartition_test.cc">
+            <location file="/workspace/unittest/colpartition_test.cc" line="35" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/commandlineflags_test.cc">
+            <location file="/workspace/unittest/commandlineflags_test.cc" line="44" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/dawg_test.cc">
+            <location file="/workspace/unittest/dawg_test.cc" line="85" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/denorm_test.cc">
+            <location file="/workspace/unittest/denorm_test.cc" line="51" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/equationdetect_test.cc">
+            <location file="/workspace/unittest/equationdetect_test.cc" line="180" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/fileio_test.cc">
+            <location file="/workspace/unittest/fileio_test.cc" line="26" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/heap_test.cc">
+            <location file="/workspace/unittest/heap_test.cc" line="81" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/imagedata_test.cc">
+            <location file="/workspace/unittest/imagedata_test.cc" line="60" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/indexmapbidi_test.cc">
+            <location file="/workspace/unittest/indexmapbidi_test.cc" line="74" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/intfeaturemap_test.cc">
+            <location file="/workspace/unittest/intfeaturemap_test.cc" line="42" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/intsimdmatrix_test.cc">
+            <location file="/workspace/unittest/intsimdmatrix_test.cc" line="104" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/lang_model_test.cc">
+            <location file="/workspace/unittest/lang_model_test.cc" line="32" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/layout_test.cc">
+            <location file="/workspace/unittest/layout_test.cc" line="191" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/ligature_table_test.cc">
+            <location file="/workspace/unittest/ligature_table_test.cc" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/linlsq_test.cc">
+            <location file="/workspace/unittest/linlsq_test.cc" line="68" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CLISTIZEH is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CLISTIZEH is a macro then please configure it." file0="/workspace/unittest/list_test.cc">
+            <location file="/workspace/unittest/list_test.cc" line="46" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/loadlang_test.cc">
+            <location file="/workspace/unittest/loadlang_test.cc" line="49" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/lstm_recode_test.cc">
+            <location file="/workspace/unittest/lstm_recode_test.cc" line="29" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/lstm_test.cc">
+            <location file="/workspace/unittest/lstm_test.cc" line="50" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/lstmtrainer_test.cc">
+            <location file="/workspace/unittest/lstmtrainer_test.cc" line="22" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/matrix_test.cc">
+            <location file="/workspace/unittest/matrix_test.cc" line="58" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/networkio_test.cc">
+            <location file="/workspace/unittest/networkio_test.cc" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/normstrngs_test.cc">
+            <location file="/workspace/unittest/normstrngs_test.cc" line="39" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/normstrngs_test.cc">
+            <location file="/workspace/unittest/normstrngs_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/nthitem_test.cc">
+            <location file="/workspace/unittest/nthitem_test.cc" line="44" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/osd_test.cc">
+            <location file="/workspace/unittest/osd_test.cc" line="65" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/pagesegmode_test.cc">
+            <location file="/workspace/unittest/pagesegmode_test.cc" line="74" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/pango_font_info_test.cc">
+            <location file="/workspace/unittest/pango_font_info_test.cc" line="78" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/paragraphs_test.cc">
+            <location file="/workspace/unittest/paragraphs_test.cc" line="206" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/params_model_test.cc">
+            <location file="/workspace/unittest/params_model_test.cc" line="66" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/progress_test.cc">
+            <location file="/workspace/unittest/progress_test.cc" line="148" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/qrsequence_test.cc">
+            <location file="/workspace/unittest/qrsequence_test.cc" line="30" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/recodebeam_test.cc">
+            <location file="/workspace/unittest/recodebeam_test.cc" line="334" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/rect_test.cc">
+            <location file="/workspace/unittest/rect_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/resultiterator_test.cc">
+            <location file="/workspace/unittest/resultiterator_test.cc" line="258" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/scanutils_test.cc">
+            <location file="/workspace/unittest/scanutils_test.cc" line="24" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/shapetable_test.cc">
+            <location file="/workspace/unittest/shapetable_test.cc" line="62" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/stats_test.cc">
+            <location file="/workspace/unittest/stats_test.cc" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/stridemap_test.cc">
+            <location file="/workspace/unittest/stridemap_test.cc" line="63" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/stringrenderer_test.cc">
+            <location file="/workspace/unittest/stringrenderer_test.cc" line="82" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/tablefind_test.cc">
+            <location file="/workspace/unittest/tablefind_test.cc" line="133" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/tablerecog_test.cc">
+            <location file="/workspace/unittest/tablerecog_test.cc" line="175" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/tabvector_test.cc">
+            <location file="/workspace/unittest/tabvector_test.cc" line="38" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/tatweel_test.cc">
+            <location file="/workspace/unittest/tatweel_test.cc" line="54" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/textlineprojection_test.cc">
+            <location file="/workspace/unittest/textlineprojection_test.cc" line="245" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/tfile_test.cc">
+            <location file="/workspace/unittest/tfile_test.cc" line="150" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/unichar_test.cc">
+            <location file="/workspace/unittest/unichar_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/unicharcompress_test.cc">
+            <location file="/workspace/unittest/unicharcompress_test.cc" line="164" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/unicharset_test.cc">
+            <location file="/workspace/unittest/unicharset_test.cc" line="29" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/validate_grapheme_test.cc">
+            <location file="/workspace/unittest/validate_grapheme_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/validate_indic_test.cc">
+            <location file="/workspace/unittest/validate_indic_test.cc" line="37" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/validate_khmer_test.cc">
+            <location file="/workspace/unittest/validate_khmer_test.cc" line="31" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/validate_myanmar_test.cc">
+            <location file="/workspace/unittest/validate_myanmar_test.cc" line="27" column="1"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/unittest/validator_test.cc">
+            <location file="/workspace/unittest/validator_test.cc" line="28" column="1"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

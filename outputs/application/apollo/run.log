@@ -1,0 +1,19 @@
+[application/apollo] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/apollo
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/apollo
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1000 findings, exit 0, 7.30s
+[2/4] semgrep completed: 0 findings, exit 0, 19.73s
+[3/4] cppcheck completed: 553 findings, exit 0, 38.06s
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[codeql] still running | elapsed 00:10:00 | timeout 24:00:00 | remaining before timeout 23:49:59
+[4/4] codeql completed: 101 findings, exit 0, 778.73s
+
+Summary: 4 completed, 0 failed, 1654 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/apollo/report.json

@@ -1,0 +1,76 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "Vlnk/src/main_linux.c",
+        "line": 336,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "Vlnk/src/main_linux.c",
+        "line": 336,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "Vlnk/src/main_linux.c",
+        "line": 336,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "three_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "VtoyTool/vtoykmod.c",
+        "line": 363,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "VtoyTool/vtoykmod.c",
+        "line": 363,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "VtoyTool/vtoykmod.c",
+        "line": 363,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  }
+]

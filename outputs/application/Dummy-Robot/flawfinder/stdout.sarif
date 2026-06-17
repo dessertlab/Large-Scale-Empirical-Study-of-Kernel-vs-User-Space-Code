@@ -1,0 +1,4979 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1021",
+              "name": "buffer/sscanf",
+              "shortDescription": {
+                "text": "The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1001",
+              "name": "buffer/strcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1005",
+              "name": "buffer/strcat",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/snprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1047",
+              "name": "integer/atoi",
+              "shortDescription": {
+                "text": "Unless checked, the resulting number can exceed the expected range (CWE-190)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-190",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1015",
+              "name": "buffer/sprintf",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1008",
+              "name": "buffer/strncpy",
+              "shortDescription": {
+                "text": "Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1010",
+              "name": "buffer/strncat",
+              "shortDescription": {
+                "text": "Easily used incorrectly (e.g., incorrectly computing the correct maximum size to add) [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 19,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            ret = sscanf((char*) _data, \"c %f\", &cur);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "242b6e9241fa079dba4269028c91fe952a591a1052a5831d674c7ea6757c274b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 17,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "                printf(\"[error] Command format error!\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b90148d311b6fb86305c600a20998377a0b2a1305771e680f5cbe6722e459074"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 19,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            ret = sscanf((char*) _data, \"v %f\", &vel);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d37baa56ee9e802cf9b699fe60b1cdf2192016abb875f4c78bbcbb089519b11a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 17,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "                printf(\"[error] Command format error!\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b90148d311b6fb86305c600a20998377a0b2a1305771e680f5cbe6722e459074"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 19,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            ret = sscanf((char*) _data, \"p %f\", &pos);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "311197c20bc49aa5b6839db3e5cce5ccaf04b3e2ff61f027af0d08c94f4abd5e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/UserApp/protocols/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 17,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "                printf(\"[error] Command format error!\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b90148d311b6fb86305c600a20998377a0b2a1305771e680f5cbe6722e459074"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Port/Platform/Memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 5,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    memcpy(eeprom_buffer, (uint8_t*) (FLASH_BASE_ADDRESS), E2END + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "483804771d179339618b0aa8d09777e733f0dae3a666556621604b48cd48d875"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Port/Platform/Memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 3,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  memcpy((uint8_t *)(FLASH_BASE_ADDRESS), eeprom_buffer, E2END + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e95cd118d94a397807b1c57c07dc4075c2233c0b104f30fa34b3ecfb889eece7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Port/Platform/Memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 13,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            memcpy(&data, eeprom_buffer + offset, 8 * sizeof(uint32_t));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ad91368239413a80cdf09341c72671a8feb5b515c0fc6069ead5b308966b7885"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Port/Platform/Memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 296,
+                  "startColumn": 13,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            memcpy(&data, eeprom_buffer + offset, sizeof(uint32_t));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d3b4d983eb7b18d8e49d15e23ec7565aaa261d4f44bce7f67a90924e357adcfe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Port/Platform/Memory/eeprom_interface.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 13,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    uint8_t read(int address)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f88908502924a6a39a28c2bc2c56481676cdd9a24ac0a5568356d64b549b5c4c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Core/Src/syscalls.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "char *__env[1] = { 0 };"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "85cf052a0e0ab5fd148c53f855d531821e9d84280cff3bb4c91db4916cc3abf7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 13,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "            sscanf(_cmd, \"#CMDMODE %lu\", &mode);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54dba8820d9d8d57964ba73f59be8466eb0e9b0d8ac08d47e29c7a4a5731f2fd"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 13,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "            sscanf(_cmd, \"#CMDMODE %lu\", &mode);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "54dba8820d9d8d57964ba73f59be8466eb0e9b0d8ac08d47e29c7a4a5731f2fd"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/UserApp/common_inc.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 8,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "extern char serialNumberStr[13];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "359d6c61df7a1f44932c8208666cdbc4030c4da08e7a356205b1ab6406d399aa"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/UserApp/main.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f8bd72609fcf9e1123e74ed2ab5aa38f49593871255165d3086feea1a0957480"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/UserApp/main.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    char cmdModeNames[4][4] = {\"SEQ\", \"INT\", \"TRJ\", \"TUN\"};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34af65389f8dbbf1c54f427be3c7dadc865ae271dcd0caa570f91c5242b05c40"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 5,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "    memcpy(eeprom_buffer, (uint8_t*) (FLASH_BASE_ADDRESS), E2END + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "483804771d179339618b0aa8d09777e733f0dae3a666556621604b48cd48d875"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 3,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  memcpy((uint8_t *)(FLASH_BASE_ADDRESS), eeprom_buffer, E2END + 1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e95cd118d94a397807b1c57c07dc4075c2233c0b104f30fa34b3ecfb889eece7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 13,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            memcpy(&data, eeprom_buffer + offset, 8 * sizeof(uint32_t));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ad91368239413a80cdf09341c72671a8feb5b515c0fc6069ead5b308966b7885"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/memory/emulated_eeprom.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 296,
+                  "startColumn": 13,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "            memcpy(&data, eeprom_buffer + offset, sizeof(uint32_t));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d3b4d983eb7b18d8e49d15e23ec7565aaa261d4f44bce7f67a90924e357adcfe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/memory/eeprom_interface.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 13,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    uint8_t read(int address)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f88908502924a6a39a28c2bc2c56481676cdd9a24ac0a5568356d64b549b5c4c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1001",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 37,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        #define strcpy_P(dest, src) strcpy((dest), (src))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "58ff3cc46e601a66a629d923d219090f917d0131cd4bce944a7325a4b65c624b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1005",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 37,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        #define strcat_P(dest, src) strcat((dest), (src))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6c2d52130a998358218c556c0f9dbb86a506861407bd98da3a1d8553fb014745"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 16,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "const unsigned char dmpMemory[MPU6050_DMP_CODE_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c587cd93638d9471f8cb60b9c6e96ae57abe8526b51ba8cd3b05ef2a9117cfef"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 269,
+                  "startColumn": 16,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "const unsigned char dmpConfig[MPU6050_DMP_CONFIG_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dda4ce5f1f19a4faa2bb1699b0bf5baccfbc50332708ae9d84176b3ee6e69be5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 319,
+                  "startColumn": 16,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "const unsigned char dmpUpdates[MPU6050_DMP_UPDATES_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c61d3b55ef4752b1a16ecec24027711f12908d60bca60bd70234037a484a4404"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_9Axis_MotionApps41.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 778,
+                  "startColumn": 5,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    memcpy(v, vReal, sizeof(VectorInt16));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df239cf745ffe6d7e74e4634a9c5344795bb9210862a27e138956d945e7f263b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/i2c_dev.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 5,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    memcpy(dynBuffer + 1, pData, sizeof(uint8_t) * Size);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2ef5b0e04a4b5c80568b7e8994041de85aae9d7f7722dfe2dd6d1225e9ff2b4a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/i2c_dev.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 326,
+                  "startColumn": 5,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "    memcpy(dynBuffer + 1, data, sizeof(uint16_t) * length);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "39ac00c08847721f9e35af6c404fdcd26d2c781e2edffe0b6e42c8b9b35653ca"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1001",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 37,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        #define strcpy_P(dest, src) strcpy((dest), (src))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "58ff3cc46e601a66a629d923d219090f917d0131cd4bce944a7325a4b65c624b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1005",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 37,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        #define strcat_P(dest, src) strcat((dest), (src))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6c2d52130a998358218c556c0f9dbb86a506861407bd98da3a1d8553fb014745"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 16,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "const unsigned char dmpMemory[MPU6050_DMP_CODE_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c587cd93638d9471f8cb60b9c6e96ae57abe8526b51ba8cd3b05ef2a9117cfef"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 277,
+                  "startColumn": 16,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "const unsigned char dmpConfig[MPU6050_DMP_CONFIG_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dda4ce5f1f19a4faa2bb1699b0bf5baccfbc50332708ae9d84176b3ee6e69be5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 319,
+                  "startColumn": 16,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "const unsigned char dmpUpdates[MPU6050_DMP_UPDATES_SIZE] PROGMEM = {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c61d3b55ef4752b1a16ecec24027711f12908d60bca60bd70234037a484a4404"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050_6Axis_MotionApps20.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 673,
+                  "startColumn": 5,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    memcpy(v, vReal, sizeof(VectorInt16));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df239cf745ffe6d7e74e4634a9c5344795bb9210862a27e138956d945e7f263b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 13,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "            memcpy(tx_buf_, buffer, chunk);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1944fbb2947e6021c5303b49c0a031b291d925ac5123b67d79c9b313245df2fe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 13,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "            memcpy(tx_buf_, buffer, chunk);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1944fbb2947e6021c5303b49c0a031b291d925ac5123b67d79c9b313245df2fe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/ascii_processor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 5,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    char cmd[MAX_LINE_LENGTH + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c2f9840f03b0b74573ad1892532d88208cfa3b98b3e4292a355dd028b66fb34f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/ascii_processor.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    memcpy(cmd, buffer, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "96223f8c7a86224b7e4982764249bb575d319e4f58e55483dddd4ef6ef2efe73"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/ascii_processor.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 5,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "    char response[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "92de9f7e0e398890dc2cc7ad76ea5afeebcb1057f5b08792a76f9833d4bd667f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/ascii_processor.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 18,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "    size_t len = snprintf(response, sizeof(response), fmt, std::forward<TArgs>(args)...);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cafe6820df16f19b37c90ceb5a089cb76a5e9fdd01f2c0b1b856ab5430761b4a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 19,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "#define SCA_Debug printf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7da93a08034a1885570a9a50112168c3a261e8cd431f4728778706fa68249ac4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 421,
+                  "startColumn": 26,
+                  "endColumn": 103,
+                  "snippet": {
+                    "text": "                argNum = sscanf(_cmd.c_str(), \">%f,%f,%f,%f,%f,%f,%f\", joints, joints + 1, joints + 2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ff9568a5ee299e0d3087872c253335d16811f16850baa08d8ba704a7a00d6226"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 445,
+                  "startColumn": 26,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "                argNum = sscanf(_cmd.c_str(), \"@%f,%f,%f,%f,%f,%f,%f\", pose, pose + 1, pose + 2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "00ba1f3dc0b4a3366f4eaf023f099f17324f6c4c3bf22b39a043df52cf0458ad"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 472,
+                  "startColumn": 26,
+                  "endColumn": 103,
+                  "snippet": {
+                    "text": "                argNum = sscanf(_cmd.c_str(), \">%f,%f,%f,%f,%f,%f,%f\", joints, joints + 1, joints + 2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ff9568a5ee299e0d3087872c253335d16811f16850baa08d8ba704a7a00d6226"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 26,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "                argNum = sscanf(_cmd.c_str(), \"@%f,%f,%f,%f,%f,%f,%f\", pose, pose + 1, pose + 2,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "00ba1f3dc0b4a3366f4eaf023f099f17324f6c4c3bf22b39a043df52cf0458ad"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 9,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "        char strBuffer[64]{};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "44848c1f58259e106363f86fb6d0ae480b8f123083e1533e01af25b5c49ad311"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 9,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        char solFlag[8][3];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8964a1a54e7d8220e1645ed41affbb0874fd52c6f31f4dc22a153169961846c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 5,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "    memcpy(DH_matrix, tmp_DH_matrix, sizeof(tmp_DH_matrix));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cb43088d6e7b2dd39b2bf2e023dad43823857318bf2bd2e2b16d68c8992b4bbe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 5,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    memcpy(L1_base, tmp_L1_bs, sizeof(tmp_L1_bs));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a6406e464568f117ac4c0a11a0304657e4c9464d50de39b8399c38aa1319236f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 5,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    memcpy(L2_arm, tmp_L2_se, sizeof(tmp_L2_se));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "93e56bb3a8629c2d70e838a6d38780b46467ec33739a0a0a2b3bad7f8d9ff7fb"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    memcpy(L3_elbow, tmp_L3_ew, sizeof(tmp_L3_ew));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "773742658da80d164b196c47f9a015a8a05afc488d390e4b2dbb967795d541db"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    memcpy(L6_wrist, tmp_L6_wt, sizeof(tmp_L6_wt));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5aaeea10a0d2a129f02825507a19c772a3a4f4fabafab88e588277d040590888"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 5,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    memcpy(_outputPose6D.R, R06, 9 * sizeof(float));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "98e92ebe04a4c9bad1d0b629d4e7cff4fd34ce32be1e62f0f37bc420d46412e1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 223,
+                  "startColumn": 9,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "        memcpy(R06, _inputPose6D.R, 9 * sizeof(float));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "44ba3d5cfe17403e4b1035d43e54c55797f15d64040c7c96ea8d1ecc87d42a2e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 9,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "        printf(\" %02x\", buf[pos]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "00965ebc6872a55c14405fd26612e5d749ee34fede31ca3e471a1ce976acb358"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 13,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "            printf(\"\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8ac771d32b220c7a430b0d10423b6dc33671e11eca9d5c531a8ced0044747b86"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 5,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    char id_buf[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "154e147ae00cee353d6e3e74928e1c5081f03a28097374a3bcff4702a6c16588"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/protocol.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 5,
+                  "endColumn": 85,
+                  "snippet": {
+                    "text": "    snprintf(id_buf, sizeof(id_buf), \"%u\", (unsigned)id); // TODO: get rid of printf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f619dd945e3a25181c44e9b8d69de0c5a918f4e7e8cedf158f7ffea665aa3791"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/encoders.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 13,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "            memcpy(buffer, buffer_ + T::block_size::value - n_copy, n_copy);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "250903a760c0049226c6aea41d64cc3f16b2fcd0e80bff18f214a05dde2ef140"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 30,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "#define LOG_FIBRE(...)  do { printf(__VA_ARGS__); } while (0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0e96339512d5110f92c7a40d6f92eeadcbeba2da9698cfadbd5a7a2c77328990"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 10,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    std::memcpy(&buffer[0], &value, sizeof(value));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "76722666992843069112c8b1011dd37a849a7f3ed147b1283aa867b74a39b757"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 10,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "    std::memcpy(value, buffer, sizeof(*value));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5dc1d82ee07d798109f6c88cc86e735b22cc058498e268cc39f2082496756a3c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 9,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "        memcpy(buffer_, buffer, chunk);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "85decf90949f83a33356aae3eec9f22e828596c4741c44156bb8cd31c3dd65ba"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 574,
+                  "startColumn": 74,
+                  "endColumn": 96,
+                  "snippet": {
+                    "text": "    return output->process_bytes(reinterpret_cast<const uint8_t *>(str), strlen(str), nullptr);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ae9c7d64f3afa91414a02a55c8b99ac49b4d3b8223c42d6a772c8d6a47eebdd3"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 678,
+                  "startColumn": 5,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "    snprintf(buffer, length, format_traits_t<T>::fmtp, value);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "90e3cf1f4107e6fcc672deda8c413fc0d4b1b6c065cf4e0699c263ac8f072e6f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 686,
+                  "startColumn": 5,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    snprintf(buffer, length, \"%f\", (double) value);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7b4e50089d8b6307e9e8d9c012c7198a8266308a582bcdd18194838541ae7c98"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "error",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 707,
+                  "startColumn": 12,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "    return sscanf(buffer, format_traits_t<T>::fmt, property) == 1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "674e6cb3d6badb5837db7e79f48d29d03e54baa22e8afd8483ffa9d111263a0b"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 714,
+                  "startColumn": 12,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "    return sscanf(buffer, \"%f\", property) == 1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "20419a2ce8a5e11b41106a2eaa5f5fc15dc1377083f10bc91d23a9f779c4e80b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 721,
+                  "startColumn": 9,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "    if (sscanf(buffer, \"%d\", &val) != 1)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "53a407d6c2d3ebb04ec688fdbc60788f1a23d260eab41c563cc2d411850700e5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 838,
+                  "startColumn": 33,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "        size_t segment_length = strlen(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "103d7b11a1d2e8fafe0f2b418e320409ff82df203962e84b2cc6b41131d453e8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 951,
+                  "startColumn": 9,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "        char id_buf[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "154e147ae00cee353d6e3e74928e1c5081f03a28097374a3bcff4702a6c16588"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 952,
+                  "startColumn": 9,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "        snprintf(id_buf, sizeof(id_buf), \"%u\", (unsigned) id); // TODO: get rid of printf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24fe8e78997fcad4add4bcbe1cac966e8dfd0d2431ad0a6c4d8ff5fe0f55f205"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1156,
+                  "startColumn": 9,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "        char id_buf[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "154e147ae00cee353d6e3e74928e1c5081f03a28097374a3bcff4702a6c16588"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/protocol.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1157,
+                  "startColumn": 9,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "        snprintf(id_buf, sizeof(id_buf), \"%u\", (unsigned) id); // TODO: get rid of printf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24fe8e78997fcad4add4bcbe1cac966e8dfd0d2431ad0a6c4d8ff5fe0f55f205"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/fibre/cpp/include/fibre/decoders.hpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 13,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "            memcpy(buffer_ + buffer_pos_, buffer, n_copy);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "34bdcba50588b3d9eec17ea8165a04bdeaaf0199786c99df49c88720dcbd43c6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_u16toa.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 10,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  static char buf[6];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8eb68cd47054513dfe1102efacc6626f9c3d2295c06d203c5434d5dfa1ed4492"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1001",
+          "level": "note",
+          "message": {
+            "text": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 9,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "        strcpy(s, \"nan\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cf8cd09c966417080903fff7c3b7b49a2fbcbc9cbda963446be78d07f24dbc93"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1001",
+          "level": "note",
+          "message": {
+            "text": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 9,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "        strcpy(s, \"inf\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "71a515faa065602afbcc7c7aa12d576ede534abcad01db68a76dcf053ca72a4c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 5,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "int atoi(const char *s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb247c9310b03bafe6e4db7af4975cb5e8b39edee507e1d867459c134e0b294b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atol:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/stdlib_noniso.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 6,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "long atol(const char* s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1d5c885fef99f072562df3f5423be0a7d1f5ac65199e8ac716bd6099cab69a6b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 15,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "size_t Print::printf(const char *format, ...)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0ac16e9d871f03094810d827f0f3011123595d67b8a7f76505a94fce9248eb84"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 5,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    char loc_buf[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a49afd207f5d4904717d9e96a52adf737e0c65b611c6a1f9ba3db70c3a3c83d1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 15,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    int len = vsnprintf(temp, sizeof(loc_buf), format, copy);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3c48b3903f3419f427e7b95d47998e4445a2671045706b1f55af0b4e095d0249"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 15,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "        len = vsnprintf(temp, len+1, format, arg);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "82fecde8b929a4e79a80a044875996e4ce3925cecf128cf93a4b222ed935da9f"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 268,
+                  "startColumn": 5,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    char buf[8 * sizeof(n) + 1]; // Assumes 8-bit chars plus zero byte."
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5c15e9b11ef2d50803c438f9e2e9750323c4ea2af1505cd702508a49c4af4967"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 290,
+                  "startColumn": 5,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    char buf[8 * sizeof(n) + 1]; // Assumes 8-bit chars plus zero byte."
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5c15e9b11ef2d50803c438f9e2e9750323c4ea2af1505cd702508a49c4af4967"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 13,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "            char     buff[SSOSIZE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1825a2ee69164336ab3f913aff0835945f500e2e2eb5d4eb300b5ab4b6d82e52"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 45,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "        return write((const uint8_t *) str, strlen(str));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "760752cf8cea58039b04605884339f1550e2b5e7e6fc0531bcc776751510544e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/Print.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 12,
+                  "endColumn": 86,
+                  "snippet": {
+                    "text": "    size_t printf(const char * format, ...)  __attribute__ ((format (printf, 2, 3)));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bca56c32952a6ccd16042e4076ffe7300d4236e835e16b09fae11678e425f25a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 20,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "        copy(cstr, strlen(cstr));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7a85bc437cc4b9bd13828ee918422eae17bec15260ad7ad259e96d8186ac20d5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 5,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "    char buf[2];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fda3a7650847dbe59cb50714da33e1daa59d1e1541101fc5f7818916f76f346e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 5,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "    char buf[1 + 8 * sizeof(unsigned char)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b16123ab9aebba0bf5753fc4efd32c853d3300fb81cf356495fe1200cd918031"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 5,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    char buf[2 + 8 * sizeof(int)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "76ef574c3ecdc0fcb86fa447e097129c1642ebb3d76a7ca0fbc03fd951c8f56b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "note",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 9,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "        sprintf(buf, \"%d\", value);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "50a92982ba02900ac58de9b85580b9bde7c303e77a933977c7b5dde87a0cd578"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 5,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    char buf[1 + 8 * sizeof(unsigned int)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b50fa2761b43a25eb59e03633f4777076307aa97fe9dc3e98081e9e3ece13cd1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 5,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    char buf[2 + 8 * sizeof(long)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "248e3e2be7afdc0ec2d26e10fbdec19701dace655a758650f942a0dc4b5b30ab"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "note",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 9,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "        sprintf(buf, \"%ld\", value);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6a50802f35c2a6849f53b3a9eb4dfc096e35a3803459721ac139ddb11ec1ac2f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 5,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "    char buf[1 + 8 * sizeof(unsigned long)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "29b94b8e8021175ca085b0155b95b592c59de4c06c6e5c3cafea663be7d23680"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[33];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4bd57de8b407c2359dcdde3d7b4956b5217ca7342e1f03fa4a94e985b6e821d8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[33];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4bd57de8b407c2359dcdde3d7b4956b5217ca7342e1f03fa4a94e985b6e821d8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 13,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "            char temp[sizeof(sso.buff)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "87e715bfb5ee8216896f8d954c05205a6f33657d5bd25c85f5faadf41bcbb101"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 13,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "            memcpy(temp, buffer(), maxStrLen);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4719b78a750afa01e8fd88bb2f34a817b218f0d522e7a62896547717ac5de826"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 13,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "            memcpy(wbuffer(), temp, maxStrLen);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "04b82f7361cb7a587cff55346dbe9a191fafb33c51d6df45007070c5c993da26"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 20,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "        copy(cstr, strlen(cstr));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7a85bc437cc4b9bd13828ee918422eae17bec15260ad7ad259e96d8186ac20d5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 347,
+                  "startColumn": 25,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "    return concat(cstr, strlen(cstr));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "92ac1fa94f6a3c191e8ff31d1a962923f5e5604be6cf0649e6fe2bd880c2b488"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 351,
+                  "startColumn": 5,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "    char buf[2];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fda3a7650847dbe59cb50714da33e1daa59d1e1541101fc5f7818916f76f346e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 358,
+                  "startColumn": 5,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "    char buf[1 + 3 * sizeof(unsigned char)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2e779e3fb4ba63e48a18d0ab2bd23d30de3be2380d14a3670e3ea8206b056fc4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "note",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 359,
+                  "startColumn": 5,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    sprintf(buf, \"%d\", num);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "82f70efb0718306baa268402bccc68ac49f0bc454c0040cb345f55e81d6b99c7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 360,
+                  "startColumn": 24,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    return concat(buf, strlen(buf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "490c0eac3779e636a033e6aa1fcaa0519272f6283c88b613d290ac5672b0be5f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 5,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    char buf[2 + 3 * sizeof(int)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "733be75e88ca0409ccb1c75fdbb106c6a7c216d97206557f410f0b6f1c4dde11"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "note",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 365,
+                  "startColumn": 5,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    sprintf(buf, \"%d\", num);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "82f70efb0718306baa268402bccc68ac49f0bc454c0040cb345f55e81d6b99c7"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 366,
+                  "startColumn": 24,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    return concat(buf, strlen(buf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "490c0eac3779e636a033e6aa1fcaa0519272f6283c88b613d290ac5672b0be5f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 5,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    char buf[1 + 3 * sizeof(unsigned int)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "21f448ee5c007f132f8119dc7057becd5640b26446874fdbe0a0763d95206e2d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 372,
+                  "startColumn": 24,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    return concat(buf, strlen(buf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "490c0eac3779e636a033e6aa1fcaa0519272f6283c88b613d290ac5672b0be5f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 376,
+                  "startColumn": 5,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    char buf[2 + 3 * sizeof(long)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1ea400ec351710b1dd679f28a78d7c4f898224e1d3ceeae74edacd968870201c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "note",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 377,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    sprintf(buf, \"%ld\", num);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "887e3009be71d367a3e8bab810ed52b32e942b858512e44893fba1607e714065"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 378,
+                  "startColumn": 24,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    return concat(buf, strlen(buf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "490c0eac3779e636a033e6aa1fcaa0519272f6283c88b613d290ac5672b0be5f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 382,
+                  "startColumn": 5,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "    char buf[1 + 3 * sizeof(unsigned long)];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7f75cda6efb42004c99c923f7a4cd6d0033768158f4fe27038659cfd0a8aee5c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 384,
+                  "startColumn": 24,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "    return concat(buf, strlen(buf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "490c0eac3779e636a033e6aa1fcaa0519272f6283c88b613d290ac5672b0be5f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 388,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[20];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "90f9d5685b966121e5a6eae2f61e8f266d703e27ea4c7b87d2a4e8c629a5699b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 390,
+                  "startColumn": 27,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    return concat(string, strlen(string));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dfa56a5925306b90c67dbe66b33555a564cb6d990fc8852a17bb9d9490dee716"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[20];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "90f9d5685b966121e5a6eae2f61e8f266d703e27ea4c7b87d2a4e8c629a5699b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 396,
+                  "startColumn": 27,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "    return concat(string, strlen(string));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "dfa56a5925306b90c67dbe66b33555a564cb6d990fc8852a17bb9d9490dee716"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 423,
+                  "startColumn": 33,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "    if(!cstr || !a.concat(cstr, strlen(cstr)))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a08b93231b7720e5dccf3e40a0fcb5386bb376e700036c17dd04a4a44ed1cb3b"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1008",
+          "level": "note",
+          "message": {
+            "text": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 634,
+                  "startColumn": 5,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "    strncpy((char *) buf, buffer() + index, n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b248cb52a20d617fca6d52e02cd06b538b0bcb6c81d212922e26d65a68cb0813"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 758,
+                  "startColumn": 36,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "        memmove(writeTo, readFrom, strlen(readFrom)+1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "871c07e1ddf8ead65908e525b4572da241a1f1024bc4f53f3aa6df8fcaad4a3e"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atol:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/WString.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 845,
+                  "startColumn": 16,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "        return atol(buffer());"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8efbacc48c3ea94dbe54eb543ee85bad871208f5e30d6f078f0084dad56c6bab"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define memcpy_P      memcpy"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f5f97b27f41f8e24fc6cd6ea3926fb6a95c2b8a1478d6e820c775f32b8a2bac0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1001",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define strcpy_P      strcpy"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ceed5020437fbcc0ecc929686344ad4b75a3b918f8792da108b449648a4ebe93"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1008",
+          "level": "note",
+          "message": {
+            "text": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 23,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "#define strncpy_P     strncpy"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c7baa85b850c3f1ba9d2e1e6177d5c9649a5251fbebb6a953149725f56448337"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1005",
+          "level": "error",
+          "message": {
+            "text": "buffer/strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define strcat_P      strcat"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8517d9a987743cfececc0810b100582a17d394e5ecad9546795bc75161c9bb76"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1010",
+          "level": "note",
+          "message": {
+            "text": "buffer/strncat:Easily used incorrectly (e.g., incorrectly computing the correct maximum size to add) [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 23,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "#define strncat_P     strncat"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2ab4106bad5da6a15f036bd7fffb1c0cac5ae5f5c5ffb1b278a024748678a652"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define strlen_P      strlen"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b75b87a0a115f0fc14ecf222683e171d58762e4b7e7877a2963658cea3b18d7d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 23,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define printf_P      printf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4dfc7770ab8add1a56b22219ea4e782080de64f8636a2d4b190d3be68e57c3f9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1015",
+          "level": "error",
+          "message": {
+            "text": "buffer/sprintf:Does not check for buffer overflows (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 23,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "#define sprintf_P     sprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3e53b93fb9b86b70988a5624b64a174fdbffb47fced062be996e186a0edd7c8a"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 23,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "#define snprintf_P    snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a53a9097b8f4fad7434e91ecd353a694531dab02f28b539e7f135abff95f9075"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/cpp/pgmspace.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 23,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "#define vsnprintf_P   vsnprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c0a0618872f972bf08cd8fb8883ec4a7e3f53bd273335432b813c9f4627a6e5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/getc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_debounce.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 9,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "    c = getc(stdin);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cfc1dc3fd5102e7759909d3a77a2ef3c1ce09b54d3e9456b1cd11b86bedc426c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_d_stdio.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 17,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "                printf(\"*\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9a08890128685bd869182de3a8f60725520d811d4369ae28239f6af575b23741"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_d_stdio.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 17,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "                printf(\".\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8bef47059467890469b08c4d67d1b8ce750aa12821ab0489004ef5d8b15da873"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_d_stdio.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 9,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "        printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_capture.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 3,
+                  "endColumn": 13,
+                  "snippet": {
+                    "text": "  char s[2];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b99ba6a922b0ca2a4635bfbd9b015c1dcd0430df8147d203fb1382b1a7104a3d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_u8toa.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 23,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "static const unsigned char u8x8_u8toa_tab[3]  = { 100, 10, 1 } ;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "585e94c79b2029faf4dd9f184a1256a71431265cbda0da3f10843a2af011c494"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8x8_u8toa.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 10,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  static char buf[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "202e8632c8929b61467881160256f02b944f53c930872155fd8fef1ed6294059"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/App/usbd_cdc_if.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 342,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    memcpy(TxBuff, Buf, Len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ffcc606bd2c652ca42eafe9d16a738798975715802816e72629f35ab0f8ed6df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 29,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "#define USBD_memcpy         memcpy"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "90db660ec1808e901112a5099e16ef788e74d3fa647a3f875f0725304a88c364"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 29,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "#define USBD_UsrLog(...)    printf(__VA_ARGS__);\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4dcc93c2b7d0a08d07d1d26755de56cd9c816ab6c2fe4fc7444e28be7351ef5e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 29,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "                            printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 29,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "#define USBD_ErrLog(...)    printf(\"ERROR: \") ;\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6c8f78a7a770fe7124f17098512b0feae499e2e6c0a91951bc2ff677f4d8b372"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 29,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "                            printf(__VA_ARGS__);\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b4128cdaa1853c287ea96e2f145fbb5d14dd217396bf6c411a467865d2af29ef"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 29,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "                            printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 29,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "#define USBD_DbgLog(...)    printf(\"DEBUG : \") ;\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fec7253f36d8f74b3b722ea179b5dbb8909687e064d87dec43e9d79c4ff3cb22"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 29,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "                            printf(__VA_ARGS__);\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b4128cdaa1853c287ea96e2f145fbb5d14dd217396bf6c411a467865d2af29ef"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/USB_DEVICE/Target/usbd_conf.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 29,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "                            printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/main.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 1,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "char serialNumberStr[13];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0fbb5f065661a255d836a249b1b14cbbc7103f8ca87c87adf1e1c2db3ff726c4"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/syscalls.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "char *__env[1] = { 0 };"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "85cf052a0e0ab5fd148c53f855d531821e9d84280cff3bb4c91db4916cc3abf7"
+          },
+          "rank": 0.4
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

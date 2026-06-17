@@ -1,0 +1,483 @@
+[
+  {
+    "cluster_id": 1,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "common/console.cpp",
+        "line": 141,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "common/console.cpp",
+        "line": 141,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-664"
+    ],
+    "representative_cwe": "CWE-664",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "common/console.cpp",
+        "line": 334,
+        "cwe": "CWE-664",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "common/console.cpp",
+        "line": 334,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-664"
+    ],
+    "representative_cwe": "CWE-664",
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "common/console.cpp",
+        "line": 339,
+        "cwe": "CWE-664",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "common/console.cpp",
+        "line": 339,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "common/log.cpp",
+        "line": 316,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "common/log.cpp",
+        "line": 316,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp",
+        "line": 481,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp",
+        "line": 481,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "rule": "two_out_of_four",
+    "tools": [
+      "cppcheck",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-134",
+      "CWE-686"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "cppcheck",
+        "filename": "ggml/src/ggml-hexagon/ggml-hexagon.cpp",
+        "line": 2273,
+        "cwe": "CWE-686",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-hexagon/ggml-hexagon.cpp",
+        "line": 2273,
+        "cwe": "CWE-134",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "rule": "two_out_of_four",
+    "tools": [
+      "flawfinder",
+      "semgrep"
+    ],
+    "cwes": [
+      "CWE-120",
+      "CWE-676"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-hexagon/htp/worker-pool.c",
+        "line": 93,
+        "cwe": "CWE-120",
+        "function": null
+      },
+      {
+        "tool": "semgrep",
+        "filename": "ggml/src/ggml-hexagon/htp/worker-pool.c",
+        "line": 93,
+        "cwe": "CWE-676",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-opencl/ggml-opencl.cpp",
+        "line": 729,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-opencl/ggml-opencl.cpp",
+        "line": 729,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-opencl/ggml-opencl.cpp",
+        "line": 747,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-opencl/ggml-opencl.cpp",
+        "line": 747,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-rpc/transport.cpp",
+        "line": 491,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-rpc/transport.cpp",
+        "line": 491,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-rpc/transport.cpp",
+        "line": 491,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-rpc/transport.cpp",
+        "line": 491,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-022",
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-virtgpu/backend/backend.cpp",
+        "line": 57,
+        "cwe": "CWE-022",
+        "function": null
+      },
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-virtgpu/backend/backend.cpp",
+        "line": 57,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-virtgpu/backend/backend.cpp",
+        "line": 57,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-362",
+      "CWE-732"
+    ],
+    "representative_cwe": null,
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+        "line": 278,
+        "cwe": "CWE-732",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp",
+        "line": 278,
+        "cwe": "CWE-362",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020",
+      "CWE-120"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "src/llama-io.cpp",
+        "line": 17,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "src/llama-io.cpp",
+        "line": 17,
+        "cwe": "CWE-120",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "src/llama-mmap.cpp",
+        "line": 273,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "src/llama-mmap.cpp",
+        "line": 273,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "vendor/miniaudio/miniaudio.h",
+        "line": 89973,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "vendor/miniaudio/miniaudio.h",
+        "line": 89973,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "rule": "two_out_of_four",
+    "tools": [
+      "codeql",
+      "flawfinder"
+    ],
+    "cwes": [
+      "CWE-020"
+    ],
+    "representative_cwe": "CWE-020",
+    "findings": [
+      {
+        "tool": "codeql",
+        "filename": "vendor/miniaudio/miniaudio.h",
+        "line": 95071,
+        "cwe": "CWE-020",
+        "function": null
+      },
+      {
+        "tool": "flawfinder",
+        "filename": "vendor/miniaudio/miniaudio.h",
+        "line": 95071,
+        "cwe": "CWE-020",
+        "function": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[application/llama.cpp] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/llama.cpp
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/llama.cpp
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 2686 findings, exit 0, 4.91s
+[2/4] semgrep completed: 2 findings, exit 0, 11.76s
+[cppcheck] still running | elapsed 00:05:00 | timeout none
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[3/4] codeql completed: 550 findings, exit 0, 536.32s
+[cppcheck] still running | elapsed 00:10:00 | timeout none
+[cppcheck] still running | elapsed 00:15:00 | timeout none
+[cppcheck] still running | elapsed 00:20:00 | timeout none
+[cppcheck] still running | elapsed 00:25:00 | timeout none
+[4/4] cppcheck completed: 184 findings, exit 0, 1752.73s
+
+Summary: 4 completed, 0 failed, 3422 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/llama.cpp/report.json

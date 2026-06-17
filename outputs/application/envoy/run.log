@@ -1,0 +1,18 @@
+[application/envoy] analyzing
+Static Analysis
+Project: /home/dcotrone/VulnDetect/Static-Analysis/dataset/application/envoy
+Output: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/envoy
+Tools: cppcheck, semgrep, codeql, flawfinder
+
+[cppcheck] starting
+[semgrep] starting
+[codeql] starting
+[flawfinder] starting
+[1/4] flawfinder completed: 1594 findings, exit 0, 5.56s
+[2/4] semgrep completed: 2 findings, exit 0, 16.97s
+[3/4] cppcheck completed: 55 findings, exit 0, 23.16s
+[codeql] still running | elapsed 00:05:00 | timeout 24:00:00 | remaining before timeout 23:54:59
+[4/4] codeql completed: 2 findings, exit 0, 499.19s
+
+Summary: 4 completed, 0 failed, 1653 findings
+Report written: /home/dcotrone/VulnDetect/Static-Analysis/outputs/application/envoy/report.json

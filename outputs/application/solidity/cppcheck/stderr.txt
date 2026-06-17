@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="StlMissingComparison" severity="warning" msg="Missing bounds check for extra iterator increment in loop." verbose="The iterator incrementing is suspicious - it is incremented at line 271 and then at line 246. The loop might unintentionally skip an element in the container. There is no comparison between these increments to prevent that the iterator is incremented beyond the end." cwe="834" file0="/workspace/libevmasm/Inliner.cpp">
+            <location file="/workspace/libevmasm/Inliner.cpp" line="246" column="55"/>
+            <location file="/workspace/libevmasm/Inliner.cpp" line="271" column="10"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1686_error" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 1686_error" file0="/workspace/libsolidity/analysis/ContractLevelChecker.cpp">
+            <location file="/workspace/libsolidity/analysis/ContractLevelChecker.cpp" line="0" column="0"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 3495_error" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 3495_error" file0="/workspace/libsolidity/analysis/PostTypeContractLevelChecker.cpp">
+            <location file="/workspace/libsolidity/analysis/PostTypeContractLevelChecker.cpp" line="0" column="0"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;var&apos; is redundant or there is possible null pointer dereference: var." verbose="Either the condition &apos;var&apos; is redundant or there is possible null pointer dereference: var." cwe="476" file0="/workspace/libsolidity/analysis/TypeChecker.cpp">
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="809" column="51" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="775" column="9" info="Assuming that condition &apos;var&apos; is not redundant"/>
+            <symbol>var</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!valueComponentType&apos; is redundant or there is possible null pointer dereference: valueComponentType." verbose="Either the condition &apos;!valueComponentType&apos; is redundant or there is possible null pointer dereference: valueComponentType." cwe="476" file0="/workspace/libsolidity/analysis/TypeChecker.cpp">
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="1282" column="23" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="1277" column="34" info="valueComponentType is assigned &apos;valueTypes[i]&apos; here."/>
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="1277" column="46" info="Assignment to &apos;valueComponentType=valueTypes[i]&apos;"/>
+            <location file="/workspace/libsolidity/analysis/TypeChecker.cpp" line="1278" column="14" info="Assuming that condition &apos;!valueComponentType&apos; is not redundant"/>
+            <symbol>valueComponentType</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;locationOverride&apos;." verbose="Access of moved variable &apos;locationOverride&apos;." cwe="672" file0="/workspace/libsolidity/codegen/CompilerContext.cpp">
+            <location file="/workspace/libsolidity/codegen/CompilerContext.cpp" line="444" column="49" info="Access of moved variable &apos;locationOverride&apos;."/>
+            <location file="/workspace/libsolidity/codegen/CompilerContext.cpp" line="444" column="39" info="Calling std::move(locationOverride)"/>
+            <symbol>locationOverride</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!targetType&apos; is redundant or there is possible null pointer dereference: targetType." verbose="Either the condition &apos;!targetType&apos; is redundant or there is possible null pointer dereference: targetType." cwe="476" file0="/workspace/libsolidity/codegen/CompilerUtils.cpp">
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="471" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="469" column="26" info="targetType is assigned &apos;targetTypes[i]&apos; here."/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="469" column="39" info="Assignment to &apos;targetType=targetTypes[i]&apos;"/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="470" column="14" info="Assuming that condition &apos;!targetType&apos; is not redundant"/>
+            <symbol>targetType</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!targetType&apos; is redundant or there is possible null pointer dereference: targetType." verbose="Either the condition &apos;!targetType&apos; is redundant or there is possible null pointer dereference: targetType." cwe="476" file0="/workspace/libsolidity/codegen/CompilerUtils.cpp">
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="534" column="7" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="532" column="26" info="targetType is assigned &apos;targetTypes[i]&apos; here."/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="532" column="39" info="Assignment to &apos;targetType=targetTypes[i]&apos;"/>
+            <location file="/workspace/libsolidity/codegen/CompilerUtils.cpp" line="533" column="14" info="Assuming that condition &apos;!targetType&apos; is not redundant"/>
+            <symbol>targetType</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!variable&apos; is redundant or there is possible null pointer dereference: variable." verbose="Either the condition &apos;!variable&apos; is redundant or there is possible null pointer dereference: variable." cwe="476" file0="/workspace/libsolidity/codegen/ContractCompiler.cpp">
+            <location file="/workspace/libsolidity/codegen/ContractCompiler.cpp" line="870" column="111" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/codegen/ContractCompiler.cpp" line="875" column="7" info="Assuming that condition &apos;!variable&apos; is not redundant"/>
+            <symbol>variable</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!variable&apos; is redundant or there is possible null pointer dereference: variable." verbose="Either the condition &apos;!variable&apos; is redundant or there is possible null pointer dereference: variable." cwe="476" file0="/workspace/libsolidity/codegen/ContractCompiler.cpp">
+            <location file="/workspace/libsolidity/codegen/ContractCompiler.cpp" line="872" column="8" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/codegen/ContractCompiler.cpp" line="875" column="7" info="Assuming that condition &apos;!variable&apos; is not redundant"/>
+            <symbol>variable</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;arrayType&apos; is redundant or there is possible null pointer dereference: arrayType." verbose="Either the condition &apos;arrayType&apos; is redundant or there is possible null pointer dereference: arrayType." cwe="476" file0="/workspace/libsolidity/codegen/ir/IRGenerator.cpp">
+            <location file="/workspace/libsolidity/codegen/ir/IRGenerator.cpp" line="644" column="46" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/codegen/ir/IRGenerator.cpp" line="648" column="8" info="Assuming that condition &apos;arrayType&apos; is not redundant"/>
+            <symbol>arrayType</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!declaration&apos; is redundant or there is possible null pointer dereference: declaration." verbose="Either the condition &apos;!declaration&apos; is redundant or there is possible null pointer dereference: declaration." cwe="476" file0="/workspace/libsolidity/experimental/analysis/TypeInference.cpp">
+            <location file="/workspace/libsolidity/experimental/analysis/TypeInference.cpp" line="293" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/libsolidity/experimental/analysis/TypeInference.cpp" line="289" column="34" info="declaration is assigned &apos;identifierInfo-&gt;declaration&apos; here."/>
+            <location file="/workspace/libsolidity/experimental/analysis/TypeInference.cpp" line="289" column="50" info="Assignment to &apos;declaration=identifierInfo-&gt;declaration&apos;"/>
+            <location file="/workspace/libsolidity/experimental/analysis/TypeInference.cpp" line="290" column="14" info="Assuming that condition &apos;!declaration&apos; is not redundant"/>
+            <symbol>declaration</symbol>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0us" verbose="Internal Error. MathLib::toLongNumber: input was not completely consumed: 0us" file0="/workspace/libsolutil/Profiler.cpp">
+            <location file="/workspace/libsolutil/Profiler.cpp" line="0" column="0"/>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;_objectStructure&apos;." verbose="Access of moved variable &apos;_objectStructure&apos;." cwe="672" file0="/workspace/libyul/AsmAnalysis.cpp">
+            <location file="/workspace/libyul/AsmAnalysis.cpp" line="124" column="13" info="Access of moved variable &apos;_objectStructure&apos;."/>
+            <location file="/workspace/libyul/AsmAnalysis.cpp" line="124" column="3" info="Calling std::move(_objectStructure)"/>
+            <symbol>_objectStructure</symbol>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, &apos;_call&apos; doesn&apos;t have a parent." verbose="Syntax Error: AST broken, &apos;_call&apos; doesn&apos;t have a parent." file0="/workspace/libyul/backends/evm/OptimizedEVMCodeTransform.cpp">
+            <location file="/workspace/libyul/backends/evm/OptimizedEVMCodeTransform.cpp" line="148" column="13"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;evmDialect&apos; is redundant or there is possible null pointer dereference: evmDialect." verbose="Either the condition &apos;evmDialect&apos; is redundant or there is possible null pointer dereference: evmDialect." cwe="476" file0="/workspace/libyul/optimiser/StackLimitEvader.cpp">
+            <location file="/workspace/libyul/optimiser/StackLimitEvader.cpp" line="138" column="4" info="Null pointer dereference"/>
+            <location file="/workspace/libyul/optimiser/StackLimitEvader.cpp" line="142" column="6" info="Assuming that condition &apos;evmDialect&apos; is not redundant"/>
+            <symbol>evmDialect</symbol>
+        </error>
+        <error id="strPlusChar" severity="error" msg="Unusual pointer arithmetic. A value of type &apos;char&apos; is added to a string literal." verbose="Unusual pointer arithmetic. A value of type &apos;char&apos; is added to a string literal." cwe="665" file0="/workspace/libyul/optimiser/Suite.cpp">
+            <location file="/workspace/libyul/optimiser/Suite.cpp" line="356" column="10"/>
+        </error>
+        <error id="strPlusChar" severity="error" msg="Unusual pointer arithmetic. A value of type &apos;char&apos; is added to a string literal." verbose="Unusual pointer arithmetic. A value of type &apos;char&apos; is added to a string literal." cwe="665" file0="/workspace/libyul/optimiser/Suite.cpp">
+            <location file="/workspace/libyul/optimiser/Suite.cpp" line="362" column="10"/>
+        </error>
+        <error id="mismatchingContainerIterator" severity="error" msg="Iterator &apos;it&apos; from different container &apos;active&apos; are used together." verbose="Iterator &apos;it&apos; from different container &apos;active&apos; are used together." cwe="664" file0="/workspace/libyul/optimiser/UnusedStoreEliminator.cpp">
+            <location file="/workspace/libyul/optimiser/UnusedStoreEliminator.cpp" line="285" column="9"/>
+        </error>
+        <error id="mismatchingContainerIterator" severity="error" msg="Iterator &apos;it&apos; from different container &apos;active&apos; are used together." verbose="Iterator &apos;it&apos; from different container &apos;active&apos; are used together." cwe="664" file0="/workspace/libyul/optimiser/UnusedStoreEliminator.cpp">
+            <location file="/workspace/libyul/optimiser/UnusedStoreEliminator.cpp" line="289" column="9"/>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;DisableConsoleBuffering&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;DisableConsoleBuffering&apos;" cwe="758">
+            <location file="/workspace/libsolutil/CommonIO.cpp" line="111" column="1"/>
+            <location file="/workspace/libsolutil/CommonIO.cpp" line="93" column="1"/>
+            <symbol>DisableConsoleBuffering</symbol>
+        </error>
+    </errors>
+</results>

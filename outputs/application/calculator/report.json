@@ -1,0 +1,530 @@
+{
+  "findings": [
+    {
+      "cwe": "CWE-120",
+      "filename": "/workspace/src/CalcManager/Ratpack/conv.cpp",
+      "line": 133,
+      "message": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120).",
+      "rule": "FF1004",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-369",
+      "filename": "/workspace/src/CalcManager/Ratpack/num.cpp",
+      "line": 263,
+      "message": "Either the condition 'mcy' is redundant or there is division by zero at line 263.",
+      "rule": "zerodivcond",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-369",
+      "filename": "/workspace/src/CalcManager/Ratpack/num.cpp",
+      "line": 266,
+      "message": "Either the condition 'mcy' is redundant or there is division by zero at line 266.",
+      "rule": "zerodivcond",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-369",
+      "filename": "/workspace/src/CalcManager/Ratpack/num.cpp",
+      "line": 269,
+      "message": "Either the condition 'cy' is redundant or there is division by zero at line 269.",
+      "rule": "zerodivcond",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-369",
+      "filename": "/workspace/src/CalcManager/Ratpack/num.cpp",
+      "line": 270,
+      "message": "Either the condition 'mcy' is redundant or there is division by zero at line 270.",
+      "rule": "zerodivcond",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/CalcManager/Ratpack/support.cpp",
+      "line": 36,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/CalcManager/Ratpack/support.cpp",
+      "line": 37,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-134",
+      "filename": "/workspace/src/CalcManager/Ratpack/support.cpp",
+      "line": 39,
+      "message": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134).",
+      "rule": "FF1017",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalcViewModel/Common/DateCalculator.cpp",
+      "line": 183,
+      "message": "syntax error: ^)",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 203,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 212,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 219,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 226,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 234,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 284,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-190",
+      "filename": "/workspace/src/CalcViewModel/Common/LocalizationSettings.h",
+      "line": 294,
+      "message": "integer/_wtoi:Unless checked, the resulting number can exceed the expected range (CWE-190).",
+      "rule": "FF1047",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalcViewModel/Common/NetworkManager.cpp",
+      "line": 41,
+      "message": "syntax error: ^)",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalcViewModel/DataLoaders/CurrencyDataLoader.cpp",
+      "line": 167,
+      "message": "buffer/wcslen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).",
+      "rule": "FF1022",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalcViewModel/DataLoaders/CurrencyDataLoader.cpp",
+      "line": 492,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalcViewModel/GraphingCalculator/EquationViewModel.h",
+      "line": 120,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp",
+      "line": 593,
+      "message": "Memory is allocated but not initialized: temp",
+      "rule": "uninitdata",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-457",
+      "filename": "/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp",
+      "line": 614,
+      "message": "Memory is allocated but not initialized: temp",
+      "rule": "uninitdata",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Calculator/DesignData/DesignStandardCalculatorViewModel.h",
+      "line": 24,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-119",
+      "filename": "/workspace/src/Calculator/DesignData/DesignStandardCalculatorViewModel.h",
+      "line": 48,
+      "message": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).",
+      "rule": "FF1013",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/Calculator/DesignData/DesignUnitConverterViewModel.h",
+      "line": 38,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/CalcEngineTests.cpp",
+      "line": 68,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/CalcInputTest.cpp",
+      "line": 19,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 162,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 881,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 885,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 904,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 908,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 930,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp",
+      "line": 934,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/CopyPasteManagerTest.cpp",
+      "line": 188,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/CurrencyConverterUnitTests.cpp",
+      "line": 161,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/DateCalculatorUnitTests.cpp",
+      "line": 356,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/HistoryTests.cpp",
+      "line": 94,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 27,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 28,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 30,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 62,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 66,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 76,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": "CWE-126",
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp",
+      "line": 79,
+      "message": "buffer/equal:Function does not check the second iterator for over-read conditions (CWE-126).",
+      "rule": "FF1071",
+      "tool": "flawfinder"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/LocalizationSettingsUnitTests.cpp",
+      "line": 23,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/Module.cpp",
+      "line": 11,
+      "message": "There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_MODULE_ATTRIBUTE is a macro then please configure it.",
+      "rule": "unknownMacro",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/MultiWindowUnitTests.cpp",
+      "line": 39,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/NarratorAnnouncementUnitTests.cpp",
+      "line": 21,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/NavCategoryUnitTests.cpp",
+      "line": 27,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/RationalTest.cpp",
+      "line": 26,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/StandardViewModelUnitTests.cpp",
+      "line": 34,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/UnitConverterTest.cpp",
+      "line": 271,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/UnitConverterViewModelUnitTests.cpp",
+      "line": 41,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/CalculatorUnitTests/UtilsTests.cpp",
+      "line": 11,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GraphControl/Control/Grapher.h",
+      "line": 53,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GraphControl/DirectX/RenderMain.cpp",
+      "line": 355,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GraphControl/Models/Equation.h",
+      "line": 220,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": null,
+      "filename": "/workspace/src/GraphControl/Models/KeyGraphFeaturesInfo.h",
+      "line": 23,
+      "message": "syntax error",
+      "rule": "syntaxError",
+      "tool": "cppcheck"
+    },
+    {
+      "cwe": "CWE-562",
+      "filename": "/workspace/src/GraphingImpl/Mocks/MathSolver.h",
+      "line": 89,
+      "message": "Reference to temporary returned.",
+      "rule": "returnTempReference",
+      "tool": "cppcheck"
+    }
+  ],
+  "summary": {
+    "completed": 4,
+    "failed": 0,
+    "findings": 60,
+    "timeout": 0,
+    "tools": 4,
+    "unavailable": 0
+  },
+  "tools": [
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/codeql/results.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/codeql/stderr.txt",
+      "tool": "codeql"
+    },
+    {
+      "exit_code": 0,
+      "findings": 35,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/cppcheck/stderr.txt",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/cppcheck/stderr.txt",
+      "tool": "cppcheck"
+    },
+    {
+      "exit_code": 0,
+      "findings": 25,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/flawfinder/stdout.sarif",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/flawfinder/stderr.txt",
+      "tool": "flawfinder"
+    },
+    {
+      "exit_code": 0,
+      "findings": 0,
+      "message": null,
+      "raw_output": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/semgrep/stdout.json",
+      "status": "completed",
+      "stderr": "/home/dcotrone/VulnDetect/Static-Analysis/outputs/application/calculator/semgrep/stderr.txt",
+      "tool": "semgrep"
+    }
+  ]
+}

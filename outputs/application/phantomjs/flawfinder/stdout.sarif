@@ -1,0 +1,5692 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.20",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1017",
+              "name": "format/fprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1019",
+              "name": "format/snprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1043",
+              "name": "shell/popen",
+              "shortDescription": {
+                "text": "This causes a new program to execute and is difficult to use safely (CWE-78)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-78",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/fopen",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1023",
+              "name": "buffer/MultiByteToWideChar",
+              "shortDescription": {
+                "text": "Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1006",
+              "name": "buffer/wcscat",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/recv",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1021",
+              "name": "buffer/sscanf",
+              "shortDescription": {
+                "text": "It's unclear if the %s limit in the format string is small enough (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1053",
+              "name": "buffer/getenv",
+              "shortDescription": {
+                "text": "Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/807.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-807",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1047",
+              "name": "integer/atoi",
+              "shortDescription": {
+                "text": "Unless checked, the resulting number can exceed the expected range (CWE-190)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-190",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1008",
+              "name": "buffer/strncpy",
+              "shortDescription": {
+                "text": "Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/crashdump.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 5,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"Fatal Windows exception, code 0x%08x.\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "825efade9b98c877f4d5d2598d6caa4895b438fce1c0954b400bef440a4bfec5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/crashdump.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 5,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"Invalid parameter detected.\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e9b6c99638f215ffd9376879d0a1744bb8dae6936f5c1934fbad6fdeed0713db"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/crashdump.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 5,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"Invalid parameter detected at %ls:%u: %ls: %ls\\n\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bae07a07116bf72ae69e7c5a3001ea4cb729ce75c6c4aceaf43f1bb3338cbace"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/filesystem.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 13,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    QString read(const QVariant& n = -1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "478cef980509646348ec4aa7e3df36bd143a43990bb2146fe3f1ccf10b04d7b2"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/webserver.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 18,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "            data[read] = '\\0'; //< adding null termination (no arm if it's already there)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0ee2b63a3d657f85a6087c3e60beaa3e242f618e17e2004bfad9cbcc08197cd8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/webserver.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 82,
+                  "endColumn": 89,
+                  "snippet": {
+                    "text": "                requestObject[\"post\"] = UrlEncodedParser::parse(QByteArray(data, read));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b249b1248ad1b7dd72320442f044f7474b858e0a645aecc3b07f20ca7cf0d68a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/webserver.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 255,
+                  "startColumn": 68,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "                requestObject[\"postRaw\"] = QString::fromUtf8(data, read);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4bc1438d55b5e0948552c518ee7c88e2e6140366cad315c847581ff4a4e71fbb"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/webserver.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 65,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "                requestObject[\"post\"] = QString::fromUtf8(data, read);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "be3fb1c4b7ebf5710add1e2bb4c4204b8779f1218d54df3f8ae55405395caab2"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 13,
+                  "endColumn": 104,
+                  "snippet": {
+                    "text": "            fprintf(stderr, \"%s [DEBUG] %s\\n\", qPrintable(now.toString(Qt::ISODate)), qPrintable(msg));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5ec97846c24c8ec98d8b825a0467c6879d87b69eb2eae8b04d4ca4c14e61a716"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 13,
+                  "endColumn": 106,
+                  "snippet": {
+                    "text": "            fprintf(stderr, \"%s [WARNING] %s\\n\", qPrintable(now.toString(Qt::ISODate)), qPrintable(msg));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c80c286aaa6989cba76f1ca024997a735c2ab35db4e5465795d3a4c794cb916f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 9,
+                  "endColumn": 103,
+                  "snippet": {
+                    "text": "        fprintf(stderr, \"%s [CRITICAL] %s\\n\", qPrintable(now.toString(Qt::ISODate)), qPrintable(msg));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "00fb77996790925d99b3f3c69e595da7f5ab37b8f686589f5ef9ef8a82316847"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/utils.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 9,
+                  "endColumn": 100,
+                  "snippet": {
+                    "text": "        fprintf(stderr, \"%s [FATAL] %s\\n\", qPrintable(now.toString(Qt::ISODate)), qPrintable(msg));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "28f09d28dddb3e32b0a3ae88f4d6161aac23e44fa7cabaf04b096d7eefe9f79b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/filesystem.cpp",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 15,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "QString File::read(const QVariant& n)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "86453314a816d583a6e142dab0a543d194ee79ea340ac3f3db1ba1ca836b8c94"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 9,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "#define snprintf _snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "194a915f111996f097c32cb39c273aa0eb69cf4c05382cee6ec1635f362440a9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/_snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 18,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "#define snprintf _snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "194a915f111996f097c32cb39c273aa0eb69cf4c05382cee6ec1635f362440a9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 9,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "#define vsnprintf _vsnprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0163a4288d026df4a3e410764c13120a2e4244018d71e8d12f9a94570460e4e5"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/popen:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 9,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "#define popen(x, y) _popen(x, y)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "14767fd39c4200e3292828703bce84f745f1a964c42c4c432fef57e9350534fd"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 9,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "#define read(x, y, z) _read((x), (y), (unsigned) z)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af39a0073534d32d5c01f06d69dbadfe4c4669d270c33761b48da558f5acd8c7"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 3,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "  char d_name[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1711c1d9b81a1f0f74d4b3198307869230fc319584d7b84415d936ee817a7110"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 24,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "#define mg_fopen(x, y) fopen(x, y)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3f7fcc101619a19a7f5fcafd831188a42500cceea519b5ed00b72707d096054e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 3,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "  printf(\"*** %lu.%p.%s.%d: \", \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4f5eabc1dc99c51452f736e2a4ccfb380221fe99d4951c0e99d207c9bcdb6fbe"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "error",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 3,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "  printf x; \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cccfd200c16704b58ec3c09dfbac323ff88747a41348c882c338e7863e1b0d6e"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 307,
+                  "startColumn": 15,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "        const char *, int)) ssl_sw[11].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0c88e23819e73e830cb84f55327efad95560925d35026908746e10630616bdf9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 309,
+                  "startColumn": 15,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "        const char *, int)) ssl_sw[12].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2049e0d58465298ee075ae440969ac6710239f38ee81150e48d33de872d09a8a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 315,
+                  "startColumn": 32,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "  (* (int (*)(SSL_CTX *, const char *)) ssl_sw[16].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8e8058d62f88426c2701349ad1ba6a104f57639fcb1ae09f5efeb767e3ccdbfe"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 319,
+                  "startColumn": 41,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  (* (void (*)(void (*)(int, int, const char *, int))) crypto_sw[1].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4eb9afcb914ca49dbae01467266e82df1429c371c0e12a34f8902fa993401288"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 30,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "#define ERR_error_string (* (char * (*)(unsigned long,char *)) crypto_sw[4].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5144cb2f8d1418f16a4872a8ea8bd22e7302e0672dac619023e3abfa57eab4f5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 55,
+                  "endColumn": 81,
+                  "snippet": {
+                    "text": "#define ERR_error_string (* (char * (*)(unsigned long,char *)) crypto_sw[4].ptr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5144cb2f8d1418f16a4872a8ea8bd22e7302e0672dac619023e3abfa57eab4f5"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 441,
+                  "startColumn": 3,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  char *config[NUM_OPTIONS];    // Mongoose configuration parameters"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "919d098af7be8b8df3a937edd3404dc6904b51777503f4197d731ad880977673"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 509,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 515,
+                  "startColumn": 10,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  (void) vsnprintf(buf, sizeof(buf), fmt, ap);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4acd64c48903e2085f3fae40962de3a1599b7af025850b19eb25e565f72d2d63"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 530,
+                  "startColumn": 14,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "      (void) fprintf(fp,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a5acdfc51485ecd46c2c20bf97fa6b9ab69a3a7aea3470c822ca8df0e51ddc0d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 536,
+                  "startColumn": 16,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "        (void) fprintf(fp, \"%s %s: \","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "319920a970a69b1c7ca4746f5fb25850d4dd16deda9984dfe3178e92fca7b026"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 541,
+                  "startColumn": 14,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "      (void) fprintf(fp, \"%s\", buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7bc815d108ea39e9b5a070a81001faff4dea366bb99075578408447f92418270"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 614,
+                  "startColumn": 26,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  return mg_strndup(str, strlen(str));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "da99129ef1e4a168e4a18bc7cd113eeb58595735b4e471ab02d6a011081eadae"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 628,
+                  "startColumn": 7,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  n = vsnprintf(buf, buflen, fmt, ap);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "492c8b099e1fc47924b0aa322a2e1d12fe5a9bd4b1de115c4083227f11b2afcb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 25,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "      list = val->ptr + strlen(val->ptr);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c33c0d29f236e7f16f997254737d8fba36feef315a34f4890b337a4b4a29196d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 769,
+                  "startColumn": 14,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  path_len = strlen(path);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9bddd7ffcdbe9941587daad7c8768d3eaeaa39b5f8d260b7e7691fb294e02e80"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 797,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 890,
+                  "startColumn": 27,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "            path + i + 2, strlen(path + i + 1));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c4f6ae86d341bda8a17ef7bf2df83a6f30ef2b49da60c6f81a7bd892bd1e515"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 897,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  char buf[PATH_MAX], *p;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5f6fd26ad91ad4ed2365fea6b428b03d844b2b38ec20100018cb06bcc08b8a29"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 903,
+                  "startColumn": 13,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  p = buf + strlen(buf) - 1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2b1f8725ade06612557293f82870eb40f91361cb8ec383cde54325d74899f42d"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 918,
+                  "startColumn": 12,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "    (void) fprintf(stderr, \"Rejecting suspicious path: [%s]\", buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5a6f7ff61a34163c7091b4df2aa2be7d50403a30f39b93d261c724943646a8f7"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 922,
+                  "startColumn": 10,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  (void) MultiByteToWideChar(CP_UTF8, 0, buf, -1, wbuf, (int) wbuf_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d136b0bee1bd30b99cd38c44a7a4d7c451261c43f2fd3d009c2a72f13d21bd97"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 989,
+                  "startColumn": 10,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "  (void) snprintf(dst, dst_size, \"implement strftime() for WinCE\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b5fec60220bddf192378c9f607481c08f50d5ed1bd3bb3fc57f24fa72ad0bd06"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 995,
+                  "startColumn": 3,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  wchar_t woldbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "672357f84e366fd2012106e5d534970aaca165796a3bfc89776abee44c185210"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 996,
+                  "startColumn": 3,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  wchar_t wnewbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "03bf4ff6908eeec0e4b40888000040675c775f729e50506ca7b5c4b24a1ca567"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1006,
+                  "startColumn": 3,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "  wchar_t wbuf[PATH_MAX], wmode[20];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5ca82f2de3e5eb390a0be561ae33a2f98f07ae673a1d6011c94d1297f041145d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "note",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1009,
+                  "startColumn": 3,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "  MultiByteToWideChar(CP_UTF8, 0, mode, -1, wmode, ARRAY_SIZE(wmode));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "792accded234ee87585214506f73a38af1f45a652f9ac724dee0c8a9c920ad6b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1016,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t wbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b3e132e48a27e7db32fd710118895d97c0b6505350d13e7c2b26b4bf193b7dc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1034,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t wbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b3e132e48a27e7db32fd710118895d97c0b6505350d13e7c2b26b4bf193b7dc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1040,
+                  "startColumn": 3,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  char buf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bccc52b0116e68b26a8fb862f2f766a6c4f06ed3e5c48f125f9f60e5c9a2feea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1041,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t wbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b3e132e48a27e7db32fd710118895d97c0b6505350d13e7c2b26b4bf193b7dc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1023",
+          "level": "error",
+          "message": {
+            "text": "buffer/MultiByteToWideChar:Requires maximum length in CHARACTERS, not bytes (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1047,
+                  "startColumn": 10,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "  (void) MultiByteToWideChar(CP_UTF8, 0, buf, -1, wbuf, sizeof(wbuf));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a108590535a3caa43b317e378b459960df575951d3bd4852a2c63eede48fbf72"
+          },
+          "rank": 1.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1055,
+                  "startColumn": 3,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  wchar_t wpath[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f6db14d0a27dcdf3ddb8fa660ecd4c7cd995d3e307a6c8703bb626c4a878edda"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1006",
+          "level": "note",
+          "message": {
+            "text": "buffer/wcscat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1067,
+                  "startColumn": 14,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "      (void) wcscat(wpath, L\"\\\\*\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f7e2efa1151463d06dafc51f5f0018e39f4ceff76940cef0076316f2240eca68"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/wchar_t:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1137,
+                  "startColumn": 3,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  wchar_t wbuf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0b3e132e48a27e7db32fd710118895d97c0b6505350d13e7c2b26b4bf193b7dc"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1155,
+                  "startColumn": 3,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  char *p, *interp, cmdline[PATH_MAX], buf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cb9ae19213d9e4c012c28eebf35a08175274d2f7dad2af6c90e77d22458de99f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1180,
+                  "startColumn": 15,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    if ((fp = fopen(cmdline, \"r\")) != NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5035b8111ddaf7da491fe2eaded1a6af61b17529624354d096f802606d74f924"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1187,
+                  "startColumn": 23,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "        for (p = &buf[strlen(buf) - 1]; p > buf && isspace(*p); p--) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "59e97106774600ecd6cd65533081c79e37a086f1bdc3e28aecfacee26a8a8ada"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/execle:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1290,
+                  "startColumn": 16,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "        (void) execle(prog, prog, NULL, envp);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c69c4c04bb51fff7bae6d565256155441c33cd7129457e5d042e9540461dedff"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/execle:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1293,
+                  "startColumn": 16,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "        (void) execle(interp, interp, prog, NULL, envp);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ca34f397e3e4eaab148de9b3bce1c00c183d710fb5d29c00c6fcf3ba94c63000"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1362,
+                  "startColumn": 13,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    nread = read(fileno(fp), buf, (size_t) len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5ec131036f658952e1a0d64ff5e3421140ade82ddc5115e7cce3f838ca1493c3"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/recv:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1366,
+                  "startColumn": 13,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    nread = recv(sock, buf, (size_t) len, 0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a566d4667126e665df1201858c910f5224c053b0b701476e7e4ff9d1a2fb5779"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1400,
+                  "startColumn": 7,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "      memcpy(buf, buffered, (size_t)buffered_len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fa53f22a32ba6eb0f271cf4b540be5e1786dbd155bab83dfbd89661feece8954"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1428,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1479,
+                  "startColumn": 14,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  name_len = strlen(name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ab8fc1a7f95ed37b490689eb6ed6a8a1fa549b0400664e9fafbd494f137cc7b2"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1520,
+                  "startColumn": 14,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "  name_len = strlen(cookie_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fceed18f1dd56448ec6240da7a8bb707c4a19d614cb808c61bc01d58856510e8"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1521,
+                  "startColumn": 13,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "  end = s + strlen(s);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "35cb9fbbda017040dea9b3553b38e09e3446da3ea3e0bd563c727462c0b88a36"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1666,
+                  "startColumn": 3,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "  char mon[32];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b49a9220bb10bedae1d039cbd4a5a686afdeca04905214353363b53fb9e1edb2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1672,
+                  "startColumn": 9,
+                  "endColumn": 40,
+                  "snippet": {
+                    "text": "  if (((sscanf(s, \"%d/%3s/%d %d:%d:%d\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d2f89c7d103699ba36d2b8bfec5f2499e3b10567f575b1cd900f8fb6cbd47d16"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1674,
+                  "startColumn": 10,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "        (sscanf(s, \"%d %3s %d %d:%d:%d\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d0b83f41013eb162cc47767e20ec7d01727162df14a6de8bdfa94780f91389f3"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1676,
+                  "startColumn": 10,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "        (sscanf(s, \"%*3s, %d %3s %d %d:%d:%d\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3c3f9c42cfa8c154773003b1e12db6fb7f6e52844d9feb2041b3061a21328f11"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:It's unclear if the %s limit in the format string is small enough (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1678,
+                  "startColumn": 10,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "        (sscanf(s, \"%d-%3s-%d %d:%d:%d\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f6ac1cd9ff5782464a381f2a3c04d00f8402284620e347eb4077167ebe7f28ee"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1780,
+                  "startColumn": 14,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  path_len = strlen(path);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9bddd7ffcdbe9941587daad7c8768d3eaeaa39b5f8d260b7e7691fb294e02e80"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1814,
+                  "startColumn": 12,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "  unsigned char in[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ed94943e6487ae1de7c986f02a8d48a7ca9fb87d7162d9a54cd8c331daa81766"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1948,
+                  "startColumn": 7,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "      memcpy(p, buf, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "76f33ebb20b88e081513f4d137c956592dd6058a6fba45534e859236d4fe641f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1951,
+                  "startColumn": 5,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "    memcpy(p, buf, t);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "68a82406c237de5f909df5121365bc06029fcbb06788c42bafc34352bb11e392"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1959,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    memcpy(ctx->in, buf, 64);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e3393692ad3af6de1549cb1989fb6b9ce8678c15126e51e7f6a3feebd8500902"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1966,
+                  "startColumn": 3,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  memcpy(ctx->in, buf, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2f3509d976e8fefa6a5440fa894767b399525fca437d827e6eab119ba00ccc42"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1969,
+                  "startColumn": 31,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "static void MD5Final(unsigned char digest[16], MD5_CTX *ctx) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f068b7d735b988e3c7fcd99433151af35ac65a493a5d44820791ddc29cb3f9c2"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1993,
+                  "startColumn": 3,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "  memcpy(digest, ctx->buf, 16);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fa2ea0cf2018ba19274f851cb996354d64f798d426b89a0b99ef7fc1d1a3ab8b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2012,
+                  "startColumn": 12,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "  unsigned char hash[16];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a9cf2328fec2d8e2321f59720ac6faf607171f0cb6151c9555db41ca0490075d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2021,
+                  "startColumn": 59,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "    MD5Update(&ctx, (const unsigned char *) p, (unsigned) strlen(p));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f2b7d575af782a6f2a4f503c3453ae7515710c846b1ee8c0a6fbb750416c4ac5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2033,
+                  "startColumn": 3,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  char ha2[32 + 1], expected_response[32 + 1];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a5ad19f4d542a8b3b6a599633e1e6ccb86ddf89ae5ade452630b07c83ccc729e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2044,
+                  "startColumn": 7,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "      strlen(response) != 32"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "03131b5fc7de0fd68bc9fe2e926746fb0ed73094d30a0fc7b25e788cb8c9890a"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2061,
+                  "startColumn": 3,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "  char name[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8a28ff0d5e61ea6c379e36d2d4bf2ed809032e2bc4087c32b055b307af72aeb6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2078,
+                  "startColumn": 28,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    for (p = path, e = p + strlen(p) - 1; e > p; e--)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "762f05d67bfe7ec646f63798553bddd60ca06b72d1bd05ae699bcae43fda39a1"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2161,
+                  "startColumn": 3,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  char line[256], f_user[256], ha1[256], f_domain[256], buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af70a1ec4cddf63262a7a3903f270b3b96e73f5292ca9f5a72c60dd759c5f92e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "error",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2169,
+                  "startColumn": 9,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "    if (sscanf(line, \"%[^:]:%[^:]:%s\", f_user, f_domain, ha1) != 3) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "72d3405f6c2b80ef088ed9051caa71565ab01450c736751a25f1bed9ec5efba2"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2187,
+                  "startColumn": 3,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "  char fname[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "25bb778d0eeda2536fb3a980807130586da342da5730a61437469bf9040728a1"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2247,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "  char line[512], u[512], d[512], ha1[33], tmp[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5303d8536cf72be7dbd50d1063d54b0c4f62ac6bc6fb29468275da39768ca66b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2258,
+                  "startColumn": 10,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  (void) snprintf(tmp, sizeof(tmp), \"%s.tmp\", fname);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e545a37bc606c893b0782425d8cc83b1dc3c18e077b2f69161a63aa9f6b5fb12"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2275,
+                  "startColumn": 9,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    if (sscanf(line, \"%[^:]:%[^:]:%*s\", u, d) != 2) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fb4fa5e90818db4427b46f4e22f40438413d0efeb4735853989362b7e2aa3f0d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2283,
+                  "startColumn": 9,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "        fprintf(fp2, \"%s:%s:%s\\n\", user, domain, ha1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "23ed5b6fc701a024277eadc1da3307d21bad1563cb1ca2f146334010a8fd1ee5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2286,
+                  "startColumn": 14,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "      (void) fprintf(fp2, \"%s\", line);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a9d23b787a3f5dc2daaf79f9dc5b879e0498549111ef6e3ce2091b39a7173c50"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2293,
+                  "startColumn": 12,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    (void) fprintf(fp2, \"%s:%s:%s\\n\", user, domain, ha1);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4661534a5b6bc6f6fd0aa6674a59898e16ab28888e174b6fe5680841fac1e321"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2334,
+                  "startColumn": 3,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  char size[64], mod[64], href[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "59ddd0b9e37d2ada9e2f62514877400cfc6231e65caa7231de65c8f82315c868"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2399,
+                  "startColumn": 3,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "  char path[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cdc22d4b1c2076a8c80e5924fadbebba26a4ca3e1ad91e60c584a8dcd0345d6d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2485,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2495,
+                  "startColumn": 21,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "    if ((num_read = fread(buf, 1, (size_t)to_read, fp)) == 0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eccb9e5a44661345118762179d61791e3f1637de88f0e55cf56df469842971c0"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "error",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2509,
+                  "startColumn": 10,
+                  "endColumn": 67,
+                  "snippet": {
+                    "text": "  return sscanf(header, \"bytes=%\" INT64_FMT \"-%\" INT64_FMT, a, b);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e3d0754bef6333e9b79f253dd270a3e3d4f33748c35dd74283c8acf34ddf7ba6"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2514,
+                  "startColumn": 3,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  char date[64], lm[64], etag[64], range[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0a23c52cf52fab468675a5385014826b944f859550c507572a211acf1dad1c98"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2648,
+                  "startColumn": 14,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "  size_t n = strlen(path);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ba1d75296e37732ea71ea1a0e2556376c47d358a64b5af3b8e908ac71976d288"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2697,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2761,
+                  "startColumn": 3,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "  char buf[CGI_ENVIRONMENT_SIZE]; // Environment buffer"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "edfe162913cf14f517fc2092eb463d65be34cb64f3f2481b14970967c21f317a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2763,
+                  "startColumn": 3,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "  char *vars[MAX_CGI_ENVIR_VARS]; // char **envp"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2548652251a3c7a5fb807f2633471f34ccb612aae572040d812868269bbba7b8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2847,
+                  "startColumn": 12,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "  if ((s = getenv(\"PATH\")) != NULL)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "799f6f7d9a4abe0a2a8840ce2780b84363b533ea5808c01c7ce1384a0ee1259d"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2851,
+                  "startColumn": 12,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  if ((s = getenv(\"COMSPEC\")) != NULL)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "593f784d638080e86ac088d3194a1518b69df92b01f6e0d4fcf6e74786800d61"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2853,
+                  "startColumn": 12,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "  if ((s = getenv(\"SYSTEMROOT\")) != NULL)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c9f32ae6a964728b9e9206c9f29d90a35119b3597b6c9bb547a4d964993c2bea"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2856,
+                  "startColumn": 12,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  if ((s = getenv(\"LD_LIBRARY_PATH\")) != NULL)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b436b1cb47dbf44dcfadba13fc558dd04a44e7035f4cc4025c9223f3f5118c2a"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2860,
+                  "startColumn": 12,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "  if ((s = getenv(\"PERLLIB\")) != NULL)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "688653ea7103875a443b448599b195781bdd3b952e4c5ea9f08fe391e8896cff"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2899,
+                  "startColumn": 3,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ], *pbuf, dir[PATH_MAX], *p;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c9d8ccc97ae9a3e3f2ac0cff9ef83bda41461b5f802a40e4de1a2cdc0b08d32d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2970,
+                  "startColumn": 59,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "  conn->request_info.status_code = status == NULL ? 200 : atoi(status);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "56bb49ebc16b15194a40a3b37bf3bb442b2b3573f8308e81d6e8536a6b02705f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3019,
+                  "startColumn": 3,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "  char buf[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bccc52b0116e68b26a8fb862f2f766a6c4f06ed3e5c48f125f9f60e5c9a2feea"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3027,
+                  "startColumn": 12,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "    (void) memcpy(buf, path, len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "04f1cdc00b485477d62b942d41a9ee5074507837ef33ae80f3fa34e9fac9987f"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3081,
+                  "startColumn": 3,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  char file_name[BUFSIZ], path[PATH_MAX], *p;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "860c8b8c2b6697fed9a4302a22debc6fbaca57f8d0d1c88c802f6a63c0f8de8e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3090,
+                  "startColumn": 7,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "  if (sscanf(tag, \" virtual=\\\"%[^\\\"]\\\"\", file_name) == 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f3708f61120c4a1a23e44a0025ef0e4ff7b66f3126a931e5f0dff2efb5c40b44"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3094,
+                  "startColumn": 14,
+                  "endColumn": 64,
+                  "snippet": {
+                    "text": "  } else if (sscanf(tag, \" file=\\\"%[^\\\"]\\\"\", file_name) == 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c9497477137c5ba9651579924b537108920ccf13d0cf17debd9bd325a30bcdbe"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3098,
+                  "startColumn": 14,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "  } else if (sscanf(tag, \" \\\"%[^\\\"]\\\"\", file_name) == 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5dcee278d59ced2902d15465e816d0582cb58d9554072af95d8f85d69235d882"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3104,
+                  "startColumn": 37,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    (void) mg_snprintf(conn, path + strlen(path),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8191366323d6406da36dc6fd1967aec8a9c3176bbe9c4d4d69ee77dfa00a4fe5"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3105,
+                  "startColumn": 24,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "        sizeof(path) - strlen(path), \"%s\", file_name);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "55080f2f296725cab2d71d142374c3f1351dcc6632f6cbd0bb0a1fb1811d3896"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3128,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char cmd[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4518edc34f0bda7415ce942048c6d582a44b41313eb0337e7098902031fae06e"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3131,
+                  "startColumn": 7,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "  if (sscanf(tag, \" \\\"%[^\\\"]\\\"\", cmd) != 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f51775feb697d9d3129542e51a286ec2c5cb54abbb6e21a96d6953d609d3c54a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1043",
+          "level": "error",
+          "message": {
+            "text": "shell/popen:This causes a new program to execute and is difficult to use safely (CWE-78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3133,
+                  "startColumn": 20,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "  } else if ((fp = popen(cmd, \"r\")) == NULL) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c78b40fd4aad1b25d9811149b2c2b024ecb3d74061d0678f6edc3f2378e1ea4"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3144,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/fgetc:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3155,
+                  "startColumn": 16,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "  while ((ch = fgetc(fp)) != EOF) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "399e3e8689a7f862007d4cf0135307ac0e4e3bbf13ddcaf007fc3e150744081b"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3230,
+                  "startColumn": 3,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "  char path[PATH_MAX];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cdc22d4b1c2076a8c80e5924fadbebba26a4ca3e1ad91e60c584a8dcd0345d6d"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3237,
+                  "startColumn": 13,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "  uri_len = strlen(ri->uri);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f1373775f9c3d043c68798b370f291c99654f59f522ab1bc486a52c8240d240c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3315,
+                  "startColumn": 7,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "  if (sscanf(vec->ptr, \"%d.%d.%d.%d:%d%n\", &a, &b, &c, &d, &port, &len) == 5) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "3fd3d1d64b5faa564dab805fc2dd60a58f96ef2edf14f5f702c268c870d8e689"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3318,
+                  "startColumn": 14,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "  } else if (sscanf(vec->ptr, \"%d%n\", &port, &len) == 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a3677455df383dfe363b364176bd97920f70d093002b92d2741d78750e3e5606"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3393,
+                  "startColumn": 12,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    (void) fprintf(fp, \"%s\", \" -\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fa9981b9f44de656fc0e2e3a22ba6ede6eeb49b405aea0cad616b596c9bbbe0c"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3395,
+                  "startColumn": 12,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    (void) fprintf(fp, \" \\\"%s\\\"\", header_value);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7757cadb957ab3ef5f722478b3e7b306dba4d8e0ea7b3e5308b36b5560201e65"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3402,
+                  "startColumn": 3,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "  char date[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "094489a0f6a5942e8182aae09adfda39f2b5bab0c342f82b05ab020fcbf58aec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "error",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3417,
+                  "startColumn": 10,
+                  "endColumn": 21,
+                  "snippet": {
+                    "text": "  (void) fprintf(fp,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a5acdfc51485ecd46c2c20bf97fa6b9ab69a3a7aea3470c822ca8df0e51ddc0d"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3460,
+                  "startColumn": 9,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "    if (sscanf(vec.ptr, \"%c%d.%d.%d.%d%n\", &flag, &a, &b, &c, &d, &n) != 5) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1710356e353d977d4ace11f798e3169c2803cbde2799f25c5650a4559f69d0f6"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3469,
+                  "startColumn": 16,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "    } else if (sscanf(vec.ptr + n, \"/%d\", &mask) == 0) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "63aa299066c5ea42e55b65d4aa10b29ab8cc4d3073c5b4c278e55080010ff5c2"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3668,
+                  "startColumn": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "  char buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "38f78c7ddf4a01792dd5b430a1692f8556c070b2ef839308bbbdf5d004056933"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3723,
+                  "startColumn": 7,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "  if (sscanf(url, \"%*[htps]://%1024[^:]:%d%n\", host, port, &len) == 2 ||"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f3cce7c9c403db07bd607af1c284122bd79d4bff687a079a3daa1313c0539352"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3724,
+                  "startColumn": 7,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "      sscanf(url, \"%1024[^:]:%d%n\", host, port, &len) == 2) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cae89ab2241d5b6b30dbccc5e99f8924c7711094640d0a1f33b2c0858272749d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3725,
+                  "startColumn": 14,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "  } else if (sscanf(url, \"%*[htps]://%1024[^/]%n\", host, &len) == 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a0eb89c410ec3c0e15d6c3cab633811d2a0b83139d6f505952c87a4ccac24a58"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1021",
+          "level": "note",
+          "message": {
+            "text": "buffer/sscanf:The scanf() family's %s operation, without a limit specification, permits buffer overflows (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3728,
+                  "startColumn": 5,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "    sscanf(url, \"%1024[^/]%n\", host, &len);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "09ac91cae30d7a9b560510c19f887aa50567331f61f9191aac5dbeabbb9ec658"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3738,
+                  "startColumn": 3,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "  char host[1025], buf[BUFSIZ];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "99dd80be3101d2e7618e1fed27b940bb04b39755a4bdf34e17f99048590de186"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3881,
+                  "startColumn": 18,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "  int buf_size = atoi(ctx->config[MAX_REQUEST_SIZE]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "cc5c11a95e9c531df3078d0ce0c414e5f4a4f943954d6290b433923c465fe639"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 3896,
+                  "startColumn": 5,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    memcpy(&conn->request_info.remote_ip,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b2fb8daf8ddd38df9769b5e20f8232645011a875acf41155e317292032b7f874"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1047",
+          "level": "note",
+          "message": {
+            "text": "integer/atoi:Unless checked, the resulting number can exceed the expected range (CWE-190)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/mongoose/mongoose.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 4132,
+                  "startColumn": 19,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "  for (i = 0; i < atoi(ctx->config[NUM_THREADS]); i++) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "db8cf60a3c601a798f368622018a88e0bc93ed13ef9faeb28213fe107d6cdc80"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/utf8.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 43,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "#define utf8_strlen(S, B) ((B) < 0 ? (int)strlen(S) : (B))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b336ca377ebbe28d7a3797d052e22a159611ef62792b0f42b333f02181db70c0"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/example.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 5,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "    printf(\"\\r\\nSPACE!\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b14cd3429aae5037dffa1a9cf2232fd6758d1f97127a91b8d766ef0b1b865026"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/example.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 5,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "    printf(\"\\r\\nSTRING %s%c\\r\\n\", buf + string_start, buf[string_start]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "33815793a90d87727b1fd3ae9bede4e41fd157cf69a4835d911c5317d0880eee"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/example.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 5,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "    printf(\"?\\r\\nHELP: %s\\r\\n\", buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "033d984ddf7bdb4b7e26621e27a67dee88ff184a8ac96b81ff22c62139270cd8"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/example.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 13,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "            printf(\"echo: '%s'\\n\", line);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "ae88ea22735b8cbdf80c03c1f4bf8b1eda94b249e2fc470c79249f30756f601d"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 9,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "#define snprintf _snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "194a915f111996f097c32cb39c273aa0eb69cf4c05382cee6ec1635f362440a9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/_snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 18,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "#define snprintf _snprintf"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "194a915f111996f097c32cb39c273aa0eb69cf4c05382cee6ec1635f362440a9"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1053",
+          "level": "warning",
+          "message": {
+            "text": "buffer/getenv:Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once (CWE-807, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 18,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "    char *term = getenv(\"TERM\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c834244e45d1b2b16825417654ecc8a991d6c71c399a11a94b8018fccb8e86cc"
+          },
+          "rank": 0.6000000000000001
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 5,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "    char buf[64];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "465eabb0806860179ab2df61dda647bce326eb7218231f8bbb69a8f322b93fff"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "error",
+          "message": {
+            "text": "format/vsnprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 9,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "    n = vsnprintf(buf, sizeof(buf), format, args);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e434a288cc990c7baeca861b03266947ffd16ac45e69ef25392fb778331eabbb"
+          },
+          "rank": 0.8
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 341,
+                  "startColumn": 9,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    if (read(fd, &c, 1) != 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "16b2ea16c499095c1a90f5fdbab16ac397ccf3d8c15e96911f8a30763576de37"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 354,
+                  "startColumn": 5,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "    char buf[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8f54c696a5880ebb2de608d79e23b571317d632df224a10e61a036898a8e2ec9"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 359,
+                  "startColumn": 9,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "    if (read(current->fd, &buf[0], 1) != 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6ee794ffe7c850fbb24aa6ae9f4fbd7dfb39413fe5fe207d8bea2e2f2573465f"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 367,
+                  "startColumn": 13,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "        if (read(current->fd, &buf[i], 1) != 1) {"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "16afcdcace8328f234f43d8e20354feaeff90efb9c16b6b686405ff104a66153"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 679,
+                  "startColumn": 12,
+                  "endColumn": 27,
+                  "snippet": {
+                    "text": "    plen = strlen(prompt);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6884d105f04caa6b13861d68a8e57d4b9acfe7c1c5ba82f38090e0f12161fc65"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1008",
+          "level": "note",
+          "message": {
+            "text": "buffer/strncpy:Easily used incorrectly; doesn't always \\0-terminate or check for invalid pointers [MS-banned] (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 760,
+                  "startColumn": 5,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "    strncpy(current->buf, str, current->bufmax);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "bc28d14191457bb53814a783035084f4c39b57f7ed0fd2b40f01f9b3889e3672"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 762,
+                  "startColumn": 20,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "    current->len = strlen(current->buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "af028d39a6970ffc8f54b267b48f7886f00a6914fb7d780c4c3f2ab327669a51"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 816,
+                  "startColumn": 5,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "    char buf[3];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5064802e683ecdba2eb8ac4e02204be4184b54bf992f4e6a1a8b586445f56f12"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 836,
+                  "startColumn": 9,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "        memcpy(current->buf + p1, buf, n);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "22b2d80ce1b77400a7e4f3c2a5ee41d0618235542899add59e0aede433cd1518"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 865,
+                  "startColumn": 5,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    fprintf(stderr, \"\\x7\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8513a0617f7c26d5549f1d0350ec92826b8e531f3f0b69d0b6670e56e05e7828"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 892,
+                  "startColumn": 37,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "                tmp.pos = tmp.len = strlen(tmp.buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "9b2516f07b9c807aebaa15c62305f6e71fa8e75dcc178a046dced8f146895f2c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1025,
+                  "startColumn": 17,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "                char rbuf[50];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "19c8d25e3cc909251eeed4f985a69f20af29e87b9d4d69eb5c89c8841ce7c904"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1026,
+                  "startColumn": 17,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "                char rprompt[80];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "31b58393a8ef00f1c24b03ea5132eaaa0eebda5392773a5b9fcaab901e320bc6"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1019",
+          "level": "note",
+          "message": {
+            "text": "format/snprintf:If format strings can be influenced by an attacker, they can be exploited, and note that sprintf variations do not always \\0-terminate (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1038,
+                  "startColumn": 21,
+                  "endColumn": 90,
+                  "snippet": {
+                    "text": "                    snprintf(rprompt, sizeof(rprompt), \"(reverse-i-search)'%s': \", rbuf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "53174740b100cd78331a475d10599451b1c44471a29c43809a4120b9ad3cae03"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1045,
+                  "startColumn": 36,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "                            rlen = strlen(rbuf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "0405176a2595c722d6434f2a3cb4a5e433ae65a061ffb2de45098bf1c579be64"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1239,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    char buf[LINENOISE_MAX_LINE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6bc460cd055db1b654035c0c8c48c85039b1097bec7f9f77537c3f019fe7f2ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1242,
+                  "startColumn": 2,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "\tprintf(\"%s\", prompt);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8168ac64890c04ee4ec2ca75fe16ed01b9923e2c4eefe3be0d0b510b4e6a4ac"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1247,
+                  "startColumn": 17,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "        count = strlen(buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b38b31e104bda7bbd43bccbd3eed66fd56c81b7c906bacb29ee67844cbdf42de"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1264,
+                  "startColumn": 9,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "        printf(\"\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4c6f1301d05cbd76ed653dd490901d6f1598b523f200061497bde5038ec6933f"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1317,
+                  "startColumn": 9,
+                  "endColumn": 83,
+                  "snippet": {
+                    "text": "        memcpy(newHistory,history+(history_max_len-tocopy), sizeof(char*)*tocopy);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "77b20007e4bb4659d92ef99fac559349ad63baf2835615a6f564ece9a7811825"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1330,
+                  "startColumn": 16,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    FILE *fp = fopen(filename,\"w\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b93d60b5849eac5c744a53aa272281148362a2301b0cc1f9b294ed63f5f73245"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1365,
+                  "startColumn": 16,
+                  "endColumn": 36,
+                  "snippet": {
+                    "text": "    FILE *fp = fopen(filename,\"r\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "d57f9c42a97b86deae1e8bc601fd183b176c66ee7d0add274fb1487c0e154b7c"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/linenoise.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 1366,
+                  "startColumn": 5,
+                  "endColumn": 34,
+                  "snippet": {
+                    "text": "    char buf[LINENOISE_MAX_LINE];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6bc460cd055db1b654035c0c8c48c85039b1097bec7f9f77537c3f019fe7f2ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/workspace/src/linenoise/src/utf8.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 19,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "        bytelen = strlen(str);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "8ec994a6fdd6a46e50db73e68e8fca15599734d0cab5301a0e950f72b5679e3f"
+          },
+          "rank": 0.2
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}

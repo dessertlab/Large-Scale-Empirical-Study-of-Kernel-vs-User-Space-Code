@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCAction.cpp">
+            <location file="/workspace/cocos/2d/CCAction.cpp" line="118" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCAction.cpp">
+            <location file="/workspace/cocos/2d/CCAction.cpp" line="234" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionEase.cpp">
+            <location file="/workspace/cocos/2d/CCActionEase.cpp" line="81" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="259" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="312" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="317" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="568" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="713" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="771" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="776" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="1583" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="1665" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="2044" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="2432" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCActionInterval.cpp">
+            <location file="/workspace/cocos/2d/CCActionInterval.cpp" line="2526" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/2d/CCAutoPolygon.cpp">
+            <location file="/workspace/cocos/2d/CCAutoPolygon.cpp" line="538" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/cocos/2d/CCFontFNT.cpp">
+            <location file="/workspace/cocos/2d/CCFontFNT.cpp" line="400" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!tempFont&apos; is redundant or there is possible null pointer dereference: tempFont." verbose="Either the condition &apos;!tempFont&apos; is redundant or there is possible null pointer dereference: tempFont." cwe="476" file0="/workspace/cocos/2d/CCFontFNT.cpp">
+            <location file="/workspace/cocos/2d/CCFontFNT.cpp" line="566" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/cocos/2d/CCFontFNT.cpp" line="567" column="9" info="Assuming that condition &apos;!tempFont&apos; is not redundant"/>
+            <symbol>tempFont</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;x1&apos; and &apos;y1&apos;." verbose="Finding variables &apos;x1&apos; and &apos;y1&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/workspace/cocos/2d/CCParticleSystemQuad.cpp">
+            <location file="/workspace/cocos/2d/CCParticleSystemQuad.cpp" line="271" column="11"/>
+            <location file="/workspace/cocos/2d/CCParticleSystemQuad.cpp" line="272" column="11"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/cocos/3d/CCObjLoader.cpp">
+            <location file="/workspace/cocos/3d/CCObjLoader.cpp" line="482" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/cocos/3d/CCObjLoader.cpp">
+            <location file="/workspace/cocos/3d/CCObjLoader.cpp" line="790" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/cocos/3d/CCObjLoader.cpp">
+            <location file="/workspace/cocos/3d/CCObjLoader.cpp" line="819" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/workspace/cocos/3d/CCObjLoader.cpp">
+            <location file="/workspace/cocos/3d/CCObjLoader.cpp" line="885" column="17"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Impl::_delegateWithIme&apos; is not initialized in the constructor." verbose="Member variable &apos;Impl::_delegateWithIme&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/base/CCIMEDispatcher.cpp">
+            <location file="/workspace/cocos/base/CCIMEDispatcher.cpp" line="69" column="5"/>
+            <symbol>Impl::_delegateWithIme</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/base/CCRef.cpp">
+            <location file="/workspace/cocos/base/CCRef.cpp" line="176" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: entry-&gt;priority" verbose="Uninitialized variable: entry-&gt;priority" cwe="457" file0="/workspace/cocos/base/CCScheduler.cpp">
+            <location file="/workspace/cocos/base/CCScheduler.cpp" line="598" column="23"/>
+            <symbol>entry-&gt;priority</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: entry-&gt;priority" verbose="Uninitialized variable: entry-&gt;priority" cwe="457" file0="/workspace/cocos/base/CCScheduler.cpp">
+            <location file="/workspace/cocos/base/CCScheduler.cpp" line="774" column="23"/>
+            <symbol>entry-&gt;priority</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: entry-&gt;paused" verbose="Uninitialized variable: entry-&gt;paused" cwe="457" file0="/workspace/cocos/base/CCScheduler.cpp">
+            <location file="/workspace/cocos/base/CCScheduler.cpp" line="842" column="23"/>
+            <symbol>entry-&gt;paused</symbol>
+        </error>
+        <error id="uninitdata" severity="error" msg="Memory is allocated but not initialized: indices" verbose="Memory is allocated but not initialized: indices" cwe="457" file0="/workspace/cocos/editor-support/cocostudio/ActionTimeline/CCSkeletonNode.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/ActionTimeline/CCSkeletonNode.cpp" line="285" column="10"/>
+            <symbol>indices</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/cocos/editor-support/cocostudio/ActionTimeline/CCSkinNode.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/ActionTimeline/CCSkinNode.cpp" line="32" column="1"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/editor-support/cocostudio/CCActionFrame.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionFrame.cpp" line="84" column="2"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: frameListNode" verbose="Possible null pointer dereference: frameListNode" cwe="476" file0="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="230" column="32" info="Null pointer dereference"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="220" column="27" info="Assuming condition is false"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="219" column="40" info="Assignment &apos;frameListNode=nullptr&apos;, assigned value is 0"/>
+            <symbol>frameListNode</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: frameListNode" verbose="Possible null pointer dereference: frameListNode" cwe="476" file0="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="231" column="43" info="Null pointer dereference"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="220" column="27" info="Assuming condition is false"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCActionNode.cpp" line="219" column="40" info="Assignment &apos;frameListNode=nullptr&apos;, assigned value is 0"/>
+            <symbol>frameListNode</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;)&apos;. Configuration: &apos;ENABLE_PHYSICS_CHIPMUNK_DETECT&apos;." verbose="Unmatched &apos;)&apos;. Configuration: &apos;ENABLE_PHYSICS_CHIPMUNK_DETECT&apos;." file0="/workspace/cocos/editor-support/cocostudio/CCArmature.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCArmature.cpp" line="715" column="14"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCComAttribute.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCComAttribute.cpp" line="33" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCComAudio.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCComAudio.cpp" line="32" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCComController.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCComController.cpp" line="31" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCComExtensionData.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCComExtensionData.cpp" line="31" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_COMPONENT_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCComRender.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCComRender.cpp" line="38" column="1"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;parentFrameXML&apos; is redundant or there is possible null pointer dereference: parentFrameXML." verbose="Either the condition &apos;parentFrameXML&apos; is redundant or there is possible null pointer dereference: parentFrameXML." cwe="476" file0="/workspace/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp" line="893" column="17" info="Null pointer dereference"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp" line="889" column="38" info="Assuming that condition &apos;parentFrameXML&apos; is not redundant"/>
+            <symbol>parentFrameXML</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CS_RETURN_IF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CS_RETURN_IF is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/CCDisplayManager.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCDisplayManager.cpp" line="426" column="5"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: className" verbose="Possible null pointer dereference: className" cwe="476" file0="/workspace/cocos/editor-support/cocostudio/CCSSceneReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/CCSSceneReader.cpp" line="365" column="15" info="Null pointer dereference"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCSSceneReader.cpp" line="361" column="13" info="Assuming condition is false"/>
+            <location file="/workspace/cocos/editor-support/cocostudio/CCSSceneReader.cpp" line="358" column="29" info="Assignment &apos;className=nullptr&apos;, assigned value is 0"/>
+            <symbol>className</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/cocos/editor-support/cocostudio/TriggerBase.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/TriggerBase.cpp" line="35" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp" line="69" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp" line="53" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp" line="44" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/GameNode3DReader/GameNode3DReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/GameNode3DReader/GameNode3DReader.cpp" line="45" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp" line="58" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp" line="73" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/Light3DReader/Light3DReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/Light3DReader/Light3DReader.cpp" line="43" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp" line="50" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp" line="57" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/Node3DReader/Node3DReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/Node3DReader/Node3DReader.cpp" line="42" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/NodeReader/NodeReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/NodeReader/NodeReader.cpp" line="59" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp" line="48" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/Particle3DReader/Particle3DReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/Particle3DReader/Particle3DReader.cpp" line="44" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ParticleReader/ParticleReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ParticleReader/ParticleReader.cpp" line="43" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp" line="52" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/SingleNodeReader/SingleNodeReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/SingleNodeReader/SingleNodeReader.cpp" line="42" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/SkeletonReader/BoneNodeReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/SkeletonReader/BoneNodeReader.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/SkeletonReader/SkeletonNodeReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/SkeletonReader/SkeletonNodeReader.cpp" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp" line="57" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/Sprite3DReader/Sprite3DReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/Sprite3DReader/Sprite3DReader.cpp" line="47" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/SpriteReader/SpriteReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/SpriteReader/SpriteReader.cpp" line="46" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/TabControlReader/TabControlReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/TabControlReader/TabControlReader.cpp" line="44" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp" line="53" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp" line="50" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp" line="57" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp" line="56" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/UserCameraReader/UserCameraReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/UserCameraReader/UserCameraReader.cpp" line="45" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_NODE_READER_INFO is a macro then please configure it." file0="/workspace/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.cpp">
+            <location file="/workspace/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.cpp" line="118" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/AtlasAttachmentLoader.cpp">
+            <location file="/workspace/cocos/editor-support/spine/AtlasAttachmentLoader.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/Attachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/Attachment.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/AttachmentLoader.cpp">
+            <location file="/workspace/cocos/editor-support/spine/AttachmentLoader.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/AttachmentTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/AttachmentTimeline.cpp" line="47" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/Bone.cpp">
+            <location file="/workspace/cocos/editor-support/spine/Bone.cpp" line="41" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/BoundingBoxAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/BoundingBoxAttachment.cpp" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/ClippingAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/ClippingAttachment.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/ColorTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/ColorTimeline.cpp" line="47" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/CurveTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/CurveTimeline.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/DeformTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/DeformTimeline.cpp" line="49" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/DrawOrderTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/DrawOrderTimeline.cpp" line="45" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/EventTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/EventTimeline.cpp" line="50" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/IkConstraint.cpp">
+            <location file="/workspace/cocos/editor-support/spine/IkConstraint.cpp" line="44" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/IkConstraintTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/IkConstraintTimeline.cpp" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/MeshAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/MeshAttachment.cpp" line="39" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PathAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PathAttachment.cpp" line="37" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PathConstraint.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PathConstraint.cpp" line="47" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PathConstraintMixTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PathConstraintMixTimeline.cpp" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PathConstraintPositionTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PathConstraintPositionTimeline.cpp" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PathConstraintSpacingTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PathConstraintSpacingTimeline.cpp" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/PointAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/PointAttachment.cpp" line="42" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/RegionAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/RegionAttachment.cpp" line="42" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/RotateTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/RotateTimeline.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/ScaleTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/ScaleTimeline.cpp" line="45" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/ShearTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/ShearTimeline.cpp" line="46" column="1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;-(value&amp;1)&apos;." verbose="Signed integer overflow for expression &apos;-(value&amp;1)&apos;." cwe="190" file0="/workspace/cocos/editor-support/spine/SkeletonBinary.cpp">
+            <location file="/workspace/cocos/editor-support/spine/SkeletonBinary.cpp" line="435" column="64" info="Integer overflow"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/Timeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/Timeline.cpp" line="40" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/TransformConstraint.cpp">
+            <location file="/workspace/cocos/editor-support/spine/TransformConstraint.cpp" line="44" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/TransformConstraintTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/TransformConstraintTimeline.cpp" line="48" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/TranslateTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/TranslateTimeline.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/TwoColorTimeline.cpp">
+            <location file="/workspace/cocos/editor-support/spine/TwoColorTimeline.cpp" line="47" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL_NOPARENT is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/Updatable.cpp">
+            <location file="/workspace/cocos/editor-support/spine/Updatable.cpp" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If RTTI_IMPL is a macro then please configure it." file0="/workspace/cocos/editor-support/spine/VertexAttachment.cpp">
+            <location file="/workspace/cocos/editor-support/spine/VertexAttachment.cpp" line="43" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SIOClientImpl::_heartbeat&apos; is not initialized in the constructor." verbose="Member variable &apos;SIOClientImpl::_heartbeat&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/network/SocketIO.cpp">
+            <location file="/workspace/cocos/network/SocketIO.cpp" line="401" column="16"/>
+            <symbol>SIOClientImpl::_heartbeat</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SIOClientImpl::_timeout&apos; is not initialized in the constructor." verbose="Member variable &apos;SIOClientImpl::_timeout&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/network/SocketIO.cpp">
+            <location file="/workspace/cocos/network/SocketIO.cpp" line="401" column="16"/>
+            <symbol>SIOClientImpl::_timeout</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SIOClientImpl::_version&apos; is not initialized in the constructor." verbose="Member variable &apos;SIOClientImpl::_version&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/network/SocketIO.cpp">
+            <location file="/workspace/cocos/network/SocketIO.cpp" line="401" column="16"/>
+            <symbol>SIOClientImpl::_version</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;WsThreadHelper&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WsThreadHelper&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/cocos/network/WebSocket.cpp">
+            <location file="/workspace/cocos/network/WebSocket.cpp" line="325" column="5"/>
+            <symbol>WsThreadHelper</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;WsThreadHelper&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WsThreadHelper&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/cocos/network/WebSocket.cpp">
+            <location file="/workspace/cocos/network/WebSocket.cpp" line="325" column="5"/>
+            <symbol>WsThreadHelper</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If NS_CC_BEGIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If NS_CC_BEGIN is a macro then please configure it." file0="/workspace/cocos/physics/CCPhysicsJoint.cpp">
+            <location file="/workspace/cocos/physics/CCPhysicsJoint.cpp" line="35" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If METHODDEF is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If METHODDEF is a macro then please configure it." file0="/workspace/cocos/platform/CCImage.cpp">
+            <location file="/workspace/cocos/platform/CCImage.cpp" line="784" column="5"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp">
+            <location file="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp" line="951" column="9"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp">
+            <location file="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp" line="954" column="13"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp">
+            <location file="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp" line="977" column="13"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp">
+            <location file="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp" line="998" column="13"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp">
+            <location file="/workspace/cocos/platform/desktop/CCGLViewImpl-desktop.cpp" line="999" column="13"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/cocos/renderer/CCTextureCache.cpp">
+            <location file="/workspace/cocos/renderer/CCTextureCache.cpp" line="664" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 4) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 4) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/cocos/renderer/CCTextureCache.cpp">
+            <location file="/workspace/cocos/renderer/CCTextureCache.cpp" line="664" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 5) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 5) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/cocos/renderer/CCTextureCache.cpp">
+            <location file="/workspace/cocos/renderer/CCTextureCache.cpp" line="664" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 7) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 7) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/cocos/renderer/CCTextureCache.cpp">
+            <location file="/workspace/cocos/renderer/CCTextureCache.cpp" line="664" column="9"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." verbose="%lu in format string (no. 2) requires &apos;unsigned long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/cocos/renderer/CCTextureCache.cpp">
+            <location file="/workspace/cocos/renderer/CCTextureCache.cpp" line="676" column="5"/>
+        </error>
+        <error id="returnTempReference" severity="error" msg="Reference to temporary returned." verbose="Reference to temporary returned." cwe="562" file0="/workspace/cocos/renderer/backend/opengl/ProgramGL.cpp">
+            <location file="/workspace/cocos/renderer/backend/opengl/ProgramGL.cpp" line="335" column="21"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;updateTextureDescriptor&apos; is called from constructor &apos;Texture2DGL(const TextureDescriptor&amp;descriptor)&apos; at line 82. Dynamic binding is not used." verbose="Virtual function &apos;updateTextureDescriptor&apos; is called from constructor &apos;Texture2DGL(const TextureDescriptor&amp;descriptor)&apos; at line 82. Dynamic binding is not used." file0="/workspace/cocos/renderer/backend/opengl/TextureGL.cpp">
+            <location file="/workspace/cocos/renderer/backend/opengl/TextureGL.h" line="136" column="18" info="updateTextureDescriptor is a virtual function"/>
+            <location file="/workspace/cocos/renderer/backend/opengl/TextureGL.cpp" line="82" column="5" info="Calling updateTextureDescriptor"/>
+        </error>
+        <error id="virtualCallInConstructor" severity="style" msg="Virtual function &apos;updateSamplerDescriptor&apos; is called from constructor &apos;TextureCubeGL(const TextureDescriptor&amp;descriptor)&apos; at line 344. Dynamic binding is not used." verbose="Virtual function &apos;updateSamplerDescriptor&apos; is called from constructor &apos;TextureCubeGL(const TextureDescriptor&amp;descriptor)&apos; at line 344. Dynamic binding is not used." file0="/workspace/cocos/renderer/backend/opengl/TextureGL.cpp">
+            <location file="/workspace/cocos/renderer/backend/opengl/TextureGL.h" line="173" column="18" info="updateSamplerDescriptor is a virtual function"/>
+            <location file="/workspace/cocos/renderer/backend/opengl/TextureGL.cpp" line="344" column="5" info="Calling updateSamplerDescriptor"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;return&apos; condition is always true." verbose="Identical inner &apos;return&apos; condition is always true (outer condition is &apos;*it&apos; and inner condition is &apos;*it&apos;)." cwe="398" file0="/workspace/cocos/scripting/deprecated/CCSet.cpp">
+            <location file="/workspace/cocos/scripting/deprecated/CCSet.cpp" line="161" column="21" info="identical inner condition: *it"/>
+            <location file="/workspace/cocos/scripting/deprecated/CCSet.cpp" line="159" column="13" info="outer condition: *it"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_audioengine_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_audioengine_auto.cpp" line="619" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_audioengine_auto.cpp" line="612" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17817" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17809" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17837" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17829" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17850" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="17842" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31340" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31332" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31453" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31445" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31631" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31623" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31691" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="31683" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32233" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32225" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32349" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32341" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32466" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32458" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32721" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32713" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32788" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32780" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="33005" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="32997" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="33222" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="33214" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="33382" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="33374" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="76845" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="76837" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="76897" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="76889" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="77139" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="77131" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="77191" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_auto.cpp" line="77183" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &apos;!ok&apos;, second condition is always false" verbose="Identical condition &apos;!ok&apos;, second condition is always false" cwe="398" file0="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_csloader_auto.cpp">
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_csloader_auto.cpp" line="617" column="17" info="Testing identical condition &apos;!ok&apos;"/>
+            <location file="/workspace/cocos/scripting/lua-bindings/auto/lua_cocos2dx_csloader_auto.cpp" line="610" column="17" info="If condition &apos;!ok&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIButton.cpp">
+            <location file="/workspace/cocos/ui/UIButton.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UICheckBox.cpp">
+            <location file="/workspace/cocos/ui/UICheckBox.cpp" line="32" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIImageView.cpp">
+            <location file="/workspace/cocos/ui/UIImageView.cpp" line="38" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UILayout.cpp">
+            <location file="/workspace/cocos/ui/UILayout.cpp" line="49" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIListView.cpp">
+            <location file="/workspace/cocos/ui/UIListView.cpp" line="35" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UILoadingBar.cpp">
+            <location file="/workspace/cocos/ui/UILoadingBar.cpp" line="43" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIPageView.cpp">
+            <location file="/workspace/cocos/ui/UIPageView.cpp" line="33" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIRadioButton.cpp">
+            <location file="/workspace/cocos/ui/UIRadioButton.cpp" line="32" column="1"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Attributes::outlineSize&apos; is not initialized in the constructor." verbose="Member variable &apos;Attributes::outlineSize&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="285" column="9"/>
+            <symbol>Attributes::outlineSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Attributes::shadowBlurRadius&apos; is not initialized in the constructor." verbose="Member variable &apos;Attributes::shadowBlurRadius&apos; is not initialized in the constructor." cwe="398" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="285" column="9"/>
+            <symbol>Attributes::shadowBlurRadius</symbol>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1287" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1287" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1287" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1295" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1295" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1295" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1300" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1300" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1300" column="9"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%x in format string (no. 4) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%x in format string (no. 4) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="/workspace/cocos/ui/UIRichText.cpp">
+            <location file="/workspace/cocos/ui/UIRichText.cpp" line="1300" column="9"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used." cwe="252" file0="/workspace/cocos/ui/UIScale9Sprite.cpp">
+            <location file="/workspace/cocos/ui/UIScale9Sprite.cpp" line="127" column="5"/>
+            <symbol>log</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIScrollView.cpp">
+            <location file="/workspace/cocos/ui/UIScrollView.cpp" line="51" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UISlider.cpp">
+            <location file="/workspace/cocos/ui/UISlider.cpp" line="46" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UIText.cpp">
+            <location file="/workspace/cocos/ui/UIText.cpp" line="36" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UITextAtlas.cpp">
+            <location file="/workspace/cocos/ui/UITextAtlas.cpp" line="36" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UITextBMFont.cpp">
+            <location file="/workspace/cocos/ui/UITextBMFont.cpp" line="36" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If IMPLEMENT_CLASS_GUI_INFO is a macro then please configure it." file0="/workspace/cocos/ui/UITextField.cpp">
+            <location file="/workspace/cocos/ui/UITextField.cpp" line="269" column="1"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." file0="/workspace/extensions/GUI/CCControlExtension/CCControlColourPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlColourPicker.h" line="83" column="5"/>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp" line="38" column="19"/>
+            <symbol>Control::_enabled</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp" line="38" column="19"/>
+            <symbol>Control::_selected</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp" line="38" column="19"/>
+            <symbol>Control::_highlighted</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp" line="38" column="19"/>
+            <symbol>Control::_hasVisibleParents</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp" line="38" column="19"/>
+            <symbol>Control::_isOpacityModifyRGB</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." file0="/workspace/extensions/GUI/CCControlExtension/CCControlPotentiometer.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlPotentiometer.h" line="112" column="5"/>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp" line="38" column="36"/>
+            <symbol>Control::_enabled</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp" line="38" column="36"/>
+            <symbol>Control::_selected</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp" line="38" column="36"/>
+            <symbol>Control::_highlighted</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp" line="38" column="36"/>
+            <symbol>Control::_hasVisibleParents</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp" line="38" column="36"/>
+            <symbol>Control::_isOpacityModifyRGB</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_enabled&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp" line="38" column="16"/>
+            <symbol>Control::_enabled</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_selected&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp" line="38" column="16"/>
+            <symbol>Control::_selected</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_highlighted&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp" line="38" column="16"/>
+            <symbol>Control::_highlighted</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_hasVisibleParents&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp" line="38" column="16"/>
+            <symbol>Control::_hasVisibleParents</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" verbose="Member variable &apos;Control::_isOpacityModifyRGB&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class Control?" cwe="398" file0="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSlider.cpp" line="38" column="16"/>
+            <symbol>Control::_isOpacityModifyRGB</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE_RETAIN is a macro then please configure it." file0="/workspace/extensions/GUI/CCControlExtension/CCControlStepper.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlStepper.h" line="116" column="2"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If CC_SYNTHESIZE is a macro then please configure it." file0="/workspace/extensions/GUI/CCControlExtension/CCControlSwitch.cpp">
+            <location file="/workspace/extensions/GUI/CCControlExtension/CCControlSwitch.cpp" line="86" column="5"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TableViewCell::_idx&apos; is not initialized in the constructor." verbose="Member variable &apos;TableViewCell::_idx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/GUI/CCScrollView/CCTableView.cpp">
+            <location file="/workspace/extensions/GUI/CCScrollView/CCTableViewCell.h" line="49" column="5"/>
+            <symbol>TableViewCell::_idx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TableView::_vordering&apos; is not initialized in the constructor." verbose="Member variable &apos;TableView::_vordering&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/GUI/CCScrollView/CCTableView.cpp">
+            <location file="/workspace/extensions/GUI/CCScrollView/CCTableView.cpp" line="86" column="12"/>
+            <symbol>TableView::_vordering</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttribute::_type&apos; is not initialized in the constructor." verbose="Member variable &apos;PUDynamicAttribute::_type&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="33" column="25"/>
+            <symbol>PUDynamicAttribute::_type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttribute::_valueChangedExternally&apos; is not initialized in the constructor." verbose="Member variable &apos;PUDynamicAttribute::_valueChangedExternally&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="33" column="25"/>
+            <symbol>PUDynamicAttribute::_valueChangedExternally</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeOscillate::_oscillationType&apos; is not initialized in the copy constructor." verbose="Member variable &apos;PUDynamicAttributeOscillate::_oscillationType&apos; is not initialized in the copy constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="353" column="30"/>
+            <symbol>PUDynamicAttributeOscillate::_oscillationType</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeOscillate::_frequency&apos; is not initialized in the copy constructor." verbose="Member variable &apos;PUDynamicAttributeOscillate::_frequency&apos; is not initialized in the copy constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="353" column="30"/>
+            <symbol>PUDynamicAttributeOscillate::_frequency</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeOscillate::_phase&apos; is not initialized in the copy constructor." verbose="Member variable &apos;PUDynamicAttributeOscillate::_phase&apos; is not initialized in the copy constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="353" column="30"/>
+            <symbol>PUDynamicAttributeOscillate::_phase</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeOscillate::_base&apos; is not initialized in the copy constructor." verbose="Member variable &apos;PUDynamicAttributeOscillate::_base&apos; is not initialized in the copy constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="353" column="30"/>
+            <symbol>PUDynamicAttributeOscillate::_base</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeOscillate::_amplitude&apos; is not initialized in the copy constructor." verbose="Member variable &apos;PUDynamicAttributeOscillate::_amplitude&apos; is not initialized in the copy constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp" line="353" column="30"/>
+            <symbol>PUDynamicAttributeOscillate::_amplitude</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUDynamicAttributeTranslator::_dynamicAttribute&apos; is not initialized in the constructor." verbose="Member variable &apos;PUDynamicAttributeTranslator::_dynamicAttribute&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUDynamicAttributeTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUDynamicAttributeTranslator.cpp" line="31" column="31"/>
+            <symbol>PUDynamicAttributeTranslator::_dynamicAttribute</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCPUMaterialTranslator::_material&apos; is not initialized in the constructor." verbose="Member variable &apos;CCPUMaterialTranslator::_material&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp" line="106" column="25"/>
+            <symbol>CCPUMaterialTranslator::_material</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCPUMaterialTranslator::_ms&apos; is not initialized in the constructor." verbose="Member variable &apos;CCPUMaterialTranslator::_ms&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp" line="106" column="25"/>
+            <symbol>CCPUMaterialTranslator::_ms</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUTriangle::squareSurface&apos; is not initialized in the constructor." verbose="Member variable &apos;PUTriangle::squareSurface&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.h" line="62" column="5"/>
+            <symbol>PUTriangle::squareSurface</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUNoise3D::_p&apos; is not initialized in the constructor." verbose="Member variable &apos;PUNoise3D::_p&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUNoise.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUNoise.cpp" line="47" column="12"/>
+            <symbol>PUNoise3D::_p</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUParticleSystem3DTranslator::_system&apos; is not initialized in the constructor." verbose="Member variable &apos;PUParticleSystem3DTranslator::_system&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.cpp" line="31" column="31"/>
+            <symbol>PUParticleSystem3DTranslator::_system</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PURendererTranslator::_renderer&apos; is not initialized in the constructor." verbose="Member variable &apos;PURendererTranslator::_renderer&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPURendererTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPURendererTranslator.cpp" line="32" column="23"/>
+            <symbol>PURendererTranslator::_renderer</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="33" column="23"/>
+            <symbol>PUAbstractNode::line</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="33" column="23"/>
+            <symbol>PUAbstractNode::context</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="122" column="25"/>
+            <symbol>PUAbstractNode::line</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="122" column="25"/>
+            <symbol>PUAbstractNode::context</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::line&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="158" column="21"/>
+            <symbol>PUAbstractNode::line</symbol>
+        </error>
+        <error id="uninitDerivedMemberVar" severity="warning" msg="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" verbose="Member variable &apos;PUAbstractNode::context&apos; is not initialized in the constructor. Maybe it should be initialized directly in the class PUAbstractNode?" cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="158" column="21"/>
+            <symbol>PUAbstractNode::context</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;PUScriptCompiler::isNameExcluded&apos; is not initialized in the constructor." verbose="Member variable &apos;PUScriptCompiler::isNameExcluded&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptCompiler.cpp" line="183" column="19"/>
+            <symbol>PUScriptCompiler::isNameExcluded</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp" line="96" column="29"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp" line="114" column="29"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp" line="170" column="29"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUScriptParser.cpp" line="293" column="25"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PUTechniqueTranslator::_system&apos; is not initialized in the constructor." verbose="Member variable &apos;PUTechniqueTranslator::_system&apos; is not initialized in the constructor." cwe="398" file0="/workspace/extensions/Particle3D/PU/CCPUTechniqueTranslator.cpp">
+            <location file="/workspace/extensions/Particle3D/PU/CCPUTechniqueTranslator.cpp" line="32" column="24"/>
+            <symbol>PUTechniqueTranslator::_system</symbol>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &apos;dispatchUpdateEvent&apos; argument order different: declaration &apos;code, message, assetId, curle_code, curlm_code&apos; definition &apos;code, assetId, message, curle_code, curlm_code&apos;" verbose="Function &apos;dispatchUpdateEvent&apos; argument order different: declaration &apos;code, message, assetId, curle_code, curlm_code&apos; definition &apos;code, assetId, message, curle_code, curlm_code&apos;" cwe="683" file0="/workspace/extensions/assets-manager/AssetsManagerEx.cpp">
+            <location file="/workspace/extensions/assets-manager/AssetsManagerEx.cpp" line="488" column="75"/>
+            <location file="/workspace/extensions/assets-manager/AssetsManagerEx.h" line="152" column="62"/>
+            <symbol>dispatchUpdateEvent</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function freopen() is not used." verbose="Return value of function freopen() is not used." cwe="252" file0="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp">
+            <location file="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp" line="43" column="5"/>
+            <symbol>freopen</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function freopen() is not used." verbose="Return value of function freopen() is not used." cwe="252" file0="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp">
+            <location file="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp" line="44" column="5"/>
+            <symbol>freopen</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function freopen() is not used." verbose="Return value of function freopen() is not used." cwe="252" file0="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp">
+            <location file="/workspace/templates/lua-template-default/frameworks/runtime-src/proj.win32/main.cpp" line="45" column="5"/>
+            <symbol>freopen</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ControllerImpl&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ControllerImpl&apos;" cwe="758">
+            <location file="/workspace/cocos/base/CCController-android.cpp" line="38" column="1"/>
+            <location file="/workspace/cocos/base/CCController-linux-win32.cpp" line="40" column="1"/>
+            <symbol>ControllerImpl</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;AppDelegate&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;AppDelegate&apos;" cwe="758">
+            <location file="/workspace/templates/cpp-template-default/Classes/AppDelegate.h" line="35" column="1"/>
+            <location file="/workspace/templates/lua-template-default/frameworks/runtime-src/Classes/AppDelegate.h" line="34" column="1"/>
+            <symbol>AppDelegate</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>

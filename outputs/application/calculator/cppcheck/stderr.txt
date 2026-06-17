@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 263." verbose="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 263." cwe="369" file0="/workspace/src/CalcManager/Ratpack/num.cpp">
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="263" column="58" info="Division by zero"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="269" column="24" info="Assignment to &apos;mcy/=(uint64_t)radix&apos;"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="260" column="20" info="Assuming that condition &apos;mcy&apos; is not redundant"/>
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 266." verbose="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 266." cwe="369" file0="/workspace/src/CalcManager/Ratpack/num.cpp">
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="266" column="49" info="Division by zero"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="269" column="24" info="Assignment to &apos;mcy/=(uint64_t)radix&apos;"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="260" column="20" info="Assuming that condition &apos;mcy&apos; is not redundant"/>
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;cy&apos; is redundant or there is division by zero at line 269." verbose="Either the condition &apos;cy&apos; is redundant or there is division by zero at line 269." cwe="369" file0="/workspace/src/CalcManager/Ratpack/num.cpp">
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="269" column="21" info="Division by zero"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="270" column="23" info="Assignment to &apos;cy/=(uint64_t)radix&apos;"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="260" column="27" info="Assuming that condition &apos;cy&apos; is not redundant"/>
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 270." verbose="Either the condition &apos;mcy&apos; is redundant or there is division by zero at line 270." cwe="369" file0="/workspace/src/CalcManager/Ratpack/num.cpp">
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="270" column="20" info="Division by zero"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="269" column="24" info="Assignment to &apos;mcy/=(uint64_t)radix&apos;"/>
+            <location file="/workspace/src/CalcManager/Ratpack/num.cpp" line="260" column="20" info="Assuming that condition &apos;mcy&apos; is not redundant"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ^)" verbose="syntax error: ^)" file0="/workspace/src/CalcViewModel/Common/DateCalculator.cpp">
+            <location file="/workspace/src/CalcViewModel/Common/DateCalculator.cpp" line="183" column="67"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error: ^)" verbose="syntax error: ^)" file0="/workspace/src/CalcViewModel/Common/NetworkManager.cpp">
+            <location file="/workspace/src/CalcViewModel/Common/NetworkManager.cpp" line="41" column="56"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalcViewModel/DataLoaders/CurrencyDataLoader.cpp">
+            <location file="/workspace/src/CalcViewModel/DataLoaders/CurrencyDataLoader.cpp" line="492" column="39"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalcViewModel/GraphingCalculator/EquationViewModel.cpp">
+            <location file="/workspace/src/CalcViewModel/GraphingCalculator/EquationViewModel.h" line="120" column="76"/>
+        </error>
+        <error id="uninitdata" severity="error" msg="Memory is allocated but not initialized: temp" verbose="Memory is allocated but not initialized: temp" cwe="457" file0="/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp">
+            <location file="/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp" line="593" column="26"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="uninitdata" severity="error" msg="Memory is allocated but not initialized: temp" verbose="Memory is allocated but not initialized: temp" cwe="457" file0="/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp">
+            <location file="/workspace/src/CalcViewModel/StandardCalculatorViewModel.cpp" line="614" column="26"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/Calculator/DesignData/DesignAppViewModel.cpp">
+            <location file="/workspace/src/Calculator/DesignData/DesignStandardCalculatorViewModel.h" line="24" column="54"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/Calculator/DesignData/DesignUnitConverterViewModel.cpp">
+            <location file="/workspace/src/Calculator/DesignData/DesignUnitConverterViewModel.h" line="38" column="54"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/CalcEngineTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/CalcEngineTests.cpp" line="68" column="17"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/CalcInputTest.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/CalcInputTest.cpp" line="19" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/CalculatorManagerTest.cpp" line="162" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/CopyPasteManagerTest.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/CopyPasteManagerTest.cpp" line="188" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/CurrencyConverterUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/CurrencyConverterUnitTests.cpp" line="161" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/DateCalculatorUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/DateCalculatorUnitTests.cpp" line="356" column="17"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/HistoryTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/HistoryTests.cpp" line="94" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/LocalizationServiceUnitTests.cpp" line="27" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/LocalizationSettingsUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/LocalizationSettingsUnitTests.cpp" line="23" column="5"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_MODULE_ATTRIBUTE is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If BEGIN_TEST_MODULE_ATTRIBUTE is a macro then please configure it." file0="/workspace/src/CalculatorUnitTests/Module.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/Module.cpp" line="11" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/MultiWindowUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/MultiWindowUnitTests.cpp" line="39" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/NarratorAnnouncementUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/NarratorAnnouncementUnitTests.cpp" line="21" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/NavCategoryUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/NavCategoryUnitTests.cpp" line="27" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/RationalTest.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/RationalTest.cpp" line="26" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/StandardViewModelUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/StandardViewModelUnitTests.cpp" line="34" column="13"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/UnitConverterTest.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/UnitConverterTest.cpp" line="271" column="9"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/UnitConverterViewModelUnitTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/UnitConverterViewModelUnitTests.cpp" line="41" column="5"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/CalculatorUnitTests/UtilsTests.cpp">
+            <location file="/workspace/src/CalculatorUnitTests/UtilsTests.cpp" line="11" column="74"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/GraphControl/Control/Grapher.cpp">
+            <location file="/workspace/src/GraphControl/Control/Grapher.h" line="53" column="91"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/GraphControl/DirectX/RenderMain.cpp">
+            <location file="/workspace/src/GraphControl/DirectX/RenderMain.cpp" line="355" column="55"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/GraphControl/Models/Equation.cpp">
+            <location file="/workspace/src/GraphControl/Models/Equation.h" line="220" column="56"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="/workspace/src/GraphControl/Models/KeyGraphFeaturesInfo.cpp">
+            <location file="/workspace/src/GraphControl/Models/KeyGraphFeaturesInfo.h" line="23" column="38"/>
+        </error>
+        <error id="returnTempReference" severity="error" msg="Reference to temporary returned." verbose="Reference to temporary returned." cwe="562" file0="/workspace/src/GraphingImpl/Mocks/MathSolver.cpp">
+            <location file="/workspace/src/GraphingImpl/Mocks/MathSolver.h" line="89" column="20"/>
+            <location file="/workspace/src/GraphingImpl/Mocks/MathSolver.h" line="93" column="37" info="Assigned to reference."/>
+        </error>
+    </errors>
+</results>

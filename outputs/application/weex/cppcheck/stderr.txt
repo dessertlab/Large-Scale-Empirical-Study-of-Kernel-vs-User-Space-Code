@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WXCoreEnvironment::mDeviceWidth&apos; is not initialized in the constructor." verbose="Member variable &apos;WXCoreEnvironment::mDeviceWidth&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/core/config/core_environment.cpp">
+            <location file="/workspace/weex_core/Source/core/config/core_environment.h" line="31" column="5"/>
+            <symbol>WXCoreEnvironment::mDeviceWidth</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WXCoreEnvironment::mDeviceHeight&apos; is not initialized in the constructor." verbose="Member variable &apos;WXCoreEnvironment::mDeviceHeight&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/core/config/core_environment.cpp">
+            <location file="/workspace/weex_core/Source/core/config/core_environment.h" line="31" column="5"/>
+            <symbol>WXCoreEnvironment::mDeviceHeight</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WXCoreEnvironment::mInteractionLogSwitch&apos; is not initialized in the constructor." verbose="Member variable &apos;WXCoreEnvironment::mInteractionLogSwitch&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/core/config/core_environment.cpp">
+            <location file="/workspace/weex_core/Source/core/config/core_environment.h" line="31" column="5"/>
+            <symbol>WXCoreEnvironment::mInteractionLogSwitch</symbol>
+        </error>
+        <error id="uninitMemberVarPrivate" severity="warning" msg="Member variable &apos;WXCoreEnvironment::mUseRuntimeApi&apos; is not initialized in the constructor." verbose="Member variable &apos;WXCoreEnvironment::mUseRuntimeApi&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/core/config/core_environment.cpp">
+            <location file="/workspace/weex_core/Source/core/config/core_environment.h" line="31" column="5"/>
+            <symbol>WXCoreEnvironment::mUseRuntimeApi</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/weex_core/Source/core/layout/layout.cpp">
+            <location file="/workspace/weex_core/Source/core/layout/style.h" line="285" column="21"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;WXCoreLayoutNode&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WXCoreLayoutNode&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/core/layout/layout.cpp">
+            <location file="/workspace/weex_core/Source/core/layout/layout.h" line="152" column="9"/>
+            <symbol>WXCoreLayoutNode</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;WXCoreLayoutNode&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WXCoreLayoutNode&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/core/layout/layout.cpp">
+            <location file="/workspace/weex_core/Source/core/layout/layout.h" line="152" column="9"/>
+            <symbol>WXCoreLayoutNode</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/weex_core/Source/core/render/page/render_page_base.cpp">
+            <location file="/workspace/weex_core/Source/core/render/page/render_page_base.cpp" line="102" column="13"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;RenderPageBase&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;RenderPageBase&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/core/render/page/render_page_base.cpp">
+            <location file="/workspace/weex_core/Source/core/render/page/render_page_base.cpp" line="31" column="13"/>
+            <symbol>RenderPageBase</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;RenderPageBase&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;RenderPageBase&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/core/render/page/render_page_base.cpp">
+            <location file="/workspace/weex_core/Source/core/render/page/render_page_base.cpp" line="31" column="13"/>
+            <symbol>RenderPageBase</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RuntimeValues::data_&apos; is not initialized in the constructor." verbose="Member variable &apos;RuntimeValues::data_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/js_runtime/runtime/js_runtime_conversion.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/runtime/runtime_values.h" line="205" column="3"/>
+            <symbol>RuntimeValues::data_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;RuntimeValues::data_&apos; is not initialized in the constructor." verbose="Member variable &apos;RuntimeValues::data_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/weex_core/Source/js_runtime/runtime/js_runtime_conversion.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/runtime/runtime_values.h" line="207" column="12"/>
+            <symbol>RuntimeValues::data_</symbol>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If DECLARE_CLASS_REGISTER_OP is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If DECLARE_CLASS_REGISTER_OP is a macro then please configure it." file0="/workspace/weex_core/Source/js_runtime/weex/binding/app_context_binding.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/binding/weex_console_binding.h" line="34" column="13"/>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;it&apos; used after element has been erased." verbose="The iterator &apos;it&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="156" column="26"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="153" column="5"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;it&apos; used after element has been erased." verbose="The iterator &apos;it&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="187" column="26"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="184" column="5"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="invalidContainer" severity="error" msg="Using iterator to member container &apos;timerQueue_&apos; that may be invalid." verbose="Using iterator to member container &apos;timerQueue_&apos; that may be invalid." cwe="664" inconclusive="true" file0="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="153" column="41"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="156" column="21" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="153" column="44" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="155" column="29" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="155" column="29" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="153" column="37" info="Iterator to container is created here."/>
+        </error>
+        <error id="invalidContainer" severity="error" msg="Using iterator to member container &apos;timerQueue_&apos; that may be invalid." verbose="Using iterator to member container &apos;timerQueue_&apos; that may be invalid." cwe="664" inconclusive="true" file0="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="184" column="70"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="187" column="21" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="184" column="73" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="186" column="33" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="186" column="33" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/timer_queue.cpp" line="184" column="66" info="Iterator to container is created here."/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;WeexTask&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WeexTask&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task.h" line="59" column="15"/>
+            <symbol>WeexTask</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;WeexTask&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;WeexTask&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task.h" line="59" column="15"/>
+            <symbol>WeexTask</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;it&apos; used after element has been erased." verbose="The iterator &apos;it&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="103" column="33"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="99" column="9"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="eraseDereference" severity="error" msg="Iterator &apos;it&apos; used after element has been erased." verbose="The iterator &apos;it&apos; is invalid after the element it pointed to has been erased. Dereferencing or comparing it with another iterator is invalid operation." cwe="664" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="179" column="33"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="176" column="9"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="invalidContainer" severity="error" msg="Using iterator to member container &apos;taskQueue_&apos; that may be invalid." verbose="Using iterator to member container &apos;taskQueue_&apos; that may be invalid." cwe="664" inconclusive="true" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="99" column="72"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="103" column="28" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="99" column="75" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="101" column="35" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="101" column="35" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="99" column="68" info="Iterator to container is created here."/>
+        </error>
+        <error id="invalidContainer" severity="error" msg="Using iterator to member container &apos;taskQueue_&apos; that may be invalid." verbose="Using iterator to member container &apos;taskQueue_&apos; that may be invalid." cwe="664" inconclusive="true" file0="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp">
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="176" column="72"/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="179" column="28" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="176" column="75" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="178" column="39" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="178" column="39" info="Assuming condition is true."/>
+            <location file="/workspace/weex_core/Source/js_runtime/weex/task/weex_task_queue.cpp" line="176" column="68" info="Iterator to container is created here."/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/workspace/weex_core/Source/wson/wson.c">
+            <location file="/workspace/weex_core/Source/wson/wson.c" line="377" column="9"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;31&apos;." cwe="190" file0="/workspace/weex_core/Source/wson/wson.c">
+            <location file="/workspace/weex_core/Source/wson/wson.c" line="63" column="52" info="Integer overflow"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." verbose="%lld in format string (no. 1) requires &apos;long long&apos; but the argument type is &apos;signed long&apos;." cwe="686" file0="/workspace/weex_core/Source/wson/wson_util.cpp">
+            <location file="/workspace/weex_core/Source/wson/wson_util.cpp" line="235" column="9"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;UART4Sender::tx_buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;UART4Sender::tx_buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp" line="24" column="5"/>
+            <symbol>UART4Sender::tx_buf_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;UART5Sender::tx_buf_&apos; is not initialized in the constructor." verbose="Member variable &apos;UART5Sender::tx_buf_&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/communication/interface_uart.cpp" line="62" column="5"/>
+            <symbol>UART5Sender::tx_buf_</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;progBuffer&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;progBuffer&apos; nulled but not freed upon failure" cwe="401" file0="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Bsp/imu/MPU6050.cpp" line="3678" column="50"/>
+            <symbol>progBuffer</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/tim.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/tim.c" line="754" column="5"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/tim.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Core/Src/tim.c" line="776" column="5"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SCA::scaHandler&apos; is not initialized in the constructor." verbose="Member variable &apos;SCA::scaHandler&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca.cpp" line="66" column="6"/>
+            <symbol>SCA::scaHandler</symbol>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="183" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="176" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="190" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="176" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="223" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="216" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="230" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="216" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="374" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="368" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="410" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="403" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="417" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="403" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="449" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="442" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="456" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="442" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="488" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="481" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="495" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="481" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="612" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="605" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="619" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="605" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="683" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="676" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="690" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="676" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="716" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="709" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="723" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="709" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="755" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="748" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="762" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="748" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="793" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="786" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="800" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="786" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="832" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="825" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="839" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="825" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="870" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="863" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="877" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="863" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="909" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="902" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="916" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="902" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="947" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="940" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="954" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="940" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="986" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="979" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="993" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="979" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1024" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1017" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1031" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1017" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1063" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1056" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1070" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1056" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1101" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1094" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1108" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1094" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1140" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1133" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1147" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1133" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1178" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1171" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1185" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1171" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1217" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1210" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1224" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1210" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1255" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1248" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1262" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1248" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1294" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1287" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1301" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1287" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1332" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1325" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1339" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1325" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1371" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1364" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1378" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1364" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1410" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1403" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1417" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1403" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1448" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1441" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1455" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1441" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1487" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1480" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1494" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1480" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1525" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1518" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1532" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1518" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1563" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1556" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1570" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1556" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1609" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1602" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1616" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1602" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1647" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1640" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1654" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1640" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1688" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1681" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1695" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1681" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1726" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1719" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1733" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1719" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1767" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1760" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1774" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1760" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1805" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1798" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1812" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1798" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1877" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1870" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1884" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1870" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1910" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1903" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1917" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1903" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1948" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1941" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1955" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1941" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1987" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1980" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1994" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="1980" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2025" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2018" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2032" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2018" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2064" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2057" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2071" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2057" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2102" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2095" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2109" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2095" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2141" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2134" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2148" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2134" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2179" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2172" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2186" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2172" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2218" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2211" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2225" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2211" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2267" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2260" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2274" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2260" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2305" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2298" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2312" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2298" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2343" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2336" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2350" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2336" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2382" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2375" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2389" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2375" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2421" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2414" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2428" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2414" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2459" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2452" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2466" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2452" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2500" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2493" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2507" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2493" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2538" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2531" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2545" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2531" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2579" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2572" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2586" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2572" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2617" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2610" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2624" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2610" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2658" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2651" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2665" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2651" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2696" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2689" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2703" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2689" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2767" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2760" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2774" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2760" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2800" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2793" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2807" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2793" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2838" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2831" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2845" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2831" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2876" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2869" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2883" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2869" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2915" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2908" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2922" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2908" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2955" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2948" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2962" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2948" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2993" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2986" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3000" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2986" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3032" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3025" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3039" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3025" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3072" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3065" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3079" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3065" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3111" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3104" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3118" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3104" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3149" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3142" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3156" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3142" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3190" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3183" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3197" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3183" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3228" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3221" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3235" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3221" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3268" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3261" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3275" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3261" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3306" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3299" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3313" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3299" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3345" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3338" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3352" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3338" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3384" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3377" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3391" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3377" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3424" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3417" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3431" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3417" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3462" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3455" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3469" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3455" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3501" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3494" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3508" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3494" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3539" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3532" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3546" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3532" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3579" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3572" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3586" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3572" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3617" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3610" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3624" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3610" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3657" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3650" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3664" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3650" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3700" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3693" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3707" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3693" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3738" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3731" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3745" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3731" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3777" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3770" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3784" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3770" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3816" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3809" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3823" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3809" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3849" column="16" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3842" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition and return expression &apos;Error&apos;, return value is always 0" verbose="Identical condition and return expression &apos;Error&apos;, return value is always 0" cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3856" column="12" info="Returning identical expression &apos;Error&apos;"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="3842" column="8" info="If condition &apos;Error&apos; is true, the function will return/exit"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: pSCA" verbose="Null pointer dereference: pSCA" cwe="476" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2824" column="5" info="Null pointer dereference"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/actuators/mintasca/sca_api.c" line="2821" column="27" info="Assignment &apos;pSCA=NULL&apos;, assigned value is 0"/>
+            <symbol>pSCA</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Joint6D_t::a&apos; is not initialized in the constructor." verbose="Member variable &apos;Joint6D_t::a&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/algorithms/kinematic/6dof_kinematic.h" line="40" column="9"/>
+            <symbol>Joint6D_t::a</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DummyHand::canBuf&apos; is not initialized in the constructor." verbose="Member variable &apos;DummyHand::canBuf&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp" line="315" column="12"/>
+            <symbol>DummyHand::canBuf</symbol>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;DummyRobot&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;DummyRobot&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp" line="30" column="5"/>
+            <symbol>DummyRobot</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;DummyRobot&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;DummyRobot&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/Robot/instances/dummy_robot.cpp" line="30" column="5"/>
+            <symbol>DummyRobot</symbol>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long *&apos; but the argument type is &apos;unsigned int *&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long *&apos; but the argument type is &apos;unsigned int *&apos;." cwe="686" file0="/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp" line="44" column="13"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long *&apos; but the argument type is &apos;unsigned int *&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long *&apos; but the argument type is &apos;unsigned int *&apos;." cwe="686" file0="/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/UserApp/protocols/ascii_protocol.cpp" line="97" column="13"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EncoderCalibratorBase::goDirection&apos; is not initialized in the constructor." verbose="Member variable &apos;EncoderCalibratorBase::goDirection&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/encoder_calibrator_base.cpp">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/encoder_calibrator_base.h" line="36" column="14"/>
+            <symbol>EncoderCalibratorBase::goDirection</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MT6816Base::dataTx&apos; is not initialized in the constructor." verbose="Member variable &apos;MT6816Base::dataTx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.cpp">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.h" line="10" column="14"/>
+            <symbol>MT6816Base::dataTx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MT6816Base::dataRx&apos; is not initialized in the constructor." verbose="Member variable &apos;MT6816Base::dataRx&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.cpp">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.h" line="10" column="14"/>
+            <symbol>MT6816Base::dataRx</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MT6816Base::hCount&apos; is not initialized in the constructor." verbose="Member variable &apos;MT6816Base::hCount&apos; is not initialized in the constructor." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.cpp">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Ctrl/Sensor/Encoder/mt6816_base.h" line="10" column="14"/>
+            <symbol>MT6816Base::hCount</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max&apos; and inner condition is &apos;Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max&apos;)." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" line="1290" column="44" info="identical inner condition: Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max"/>
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" line="1282" column="41" info="outer condition: Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max"/>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max&apos; and inner condition is &apos;Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max&apos;)." cwe="398" file0="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" line="465" column="44" info="identical inner condition: Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max"/>
+            <location file="/workspace/2.Firmware/Ctrl-Step-Driver-STM32F1-fw/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" line="457" column="41" info="outer condition: Conversion_Timeout_CPU_cycles&lt;Conversion_Timeout_CPU_cycles_max"/>
+        </error>
+        <error id="ctuuninitvar" severity="error" msg="Using argument u8sl that points at uninitialized variable u8sl" verbose="Using argument u8sl that points at uninitialized variable u8sl" cwe="457">
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8g2_selection_list.c" line="185" column="19" info="Using argument u8sl"/>
+            <location file="/workspace/2.Firmware/Core-STM32F4-fw/3rdParty/u8g2/u8g2_selection_list.c" line="257" column="31" info="Calling function u8g2_DrawSelectionList, 2nd argument is uninitialized"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time. For more details, use --enable=information." cwe="398"/>
+    </errors>
+</results>
