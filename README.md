@@ -1,4 +1,4 @@
-# Static Analysis
+# Large-Scale Empirical Study of Kernel vs. User-Space C/C++ Code
 
 This repository builds a curated C/C++ dataset, runs a container-based static-analysis pipeline over every downloaded project, and synthesizes the analyzer findings into per-class summaries. It is organized around three steps:
 
