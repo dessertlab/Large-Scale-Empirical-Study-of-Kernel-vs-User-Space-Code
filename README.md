@@ -226,7 +226,7 @@ uv run python experiments/print_findings_tables.py --color never
 
 ### Vulnerability Density Report
 
-`experiments/vulnerability_density_report.py` computes vulnerability incidence using the `two_out_of_four` synthesis criterion. It uses metadata from `dataset_construction/metadata/<class>_metadata.json` as the preferred denominator source, then falls back to `synthesis/<class>.json` when metadata is missing or incomplete. It prints project-level and class-aggregate tables for both vulnerabilities per 1k functions and vulnerabilities per KLOC.
+`experiments/vulnerability_density_report.py` computes vulnerability incidence using the `two_out_of_four` synthesis criterion. It uses metadata from `dataset_construction/metadata/<class>_metadata.json` as the preferred denominator source, then falls back to `synthesis/<class>.json` when metadata is missing or incomplete. It prints project-level and class-aggregate tables for both Validated alerts per 1k functions and vulnerabilities per KLOC.
 
 The script also reads `projects_with_taxonomy.xlsx`: kernel project charts use colors tied to the selected/analyzed submodules listed in the `Kernel Selection` sheet, while application charts use colors from the taxonomy `category` code in the `App Taxonomy` sheet.
 
