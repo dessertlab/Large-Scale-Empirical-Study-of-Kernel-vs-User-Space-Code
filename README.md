@@ -1,5 +1,8 @@
 # Large-Scale Empirical Study of Kernel vs. User-Space C/C++ Code
 
+This repository contains all data and artifacts, including source code and datasets, supporting the results of the paper titled "*Is Privileged Code Safer? A Large-Scale Static-Analysis Study of Kernel vs. User-Space C/C++ Code*" submitted to the IEEE International Conference on Source Code Analysis & Manipulation (SCAM 2026), co-located with the 42nd International Conference on Software Maintenance and Evolution (ICSME 2026).
+
+
 This repository builds a curated C/C++ dataset, runs a container-based static-analysis pipeline over every downloaded project, and synthesizes the analyzer findings into per-class summaries. It is organized around three steps:
 
 1. dataset construction, handled by `dataset_construction/`
